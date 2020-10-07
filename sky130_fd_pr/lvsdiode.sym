@@ -1,6 +1,6 @@
 v {xschem version=2.9.8 file_version=1.2}
 G {}
-K {type="diode"
+K {type=diode
 format="@name @pinlist sky130_fd_pr__@model area=@area"
 template="name=D1
 model=diode_pw2nd_05v5
