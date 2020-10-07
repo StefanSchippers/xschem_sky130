@@ -9,7 +9,7 @@ L 4 680 -1140 1640 -1140 {}
 L 4 680 -820 1640 -820 {}
 L 4 680 -400 1640 -400 {}
 L 4 680 -230 1640 -230 {}
-P 4 7 320 -390 320 -350 310 -350 320 -330 330 -350 320 -350 320 -390 {fill=true}
+P 4 7 300 -470 300 -430 290 -430 300 -410 310 -430 300 -430 300 -470 {fill=true}
 T {Ctrl-Click to open link} 40 -770 0 0 0.6 0.6 {layer=8}
 T {Available models:
 diode_pw2nd_05v5
@@ -34,7 +34,7 @@ T {NFET} 780 -1010 0 0 1 1 { hcenter=true}
 T {RES} 780 -650 0 0 1 1 { hcenter=true}
 T {DIODE} 780 -340 0 0 1 1 { hcenter=true}
 T {PNP} 780 -170 0 0 1 1 { hcenter=true}
-T {Some simple DC sweeps done for testing with NGSPICE} 30 -420 0 0 0.4 0.4 {layer=4}
+T {Some simple DC sweeps done for testing with NGSPICE} 10 -500 0 0 0.4 0.4 {layer=4}
 T {No Model} 1350 -870 0 0 0.3 0.3 {layer=7}
 T {No Model} 1500 -690 0 0 0.3 0.3 {layer=7}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
@@ -47,12 +47,12 @@ url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr"}
 C {devices/launcher.sym} 70 -620 0 0 {name=h3
 descr="Google-Skywater PDK documentation: Device details" 
 url="https://skywater-pdk.readthedocs.io/en/latest/rules/device-details.html"}
-C {sky130_tests/test_nmos.sym} 320 -190 0 0 {name=x1}
-C {sky130_tests/test_pmos.sym} 320 -150 0 0 {name=x2}
-C {sky130_tests/test_inv.sym} 320 -110 0 0 {name=x5}
-C {sky130_tests/test_res.sym} 320 -230 0 0 {name=x3}
-C {sky130_tests/test_bipolar.sym} 320 -270 0 0 {name=x4}
-C {sky130_tests/test_diode.sym} 320 -310 0 0 {name=x6}
+C {sky130_tests/test_nmos.sym} 300 -270 0 0 {name=x1}
+C {sky130_tests/test_pmos.sym} 300 -230 0 0 {name=x2}
+C {sky130_tests/test_inv.sym} 300 -190 0 0 {name=x5}
+C {sky130_tests/test_res.sym} 300 -310 0 0 {name=x3}
+C {sky130_tests/test_bipolar.sym} 300 -350 0 0 {name=x4}
+C {sky130_tests/test_diode.sym} 300 -390 0 0 {name=x6}
 C {sky130_fd_pr/diode.sym} 1380 -320 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1
@@ -264,3 +264,4 @@ nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
 }
+C {sky130_tests/test_comparator.sym} 300 -150 0 0 {name=x7}
