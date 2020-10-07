@@ -1,0 +1,26 @@
+v {xschem version=2.9.7 file_version=1.2}
+G {type=stdcell
+vhdl_stop=true
+verilog_stop=true
+format="@name @pinlist @VCCPIN @VSSPIN @symname"
+template="name=x1 VCCPIN=VCC VSSPIN=VSS"
+generic_type="VCCPIN=string VSSPIN=string"
+extra="VCCPIN VSSPIN"}
+V {}
+S {}
+E {}
+L 4 40 -20 60 -20 {}
+L 4 40 20 60 20 {}
+L 4 -60 -20 -40 -20 {}
+L 4 -60 20 -40 20 {}
+B 5 57.5 -22.5 62.5 -17.5 {name=S dir=out verilog_type=wire}
+B 5 57.5 17.5 62.5 22.5 {name=C dir=out verilog_type=wire}
+B 5 -62.5 -22.5 -57.5 -17.5 {name=A dir=in}
+B 5 -62.5 17.5 -57.5 22.5 {name=B dir=in}
+P 4 5 -40 -30 -40 30 40 30 40 -30 -40 -30 {}
+T {@name} -23.75 -5 0 0 0.2 0.2 {}
+T {@symname} -35 -45 0 0 0.2 0.2 {}
+T {S} 35 -25 0 1 0.2 0.2 {}
+T {C} 35 15 0 1 0.2 0.2 {}
+T {A} -35 -25 0 0 0.2 0.2 {}
+T {B} -35 15 0 0 0.2 0.2 {}

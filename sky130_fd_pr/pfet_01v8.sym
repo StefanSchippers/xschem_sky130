@@ -1,0 +1,39 @@
+v {xschem version=2.9.8 file_version=1.2}
+G {}
+K {type=pmos
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L
++ ad=@ad pd=@pd as=@as ps=@ps nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd nf=@nf mult=@mult"
+template="name=M1
+L=0.15
+W=1
+ad=\\"'W * 0.29'\\" pd=\\"'W + 2 * 0.29'\\"
+as=\\"'W * 0.29'\\" ps=\\"'W + 2 * 0.29'\\"
+nrd=0 nrs=0
+sa=0 sb=0 sd=0
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+"}
+V {}
+S {}
+E {}
+L 4 7.5 -22.5 7.5 22.5 {}
+L 4 -20 0 2.5 0 {}
+L 4 20 -40 20 -17.5 {}
+L 4 20 17.5 20 40 {}
+L 4 2.5 -15 2.5 15 {}
+L 4 7.5 17.5 20 17.5 {}
+L 4 12.5 -17.5 20 -17.5 {}
+B 5 17.5 37.5 22.5 42.5 {name=D dir=inout}
+B 5 -22.5 -2.5 -17.5 2.5 {name=G dir=in}
+B 5 17.5 -42.5 22.5 -37.5 {name=S dir=inout}
+B 5 19.921875 -0.078125 20.078125 0.078125 {name=B dir=in}
+P 4 4 12.5 -20 7.5 -17.5 12.5 -15 12.5 -20 {fill=true}
+P 5 4 15 -2.5 20 0 15 2.5 15 -2.5 {fill=true}
+T {@model} 22.5 -13.75 2 1 0.2 0.2 {}
+T {@name} 15 -37.5 0 1 0.2 0.2 {}
+T {@#0:name} 25 27.5 0 0 0.15 0.15 {layer=7}
+T {@#2:name} 25 -27.5 2 1 0.15 0.15 {layer=7}
+T {@#1:name} -7.5 -12.5 0 1 0.15 0.15 {layer=7}
+T {@#3:name} 25 -12.5 0 0 0.15 0.15 {layer=7}
+T {@mult x @W / @L} 23.75 11.25 0 0 0.2 0.2 { layer=13}

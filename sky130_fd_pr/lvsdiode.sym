@@ -1,0 +1,29 @@
+v {xschem version=2.9.8 file_version=1.2}
+G {}
+K {type="diode"
+format="@name @pinlist sky130_fd_pr__@model area=@area"
+template="name=D1
+model=diode_pw2nd_05v5
+area=1
+"
+
+available_models="
+diode_pw2nd_05v5
+diode_pw2nd_11v0
+diode_pd2nw_05v5
+diode_pd2nw_11v0
+"}
+V {}
+S {}
+E {}
+L 4 0 -30 0 -5 {}
+L 4 0 5 0 30 {}
+L 4 -10 -5 10 -5 {}
+B 5 -2.5 27.5 2.5 32.5 {name=d0 dir=inout pinnumber=1}
+B 5 -2.5 -32.5 2.5 -27.5 {name=d1 dir=inout pinnumber=2}
+P 4 4 0 -5 -10 5 10 5 0 -5 {fill=true}
+T {@name} 15 25 2 1 0.2 0.2 {}
+T {@model} 15 -12.5 2 1 0.2 0.2 {}
+T {@#0:name} -5 26.25 2 0 0.15 0.15 {layer=7}
+T {@#1:name} -5 -17.5 2 0 0.15 0.15 {layer=7}
+T {@symname} 15 7.5 2 1 0.2 0.2 {}
