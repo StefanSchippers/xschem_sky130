@@ -9,8 +9,8 @@ L 4 680 -1140 1640 -1140 {}
 L 4 680 -820 1640 -820 {}
 L 4 680 -400 1640 -400 {}
 L 4 680 -230 1640 -230 {}
-P 4 7 300 -470 300 -430 290 -430 300 -410 310 -430 300 -430 300 -470 {fill=true}
-T {Ctrl-Click to open link} 40 -770 0 0 0.6 0.6 {layer=8}
+P 4 7 310 -1310 310 -1270 300 -1270 310 -1250 320 -1270 310 -1270 310 -1310 {fill=true}
+T {Google-Skywater PDK links} 50 -1610 0 0 0.6 0.6 {layer=8}
 T {Available models:
 diode_pw2nd_05v5
 diode_pw2nd_11v0
@@ -34,26 +34,29 @@ T {NFET} 780 -1010 0 0 1 1 { hcenter=true}
 T {RES} 780 -650 0 0 1 1 { hcenter=true}
 T {DIODE} 780 -340 0 0 1 1 { hcenter=true}
 T {PNP} 780 -170 0 0 1 1 { hcenter=true}
-T {Some simple DC sweeps done for testing with NGSPICE} 10 -500 0 0 0.4 0.4 {layer=4}
+T {Some simple DC sweeps done for testing with NGSPICE} 20 -1340 0 0 0.4 0.4 {layer=4}
 T {No Model} 1340 -880 0 0 0.3 0.3 {layer=7}
 T {No Model} 1500 -690 0 0 0.3 0.3 {layer=7}
 T {No Model} 1340 -1180 0 0 0.3 0.3 {layer=7}
+T {Digital standard cells} 50 -850 0 0 0.6 0.6 {layer=8}
+T {Ctrl-Click to open link} 10 -1560 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 10 -790 0 0 0.3 0.3 {layer=11}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/launcher.sym} 70 -680 0 0 {name=h1
+C {devices/launcher.sym} 80 -1520 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
 url="http://skywater-pdk.readthedocs.io/en/latest"}
-C {devices/launcher.sym} 70 -560 0 0 {name=h2
+C {devices/launcher.sym} 80 -1400 0 0 {name=h2
 descr="Google-Skywater PDK git repo" 
 url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr"}
-C {devices/launcher.sym} 70 -620 0 0 {name=h3
+C {devices/launcher.sym} 80 -1460 0 0 {name=h3
 descr="Google-Skywater PDK documentation: Device details" 
 url="https://skywater-pdk.readthedocs.io/en/latest/rules/device-details.html"}
-C {sky130_tests/test_nmos.sym} 300 -270 0 0 {name=x1}
-C {sky130_tests/test_pmos.sym} 300 -230 0 0 {name=x2}
-C {sky130_tests/test_inv.sym} 300 -190 0 0 {name=x5}
-C {sky130_tests/test_res.sym} 300 -310 0 0 {name=x3}
-C {sky130_tests/test_bipolar.sym} 300 -350 0 0 {name=x4}
-C {sky130_tests/test_diode.sym} 300 -390 0 0 {name=x6}
+C {sky130_tests/test_nmos.sym} 310 -1110 0 0 {name=x1}
+C {sky130_tests/test_pmos.sym} 310 -1070 0 0 {name=x2}
+C {sky130_tests/test_inv.sym} 310 -1030 0 0 {name=x5}
+C {sky130_tests/test_res.sym} 310 -1150 0 0 {name=x3}
+C {sky130_tests/test_bipolar.sym} 310 -1190 0 0 {name=x4}
+C {sky130_tests/test_diode.sym} 310 -1230 0 0 {name=x6}
 C {sky130_fd_pr/diode.sym} 1380 -320 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1
@@ -265,7 +268,7 @@ nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
 }
-C {sky130_tests/test_comparator.sym} 300 -150 0 0 {name=x7}
+C {sky130_tests/test_comparator.sym} 310 -990 0 0 {name=x7}
 C {sky130_fd_pr/pfet_20v0.sym} 1360 -1220 0 0 {name=M13
 L=1
 W=30
@@ -277,3 +280,7 @@ nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
 }
+C {sky130_stdcells/gates.sym} 310 -680 0 0 {name=x8}
+C {devices/launcher.sym} 80 -750 0 0 {name=h4
+descr="List of gates" 
+url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
