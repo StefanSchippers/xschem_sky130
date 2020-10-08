@@ -5,7 +5,7 @@ K {}
 V {assign #150 y=~a ;}
 S {}
 E {}
-N 420 -260 420 -240 {lab=y}
+N 420 -260 420 -230 {lab=y}
 N 420 -260 460 -260 {lab=y}
 N 380 -260 380 -200 {lab=a}
 N 340 -260 380 -260 {lab=a}
@@ -18,7 +18,9 @@ N 420 -360 500 -360 { lab=VCCPIN}
 N 500 -360 500 -320 { lab=VCCPIN}
 N 420 -320 500 -320 { lab=VCCPIN}
 N 380 -320 380 -260 { lab=a}
-N 420 -280 420 -260 {lab=y}
+N 420 -290 420 -260 {lab=y}
+N 420 -170 420 -160 { lab=VSSPIN}
+N 420 -360 420 -350 { lab=VCCPIN}
 C {devices/opin.sym} 460 -260 0 0 {name=p1 lab=y verilog_type=wire}
 C {devices/ipin.sym} 340 -260 0 0 {name=p2 lab=a}
 C {devices/lab_pin.sym} 420 -400 0 0 {name=p149 lab=VCCPIN}

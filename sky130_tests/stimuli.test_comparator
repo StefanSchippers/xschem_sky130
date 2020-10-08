@@ -4,9 +4,9 @@ slope 0.1
 format hspice_simple
 
 param vbl VDL
-param delta 0.004
-param zero 30 
-param sense 30
+param delta 0.002
+param zero 20 
+param sense 20
 
 alias read mm pp
 set EN 1
@@ -39,13 +39,13 @@ set PLUS '{vbl}'
 set CAL 1
 set LATCHF 1
 set EN  0
-s 120
+s 40
 set EN 1 
 read {vbl} {vbl}-{delta}
 read {vbl} {vbl}+{delta}
 read {vbl}+{delta} {vbl}
 read {vbl}-{delta} {vbl}
-s 120
+s 18
 
 
 endfile

@@ -35,8 +35,9 @@ T {RES} 780 -650 0 0 1 1 { hcenter=true}
 T {DIODE} 780 -340 0 0 1 1 { hcenter=true}
 T {PNP} 780 -170 0 0 1 1 { hcenter=true}
 T {Some simple DC sweeps done for testing with NGSPICE} 10 -500 0 0 0.4 0.4 {layer=4}
-T {No Model} 1350 -870 0 0 0.3 0.3 {layer=7}
+T {No Model} 1340 -880 0 0 0.3 0.3 {layer=7}
 T {No Model} 1500 -690 0 0 0.3 0.3 {layer=7}
+T {No Model} 1340 -1180 0 0 0.3 0.3 {layer=7}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 70 -680 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -265,3 +266,14 @@ model=pfet_g5v0d16v0
 spiceprefix=X
 }
 C {sky130_tests/test_comparator.sym} 300 -150 0 0 {name=x7}
+C {sky130_fd_pr/pfet_20v0.sym} 1360 -1220 0 0 {name=M13
+L=1
+W=30
+ad="'W * 0.29'" pd="'W + 2 * 0.29'"
+as="'W * 0.29'" ps="'W + 2 * 0.29'"
+nrd=0 nrs=0
+sa=0 sb=0 sd=0
+nf=1 mult=1
+model=pfet_20v0
+spiceprefix=X
+}

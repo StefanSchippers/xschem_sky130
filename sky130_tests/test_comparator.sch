@@ -27,17 +27,17 @@ T {SENSING
 T {OFF} 660 -310 0 1 0.4 0.4 {}
 T {OFF} 210 -310 0 1 0.4 0.4 {}
 T {NGSPICE MONTE CARLO SIMULATION} 1210 -320 0 0 0.8 0.8 {}
-T {Offset-compensated comparator. Detects +/- 4mv differential signal on PLUS, MINUS.
+T {Offset-compensated comparator. Detects +/- 2mv differential signal on PLUS, MINUS.
 Output on SAOUT
 Gaussian Threshold variation is added to all MOS transistors.} 1110 -250 0 0 0.6 0.6 {}
 N 120 -480 120 -460 {lab=TEMPERAT}
 N 290 -1090 320 -1090 {lab=VSS}
-N 290 -1050 290 -1030 {lab=VSS}
-N 290 -1150 290 -1130 {lab=VSSI}
+N 290 -1060 290 -1030 {lab=VSS}
+N 290 -1150 290 -1120 {lab=VSSI}
 N 1120 -1100 1150 -1100 {lab=VSS}
 N 1120 -1350 1150 -1350 {lab=VCC}
 N 1090 -1430 1120 -1430 {lab=VCC}
-N 1120 -1430 1120 -1390 {lab=VCC}
+N 1120 -1430 1120 -1380 {lab=VCC}
 N 1090 -960 1120 -960 {lab=VSSI}
 N 1120 -1000 1120 -960 {lab=VSSI}
 N 980 -1100 1080 -1100 {lab=ZERO0}
@@ -50,7 +50,7 @@ N 1120 -1270 1220 -1270 {lab=OUTDIFF}
 N 1610 -1100 1640 -1100 {lab=VSS}
 N 1610 -1350 1640 -1350 {lab=VCC}
 N 1580 -1430 1610 -1430 {lab=VCC}
-N 1610 -1430 1610 -1390 {lab=VCC}
+N 1610 -1430 1610 -1380 {lab=VCC}
 N 1580 -960 1610 -960 {lab=VSSI}
 N 1610 -1000 1610 -960 {lab=VSSI}
 N 1470 -1100 1570 -1100 {lab=ZERO1}
@@ -61,9 +61,9 @@ N 1270 -1470 1270 -1270 {lab=SAOUTF}
 N 1270 -1470 1710 -1470 {lab=SAOUTF}
 N 1610 -1270 1710 -1270 {lab=SAOUTF}
 N 1220 -1470 1220 -1270 {lab=OUTDIFF}
-N 1120 -1310 1120 -1270 {lab=OUTDIFF}
+N 1120 -1320 1120 -1270 {lab=OUTDIFF}
 N 980 -1350 980 -1270 {lab=ZERO0}
-N 1610 -1310 1610 -1270 {lab=SAOUTF}
+N 1610 -1320 1610 -1270 {lab=SAOUTF}
 N 1470 -1350 1470 -1270 {lab=ZERO1}
 N 1710 -1470 1710 -1270 {lab=SAOUTF}
 N 890 -650 920 -650 {lab=VSS}
@@ -75,35 +75,35 @@ N 930 -810 930 -770 {lab=GN}
 N 890 -770 930 -770 {lab=GN}
 N 890 -770 890 -680 {lab=GN}
 N 1090 -720 1090 -680 {lab=OUTDIFF}
-N 890 -880 890 -850 {lab=VCC}
+N 890 -880 890 -840 {lab=VCC}
 N 990 -880 1090 -880 {lab=VCC}
-N 1090 -880 1090 -850 {lab=VCC}
-N 1090 -610 1090 -600 {lab=SN}
+N 1090 -880 1090 -840 {lab=VCC}
+N 1090 -620 1090 -600 {lab=SN}
 N 990 -600 1090 -600 {lab=SN}
-N 890 -610 890 -600 {lab=SN}
+N 890 -620 890 -600 {lab=SN}
 N 990 -520 1020 -520 {lab=VSS}
-N 990 -600 990 -560 {lab=SN}
+N 990 -600 990 -550 {lab=SN}
 N 990 -900 990 -880 {lab=VCC}
 N 960 -380 990 -380 {lab=VSSI}
 N 990 -420 990 -380 {lab=VSSI}
 N 1470 -520 1500 -520 {lab=VSS}
 N 1470 -810 1500 -810 {lab=VCC}
 N 1440 -890 1470 -890 {lab=VCC}
-N 1470 -890 1470 -850 {lab=VCC}
+N 1470 -890 1470 -840 {lab=VCC}
 N 1440 -380 1470 -380 {lab=VSSI}
 N 1470 -420 1470 -380 {lab=VSSI}
-N 1470 -720 1470 -560 {lab=SAOUTF}
+N 1470 -720 1470 -550 {lab=SAOUTF}
 N 1220 -720 1360 -720 {lab=OUTDIFF}
 N 890 -880 990 -880 {lab=VCC}
 N 890 -600 990 -600 {lab=SN}
-N 1120 -1270 1120 -1140 {lab=OUTDIFF}
-N 1610 -1270 1610 -1140 {lab=SAOUTF}
+N 1120 -1270 1120 -1130 {lab=OUTDIFF}
+N 1610 -1270 1610 -1130 {lab=SAOUTF}
 N 1360 -720 1360 -520 {lab=OUTDIFF}
 N 1220 -1270 1220 -720 {lab=OUTDIFF}
 N 1710 -1270 1710 -720 {lab=SAOUTF}
 N 1710 -720 1850 -720 {lab=SAOUTF}
 N 1090 -720 1220 -720 {lab=OUTDIFF}
-N 1090 -770 1090 -720 {lab=OUTDIFF}
+N 1090 -780 1090 -720 {lab=OUTDIFF}
 N 1360 -810 1360 -720 {lab=OUTDIFF}
 N 1470 -1350 1570 -1350 {lab=ZERO1}
 N 980 -1350 1080 -1350 {lab=ZERO0}
@@ -112,7 +112,7 @@ N 1360 -520 1430 -520 {lab=OUTDIFF}
 N 1960 -520 1990 -520 {lab=VSS}
 N 1960 -810 1990 -810 {lab=VCC}
 N 1930 -890 1960 -890 {lab=VCC}
-N 1960 -890 1960 -850 {lab=VCC}
+N 1960 -890 1960 -840 {lab=VCC}
 N 1930 -380 1960 -380 {lab=VSSI}
 N 1960 -420 1960 -380 {lab=VSSI}
 N 1960 -720 1960 -550 {lab=SAOUT}
@@ -120,7 +120,7 @@ N 1850 -720 1850 -520 {lab=SAOUTF}
 N 2100 -1100 2130 -1100 {lab=VSS}
 N 2100 -1350 2130 -1350 {lab=VCC}
 N 2070 -1430 2100 -1430 {lab=VCC}
-N 2100 -1430 2100 -1390 {lab=VCC}
+N 2100 -1430 2100 -1380 {lab=VCC}
 N 2070 -960 2100 -960 {lab=VSSI}
 N 2100 -1000 2100 -960 {lab=VSSI}
 N 1960 -1100 2060 -1100 {lab=ZERO2}
@@ -130,60 +130,62 @@ N 1760 -1270 1800 -1270 {lab=SAOUT}
 N 1760 -1470 1760 -1270 {lab=SAOUT}
 N 1760 -1470 2290 -1470 {lab=SAOUT}
 N 2100 -1270 2290 -1270 {lab=SAOUT}
-N 2100 -1310 2100 -1270 {lab=SAOUT}
+N 2100 -1320 2100 -1270 {lab=SAOUT}
 N 1960 -1350 1960 -1270 {lab=ZERO2}
 N 2290 -1470 2290 -1270 {lab=SAOUT}
-N 2100 -1270 2100 -1140 {lab=SAOUT}
+N 2100 -1270 2100 -1130 {lab=SAOUT}
 N 2290 -1270 2290 -720 {lab=SAOUT}
 N 1960 -1350 2060 -1350 {lab=ZERO2}
 N 1850 -810 1920 -810 {lab=SAOUTF}
 N 1850 -520 1920 -520 {lab=SAOUTF}
 N 1470 -720 1710 -720 {lab=SAOUTF}
-N 1960 -720 2290 -720 {lab=SAOUT}
+N 2180 -720 2290 -720 {lab=SAOUT}
 N 1850 -810 1850 -720 {lab=SAOUTF}
-N 1960 -770 1960 -720 {lab=SAOUT}
-N 1470 -770 1470 -720 {lab=SAOUTF}
+N 1960 -780 1960 -720 {lab=SAOUT}
+N 1470 -780 1470 -720 {lab=SAOUTF}
 N 2180 -820 2210 -820 {lab=VCC}
 N 2150 -900 2180 -900 {lab=VCC}
-N 2180 -900 2180 -860 {lab=VCC}
-N 2180 -780 2180 -720 {lab=SAOUT}
+N 2180 -900 2180 -850 {lab=VCC}
+N 2180 -790 2180 -720 {lab=SAOUT}
 N 590 -780 620 -780 {lab=VCC}
-N 420 -850 420 -820 {lab=SP}
-N 520 -850 620 -850 {lab=SP}
-N 620 -850 620 -820 {lab=SP}
-N 420 -850 520 -850 {lab=SP}
+N 530 -850 620 -850 {lab=SP}
+N 620 -850 620 -810 {lab=SP}
+N 420 -850 530 -850 {lab=SP}
 N 420 -780 450 -780 {lab=VCC}
 N 390 -650 420 -650 {lab=VSS}
 N 620 -650 650 -650 {lab=VSS}
 N 460 -650 580 -650 {lab=GP}
 N 460 -690 460 -650 {lab=GP}
 N 420 -690 460 -690 {lab=GP}
-N 420 -740 420 -690 {lab=GP}
-N 620 -740 620 -690 {lab=OUTDIFF}
-N 620 -610 620 -600 {lab=VSSI}
-N 420 -600 620 -600 {lab=VSSI}
-N 420 -610 420 -600 {lab=VSSI}
+N 420 -750 420 -690 {lab=GP}
+N 620 -710 620 -680 {lab=OUTDIFF}
+N 620 -620 620 -600 {lab=VSSI}
+N 520 -600 620 -600 {lab=VSSI}
+N 420 -620 420 -600 {lab=VSSI}
 N 490 -560 520 -560 {lab=VSSI}
 N 520 -600 520 -560 {lab=VSSI}
 N 530 -920 560 -920 {lab=VCC}
-N 530 -880 530 -850 {lab=SP}
-N 530 -980 530 -960 {lab=VCC}
+N 530 -890 530 -850 {lab=SP}
+N 530 -980 530 -950 {lab=VCC}
 N 620 -710 680 -710 {lab=OUTDIFF}
-N 670 -410 700 -410 {lab=VSS}
-N 630 -450 630 -410 { lab=VT}
-N 630 -450 670 -450 { lab=VT}
-N 670 -350 700 -350 {lab=VSS}
-N 670 -370 670 -350 { lab=VSS}
-N 670 -480 670 -450 { lab=VT}
-N 670 -570 700 -570 {lab=VSS}
-N 670 -570 670 -540 { lab=VSS}
-N 590 -450 630 -450 { lab=VT}
 N 950 -1020 980 -1020 {lab=VCC}
 N 980 -1040 980 -1020 { lab=VCC}
 N 1440 -1020 1470 -1020 {lab=VCC}
 N 1470 -1040 1470 -1020 { lab=VCC}
 N 1930 -1020 1960 -1020 {lab=VCC}
 N 1960 -1040 1960 -1020 { lab=VCC}
+N 420 -850 420 -810 { lab=SP}
+N 990 -490 990 -480 { lab=#net1}
+N 890 -780 890 -770 { lab=GN}
+N 1120 -1070 1120 -1060 { lab=#net2}
+N 1610 -1070 1610 -1060 { lab=#net3}
+N 1470 -490 1470 -480 { lab=#net4}
+N 1960 -490 1960 -480 { lab=#net5}
+N 1960 -720 2180 -720 {lab=SAOUT}
+N 620 -750 620 -710 {lab=OUTDIFF}
+N 420 -600 520 -600 {lab=VSSI}
+N 420 -690 420 -680 { lab=GP}
+N 2100 -1070 2100 -1060 { lab=#net6}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 110 -860 0 0 { name=p92 lab=CAL }
 C {devices/ipin.sym} 110 -920 0 0 { name=p93 lab=PLUS }
@@ -203,6 +205,8 @@ place=end
 value="* .option SCALE=1e-6 
 .option method=gear seed=12
 .param VCC=1.8
+.param VCCGAUSS=agauss(1.8, 0.05, 1)
+.param VCC=VCCGAUSS
 .param VDL='VCC/2+0.2'
 .param ABSVAR=0.02
 .temp 25
@@ -229,13 +233,13 @@ value="* .option SCALE=1e-6
 .control
   let run=1
   
-  dowhile run <= 40
+  dowhile run <= 10
     if run > 1
       reset
       set appendwrite
     end
     * save saout cal i(vvcc) en plus minus
-    tran 0.1n 900n uic
+    tran 0.1n 300n uic
     write test_comparator.raw
     let run = run + 1
   end
@@ -586,22 +590,6 @@ W_N=0.42 L_N=0.15
 W_P=0.42 L_P=0.15
 ad=0.12 as=0.12 pd=0.9 ps=0.9
 VCCBPIN=VCC VSSBPIN=VSS nf=1 }
-C {devices/lab_pin.sym} 700 -410 0 1 {name=p1 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 650 -410 0 0 {name=M22
-L=0.25
-W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_01v8_lvt
-spiceprefix=X
- }
-C {devices/lab_pin.sym} 700 -350 0 1 {name=p2 lab=VSS}
-C {devices/isource.sym} 670 -510 0 0 {name=I0 value=10u}
-C {devices/lab_pin.sym} 700 -570 0 1 {name=p3 lab=VSS}
-C {devices/lab_pin.sym} 590 -450 0 0 {name=p4 lab=VT}
 C {devices/capa.sym} 980 -1070 0 0 {name=C2
 m=1
 value=15f
