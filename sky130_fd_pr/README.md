@@ -51,9 +51,9 @@ as this is a work in progress and the whole PDK is evolving.
 | `res_high_po_0p69.sym` |High precision Poly resistor, 0.69um width|
 | `res_high_po_1p41.sym` |High precision Poly resistor, 1.41um width|
 | `res_high_po.sym` |High precision Poly resistor, custom size|
-| `res_iso_pw.sym` |P-Well resistor|
+| `res_iso_pw.sym` |P-Well Poly resistor|
 | `res_xhigh_po_0p35.sym` |High precision High resistivity Poly resistor, 0.35um width|
 | `res_xhigh_po_0p69.sym` |High precision High resistivity Poly resistor, 0.69m width|
 | `res_xhigh_po_1p41.sym` |High precision High resistivity Poly resistor, 1.41um width|
-| `res_xhigh_po.sym` |High precision High resistivity resistor, custom size|
+| `res_xhigh_po.sym` |High precision High resistivity Poly resistor, custom size|
 
