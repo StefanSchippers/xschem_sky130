@@ -15,7 +15,8 @@ v {xschem version=2.9.8 file_version=1.2
 * limitations under the License.
 
 }
-G {type=high_precision_poly_resistor
+G {}
+K {type=high_precision_poly_resistor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@m"
 template="name=R1
 W=1.41
@@ -44,4 +45,4 @@ B 5 -22.5 -2.5 -17.5 2.5 {name=B dir=inout propagate_to=1 pinnumber=1}
 T {@name} 15 -28.75 0 0 0.2 0.2 {}
 T {@m * @W / @L} 15 6.25 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -11.25 0 0 0.2 0.2 {}
-T {@#2:name} -17.5 -12.5 0 1 0.15 0.15 {layer=7}
+T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
