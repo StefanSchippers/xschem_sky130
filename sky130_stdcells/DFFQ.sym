@@ -2,10 +2,10 @@ v {xschem version=2.9.7 file_version=1.2}
 G {type=stdcell
 vhdl_stop=true
 verilog_stop=true
-format="@name @pinlist @VCCPIN @VSSPIN @symname"
-template="name=x1 VCCPIN=VCC VSSPIN=VSS"
-generic_type="VCCPIN=string VSSPIN=string"
-extra="VCCPIN VSSPIN"}
+format="@name @pinlist @VCCPIN @VSSPIN @VCCBPIN @VSSBPIN @symname"
+template="name=x1 VCCPIN=VCC VSSPIN=VSS VCCBPIN=VCC VSSBPIN=VSS"
+generic_type="VCCPIN=string VSSPIN=string VCCBPIN=string VSSBPIN=string"
+extra="VCCPIN VSSPIN VCCBPIN VSSBPIN"}
 V {}
 S {}
 E {}
