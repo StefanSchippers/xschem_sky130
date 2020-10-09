@@ -18,11 +18,11 @@ some additional work is needed. This is all **work in progress**.
 
 ## CURRENT STATUS
 
-The gates can be placed used and XSCHEM generates a valid spice netlist for them. However in order to
+The gates can be placed in a XSCHEM schematic and a valid spice netlist is generated for them. However in order to
 use the SKY130 PDK circuit description some wrapper must be provided. Currently the cells have 4 
 attributes to set supply and ground net names for source and body connections:  
 
-![gate attributes ](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gate_attributes.png)
+![gate attributes](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gate_attributes.png)
 
 ## GATE FUNCTION DESCRIPTION
 ```
