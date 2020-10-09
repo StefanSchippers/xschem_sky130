@@ -28,32 +28,32 @@ as this is a work in progress and the whole PDK is evolving.
 ## DEVICE LIST
 | File name | Description |
 | ----------- | ----------- |
-| diode.sym |Diode used to describe various p-n junction between p-n wells and p-n diffusions|
-| lvsdiode.sym |Diodes used for LVS matching ? or for parasitic|
-| nfet_01v8_lvt.sym |1.8V low threshold N-type Fet|
-| nfet_01v8.sym | 1.8V standard N-type Fet|
-| nfet_03v3_nvt.sym |3.3V native threshold N-type Fet |
-| nfet_05v0_nvt.sym |5V native threshold N-type Fet|
-| nfet_20v0.sym |20V Vds, 5V Vgs N-type Fet|
-| nfet_g5v0d10v5.sym |10.5V Vds, 5V Vgs N-type Fet|
-| nfet_g5v0d16v0.sym |16V Vds, 5V Vgs N-type FET|
-| pfet_01v8_hvt.sym |1.8V high threshold P-type Fet|
-| pfet_01v8_lvt.sym |1.8V low threshold P-type Fet|
-| pfet_01v8.sym |1.8V standard P-type Fet|
-| pfet_20v0.sym |20V Vds, 5V Vgs P-type Fet|
-| pfet_g5v0d10v5.sym |10.5V Vds, 5V Vgs P-type Fet|
-| pfet_g5v0d16v0.sym |16V Vds, 5V Vgs P-type FET |
-| pnp_05v5.sym |5V Vce PNP bipolar transistor|
-| res_generic_nd.sym |N diffusion generic resistor|
-| res_generic_pd.sym |P diffusion generic resistor|
-| res_generic_po.sym |Generic Poly resistor|
-| res_high_po_0p35.sym |High precision Poly resistor, 0.35um width|
-| res_high_po_0p69.sym |High precision Poly resistor, 0.69um width|
-| res_high_po_1p41.sym |High precision Poly resistor, 1.41um width|
-| res_high_po.sym |High precision Poly resistor, custom size|
-| res_iso_pw.sym |P-Well resistor|
-| res_xhigh_po_0p35.sym |High precision High resistivity Poly resistor, 0.35um width|
-| res_xhigh_po_0p69.sym |High precision High resistivity Poly resistor, 0.69m width|
-| res_xhigh_po_1p41.sym |High precision High resistivity Poly resistor, 1.41um width|
-| res_xhigh_po.sym |High precision High resistivity resistor, custom size|
+| diode.sym` |Diode used to describe various p-n junction between p-n wells and p-n diffusions|
+| lvsdiode.sym` |Diodes used for LVS matching ? or for parasitic|
+| `nfet_01v8_lvt.sym` |1.8V low threshold N-type Fet|
+| `nfet_01v8.sym` | 1.8V standard N-type Fet|
+| `nfet_03v3_nvt.sym` |3.3V native threshold N-type Fet |
+| `nfet_05v0_nvt.sym` |5V native threshold N-type Fet|
+| `nfet_20v0.sym` |20V Vds, 5V Vgs N-type Fet|
+| `nfet_g5v0d10v5.sym` |10.5V Vds, 5V Vgs N-type Fet|
+| `nfet_g5v0d16v0.sym` |16V Vds, 5V Vgs N-type FET|
+| `pfet_01v8_hvt.sym` |1.8V high threshold P-type Fet|
+| `pfet_01v8_lvt.sym` |1.8V low threshold P-type Fet|
+| `pfet_01v8.sym` |1.8V standard P-type Fet|
+| `pfet_20v0.sym` |20V Vds, 5V Vgs P-type Fet|
+| `pfet_g5v0d10v5.sym` |10.5V Vds, 5V Vgs P-type Fet|
+| `pfet_g5v0d16v0.sym` |16V Vds, 5V Vgs P-type FET |
+| `pnp_05v5.sym` |5V Vce PNP bipolar transistor|
+| `res_generic_nd.sym` |N diffusion generic resistor|
+| `res_generic_pd.sym` |P diffusion generic resistor|
+| `res_generic_po.sym` |Generic Poly resistor|
+| `res_high_po_0p35.sym` |High precision Poly resistor, 0.35um width|
+| `res_high_po_0p69.sym` |High precision Poly resistor, 0.69um width|
+| `res_high_po_1p41.sym` |High precision Poly resistor, 1.41um width|
+| `res_high_po.sym` |High precision Poly resistor, custom size|
+| `res_iso_pw.sym` |P-Well resistor|
+| `res_xhigh_po_0p35.sym` |High precision High resistivity Poly resistor, 0.35um width|
+| `res_xhigh_po_0p69.sym` |High precision High resistivity Poly resistor, 0.69m width|
+| `res_xhigh_po_1p41.sym` |High precision High resistivity Poly resistor, 1.41um width|
+| `res_xhigh_po.sym` |High precision High resistivity resistor, custom size|
 
