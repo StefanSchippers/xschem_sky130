@@ -28,8 +28,8 @@ as this is a work in progress and the whole PDK is evolving.
 ## DEVICE LIST
 | File name | Description |
 | ----------- | ----------- |
-| diode.sym` |Diode used to describe various p-n junction between p-n wells and p-n diffusions|
-| lvsdiode.sym` |Diodes used for LVS matching ? or for parasitic|
+| `diode.sym` |Diode used to describe various p-n junction between p-n wells and p-n diffusions|
+| `lvsdiode.sym` |Diodes used for LVS matching ? or for parasitic|
 | `nfet_01v8_lvt.sym` |1.8V low threshold N-type Fet|
 | `nfet_01v8.sym` | 1.8V standard N-type Fet|
 | `nfet_03v3_nvt.sym` |3.3V native threshold N-type Fet |
