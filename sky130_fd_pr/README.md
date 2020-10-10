@@ -56,4 +56,5 @@ as this is a work in progress and the whole PDK is evolving.
 | `res_xhigh_po_0p69.sym` |High precision High resistivity Poly resistor, 0.69m width|
 | `res_xhigh_po_1p41.sym` |High precision High resistivity Poly resistor, 1.41um width|
 | `res_xhigh_po.sym` |High precision High resistivity Poly resistor, custom size|
-
+| `cap_mim_m3_1.sym` |Metal3 Insulator Metal4 (MIM) capacitor|
+| `cap_mim_m3_2.sym` |Metal4 Insulator Metal5 (MIM) capacitor|
