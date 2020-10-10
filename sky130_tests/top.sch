@@ -73,6 +73,7 @@ T {* Copyright 2020 Stefan Frederik Schippers
 * See the License for the specific language governing
 * permissions and limitations under the License.
 } 10 -580 0 0 0.5 0.5 {}
+T {MIM} 950 -1640 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 80 -1520 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -316,3 +317,5 @@ C {sky130_stdcells/gates.sym} 310 -680 0 0 {name=x8}
 C {devices/launcher.sym} 80 -750 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1230 -1570 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1390 -1570 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}

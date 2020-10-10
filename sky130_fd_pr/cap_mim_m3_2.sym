@@ -1,0 +1,20 @@
+v {xschem version=2.9.8 file_version=1.2}
+G {}
+K {type=capacitor
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L MF=@MF"
+template="name=C1 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X"
+}
+V {}
+S {}
+E {}
+L 4 0 2.5 0 30 {}
+L 4 0 -30 0 -5 {}
+L 4 -10 -5 10 -5 {}
+B 5 -2.5 -32.5 2.5 -27.5 {name=c0 dir=inout}
+B 5 -2.5 27.5 2.5 32.5 {name=c1 dir=inout}
+A 4 -0 23.75 21.25 61.92751306414704 56.14497387170592 {}
+T {c0} 5 -27.5 0 0 0.15 0.15 {layer=15}
+T {c1} 5 18.75 0 0 0.15 0.15 {layer=15}
+T {@name} 20 -18.75 0 0 0.2 0.2 {}
+T {@W / @L} 20 -3.75 0 0 0.2 0.2 {}
+T {MF=@MF} 20 11.25 0 0 0.2 0.2 {}
