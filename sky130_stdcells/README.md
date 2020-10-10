@@ -13,6 +13,11 @@ The symbols have simple names to make their function clear. In order to correctl
 [Skywater PDK](https://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr) 
 some additional work is needed. This is all **work in progress**.
 
+## GOAL
+Provide a set of digital logic gates that can be used with xschem and seamlessly simulated using the 
+Skywater 130 PDK simulation SPICE models. Allowing verilog simulation directly from Xschem is another 
+goal.
+
 ## SYMBOL DRAWINGS
 ![list of gates](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gates.png)
 
