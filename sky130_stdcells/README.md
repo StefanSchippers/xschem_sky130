@@ -24,7 +24,8 @@ goal.
 ## CURRENT STATUS
 
 The gates can be placed in a XSCHEM schematic and a valid spice netlist is generated for them. However in order to
-use the SKY130 PDK circuit description some wrapper must be provided. Currently the cells have 4 
+use the SKY130 PDK circuit description some wrapper must be provided. In their final implementation, these gates
+will bind directly to the Skywater 130 PDK models. Currently the cells have 4 
 attributes to set supply and ground net names for source and body connections:  
 
 ![gate attributes](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gate_attributes.png)
