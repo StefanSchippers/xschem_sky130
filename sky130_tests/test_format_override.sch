@@ -24,17 +24,17 @@ T {Example of netlisting rule overrride for this AND2 primitive in instance:
 
 * descend into symbol.
 
-* copy the ' format="..." ' string and make your changes
-  Remember that instead of @pinlist (which prints pin net
-  names in the order they are defined in the symbol) you can
-  reference individual pins by using @@A, @@B, @@Y and so on.
+* copy the ' format="..." ' string.
 
 * go back in parent schematic.
 
 * select AND2 gate, press 'q' for edit attributes.
 
 * on a new line paste the ' format="..." ' string, then make 
-  the change, for example change pin order.
+  yourchanges, for example change pin order and subckt reference
+  Remember that instead of @pinlist (which prints pin net
+  names in the order they are defined in the symbol) you can
+  reference individual pins by using @@A, @@B, @@Y and so on.
 
 * after specifying 'format' in instance you can also specify 
   'symname' to change the symbol (subcircuit) used for this gate
