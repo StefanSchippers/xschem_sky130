@@ -1,0 +1,318 @@
+diff -Naur -x .git sky130_fd_pr_orig/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
+--- sky130_fd_pr_orig/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice	2020-10-13 11:34:12.833753497 +0200
+@@ -1471,4 +1471,4 @@
+ + sky130_fd_pr__nfet_01v8__ua_diff_62 = 0.0
+ + sky130_fd_pr__nfet_01v8__ub_diff_62 = 0.0
+ + sky130_fd_pr__nfet_01v8__eta0_diff_62 = 0.0
+-.include "sky130_fd_pr__nfet_01v8.pm3.spice"
++.include "sky130_fd_pr__nfet_01v8__tt.pm3.spice"
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice
+--- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice	2020-10-06 20:46:01.916201666 +0200
+@@ -38,9 +38,9 @@
+ + vc3_raw_end = 4.61e-2
+ + r0_var = 50.97
+ + r1_var = 34.74
+-+ vc1_end = {vc1_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temp-30))}
+-+ vc2_end = {vc2_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temp-30))}
+-+ vc3_end = {vc3_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temp-30))}
+++ vc1_end = {vc1_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temper-30))}
+++ vc2_end = {vc2_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temper-30))}
+++ vc3_end = {vc3_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temper-30))}
+ + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
+ + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
+ + rbody_var = {rtot_var-rend_var}
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice
+--- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice	2020-10-06 20:46:01.916201666 +0200
+@@ -38,9 +38,9 @@
+ + vc3_raw_end = 4.52e-2
+ + r0_var = 28.13
+ + r1_var = 15.71
+-+ vc1_end = {vc1_raw_end/l*(1+tc1_voltco*(temp-30))}
+-+ vc2_end = {vc2_raw_end/l*(1+tc1_voltco*(temp-30))}
+-+ vc3_end = {vc3_raw_end/l*(1+tc1_voltco*(temp-30))}
+++ vc1_end = {vc1_raw_end/l*(1+tc1_voltco*(temper-30))}
+++ vc2_end = {vc2_raw_end/l*(1+tc1_voltco*(temper-30))}
+++ vc3_end = {vc3_raw_end/l*(1+tc1_voltco*(temper-30))}
+ + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
+ + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
+ + rbody_var = {rtot_var-rend_var}
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice
+--- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice	2020-10-06 20:46:01.920201817 +0200
+@@ -37,9 +37,9 @@
+ + vc3_raw_end = 8.81e-2
+ + r0_var = 15.43
+ + r1_var = 6.96
+-+ vc1_end = {vc1_raw_end*0.705/l*(1+tc1_voltco*(temp-30))}
+-+ vc2_end = {vc2_raw_end*0.705/l*(1+tc1_voltco*(temp-30))}
+-+ vc3_end = {vc3_raw_end*0.705/l*(1+tc1_voltco*(temp-30))}
+++ vc1_end = {vc1_raw_end*0.705/l*(1+tc1_voltco*(temper-30))}
+++ vc2_end = {vc2_raw_end*0.705/l*(1+tc1_voltco*(temper-30))}
+++ vc3_end = {vc3_raw_end*0.705/l*(1+tc1_voltco*(temper-30))}
+ + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
+ + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
+ + rbody_var = {rtot_var-rend_var}
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice
+--- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice	2020-10-06 20:46:01.920201817 +0200
+@@ -37,9 +37,9 @@
+ + vc3_raw_end = 5.29e-2
+ + r0_var = 8.23
+ + r1_var = 3.29
+-+ vc1_end = {vc1_raw_end*1.425/l*(1+tc1_voltco*min((temp-30),0))}
+-+ vc2_end = {vc2_raw_end*1.425/l*(1+tc1_voltco*min((temp-30),0))}
+-+ vc3_end = {vc3_raw_end*1.425/l*(1+tc1_voltco*min((temp-30),0))}
+++ vc1_end = {vc1_raw_end*1.425/l*(1+tc1_voltco*min((temper-30),0))}
+++ vc2_end = {vc2_raw_end*1.425/l*(1+tc1_voltco*min((temper-30),0))}
+++ vc3_end = {vc3_raw_end*1.425/l*(1+tc1_voltco*min((temper-30),0))}
+ + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
+ + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
+ + rbody_var = {rtot_var-rend_var}
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice
+--- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice	2020-10-06 20:46:01.912201516 +0200
+@@ -37,9 +37,9 @@
+ + vc3_raw_end = 1.72e-2
+ + r0_var = 4.29
+ + r1_var = 1.6
+-+ vc1_end = {vc1_raw_end*2.865/l*(1+(tc1_voltco*min((temp-30),0)))}
+-+ vc2_end = {vc2_raw_end*2.865/l*(1+(tc1_voltco*min((temp-30),0)))}
+-+ vc3_end = {vc3_raw_end*2.865/l*(1+(tc1_voltco*min((temp-30),0)))}
+++ vc1_end = {vc1_raw_end*2.865/l*(1+(tc1_voltco*min((temper-30),0)))}
+++ vc2_end = {vc2_raw_end*2.865/l*(1+(tc1_voltco*min((temper-30),0)))}
+++ vc3_end = {vc3_raw_end*2.865/l*(1+(tc1_voltco*min((temper-30),0)))}
+ + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
+ + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
+ + rbody_var = {rtot_var-rend_var}
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice sky130_fd_pr/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice
+--- sky130_fd_pr_orig/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice	2020-10-06 20:45:56.099982544 +0200
+@@ -24,5 +24,5 @@
+ + vt = 3.531e-3
+ + ut = 7.238e-6
+ rpwres r0 r1
+-+ r = rspwres*((l+dl)/w)*(1-av*(max(v(r0),v(r1))-min(v(r0),v(r1))))*(1+bv*(v(b)-min(v(r0),v(r1))))*(1+vt*(temp-tref)+ut*(temp-tref)*(temp-tref))
+++ r = rspwres*((l+dl)/w)*(1-av*(max(v(r0),v(r1))-min(v(r0),v(r1))))*(1+bv*(v(b)-min(v(r0),v(r1))))*(1+vt*(temper-tref)+ut*(temper-tref)*(temper-tref))
+ .ends sky130_fd_pr__res_iso_pw
+diff -Naur -x .git sky130_fd_pr_orig/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice sky130_fd_pr/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice
+--- sky130_fd_pr_orig/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice	2020-10-13 12:46:07.770616622 +0200
++++ sky130_fd_pr/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice	2020-10-06 20:45:57.932051703 +0200
+@@ -42,9 +42,9 @@
+ + res_match = {(body_pelgrom/sqrt(w*l*mult))*sky130_fd_pr__res_high_po__slope_spectre}
+ + rbody_var = {rtot_var-rend_var}
+ + rend = {(rcon+rend_var)*(1+rend_mm/sqrt(mult)*sky130_fd_pr__res_high_po__con_slope_spectre)}
+-+ vc1_end = {vc1_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temp-30))}
+-+ vc2_end = {vc2_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temp-30))}
+-+ vc3_end = {vc3_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temp-30))}
+++ vc1_end = {vc1_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temper-30))}
+++ vc2_end = {vc2_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temper-30))}
+++ vc3_end = {vc3_raw_end/pwr(l,0.5)*(1+tc1_voltco*(temper-30))}
+ + rbody = {(l*rsheet+rbody_var)*(1+res_match)/w}
+ rbody ra r2 resbody r = {rbody*(1+abs(v(r1,r2))*vc1_body+abs(v(r1,r2))*abs(v(r1,r2))/(l*l)*vc2_body)}
+ rend r1 ra  r = {rend*(1+vc1_raw_end*(1-exp(-abs(v(r2,r1))))+
+diff -Naur -x .git sky130_fd_pr_orig/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice sky130_fd_pr/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice
+--- sky130_fd_pr_orig/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice	2020-10-13 12:46:07.774616688 +0200
++++ sky130_fd_pr/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice	2020-10-06 20:45:54.851935356 +0200
+@@ -24,7 +24,7 @@
+ cpar_ds 1  3 c = {(0.172f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.07f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.25f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s r = {(48*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d r = {(97*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF02W0p84L0p15
+@@ -39,7 +39,7 @@
+ cpar_ds 1  3 c = {(0.41f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.15f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.59f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s r = {(32*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d r = {(50*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF04W0p84L0p15
+@@ -54,7 +54,7 @@
+ cpar_ds 1  3 c = {(1.47f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.305f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.73f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s r = {(8*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d r = {(14*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF04W3p00L0p15
+@@ -70,7 +70,7 @@
+ cpar_ds 1  3 c = {(0.09f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult_p42)}
+ cpar_gs 2  3 c = {(0.115f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult_p42)}
+ cpar_gd 2  3 c = {(0.242f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult_p42)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s r = {(95.8*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d r = {(195*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF02W0p42L0p15
+@@ -85,7 +85,7 @@
+ cpar_ds 1  3  c = {(0.7f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gs 2  3  c = {(0.163f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gd 2  1  c = {(0.456f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+-rg 2  g  r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g  r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s  r = {(12*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d  r = {(26*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF02W3p00L0p15
+@@ -100,7 +100,7 @@
+ cpar_ds 1  3 c = {(2.92f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.61f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(1.45f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s r = {(4.8*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d r = {(7*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF08W3p00L0p15
+@@ -115,7 +115,7 @@
+ cpar_ds 1  3 c = {(0.82f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.33f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.84f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rs 3  s r = {(19.2*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
+ rd 1  d r = {(24.9*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
+ .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF08W0p84L0p15
+diff -Naur -x .git sky130_fd_pr_orig/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice sky130_fd_pr/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice
+--- sky130_fd_pr_orig/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice	2020-10-13 12:46:07.774616688 +0200
++++ sky130_fd_pr/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice	2020-10-06 20:45:58.720081410 +0200
+@@ -132,7 +132,7 @@
+ cpar_ds 1  3 c = {(0.41f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.74f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.119f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+-rg 2  g r = {(rg_sub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_sub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(154*sky130_fd_pr__rf_pfet_01v8__aw_rd_mult)}
+ rs 3  s r = {(76*sky130_fd_pr__rf_pfet_01v8__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_aF02W1p68L0p15
+@@ -147,7 +147,7 @@
+ cpar_ds 1  3 c = {(1.22f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult_2)}
+ cpar_gd 2  1 c = {(1.665f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult_2)}
+ cpar_gs 2  3 c = {(0.285f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult_2)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(50*sky130_fd_pr__rf_pfet_01v8__aw_rd_mult)}
+ rs 3  s r = {(24*sky130_fd_pr__rf_pfet_01v8__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_aF02W5p00L0p15
+@@ -162,7 +162,7 @@
+ cpar_ds 1  3 c = {(0.17f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.459f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.257f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(306*sky130_fd_pr__rf_pfet_01v8__aw_rd_mult)}
+ rs 3  s r = {(152.5*sky130_fd_pr__rf_pfet_01v8__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_aF02W0p84L0p15
+@@ -177,7 +177,7 @@
+ cpar_ds 1  3 c = {(0.82f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.984f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.354f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(78*sky130_fd_pr__rf_pfet_01v8__aw_rd_mult)}
+ rs 3  s r = {(50.6*sky130_fd_pr__rf_pfet_01v8__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_aF04W1p68L0p15
+@@ -192,7 +192,7 @@
+ cpar_ds 1  3  c = {(0.7f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gd 2  1  c = {(1.056f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+ cpar_gs 2  3  c = {(0.232f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
+-rg 2  g  r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g  r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d  r = {(78*sky130_fd_pr__rf_pfet_01v8__aw_rd_mult)}
+ rs 3  s  r = {(38.5*sky130_fd_pr__rf_pfet_01v8__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_aF02W3p00L0p15
+diff -Naur -x .git sky130_fd_pr_orig/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice sky130_fd_pr/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice
+--- sky130_fd_pr_orig/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice	2020-10-13 12:46:07.774616688 +0200
++++ sky130_fd_pr/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice	2020-10-06 20:45:55.663966063 +0200
+@@ -24,7 +24,7 @@
+ cpar_ds 1  3 c = {(0.56f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.34f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.119f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+-rg 2  g r = {(rg_sub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_sub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(154*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rd_mult)}
+ rs 3  s r = {(76*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_mvt_aF02W1p68L0p15
+@@ -39,7 +39,7 @@
+ cpar_ds 1  3 c = {(0.17f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.300f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.100f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(306*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rd_mult)}
+ rs 3  s r = {(152.5*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_mvt_aF02W0p84L0p15
+@@ -54,7 +54,7 @@
+ cpar_ds 1  3 c = {(0.82f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+ cpar_gd 2  1 c = {(0.984f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+ cpar_gs 2  3 c = {(0.354f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
+-rg 2  g r = {(rg_stub_tnom*(1+(temp-tref)*tc1rcgp+(temp-tref)*(temp-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temp-tref)*tc1rsgpu+(temp-tref)*(temp-tref)*tc2rsgpu))}
++rg 2  g r = {(rg_stub_tnom*(1+(temper-tref)*tc1rcgp+(temper-tref)*(temper-tref)*tc2rcgp))+(rg_dist_tnom*(1+(temper-tref)*tc1rsgpu+(temper-tref)*(temper-tref)*tc2rsgpu))}
+ rd 1  d r = {(78*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rd_mult)}
+ rs 3  s r = {(50.6*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rs_mult)}
+ .ends sky130_fd_pr__rf_pfet_01v8_mvt_aF04W1p68L0p15
+diff -Naur -x .git sky130_fd_pr_orig/models/sky130.lib_tt.spice sky130_fd_pr/models/sky130.lib_tt.spice
+--- sky130_fd_pr_orig/models/sky130.lib_tt.spice	1970-01-01 01:00:00.000000000 +0100
++++ sky130_fd_pr/models/sky130.lib_tt.spice	2020-10-06 23:33:02.826498651 +0200
+@@ -0,0 +1,55 @@
++* Copyright 2020 The SkyWater PDK Authors
++*
++* Licensed under the Apache License, Version 2.0 (the "License");
++* you may not use this file except in compliance with the License.
++* You may obtain a copy of the License at
++*
++*     https://www.apache.org/licenses/LICENSE-2.0
++*
++* Unless required by applicable law or agreed to in writing, software
++* distributed under the License is distributed on an "AS IS" BASIS,
++* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++* See the License for the specific language governing permissions and
++* limitations under the License.
++
++******* SkyWater sky130 model library *********
++
++* Typical corner (tt)
++.lib tt
++* MOSFET
++.include "../cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice"
++.include "../cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice"
++.include "../cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice"
++.include "../cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice"
++.include "../cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice"
++.include "../cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice"
++.include "../cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice"
++.include "../cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice"
++.include "../cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice"
++.include "../cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice"
++.include "../cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice"
++.include "../cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice"
++.include "../cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice"
++.include "../cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice"
++.include "corners/tt/nonfet.spice"
++* Mismatch parameters
++.include "../cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice"
++.include "../cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice"
++.include "../cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice"
++.include "../cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice"
++.include "../cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice"
++.include "../cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice"
++.include "../cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice"
++.include "../cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice"
++.include "../cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice"
++* Resistor/Capacitor
++.include "r+c/res_typical__cap_typical.spice"
++.include "r+c/res_typical__cap_typical__lin.spice"
++* Special cells
++.include "corners/tt/specialized_cells.spice"
++* All models
++.include "all.spice"
++* Corner
++.include "corners/tt/rf.spice"
++.endl
++

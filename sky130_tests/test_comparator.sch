@@ -16,6 +16,7 @@ v {xschem version=2.9.8 file_version=1.2
 
 }
 G {}
+K {}
 V {}
 S {}
 E {}
@@ -233,7 +234,7 @@ value="* .option SCALE=1e-6
 
 .lib \\"/home/schippes/sky130_fd_pr/models/sky130.lib.spice\\" tt
 ** contains only tt corner, loads faster
-* .lib \\"/home/schippes/sky130_fd_pr/models/sky130.lib_stefan_tt.spice\\" tt
+* .lib \\"/home/schippes/sky130_fd_pr/models/sky130.lib_tt.spice\\" tt
 
 * temporary fix: some model equations use temp instead of the true
 * ngspice temperature variable, 'temper'
