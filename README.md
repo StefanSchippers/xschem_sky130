@@ -9,5 +9,4 @@ XSCHEM symbol libraries for the Google-Skywater 130nm process design kit.
 -`xschemrc          ` Xschem configuration file.
 
 Run xschem from this directory. It will read the xschemrc file to correctly set the search paths.
-
 Stefan
