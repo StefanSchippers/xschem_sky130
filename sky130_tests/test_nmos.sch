@@ -101,13 +101,6 @@ C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1}
 C {devices/lab_pin.sym} 1190 -90 0 1 {name=p12 lab=S}
 C {devices/lab_pin.sym} 1210 -140 0 1 {name=p13 lab=B}
 C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
-L=0.15
-W=1
-nf=1 mult=1
-model=nfet_01v8_lvt
-spiceprefix=X
-}
 C {sky130_fd_pr/nfet_01v8.sym} 920 -140 0 0 {name=M2
 L=0.15
 W=1  
@@ -273,3 +266,14 @@ value=".include ~/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corne
 * Corner
 .include ~/sky130_fd_pr/models/corners/tt/rf.spice
 "}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
+L=0.15
+W=1
+ad="[expr @W *0.29]" pd="[expr 2*(@W + 0.29)]"
+as="[expr @W *0.29]" ps="[expr 2*(@W + 0.29)]"
+nrd="[expr 0.29/@W ]" nrs="[expr 0.29/@W ]"
+sa=0 sb=0 sd=0
+nf=1 mult=1
+model=nfet_01v8_lvt
+spiceprefix=X
+}

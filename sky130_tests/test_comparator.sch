@@ -622,7 +622,7 @@ value=15f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1930 -1020 0 0 {name=p7 lab=VCC}
-C {devices/code.sym} 720 -200 0 0 {name=TT_MODELS
+C {devices/code.sym} 720 -200 0 0 {name="TT_MODELS"
 only_toplevel=true
 place=end
 value=".include ~/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
