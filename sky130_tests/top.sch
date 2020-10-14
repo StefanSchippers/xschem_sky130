@@ -320,7 +320,4 @@ url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.t
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1230 -1215 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1390 -1215 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_tests/test_format_override.sym} 310 -640 0 0 {name=x9}
-C {sky130_tests/not.sym} 970 -1410 0 0 {name=x10 m=1 
-+ W_N=1 L_N=0.15 W_P=2 L_P=0.15 
-+ VCCPIN=VCC VSSPIN=VSS}
 C {sky130_tests/test_nmos_sizes.sym} 310 -950 0 0 {name=x11}
