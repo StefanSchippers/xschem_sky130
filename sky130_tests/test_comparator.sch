@@ -232,9 +232,7 @@ value="* .option SCALE=1e-6
 ** then do 'Simulation->Utile Stimuli Editor (GUI)' and press 'Translate'
 .include \\"stimuli_test_comparator.cir\\"
 
-.lib \\"/home/schippes/sky130_fd_pr/models/sky130.lib.spice\\" tt
-** contains only tt corner, loads faster
-* .lib \\"/home/schippes/sky130_fd_pr/models/sky130.lib_tt.spice\\" tt
+*.lib ~/sky130_fd_pr/models/sky130.lib.spice tt
 
 * temporary fix: some model equations use temp instead of the true
 * ngspice temperature variable, 'temper'
@@ -624,3 +622,41 @@ value=15f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1930 -1020 0 0 {name=p7 lab=VCC}
+C {devices/code.sym} 720 -200 0 0 {name=TT_MODELS
+only_toplevel=true
+place=end
+value=".include ~/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
+.include ~/sky130_fd_pr/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
+.include ~/sky130_fd_pr/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
+.include ~/sky130_fd_pr/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
+.include ~/sky130_fd_pr/models/corners/tt/nonfet.spice
+* Mismatch parameters
+.include ~/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
+.include ~/sky130_fd_pr/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
+* Resistor/Capacitor
+.include ~/sky130_fd_pr/models/r+c/res_typical__cap_typical.spice
+.include ~/sky130_fd_pr/models/r+c/res_typical__cap_typical__lin.spice
+* Special cells
+.include ~/sky130_fd_pr/models/corners/tt/specialized_cells.spice
+* All models
+.include ~/sky130_fd_pr/models/all.spice
+* Corner
+.include ~/sky130_fd_pr/models/corners/tt/rf.spice
+"}

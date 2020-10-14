@@ -17,7 +17,7 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {type=pwell_resistor
-format="@spiceprefix@name @#0 @#1  @pinlist sky130_fd_pr__@model W=@W L=@L m=@m"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@m"
 template="name=R1
 rho=3050
 W=2.65
