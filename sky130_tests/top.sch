@@ -36,7 +36,7 @@ diode_pd2nw_05v5
 diode_pd2nw_11v0
 diode_pd2nw_05v5_hvt
 diode_pd2nw_05v5_lvt
-} 1370 -325 0 0 0.2 0.2 {}
+} 1370 -320 0 0 0.2 0.2 {}
 T {Available_models:
 diode_pw2nd_05v5
 diode_pw2nd_11v0
@@ -53,7 +53,7 @@ T {PNP} 950 -170 0 0 1 1 { hcenter=true}
 T {Some simple DC sweeps done for testing with NGSPICE} 20 -1340 0 0 0.4 0.4 {layer=4}
 T {No Model} 1510 -740 0 0 0.3 0.3 {layer=7}
 T {No Model} 1670 -620 0 0 0.3 0.3 {layer=7}
-T {No Model} 1510 -965 0 0 0.3 0.3 {layer=7}
+T {No Model} 1510 -960 0 0 0.3 0.3 {layer=7}
 T {Digital standard cells} 50 -850 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 10 -1560 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 10 -790 0 0 0.3 0.3 {layer=11}
@@ -90,12 +90,12 @@ C {sky130_tests/test_inv.sym} 310 -1030 0 0 {name=x5}
 C {sky130_tests/test_res.sym} 310 -1150 0 0 {name=x3}
 C {sky130_tests/test_bipolar.sym} 310 -1190 0 0 {name=x4}
 C {sky130_tests/test_diode.sym} 310 -1230 0 0 {name=x6}
-C {sky130_fd_pr/diode.sym} 1550 -275 0 0 {name=D1
+C {sky130_fd_pr/diode.sym} 1550 -270 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1
 
 }
-C {sky130_fd_pr/lvsdiode.sym} 1230 -275 0 0 {name=D2
+C {sky130_fd_pr/lvsdiode.sym} 1230 -270 0 0 {name=D2
 model=diode_pw2nd_11v0
 area=1
 
@@ -257,7 +257,7 @@ nf=1 mult=1
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1210 -1005 0 0 {name=M9
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1210 -1000 0 0 {name=M9
 L=0.5
 W=1
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
@@ -290,7 +290,7 @@ nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_g5v0d16v0.sym} 1370 -1005 0 0 {name=M12
+C {sky130_fd_pr/pfet_g5v0d16v0.sym} 1370 -1000 0 0 {name=M12
 L=0.66
 W=5.0
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
@@ -302,7 +302,7 @@ model=pfet_g5v0d16v0
 spiceprefix=X
 }
 C {sky130_tests/test_comparator.sym} 310 -990 0 0 {name=x7}
-C {sky130_fd_pr/pfet_20v0.sym} 1530 -1005 0 0 {name=M13
+C {sky130_fd_pr/pfet_20v0.sym} 1530 -1000 0 0 {name=M13
 L=1
 W=30
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
@@ -317,8 +317,8 @@ C {sky130_stdcells/gates.sym} 310 -680 0 0 {name=x8}
 C {devices/launcher.sym} 80 -750 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1230 -1215 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1390 -1215 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1230 -1210 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1390 -1210 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_tests/test_format_override.sym} 310 -640 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 310 -950 0 0 {name=x11}
 C {devices/launcher.sym} 590 -1620 0 0 {name=h5
