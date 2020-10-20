@@ -15,9 +15,8 @@ v {xschem version=2.9.8 file_version=1.2
 * limitations under the License.
 
 }
-G {
-y <= not a after 0.1 ns ;}
 G {}
+K {}
 V {assign #150 y=~a ;}
 S {}
 E {}
@@ -42,17 +41,21 @@ C {devices/ipin.sym} 340 -260 0 0 {name=p2 lab=a}
 C {devices/lab_pin.sym} 420 -400 0 0 {name=p149 lab=VCCPIN}
 C {devices/lab_pin.sym} 420 -140 0 0 {name=p3 lab=VSSPIN}
 C {devices/title.sym} 160 0 0 0 {name=l3 author="Stefan Schippers"}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 400 -200 0 0 {name=M1
-L=L_N
-W=W_N
-nf=1 mult=1
-model=nfet_01v8_lvt
-spiceprefix=X
-}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 400 -320 0 0 {name=M2
 L=L_P
 W=W_P
 nf=1 mult=1
 model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 400 -200 0 0 {name=M4
+L=0.15
+W=1
+ad="'@W *0.29'" pd="'2*(@W + 0.29)'"
+as="'@W *0.29'" ps="'2*(@W + 0.29)'"
+nrd="'0.29/@W '" nrs="'0.29/@W '"
+sa=0 sb=0 sd=0
+nf=1 mult=1
+model=nfet_01v8_lvt
 spiceprefix=X
 }

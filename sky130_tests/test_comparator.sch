@@ -220,6 +220,11 @@ only_toplevel=true
 place=end
 value="* .option SCALE=1e-6 
 .option method=gear seed=12
+
+* this experimental option enables mos model bin 
+* selection based on W/NF instead of W
+.option wnflag=1 
+
 .param VCC=1.8
 .param VCCGAUSS=agauss(1.8, 0.05, 1)
 .param VCC=VCCGAUSS
