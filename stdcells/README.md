@@ -19,7 +19,7 @@ Skywater 130 PDK simulation SPICE models. Allowing verilog simulation directly f
 goal.
 
 ## SYMBOL DRAWINGS
-![list of gates](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gates.png)
+![list of gates](https://github.com/StefanSchippers/xschem_sky130/blob/main/stdcells/doc/gates.png)
 
 ## CURRENT STATUS
 
@@ -28,7 +28,7 @@ use the SKY130 PDK circuit description some wrapper must be provided. In their f
 will bind directly to the Skywater 130 PDK models. Currently the cells have 4 
 attributes to set supply and ground net names for source and body connections:  
 
-![gate attributes](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gate_attributes.png)
+![gate attributes](https://github.com/StefanSchippers/xschem_sky130/blob/main/stdcells/doc/gate_attributes.png)
 
 ## GATE FUNCTION DESCRIPTION
 ```
