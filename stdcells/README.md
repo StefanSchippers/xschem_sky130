@@ -1,4 +1,4 @@
-# XSCHEM Process agnostic Digital standard cell symbols for the Google-Skywater SKY130 Process Design Kit (PDK)
+# XSCHEM Process agnostic Digital standard cell symbols.
 
 ## *Warning: This is currently Work in progress.*
 
@@ -15,7 +15,7 @@ some additional work is needed. This is all **work in progress**.
 
 ## GOAL
 Provide a set of digital logic gates that can be used with xschem and seamlessly simulated using the 
-Skywater 130 PDK as well as other foundry provided simulation SPICE models. 
+Skywater 130 PDK as well as other foundry provided gate libraries and SPICE dimulation models. 
 Allowing verilog simulation directly from Xschem is another goal.
 
 ## SYMBOL DRAWINGS
