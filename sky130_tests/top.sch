@@ -26,7 +26,7 @@ L 4 850 -715 1810 -715 {}
 L 4 850 -330 1810 -330 {}
 L 4 850 -195 1810 -195 {}
 P 4 7 310 -1310 310 -1270 300 -1270 310 -1250 320 -1270 310 -1270 310 -1310 {fill=true}
-T {Google-Skywater PDK links} 50 -1610 0 0 0.6 0.6 {layer=8}
+T {Google-Skywater PDK links} 60 -1700 0 0 0.6 0.6 {layer=8}
 T {Available models:
 diode_pw2nd_05v5
 diode_pw2nd_11v0
@@ -55,7 +55,7 @@ T {No Model} 1510 -740 0 0 0.3 0.3 {layer=7}
 T {No Model} 1670 -620 0 0 0.3 0.3 {layer=7}
 T {No Model} 1510 -960 0 0 0.3 0.3 {layer=7}
 T {Digital standard cells} 50 -850 0 0 0.6 0.6 {layer=8}
-T {Ctrl-Click to open link} 10 -1560 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 20 -1650 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 10 -790 0 0 0.3 0.3 {layer=11}
 T {* Copyright 2020 Stefan Frederik Schippers
 * 
@@ -75,13 +75,13 @@ T {* Copyright 2020 Stefan Frederik Schippers
 } 10 -580 0 0 0.5 0.5 {}
 T {MIM} 950 -1235 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/launcher.sym} 80 -1520 0 0 {name=h1
+C {devices/launcher.sym} 90 -1610 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
 url="http://skywater-pdk.readthedocs.io/en/latest"}
-C {devices/launcher.sym} 80 -1400 0 0 {name=h2
+C {devices/launcher.sym} 90 -1530 0 0 {name=h2
 descr="Google-Skywater PDK git repo" 
-url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr"}
-C {devices/launcher.sym} 80 -1460 0 0 {name=h3
+url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs"}
+C {devices/launcher.sym} 90 -1570 0 0 {name=h3
 descr="Google-Skywater PDK documentation: Device details" 
 url="https://skywater-pdk.readthedocs.io/en/latest/rules/device-details.html"}
 C {sky130_tests/test_nmos.sym} 310 -1110 0 0 {name=x1}
@@ -312,8 +312,9 @@ sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
+spice_ignore=true
 }
-C {sky130_stdcells/gates.sym} 310 -680 0 0 {name=x8}
+C {stdcells/gates.sym} 310 -680 0 0 {name=x8}
 C {devices/launcher.sym} 80 -750 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
@@ -321,9 +322,9 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1230 -1210 0 0 {name=C1 model=cap_mim_m3_1 W=1
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1390 -1210 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_tests/test_format_override.sym} 310 -640 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 310 -950 0 0 {name=x11}
-C {devices/launcher.sym} 590 -1620 0 0 {name=h5
+C {devices/launcher.sym} 90 -1490 0 0 {name=h5
 descr="XSCHEM on Github" 
 url="https://github.com/StefanSchippers/xschem"}
-C {devices/launcher.sym} 590 -1570 0 0 {name=h6
+C {devices/launcher.sym} 90 -1450 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
