@@ -314,7 +314,7 @@ model=pfet_20v0
 spiceprefix=X
 spice_ignore=true
 }
-C {stdcells/gates.sym} 310 -680 0 0 {name=x8}
+C {sky130_tests/gates.sym} 310 -680 0 0 {name=x8}
 C {devices/launcher.sym} 80 -750 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
@@ -328,4 +328,4 @@ url="https://github.com/StefanSchippers/xschem"}
 C {devices/launcher.sym} 90 -1450 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
-C {sky130_stdcells/gates_sky130.sym} 310 -600 0 0 {name=x10}
+C {sky130_tests/gates_sky130.sym} 310 -600 0 0 {name=x10}
