@@ -24,4 +24,7 @@ goal.
 
 The gates can be placed in a XSCHEM schematic and a valid spice netlist is generated for them. 
 you must however include the spice netlists for all the used digital gates.
+Below a simple trivial example of a combinatorial gate and a flip-flop simulated with ngspice.
 
+
+![test sim](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/test_sim.png)
