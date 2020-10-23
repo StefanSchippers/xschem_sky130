@@ -72,7 +72,7 @@ T {* Copyright 2020 Stefan Frederik Schippers
 * OR CONDITIONS OF ANY KIND,* either express or implied.
 * See the License for the specific language governing
 * permissions and limitations under the License.
-} 10 -580 0 0 0.5 0.5 {}
+} 20 -570 0 0 0.5 0.5 {}
 T {MIM} 950 -1235 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 90 -1610 0 0 {name=h1

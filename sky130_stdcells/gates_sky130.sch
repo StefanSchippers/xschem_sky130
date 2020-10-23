@@ -5,6 +5,21 @@ V {}
 S {}
 E {}
 T {All the *_1 sized gates of the skywater_pdk sky130_fd_sc_hd library} 345 -215 0 0 2 2 {layer=1}
+T {* Copyright 2020 Stefan Frederik Schippers
+* 
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to
+* in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+* OR CONDITIONS OF ANY KIND,* either express or implied.
+* See the License for the specific language governing
+* permissions and limitations under the License.
+} 2640 -2390 0 0 0.6 0.6 {}
 C {sky130_stdcells/a221o_1.sym} 160 -1220 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 80 -1300 0 0 {name=p1 lab=A1}
 C {devices/lab_pin.sym} 80 -1260 0 0 {name=p2 lab=A2}
