@@ -1,0 +1,29 @@
+v { version=2.9.8 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @@A0 @@A1 @@S @VGND @VNB @VPB @VPWR @@Y @prefix\\\\mux2i_2"
+template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
+extra="VGND VNB VPB VPWR prefix"}
+V {}
+S {}
+E {}
+L 4 -20 -160 0 -160 {}
+L 4 -20 -120 0 -120 {}
+L 4 -20 -80 20 -80 {}
+L 4 0 -170 0 -110 {}
+L 4 0 -110 37.5 -125 {}
+L 4 37.5 -155 37.5 -125 {}
+L 4 0 -170 37.5 -155 {}
+L 4 20 -117.5 20 -80 {}
+L 4 47.5 -140 60 -140 {}
+B 5 -22.5 -162.5 -17.5 -157.5 {name=A0 dir=in }
+B 5 -22.5 -122.5 -17.5 -117.5 {name=A1 dir=in }
+B 5 -22.5 -82.5 -17.5 -77.5 {name=S dir=in }
+B 5 57.5 -142.5 62.5 -137.5 {name=Y dir=out }
+A 4 42.5 -140 5 0 360 {}
+T {A0} -15 -174 0 0 0.2 0.2 {}
+T {A1} -15 -134 0 0 0.2 0.2 {}
+T {Y} 55 -154 0 1 0.2 0.2 {}
+T {@name} 1.25 -145 0 0 0.2 0.2 {}
+T {@symname} 5 -185 0 0 0.2 0.2 {}
+T {S} -15 -94 0 0 0.2 0.2 {}
