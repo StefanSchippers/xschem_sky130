@@ -30,23 +30,18 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 540 -190 0 0 {name=STIMULI 
 only_toplevel=true
 place=end
+format=eval(@value )
 value="* .option SCALE=1e-6 
 .temp 25
 
-.include /home/schippes/skywater-pdk/sky130_fd_sc_hd/cells/nand2/sky130_fd_sc_hd__nand2_1.spice
-.include /home/schippes/skywater-pdk/sky130_fd_sc_hd/cells/dfrtp/sky130_fd_sc_hd__dfrtp_1.spice
-* .include $SKYWATER_STDCELLS/cells/nand2/sky130_fd_sc_hd__nand2_1.spice
-* .include $SKYWATER_STDCELLS/cells/dfrtp/sky130_fd_sc_hd__dfrtp_1.spice
-
-
+* .include /home/schippes/skywater-pdk/sky130_fd_sc_hd/cells/nand2/sky130_fd_sc_hd__nand2_1.spice
+* .include /home/schippes/skywater-pdk/sky130_fd_sc_hd/cells/dfrtp/sky130_fd_sc_hd__dfrtp_1.spice
+.include $SKYWATER_STDCELLS\\\\/cells/nand2/sky130_fd_sc_hd__nand2_1.spice
+.include $SKYWATER_STDCELLS\\\\/cells/dfrtp/sky130_fd_sc_hd__dfrtp_1.spice
+**
 vvcc vcc 0 dc 1.8
 vvss vss 0 0
-
 .tran 10p 80n
-
-
-
-
 "}
 C {devices/lab_pin.sym} 260 -280 0 0 {name=p1 lab=A}
 C {devices/lab_pin.sym} 260 -240 0 0 {name=p2 lab=B}
