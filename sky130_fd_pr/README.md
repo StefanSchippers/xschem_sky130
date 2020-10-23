@@ -15,6 +15,8 @@ Provide a set of symbols that can be used to draw circuit schematics in XSCHEM.
 Netlists in various target formats can be extracted for simulation or Layout vs Schematic checks.
 The set of symbols is designed to correctly link to the Skywater PDK model files, allowing to
 seamlessly simulate the circuit with SPICE simulators.
+A good tutorial for starting with xschem and Sky130 pdk can be found
+[here](https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md). Thanks Bluecmd!
 
 ## SYMBOL DRAWINGS
 
