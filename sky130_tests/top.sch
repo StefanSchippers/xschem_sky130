@@ -329,3 +329,4 @@ C {devices/launcher.sym} 90 -1450 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
 C {sky130_tests/gates_sky130.sym} 310 -600 0 0 {name=x10}
+C {sky130_tests/test_stdcells.sym} 310 -910 0 0 {name=x12}

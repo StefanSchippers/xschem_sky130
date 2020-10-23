@@ -250,41 +250,41 @@ C {devices/lab_pin.sym} 720 -1890 0 0 {name=p184 lab=B}
 C {devices/lab_pin.sym} 720 -1850 0 0 {name=p185 lab=C}
 C {devices/lab_pin.sym} 720 -1810 0 0 {name=p186 lab=D}
 C {devices/lab_pin.sym} 840 -1870 0 1 {name=p187 lab=Y}
-C {sky130_stdcells/nand4b_1.sym} 780 -2050 0 0 {name=x44 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 720 -2110 0 0 {name=p188 lab=A_N}
-C {devices/lab_pin.sym} 720 -2070 0 0 {name=p189 lab=B}
-C {devices/lab_pin.sym} 720 -2030 0 0 {name=p190 lab=C}
-C {devices/lab_pin.sym} 720 -1990 0 0 {name=p191 lab=D}
-C {devices/lab_pin.sym} 840 -2050 0 1 {name=p192 lab=Y}
-C {sky130_stdcells/nand4bb_1.sym} 780 -2230 0 0 {name=x45 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 720 -2290 0 0 {name=p193 lab=A_N}
-C {devices/lab_pin.sym} 720 -2250 0 0 {name=p194 lab=B_N}
-C {devices/lab_pin.sym} 720 -2210 0 0 {name=p195 lab=C}
-C {devices/lab_pin.sym} 720 -2170 0 0 {name=p196 lab=D}
-C {devices/lab_pin.sym} 840 -2230 0 1 {name=p197 lab=Y}
-C {sky130_stdcells/mux2_1.sym} 460 -2090 0 0 {name=x46 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 420 -2110 0 0 {name=p198 lab=A0}
-C {devices/lab_pin.sym} 420 -2070 0 0 {name=p199 lab=A1}
-C {devices/lab_pin.sym} 420 -2030 0 0 {name=p200 lab=S}
-C {devices/lab_pin.sym} 500 -2090 0 1 {name=p201 lab=X}
-C {sky130_stdcells/mux2i_1.sym} 440 -2090 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 420 -2250 0 0 {name=p202 lab=A0}
-C {devices/lab_pin.sym} 420 -2210 0 0 {name=p203 lab=A1}
-C {devices/lab_pin.sym} 420 -2170 0 0 {name=p204 lab=S}
-C {devices/lab_pin.sym} 500 -2230 0 1 {name=p205 lab=Y}
-C {sky130_stdcells/maj3_1.sym} 140 -2050 0 0 {name=x48 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 80 -2090 0 0 {name=p206 lab=A}
-C {devices/lab_pin.sym} 80 -2050 0 0 {name=p207 lab=B}
-C {devices/lab_pin.sym} 80 -2010 0 0 {name=p208 lab=C}
-C {devices/lab_pin.sym} 200 -2050 0 1 {name=p209 lab=X}
-C {sky130_stdcells/mux4_1.sym} 155 -2275 0 0 {name=x49 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 115 -2335 0 0 {name=p210 lab=A0}
-C {devices/lab_pin.sym} 115 -2295 0 0 {name=p211 lab=A1}
-C {devices/lab_pin.sym} 115 -2255 0 0 {name=p212 lab=A2}
-C {devices/lab_pin.sym} 115 -2215 0 0 {name=p213 lab=A3}
-C {devices/lab_pin.sym} 115 -2175 0 0 {name=p214 lab=S0}
-C {devices/lab_pin.sym} 115 -2145 0 0 {name=p215 lab=S1}
-C {devices/lab_pin.sym} 195 -2275 0 1 {name=p216 lab=X}
+C {sky130_stdcells/nand4b_1.sym} 780 -2020 0 0 {name=x44 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 720 -2080 0 0 {name=p188 lab=A_N}
+C {devices/lab_pin.sym} 720 -2040 0 0 {name=p189 lab=B}
+C {devices/lab_pin.sym} 720 -2000 0 0 {name=p190 lab=C}
+C {devices/lab_pin.sym} 720 -1960 0 0 {name=p191 lab=D}
+C {devices/lab_pin.sym} 840 -2020 0 1 {name=p192 lab=Y}
+C {sky130_stdcells/nand4bb_1.sym} 780 -2200 0 0 {name=x45 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 720 -2260 0 0 {name=p193 lab=A_N}
+C {devices/lab_pin.sym} 720 -2220 0 0 {name=p194 lab=B_N}
+C {devices/lab_pin.sym} 720 -2180 0 0 {name=p195 lab=C}
+C {devices/lab_pin.sym} 720 -2140 0 0 {name=p196 lab=D}
+C {devices/lab_pin.sym} 840 -2200 0 1 {name=p197 lab=Y}
+C {sky130_stdcells/mux2_1.sym} 460 -2060 0 0 {name=x46 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 420 -2080 0 0 {name=p198 lab=A0}
+C {devices/lab_pin.sym} 420 -2040 0 0 {name=p199 lab=A1}
+C {devices/lab_pin.sym} 420 -2000 0 0 {name=p200 lab=S}
+C {devices/lab_pin.sym} 500 -2060 0 1 {name=p201 lab=X}
+C {sky130_stdcells/mux2i_1.sym} 440 -2060 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 420 -2220 0 0 {name=p202 lab=A0}
+C {devices/lab_pin.sym} 420 -2180 0 0 {name=p203 lab=A1}
+C {devices/lab_pin.sym} 420 -2140 0 0 {name=p204 lab=S}
+C {devices/lab_pin.sym} 500 -2200 0 1 {name=p205 lab=Y}
+C {sky130_stdcells/maj3_1.sym} 140 -2020 0 0 {name=x48 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 80 -2060 0 0 {name=p206 lab=A}
+C {devices/lab_pin.sym} 80 -2020 0 0 {name=p207 lab=B}
+C {devices/lab_pin.sym} 80 -1980 0 0 {name=p208 lab=C}
+C {devices/lab_pin.sym} 200 -2020 0 1 {name=p209 lab=X}
+C {sky130_stdcells/mux4_1.sym} 155 -2245 0 0 {name=x49 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 115 -2305 0 0 {name=p210 lab=A0}
+C {devices/lab_pin.sym} 115 -2265 0 0 {name=p211 lab=A1}
+C {devices/lab_pin.sym} 115 -2225 0 0 {name=p212 lab=A2}
+C {devices/lab_pin.sym} 115 -2185 0 0 {name=p213 lab=A3}
+C {devices/lab_pin.sym} 115 -2145 0 0 {name=p214 lab=S0}
+C {devices/lab_pin.sym} 115 -2115 0 0 {name=p215 lab=S1}
+C {devices/lab_pin.sym} 195 -2245 0 1 {name=p216 lab=X}
 C {sky130_stdcells/inv_1.sym} 1040 -2090 0 0 {name=x50 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1000 -2090 0 0 {name=p217 lab=A}
 C {devices/lab_pin.sym} 1080 -2090 0 1 {name=p218 lab=Y}
@@ -326,11 +326,11 @@ C {sky130_stdcells/einvn_1.sym} 1520 -2190 0 0 {name=x61 VGND=VGND VNB=VNB VPB=V
 C {devices/lab_pin.sym} 1480 -2190 0 0 {name=p246 lab=A}
 C {devices/lab_pin.sym} 1480 -2150 0 0 {name=p247 lab=TE_B}
 C {devices/lab_pin.sym} 1560 -2190 0 1 {name=p248 lab=Z}
-C {sky130_stdcells/ha_1.sym} 1040 -2530 0 0 {name=x62 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 980 -2570 0 0 {name=p249 lab=A}
-C {devices/lab_pin.sym} 980 -2490 0 0 {name=p250 lab=B}
-C {devices/lab_pin.sym} 1100 -2570 0 1 {name=p251 lab=COUT}
-C {devices/lab_pin.sym} 1100 -2490 0 1 {name=p252 lab=SUM}
+C {sky130_stdcells/ha_1.sym} 770 -2370 0 0 {name=x62 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 710 -2410 0 0 {name=p249 lab=A}
+C {devices/lab_pin.sym} 710 -2330 0 0 {name=p250 lab=B}
+C {devices/lab_pin.sym} 830 -2410 0 1 {name=p251 lab=COUT}
+C {devices/lab_pin.sym} 830 -2330 0 1 {name=p252 lab=SUM}
 C {sky130_stdcells/einvp_1.sym} 1520 -2390 0 0 {name=x63 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1480 -2390 0 0 {name=p253 lab=A}
 C {devices/lab_pin.sym} 1480 -2350 0 0 {name=p254 lab=TE}
