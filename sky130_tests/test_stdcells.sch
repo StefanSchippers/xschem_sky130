@@ -30,7 +30,7 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 540 -190 0 0 {name=STIMULI 
 only_toplevel=true
 place=end
-format=eval(@value )
+format="eval(@value )"
 value="* .option SCALE=1e-6 
 .temp 25
 
