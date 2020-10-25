@@ -29,13 +29,6 @@ sky130_fd_pr__diode_pw2nd_11v0
 sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn
-:model:`dnwdiode_psub_victim`
-:model:`dnwdiode_psub_aggressor`
-:model:`nwdiode_victim`
-:model:`nwdiode_aggressor`
-:model:`xesd_ndiode_h_X`
-:model:`xesd_ndiode_h_dnwl_X`
-:model:`xesd_pdiode_h_X (X = 100 or 200 or 300)`
 "
 }
 V {}

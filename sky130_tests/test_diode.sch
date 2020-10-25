@@ -33,35 +33,19 @@ sky130_fd_pr__model__parasitic__rf_diode_ps2nw
 sky130_fd_pr__model__parasitic__rf_diode_pw2dn
 sky130_fd_pr__model__parasitic__diode_pw2dn
 sky130_fd_pr__model__parasitic__diode_ps2dn
-sky130_fd_pr__model__parasitic__diode_ps2nw
-:model:`dnwdiode_psub_victim`
-:model:`dnwdiode_psub_aggressor`
-:model:`nwdiode_victim`
-:model:`nwdiode_aggressor`
-:model:`xesd_ndiode_h_X`
-:model:`xesd_ndiode_h_dnwl_X`
-:model:`xesd_pdiode_h_X (X = 100 or 200 or 300)`
-} 210 -350 0 0 0.2 0.2 {}
+sky130_fd_pr__model__parasitic__diode_ps2nw} 330 -370 0 0 0.2 0.2 {}
 T {Available_models:
 sky130_fd_pr__diode_pw2nd_05v5
 sky130_fd_pr__diode_pw2nd_11v0
 sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
-sky130_fd_pr__model__parasitic__diode_ps2dn
-:model:`dnwdiode_psub_victim`
-:model:`dnwdiode_psub_aggressor`
-:model:`nwdiode_victim`
-:model:`nwdiode_aggressor`
-:model:`xesd_ndiode_h_X`
-:model:`xesd_ndiode_h_dnwl_X`
-:model:`xesd_pdiode_h_X (X = 100 or 200 or 300)`
-} 690 -270 0 0 0.2 0.2 {}
-N 520 -400 520 -370 { lab=0}
-N 520 -250 520 -180 { lab=K1}
-N 520 -120 520 -90 { lab=0}
-N 960 -400 960 -370 { lab=0}
-N 960 -250 960 -180 { lab=K2}
-N 960 -120 960 -90 { lab=0}
+sky130_fd_pr__model__parasitic__diode_ps2dn} 780 -290 0 0 0.2 0.2 {}
+N 290 -400 290 -370 { lab=0}
+N 290 -250 290 -180 { lab=K1}
+N 290 -120 290 -90 { lab=0}
+N 730 -400 730 -370 { lab=0}
+N 730 -250 730 -180 { lab=K2}
+N 730 -120 730 -90 { lab=0}
 C {devices/code_shown.sym} 30 -640 0 0 {name=NGSPICE
 only_toplevel=true
 value="* .lib \\"~/skywater-pdk/sky130_fd_pr/models/sky130.lib.spice\\" tt
@@ -77,26 +61,26 @@ plot k1 k2
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/lab_pin.sym} 520 -210 0 0 {name=p4 lab=K1}
-C {devices/isource.sym} 520 -340 2 0 {name=I1 value=0}
-C {devices/lab_pin.sym} 520 -400 0 0 {name=p1 lab=0}
-C {devices/ammeter.sym} 520 -280 0 0 {name=Vk1 net_name=true}
-C {sky130_fd_pr/diode.sym} 520 -150 0 0 {name=D1
+C {devices/lab_pin.sym} 290 -210 0 0 {name=p4 lab=K1}
+C {devices/isource.sym} 290 -340 2 0 {name=I1 value=0}
+C {devices/lab_pin.sym} 290 -400 0 0 {name=p1 lab=0}
+C {devices/ammeter.sym} 290 -280 0 0 {name=Vk1 net_name=true}
+C {sky130_fd_pr/diode.sym} 290 -150 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1
 
 }
-C {devices/lab_pin.sym} 520 -90 0 0 {name=p2 lab=0}
-C {devices/lab_pin.sym} 960 -210 0 0 {name=p3 lab=K2}
-C {devices/lab_pin.sym} 960 -400 0 0 {name=p5 lab=0}
-C {devices/ammeter.sym} 960 -280 0 0 {name=Vk2 net_name=true}
-C {sky130_fd_pr/lvsdiode.sym} 960 -150 0 0 {name=D2
+C {devices/lab_pin.sym} 290 -90 0 0 {name=p2 lab=0}
+C {devices/lab_pin.sym} 730 -210 0 0 {name=p3 lab=K2}
+C {devices/lab_pin.sym} 730 -400 0 0 {name=p5 lab=0}
+C {devices/ammeter.sym} 730 -280 0 0 {name=Vk2 net_name=true}
+C {sky130_fd_pr/lvsdiode.sym} 730 -150 0 0 {name=D2
 model=diode_pw2nd_11v0
 area=1
 
 }
-C {devices/lab_pin.sym} 960 -90 0 0 {name=p6 lab=0}
-C {devices/cccs.sym} 960 -340 0 0 {name=F1 vnam=vk1 value=1}
+C {devices/lab_pin.sym} 730 -90 0 0 {name=p6 lab=0}
+C {devices/cccs.sym} 730 -340 0 0 {name=F1 vnam=vk1 value=1}
 C {devices/code.sym} 40 -210 0 0 {name=TT_MODELS
 only_toplevel=true
 place=end
