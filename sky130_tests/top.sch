@@ -314,13 +314,13 @@ model=pfet_20v0
 spiceprefix=X
 spice_ignore=true
 }
-C {sky130_tests/gates.sym} 310 -680 0 0 {name=x8}
-C {devices/launcher.sym} 80 -750 0 0 {name=h4
+C {sky130_tests/gates.sym} 310 -740 0 0 {name=x8}
+C {devices/launcher.sym} 510 -740 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1230 -1210 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1390 -1210 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_tests/test_format_override.sym} 310 -640 0 0 {name=x9}
+C {sky130_tests/test_format_override.sym} 310 -700 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 310 -950 0 0 {name=x11}
 C {devices/launcher.sym} 90 -1490 0 0 {name=h5
 descr="XSCHEM on Github" 
@@ -328,5 +328,6 @@ url="https://github.com/StefanSchippers/xschem"}
 C {devices/launcher.sym} 90 -1450 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
-C {sky130_tests/gates_sky130.sym} 310 -600 0 0 {name=x10}
+C {sky130_tests/gates_sky130.sym} 310 -660 0 0 {name=x10}
 C {sky130_tests/test_stdcells.sym} 310 -910 0 0 {name=x12}
+C {sky130_tests/all_sky130_gates.sym} 310 -620 0 0 {name=x13}
