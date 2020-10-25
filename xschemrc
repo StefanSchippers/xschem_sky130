@@ -192,7 +192,7 @@ set utile_cmd_path ${XSCHEM_SHAREDIR}/utile/utile
 #### list of tcl files to preload.
 # lappend tcl_files /home/schippes/x/Stefan_decoder/anddec.tcl
 lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
-
+lappend tcl_files scripts/sky130_models.tcl
 #### toolbar
 set toolbar_visible 0
 
