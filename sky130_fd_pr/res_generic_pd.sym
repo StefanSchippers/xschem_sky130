@@ -17,13 +17,13 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {type=p_diffusion_resistor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@m"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
 template="name=R1
 W=1
 L=1
 model=res_generic_pd
 spiceprefix=X
-m=1"
+mult=1"
 }
 V {}
 S {}
@@ -53,6 +53,6 @@ B 5 -22.5 -2.5 -17.5 2.5 {name=B dir=inout propagate_to=1 pinnumber=1}
 P 4 4 -8.75 -25 -8.75 -20 -12.5 -22.5 -8.75 -25 {}
 P 4 4 -8.75 20 -8.75 25 -12.5 22.5 -8.75 20 {}
 T {@name} 15 -28.75 0 0 0.2 0.2 {}
-T {@m * @W / @L} 15 6.25 0 0 0.2 0.2 {layer=13}
+T {@mult * @W / @L} 15 6.25 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -11.25 0 0 0.2 0.2 {}
 T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}

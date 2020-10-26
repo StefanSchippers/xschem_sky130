@@ -1,15 +1,51 @@
-diff -Naur -x .git sky130_fd_pr_orig/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
---- sky130_fd_pr_orig/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice	2020-10-13 11:34:12.833753497 +0200
+diff -Naur sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ff.corner.spice sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ff.corner.spice
+--- sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ff.corner.spice	2020-10-21 14:50:28.466235200 +0200
++++ sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ff.corner.spice	2020-10-26 13:39:47.086416881 +0100
+@@ -1471,4 +1471,4 @@
+ + sky130_fd_pr__nfet_01v8__ua_diff_62 = 3.9629e-12
+ + sky130_fd_pr__nfet_01v8__ub_diff_62 = 2.0374e-19
+ + sky130_fd_pr__nfet_01v8__eta0_diff_62 = 0.0
+-.include "sky130_fd_pr__nfet_01v8.pm3.spice"
++.include "sky130_fd_pr__nfet_01v8__ff.pm3.spice"
+diff -Naur sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__fs.corner.spice sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__fs.corner.spice
+--- sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__fs.corner.spice	2020-10-21 14:50:28.474235338 +0200
++++ sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__fs.corner.spice	2020-10-26 13:40:05.966686801 +0100
+@@ -1471,4 +1471,4 @@
+ + sky130_fd_pr__nfet_01v8__ua_diff_62 = -1.41413e-10
+ + sky130_fd_pr__nfet_01v8__ub_diff_62 = -2.642e-19
+ + sky130_fd_pr__nfet_01v8__eta0_diff_62 = 0.0
+-.include "sky130_fd_pr__nfet_01v8.pm3.spice"
++.include "sky130_fd_pr__nfet_01v8__fs.pm3.spice"
+diff -Naur sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__sf.corner.spice sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__sf.corner.spice
+--- sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__sf.corner.spice	2020-10-21 14:50:28.514236034 +0200
++++ sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__sf.corner.spice	2020-10-26 13:40:27.038988570 +0100
+@@ -1471,4 +1471,4 @@
+ + sky130_fd_pr__nfet_01v8__ua_diff_62 = 2.9602e-12
+ + sky130_fd_pr__nfet_01v8__ub_diff_62 = 2.5142e-19
+ + sky130_fd_pr__nfet_01v8__eta0_diff_62 = 0.0
+-.include "sky130_fd_pr__nfet_01v8.pm3.spice"
++.include "sky130_fd_pr__nfet_01v8__sf.pm3.spice"
+diff -Naur sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ss.corner.spice sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ss.corner.spice
+--- sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ss.corner.spice	2020-10-21 14:50:28.522236173 +0200
++++ sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ss.corner.spice	2020-10-26 13:39:15.821970933 +0100
+@@ -1471,4 +1471,4 @@
+ + sky130_fd_pr__nfet_01v8__ua_diff_62 = 7.7528e-12
+ + sky130_fd_pr__nfet_01v8__ub_diff_62 = -3.1358e-19
+ + sky130_fd_pr__nfet_01v8__eta0_diff_62 = 0.0
+-.include "sky130_fd_pr__nfet_01v8.pm3.spice"
++.include "sky130_fd_pr__nfet_01v8__ss.pm3.spice"
+diff -Naur sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
+--- sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice	2020-10-21 14:50:28.538236452 +0200
++++ sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -1471,4 +1471,4 @@
  + sky130_fd_pr__nfet_01v8__ua_diff_62 = 0.0
  + sky130_fd_pr__nfet_01v8__ub_diff_62 = 0.0
  + sky130_fd_pr__nfet_01v8__eta0_diff_62 = 0.0
 -.include "sky130_fd_pr__nfet_01v8.pm3.spice"
 +.include "sky130_fd_pr__nfet_01v8__tt.pm3.spice"
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice
---- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice	2020-10-06 20:46:01.916201666 +0200
+diff -Naur sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice
+--- sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -38,9 +38,9 @@
  + vc3_raw_end = 4.61e-2
  + r0_var = 50.97
@@ -23,9 +59,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po
  + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
  + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
  + rbody_var = {rtot_var-rend_var}
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice
---- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice	2020-10-06 20:46:01.916201666 +0200
+diff -Naur sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice
+--- sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -38,9 +38,9 @@
  + vc3_raw_end = 4.52e-2
  + r0_var = 28.13
@@ -39,9 +75,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po
  + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
  + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
  + rbody_var = {rtot_var-rend_var}
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice
---- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice	2020-10-06 20:46:01.920201817 +0200
+diff -Naur sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice
+--- sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -37,9 +37,9 @@
  + vc3_raw_end = 8.81e-2
  + r0_var = 15.43
@@ -55,9 +91,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po
  + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
  + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
  + rbody_var = {rtot_var-rend_var}
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice
---- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice	2020-10-06 20:46:01.920201817 +0200
+diff -Naur sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice
+--- sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -37,9 +37,9 @@
  + vc3_raw_end = 5.29e-2
  + r0_var = 8.23
@@ -71,9 +107,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po
  + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
  + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
  + rbody_var = {rtot_var-rend_var}
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice
---- sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice	2020-10-06 20:46:01.912201516 +0200
+diff -Naur sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice
+--- sky130_fd_pr/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -37,9 +37,9 @@
  + vc3_raw_end = 1.72e-2
  + r0_var = 4.29
@@ -87,9 +123,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_high_po/sky130_fd_pr__res_high_po
  + rtot_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2*pow(r0_var,2)+pow((r1_var*l),2))}
  + rend_var = {sky130_fd_pr__res_high_po__var_mult*sqrt(2)*r0_var}
  + rbody_var = {rtot_var-rend_var}
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice sky130_fd_pr/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice
---- sky130_fd_pr_orig/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice	2020-10-06 20:45:56.099982544 +0200
+diff -Naur sky130_fd_pr/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice sky130_fd_pr_ngspice/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice
+--- sky130_fd_pr/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -24,5 +24,5 @@
  + vt = 3.531e-3
  + ut = 7.238e-6
@@ -97,9 +133,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_iso_pw/sky130_fd_pr__res_iso_pw.m
 -+ r = rspwres*((l+dl)/w)*(1-av*(max(v(r0),v(r1))-min(v(r0),v(r1))))*(1+bv*(v(b)-min(v(r0),v(r1))))*(1+vt*(temp-tref)+ut*(temp-tref)*(temp-tref))
 ++ r = rspwres*((l+dl)/w)*(1-av*(max(v(r0),v(r1))-min(v(r0),v(r1))))*(1+bv*(v(b)-min(v(r0),v(r1))))*(1+vt*(temper-tref)+ut*(temper-tref)*(temper-tref))
  .ends sky130_fd_pr__res_iso_pw
-diff -Naur -x .git sky130_fd_pr_orig/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice sky130_fd_pr/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice
---- sky130_fd_pr_orig/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice	2020-10-13 12:46:07.770616622 +0200
-+++ sky130_fd_pr/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice	2020-10-06 20:45:57.932051703 +0200
+diff -Naur sky130_fd_pr/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice sky130_fd_pr_ngspice/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice
+--- sky130_fd_pr/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice	2020-10-21 14:50:29.518253494 +0200
++++ sky130_fd_pr_ngspice/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -42,9 +42,9 @@
  + res_match = {(body_pelgrom/sqrt(w*l*mult))*sky130_fd_pr__res_high_po__slope_spectre}
  + rbody_var = {rtot_var-rend_var}
@@ -113,9 +149,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_
  + rbody = {(l*rsheet+rbody_var)*(1+res_match)/w}
  rbody ra r2 resbody r = {rbody*(1+abs(v(r1,r2))*vc1_body+abs(v(r1,r2))*abs(v(r1,r2))/(l*l)*vc2_body)}
  rend r1 ra  r = {rend*(1+vc1_raw_end*(1-exp(-abs(v(r2,r1))))+
-diff -Naur -x .git sky130_fd_pr_orig/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice sky130_fd_pr/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice
---- sky130_fd_pr_orig/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice	2020-10-13 12:46:07.774616688 +0200
-+++ sky130_fd_pr/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice	2020-10-06 20:45:54.851935356 +0200
+diff -Naur sky130_fd_pr/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice sky130_fd_pr_ngspice/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice
+--- sky130_fd_pr/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice	2020-10-21 14:50:30.650273178 +0200
++++ sky130_fd_pr_ngspice/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -24,7 +24,7 @@
  cpar_ds 1  3 c = {(0.172f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
  cpar_gs 2  3 c = {(0.07f*sky130_fd_pr__rf_nfet_01v8_lvt__aw_cap_mult)}
@@ -179,9 +215,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfe
  rs 3  s r = {(19.2*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rs_mult)}
  rd 1  d r = {(24.9*sky130_fd_pr__rf_nfet_01v8_lvt__aw_rd_mult)}
  .ends sky130_fd_pr__rf_nfet_01v8_lvt_aF08W0p84L0p15
-diff -Naur -x .git sky130_fd_pr_orig/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice sky130_fd_pr/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice
---- sky130_fd_pr_orig/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice	2020-10-13 12:46:07.774616688 +0200
-+++ sky130_fd_pr/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice	2020-10-06 20:45:58.720081410 +0200
+diff -Naur sky130_fd_pr/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice sky130_fd_pr_ngspice/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice
+--- sky130_fd_pr/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice	2020-10-21 14:50:33.062315117 +0200
++++ sky130_fd_pr_ngspice/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice	2020-10-21 14:52:26.992291338 +0200
 @@ -132,7 +132,7 @@
  cpar_ds 1  3 c = {(0.41f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
  cpar_gd 2  1 c = {(0.74f*sky130_fd_pr__rf_pfet_01v8__aw_cap_mult)}
@@ -227,9 +263,9 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01
  rd 1  d  r = {(78*sky130_fd_pr__rf_pfet_01v8__aw_rd_mult)}
  rs 3  s  r = {(38.5*sky130_fd_pr__rf_pfet_01v8__aw_rs_mult)}
  .ends sky130_fd_pr__rf_pfet_01v8_aF02W3p00L0p15
-diff -Naur -x .git sky130_fd_pr_orig/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice sky130_fd_pr/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice
---- sky130_fd_pr_orig/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice	2020-10-13 12:46:07.774616688 +0200
-+++ sky130_fd_pr/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice	2020-10-06 20:45:55.663966063 +0200
+diff -Naur sky130_fd_pr/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice sky130_fd_pr_ngspice/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice
+--- sky130_fd_pr/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice	2020-10-21 14:50:35.430356286 +0200
++++ sky130_fd_pr_ngspice/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice	2020-10-21 14:52:26.996291407 +0200
 @@ -24,7 +24,7 @@
  cpar_ds 1  3 c = {(0.56f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
  cpar_gd 2  1 c = {(0.34f*sky130_fd_pr__rf_pfet_01v8_mvt__aw_cap_mult)}
@@ -257,9 +293,37 @@ diff -Naur -x .git sky130_fd_pr_orig/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfe
  rd 1  d r = {(78*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rd_mult)}
  rs 3  s r = {(50.6*sky130_fd_pr__rf_pfet_01v8_mvt__aw_rs_mult)}
  .ends sky130_fd_pr__rf_pfet_01v8_mvt_aF04W1p68L0p15
-diff -Naur -x .git sky130_fd_pr_orig/models/sky130.lib_tt.spice sky130_fd_pr/models/sky130.lib_tt.spice
---- sky130_fd_pr_orig/models/sky130.lib_tt.spice	1970-01-01 01:00:00.000000000 +0100
-+++ sky130_fd_pr/models/sky130.lib_tt.spice	2020-10-06 23:33:02.826498651 +0200
+diff -Naur sky130_fd_pr/.git/config sky130_fd_pr_ngspice/.git/config
+--- sky130_fd_pr/.git/config	2020-10-23 02:19:58.144222656 +0200
++++ sky130_fd_pr_ngspice/.git/config	2020-10-21 14:50:27.658221148 +0200
+@@ -9,5 +9,3 @@
+ [branch "master"]
+ 	remote = origin
+ 	merge = refs/heads/master
+-[pull]
+-	rebase = true
+diff -Naur sky130_fd_pr/.git/FETCH_HEAD sky130_fd_pr_ngspice/.git/FETCH_HEAD
+--- sky130_fd_pr/.git/FETCH_HEAD	2020-10-24 03:38:18.746107438 +0200
++++ sky130_fd_pr_ngspice/.git/FETCH_HEAD	1970-01-01 01:00:00.000000000 +0100
+@@ -1,10 +0,0 @@
+-d717cd4d8d93cce6a8d7534f6a40432f0045039f		branch 'master' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-33b768728f29f1858f8b15b0c966d09790c70ff7	not-for-merge	branch 'branch-0.0.9' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-77429bf815f96e5ba3cdb48b7fb6c1ff58074b18	not-for-merge	branch 'branch-0.10.0' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-aff6c996fceec53f5699dae231f9e88fc5b9b60d	not-for-merge	branch 'branch-0.10.1' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-a7a4ba142aa45119bbc7b8ab2eb7d0270464bf9a	not-for-merge	branch 'branch-0.11.0' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-56eb01d2ebd113ad34e38ceccf5748424d3bb7a2	not-for-merge	branch 'branch-0.12.0' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-48bb19e08e2b738f6e3177d94562e1218b59534c	not-for-merge	branch 'branch-0.12.1' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-2997061e461c71e6e5c85153e3403ca74c62f69c	not-for-merge	branch 'branch-0.13.0' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-6d4ff0d91a19ddceeb5a009976756ecb8979c619	not-for-merge	branch 'branch-0.20.0' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+-d717cd4d8d93cce6a8d7534f6a40432f0045039f	not-for-merge	branch 'branch-0.20.1' of http://foss-eda-tools.googlesource.com/skywater-pdk/libs/sky130_fd_pr
+diff -Naur sky130_fd_pr/.git/ORIG_HEAD sky130_fd_pr_ngspice/.git/ORIG_HEAD
+--- sky130_fd_pr/.git/ORIG_HEAD	2020-10-24 03:38:18.758107682 +0200
++++ sky130_fd_pr_ngspice/.git/ORIG_HEAD	1970-01-01 01:00:00.000000000 +0100
+@@ -1 +0,0 @@
+-d717cd4d8d93cce6a8d7534f6a40432f0045039f
+diff -Naur sky130_fd_pr/models/sky130.lib_tt.spice sky130_fd_pr_ngspice/models/sky130.lib_tt.spice
+--- sky130_fd_pr/models/sky130.lib_tt.spice	1970-01-01 01:00:00.000000000 +0100
++++ sky130_fd_pr_ngspice/models/sky130.lib_tt.spice	2020-10-21 14:52:26.996291407 +0200
 @@ -0,0 +1,55 @@
 +* Copyright 2020 The SkyWater PDK Authors
 +*

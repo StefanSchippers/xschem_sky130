@@ -17,14 +17,14 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {type=n_diffusion_resistor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@m"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
 template="name=R1
 rho=120
 W=1
 L=1
 model=res_generic_nd
 spiceprefix=X
-m=1"
+mult=1"
 }
 V {}
 S {}
@@ -55,6 +55,6 @@ P 4 4 -12.5 -25 -12.5 -20 -8.75 -22.5 -12.5 -25 {}
 P 4 4 -12.5 20 -12.5 25 -8.75 22.5 -12.5 20 {}
 T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
 T {@name} 15 -25 0 0 0.2 0.2 {}
-T {@m * @W / @L} 15 0 0 0 0.2 0.2 {layer=13}
+T {@mult * @W / @L} 15 0 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -12.5 0 0 0.2 0.2 {}
-T {tcleval(R=[expr @rho * @L / @W / @m ] Ω)} 15 12.5 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[expr @rho * @L / @W / @mult ] Ω)} 15 12.5 0 0 0.2 0.2 {layer=13}

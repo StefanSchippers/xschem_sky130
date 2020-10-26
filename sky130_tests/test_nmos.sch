@@ -72,12 +72,7 @@ N 640 -470 2400 -470 { lab=D20v0}
 N 1490 -600 1490 -580 { lab=D20v0}
 C {devices/code_shown.sym} 0 -670 0 0 {name=NGSPICE
 only_toplevel=true
-value="* .lib \\"~/skywater-pdk/sky130_fd_pr/models/sky130.lib.spice\\" tt
-
-* temporary fix: some model equations use temp instead of the true
-* ngspice temperature variable, 'temper'
-.param temp=27
-
+value="
 vg G1v8 0 0
 vs s 0 0
 vd D1v8 0 0
@@ -225,48 +220,9 @@ C {devices/lab_pin.sym} 1450 -570 0 0 {name=p44 lab=D1v8}
 C {devices/lab_pin.sym} 1490 -520 0 1 {name=p45 lab=0}
 C {devices/lab_pin.sym} 1490 -600 0 1 {name=p46 lab=D20v0}
 C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
-C {devices/ipin.sym} 370 -250 0 0 {name=p48 lab=G1v8}
-C {devices/ipin.sym} 370 -210 0 0 {name=p49 lab=D1v8}
-C {devices/ipin.sym} 370 -170 0 0 {name=p50 lab=B}
-C {devices/code.sym} 40 -200 0 0 {name=TT_MODELS
-only_toplevel=true
-place=end
-value=".include 
-+ ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/models/corners/tt/nonfet.spice
-* Mismatch parameters
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
-* Resistor/Capacitor
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/models/r+c/res_typical__cap_typical.spice
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/models/r+c/res_typical__cap_typical__lin.spice
-* Special cells
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/models/corners/tt/specialized_cells.spice
-* All models
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/models/all.spice
-* Corner
-.include ~/skywater-pdk/sky130_fd_pr_ngspice/models/corners/tt/rf.spice
-"}
+C {devices/ipin.sym} 430 -430 0 0 {name=p48 lab=G1v8}
+C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
+C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
 L=0.15
 W=1
@@ -278,3 +234,51 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
 }
+C {devices/code.sym} 30 -180 0 0 {name=TT_MODELS
+only_toplevel=true
+
+comment="set model_path to the root of sky130 spice primitives"
+model_path="~/skywater-pdk/sky130_fd_pr_ngspice"
+format=eval(@value\\)
+value="
+.include @model_path\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
+.include @model_path\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
+.include @model_path\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
+.include @model_path\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
+.include @model_path\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
+.include @model_path\\\\/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
+.include @model_path\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
+.include @model_path\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
+.include @model_path\\\\/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
+.include @model_path\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
+.include @model_path\\\\/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
+.include @model_path\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
+.include @model_path\\\\/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
+.include @model_path\\\\/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
+.include @model_path\\\\/models/corners/tt/nonfet.spice
+* Mismatch parameters
+.include @model_path\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+.include @model_path\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
+.include @model_path\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
+.include @model_path\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
+.include @model_path\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
+.include @model_path\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
+.include @model_path\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
+.include @model_path\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
+.include @model_path\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
+* Resistor@model_path\\\\/Capacitor
+.include @model_path\\\\/models/r+c/res_typical__cap_typical.spice
+.include @model_path\\\\/models/r+c/res_typical__cap_typical__lin.spice
+* Special cells
+.include @model_path\\\\/models/corners/tt/specialized_cells.spice
+* All models
+.include @model_path\\\\/models/all.spice
+* Corner
+.include @model_path\\\\/models/corners/tt/rf.spice
+"}
+C {devices/launcher.sym} 100 -260 0 0 {name=h1
+descr="Simulation done
+using a patched 
+sky130 primitive directory,
+see patch file" 
+url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}

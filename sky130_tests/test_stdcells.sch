@@ -21,8 +21,7 @@ V {}
 S {}
 E {}
 P 4 7 750 -280 750 -240 740 -240 750 -220 760 -240 750 -240 750 -280 {fill=true}
-T {$  export SKYWATER_STDCELLS=/home/schippes/skywater-pdk/sky130_fd_sc_hd
-} 50 -810 0 0 0.5 0.5 {layer=6 font=Monospace}
+T {$  export SKYWATER_STDCELLS=/home/schippes/skywater-pdk/sky130_fd_sc_hd} 50 -810 0 0 0.5 0.5 {layer=6 font=Monospace}
 T {This code block invokes "sky130_models" procedure 
 that returns the .include lines needed to
 simulate the standard cells} 590 -390 0 0 0.6 0.6 {layer=8 slant=italic}
@@ -54,7 +53,39 @@ plot a b+2 clk+4 reset_b+6 x+8 y+10 q+12
 C {devices/lab_pin.sym} 260 -280 0 0 {name=p1 lab=A}
 C {devices/lab_pin.sym} 260 -240 0 0 {name=p2 lab=B}
 C {devices/lab_pin.sym} 480 -260 0 1 {name=p3 lab=X}
-C {devices/code.sym} 410 -190 0 0 {name=TT_MODELS
+C {sky130_stdcells/nand2_1.sym} 320 -260 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/sqwsource.sym} 60 -260 0 0 {name=V1 vhi=1.8 freq=0.2e9}
+C {devices/sqwsource.sym} 60 -150 0 0 {name=V2 vhi=1.8 freq=0.3e9}
+C {devices/lab_pin.sym} 60 -120 0 0 {name=p4 lab=0}
+C {devices/lab_pin.sym} 60 -230 0 0 {name=p5 lab=0}
+C {devices/lab_pin.sym} 60 -310 0 1 {name=p6 lab=A}
+C {devices/lab_pin.sym} 60 -200 0 1 {name=p7 lab=B}
+C {devices/parax_cap.sym} 420 -250 0 0 {name=C1 gnd=0 value=3f m=1}
+C {sky130_stdcells/dfrtp_1.sym} 370 -410 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ 
+}
+C {devices/sqwsource.sym} 60 -400 0 0 {name=V3 vhi=1.8 freq=0.5e9}
+C {devices/lab_pin.sym} 60 -370 0 0 {name=p8 lab=0}
+C {devices/lab_pin.sym} 60 -450 0 1 {name=p9 lab=CLK}
+C {devices/lab_pin.sym} 280 -430 0 0 {name=p10 lab=CLK}
+C {devices/lab_pin.sym} 280 -410 0 0 {name=p11 lab=A}
+C {devices/sqwsource.sym} 60 -520 0 0 {name=V4 vhi=1.8 freq=1e8}
+C {devices/lab_pin.sym} 60 -490 0 0 {name=p12 lab=0}
+C {devices/lab_pin.sym} 60 -570 0 1 {name=p13 lab=RESET_B}
+C {devices/lab_pin.sym} 280 -390 0 0 {name=p14 lab=RESET_B}
+C {devices/lab_pin.sym} 560 -430 0 1 {name=p15 lab=Q}
+C {devices/parax_cap.sym} 500 -420 0 0 {name=C2 gnd=0 value=3f m=1}
+C {devices/code.sym} 690 -190 0 0 {name=STDCELL_MODELS 
+only_toplevel=true
+place=end
+format=tcleval(@value\\)
+value="[sky130_models]"
+}
+C {devices/lab_pin.sym} 240 -550 0 0 {name=p16 lab=A}
+C {devices/lab_pin.sym} 240 -510 0 0 {name=p17 lab=B}
+C {devices/lab_pin.sym} 460 -530 0 1 {name=p18 lab=Y}
+C {devices/parax_cap.sym} 400 -520 0 0 {name=C3 gnd=0 value=3f m=1}
+C {sky130_stdcells/nor2b_1.sym} 300 -530 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/code.sym} 870 -190 0 0 {name=TT_MODELS
 only_toplevel=true
 
 comment="set model_path to the root of sky130 spice primitives"
@@ -96,35 +127,9 @@ value="
 * Corner
 .include @model_path\\\\/models/corners/tt/rf.spice
 "}
-C {sky130_stdcells/nand2_1.sym} 320 -260 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/sqwsource.sym} 60 -260 0 0 {name=V1 vhi=1.8 freq=0.2e9}
-C {devices/sqwsource.sym} 60 -150 0 0 {name=V2 vhi=1.8 freq=0.3e9}
-C {devices/lab_pin.sym} 60 -120 0 0 {name=p4 lab=0}
-C {devices/lab_pin.sym} 60 -230 0 0 {name=p5 lab=0}
-C {devices/lab_pin.sym} 60 -310 0 1 {name=p6 lab=A}
-C {devices/lab_pin.sym} 60 -200 0 1 {name=p7 lab=B}
-C {devices/parax_cap.sym} 420 -250 0 0 {name=C1 gnd=0 value=3f m=1}
-C {sky130_stdcells/dfrtp_1.sym} 370 -410 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ 
-}
-C {devices/sqwsource.sym} 60 -400 0 0 {name=V3 vhi=1.8 freq=0.5e9}
-C {devices/lab_pin.sym} 60 -370 0 0 {name=p8 lab=0}
-C {devices/lab_pin.sym} 60 -450 0 1 {name=p9 lab=CLK}
-C {devices/lab_pin.sym} 280 -430 0 0 {name=p10 lab=CLK}
-C {devices/lab_pin.sym} 280 -410 0 0 {name=p11 lab=A}
-C {devices/sqwsource.sym} 60 -520 0 0 {name=V4 vhi=1.8 freq=1e8}
-C {devices/lab_pin.sym} 60 -490 0 0 {name=p12 lab=0}
-C {devices/lab_pin.sym} 60 -570 0 1 {name=p13 lab=RESET_B}
-C {devices/lab_pin.sym} 280 -390 0 0 {name=p14 lab=RESET_B}
-C {devices/lab_pin.sym} 560 -430 0 1 {name=p15 lab=Q}
-C {devices/parax_cap.sym} 500 -420 0 0 {name=C2 gnd=0 value=3f m=1}
-C {devices/code.sym} 690 -190 0 0 {name=STDCELL_MODELS 
-only_toplevel=true
-place=end
-format=tcleval(@value\\)
-value="[sky130_models]"
-}
-C {devices/lab_pin.sym} 240 -550 0 0 {name=p16 lab=A}
-C {devices/lab_pin.sym} 240 -510 0 0 {name=p17 lab=B}
-C {devices/lab_pin.sym} 460 -530 0 1 {name=p18 lab=Y}
-C {devices/parax_cap.sym} 400 -520 0 0 {name=C3 gnd=0 value=3f m=1}
-C {sky130_stdcells/nor2b_1.sym} 300 -530 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/launcher.sym} 1050 -140 0 0 {name=h1
+descr="Simulation done
+using a patched 
+sky130 primitive directory,
+see patch file" 
+url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}

@@ -34,7 +34,10 @@ T {* Copyright 2020 Stefan Frederik Schippers
 * OR CONDITIONS OF ANY KIND,* either express or implied.
 * See the License for the specific language governing
 * permissions and limitations under the License.
-} 1700 -2060 0 0 0.6 0.6 {}
+} 1860 -1680 0 0 0.6 0.6 {}
+T {Generic set of standard cells
+Not bound to any specific process
+library.} 1150 -2100 0 0 2 2 {layer=8}
 C {stdcells/NAND2.sym} 140 -1470 0 0 {name=x1 VCCPIN=VCC VSSPIN=VSS VCCBPIN=VCC VSSBPIN=VSS}
 C {stdcells/NOR2.sym} 140 -1110 0 0 {name=x2 VCCPIN=VCC VSSPIN=VSS VCCBPIN=VCC VSSBPIN=VSS}
 C {stdcells/AOI21.sym} 160 -180 0 0 {name=x3 VCCPIN=VCC VSSPIN=VSS VCCBPIN=VCC VSSBPIN=VSS}
