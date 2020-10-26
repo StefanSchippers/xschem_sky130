@@ -37,6 +37,9 @@ as this is a work in progress and the whole PDK is evolving.
 | `nfet_03v3_nvt.sym` |3.3V native threshold N-type Fet |
 | `nfet_05v0_nvt.sym` |5V native threshold N-type Fet|
 | `nfet_20v0.sym` |20V Vds, 5V Vgs N-type Fet|
+| `nfet_20v0_zvt.sym` |20V Vds, 5V Vgs 'Zero threshold' N-type Fet|
+| `nfet_20v0_iso.sym` |20V Vds, 5V Vgs N-type Fet in insulated p-well (uses deep nwell)|
+| `nfet_20v0_nvt.sym` |20V Vds, 5V Vgs N-type Native Vth Fet in insulated p-well (uses deep nwell)|
 | `nfet_g5v0d10v5.sym` |10.5V Vds, 5V Vgs N-type Fet|
 | `nfet_g5v0d16v0.sym` |16V Vds, 5V Vgs N-type FET|
 | `pfet_01v8_hvt.sym` |1.8V high threshold P-type Fet|
@@ -60,3 +63,6 @@ as this is a work in progress and the whole PDK is evolving.
 | `res_xhigh_po.sym` |High precision High resistivity Poly resistor, custom size|
 | `cap_mim_m3_1.sym` |Metal3 Insulator Metal4 (MIM) capacitor|
 | `cap_mim_m3_2.sym` |Metal4 Insulator Metal5 (MIM) capacitor|
+| `vpp_cap.sym` |Vertical parallel plate metal capacitors|
+| `cap_var_lvt.sym` |Variable capacitance (Varactor), LVT version|
+| `cap_var_hvt.sym` |Variable capacitance (Varactor), HVT version|
