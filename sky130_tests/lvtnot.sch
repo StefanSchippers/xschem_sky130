@@ -48,13 +48,9 @@ nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 400 -200 0 0 {name=M4
-L=0.15
-W=1
-ad="'@W *0.29'" pd="'2*(@W + 0.29)'"
-as="'@W *0.29'" ps="'2*(@W + 0.29)'"
-nrd="'0.29/@W '" nrs="'0.29/@W '"
-sa=0 sb=0 sd=0
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 400 -200 0 0 {name=M1
+L=L_N
+W=W_N
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X

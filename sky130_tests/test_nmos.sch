@@ -223,17 +223,6 @@ C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
 C {devices/ipin.sym} 430 -430 0 0 {name=p48 lab=G1v8}
 C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
 C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
-L=0.15
-W=1
-ad="[expr @W *0.29]" pd="[expr 2*(@W + 0.29)]"
-as="[expr @W *0.29]" ps="[expr 2*(@W + 0.29)]"
-nrd="[expr 0.29/@W ]" nrs="[expr 0.29/@W ]"
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_01v8_lvt
-spiceprefix=X
-}
 C {devices/code.sym} 30 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 
@@ -282,3 +271,10 @@ using a patched
 sky130 primitive directory,
 see patch file" 
 url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
+L=0.15
+W=1
+nf=1 mult=1
+model=nfet_01v8_lvt
+spiceprefix=X
+}
