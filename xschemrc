@@ -196,3 +196,5 @@ lappend tcl_files scripts/sky130_models.tcl
 #### toolbar
 set toolbar_visible 0
 
+set SKYWATER_MODELS ~/projects/foundry/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
+set SKYWATER_STDCELLS ~/projects/foundry/skywater-pdk/libraries/sky130_fd_sc_hd/latest

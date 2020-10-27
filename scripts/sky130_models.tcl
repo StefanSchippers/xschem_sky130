@@ -1,20 +1,23 @@
 
+
+# /home/schippes/projects/foundry/skywater-pdk/libraries/sky130_fd_sc_hd/latest
 proc sky130_models {} {
-  global env
+  global SKYWATER_STDCELLS
   set l {}
-  if {![info exists env(SKYWATER_STDCELLS)]} {
-    puts "ERROR: SKYWATER_STDCELLS environment variable undefined, please set in shell before starting xschem"
-    return {***** ERROR: missing SKYWATER_STDCELLS env var}
+  if {![info exists SKYWATER_STDCELLS]} {
+    puts "ERROR: SKYWATER_STDCELLS TCL variable undefined, please set in shell before starting xschem"
+    return {***** ERROR: missing TCL var SKYWATER_STDCELLS}
   }
   foreach  i [xschem symbols] {
     if { [regexp {stdcells} $i] }  {
       set cell [lindex ${i} 1]
-      regsub {.*/} $env(SKYWATER_STDCELLS) {} prefix
+      regsub {/latest *$} $SKYWATER_STDCELLS {} prefix
+      regsub {.*/} $prefix {} prefix
       append prefix __
       regsub {.*/} $cell {} cell
       regsub {\.sym} $cell {.spice} spice
       regsub {_[^_]+\.sym} $cell {} dir
-      append l .include\ $env(SKYWATER_STDCELLS)/cells/$dir/$prefix$spice\n
+      append l .include\ $SKYWATER_STDCELLS/cells/$dir/$prefix$spice\n
     }
   }
   return $l 
