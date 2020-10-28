@@ -1,7 +1,7 @@
 v {xschem version=2.9.8 file_version=1.2}
 G {}
 K {type=capacitor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
 template="name=C1
 model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
 W=1
