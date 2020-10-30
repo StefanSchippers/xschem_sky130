@@ -27,10 +27,11 @@ append XSCHEM_LIBRARY_PATH :$env(PWD)
 ## hex code must be enclosed in braces
 ###########################################################################
 array unset dircolor
-set dircolor(sky130_fd_pr$) red
-set dircolor(sky130_tests$) {dark green}
+set dircolor(sky130_fd_pr$) blue
+set dircolor(sky130_tests$) blue
 set dircolor(xschem_sky130$) blue
 set dircolor(xschem_library$) red
+set dircolor(devices$) red
 
 
 ###########################################################################
