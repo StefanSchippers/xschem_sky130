@@ -22,6 +22,8 @@ S {}
 E {}
 T {Disabled
 No Model} 1070 -460 0 0 0.3 0.3 {layer=7}
+T {Ctrl-Click
+to open link} -10 -350 0 0 0.3 0.3 {layer=11}
 C {devices/code_shown.sym} 60 -770 0 0 {name=NGSPICE
 only_toplevel=true
 value="

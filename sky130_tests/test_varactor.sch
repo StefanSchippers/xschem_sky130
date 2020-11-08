@@ -20,89 +20,89 @@ K {}
 V {}
 S {}
 E {}
-N 520 -400 520 -370 { lab=0}
-N 520 -250 520 -180 { lab=G}
-N 520 -120 520 -90 { lab=0}
-N 670 -180 670 -160 { lab=REF}
-N 670 -250 670 -240 { lab=G}
-N 520 -250 670 -250 { lab=G}
-N 830 -400 830 -370 { lab=0}
-N 830 -250 830 -200 { lab=G1}
-N 800 -70 800 -40 { lab=0}
-N 980 -180 980 -160 { lab=REF}
-N 980 -250 980 -240 { lab=G1}
-N 830 -250 980 -250 { lab=G1}
-N 830 -310 830 -250 { lab=G1}
-N 520 -310 520 -250 { lab=G}
-N 800 -160 800 -70 { lab=0}
-N 800 -70 860 -70 { lab=0}
-N 860 -160 860 -70 { lab=0}
-N 830 -160 830 -70 { lab=0}
-N 1120 -400 1120 -370 { lab=0}
-N 1120 -250 1120 -180 { lab=G2}
-N 1120 -120 1120 -90 { lab=0}
-N 1270 -180 1270 -160 { lab=REF}
-N 1270 -250 1270 -240 { lab=G2}
-N 1120 -250 1270 -250 { lab=G2}
-N 1120 -310 1120 -250 { lab=G2}
-N 390 -380 390 -360 { lab=REF}
-N 1450 -400 1450 -370 { lab=0}
-N 1450 -250 1450 -180 { lab=G3}
-N 1450 -120 1450 -90 { lab=0}
-N 1600 -180 1600 -160 { lab=REF}
-N 1600 -250 1600 -240 { lab=G3}
-N 1450 -250 1600 -250 { lab=G3}
-N 1450 -310 1450 -250 { lab=G3}
+T {Ctrl-Click
+to open link} 20 -340 0 0 0.3 0.3 {layer=11}
+N 550 -430 550 -400 { lab=0}
+N 550 -280 550 -210 { lab=G}
+N 550 -150 550 -120 { lab=0}
+N 700 -210 700 -190 { lab=REF}
+N 700 -280 700 -270 { lab=G}
+N 550 -280 700 -280 { lab=G}
+N 860 -430 860 -400 { lab=0}
+N 860 -280 860 -230 { lab=G1}
+N 830 -100 830 -70 { lab=0}
+N 1010 -210 1010 -190 { lab=REF}
+N 1010 -280 1010 -270 { lab=G1}
+N 860 -280 1010 -280 { lab=G1}
+N 860 -340 860 -280 { lab=G1}
+N 550 -340 550 -280 { lab=G}
+N 830 -190 830 -100 { lab=0}
+N 830 -100 890 -100 { lab=0}
+N 890 -190 890 -100 { lab=0}
+N 860 -190 860 -100 { lab=0}
+N 1150 -430 1150 -400 { lab=0}
+N 1150 -280 1150 -210 { lab=G2}
+N 1150 -150 1150 -120 { lab=0}
+N 1300 -210 1300 -190 { lab=REF}
+N 1300 -280 1300 -270 { lab=G2}
+N 1150 -280 1300 -280 { lab=G2}
+N 1150 -340 1150 -280 { lab=G2}
+N 420 -410 420 -390 { lab=REF}
+N 1480 -430 1480 -400 { lab=0}
+N 1480 -280 1480 -210 { lab=G3}
+N 1480 -150 1480 -120 { lab=0}
+N 1630 -210 1630 -190 { lab=REF}
+N 1630 -280 1630 -270 { lab=G3}
+N 1480 -280 1630 -280 { lab=G3}
+N 1480 -340 1480 -280 { lab=G3}
 C {devices/code_shown.sym} 30 -640 0 0 {name=NGSPICE
 only_toplevel=true
 value="
 .control
-tran 10n 6u
+tran 10n 9u
 plot g g1 g2 g3
 write test_varactor.raw
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/lab_pin.sym} 520 -210 0 0 {name=p4 lab=G}
-C {devices/isource.sym} 520 -340 0 0 {name=I1 value="pwl 0 0 1000n 0 1010n 100n"}
-C {devices/lab_pin.sym} 520 -400 0 0 {name=p1 lab=0}
-C {devices/lab_pin.sym} 520 -90 0 0 {name=p2 lab=0}
-C {sky130_fd_pr/cap_var_lvt.sym} 520 -150 0 0 {name=C3 model=cap_var_lvt W=5 L=5 VM=1 spiceprefix=X}
-C {devices/lab_pin.sym} 480 -130 0 0 {name=p3 lab=0}
-C {devices/res.sym} 670 -210 0 0 {name=R1
+C {devices/lab_pin.sym} 550 -240 0 0 {name=p4 lab=G}
+C {devices/isource.sym} 550 -370 0 0 {name=I1 value="pwl 0 0 1n 100n"}
+C {devices/lab_pin.sym} 550 -430 0 0 {name=p1 lab=0}
+C {devices/lab_pin.sym} 550 -120 0 0 {name=p2 lab=0}
+C {devices/res.sym} 700 -240 0 0 {name=R1
 value=1G
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 670 -160 0 0 {name=p5 lab=REF}
-C {devices/lab_pin.sym} 830 -220 0 0 {name=p6 lab=G1}
-C {devices/isource.sym} 830 -340 0 0 {name=I2 value="pwl 0 0 1000n 0 1010n 100n"}
-C {devices/lab_pin.sym} 830 -400 0 0 {name=p7 lab=0}
-C {devices/lab_pin.sym} 800 -40 0 0 {name=p8 lab=0}
-C {devices/res.sym} 980 -210 0 0 {name=R2
+C {devices/lab_pin.sym} 700 -190 0 0 {name=p5 lab=REF}
+C {devices/lab_pin.sym} 860 -250 0 0 {name=p6 lab=G1}
+C {devices/isource.sym} 860 -370 0 0 {name=I2 value="pwl 0 0 1n 100n"}
+C {devices/lab_pin.sym} 860 -430 0 0 {name=p7 lab=0}
+C {devices/lab_pin.sym} 830 -70 0 0 {name=p8 lab=0}
+C {devices/res.sym} 1010 -240 0 0 {name=R2
 value=1G
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 980 -160 0 0 {name=p10 lab=REF}
-C {devices/lab_pin.sym} 1120 -210 0 0 {name=p9 lab=G2}
-C {devices/isource.sym} 1120 -340 0 0 {name=I3 value="pwl 0 0 1000n 0 1010n 100n"}
-C {devices/lab_pin.sym} 1120 -400 0 0 {name=p11 lab=0}
-C {devices/lab_pin.sym} 1120 -90 0 0 {name=p12 lab=0}
-C {devices/res.sym} 1270 -210 0 0 {name=R3
+C {devices/lab_pin.sym} 1010 -190 0 0 {name=p10 lab=REF}
+C {devices/lab_pin.sym} 1150 -240 0 0 {name=p9 lab=G2}
+C {devices/isource.sym} 1150 -370 0 0 {name=I3 value="pwl 0 0 1n 100n"}
+C {devices/lab_pin.sym} 1150 -430 0 0 {name=p11 lab=0}
+C {devices/lab_pin.sym} 1150 -120 0 0 {name=p12 lab=0}
+C {devices/res.sym} 1300 -240 0 0 {name=R3
 value=1G
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 1270 -160 0 0 {name=p13 lab=REF}
-C {devices/capa.sym} 1120 -150 0 0 {name=C1
+C {devices/lab_pin.sym} 1300 -190 0 0 {name=p13 lab=REF}
+C {devices/capa.sym} 1150 -180 0 0 {name=C1
 m=1
 value=0.19p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/vsource.sym} 390 -330 0 0 {name=V1 value=-2}
-C {devices/lab_pin.sym} 390 -300 0 0 {name=p14 lab=0}
-C {devices/lab_pin.sym} 390 -380 0 1 {name=p15 lab=REF}
+C {devices/vsource.sym} 420 -360 0 0 {name=V1 value=-2}
+C {devices/lab_pin.sym} 420 -330 0 0 {name=p14 lab=0}
+C {devices/lab_pin.sym} 420 -410 0 1 {name=p15 lab=REF}
 C {devices/code.sym} 20 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 format=tcleval(@value\\)
@@ -142,7 +142,7 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 830 -180 1 0 {name=M1
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 860 -210 1 0 {name=M1
 L=5
 W=5
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
@@ -153,24 +153,26 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/launcher.sym} 70 -280 0 0 {name=h2
+C {devices/launcher.sym} 130 -290 0 0 {name=h2
 descr="Simulation done
 using a patched 
 sky130 primitive directory,
 see patch file from diadatp" 
 url="https://gist.github.com/diadatp/36b7d6a80f7b586fd561b5951077eddc"}
-C {devices/lab_pin.sym} 1450 -210 0 0 {name=p16 lab=G3}
-C {devices/isource.sym} 1450 -340 0 0 {name=I4 value="pwl 0 0 1000n 0 1010n 100n"}
-C {devices/lab_pin.sym} 1450 -400 0 0 {name=p17 lab=0}
-C {devices/lab_pin.sym} 1450 -90 0 0 {name=p18 lab=0}
-C {devices/res.sym} 1600 -210 0 0 {name=R4
+C {devices/lab_pin.sym} 1480 -240 0 0 {name=p16 lab=G3}
+C {devices/isource.sym} 1480 -370 0 0 {name=I4 value="pwl 0 0 1n 100n"}
+C {devices/lab_pin.sym} 1480 -430 0 0 {name=p17 lab=0}
+C {devices/lab_pin.sym} 1480 -120 0 0 {name=p18 lab=0}
+C {devices/res.sym} 1630 -240 0 0 {name=R4
 value=1G
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 1600 -160 0 0 {name=p19 lab=REF}
-C {devices/capa.sym} 1450 -150 0 0 {name=C2
+C {devices/lab_pin.sym} 1630 -190 0 0 {name=p19 lab=REF}
+C {devices/capa.sym} 1480 -180 0 0 {name=C2
 m=1
 value="q=\{v(g3) * 0.19p\}"
 footprint=1206
 device="ceramic capacitor"}
+C {sky130_fd_pr/cap_var_lvt.sym} 550 -180 0 0 {name=C4 model=cap_var_lvt W=5 L=5 VM=1 spiceprefix=X}
+C {devices/lab_pin.sym} 510 -160 0 0 {name=p20 lab=0}

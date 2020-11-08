@@ -20,6 +20,8 @@ K {}
 V {}
 S {}
 E {}
+T {Ctrl-Click
+to open link} 10 -310 0 0 0.3 0.3 {layer=11}
 N 560 -220 610 -220 { lab=#net1}
 N 560 -220 560 -190 { lab=#net1}
 N 560 -130 720 -130 { lab=0}

@@ -22,6 +22,8 @@ S {}
 E {}
 T {Disabled
 No Model} 2160 -50 0 0 0.3 0.3 {layer=7}
+T {Ctrl-Click
+to open link} 10 -310 0 0 0.3 0.3 {layer=11}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}

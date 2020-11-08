@@ -20,6 +20,8 @@ K {}
 V {}
 S {}
 E {}
+T {Ctrl-Click
+to open link} 800 -490 0 0 0.3 0.3 {layer=11}
 N 330 -280 360 -280 {lab=VSS}
 N 300 -140 330 -140 {lab=0}
 N 330 -250 330 -140 {lab=0}

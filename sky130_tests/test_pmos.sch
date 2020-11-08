@@ -22,6 +22,8 @@ S {}
 E {}
 T {Disabled
 No Model} 1910 -550 0 0 0.3 0.3 {layer=7}
+T {Ctrl-Click
+to open link} 10 -340 0 0 0.3 0.3 {layer=11}
 N 680 -490 680 -470 {lab=S}
 N 680 -440 700 -440 {lab=B}
 N 620 -440 640 -440 {lab=G1v8}

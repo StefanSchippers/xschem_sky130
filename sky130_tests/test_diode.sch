@@ -40,6 +40,8 @@ sky130_fd_pr__diode_pw2nd_11v0
 sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn} 950 -280 0 0 0.2 0.2 {}
+T {Ctrl-Click
+to open link} -10 -310 0 0 0.3 0.3 {layer=11}
 N 460 -390 460 -360 { lab=0}
 N 460 -240 460 -170 { lab=K1}
 N 460 -110 460 -80 { lab=0}

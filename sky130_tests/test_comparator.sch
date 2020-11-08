@@ -46,6 +46,8 @@ T {NGSPICE MONTE CARLO SIMULATION} 1430 -290 0 0 0.8 0.8 {}
 T {Offset-compensated comparator. Detects +/- 2mv differential signal on PLUS, MINUS.
 Output on SAOUT
 Gaussian Threshold variation is added to all MOS transistors.} 1330 -220 0 0 0.6 0.6 {}
+T {Ctrl-Click
+to open link} 870 -170 0 0 0.3 0.3 {layer=11}
 N 120 -480 120 -460 {lab=TEMPERAT}
 N 290 -1090 320 -1090 {lab=VSS}
 N 290 -1060 290 -1030 {lab=VSS}
@@ -621,7 +623,7 @@ value=15f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1930 -1020 0 0 {name=p7 lab=VCC}
-C {devices/launcher.sym} 910 -130 0 0 {name=h1
+C {devices/launcher.sym} 960 -120 0 0 {name=h1
 descr="Simulation done
 using a patched 
 sky130 primitive directory,
