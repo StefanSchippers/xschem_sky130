@@ -400,3 +400,9 @@ nf=1 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
+C {devices/launcher.sym} 680 -910 0 0 {name=h8
+descr="Open_pdks documentation"
+url="http://opencircuitdesign.com/open_pdks/index.html"}
+C {devices/launcher.sym} 680 -870 0 0 {name=h9
+descr="diadatp patch file of sky130_fd_pr/ directory for ngspice"
+url="https://gist.githubusercontent.com/diadatp/36b7d6a80f7b586fd561b5951077eddc/raw/e0d6d5cdd7437b4f76fa0373ac634a61f696d2f1/fix_resistors.patch"}

@@ -246,7 +246,7 @@ value="* .option SCALE=1e-6
 .control
   let run=1
   
-  dowhile run <= 10
+  dowhile run <= 20
     if run > 1
       reset
       set appendwrite
@@ -666,3 +666,17 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
+C {devices/launcher.sym} 1150 -310 0 0 {name=h3
+descr="Load file into gaw" 
+comment="
+  This launcher gets raw filename from current schematic using 'xschem get schname'
+  and stripping off path and suffix.  It then loads raw file into gaw.
+  This allow to use it in any schematic without changes.
+"
+tclcommand="
+set rawfile [file tail [file rootname [xschem get schname]]].raw
+gaw_cmd \\"tabledel $rawfile
+load $netlist_dir/$rawfile
+table_set $rawfile\\"
+unset rawfile"
+}
