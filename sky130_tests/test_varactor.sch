@@ -61,7 +61,10 @@ value="
 .control
 tran 10n 9u
 plot g g1 g2 g3
+plot '100n/deriv(g)' vs v(g) ylimit 0 0.3p
+plot '100n/deriv(g1)' vs v(g1) ylimit 0 0.3p
 write test_varactor.raw
+
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
