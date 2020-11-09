@@ -22,8 +22,6 @@ S {}
 E {}
 T {Simple ring oscillator for
 speed testing} 80 -440 0 0 0.6 0.6 {layer=4}
-N 610 -180 610 -120 { lab=Z[1]}
-N 600 -180 610 -180 { lab=Z[1]}
 N 690 -280 690 -120 { lab=Z[2]}
 N 770 -280 770 -120 { lab=Z[3]}
 N 850 -280 850 -120 { lab=Z[4]}
@@ -36,10 +34,7 @@ N 490 -70 1150 -70 { lab=Z[0]}
 N 490 -180 490 -70 { lab=Z[0]}
 N 490 -180 530 -180 { lab=Z[0]}
 N 530 -280 530 -180 { lab=Z[0]}
-N 610 -280 610 -180 { lab=Z[1]}
 N 540 -290 1090 -290 {bus=true lab=Z[6:0]}
-N 610 -440 610 -380 { lab=Y[1]}
-N 600 -440 610 -440 { lab=Y[1]}
 N 690 -540 690 -380 { lab=Y[2]}
 N 770 -540 770 -380 { lab=Y[3]}
 N 850 -540 850 -380 { lab=Y[4]}
@@ -52,8 +47,9 @@ N 490 -330 1150 -330 { lab=Y[0]}
 N 490 -440 490 -330 { lab=Y[0]}
 N 490 -440 530 -440 { lab=Y[0]}
 N 530 -540 530 -440 { lab=Y[0]}
-N 610 -540 610 -440 { lab=Y[1]}
 N 540 -550 1090 -550 {bus=true lab=Y[6:0]}
+N 610 -280 610 -120 { lab=Z[1]}
+N 610 -540 610 -380 { lab=Y[1]}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code_shown.sym} 0 -700 0 0 {name=NGSPICE
 only_toplevel=true
