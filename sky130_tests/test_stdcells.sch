@@ -31,6 +31,10 @@ standard cells library, example: } 50 -960 0 0 0.6 0.6 {layer=8 slant=italic}
 T {Next the xschemrc file includes a "sky130_models.tcl" script that wil be executed
 during netlist and returning the .include lines needed for the spice netlists
 of  the *used* standard cells in this circuit and all its subcircuits.} 50 -750 0 0 0.6 0.6 {layer=8 slant=italic}
+T {Ctrl-Click
+to open link} 1050 -170 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click
+to open link} 1050 -290 0 0 0.3 0.3 {layer=11}
 N 60 -310 60 -290 { lab=A}
 N 60 -200 60 -180 { lab=B}
 N 380 -260 480 -260 { lab=X}
@@ -77,7 +81,7 @@ C {devices/parax_cap.sym} 500 -420 0 0 {name=C2 gnd=0 value=3f m=1}
 C {devices/code.sym} 690 -190 0 0 {name=STDCELL_MODELS 
 only_toplevel=true
 place=end
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="[sky130_models]"
 }
 C {devices/lab_pin.sym} 240 -550 0 0 {name=p16 lab=A}
@@ -85,7 +89,7 @@ C {devices/lab_pin.sym} 240 -510 0 0 {name=p17 lab=B}
 C {devices/lab_pin.sym} 460 -530 0 1 {name=p18 lab=Y}
 C {devices/parax_cap.sym} 400 -520 0 0 {name=C3 gnd=0 value=3f m=1}
 C {sky130_stdcells/nor2b_1.sym} 300 -530 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/launcher.sym} 1050 -140 0 0 {name=h1
+C {devices/launcher.sym} 1130 -120 0 0 {name=h1
 descr="Simulation done
 using a patched 
 sky130 primitive directory,
@@ -130,3 +134,7 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
+C {devices/launcher.sym} 1130 -240 0 0 {name=h2
+descr="sky130_models.tcl"
+tclcommand="eval exec $editor scripts/sky130_models.tcl"
+}

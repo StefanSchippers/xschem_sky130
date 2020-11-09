@@ -5,7 +5,7 @@ proc sky130_models {} {
   global SKYWATER_STDCELLS
   set l {}
   if {![info exists SKYWATER_STDCELLS]} {
-    puts "ERROR: SKYWATER_STDCELLS TCL variable undefined, please set in shell before starting xschem"
+    puts "ERROR: SKYWATER_STDCELLS TCL variable undefined, please set in xschemrc and restart xschem"
     return {***** ERROR: missing TCL var SKYWATER_STDCELLS}
   }
   foreach  i [xschem symbols] {
