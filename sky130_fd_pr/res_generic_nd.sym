@@ -57,4 +57,4 @@ T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
 T {@name} 15 -25 0 0 0.2 0.2 {}
 T {@mult * @W / @L} 15 0 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -12.5 0 0 0.2 0.2 {}
-T {tcleval(R=[expr @rho * @L / @W / @mult ] Ω)} 15 12.5 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[expr @rho * @L / @W / @mult ] Ohm)} 15 12.5 0 0 0.2 0.2 {layer=13}

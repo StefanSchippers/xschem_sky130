@@ -41,7 +41,7 @@ dc temp -40 140 1
 plot v(p,m) / vr6#branch
 *plot v(p,m) / vr7#branch
 *plot v(p,m) / vr8#branch
-*plot v(p,m) / vr9#branch
+plot v(p,m) / vr9#branch
 plot v(p,m) / vr10#branch
 *plot v(p,m) / vr11#branch
 *plot v(p,m) / vr12#branch
