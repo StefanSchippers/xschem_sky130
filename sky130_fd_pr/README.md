@@ -66,3 +66,4 @@ as this is a work in progress and the whole PDK is evolving.
 | `vpp_cap.sym` |Vertical parallel plate metal capacitors|
 | `cap_var_lvt.sym` |Variable capacitance (Varactor), LVT version|
 | `cap_var_hvt.sym` |Variable capacitance (Varactor), HVT version|
+| `vpp_cap.sym`     |Vertical Parallel Plate (VPP) capacitors|
