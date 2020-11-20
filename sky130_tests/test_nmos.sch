@@ -233,7 +233,12 @@ see patch file"
 url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
 L=0.15
-W=1
+W=2 ad="tcleval([expr @W * 0.29])"
+as="tcleval([expr @W * 0.29])"
+ps="tcleval([expr 2*(@W * @L )])"
+pd="tcleval([expr 2*(@W * @L )])"
+nrs="tcleval([expr 0.29/@W ])"
+nrd="tcleval([expr 0.29/@W ])"
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
