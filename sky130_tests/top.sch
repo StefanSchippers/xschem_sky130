@@ -36,9 +36,9 @@ T {PNP} 1350 -70 0 0 1 1 { hcenter=true}
 T {No Model} 1800 -710 0 0 0.3 0.3 {layer=7}
 T {No Model} 1960 -590 0 0 0.3 0.3 {layer=7}
 T {No Model} 1800 -930 0 0 0.3 0.3 {layer=7}
-T {Digital standard cells} 50 -790 0 0 0.6 0.6 {layer=8}
+T {Digital standard cells} 50 -830 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 610 -1190 0 0 0.3 0.3 {layer=11}
-T {Ctrl-Click to open link} 480 -730 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 480 -770 0 0 0.3 0.3 {layer=11}
 T {* Copyright 2020 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0
@@ -337,13 +337,13 @@ model=pfet_20v0
 spiceprefix=X
 spice_ignore=true
 }
-C {sky130_tests/gates.sym} 310 -690 0 0 {name=x8}
-C {devices/launcher.sym} 510 -690 0 0 {name=h4
+C {sky130_tests/gates.sym} 310 -730 0 0 {name=x8}
+C {devices/launcher.sym} 510 -730 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1600 -1180 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1760 -1180 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_tests/test_format_override.sym} 310 -650 0 0 {name=x9}
+C {sky130_tests/test_format_override.sym} 310 -690 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 310 -870 0 0 {name=x11}
 C {devices/launcher.sym} 680 -1030 0 0 {name=h5
 descr="XSCHEM on Github" 
@@ -351,9 +351,9 @@ url="https://github.com/StefanSchippers/xschem"}
 C {devices/launcher.sym} 680 -990 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
-C {sky130_tests/gates_sky130.sym} 310 -610 0 0 {name=x10}
-C {sky130_tests/test_stdcells.sym} 310 -730 0 0 {name=x12}
-C {sky130_tests/all_sky130_gates.sym} 310 -570 0 0 {name=x13}
+C {sky130_tests/gates_sky130.sym} 310 -650 0 0 {name=x10}
+C {sky130_tests/test_stdcells.sym} 310 -770 0 0 {name=x12}
+C {sky130_tests/all_sky130_gates.sym} 310 -610 0 0 {name=x13}
 C {devices/launcher.sym} 680 -950 0 0 {name=h7
 descr="A good tutorial for using XSCHEM with SKY130 pdk" 
 url="https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md"}
@@ -406,3 +406,4 @@ url="http://opencircuitdesign.com/open_pdks/index.html"}
 C {devices/launcher.sym} 680 -870 0 0 {name=h9
 descr="diadatp patch file of sky130_fd_pr/ directory for ngspice"
 url="https://gist.githubusercontent.com/diadatp/36b7d6a80f7b586fd561b5951077eddc/raw/e0d6d5cdd7437b4f76fa0373ac634a61f696d2f1/fix_resistors.patch"}
+C {mips_cpu/tb.sym} 310 -570 0 0 {name=x16}
