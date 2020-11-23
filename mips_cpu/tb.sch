@@ -69,7 +69,8 @@ C {mips_cpu/top.sym} 480 -100 0 0 {name=xuut}
 C {devices/lab_pin.sym} 330 -110 0 0 {name=p1 lab=clock verilog_type=reg}
 C {devices/lab_pin.sym} 330 -90 0 0 {name=p3 lab=reset verilog_type=reg}
 C {devices/architecture.sym} 0 -530 0 0 { nothing here, use global schematic properties }
-C {devices/verilog_preprocessor.sym} 30 -670 0 0 {name=s1  string="`define CLKP 10 // clock period
+C {devices/verilog_preprocessor.sym} 30 -670 0 0 {name=s1  
+string="`define CLKP 10 // clock period
 `define CLKPDIV2 5 // clock period divided by 2
 "}
 C {devices/launcher.sym} 530 -800 0 0 {name=h1
