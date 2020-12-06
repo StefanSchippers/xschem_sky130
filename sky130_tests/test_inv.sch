@@ -93,12 +93,6 @@ C {devices/bus_connect.sym} 700 -550 3 1 {name=l14 lab=Y[2]}
 C {devices/bus_connect.sym} 620 -550 3 1 {name=l15 lab=Y[1]}
 C {devices/bus_connect.sym} 540 -550 3 1 {name=l16 lab=Y[0]}
 C {devices/lab_pin.sym} 1090 -550 0 1 {name=l17 sig_type=std_logic lab=Y[6:0]}
-C {devices/launcher.sym} 120 -250 0 0 {name=h1
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file" 
-url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
 C {sky130_tests/not.sym} 570 -180 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
 C {sky130_tests/not.sym} 650 -180 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
 C {sky130_tests/not.sym} 730 -180 0 0 {name=x2 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
@@ -113,9 +107,9 @@ C {sky130_tests/lvtnot.sym} 810 -440 0 0 {name=x11 m=1 VCCPIN=VCC VSSPIN=VSS W_N
 C {sky130_tests/lvtnot.sym} 890 -440 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {sky130_tests/lvtnot.sym} 970 -440 0 0 {name=x13 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {sky130_tests/lvtnot.sym} 1050 -440 0 0 {name=x14 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {devices/code.sym} 0 -180 0 0 {name=TT_MODELS
+C {devices/code.sym} 40 -180 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice

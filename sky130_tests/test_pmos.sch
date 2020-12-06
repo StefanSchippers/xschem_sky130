@@ -22,8 +22,6 @@ S {}
 E {}
 T {Disabled
 No Model} 1910 -550 0 0 0.3 0.3 {layer=7}
-T {Ctrl-Click
-to open link} 10 -340 0 0 0.3 0.3 {layer=11}
 N 680 -490 680 -470 {lab=S}
 N 680 -440 700 -440 {lab=B}
 N 620 -440 640 -440 {lab=G1v8}
@@ -220,15 +218,9 @@ C {devices/lab_pin.sym} 1950 -490 2 0 {name=p48 lab=S}
 C {devices/lab_pin.sym} 1970 -440 0 1 {name=p49 lab=B}
 C {devices/ammeter.sym} 1950 -360 0 1 {name=Vd6}
 C {devices/lab_pin.sym} 1890 -440 0 0 {name=p55 lab=G5v0}
-C {devices/launcher.sym} 100 -290 0 0 {name=h1
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file" 
-url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
-C {devices/code.sym} 60 -200 0 0 {name=TT_MODELS
+C {devices/code.sym} 50 -190 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice

@@ -40,8 +40,6 @@ sky130_fd_pr__diode_pw2nd_11v0
 sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn} 950 -280 0 0 0.2 0.2 {}
-T {Ctrl-Click
-to open link} -10 -310 0 0 0.3 0.3 {layer=11}
 N 460 -390 460 -360 { lab=0}
 N 460 -240 460 -170 { lab=K1}
 N 460 -110 460 -80 { lab=0}
@@ -78,15 +76,9 @@ area=1
 }
 C {devices/lab_pin.sym} 900 -80 0 0 {name=p6 lab=0}
 C {devices/cccs.sym} 900 -330 0 0 {name=F1 vnam=vk1 value=1}
-C {devices/launcher.sym} 80 -260 0 0 {name=h1
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file" 
-url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
-C {devices/code.sym} 30 -180 0 0 {name=TT_MODELS
+C {devices/code.sym} 10 -180 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice

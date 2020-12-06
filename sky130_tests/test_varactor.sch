@@ -20,8 +20,6 @@ K {}
 V {}
 S {}
 E {}
-T {Ctrl-Click
-to open link} 20 -340 0 0 0.3 0.3 {layer=11}
 N 550 -430 550 -400 { lab=0}
 N 550 -280 550 -210 { lab=G}
 N 550 -150 550 -120 { lab=0}
@@ -106,9 +104,37 @@ device="ceramic capacitor"}
 C {devices/vsource.sym} 420 -360 0 0 {name=V1 value=-2}
 C {devices/lab_pin.sym} 420 -330 0 0 {name=p14 lab=0}
 C {devices/lab_pin.sym} 420 -410 0 1 {name=p15 lab=REF}
-C {devices/code.sym} 20 -180 0 0 {name=TT_MODELS
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 860 -210 1 0 {name=M1
+L=5
+W=5
+ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
+as="'W * 0.29'" ps="'2 * (W + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+nf=1 mult=1
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1480 -240 0 0 {name=p16 lab=G3}
+C {devices/isource.sym} 1480 -370 0 0 {name=I4 value="pwl 0 0 1n 100n"}
+C {devices/lab_pin.sym} 1480 -430 0 0 {name=p17 lab=0}
+C {devices/lab_pin.sym} 1480 -120 0 0 {name=p18 lab=0}
+C {devices/res.sym} 1630 -240 0 0 {name=R4
+value=1G
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_pin.sym} 1630 -190 0 0 {name=p19 lab=REF}
+C {devices/capa.sym} 1480 -180 0 0 {name=C2
+m=1
+value="q=\{v(g3) * 0.19p\}"
+footprint=1206
+device="ceramic capacitor"}
+C {sky130_fd_pr/cap_var_lvt.sym} 550 -180 0 0 {name=C4 model=cap_var_lvt W=5 L=5 VM=1 spiceprefix=X}
+C {devices/lab_pin.sym} 510 -160 0 0 {name=p20 lab=0}
+C {devices/code.sym} 90 -180 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
@@ -145,37 +171,3 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 860 -210 1 0 {name=M1
-L=5
-W=5
-ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
-as="'W * 0.29'" ps="'2 * (W + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/launcher.sym} 130 -290 0 0 {name=h2
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file from diadatp" 
-url="https://gist.github.com/diadatp/36b7d6a80f7b586fd561b5951077eddc"}
-C {devices/lab_pin.sym} 1480 -240 0 0 {name=p16 lab=G3}
-C {devices/isource.sym} 1480 -370 0 0 {name=I4 value="pwl 0 0 1n 100n"}
-C {devices/lab_pin.sym} 1480 -430 0 0 {name=p17 lab=0}
-C {devices/lab_pin.sym} 1480 -120 0 0 {name=p18 lab=0}
-C {devices/res.sym} 1630 -240 0 0 {name=R4
-value=1G
-footprint=1206
-device=resistor
-m=1}
-C {devices/lab_pin.sym} 1630 -190 0 0 {name=p19 lab=REF}
-C {devices/capa.sym} 1480 -180 0 0 {name=C2
-m=1
-value="q=\{v(g3) * 0.19p\}"
-footprint=1206
-device="ceramic capacitor"}
-C {sky130_fd_pr/cap_var_lvt.sym} 550 -180 0 0 {name=C4 model=cap_var_lvt W=5 L=5 VM=1 spiceprefix=X}
-C {devices/lab_pin.sym} 510 -160 0 0 {name=p20 lab=0}

@@ -20,8 +20,6 @@ K {}
 V {}
 S {}
 E {}
-T {Ctrl-Click
-to open link} -20 -350 0 0 0.3 0.3 {layer=11}
 N 580 -470 580 -440 { lab=0}
 N 580 -320 580 -250 { lab=G}
 N 580 -190 580 -160 { lab=0}
@@ -83,15 +81,9 @@ W=1
 L=1 
 mult=1 
 spiceprefix=X}
-C {devices/launcher.sym} 70 -290 0 0 {name=h1
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file" 
-url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
-C {devices/code.sym} 50 -180 0 0 {name=TT_MODELS
+C {devices/code.sym} 20 -190 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice

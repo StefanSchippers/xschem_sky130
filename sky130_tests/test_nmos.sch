@@ -22,8 +22,6 @@ S {}
 E {}
 T {Disabled
 No Model} 2160 -50 0 0 0.3 0.3 {layer=7}
-T {Ctrl-Click
-to open link} 10 -310 0 0 0.3 0.3 {layer=11}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}
@@ -225,12 +223,6 @@ C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
 C {devices/ipin.sym} 430 -430 0 0 {name=p48 lab=G1v8}
 C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
 C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
-C {devices/launcher.sym} 100 -260 0 0 {name=h1
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file" 
-url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
 L=0.15
 W=2 ad="tcleval([expr @W * 0.29])"
@@ -243,9 +235,9 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/code.sym} 70 -180 0 0 {name=TT_MODELS
+C {devices/code.sym} 50 -190 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice

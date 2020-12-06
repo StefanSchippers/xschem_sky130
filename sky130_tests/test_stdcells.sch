@@ -32,8 +32,6 @@ T {Next the xschemrc file includes a "sky130_models.tcl" script that wil be exec
 during netlist and returning the .include lines needed for the spice netlists
 of  the *used* standard cells in this circuit and all its subcircuits.} 50 -750 0 0 0.6 0.6 {layer=8 slant=italic}
 T {Ctrl-Click
-to open link} 1050 -170 0 0 0.3 0.3 {layer=11}
-T {Ctrl-Click
 to open link} 1050 -290 0 0 0.3 0.3 {layer=11}
 N 60 -310 60 -290 { lab=A}
 N 60 -200 60 -180 { lab=B}
@@ -42,6 +40,8 @@ N 60 -450 60 -430 { lab=CLK}
 N 60 -570 60 -550 { lab=RESET_B}
 N 460 -430 560 -430 { lab=Q}
 N 360 -530 460 -530 { lab=Y}
+N 860 -530 960 -530 { lab=Qlatch}
+N 860 -510 870 -510 { lab=#net1}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 540 -190 0 0 {name=STIMULI 
 only_toplevel=true
@@ -51,15 +51,15 @@ vvcc vcc 0 dc 1.8
 vvss vss 0 0
 .control
 tran 30p 80n
-plot a b+2 clk+4 reset_b+6 x+8 y+10 q+12
+plot a b+2 clk+4 reset_b+6 x+8 y+10 q+12 qlatch+14
 .endc
 "}
 C {devices/lab_pin.sym} 260 -280 0 0 {name=p1 lab=A}
 C {devices/lab_pin.sym} 260 -240 0 0 {name=p2 lab=B}
 C {devices/lab_pin.sym} 480 -260 0 1 {name=p3 lab=X}
 C {sky130_stdcells/nand2_1.sym} 320 -260 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/sqwsource.sym} 60 -260 0 0 {name=V1 vhi=1.8 freq=0.2e9}
-C {devices/sqwsource.sym} 60 -150 0 0 {name=V2 vhi=1.8 freq=0.3e9}
+C {devices/sqwsource.sym} 60 -260 0 0 {name=V1 vhi=1.8 freq=0.09e9}
+C {devices/sqwsource.sym} 60 -150 0 0 {name=V2 vhi=1.8 freq=0.02e9}
 C {devices/lab_pin.sym} 60 -120 0 0 {name=p4 lab=0}
 C {devices/lab_pin.sym} 60 -230 0 0 {name=p5 lab=0}
 C {devices/lab_pin.sym} 60 -310 0 1 {name=p6 lab=A}
@@ -67,12 +67,12 @@ C {devices/lab_pin.sym} 60 -200 0 1 {name=p7 lab=B}
 C {devices/parax_cap.sym} 420 -250 0 0 {name=C1 gnd=0 value=3f m=1}
 C {sky130_stdcells/dfrtp_1.sym} 370 -410 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ 
 }
-C {devices/sqwsource.sym} 60 -400 0 0 {name=V3 vhi=1.8 freq=0.5e9}
+C {devices/sqwsource.sym} 60 -400 0 0 {name=V3 vhi=1.8 freq=0.2e9}
 C {devices/lab_pin.sym} 60 -370 0 0 {name=p8 lab=0}
 C {devices/lab_pin.sym} 60 -450 0 1 {name=p9 lab=CLK}
 C {devices/lab_pin.sym} 280 -430 0 0 {name=p10 lab=CLK}
 C {devices/lab_pin.sym} 280 -410 0 0 {name=p11 lab=A}
-C {devices/sqwsource.sym} 60 -520 0 0 {name=V4 vhi=1.8 freq=1e8}
+C {devices/sqwsource.sym} 60 -520 0 0 {name=V4 vhi=1.8 freq=0.7e8}
 C {devices/lab_pin.sym} 60 -490 0 0 {name=p12 lab=0}
 C {devices/lab_pin.sym} 60 -570 0 1 {name=p13 lab=RESET_B}
 C {devices/lab_pin.sym} 280 -390 0 0 {name=p14 lab=RESET_B}
@@ -81,7 +81,7 @@ C {devices/parax_cap.sym} 500 -420 0 0 {name=C2 gnd=0 value=3f m=1}
 C {devices/code.sym} 690 -190 0 0 {name=STDCELL_MODELS 
 only_toplevel=true
 place=end
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="[sky130_models]"
 }
 C {devices/lab_pin.sym} 240 -550 0 0 {name=p16 lab=A}
@@ -89,15 +89,13 @@ C {devices/lab_pin.sym} 240 -510 0 0 {name=p17 lab=B}
 C {devices/lab_pin.sym} 460 -530 0 1 {name=p18 lab=Y}
 C {devices/parax_cap.sym} 400 -520 0 0 {name=C3 gnd=0 value=3f m=1}
 C {sky130_stdcells/nor2b_1.sym} 300 -530 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/launcher.sym} 1130 -120 0 0 {name=h1
-descr="Simulation done
-using a patched 
-sky130 primitive directory,
-see patch file" 
-url="https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr.patch"}
+C {devices/launcher.sym} 1130 -240 0 0 {name=h2
+descr="sky130_models.tcl"
+tclcommand="eval exec $editor scripts/sky130_models.tcl"
+}
 C {devices/code.sym} 860 -190 0 0 {name=TT_MODELS
 only_toplevel=true
-format=tcleval(@value\\)
+format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
@@ -134,7 +132,9 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
-C {devices/launcher.sym} 1130 -240 0 0 {name=h2
-descr="sky130_models.tcl"
-tclcommand="eval exec $editor scripts/sky130_models.tcl"
-}
+C {sky130_stdcells/dlrbn_1.sym} 770 -510 0 0 {name=x4 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 680 -510 0 0 {name=p19 lab=CLK}
+C {devices/lab_pin.sym} 680 -530 0 0 {name=p20 lab=A}
+C {devices/lab_pin.sym} 680 -490 0 0 {name=p21 lab=RESET_B}
+C {devices/lab_pin.sym} 960 -530 0 1 {name=p22 lab=Qlatch}
+C {devices/parax_cap.sym} 900 -520 0 0 {name=C4 gnd=0 value=3f m=1}
