@@ -225,13 +225,14 @@ C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
 C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
 L=0.15
-W=2 ad="tcleval([expr @W * 0.29])"
-as="tcleval([expr @W * 0.29])"
-ps="tcleval([expr 2*(@W * @L )])"
-pd="tcleval([expr 2*(@W * @L )])"
+W=4
+nf=4 mult=1
+ad="tcleval([expr int((@nf + 1)/2) * @W / @nf * 0.29])"
+pd="tcleval([expr 2*int((@nf + 1)/2) * (@W /@nf + 0.29)])"
+as="tcleval([expr int((@nf + 2)/2) * @W / @nf * 0.29])"
+ps="tcleval([expr 2*int((@nf + 2)/2) * (@W /@nf + 0.29)])"
 nrs="tcleval([expr 0.29/@W ])"
 nrd="tcleval([expr 0.29/@W ])"
-nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
 }

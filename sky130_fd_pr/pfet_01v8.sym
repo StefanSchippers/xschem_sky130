@@ -15,17 +15,21 @@ v {xschem version=2.9.8 file_version=1.2
 * limitations under the License.
 
 }
-G {type=pmos
+G {}
+K {type=pmos
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L
 + ad=@ad pd=@pd as=@as ps=@ps nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd nf=@nf mult=@mult m=@mult"
 template="name=M1
 L=0.15
 W=1
-ad=\\"'W * 0.29'\\" pd=\\"'2 * (W + 0.29)'\\"
-as=\\"'W * 0.29'\\" ps=\\"'2 * (W + 0.29)'\\"
+nf=1
+mult=1
+ad=\\"'int((nf+1)/2) * W/nf * 0.29'\\" 
+pd=\\"'2*int((nf+1)/2) * (W/nf + 0.29)'\\"
+as=\\"'int((nf+2)/2) * W/nf * 0.29'\\" 
+ps=\\"'2*int((nf+2)/2) * (W/nf + 0.29)'\\"
 nrd=\\"'0.29 / W'\\" nrs=\\"'0.29 / W'\\"
 sa=0 sb=0 sd=0
-nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 "}
