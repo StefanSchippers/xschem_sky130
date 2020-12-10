@@ -17,8 +17,10 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {type=pmos
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L
-+ ad=@ad pd=@pd as=@as ps=@ps nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd nf=@nf mult=@mult m=@mult"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W
++ nf=@nf ad=@ad as=@as pd=@pd ps=@ps
++ nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd 
++ mult=@mult m=@mult"
 template="name=M1
 L=0.15
 W=1

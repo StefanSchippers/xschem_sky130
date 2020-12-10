@@ -127,10 +127,6 @@ C {devices/ammeter.sym} 1180 -360 0 1 {name=Vd3}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 1160 -440 0 0 {name=M3
 L=0.15
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_hvt
 spiceprefix=X
@@ -142,10 +138,6 @@ C {devices/ammeter.sym} 1430 -360 0 1 {name=Vd4}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1410 -440 0 0 {name=M4
 L=0.5
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -153,10 +145,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 660 -440 0 0 {name=M1
 L=0.35
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -164,10 +152,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8.sym} 910 -440 0 0 {name=M2
 L=0.15
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -179,10 +163,6 @@ C {devices/ammeter.sym} 1690 -360 0 1 {name=Vd5}
 C {sky130_fd_pr/pfet_g5v0d16v0.sym} 1670 -440 0 0 {name=M5
 L=0.66
 W=5.0
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
@@ -205,10 +185,6 @@ C {devices/lab_pin.sym} 1310 -600 0 0 {name=p54 lab=0}
 C {sky130_fd_pr/pfet_20v0.sym} 1930 -440 0 0 {name=M6
 L=1
 W=30
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_20v0
 spice_ignore=true

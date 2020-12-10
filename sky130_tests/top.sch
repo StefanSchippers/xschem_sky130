@@ -20,9 +20,9 @@ K {}
 V {}
 S {}
 E {}
-L 4 1300 -1130 2260 -1130 {}
-L 4 1300 -895 2260 -895 {}
-L 4 1300 -685 2260 -685 {}
+L 4 1300 -1130 3280 -1130 {}
+L 4 1300 -895 3280 -895 {}
+L 4 1300 -685 3280 -685 {}
 L 4 1300 -300 2260 -300 {}
 L 4 1300 -95 2260 -95 {}
 L 4 1300 -1380 2260 -1380 {}
@@ -97,6 +97,12 @@ T {No Model} 2270 -710 0 0 0.3 0.3 {layer=7}
 T {WARNING: currently (20201025) varactor model
 is not working. Contains hspice-specific syntax
 that ngspice does not simulate correctly} 1860 -1340 0 0 0.3 0.3 {layer=7}
+T {No Model} 2970 -710 0 0 0.3 0.3 {layer=7}
+T {3 PIN
+NFET} 2510 -860 0 0 1 1 { hcenter=true}
+T {No Model} 2960 -930 0 0 0.3 0.3 {layer=7}
+T {3 PIN
+PFET} 2510 -1070 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 680 -1150 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -217,10 +223,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_03v3_nvt.sym} 1820 -840 0 0 {name=M3
 L=0.5
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_03v3_nvt
 spiceprefix=X
@@ -228,10 +230,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_05v0_nvt.sym} 1980 -840 0 0 {name=M4
 L=0.9
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_05v0_nvt
 spiceprefix=X
@@ -239,10 +237,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1500 -750 0 0 {name=M5
 L=0.5
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_g5v0d10v5
 spiceprefix=X
@@ -250,10 +244,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_g5v0d16v0.sym} 1660 -750 0 0 {name=M6
 L=0.7
 W=5.0
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_g5v0d16v0
 spiceprefix=X
@@ -261,10 +251,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_20v0.sym} 1820 -750 0 0 {name=M7
 L=0.5
 W=20.0
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_20v0
 spiceprefix=X
@@ -272,10 +258,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 1820 -1070 0 0 {name=M8
 L=0.15
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_hvt
 spiceprefix=X
@@ -283,10 +265,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1500 -970 0 0 {name=M9
 L=0.5
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -294,10 +272,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1500 -1070 0 0 {name=M10
 L=0.35
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -305,10 +279,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8.sym} 1660 -1070 0 0 {name=M11
 L=0.15
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -316,10 +286,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_g5v0d16v0.sym} 1660 -970 0 0 {name=M12
 L=0.66
 W=5.0
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
@@ -328,10 +294,6 @@ C {sky130_tests/test_comparator.sym} 310 -910 0 0 {name=x7}
 C {sky130_fd_pr/pfet_20v0.sym} 1820 -970 0 0 {name=M13
 L=1
 W=30
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
@@ -370,9 +332,6 @@ spiceprefix=X}
 C {sky130_fd_pr/nfet_20v0_iso.sym} 1980 -750 0 0 {name=M14
 L=0.5
 W=20.0
-ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
-as="'W * 0.29'" ps="'2 * (W + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_20v0_iso
@@ -381,10 +340,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_20v0_nvt.sym} 2140 -750 0 0 {name=M15
 L=0.5
 W=20.0
-ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
-as="'W * 0.29'" ps="'2 * (W + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_20v0_nvt
 spiceprefix=X
@@ -392,10 +347,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_20v0_zvt.sym} 2280 -750 0 0 {name=M16
 L=0.5
 W=20.0
-ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
-as="'W * 0.29'" ps="'2 * (W + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
@@ -407,3 +358,108 @@ C {devices/launcher.sym} 680 -870 0 0 {name=h9
 descr="diadatp patch file of sky130_fd_pr/ directory for ngspice"
 url="https://gist.githubusercontent.com/diadatp/36b7d6a80f7b586fd561b5951077eddc/raw/e0d6d5cdd7437b4f76fa0373ac634a61f696d2f1/fix_resistors.patch"}
 C {mips_cpu/tb.sym} 310 -570 0 0 {name=x16}
+C {sky130_fd_pr/nfet3_01v8_lvt.sym} 2670 -840 0 0 {name=M17
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8.sym} 2830 -840 0 0 {name=M18
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_03v3_nvt.sym} 2990 -840 0 0 {name=M19
+L=0.5
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_03v3_nvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_05v0_nvt.sym} 3150 -840 0 0 {name=M20
+L=0.9
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_05v0_nvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_g5v0d10v5.sym} 2670 -750 0 0 {name=M21
+L=0.5
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_g5v0d16v0.sym} 2830 -750 0 0 {name=M22
+L=0.7
+W=5.0
+body=GND
+nf=1 mult=1
+model=nfet_g5v0d16v0
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_20v0.sym} 2990 -750 0 0 {name=M23
+L=0.5
+W=20.0
+body=GND
+nf=1 mult=1
+model=nfet_20v0
+spiceprefix=X
+ spice_ignore=true}
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 2980 -1070 0 0 {name=M24
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 2660 -970 0 0 {name=M25
+L=0.5
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 2660 -1070 0 0 {name=M26
+L=0.35
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 2820 -1070 0 0 {name=M27
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_g5v0d16v0.sym} 2820 -970 0 0 {name=M28
+L=0.66
+W=5.0
+body=VDD
+nf=1 mult=1
+model=pfet_g5v0d16v0
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_20v0.sym} 2980 -970 0 0 {name=M29
+L=1
+W=30
+body=VDD
+nf=1 mult=1
+model=pfet_20v0
+spiceprefix=X
+spice_ignore=true
+}

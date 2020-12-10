@@ -70,172 +70,6 @@ N 2190 -110 2190 -90 {lab=S}
 N 2190 -470 2190 -250 { lab=D20v0}
 N 640 -470 2400 -470 { lab=D20v0}
 N 1490 -600 1490 -580 { lab=D20v0}
-C {devices/code_shown.sym} 0 -670 0 0 {name=NGSPICE
-only_toplevel=true
-value="
-vg G1v8 0 0
-vs s 0 0
-vd D1v8 0 0
-vb b 0 0
-.control
-dc vd 0 1.8 0.01 vg 0 1.8 0.2
-* plot all.vd1#branch vs D1v8
-* plot all.vd2#branch vs D1v8
-* plot all.vd3#branch vs D3v3
-plot all.vd4#branch vs D5v0
-plot all.vd5#branch vs D10v5
-plot all.vd6#branch vs D16v0
-plot all.vd7#branch vs D20v0
-.endc
-" }
-C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/lab_pin.sym} 640 -270 0 0 {name=p17 lab=D1v8}
-C {devices/lab_pin.sym} 690 -90 0 1 {name=p3 lab=S}
-C {devices/lab_pin.sym} 710 -140 0 1 {name=p4 lab=B}
-C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1}
-C {devices/lab_pin.sym} 1190 -90 0 1 {name=p12 lab=S}
-C {devices/lab_pin.sym} 1210 -140 0 1 {name=p13 lab=B}
-C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3}
-C {sky130_fd_pr/nfet_01v8.sym} 920 -140 0 0 {name=M2
-L=0.15
-W=1  
-nf=1 mult=1
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 940 -90 0 1 {name=p16 lab=S}
-C {devices/lab_pin.sym} 960 -140 0 1 {name=p21 lab=B}
-C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2}
-C {sky130_fd_pr/nfet_03v3_nvt.sym} 1170 -140 0 0 {name=M3
-L=0.5
-W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_03v3_nvt
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 1440 -90 0 1 {name=p7 lab=S}
-C {devices/lab_pin.sym} 1460 -140 0 1 {name=p8 lab=B}
-C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4}
-C {sky130_fd_pr/nfet_05v0_nvt.sym} 1420 -140 0 0 {name=M4
-L=0.9
-W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_05v0_nvt
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 640 -310 0 0 {name=p9 lab=D3v3}
-C {devices/lab_pin.sym} 640 -350 0 0 {name=p14 lab=D5v0}
-C {devices/vcvs.sym} 960 -550 0 0 {name=E1 value='5/1.8'}
-C {devices/lab_pin.sym} 920 -570 0 0 {name=p18 lab=D1v8}
-C {devices/lab_pin.sym} 960 -520 0 1 {name=p19 lab=0}
-C {devices/lab_pin.sym} 960 -600 0 1 {name=p20 lab=D5v0}
-C {devices/lab_pin.sym} 920 -530 0 0 {name=p23 lab=0}
-C {devices/vcvs.sym} 780 -550 0 0 {name=E2 value='3.3/1.8'}
-C {devices/lab_pin.sym} 740 -570 0 0 {name=p24 lab=D1v8}
-C {devices/lab_pin.sym} 780 -520 0 1 {name=p25 lab=0}
-C {devices/lab_pin.sym} 780 -600 0 1 {name=p26 lab=D3v3}
-C {devices/lab_pin.sym} 740 -530 0 0 {name=p27 lab=0}
-C {devices/vcvs.sym} 1910 -550 0 0 {name=E3 value='5/1.8'}
-C {devices/lab_pin.sym} 1870 -570 0 0 {name=p28 lab=G1v8}
-C {devices/lab_pin.sym} 1910 -520 0 1 {name=p29 lab=0}
-C {devices/lab_pin.sym} 1910 -600 0 1 {name=p30 lab=G5v0}
-C {devices/lab_pin.sym} 1870 -530 0 0 {name=p31 lab=0}
-C {devices/vcvs.sym} 1730 -550 0 0 {name=E4 value='3.3/1.8'}
-C {devices/lab_pin.sym} 1690 -570 0 0 {name=p32 lab=G1v8}
-C {devices/lab_pin.sym} 1730 -520 0 1 {name=p33 lab=0}
-C {devices/lab_pin.sym} 1730 -600 0 1 {name=p34 lab=G3v3}
-C {devices/lab_pin.sym} 1690 -530 0 0 {name=p35 lab=0}
-C {devices/lab_pin.sym} 630 -140 0 0 {name=p2 lab=G1v8}
-C {devices/lab_pin.sym} 880 -140 0 0 {name=p6 lab=G1v8}
-C {devices/lab_pin.sym} 1130 -140 0 0 {name=p11 lab=G3v3}
-C {devices/lab_pin.sym} 1380 -140 0 0 {name=p15 lab=G5v0}
-C {devices/lab_pin.sym} 1690 -90 0 1 {name=p1 lab=S}
-C {devices/lab_pin.sym} 1710 -140 0 1 {name=p5 lab=B}
-C {devices/ammeter.sym} 1690 -220 0 0 {name=Vd5}
-C {devices/lab_pin.sym} 1630 -140 0 0 {name=p10 lab=G5v0}
-C {devices/lab_pin.sym} 640 -390 0 0 {name=p22 lab=D10v5}
-C {devices/vcvs.sym} 1140 -550 0 0 {name=E5 value='10.5/1.8'}
-C {devices/lab_pin.sym} 1100 -570 0 0 {name=p36 lab=D1v8}
-C {devices/lab_pin.sym} 1140 -520 0 1 {name=p37 lab=0}
-C {devices/lab_pin.sym} 1140 -600 0 1 {name=p38 lab=D10v5}
-C {devices/lab_pin.sym} 1100 -530 0 0 {name=p39 lab=0}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1670 -140 0 0 {name=M5
-L=0.5
-W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 1940 -90 0 1 {name=p1 lab=S}
-C {devices/lab_pin.sym} 1960 -140 0 1 {name=p5 lab=B}
-C {devices/lab_pin.sym} 1880 -140 0 0 {name=p10 lab=G5v0}
-C {devices/lab_pin.sym} 640 -430 0 0 {name=p22 lab=D16v0}
-C {devices/vcvs.sym} 1320 -550 0 0 {name=E6 value='16.0/1.8'}
-C {devices/lab_pin.sym} 1280 -570 0 0 {name=p36 lab=D1v8}
-C {devices/lab_pin.sym} 1320 -520 0 1 {name=p37 lab=0}
-C {devices/lab_pin.sym} 1320 -600 0 1 {name=p38 lab=D16v0}
-C {devices/lab_pin.sym} 1280 -530 0 0 {name=p39 lab=0}
-C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6}
-C {sky130_fd_pr/nfet_g5v0d16v0.sym} 1920 -140 0 0 {name=M6
-L=0.7
-W=5.0
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_g5v0d16v0
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 2190 -90 0 1 {name=p40 lab=S}
-C {devices/lab_pin.sym} 2210 -140 0 1 {name=p41 lab=B}
-C {devices/lab_pin.sym} 2130 -140 0 0 {name=p42 lab=G5v0}
-C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7}
-C {sky130_fd_pr/nfet_20v0.sym} 2170 -140 0 0 {name=M7
-L=0.5
-W=20.0
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_20v0
-spiceprefix=X
- spice_ignore=true}
-C {devices/lab_pin.sym} 640 -470 0 0 {name=p43 lab=D20v0}
-C {devices/vcvs.sym} 1490 -550 0 0 {name=E7 value='20.0/1.8'}
-C {devices/lab_pin.sym} 1450 -570 0 0 {name=p44 lab=D1v8}
-C {devices/lab_pin.sym} 1490 -520 0 1 {name=p45 lab=0}
-C {devices/lab_pin.sym} 1490 -600 0 1 {name=p46 lab=D20v0}
-C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
-C {devices/ipin.sym} 430 -430 0 0 {name=p48 lab=G1v8}
-C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
-C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
-L=0.15
-W=4
-nf=4 mult=1
-ad="tcleval([expr int((@nf + 1)/2) * @W / @nf * 0.29])"
-pd="tcleval([expr 2*int((@nf + 1)/2) * (@W /@nf + 0.29)])"
-as="tcleval([expr int((@nf + 2)/2) * @W / @nf * 0.29])"
-ps="tcleval([expr 2*int((@nf + 2)/2) * (@W /@nf + 0.29)])"
-nrs="tcleval([expr 0.29/@W ])"
-nrd="tcleval([expr 0.29/@W ])"
-model=nfet_01v8_lvt
-spiceprefix=X
-}
 C {devices/code.sym} 50 -190 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -275,3 +109,139 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
+C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
+C {devices/lab_pin.sym} 640 -270 0 0 {name=p17 lab=D1v8}
+C {devices/lab_pin.sym} 690 -90 0 1 {name=p3 lab=S}
+C {devices/lab_pin.sym} 710 -140 0 1 {name=p4 lab=B}
+C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1}
+C {devices/lab_pin.sym} 1190 -90 0 1 {name=p12 lab=S}
+C {devices/lab_pin.sym} 1210 -140 0 1 {name=p13 lab=B}
+C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3}
+C {devices/lab_pin.sym} 940 -90 0 1 {name=p16 lab=S}
+C {devices/lab_pin.sym} 960 -140 0 1 {name=p21 lab=B}
+C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2}
+C {devices/lab_pin.sym} 1440 -90 0 1 {name=p7 lab=S}
+C {devices/lab_pin.sym} 1460 -140 0 1 {name=p8 lab=B}
+C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4}
+C {devices/lab_pin.sym} 640 -310 0 0 {name=p9 lab=D3v3}
+C {devices/lab_pin.sym} 640 -350 0 0 {name=p14 lab=D5v0}
+C {devices/vcvs.sym} 960 -550 0 0 {name=E1 value='5/1.8'}
+C {devices/lab_pin.sym} 920 -570 0 0 {name=p18 lab=D1v8}
+C {devices/lab_pin.sym} 960 -520 0 1 {name=p19 lab=0}
+C {devices/lab_pin.sym} 960 -600 0 1 {name=p20 lab=D5v0}
+C {devices/lab_pin.sym} 920 -530 0 0 {name=p23 lab=0}
+C {devices/vcvs.sym} 780 -550 0 0 {name=E2 value='3.3/1.8'}
+C {devices/lab_pin.sym} 740 -570 0 0 {name=p24 lab=D1v8}
+C {devices/lab_pin.sym} 780 -520 0 1 {name=p25 lab=0}
+C {devices/lab_pin.sym} 780 -600 0 1 {name=p26 lab=D3v3}
+C {devices/lab_pin.sym} 740 -530 0 0 {name=p27 lab=0}
+C {devices/vcvs.sym} 1910 -550 0 0 {name=E3 value='5/1.8'}
+C {devices/lab_pin.sym} 1870 -570 0 0 {name=p28 lab=G1v8}
+C {devices/lab_pin.sym} 1910 -520 0 1 {name=p29 lab=0}
+C {devices/lab_pin.sym} 1910 -600 0 1 {name=p30 lab=G5v0}
+C {devices/lab_pin.sym} 1870 -530 0 0 {name=p31 lab=0}
+C {devices/vcvs.sym} 1730 -550 0 0 {name=E4 value='3.3/1.8'}
+C {devices/lab_pin.sym} 1690 -570 0 0 {name=p32 lab=G1v8}
+C {devices/lab_pin.sym} 1730 -520 0 1 {name=p33 lab=0}
+C {devices/lab_pin.sym} 1730 -600 0 1 {name=p34 lab=G3v3}
+C {devices/lab_pin.sym} 1690 -530 0 0 {name=p35 lab=0}
+C {devices/lab_pin.sym} 630 -140 0 0 {name=p2 lab=G1v8}
+C {devices/lab_pin.sym} 880 -140 0 0 {name=p6 lab=G1v8}
+C {devices/lab_pin.sym} 1130 -140 0 0 {name=p11 lab=G3v3}
+C {devices/lab_pin.sym} 1380 -140 0 0 {name=p15 lab=G5v0}
+C {devices/lab_pin.sym} 1690 -90 0 1 {name=p1 lab=S}
+C {devices/lab_pin.sym} 1710 -140 0 1 {name=p5 lab=B}
+C {devices/ammeter.sym} 1690 -220 0 0 {name=Vd5}
+C {devices/lab_pin.sym} 1630 -140 0 0 {name=p10 lab=G5v0}
+C {devices/lab_pin.sym} 640 -390 0 0 {name=p22 lab=D10v5}
+C {devices/vcvs.sym} 1140 -550 0 0 {name=E5 value='10.5/1.8'}
+C {devices/lab_pin.sym} 1100 -570 0 0 {name=p36 lab=D1v8}
+C {devices/lab_pin.sym} 1140 -520 0 1 {name=p37 lab=0}
+C {devices/lab_pin.sym} 1140 -600 0 1 {name=p38 lab=D10v5}
+C {devices/lab_pin.sym} 1100 -530 0 0 {name=p39 lab=0}
+C {devices/lab_pin.sym} 1940 -90 0 1 {name=p1 lab=S}
+C {devices/lab_pin.sym} 1960 -140 0 1 {name=p5 lab=B}
+C {devices/lab_pin.sym} 1880 -140 0 0 {name=p10 lab=G5v0}
+C {devices/lab_pin.sym} 640 -430 0 0 {name=p22 lab=D16v0}
+C {devices/vcvs.sym} 1320 -550 0 0 {name=E6 value='16.0/1.8'}
+C {devices/lab_pin.sym} 1280 -570 0 0 {name=p36 lab=D1v8}
+C {devices/lab_pin.sym} 1320 -520 0 1 {name=p37 lab=0}
+C {devices/lab_pin.sym} 1320 -600 0 1 {name=p38 lab=D16v0}
+C {devices/lab_pin.sym} 1280 -530 0 0 {name=p39 lab=0}
+C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6}
+C {devices/lab_pin.sym} 2190 -90 0 1 {name=p40 lab=S}
+C {devices/lab_pin.sym} 2210 -140 0 1 {name=p41 lab=B}
+C {devices/lab_pin.sym} 2130 -140 0 0 {name=p42 lab=G5v0}
+C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7}
+C {devices/lab_pin.sym} 640 -470 0 0 {name=p43 lab=D20v0}
+C {devices/vcvs.sym} 1490 -550 0 0 {name=E7 value='20.0/1.8'}
+C {devices/lab_pin.sym} 1450 -570 0 0 {name=p44 lab=D1v8}
+C {devices/lab_pin.sym} 1490 -520 0 1 {name=p45 lab=0}
+C {devices/lab_pin.sym} 1490 -600 0 1 {name=p46 lab=D20v0}
+C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
+C {devices/ipin.sym} 430 -430 0 0 {name=p48 lab=G1v8}
+C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
+C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
+C {devices/code_shown.sym} 30 -820 0 0 {name=NGSPICE
+only_toplevel=true
+value="* this experimental option enables mos model bin 
+* selection based on W/NF instead of W
+.option wnflag=1 
+
+vg G1v8 0 0
+vs s 0 0
+vd D1v8 0 0
+vb b 0 0
+.control
+dc vd 0 1.8 0.01 vg 0 1.8 0.2
+plot all.vd1#branch vs D1v8
+plot all.vd2#branch vs D1v8
+plot all.vd3#branch vs D3v3
+plot all.vd4#branch vs D5v0
+plot all.vd5#branch vs D10v5
+plot all.vd6#branch vs D16v0
+* plot all.vd7#branch vs D20v0
+.endc
+" }
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
+L=0.15
+W=1
+mult=1
+model=nfet_01v8_lvt
+spiceprefix=X}
+C {sky130_fd_pr/nfet_01v8.sym} 920 -140 0 0 {name=M2
+L=0.15
+W=1
+mult=1 nf=1
+model=nfet_01v8
+spiceprefix=X}
+C {sky130_fd_pr/nfet_03v3_nvt.sym} 1170 -140 0 0 {name=M3
+L=0.5
+W=1
+mult=1 nf=1
+model=nfet_03v3_nvt
+spiceprefix=X}
+C {sky130_fd_pr/nfet_05v0_nvt.sym} 1420 -140 0 0 {name=M4
+L=0.9
+W=1
+mult=1 nf=1
+model=nfet_05v0_nvt
+spiceprefix=X}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1670 -140 0 0 {name=M5
+L=0.5
+W=1
+mult=1 nf=1
+model=nfet_g5v0d10v5
+spiceprefix=X}
+C {sky130_fd_pr/nfet_g5v0d16v0.sym} 1920 -140 0 0 {name=M6
+L=0.7
+W=5.0
+mult=1 nf=1
+model=nfet_g5v0d16v0
+spiceprefix=X}
+C {sky130_fd_pr/nfet_20v0.sym} 2170 -140 0 0 {name=M7
+L=0.5
+W=20.0
+mult=1 nf=1
+model=nfet_20v0
+spiceprefix=X}
