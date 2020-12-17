@@ -21,7 +21,7 @@ V {}
 S {}
 E {}
 P 4 7 750 -280 750 -240 740 -240 750 -220 760 -240 750 -240 750 -280 {fill=true}
-T {$  set SKYWATER_STDCELLS /home/schippes/projects/foundry/skywater-pdk/libraries/sky130_fd_sc_hd/latest} 50 -810 0 0 0.5 0.5 {layer=6 font=Monospace}
+T {$ set SKYWATER_STDCELLS /home/schippes/projects/foundry/skywater-pdk/libraries/sky130_fd_sc_hd/latest} 50 -810 0 0 0.5 0.5 {layer=6 font=Monospace}
 T {This code block invokes "sky130_models" procedure 
 that returns the .include lines needed to
 simulate the standard cells} 590 -390 0 0 0.6 0.6 {layer=8 slant=italic}
