@@ -1,6 +1,6 @@
 ## spice import of a synthetized RTL design into XSCHEM
 
-copy `decred_controller.spice` and `decred_hash_macro.spice` to `test1.spice` and `test2.spice`
+- copy `decred_controller.spice` and `decred_hash_macro.spice` to `test1.spice` and `test2.spice`
 - in test?.spice:
 - comment out FILLER and ANTENNA cells (delete these lines)
 - delete  VGND VGND VPWR VPWR power pins from stdcell instances
@@ -15,8 +15,8 @@ copy `decred_controller.spice` and `decred_hash_macro.spice` to `test1.spice` an
 - rename top level nets to more sane names
 
 ## Opening the schematic
-from this directory: 
+from xschem_sky130/ directory"
 
-  `xschem user_project_wrapper.sch`
+  `xschem decred_hash_macro/user_project_wrapper.sch`
 
 
