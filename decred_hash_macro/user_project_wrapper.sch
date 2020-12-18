@@ -31,7 +31,7 @@ C {devices/lab_pin.sym} 750 -310 0 0 {name=p66 lab=MACRO_WR_SELECT[2] }
 C {devices/lab_pin.sym} 1050 -370 0 1 {name=p67 lab=THREAD_COUNT[0:3] }
 C {decred_hash_macro/decred_hash_macro.sym} 900 -360 0 0 {name=Xdecred_hash_block2 }
 C {devices/lab_pin.sym} 750 -210 0 0 {name=p68 lab=CLK }
-C {devices/lab_pin.sym} 1050 -200 0 1 {name=p70 lab=DATA_FROM_HASH[0:7] }
+C {devices/lab_pin.sym} 1050 -190 0 1 {name=p70 lab=DATA_FROM_HASH[0:7] }
 C {devices/lab_pin.sym} 750 -190 0 0 {name=p71 lab=DATA_TO_HASH[0:7] }
 C {devices/lab_pin.sym} 750 -170 0 0 {name=p72 lab=HASH_ADDR[0:5] }
 C {devices/lab_pin.sym} 750 -150 0 0 {name=p73 lab=HASH_EN }
@@ -74,7 +74,7 @@ C {decred_hash_macro/decred_controller.sym} 1730 -450 0 0 {name=Xdecred_controll
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 1050 -610 0 1 {name=p1 lab=DATA_AVAILABLE[1] }
 C {devices/lab_pin.sym} 1050 -410 0 1 {name=p2 lab=DATA_AVAILABLE[2] }
-C {devices/lab_pin.sym} 1050 -220 0 1 {name=p3 lab=DATA_AVAILABLE[3] }
+C {devices/lab_pin.sym} 1050 -210 0 1 {name=p3 lab=DATA_AVAILABLE[3] }
 C {devices/lab_pin.sym} 750 -530 0 0 {name=p4 lab=MACRO_RD_SELECT[1] }
 C {devices/lab_pin.sym} 750 -330 0 0 {name=p5 lab=MACRO_RD_SELECT[2] }
 C {devices/lab_pin.sym} 750 -130 0 0 {name=p6 lab=MACRO_RD_SELECT[3] }
