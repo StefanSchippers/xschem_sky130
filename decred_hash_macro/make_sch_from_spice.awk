@@ -25,20 +25,13 @@ BEGIN{
   error_missing=1 ## flag to terminate or continue in case of missing subckt definitions in netlist
                   ## 20161118
 
- # list of cmos_t9 symbol pin coordinates, generated with build_cmoslib.awk
+ # Adjust this path according to sky130_stdcells installation
 
- while ( "ls $HOME/.xschem/xschem_library/xschem_sky130/sky130_stdcells/*.sym"|getline sym )
+ while ( "ls ../sky130_stdcells/*.sym"|getline sym )
  {
    insert_symbol(sym, "sky130_stdcells")
  } 
  
-
-#  while ( "ls $HOME/xschem/library/devices/*.sym"|getline sym )
-#  {
-#    insert_symbol(sym, "devices")
-#  }
-
-
    inherited_pin["VGND"]=1
    inherited_pin["VPWR"]=1
    inherited_pin["VNB"]=1
