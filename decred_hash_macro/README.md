@@ -18,6 +18,8 @@
 from xschem_sky130/ directory"
 
   `xschem decred_hash_macro/user_project_wrapper.sch`  
+    
+  Warning: the decred_hash_macro is an extremely big schematic, xschem takes some seconds to load it in when descending into it.
 
 
 ![schematic](https://github.com/StefanSchippers/xschem_sky130/blob/main/decred_hash_macro/decred_hash_macro.png)
