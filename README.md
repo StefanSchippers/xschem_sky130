@@ -9,6 +9,7 @@ XSCHEM symbol libraries for the Google-Skywater 130nm process design kit.
 - `sky130_tests      ` Xschem testbenches for testing sky130_fd_pr components with NGSPICE
 - `sky130_fd_pr.patch` Patch file (apply in `sky130_fd_pr` directory) to replace temp with temper, allow different sizes for nfet_01v8 and
 pfet_01v8_hvt.
+- `decred_hash_macro ` Import of a big RTL design from spice netlist.
 - `xschemrc          ` Xschem configuration file.
 
 Run xschem from this directory. It will read the xschemrc file to correctly set the search paths.
