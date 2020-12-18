@@ -15,7 +15,7 @@
 - rename top level nets to more sane names
 
 ## Opening the schematic
-from xschem_sky130/ directory"
+from xschem_sky130/ directory:
 
   `xschem decred_hash_macro/user_project_wrapper.sch`  
     
