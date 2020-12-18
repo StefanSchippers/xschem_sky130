@@ -3,7 +3,7 @@
 - copy `decred_controller.spice` and `decred_hash_macro.spice` to `test1.spice` and `test2.spice`
 - in test?.spice:
 - comment out FILLER and ANTENNA cells (delete these lines)
-- delete  VGND VGND VPWR VPWR power pins from stdcell instances
+- delete  VGND VGND VPWR VPWR power pins from stdcell instances  
   from:  
     `X_1468_ _1428_/Y VGND VGND VPWR VPWR _1548_/D sky130_fd_sc_hd__buf_2`  
   to:  
