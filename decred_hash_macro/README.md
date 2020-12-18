@@ -20,6 +20,6 @@ from xschem_sky130/ directory"
   `xschem decred_hash_macro/user_project_wrapper.sch`  
 
 
-![schematic](https://github.com/StefanSchippers/xschem_sky130/blob/main/decred_hash_macro/decred_has_macro.png)
+![schematic](https://github.com/StefanSchippers/xschem_sky130/blob/main/decred_hash_macro/decred_hash_macro.png)
 
 
