@@ -23,5 +23,6 @@ from `xschem_sky130/` directory:
 
 
 ![schematic](https://github.com/StefanSchippers/xschem_sky130/blob/main/decred_hash_macro/decred_hash_macro.png)
-
+  
+![schematic2](https://github.com/StefanSchippers/xschem_sky130/blob/main/decred_hash_macro/decred_hash_macro_2.png)
 
