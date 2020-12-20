@@ -889,3 +889,14 @@ diff -Naur sky130_fd_pr/latest/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0
  rldd d d1 '(1/w)*rdiff' tc1 = 'rdiff_tc1' tc2 = 'rdiff_tc2'
  dnw1 d b sky130_fd_pr__pfet_g5v0d16v0__parasitic__diode_pw2dn area='ad/2' pj='pd/2'
  dnw2 d1 b sky130_fd_pr__pfet_g5v0d16v0__parasitic__diode_pw2dn area='ad/2' pj='pd/2'
+diff -Naur sky130_fd_pr/latest/models/r+c.mrp1monte.spice sky130_fd_pr_ngspice/latest/models/r+c.mrp1monte.spice
+--- sky130_fd_pr/latest/models/r+c.mrp1monte.spice	2020-11-08 01:33:32.389641833 +0100
++++ sky130_fd_pr_ngspice/latest/models/r+c.mrp1monte.spice	2020-12-20 02:30:18.289349469 +0100
+@@ -30,6 +30,6 @@
+ .param  w = 1 l = 0 mult = 1 r = 0 tc1 = {tc1rsgpu*sky130_fd_pr__res_generic_po__tc1_slope} tc2 = {tc2rsgpu*sky130_fd_pr__res_generic_po__tc2_slope}
+ + rp1_mm = {rp1*sky130_fd_pr__res_generic_po__slope/sqrt(2.0*l*w*mult+rp1/100000.0)}
+ + r_tot = {(rp1+rp1_mm)*l/(w-1e6*(-tol_poly-poly_dw))+r}
+-sky130_fd_pr__res_generic_po r0 r1 sky130_fd_pr__res_generic_po__monte r = {r_tot} tc1r = {tc1} tc2r = {tc2}
++rsky130_fd_pr__res_generic_po r0 r1 sky130_fd_pr__res_generic_po__monte r = {r_tot} tc1 = {tc1} tc2 = {tc2}
+ .model sky130_fd_pr__res_generic_po__monte r tref = 30.0
+ .ends sky130_fd_pr__res_generic_po

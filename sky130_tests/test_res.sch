@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -20,8 +20,6 @@ K {}
 V {}
 S {}
 E {}
-T {Disabled
-No Model} 1070 -460 0 0 0.3 0.3 {layer=7}
 C {devices/code_shown.sym} 60 -770 0 0 {name=NGSPICE
 only_toplevel=true
 value="
@@ -29,12 +27,13 @@ vp P 0 1.8
 vm M 0 0
 vb B 0 0
 .control
+save all
 * dc vp 0 3 0.01
 dc temp -40 140 1
 *plot v(p,m) / vr1#branch
 *plot v(p,m) / vr2#branch
 *plot v(p,m) / vr3#branch
-*plot v(p,m) / vr4#branch
+plot v(p,m) / vr4#branch
 *plot v(p,m) / vr5#branch
 plot v(p,m) / vr6#branch
 *plot v(p,m) / vr7#branch
@@ -80,13 +79,12 @@ spiceprefix=X
 C {devices/ammeter.sym} 1100 -560 0 0 {name=Vr4}
 C {devices/lab_pin.sym} 1100 -590 0 1 {name=p9 lab=P}
 C {devices/lab_pin.sym} 1100 -470 0 1 {name=p10 lab=M}
-C {devices/lab_pin.sym} 1080 -500 0 0 {name=p11 lab=B}
 C {sky130_fd_pr/res_generic_po.sym} 1100 -500 0 0 {name=R4
 W=1
 L=1
 model=res_generic_po
 spiceprefix=X
-spice_ignore=true
+spice_ignore=false
  mult=1}
 C {devices/ammeter.sym} 600 -370 0 0 {name=Vr5}
 C {devices/lab_pin.sym} 600 -400 0 1 {name=p12 lab=P}
