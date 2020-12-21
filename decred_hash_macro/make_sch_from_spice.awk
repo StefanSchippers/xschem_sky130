@@ -104,8 +104,8 @@ function insert_symbol(sym, lib,          n,cellname, name, dir, tmp)
     name=$7
     sub(/.*=/,"",name)
     dir=$0
-    sub(/.*dir[ \t]*=/,"",dir)
-    sub(/[ \t]*\}.*/,"",dir)
+    sub(/.*dir[ \t]*=[ \t]*/,"",dir)
+    sub(/[ \t]+.*/,"",dir)
     dir= dir=="in" ? "I" : (dir=="out" ? "O" : "B")
     pin_ar[cellname, ++n] = name
     pin_x[cellname,name]=($3+$5)/2

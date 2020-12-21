@@ -3,7 +3,8 @@ G {}
 K {type=primitive
 format="@name @@A1 @@A2 @@B1 @@B2 @@C1 @VGND @VNB @VPB @VPWR @@X @prefix\\\\a221o_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
-extra="VGND VNB VPB VPWR prefix"}
+extra="VGND VNB VPB VPWR prefix"
+highlight=true}
 V {}
 S {}
 E {}
@@ -29,11 +30,11 @@ L 4 57.5 0 80 0 {}
 L 4 -12.5 20 -7.5 20 {}
 L 4 -7.5 0 -7.5 20 {}
 L 4 -7.5 0 13.671875 0 {}
-B 5 -82.5 -82.5 -77.5 -77.5 {name=A1 dir=in }
-B 5 -82.5 -42.5 -77.5 -37.5 {name=A2 dir=in }
-B 5 -82.5 -2.5 -77.5 2.5 {name=B1 dir=in }
-B 5 -82.5 37.5 -77.5 42.5 {name=B2 dir=in }
-B 5 -82.5 77.5 -77.5 82.5 {name=C1 dir=in }
+B 5 -82.5 -82.5 -77.5 -77.5 {name=A1 dir=in propagate_to=5 }
+B 5 -82.5 -42.5 -77.5 -37.5 {name=A2 dir=in propagate_to=5 }
+B 5 -82.5 -2.5 -77.5 2.5 {name=B1 dir=in propagate_to=5 }
+B 5 -82.5 37.5 -77.5 42.5 {name=B2 dir=in propagate_to=5 }
+B 5 -82.5 77.5 -77.5 82.5 {name=C1 dir=in propagate_to=5 }
 B 5 77.5 -2.5 82.5 2.5 {name=X dir=out }
 A 4 -42.5 0 56.18051263561058 327.7243556854224 64.55128862915524 {}
 A 4 -42.5 -60 30 270 180 {}

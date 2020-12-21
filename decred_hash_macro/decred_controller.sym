@@ -1,6 +1,6 @@
 v {xschem version=2.9.9 file_version=1.2 }
 G {}
-K {type=primitive
+K {type=subcircuit
 format="@name @@CLK_LED @@DATA_AVAILABLE[0] @@DATA_AVAILABLE[1] @@DATA_AVAILABLE[2] @@DATA_AVAILABLE[3] @@DATA_FROM_HASH[0] @@DATA_FROM_HASH[1] @@DATA_FROM_HASH[2] @@DATA_FROM_HASH[3] @@DATA_FROM_HASH[4] @@DATA_FROM_HASH[5] @@DATA_FROM_HASH[6] @@DATA_FROM_HASH[7] @@DATA_TO_HASH[0] @@DATA_TO_HASH[1] @@DATA_TO_HASH[2] @@DATA_TO_HASH[3] @@DATA_TO_HASH[4] @@DATA_TO_HASH[5] @@DATA_TO_HASH[6] @@DATA_TO_HASH[7] @@EXT_RESET_N_fromHost @@EXT_RESET_N_toClient @@HASH_ADDR[0] @@HASH_ADDR[1] @@HASH_ADDR[2] @@HASH_ADDR[3] @@HASH_ADDR[4] @@HASH_ADDR[5] @@HASH_EN @@HASH_LED @@ID_fromClient @@ID_toHost @@IRQ_OUT_fromClient @@IRQ_OUT_toHost @@M1_CLK_IN @@M1_CLK_SELECT @@MACRO_RD_SELECT[0] @@MACRO_RD_SELECT[1] @@MACRO_RD_SELECT[2] @@MACRO_RD_SELECT[3] @@MACRO_WR_SELECT[0] @@MACRO_WR_SELECT[1] @@MACRO_WR_SELECT[2] @@MACRO_WR_SELECT[3] @@MISO_fromClient @@MISO_toHost @@MOSI_fromHost @@MOSI_toClient @@PLL_INPUT @@S1_CLK_IN @@S1_CLK_SELECT @@SCLK_fromHost @@SCLK_toClient @@SCSN_fromHost @@SCSN_toClient @@THREAD_COUNT[0] @@THREAD_COUNT[1] @@THREAD_COUNT[2] @@THREAD_COUNT[3] @@m1_clk_local @@one @@zero @VPWR @VGND decred_controller"
 template="name=x1 VPWR=VPWR VGND=VGND prefix=sky130_fd_sc_hd__ "
 extra="VPWR VGND prefix"}

@@ -78,7 +78,7 @@ sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn
 } 2030 -190 0 0 0.2 0.2 {}
 T {VARACTORS} 1320 -1355 0 0 1 1 { hcenter=true}
-T {Analog primitives validation} 30 -1410 0 0 0.6 0.6 {layer=8}
+T {Analog primitives validation} 30 -1470 0 0 0.6 0.6 {layer=8}
 T {PERP. VPP CAP} 1350 -1475 0 0 1 1 { hcenter=true}
 T {Available models:
 cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
@@ -465,3 +465,4 @@ spiceprefix=X
 spice_ignore=true
 }
 C {decred_hash_macro/user_project_wrapper.sym} 280 -640 0 0 {name=x17 prefix=sky130_fd_sc_hd__ }
+C {sky130_tests/test_mim_cap.sym} 280 -1380 0 0 {name=x18}

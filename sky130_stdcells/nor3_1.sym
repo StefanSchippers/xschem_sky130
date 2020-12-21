@@ -3,7 +3,8 @@ G {}
 K {type=primitive
 format="@name @@A @@B @@C @VGND @VNB @VPB @VPWR @@Y @prefix\\\\nor3_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
-extra="VGND VNB VPB VPWR prefix"}
+extra="VGND VNB VPB VPWR prefix"
+highlight=true}
 V {}
 S {}
 E {}
@@ -17,9 +18,9 @@ L 4 -40 -20 -25 -20 {}
 L 4 -60 40 -40 40 {}
 L 4 -40 20 -40 40 {}
 L 4 -40 20 -25 20 {}
-B 5 -62.5 -42.5 -57.5 -37.5 {name=A dir=in }
-B 5 -62.5 -2.5 -57.5 2.5 {name=B dir=in }
-B 5 -62.5 37.5 -57.5 42.5 {name=C dir=in }
+B 5 -62.5 -42.5 -57.5 -37.5 {name=A dir=in propagate_to=3 }
+B 5 -62.5 -2.5 -57.5 2.5 {name=B dir=in propagate_to=3 }
+B 5 -62.5 37.5 -57.5 42.5 {name=C dir=in propagate_to=3 }
 B 5 57.5 -2.5 62.5 2.5 {name=Y dir=out }
 A 4 40 0 5 0 360 {}
 A 4 -77.5 0 56.18051263561058 327.7243556854224 64.55128862915524 {}

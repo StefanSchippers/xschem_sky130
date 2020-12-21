@@ -3,7 +3,8 @@ G {}
 K {type=primitive
 format="@name @VGND @VNB @VPB @VPWR @@LO @prefix\\\\macro_sparecell"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
-extra="VGND VNB VPB VPWR prefix"}
+extra="VGND VNB VPB VPWR prefix"
+highlight=true}
 V {}
 S {}
 E {}

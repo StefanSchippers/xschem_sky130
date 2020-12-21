@@ -3,7 +3,8 @@ G {}
 K {type=primitive
 format="@name @@D @@SLEEP_B @VGND @VNB @VPB @VPWR @@Q @prefix\\\\lpflow_inputisolatch_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
-extra="VGND VNB VPB VPWR prefix"}
+extra="VGND VNB VPB VPWR prefix"
+highlight=true}
 V {}
 S {}
 E {}
