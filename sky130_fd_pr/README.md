@@ -23,7 +23,7 @@ A good tutorial for starting with xschem and Sky130 pdk can be found
 Up to now this is the list of devices that have been created. There are a lot of missing devices,
 as this is a work in progress and the whole PDK is evolving.
 
-![Devices Drawings](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_fd_pr/doc/devices.svg)
+![Devices Drawings](doc/devices.svg)
 
 ---
 
