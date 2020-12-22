@@ -23,4 +23,8 @@ xschem toggle_colorscheme
 create_images  sky130_fd_pr  sky130_fd_pr/doc  {  svg  }  300  150  {-50 -50 150 50}
 xschem toggle_colorscheme
 
+## to add transparent background:
+#
+# sed -i '/^\.l0/ a \  fill-opacity:0;' *.svg
+
 
