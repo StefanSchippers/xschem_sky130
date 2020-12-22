@@ -154,14 +154,14 @@
   stroke-linejoin:round;
   stroke-width: 0.96;
 }
-text {font-family: Sans Serif;}
+text {font-family: SansSerif;}
 </style>
 <rect x="0" y="0" width="300" height="200" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="0.96" />
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(97.5, 108.772)" >D1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(97.5, 52.5216)" >diode_pw2nd_05v5</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(97.5, 82.5216)" >diode</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(54.5, 111.579)" >d0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(54.5, 45.9537)" >d1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(97.5, 108.772)" >D1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(97.5, 52.5216)" >diode_pw2nd_05v5</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(97.5, 82.5216)" >diode</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(54.5, 111.579)" >d0</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(54.5, 45.9537)" >d1</text>
 <path class="l4" d="M75 30L75 67.5"/>
 <path class="l4" d="M75 82.5L75 120"/>
 <path class="l4" d="M60 67.5L90 67.5"/>

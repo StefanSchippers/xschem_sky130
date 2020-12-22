@@ -154,16 +154,16 @@
   stroke-linejoin:round;
   stroke-width: 0.96;
 }
-text {font-family: Sans Serif;}
+text {font-family: SansSerif;}
 </style>
 <rect x="0" y="0" width="300" height="200" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="0.96" />
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(82.5, 44.3736)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(82.5, 113.749)" >c1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(105, 46.0398)" >C1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(105, 113.54)" >mult=1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="7.8" style="font-family:SansSerif;" transform="translate(82.5, 61.4574)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(52.5, 59.3736)" >top</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(52.5, 96.8736)" >sub</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(82.5, 44.3736)" >c0</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(82.5, 113.749)" >c1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(105, 46.0398)" >C1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(105, 113.54)" >mult=1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="7.8" transform="translate(82.5, 61.4574)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(52.5, 59.3736)" >top</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(52.5, 96.8736)" >sub</text>
 <path class="l4" d="M75 78.75L75 120"/>
 <path class="l4" d="M75 30L75 67.5"/>
 <path class="l4" d="M60 67.5L90 67.5"/>

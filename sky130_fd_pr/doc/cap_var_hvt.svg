@@ -154,16 +154,16 @@
   stroke-linejoin:round;
   stroke-width: 0.96;
 }
-text {font-family: Sans Serif;}
+text {font-family: SansSerif;}
 </style>
 <rect x="0" y="0" width="300" height="200" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="0.96" />
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(82.5, 44.3736)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(82.5, 113.749)" >c1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(105, 46.0398)" >C1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(105, 91.0398)" >0.5 / 0.5 * 1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(105, 68.5398)" >cap_var_hvt</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(60, 100.624)" >n+</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(22.5, 98.7486)" >b</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(82.5, 44.3736)" >c0</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(82.5, 113.749)" >c1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(105, 46.0398)" >C1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(105, 91.0398)" >0.5 / 0.5 * 1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(105, 68.5398)" >cap_var_hvt</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="11.7" transform="translate(60, 100.624)" >n+</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(22.5, 98.7486)" >b</text>
 <path class="l4" d="M75 78.75L75 120"/>
 <path class="l4" d="M75 30L75 67.5"/>
 <path class="l4" d="M60 67.5L90 67.5"/>

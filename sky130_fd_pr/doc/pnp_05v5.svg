@@ -154,15 +154,15 @@
   stroke-linejoin:round;
   stroke-width: 0.96;
 }
-text {font-family: Sans Serif;}
+text {font-family: SansSerif;}
 </style>
 <rect x="0" y="0" width="300" height="200" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="0.96" />
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(108.75, 111.665)" >pnp05v5</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="15.6" style="font-family:SansSerif;" transform="translate(108.75, 49.7898)" >Q1</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(90, 32.1861)" >e</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(90, 125.936)" >c</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(53.0625, 69.6861)" >b</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.7" style="font-family:SansSerif;" transform="translate(111.75, 69.6861)" >body</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(108.75, 111.665)" >pnp05v5</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="15.6" transform="translate(108.75, 49.7898)" >Q1</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(90, 32.1861)" >e</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(90, 125.936)" >c</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(53.0625, 69.6861)" >b</text>
+<text fill="#ff0000"  xml:space="preserve" font-size="11.7" transform="translate(111.75, 69.6861)" >body</text>
 <path class="l4" d="M75 30L75 120"/>
 <path class="l4" d="M45 75L75 75"/>
 <path class="l4" d="M90 45L105 30"/>
