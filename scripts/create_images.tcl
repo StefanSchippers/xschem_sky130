@@ -3,9 +3,6 @@
 
 ## xschem script to generate symbol images
 proc create_images {src dest format_list width height viewport} {
-    # source dir for symbols
-    set height 200
-    set width 300
     # loop over image format list {svg png} 
     foreach type $format_list {
         # loop over all symbol files
