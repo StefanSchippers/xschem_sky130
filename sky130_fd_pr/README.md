@@ -70,6 +70,8 @@ as this is a work in progress and the whole PDK is evolving.
 
 ## SYMBOL IMAGES
 
+|   symbol image |   symbol image |   symbol image |   symbol image |
+| ----           | ----           | ----           | ----           |
 |![cap_mim_m3_1.svg](doc/cap_mim_m3_1.svg)   |![nfet_20v0_zvt.svg](doc/nfet_20v0_zvt.svg)    |![pfet_20v0.svg](doc/pfet_20v0.svg)        |![res_high_po_0p35.svg](doc/res_high_po_0p35.svg)|
 |![cap_mim_m3_2.svg](doc/cap_mim_m3_2.svg)   |![nfet3_01v8_lvt.svg](doc/nfet3_01v8_lvt.svg)   |![pfet3_01v8_hvt.svg](doc/pfet3_01v8_hvt.svg)   |![res_high_po_0p69.svg](doc/res_high_po_0p69.svg)|
 |![cap_var_hvt.svg](doc/cap_var_hvt.svg)    |![nfet3_01v8.svg](doc/nfet3_01v8.svg)       |![pfet3_01v8_lvt.svg](doc/pfet3_01v8_lvt.svg)   |![res_high_po_1p41.svg](doc/res_high_po_1p41.svg)|
