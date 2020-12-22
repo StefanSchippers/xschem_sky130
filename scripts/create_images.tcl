@@ -1,9 +1,6 @@
-
-
-
 ## xschem script to generate symbol images
 proc create_images {src dest format_list width height viewport} {
-    # loop over image format list {svg png} 
+    # loop over image format list {svg png ps pdf}
     foreach type $format_list {
         # loop over all symbol files
         foreach i [glob $src/*.sym] {
@@ -21,6 +18,9 @@ proc create_images {src dest format_list width height viewport} {
     xschem redraw
 }
 
-
+xschem toggle_colorscheme
 #               src dir        dst dir          formats    w    h      viewport
-create_images  sky130_fd_pr  sky130_fd_pr/doc  {  svg  }  300  200  {-50 -50 150 50}
+create_images  sky130_fd_pr  sky130_fd_pr/doc  {  svg  }  300  150  {-50 -50 150 50}
+xschem toggle_colorscheme
+
+
