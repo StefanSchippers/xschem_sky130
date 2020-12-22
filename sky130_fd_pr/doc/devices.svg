@@ -157,353 +157,353 @@
 text {font-family: Sans Serif;}
 </style>
 <rect x="0" y="0" width="1912" height="1127" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.770354" />
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(105.291, 418.856)" >PFET</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(102.291, 590.046)" >NFET</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(113.291, 768.369)" >RES</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(89.2911, 1021.59)" >DIODE</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(113.791, 1110.75)" >PNP</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(470.772, 630.667)" >No Model</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(584.899, 716.262)" >No Model</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(470.772, 473.743)" >No Model</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(112.291, 301.163)" >MIM</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 926.881)" >Available models:</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 934.881)" >sky130_fd_pr__diode_pw2nd_05v5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 943.881)" >sky130_fd_pr__diode_pw2nd_11v0</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 951.881)" >sky130_fd_pr__diode_pw2nd_05v5_nvt</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 960.881)" >sky130_fd_pr__diode_pw2nd_05v5_lvt</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 968.881)" >sky130_fd_pr__diode_pd2nw_05v5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 977.881)" >sky130_fd_pr__diode_pd2nw_11v0</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 985.881)" >sky130_fd_pr__diode_pd2nw_05v5_hvt</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 994.881)" >sky130_fd_pr__diode_pd2nw_05v5_lvt</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1002.88)" >sky130_fd_pr__model__parasitic__rf_diode_ps2nw</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1011.88)" >sky130_fd_pr__model__parasitic__rf_diode_pw2dn</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1019.88)" >sky130_fd_pr__model__parasitic__diode_pw2dn</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1028.88)" >sky130_fd_pr__model__parasitic__diode_ps2dn</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1036.88)" >sky130_fd_pr__model__parasitic__diode_ps2nw</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 998.21)" >Available_models:</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1006.21)" >sky130_fd_pr__diode_pw2nd_05v5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1015.21)" >sky130_fd_pr__diode_pw2nd_11v0</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1023.21)" >sky130_fd_pr__diode_pd2nw_05v5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1032.21)" >sky130_fd_pr__diode_pd2nw_11v0</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1040.21)" >sky130_fd_pr__model__parasitic__diode_ps2dn</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(13.8924, 194.169)" >VARACTORS</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(14.2911, 108.574)" >PERP. VPP CAP</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 42.4003)" >Available models:</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 50.4003)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 59.4003)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 67.4003)" >cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 76.4003)" >cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 84.4003)" >cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 93.4003)" >cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 101.4)" >cap_vpp_11p5x11p7_l1m1m2m3_shieldm4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 110.4)" >cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 118.4)" >cap_vpp_06p8x06p1_m1m2m3_shieldl1m4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 127.4)" >cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(592.032, 630.667)" >No Model</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(706.158, 630.667)" >No Model</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(806.019, 630.667)" >No Model</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(1305.32, 630.667)" >No Model</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 547.248)" >3 PIN</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 589.248)" >NFET</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(1298.19, 473.743)" >No Model</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 397.457)" >3 PIN</text>
-<text fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 439.457)" >PFET</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(545.668, 1043.2)" >D1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(545.668, 1016.45)" >diode_pw2nd_05v5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(545.668, 1030.72)" >diode</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(523.402, 1044.53)" >d0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(523.402, 1013.33)" >d1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(238.953, 1043.2)" >D2</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(238.953, 1016.45)" >diode_pw2nd_11v0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(216.687, 1044.53)" >d0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(216.687, 1013.33)" >d1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(238.953, 1030.72)" >lvsdiode</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(394.093, 1108.77)" >pnp05v5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(394.093, 1079.35)" >Q1</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 1070.98)" >e</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 1115.56)" >c</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(366.466, 1088.81)" >b</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(393.359, 1088.81)" >body</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 666.53)" >R1</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 684.362)" >1 * 2.65 / 2.65</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 675.446)" >res_iso_pw</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(256.351, 673.762)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(370.478, 673.762)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 666.53)" >R2</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 684.362)" >1 * 1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 675.446)" >res_generic_nd</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 663.855)" >R3</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 688.82)" >1 * 1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 676.338)" >res_generic_pd</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(484.604, 673.762)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 663.855)" >R4</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 688.82)" >1 * 1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 676.338)" >res_generic_po</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 756.583)" >R5</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 781.548)" >1 * 1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 769.066)" >res_high_po</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(256.351, 766.49)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 756.583)" >R6</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 781.548)" >1 * 0.35 / 0.35</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 769.066)" >res_high_po_0p35</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(370.478, 766.49)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 756.583)" >R7</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 781.548)" >1 * 0.69 / 0.69</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 769.066)" >res_high_po_0p69</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(484.604, 766.49)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 756.583)" >R8</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 781.548)" >1 * 1.41 / 1.41</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 769.066)" >res_high_po_1p41</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(598.731, 766.49)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 849.311)" >R9</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 874.276)" >1 * 1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 861.794)" >res_xhigh_po</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(256.351, 859.218)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 849.311)" >R10</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 874.276)" >1 * 0.35 / 0.35</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 861.794)" >res_xhigh_po_0p35</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(370.478, 859.218)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 849.311)" >R11</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 874.276)" >1 * 0.69 / 0.69</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 861.794)" >res_xhigh_po_0p69</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(484.604, 859.218)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 849.311)" >R12</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 874.276)" >1 * 1.41 / 1.41</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 861.794)" >res_xhigh_po_1p41</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(598.731, 859.218)" >B</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(249.351, 513.172)" >M1</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 525.754)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(245.652, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 519.821)" >nfet_01v8_lvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 542.596)" >1 x 1 / 0.15</text>
-<text fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(249.351, 545.37)" >LVT</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(363.478, 513.172)" >M2</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 525.754)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(359.778, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 519.821)" >nfet_01v8</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 542.596)" >1 x 1 / 0.15</text>
-<text fill="#229900"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 547.054)" >3V</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 513.172)" >M3</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 525.754)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(473.905, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 519.821)" >nfet_03v3_nvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 542.596)" >1 x 1 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(591.731, 513.172)" >M4</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(613.43, 525.754)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(588.032, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(620.563, 519.821)" >nfet_05v0_nvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(621.455, 542.596)" >1 x 1 / 0.9</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(249.351, 577.369)" >M5</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 589.951)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(245.652, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 584.017)" >nfet_g5v0d10v5</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 606.792)" >1 x 1 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(363.478, 577.369)" >M6</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 589.951)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(359.778, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 584.017)" >nfet_g5v0d16v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 606.792)" >1 x 5.0 / 0.7</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 577.369)" >M7</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 589.951)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(473.905, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 584.017)" >nfet_20v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 606.792)" >1 x 20.0 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 349.115)" >M8</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 381.313)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 349.966)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 361.697)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(473.905, 361.697)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 355.764)" >pfet_01v8_hvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 378.539)" >1 x 1 / 0.15</text>
-<text fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(476.604, 381.313)" >HVT</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(249.351, 420.445)" >M9</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 452.642)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 421.295)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 433.026)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(244.314, 433.026)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 427.093)" >pfet_g5v0d10v5</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 449.868)" >1 x 1 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(244.351, 349.115)" >M10</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 381.313)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 349.966)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 361.697)" >B</text>
-<text fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(249.351, 381.313)" >LVT</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(245.652, 361.697)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 355.764)" >pfet_01v8_lvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 378.539)" >1 x 1 / 0.35</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(358.478, 349.115)" >M11</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 381.313)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 349.966)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 361.697)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(359.778, 361.697)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 355.764)" >pfet_01v8</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 378.539)" >1 x 1 / 0.15</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(358.478, 420.445)" >M12</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 452.642)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 421.295)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 433.026)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(358.441, 433.026)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 427.093)" >pfet_g5v0d16v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 449.868)" >1 x 5.0 / 0.66</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(472.604, 420.445)" >M13</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 452.642)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 421.295)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 433.026)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(472.568, 433.026)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 427.093)" >pfet_20v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 449.868)" >1 x 30 / 1</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 270.753)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 303.742)" >c1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 271.545)" >C1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 292.944)" >1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 303.643)" >MF=1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 282.244)" >cap_mim_m3_1</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 270.753)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 303.742)" >c1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 271.545)" >C2</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 292.944)" >1 / 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 303.643)" >MF=1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 282.244)" >cap_mim_m3_2</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 170.892)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 203.882)" >c1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 171.684)" >C3</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 193.083)" >0.5 / 0.5 * 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 182.384)" >cap_var_lvt</text>
-<text fill="#222222"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(320.981, 197.64)" >n+</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(303.149, 196.749)" >b</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 170.892)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 203.882)" >c1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 171.684)" >C4</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 193.083)" >0.5 / 0.5 * 1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 182.384)" >cap_var_hvt</text>
-<text fill="#222222"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(435.108, 197.64)" >n+</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(417.275, 196.749)" >b</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(367.345, 85.2971)" >c0</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(367.345, 118.287)" >c1</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(378.044, 86.0894)" >C5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(378.044, 118.187)" >mult=1</text>
-<text fill="#222222"  xml:space="preserve" font-size="3.70911" style="font-family:SansSerif;" transform="translate(367.345, 93.4209)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(353.079, 92.43)" >top</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(353.079, 110.262)" >sub</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(586.731, 577.369)" >M14</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(613.43, 589.951)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(588.032, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(620.563, 584.017)" >nfet_20v0_iso</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(621.455, 606.792)" >1 x 20.0 / 0.5</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(594.706, 611.349)" >sub</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(700.858, 577.369)" >M15</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(729.34, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(729.34, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(727.557, 589.951)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(702.158, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(734.69, 584.017)" >nfet_20v0_nvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(735.581, 606.792)" >1 x 20.0 / 0.5</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(708.833, 611.349)" >sub</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(800.718, 577.369)" >M16</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(829.201, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(829.201, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(827.418, 589.951)" >B</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(802.019, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(834.551, 584.017)" >nfet_20v0_zvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(835.442, 606.792)" >1 x 20.0 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1078.9, 513.172)" >M17</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1080.2, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1112.73, 519.821)" >nfet_01v8_lvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1113.63, 542.596)" >1 x 1 / 0.15</text>
-<text fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1083.9, 545.37)" >LVT</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1193.03, 513.172)" >M18</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1194.33, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1226.86, 519.821)" >nfet_01v8</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1227.75, 542.596)" >1 x 1 / 0.15</text>
-<text fill="#229900"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1312.16, 547.054)" >3V</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1307.16, 513.172)" >M19</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1308.46, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1340.99, 519.821)" >nfet_03v3_nvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1341.88, 542.596)" >1 x 1 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1421.28, 513.172)" >M20</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1449.76, 545.37)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1449.76, 514.023)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1422.58, 525.754)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1455.11, 519.821)" >nfet_05v0_nvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1456.01, 542.596)" >1 x 1 / 0.9</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1078.9, 577.369)" >M21</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1080.2, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1112.73, 584.017)" >nfet_g5v0d10v5</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1113.63, 606.792)" >1 x 1 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1193.03, 577.369)" >M22</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1194.33, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1226.86, 584.017)" >nfet_g5v0d16v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1227.75, 606.792)" >1 x 5.0 / 0.7</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1307.16, 577.369)" >M23</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 609.566)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 578.219)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1308.46, 589.951)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1340.99, 584.017)" >nfet_20v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1341.88, 606.792)" >1 x 20.0 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1300.02, 349.115)" >M24</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 381.313)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 349.966)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1301.32, 361.697)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1333.85, 355.764)" >pfet_01v8_hvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1334.75, 378.539)" >1 x 1 / 0.15</text>
-<text fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1304.02, 381.313)" >HVT</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1071.77, 420.445)" >M25</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 452.642)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 421.295)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1071.73, 433.026)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1105.6, 427.093)" >pfet_g5v0d10v5</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1106.49, 449.868)" >1 x 1 / 0.5</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1071.77, 349.115)" >M26</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 381.313)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 349.966)" >S</text>
-<text fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1076.77, 381.313)" >LVT</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1073.07, 361.697)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1105.6, 355.764)" >pfet_01v8_lvt</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1106.49, 378.539)" >1 x 1 / 0.35</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1185.9, 349.115)" >M27</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 381.313)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 349.966)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1187.2, 361.697)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1219.73, 355.764)" >pfet_01v8</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1220.62, 378.539)" >1 x 1 / 0.15</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1185.9, 420.445)" >M28</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 452.642)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 421.295)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1185.86, 433.026)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1219.73, 427.093)" >pfet_g5v0d16v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1220.62, 449.868)" >1 x 5.0 / 0.66</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1300.02, 420.445)" >M29</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 452.642)" >D</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 421.295)" >S</text>
-<text fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1299.99, 433.026)" >G</text>
-<text fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1333.85, 427.093)" >pfet_20v0</text>
-<text fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1334.75, 449.868)" >1 x 30 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(105.291, 418.856)" >PFET</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(102.291, 590.046)" >NFET</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(113.291, 768.369)" >RES</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(89.2911, 1021.59)" >DIODE</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(113.791, 1110.75)" >PNP</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(470.772, 630.667)" >No Model</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(584.899, 716.262)" >No Model</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(470.772, 473.743)" >No Model</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(112.291, 301.163)" >MIM</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 926.881)" >Available models:</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 934.881)" >sky130_fd_pr__diode_pw2nd_05v5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 943.881)" >sky130_fd_pr__diode_pw2nd_11v0</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 951.881)" >sky130_fd_pr__diode_pw2nd_05v5_nvt</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 960.881)" >sky130_fd_pr__diode_pw2nd_05v5_lvt</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 968.881)" >sky130_fd_pr__diode_pd2nw_05v5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 977.881)" >sky130_fd_pr__diode_pd2nw_11v0</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 985.881)" >sky130_fd_pr__diode_pd2nw_05v5_hvt</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 994.881)" >sky130_fd_pr__diode_pd2nw_05v5_lvt</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1002.88)" >sky130_fd_pr__model__parasitic__rf_diode_ps2nw</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1011.88)" >sky130_fd_pr__model__parasitic__rf_diode_pw2dn</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1019.88)" >sky130_fd_pr__model__parasitic__diode_pw2dn</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1028.88)" >sky130_fd_pr__model__parasitic__diode_ps2dn</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(328.114, 1036.88)" >sky130_fd_pr__model__parasitic__diode_ps2nw</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 998.21)" >Available_models:</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1006.21)" >sky130_fd_pr__diode_pw2nd_05v5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1015.21)" >sky130_fd_pr__diode_pw2nd_11v0</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1023.21)" >sky130_fd_pr__diode_pd2nw_05v5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1032.21)" >sky130_fd_pr__diode_pd2nw_11v0</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(634.829, 1040.21)" >sky130_fd_pr__model__parasitic__diode_ps2dn</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(13.8924, 194.169)" >VARACTORS</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(14.2911, 108.574)" >PERP. VPP CAP</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 42.4003)" >Available models:</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 50.4003)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 59.4003)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 67.4003)" >cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 76.4003)" >cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 84.4003)" >cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 93.4003)" >cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 101.4)" >cap_vpp_11p5x11p7_l1m1m2m3_shieldm4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 110.4)" >cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 118.4)" >cap_vpp_06p8x06p1_m1m2m3_shieldl1m4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(577.766, 127.4)" >cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(592.032, 630.667)" >No Model</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(706.158, 630.667)" >No Model</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(806.019, 630.667)" >No Model</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(1305.32, 630.667)" >No Model</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 547.248)" >3 PIN</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 589.248)" >NFET</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="11.1273" style="font-family:SansSerif;" transform="translate(1298.19, 473.743)" >No Model</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 397.457)" >3 PIN</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="37.0911" style="font-family:SansSerif;" transform="translate(928.709, 439.457)" >PFET</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(545.668, 1043.2)" >D1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(545.668, 1016.45)" >diode_pw2nd_05v5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(545.668, 1030.72)" >diode</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(523.402, 1044.53)" >d0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(523.402, 1013.33)" >d1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(238.953, 1043.2)" >D2</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(238.953, 1016.45)" >diode_pw2nd_11v0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(216.687, 1044.53)" >d0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(216.687, 1013.33)" >d1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(238.953, 1030.72)" >lvsdiode</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(394.093, 1108.77)" >pnp05v5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(394.093, 1079.35)" >Q1</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 1070.98)" >e</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 1115.56)" >c</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(366.466, 1088.81)" >b</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(393.359, 1088.81)" >body</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 666.53)" >R1</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 684.362)" >1 * 2.65 / 2.65</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 675.446)" >res_iso_pw</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(256.351, 673.762)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(370.478, 673.762)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 666.53)" >R2</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 684.362)" >1 * 1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 675.446)" >res_generic_nd</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 663.855)" >R3</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 688.82)" >1 * 1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 676.338)" >res_generic_pd</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(484.604, 673.762)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 663.855)" >R4</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 688.82)" >1 * 1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 676.338)" >res_generic_po</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 756.583)" >R5</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 781.548)" >1 * 1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 769.066)" >res_high_po</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(256.351, 766.49)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 756.583)" >R6</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 781.548)" >1 * 0.35 / 0.35</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 769.066)" >res_high_po_0p35</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(370.478, 766.49)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 756.583)" >R7</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 781.548)" >1 * 0.69 / 0.69</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 769.066)" >res_high_po_0p69</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(484.604, 766.49)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 756.583)" >R8</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 781.548)" >1 * 1.41 / 1.41</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 769.066)" >res_high_po_1p41</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(598.731, 766.49)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 849.311)" >R9</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 874.276)" >1 * 1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(281.75, 861.794)" >res_xhigh_po</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(256.351, 859.218)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 849.311)" >R10</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 874.276)" >1 * 0.35 / 0.35</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(395.877, 861.794)" >res_xhigh_po_0p35</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(370.478, 859.218)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 849.311)" >R11</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 874.276)" >1 * 0.69 / 0.69</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(510.003, 861.794)" >res_xhigh_po_0p69</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(484.604, 859.218)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 849.311)" >R12</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 874.276)" >1 * 1.41 / 1.41</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(624.13, 861.794)" >res_xhigh_po_1p41</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(598.731, 859.218)" >B</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(249.351, 513.172)" >M1</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 525.754)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(245.652, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 519.821)" >nfet_01v8_lvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 542.596)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(249.351, 545.37)" >LVT</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(363.478, 513.172)" >M2</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 525.754)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(359.778, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 519.821)" >nfet_01v8</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 542.596)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 547.054)" >3V</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 513.172)" >M3</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 525.754)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(473.905, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 519.821)" >nfet_03v3_nvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 542.596)" >1 x 1 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(591.731, 513.172)" >M4</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(613.43, 525.754)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(588.032, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(620.563, 519.821)" >nfet_05v0_nvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(621.455, 542.596)" >1 x 1 / 0.9</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(249.351, 577.369)" >M5</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 589.951)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(245.652, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 584.017)" >nfet_g5v0d10v5</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 606.792)" >1 x 1 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(363.478, 577.369)" >M6</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 589.951)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(359.778, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 584.017)" >nfet_g5v0d16v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 606.792)" >1 x 5.0 / 0.7</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 577.369)" >M7</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 589.951)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(473.905, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 584.017)" >nfet_20v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 606.792)" >1 x 20.0 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(477.604, 349.115)" >M8</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 381.313)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 349.966)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 361.697)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(473.905, 361.697)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 355.764)" >pfet_01v8_hvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 378.539)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(476.604, 381.313)" >HVT</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(249.351, 420.445)" >M9</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 452.642)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 421.295)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 433.026)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(244.314, 433.026)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 427.093)" >pfet_g5v0d10v5</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 449.868)" >1 x 1 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(244.351, 349.115)" >M10</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 381.313)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(272.834, 349.966)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(271.051, 361.697)" >B</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(249.351, 381.313)" >LVT</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(245.652, 361.697)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(278.184, 355.764)" >pfet_01v8_lvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(279.075, 378.539)" >1 x 1 / 0.35</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(358.478, 349.115)" >M11</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 381.313)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 349.966)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 361.697)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(359.778, 361.697)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 355.764)" >pfet_01v8</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 378.539)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(358.478, 420.445)" >M12</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 452.642)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(386.96, 421.295)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(385.177, 433.026)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(358.441, 433.026)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(392.31, 427.093)" >pfet_g5v0d16v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(393.202, 449.868)" >1 x 5.0 / 0.66</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(472.604, 420.445)" >M13</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 452.642)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(501.087, 421.295)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(499.304, 433.026)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(472.568, 433.026)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(506.437, 427.093)" >pfet_20v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(507.328, 449.868)" >1 x 30 / 1</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 270.753)" >c0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 303.742)" >c1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 271.545)" >C1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 292.944)" >1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 303.643)" >MF=1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 282.244)" >cap_mim_m3_1</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 270.753)" >c0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 303.742)" >c1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 271.545)" >C2</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 292.944)" >1 / 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 303.643)" >MF=1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 282.244)" >cap_mim_m3_2</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 170.892)" >c0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(331.68, 203.882)" >c1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 171.684)" >C3</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 193.083)" >0.5 / 0.5 * 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(342.38, 182.384)" >cap_var_lvt</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(320.981, 197.64)" >n+</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(303.149, 196.749)" >b</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 170.892)" >c0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(445.807, 203.882)" >c1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 171.684)" >C4</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 193.083)" >0.5 / 0.5 * 1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(456.506, 182.384)" >cap_var_hvt</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(435.108, 197.64)" >n+</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(417.275, 196.749)" >b</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(367.345, 85.2971)" >c0</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(367.345, 118.287)" >c1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(378.044, 86.0894)" >C5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(378.044, 118.187)" >mult=1</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="3.70911" style="font-family:SansSerif;" transform="translate(367.345, 93.4209)" >cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(353.079, 92.43)" >top</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(353.079, 110.262)" >sub</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(586.731, 577.369)" >M14</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(615.214, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(613.43, 589.951)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(588.032, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(620.563, 584.017)" >nfet_20v0_iso</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(621.455, 606.792)" >1 x 20.0 / 0.5</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(594.706, 611.349)" >sub</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(700.858, 577.369)" >M15</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(729.34, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(729.34, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(727.557, 589.951)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(702.158, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(734.69, 584.017)" >nfet_20v0_nvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(735.581, 606.792)" >1 x 20.0 / 0.5</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(708.833, 611.349)" >sub</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(800.718, 577.369)" >M16</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(829.201, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(829.201, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(827.418, 589.951)" >B</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(802.019, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(834.551, 584.017)" >nfet_20v0_zvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(835.442, 606.792)" >1 x 20.0 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1078.9, 513.172)" >M17</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1080.2, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1112.73, 519.821)" >nfet_01v8_lvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1113.63, 542.596)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1083.9, 545.37)" >LVT</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1193.03, 513.172)" >M18</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1194.33, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1226.86, 519.821)" >nfet_01v8</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1227.75, 542.596)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1312.16, 547.054)" >3V</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1307.16, 513.172)" >M19</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1308.46, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1340.99, 519.821)" >nfet_03v3_nvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1341.88, 542.596)" >1 x 1 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1421.28, 513.172)" >M20</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1449.76, 545.37)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1449.76, 514.023)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1422.58, 525.754)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1455.11, 519.821)" >nfet_05v0_nvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1456.01, 542.596)" >1 x 1 / 0.9</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1078.9, 577.369)" >M21</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1107.38, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1080.2, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1112.73, 584.017)" >nfet_g5v0d10v5</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1113.63, 606.792)" >1 x 1 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1193.03, 577.369)" >M22</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1221.51, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1194.33, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1226.86, 584.017)" >nfet_g5v0d16v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1227.75, 606.792)" >1 x 5.0 / 0.7</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1307.16, 577.369)" >M23</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 609.566)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1335.64, 578.219)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1308.46, 589.951)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1340.99, 584.017)" >nfet_20v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1341.88, 606.792)" >1 x 20.0 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1300.02, 349.115)" >M24</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 381.313)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 349.966)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1301.32, 361.697)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1333.85, 355.764)" >pfet_01v8_hvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1334.75, 378.539)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1304.02, 381.313)" >HVT</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1071.77, 420.445)" >M25</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 452.642)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 421.295)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1071.73, 433.026)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1105.6, 427.093)" >pfet_g5v0d10v5</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1106.49, 449.868)" >1 x 1 / 0.5</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1071.77, 349.115)" >M26</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 381.313)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1100.25, 349.966)" >S</text>
+<text fill-opacity="0" fill="#229900"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1076.77, 381.313)" >LVT</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1073.07, 361.697)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1105.6, 355.764)" >pfet_01v8_lvt</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1106.49, 378.539)" >1 x 1 / 0.35</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1185.9, 349.115)" >M27</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 381.313)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 349.966)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1187.2, 361.697)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1219.73, 355.764)" >pfet_01v8</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1220.62, 378.539)" >1 x 1 / 0.15</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1185.9, 420.445)" >M28</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 452.642)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1214.38, 421.295)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1185.86, 433.026)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1219.73, 427.093)" >pfet_g5v0d16v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1220.62, 449.868)" >1 x 5.0 / 0.66</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1300.02, 420.445)" >M29</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 452.642)" >D</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1328.5, 421.295)" >S</text>
+<text fill-opacity="0" fill="#ff0000"  xml:space="preserve" font-size="5.56367" style="font-family:SansSerif;" transform="translate(1299.99, 433.026)" >G</text>
+<text fill-opacity="0" fill="#222222"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1333.85, 427.093)" >pfet_20v0</text>
+<text fill-opacity="0" fill="#666600"  xml:space="preserve" font-size="7.41823" style="font-family:SansSerif;" transform="translate(1334.75, 449.868)" >1 x 30 / 1</text>
 <path class="l4" d="M114.127 320.981L1526.44 320.981"/>
 <path class="l4" d="M114.127 488.604L1526.44 488.604"/>
 <path class="l4" d="M114.127 638.396L1526.44 638.396"/>
