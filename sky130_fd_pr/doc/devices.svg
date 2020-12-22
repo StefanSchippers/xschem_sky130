@@ -154,7 +154,7 @@
   stroke-linejoin:round;
   stroke-width: 0.651945;
 }
-text {font-family: SansSerif;}
+text {font-family: Sans-Serif;}
 </style>
 <rect x="0" y="0" width="1322" height="1128" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.651945" />
 <text fill="#222222"  xml:space="preserve" font-size="31.39" transform="translate(85.8402, 414.182)" >PFET</text>
