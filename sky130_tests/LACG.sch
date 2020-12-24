@@ -164,6 +164,8 @@ N 820 -1720 840 -1720 { lab=#net5}
 N 820 -1260 840 -1260 { lab=#net8}
 N 1910 -650 1930 -650 { lab=x17X_C}
 N 3370 -1720 3390 -1720 { lab=#net12}
+N 2310 -710 2310 -590 { lab=D_C}
+N 1180 -710 2310 -710 { lab=D_C}
 C {sky130_stdcells/xor2_1.sym} 760 -2170 0 0 {name=x1 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dlxtp_1.sym} 580 -2060 0 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dlxtn_1.sym} 960 -2160 0 0 {name=x3 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
@@ -297,7 +299,6 @@ C {devices/lab_wire.sym} 1930 -600 0 0 {name=l27 sig_type=std_logic lab=x17X_C}
 C {devices/lab_wire.sym} 1550 -510 0 0 {name=l28 sig_type=std_logic lab=x21X_C}
 C {devices/lab_wire.sym} 1600 -670 0 0 {name=l29 sig_type=std_logic lab=x17A_C}
 C {devices/lab_wire.sym} 2170 -550 0 0 {name=l15 sig_type=std_logic lab=Q_C}
-C {devices/lab_wire.sym} 2310 -590 0 0 {name=l30 sig_type=std_logic lab=D_C}
 C {devices/lab_wire.sym} 140 -2070 0 0 {name=l31 sig_type=std_logic lab=V1}
 C {devices/lab_wire.sym} 150 -1620 0 0 {name=l32 sig_type=std_logic lab=V2}
 C {devices/lab_wire.sym} 150 -1160 0 0 {name=l33 sig_type=std_logic lab=V3}
