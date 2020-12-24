@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2 }
+v {xschem version=2.9.9 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -267,7 +267,7 @@ C {devices/lab_pin.sym} 420 -2080 0 0 {name=p198 lab=A0}
 C {devices/lab_pin.sym} 420 -2040 0 0 {name=p199 lab=A1}
 C {devices/lab_pin.sym} 420 -2000 0 0 {name=p200 lab=S}
 C {devices/lab_pin.sym} 500 -2060 0 1 {name=p201 lab=X}
-C {sky130_stdcells/mux2i_1.sym} 440 -2060 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/mux2i_1.sym} 460 -2200 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 420 -2220 0 0 {name=p202 lab=A0}
 C {devices/lab_pin.sym} 420 -2180 0 0 {name=p203 lab=A1}
 C {devices/lab_pin.sym} 420 -2140 0 0 {name=p204 lab=S}
@@ -525,7 +525,7 @@ C {sky130_stdcells/or2_1.sym} 2150 -1295 0 0 {name=x95 VGND=VGND VNB=VNB VPB=VPB
 C {devices/lab_pin.sym} 2090 -1315 0 0 {name=p411 lab=A}
 C {devices/lab_pin.sym} 2090 -1275 0 0 {name=p412 lab=B}
 C {devices/lab_pin.sym} 2210 -1295 0 1 {name=p413 lab=X}
-C {sky130_stdcells/or2b_1.sym} 2155 -1080 0 0 {name=x96 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/or2b_1.sym} 2155 -1160 0 0 {name=x96 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 2095 -1180 0 0 {name=p414 lab=A}
 C {devices/lab_pin.sym} 2095 -1140 0 0 {name=p415 lab=B_N}
 C {devices/lab_pin.sym} 2215 -1160 0 1 {name=p416 lab=X}
