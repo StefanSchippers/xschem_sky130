@@ -463,3 +463,4 @@ spice_ignore=true
 }
 C {decred_hash_macro/user_project_wrapper.sym} 280 -640 0 0 {name=x17 prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/test_mim_cap.sym} 280 -1380 0 0 {name=x18}
+C {sky130_tests/LACG.sym} 280 -600 0 0 {name=x19}
