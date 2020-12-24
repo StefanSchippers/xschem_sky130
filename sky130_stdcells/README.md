@@ -18,7 +18,7 @@ Skywater 130 PDK simulation SPICE models. Allowing verilog simulation directly f
 goal.
 
 ## SYMBOL DRAWINGS
-![list of gates](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gates.png)
+![list of gates](https://github.com/StefanSchippers/xschem_sky130/blob/main/sky130_stdcells/doc/gates.svg)
 
 ## CURRENT STATUS
 
