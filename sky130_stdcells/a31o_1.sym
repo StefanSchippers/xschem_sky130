@@ -1,10 +1,12 @@
-v { version=2.9.8 file_version=1.2}
+v {xschem version=2.9.9 file_version=1.2 }
 G {}
 K {type=primitive
 format="@name @@A1 @@A2 @@A3 @@B1 @VGND @VNB @VPB @VPWR @@X @prefix\\\\a31o_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
-highlight=true}
+highlight=true
+
+function4="0 1 2 & & 3 |"}
 V {}
 S {}
 E {}

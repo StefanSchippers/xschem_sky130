@@ -1,10 +1,14 @@
-v { version=2.9.8 file_version=1.2}
+v {xschem version=2.9.9 file_version=1.2 }
 G {}
 K {type=primitive
 format="@name @@A @@B @@CIN @VGND @VNB @VPB @VPWR @@COUT @@SUM @prefix\\\\fa_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
-highlight=true}
+highlight=true
+function4="0 1 2 ^ ^"
+function3="0 1 ^ 2 & 0 1 & |"
+
+}
 V {}
 S {}
 E {}
@@ -17,9 +21,12 @@ L 4 -60 0 -40 0 {}
 L 4 -60 40 -40 40 {}
 L 4 40 -40 60 -40 {}
 L 4 40 40 60 40 {}
-B 5 -62.5 -42.5 -57.5 -37.5 {name=A dir=in }
-B 5 -62.5 -2.5 -57.5 2.5 {name=B dir=in }
-B 5 -62.5 37.5 -57.5 42.5 {name=CIN dir=in }
+B 5 -62.5 -42.5 -57.5 -37.5 {name=A dir=in 
+propagate_to=3,4}
+B 5 -62.5 -2.5 -57.5 2.5 {name=B dir=in
+propagate_to=3,4}
+B 5 -62.5 37.5 -57.5 42.5 {name=CIN dir=in
+propagate_to=3,4}
 B 5 57.5 -42.5 62.5 -37.5 {name=COUT dir=out }
 B 5 57.5 37.5 62.5 42.5 {name=SUM dir=out }
 T {@symname} -10 -76 0 0 0.3 0.3 {hcenter=true}
