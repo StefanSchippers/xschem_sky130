@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -20,8 +20,15 @@ K {}
 V {}
 S {}
 E {}
+P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Disabled
 No Model} 2160 -50 0 0 0.3 0.3 {layer=7}
+T {Example usage 
+of annotators} 300 -250 0 0 0.5 0.5 {}
+T {Ctrl-Click to annotate operating point data.
+For this to work open this schematic as the
+top most schematic (so you have not 
+descended into it) and run ngspice simulation.} 10 -440 0 0 0.3 0.3 {layer=15}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}
@@ -113,16 +120,16 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 640 -270 0 0 {name=p17 lab=D1v8}
 C {devices/lab_pin.sym} 690 -90 0 1 {name=p3 lab=S}
 C {devices/lab_pin.sym} 710 -140 0 1 {name=p4 lab=B}
-C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1}
+C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1 current=5.7132e-04}
 C {devices/lab_pin.sym} 1190 -90 0 1 {name=p12 lab=S}
 C {devices/lab_pin.sym} 1210 -140 0 1 {name=p13 lab=B}
-C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3}
+C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3 current=5.6511e-04}
 C {devices/lab_pin.sym} 940 -90 0 1 {name=p16 lab=S}
 C {devices/lab_pin.sym} 960 -140 0 1 {name=p21 lab=B}
-C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2}
+C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2 current=5.0094e-04}
 C {devices/lab_pin.sym} 1440 -90 0 1 {name=p7 lab=S}
 C {devices/lab_pin.sym} 1460 -140 0 1 {name=p8 lab=B}
-C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4}
+C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4 current=6.2333e-04}
 C {devices/lab_pin.sym} 640 -310 0 0 {name=p9 lab=D3v3}
 C {devices/lab_pin.sym} 640 -350 0 0 {name=p14 lab=D5v0}
 C {devices/vcvs.sym} 960 -550 0 0 {name=E1 value='5/1.8'}
@@ -151,7 +158,7 @@ C {devices/lab_pin.sym} 1130 -140 0 0 {name=p11 lab=G3v3}
 C {devices/lab_pin.sym} 1380 -140 0 0 {name=p15 lab=G5v0}
 C {devices/lab_pin.sym} 1690 -90 0 1 {name=p1 lab=S}
 C {devices/lab_pin.sym} 1710 -140 0 1 {name=p5 lab=B}
-C {devices/ammeter.sym} 1690 -220 0 0 {name=Vd5}
+C {devices/ammeter.sym} 1690 -220 0 0 {name=Vd5 current=0.005218}
 C {devices/lab_pin.sym} 1630 -140 0 0 {name=p10 lab=G5v0}
 C {devices/lab_pin.sym} 640 -390 0 0 {name=p22 lab=D10v5}
 C {devices/vcvs.sym} 1140 -550 0 0 {name=E5 value='10.5/1.8'}
@@ -168,31 +175,32 @@ C {devices/lab_pin.sym} 1280 -570 0 0 {name=p36 lab=D1v8}
 C {devices/lab_pin.sym} 1320 -520 0 1 {name=p37 lab=0}
 C {devices/lab_pin.sym} 1320 -600 0 1 {name=p38 lab=D16v0}
 C {devices/lab_pin.sym} 1280 -530 0 0 {name=p39 lab=0}
-C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6}
+C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6 current=0.003311}
 C {devices/lab_pin.sym} 2190 -90 0 1 {name=p40 lab=S}
 C {devices/lab_pin.sym} 2210 -140 0 1 {name=p41 lab=B}
 C {devices/lab_pin.sym} 2130 -140 0 0 {name=p42 lab=G5v0}
-C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7}
+C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7 current=0.0000e+00}
 C {devices/lab_pin.sym} 640 -470 0 0 {name=p43 lab=D20v0}
 C {devices/vcvs.sym} 1490 -550 0 0 {name=E7 value='20.0/1.8'}
 C {devices/lab_pin.sym} 1450 -570 0 0 {name=p44 lab=D1v8}
 C {devices/lab_pin.sym} 1490 -520 0 1 {name=p45 lab=0}
 C {devices/lab_pin.sym} 1490 -600 0 1 {name=p46 lab=D20v0}
 C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
-C {devices/ipin.sym} 430 -430 0 0 {name=p48 lab=G1v8}
-C {devices/ipin.sym} 430 -390 0 0 {name=p49 lab=D1v8}
-C {devices/ipin.sym} 430 -350 0 0 {name=p50 lab=B}
-C {devices/code_shown.sym} 30 -820 0 0 {name=NGSPICE
+C {devices/ipin.sym} 520 -420 0 0 {name=p48 lab=G1v8}
+C {devices/ipin.sym} 520 -380 0 0 {name=p49 lab=D1v8}
+C {devices/ipin.sym} 520 -340 0 0 {name=p50 lab=B}
+C {devices/code_shown.sym} 30 -920 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this experimental option enables mos model bin 
 * selection based on W/NF instead of W
 .option wnflag=1 
-
-vg G1v8 0 0
+.option savecurrents
+vg G1v8 0 1.8
 vs s 0 0
-vd D1v8 0 0
+vd D1v8 0 1.8
 vb b 0 0
 .control
+save all
 dc vd 0 1.8 0.01 vg 0 1.8 0.2
 plot all.vd1#branch vs D1v8
 plot all.vd2#branch vs D1v8
@@ -201,6 +209,9 @@ plot all.vd4#branch vs D5v0
 plot all.vd5#branch vs D10v5
 plot all.vd6#branch vs D16v0
 * plot all.vd7#branch vs D20v0
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+op
+write test_nmos.raw
 .endc
 " }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
@@ -245,3 +256,17 @@ W=20.0
 mult=1 nf=1
 model=nfet_20v0
 spiceprefix=X}
+C {devices/ngspice_get_value.sym} 700 -170 0 0 {name=r1 node="i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])"
+descr="Id="}
+C {devices/launcher.sym} 100 -340 0 0 {name=h1
+descr=Annotate 
+tclcommand="ngspice::annotate"}
+C {devices/launcher.sym} 100 -290 0 0 {name=h2
+descr="View Raw file" 
+tclcommand="textwindow $netlist_dir/test_nmos.raw"}
+C {devices/ngspice_get_value.sym} 620 -170 0 0 {name=r2 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+descr="gm="}
+C {devices/launcher.sym} 360 -140 0 0 {name=h3
+descr="Annotation
+manual page"
+url="https://xschem.sourceforge.io/stefan/xschem_man/tutorial_ngspice_backannotation.html"}
