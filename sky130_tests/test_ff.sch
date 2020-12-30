@@ -21,7 +21,8 @@ V {}
 S {}
 E {}
 T {Clock gated latch} 1180 -750 0 0 0.4 0.4 {}
-T {Edge trigger emulation with pulsed clock} 1260 -1030 0 0 0.4 0.4 {}
+T {Edge trigger emulation with pulsed clock} 1050 -1110 0 0 0.4 0.4 {}
+T {Some random logic stuff} 570 -1270 0 0 1 1 {}
 N 60 -360 280 -360 { lab=D}
 N 60 -360 60 -300 { lab=D}
 N 420 -360 510 -360 { lab=QI}
@@ -95,75 +96,44 @@ N 1200 -530 1300 -530 { lab=#net6}
 N 1080 -650 1180 -650 { lab=#net7}
 N 1080 -650 1080 -550 { lab=#net7}
 N 1510 -550 1550 -550 { lab=Q2}
-N 890 -850 1360 -850 { lab=CLK}
+N 930 -850 1360 -850 { lab=CLK}
 N 930 -890 930 -850 { lab=CLK}
-N 1520 -970 1520 -890 { lab=D}
-N 1350 -970 1520 -970 { lab=D}
-N 1360 -790 1520 -790 { lab=RESETB}
-N 1520 -850 1520 -790 { lab=RESETB}
-N 1700 -890 1740 -890 { lab=Q3}
-N 1480 -870 1520 -870 { lab=#net8}
+N 1480 -790 1640 -790 { lab=RESETB}
+N 1640 -850 1640 -790 { lab=RESETB}
+N 1480 -870 1640 -870 { lab=#net8}
 N 1330 -890 1360 -890 { lab=#net9}
 N 1010 -970 1010 -890 { lab=#net10}
 N 1250 -970 1250 -890 { lab=#net11}
+N 1600 -1100 1650 -1100 { lab=D}
+N 1830 -1120 2000 -1120 { lab=#net12}
+N 890 -850 930 -850 { lab=CLK}
+N 1820 -890 1860 -890 { lab=Q3}
+N 1570 -950 1640 -950 { lab=D}
+N 1640 -950 1640 -890 { lab=D}
+N 1510 -1120 1510 -870 { lab=#net8}
+N 1510 -1120 1650 -1120 { lab=#net8}
+N 1610 -1190 1660 -1190 { lab=D}
+N 1840 -1210 1960 -1210 { lab=#net13}
+N 1840 -1190 2000 -1190 { lab=#net14}
+N 1960 -1210 2000 -1210 { lab=#net13}
+N 1660 -1310 1660 -1210 { lab=CLK}
+N 1660 -1310 1690 -1310 { lab=CLK}
+N 1770 -1310 1860 -1310 { lab=#net15}
+N 1940 -1310 2000 -1310 { lab=#net16}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/code.sym} 840 -200 0 0 {name=STIMULI 
-only_toplevel=true
-place=end
-value="
-
-.save all
-.options savecurrents
-.tran 0.2n 100n
-"}
-C {devices/code.sym} 830 -350 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/nonfet.spice
-* Mismatch parameters
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
-* Resistor\\\\$::SKYWATER_MODELS\\\\/Capacitor
-.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical.spice
-.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical__lin.spice
-* Special cells
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/specialized_cells.spice
-* All models
-.include \\\\$::SKYWATER_MODELS\\\\/models/all.spice
-* Corner
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
-"}
-C {sky130_tests/srlatch.sym} 350 -330 0 0 {name=x1}
-C {sky130_tests/srlatch.sym} 580 -330 0 0 {name=x2}
-C {sky130_tests/lvtnot.sym} 100 -300 0 0 {name=x3 m=1 
-+ W_N=1 L_N=0.15 W_P=2 L_P=0.35 
+C {sky130_stdcells/and2_1.sym} 1420 -870 0 0 {name=x17 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dlrtp_1.sym} 1730 -870 0 0 {name=x16 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_tests/lvtnot.sym} 1130 -970 0 0 {name=x21 m=1 
++ W_N=0.6 L_N=0.8 W_P=0.6 L_P=0.4 
 + VCCPIN=VDD VSSPIN=GND}
-C {devices/lab_pin.sym} 30 -360 0 0 {name=l2 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 130 -200 0 0 {name=l3 sig_type=std_logic lab=CLK}
-C {sky130_tests/lvtnot.sym} 200 -200 0 0 {name=x4 m=1 
-+ W_N=1 L_N=0.15 W_P=2 L_P=0.35 
+C {sky130_tests/lvtnot.sym} 1210 -970 0 0 {name=x22 m=1 
++ W_N=0.6 L_N=0.8 W_P=0.6 L_P=0.4 
++ VCCPIN=VDD VSSPIN=GND}
+C {sky130_stdcells/inv_1.sym} 1290 -890 2 1 {name=x15 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 970 -890 2 1 {name=x20 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dfrtp_1.sym} 1740 -1100 0 0 {name=x18 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_tests/lvtnot.sym} 1050 -970 0 0 {name=x23 m=1 
++ W_N=0.6 L_N=0.8 W_P=0.6 L_P=0.4 
 + VCCPIN=VDD VSSPIN=GND}
 C {devices/vsource.sym} 70 -520 0 0 {name=V1 value="pulse 0 1.8 15n .1n .1n 19.9n 40n"}
 C {devices/gnd.sym} 70 -490 0 0 {name=l4 lab=GND}
@@ -206,20 +176,77 @@ C {devices/lab_pin.sym} 1250 -550 0 0 {name=l23 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 1060 -510 0 0 {name=l24 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 1550 -550 0 1 {name=l25 sig_type=std_logic lab=Q2}
 C {sky130_stdcells/nand2_1.sym} 1140 -530 0 0 {name=x12 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1290 -890 2 1 {name=x15 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/dlrtp_1.sym} 1610 -870 0 0 {name=x16 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/and2_1.sym} 1420 -870 0 0 {name=x17 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 1350 -970 0 0 {name=l27 sig_type=std_logic lab=D}
+C {sky130_tests/lvtnot.sym} 100 -300 0 0 {name=x3 m=1 
++ W_N=1 L_N=0.15 W_P=2 L_P=0.35 
++ VCCPIN=VDD VSSPIN=GND}
+C {devices/lab_pin.sym} 130 -200 0 0 {name=l3 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 1570 -950 0 0 {name=l31 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 890 -850 2 1 {name=l28 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 1360 -790 0 0 {name=l29 sig_type=std_logic lab=RESETB}
-C {devices/lab_pin.sym} 1740 -890 0 1 {name=l30 sig_type=std_logic lab=Q3}
-C {sky130_stdcells/inv_1.sym} 970 -890 2 1 {name=x20 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_tests/lvtnot.sym} 1130 -970 0 0 {name=x21 m=1 
+C {devices/lab_pin.sym} 1480 -790 0 0 {name=l29 sig_type=std_logic lab=RESETB}
+C {devices/lab_pin.sym} 1860 -890 0 1 {name=l30 sig_type=std_logic lab=Q3}
+C {devices/code.sym} 840 -200 0 0 {name=STIMULI 
+only_toplevel=true
+place=end
+value="
+
+.save all
+.options savecurrents
+.tran 0.2n 100n
+"}
+C {sky130_tests/srlatch.sym} 350 -330 0 0 {name=x1}
+C {sky130_tests/srlatch.sym} 580 -330 0 0 {name=x2}
+C {devices/code.sym} 830 -350 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/nonfet.spice
+* Mismatch parameters
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
+.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
+* Resistor\\\\$::SKYWATER_MODELS\\\\/Capacitor
+.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical.spice
+.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical__lin.spice
+* Special cells
+.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/specialized_cells.spice
+* All models
+.include \\\\$::SKYWATER_MODELS\\\\/models/all.spice
+* Corner
+.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
+"}
+C {sky130_tests/lvtnot.sym} 200 -200 0 0 {name=x4 m=1 
++ W_N=1 L_N=0.15 W_P=2 L_P=0.35 
++ VCCPIN=VDD VSSPIN=GND}
+C {devices/lab_pin.sym} 1600 -1100 0 0 {name=l26 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 1650 -1080 0 0 {name=l27 sig_type=std_logic lab=RESETB}
+C {devices/lab_pin.sym} 30 -360 0 0 {name=l2 sig_type=std_logic lab=D}
+C {sky130_stdcells/dfrbp_1.sym} 1750 -1190 0 0 {name=x14 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 1660 -1170 0 0 {name=l32 sig_type=std_logic lab=RESETB}
+C {devices/lab_pin.sym} 1610 -1190 0 0 {name=l33 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 1660 -1210 2 1 {name=l34 sig_type=std_logic lab=CLK}
+C {sky130_tests/lvtnot.sym} 1730 -1310 0 0 {name=x19 m=1 
 + W_N=0.6 L_N=0.8 W_P=0.6 L_P=0.4 
 + VCCPIN=VDD VSSPIN=GND}
-C {sky130_tests/lvtnot.sym} 1210 -970 0 0 {name=x22 m=1 
-+ W_N=0.6 L_N=0.8 W_P=0.6 L_P=0.4 
-+ VCCPIN=VDD VSSPIN=GND}
-C {sky130_tests/lvtnot.sym} 1050 -970 0 0 {name=x23 m=1 
+C {sky130_tests/lvtnot.sym} 1900 -1310 0 0 {name=x24 m=1 
 + W_N=0.6 L_N=0.8 W_P=0.6 L_P=0.4 
 + VCCPIN=VDD VSSPIN=GND}
