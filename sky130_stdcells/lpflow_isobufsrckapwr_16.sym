@@ -16,9 +16,9 @@ L 4 -90 -20 -70 -20 {}
 L 4 -90 0 -70 0 {}
 L 4 -90 20 -70 20 {}
 L 4 70 -20 90 -20 {}
-B 5 -92.5 -22.5 -87.5 -17.5 {name=A dir=in propagate_to=3 }
-B 5 -92.5 -2.5 -87.5 2.5 {name=SLEEP dir=in propagate_to=3 }
-B 5 -92.5 17.5 -87.5 22.5 {name=KAPWR dir=in propagate_to=3 }
+B 5 -92.5 -22.5 -87.5 -17.5 {name=A dir=in goto=3 }
+B 5 -92.5 -2.5 -87.5 2.5 {name=SLEEP dir=in goto=3 }
+B 5 -92.5 17.5 -87.5 22.5 {name=KAPWR dir=in goto=3 }
 B 5 87.5 -22.5 92.5 -17.5 {name=X dir=out }
 T {@symname} 0 -56 0 0 0.3 0.3 {hcenter=true}
 T {@name} 75 -42 0 0 0.2 0.2 {}

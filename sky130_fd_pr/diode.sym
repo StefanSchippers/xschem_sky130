@@ -45,7 +45,7 @@ E {}
 L 4 0 -30 0 -5 {}
 L 4 0 5 0 30 {}
 L 4 -10 -5 10 -5 {}
-B 5 -2.5 27.5 2.5 32.5 {name=d0 dir=inout propagate_to=1}
+B 5 -2.5 27.5 2.5 32.5 {name=d0 dir=inout goto=1}
 B 5 -2.5 -32.5 2.5 -27.5 {name=d1 dir=inout pinnumber=2}
 P 4 4 0 -5 -10 5 10 5 0 -5 {fill=true}
 T {@name} 15 25 2 1 0.2 0.2 {}

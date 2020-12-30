@@ -17,9 +17,9 @@ L 4 17.5 -15 17.5 15 {}
 L 4 -20 -30 17.5 -15 {}
 L 4 0 22.5 0 60 {}
 L 4 27.5 0 40 0 {}
-B 5 -42.5 -22.5 -37.5 -17.5 {name=A0 dir=in propagate_to=3 }
-B 5 -42.5 17.5 -37.5 22.5 {name=A1 dir=in propagate_to=3 }
-B 5 -42.5 57.5 -37.5 62.5 {name=S dir=in propagate_to=3 }
+B 5 -42.5 -22.5 -37.5 -17.5 {name=A0 dir=in goto=3 }
+B 5 -42.5 17.5 -37.5 22.5 {name=A1 dir=in goto=3 }
+B 5 -42.5 57.5 -37.5 62.5 {name=S dir=in goto=3 }
 B 5 37.5 -2.5 42.5 2.5 {name=Y dir=out }
 A 4 22.5 0 5 0 360 {}
 T {A0} -35 -34 0 0 0.2 0.2 {}

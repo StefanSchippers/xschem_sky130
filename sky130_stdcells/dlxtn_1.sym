@@ -17,9 +17,9 @@ L 4 -90 -10 -70 -10 {}
 L 4 -90 10 -70 10 {}
 L 4 70 -10 90 -10 {}
 B 5 -92.5 -12.5 -87.5 -7.5 {name=D dir=in 
-propagate_to=2}
+goto=2}
 B 5 -92.5 7.5 -87.5 12.5 {name=GATE_N dir=in 
-propagate_to=2}
+goto=2}
 B 5 87.5 -12.5 92.5 -7.5 {name=Q dir=out }
 T {@symname} 0 -6 0 0 0.3 0.3 {hcenter=true}
 T {@name} 75 -32 0 0 0.2 0.2 {}

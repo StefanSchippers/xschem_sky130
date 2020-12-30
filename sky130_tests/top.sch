@@ -27,7 +27,7 @@ L 4 1300 -300 2260 -300 {}
 L 4 1300 -95 2260 -95 {}
 L 4 1300 -1380 2260 -1380 {}
 L 4 1300 -1250 2260 -1250 {}
-T {Google-Skywater PDK links} 540 -1380 0 0 0.6 0.6 {layer=8}
+T {Git / Google-Skywater PDK links} 510 -1520 0 0 0.6 0.6 {layer=8}
 T {PFET} 1350 -1040 0 0 1 1 { hcenter=true}
 T {NFET} 1350 -800 0 0 1 1 { hcenter=true}
 T {RES} 1350 -550 0 0 1 1 { hcenter=true}
@@ -37,7 +37,7 @@ T {No Model} 1800 -710 0 0 0.3 0.3 {layer=7}
 T {No Model} 1960 -590 0 0 0.3 0.3 {layer=7}
 T {No Model} 1800 -930 0 0 0.3 0.3 {layer=7}
 T {Digital standard cells} 20 -940 0 0 0.6 0.6 {layer=8}
-T {Ctrl-Click to open link} 500 -1330 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 480 -1470 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 450 -880 0 0 0.3 0.3 {layer=11}
 T {* Copyright 2020 Stefan Frederik Schippers
 * 
@@ -102,13 +102,13 @@ T {3 PIN
 PFET} 2510 -1070 0 0 1 1 { hcenter=true}
 T {Decred_hash_macro: import of a big RTL design from spice netlist} 430 -650 0 0 0.3 0.3 {layer=11}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/launcher.sym} 570 -1290 0 0 {name=h1
+C {devices/launcher.sym} 540 -1430 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
 url="http://skywater-pdk.readthedocs.io/en/latest"}
-C {devices/launcher.sym} 570 -1210 0 0 {name=h2
+C {devices/launcher.sym} 540 -1350 0 0 {name=h2
 descr="Google-Skywater PDK git repo" 
 url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs"}
-C {devices/launcher.sym} 570 -1250 0 0 {name=h3
+C {devices/launcher.sym} 540 -1390 0 0 {name=h3
 descr="Google-Skywater PDK documentation: Device details" 
 url="https://skywater-pdk.readthedocs.io/en/latest/rules/device-details.html"}
 C {sky130_tests/test_nmos.sym} 280 -1220 0 0 {name=x1}
@@ -305,16 +305,16 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1600 -1180 0 0 {name=C1 model=cap_mim_m3_1 W=1
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1760 -1180 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_tests/test_format_override.sym} 280 -800 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 280 -1060 0 0 {name=x11}
-C {devices/launcher.sym} 570 -1170 0 0 {name=h5
+C {devices/launcher.sym} 540 -1300 0 0 {name=h5
 descr="XSCHEM on Github" 
 url="https://github.com/StefanSchippers/xschem"}
-C {devices/launcher.sym} 570 -1130 0 0 {name=h6
+C {devices/launcher.sym} 540 -1260 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
 C {sky130_tests/gates_sky130.sym} 280 -760 0 0 {name=x10}
 C {sky130_tests/test_stdcells.sym} 280 -880 0 0 {name=x12}
 C {sky130_tests/all_sky130_gates.sym} 280 -720 0 0 {name=x13}
-C {devices/launcher.sym} 570 -1090 0 0 {name=h7
+C {devices/launcher.sym} 540 -1220 0 0 {name=h7
 descr="A good tutorial for using XSCHEM with SKY130 pdk" 
 url="https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md"}
 C {sky130_fd_pr/cap_var_lvt.sym} 1600 -1320 0 0 {name=C3 model=cap_var_lvt W=0.5 L=0.5 VM=1 spiceprefix=X}
@@ -349,10 +349,10 @@ nf=1 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {devices/launcher.sym} 570 -1050 0 0 {name=h8
+C {devices/launcher.sym} 540 -1180 0 0 {name=h8
 descr="Open_pdks documentation"
 url="http://opencircuitdesign.com/open_pdks/index.html"}
-C {devices/launcher.sym} 570 -1010 0 0 {name=h9
+C {devices/launcher.sym} 540 -1140 0 0 {name=h9
 descr="diadatp patch file of sky130_fd_pr/ directory for ngspice"
 url="https://gist.githubusercontent.com/diadatp/36b7d6a80f7b586fd561b5951077eddc/raw/e0d6d5cdd7437b4f76fa0373ac634a61f696d2f1/fix_resistors.patch"}
 C {mips_cpu/tb.sym} 280 -680 0 0 {name=x16}
@@ -466,3 +466,15 @@ C {sky130_tests/test_mim_cap.sym} 280 -1460 0 0 {name=x18}
 C {sky130_tests/LACG.sym} 280 -600 0 0 {name=x19}
 C {sky130_tests/test_ff.sym} 280 -560 0 0 {name=x20}
 C {sky130_tests/test_analog.sym} 280 -1020 0 0 {name=x21}
+C {devices/launcher.sym} 540 -1100 0 0 {name=h10
+descr="westonb/sky130-analog" 
+url="https://github.com/westonb/sky130-analog/blob/main/designs/basic_opa/README.md"}
+C {devices/launcher.sym} 540 -1060 0 0 {name=h11
+descr="tclarke/sky130radio" 
+url="https://github.com/tclarke/sky130radio"}
+C {devices/launcher.sym} 540 -1020 0 0 {name=h12
+descr="Deepak42074/vsdsram_sky130" 
+url="https://github.com/Deepak42074/vsdsram_sky130"}
+C {devices/launcher.sym} 540 -980 0 0 {name=h13
+descr="pradeepsk13/vsdsram_sky130_1.8V" 
+url="https://github.com/pradeepsk13/vsdsram_sky130_1.8V"}

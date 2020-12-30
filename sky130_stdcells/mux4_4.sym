@@ -21,12 +21,12 @@ L 4 -40 20 -20 20 {}
 L 4 -40 60 -20 60 {}
 L 4 -40 130 10 130 {}
 L 4 10 58.125 10 130 {}
-B 5 -42.5 -62.5 -37.5 -57.5 {name=A0 dir=in propagate_to=6 }
-B 5 -42.5 -22.5 -37.5 -17.5 {name=A1 dir=in propagate_to=6 }
-B 5 -42.5 17.5 -37.5 22.5 {name=A2 dir=in propagate_to=6 }
-B 5 -42.5 57.5 -37.5 62.5 {name=A3 dir=in propagate_to=6 }
-B 5 -42.5 97.5 -37.5 102.5 {name=S0 dir=in propagate_to=6 }
-B 5 -42.5 127.5 -37.5 132.5 {name=S1 dir=in propagate_to=6 }
+B 5 -42.5 -62.5 -37.5 -57.5 {name=A0 dir=in goto=6 }
+B 5 -42.5 -22.5 -37.5 -17.5 {name=A1 dir=in goto=6 }
+B 5 -42.5 17.5 -37.5 22.5 {name=A2 dir=in goto=6 }
+B 5 -42.5 57.5 -37.5 62.5 {name=A3 dir=in goto=6 }
+B 5 -42.5 97.5 -37.5 102.5 {name=S0 dir=in goto=6 }
+B 5 -42.5 127.5 -37.5 132.5 {name=S1 dir=in goto=6 }
 B 5 37.5 -2.5 42.5 2.5 {name=X dir=out }
 T {A0} -35 -74 0 0 0.2 0.2 {}
 T {A1} -35 -34 0 0 0.2 0.2 {}
