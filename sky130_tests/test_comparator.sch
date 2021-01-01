@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -225,7 +225,7 @@ value="* .option SCALE=1e-6
 * selection based on W/NF instead of W
 .option wnflag=1 
 
-.param VCC=1.8
+* .param VCC=1.8
 .param VCCGAUSS=agauss(1.8, 0.05, 1)
 .param VCC=VCCGAUSS
 .param VDL='VCC/2+0.2'
@@ -245,12 +245,12 @@ value="* .option SCALE=1e-6
 
 .control
   let run=1
-  
   dowhile run <= 20
     if run > 1
       reset
       set appendwrite
     end
+    save all
     * save saout cal i(vvcc) en plus minus
     tran 0.1n 300n uic
     write test_comparator.raw
