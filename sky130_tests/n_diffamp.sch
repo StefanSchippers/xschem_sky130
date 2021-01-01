@@ -90,12 +90,13 @@ N 100 -500 140 -500 { lab=PLUS}
 N 510 -500 550 -500 { lab=MINUS}
 N 470 -580 630 -580 { lab=OUT}
 N 320 -190 320 -160 { lab=GND}
-N 320 -420 320 -250 { lab=S}
 N 240 -220 280 -220 { lab=NBIAS}
 N 410 -420 410 -370 { lab=S}
 N 850 -530 850 -500 { lab=PLUS}
 N 940 -530 940 -500 { lab=NBIAS}
 N 750 -530 750 -500 { lab=MINUS}
+N 320 -320 320 -250 { lab=#net2}
+N 320 -420 320 -380 { lab=S}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 1050 -180 0 0 {name=STIMULI 
 only_toplevel=true
@@ -266,8 +267,9 @@ C {devices/lab_pin.sym} 940 -530 0 1 {name=l12 sig_type=std_logic lab=NBIAS}
 C {devices/vsource.sym} 1090 -470 0 0 {name=V3 value=1.8 only_toplevel=true}
 C {devices/gnd.sym} 1090 -440 0 0 {name=l13 lab=GND}
 C {devices/vdd.sym} 1090 -500 0 0 {name=l14 lab=VDD}
-C {devices/ngspice_get_value.sym} 1060 -460 0 1 {name=r10 node=i(v3)
-descr="Curr="}
 C {devices/vsource.sym} 750 -470 0 0 {name=V4 value=0.7 only_toplevel=true}
 C {devices/gnd.sym} 750 -440 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 750 -530 0 1 {name=l6 sig_type=std_logic lab=MINUS}
+C {devices/ngspice_get_expr.sym} 1070 -470 0 1 {name=r10 node="[ngspice::get_current v3]"}
+C {devices/ngspice_get_expr.sym} 290 -340 0 1 {name=r11 node="[ngspice::get_current V5]"}
+C {devices/vsource.sym} 320 -350 0 0 {name=V5 value=0}
