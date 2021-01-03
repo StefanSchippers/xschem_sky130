@@ -1,6 +1,6 @@
 # xschem_sky130
 XSCHEM symbol libraries for the Google-Skywater 130nm process design kit. 
-A youtube[step by step video](https://www.youtube.com/watch?v=jXmmxO8WG8s) shows how to boostrap a working 
+A youtube [step by step video](https://www.youtube.com/watch?v=jXmmxO8WG8s) shows how to boostrap a working 
 environment for xschem + skywater-pdk + ngspice, that is, compile and install xschem, download the xschem_sky130 symbols
 and libraries, install the skywater-pdk files, and finally build the pre-master development branch of ngspice.
 ## This repository contains:
