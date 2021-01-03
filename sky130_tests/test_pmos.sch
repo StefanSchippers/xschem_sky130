@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -82,6 +82,7 @@ vs s 0 0
 vd D1v8 0 0
 vb b 0 0
 .control
+save all
 dc vd 0 -1.8 -0.01 vg 0 -1.8 -0.2
 plot all.vd1#branch vs D1v8
 plot all.vd2#branch vs D1v8
