@@ -2,7 +2,7 @@ K {type=primitive
 format="@name @@CLK @@D @VGND @VNB @VPB @VPWR @@Q @@Q_N @prefix\\\\dfxbp_2"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
-highlight=true}
+}
 T {@symname} 0 -6 0 0 0.3 0.3 {hcenter=true}
 T {@name} 75 -32 0 0 0.2 0.2 {}
 L 4 -70 -20 70 -20 {}

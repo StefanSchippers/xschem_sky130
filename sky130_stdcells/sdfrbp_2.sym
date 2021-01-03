@@ -4,7 +4,7 @@ K {type=primitive
 format="@name @@CLK @@D @@RESET_B @@SCD @@SCE @VGND @VNB @VPB @VPWR @@Q @@Q_N @prefix\\\\sdfrbp_2"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
-highlight=true}
+}
 V {}
 S {}
 E {}

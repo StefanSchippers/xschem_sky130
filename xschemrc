@@ -78,7 +78,7 @@ set verilog_2001 1
 # set line_width 2
 set change_lw 1
 set color_ps 1
-set initial_geometry {900x600}
+set initial_geometry {1024x720}
 set unzoom_nodrift 0
 
 ## if set to 1 allow to place multiple components with same name.

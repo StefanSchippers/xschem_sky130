@@ -6,7 +6,7 @@ function4="3 ~"
 format="@name @@CLK @@D @@RESET_B @VGND @VNB @VPB @VPWR @@Q @@Q_N @prefix\\\\dfrbp_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
-highlight=true}
+}
 V {}
 S {}
 E {}

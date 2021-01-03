@@ -23,6 +23,7 @@ template="name=x1 m=1
 + W_N=1 L_N=0.15 W_P=2 L_P=0.35 
 + VCCPIN=VCC VSSPIN=VSS"
 extra="VCCPIN VSSPIN"
+highlight=true
 }
 V {}
 S {}
@@ -32,7 +33,7 @@ L 4 -27.5 -20 -27.5 20 {}
 L 4 -27.5 -20 16.25 0 {}
 L 4 -27.5 20 16.25 0 {}
 L 4 23.75 0 40 -0 {}
-B 5 -42.5 -2.5 -37.5 2.5 {name=a dir=in goto=1}
+B 5 -42.5 -2.5 -37.5 2.5 {name=a dir=in goto=1 propag=1}
 B 5 37.5 -2.5 42.5 2.5 {name=y dir=out verilog_type=wire}
 A 4 20 0 3.75 360 360 {}
 T {n:@W_N / @L_N} -35 35 2 1 0.2 0.2 {}
