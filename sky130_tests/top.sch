@@ -305,16 +305,16 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1670 -1180 0 0 {name=C1 model=cap_mim_m3_1 W=1
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1830 -1180 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_tests/test_format_override.sym} 280 -800 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 280 -1060 0 0 {name=x11}
-C {devices/launcher.sym} 590 -1260 0 0 {name=h5
+C {devices/launcher.sym} 590 -1270 0 0 {name=h5
 descr="XSCHEM on Github" 
 url="https://github.com/StefanSchippers/xschem"}
-C {devices/launcher.sym} 590 -1220 0 0 {name=h6
+C {devices/launcher.sym} 590 -1230 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
 C {sky130_tests/gates_sky130.sym} 280 -760 0 0 {name=x10}
 C {sky130_tests/test_stdcells.sym} 280 -880 0 0 {name=x12}
 C {sky130_tests/all_sky130_gates.sym} 280 -720 0 0 {name=x13}
-C {devices/launcher.sym} 590 -1180 0 0 {name=h7
+C {devices/launcher.sym} 590 -1190 0 0 {name=h7
 descr="A good tutorial for using XSCHEM with SKY130 pdk" 
 url="https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md"}
 C {sky130_fd_pr/cap_var_lvt.sym} 1670 -1320 0 0 {name=C3 model=cap_var_lvt W=0.5 L=0.5 VM=1 spiceprefix=X}
@@ -349,12 +349,9 @@ nf=1 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {devices/launcher.sym} 590 -1140 0 0 {name=h8
+C {devices/launcher.sym} 590 -1150 0 0 {name=h8
 descr="Open_pdks documentation"
 url="http://opencircuitdesign.com/open_pdks/index.html"}
-C {devices/launcher.sym} 590 -1100 0 0 {name=h9
-descr="diadatp patch file of sky130_fd_pr/ directory for ngspice"
-url="https://gist.githubusercontent.com/diadatp/36b7d6a80f7b586fd561b5951077eddc/raw/e0d6d5cdd7437b4f76fa0373ac634a61f696d2f1/fix_resistors.patch"}
 C {mips_cpu/tb.sym} 280 -680 0 0 {name=x16}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 2740 -840 0 0 {name=M17
 L=0.15
@@ -466,19 +463,19 @@ C {sky130_tests/test_mim_cap.sym} 280 -1460 0 0 {name=x18}
 C {sky130_tests/LACG.sym} 280 -600 0 0 {name=x19}
 C {sky130_tests/test_ff.sym} 280 -560 0 0 {name=x20}
 C {sky130_tests/test_analog.sym} 280 -1020 0 0 {name=x21}
-C {devices/launcher.sym} 590 -1060 0 0 {name=h10
+C {devices/launcher.sym} 590 -1110 0 0 {name=h10
 descr="westonb/sky130-analog" 
 url="https://github.com/westonb/sky130-analog/blob/main/designs/basic_opa/README.md"}
-C {devices/launcher.sym} 590 -1020 0 0 {name=h11
+C {devices/launcher.sym} 590 -1070 0 0 {name=h11
 descr="tclarke/sky130radio" 
 url="https://github.com/tclarke/sky130radio"}
-C {devices/launcher.sym} 590 -980 0 0 {name=h12
+C {devices/launcher.sym} 590 -1030 0 0 {name=h12
 descr="Deepak42074/vsdsram_sky130" 
 url="https://github.com/Deepak42074/vsdsram_sky130"}
-C {devices/launcher.sym} 590 -940 0 0 {name=h13
+C {devices/launcher.sym} 590 -990 0 0 {name=h13
 descr="pradeepsk13/vsdsram_sky130_1.8V" 
 url="https://github.com/pradeepsk13/vsdsram_sky130_1.8V"}
 C {devices/launcher.sym} 590 -1450 0 0 {name=h14
 descr="Step-by-step install instructions,
 xschem + skywater-pdk + ngspice" 
-url="https://www.youtube.com/watch?v=jXmmxO8WG8s"}
+url="https://xschem.sourceforge.io/stefan/xschem_man/video_tutorials/install_xschem_sky130_and_ngspice.mp4"}
