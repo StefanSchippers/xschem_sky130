@@ -259,7 +259,7 @@ C {sky130_tests/lvtnot.sym} 1900 -1310 0 0 {name=x24 m=1
 C {sky130_stdcells/dfxtp_1.sym} 1290 -1170 0 0 {name=x25 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1150 -1160 0 0 {name=l35 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 1200 -1180 2 1 {name=l36 sig_type=std_logic lab=CLK}
-C {sky130_stdcells/dlrbp_1.sym} 1830 -650 0 0 {name=x26 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dlrbp_1.sym} 1830 -650 0 0 {name=x26 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1740 -630 0 0 {name=l37 sig_type=std_logic lab=RESETB}
 C {devices/lab_pin.sym} 1690 -670 0 0 {name=l38 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 1670 -650 0 0 {name=l39 sig_type=std_logic lab=CLK}
