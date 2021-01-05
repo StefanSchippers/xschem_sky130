@@ -250,7 +250,7 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### list of tcl files to preload.
 # lappend tcl_files ${XSCHEM_SHAREDIR}/change_index.tcl
 lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
-
+lappend tcl_files scripts/sky130_models.tcl
 ###########################################################################
 #### XSCHEM TOOLBAR
 ###########################################################################
