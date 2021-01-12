@@ -27,15 +27,15 @@ L 4 1370 -300 2330 -300 {}
 L 4 1370 -95 2330 -95 {}
 L 4 1370 -1380 2330 -1380 {}
 L 4 1370 -1250 2330 -1250 {}
+P 7 3 2090 -700 1860 -700 1860 -710 {}
+P 7 3 2370 -700 2490 -700 2490 -710 {}
 T {Git / Google-Skywater PDK links} 560 -1660 0 0 0.6 0.6 {layer=8}
 T {PFET} 1420 -1040 0 0 1 1 { hcenter=true}
 T {NFET} 1420 -800 0 0 1 1 { hcenter=true}
 T {RES} 1420 -550 0 0 1 1 { hcenter=true}
 T {DIODE} 1420 -195 0 0 1 1 { hcenter=true}
 T {PNP} 1420 -70 0 0 1 1 { hcenter=true}
-T {No Model} 1870 -710 0 0 0.3 0.3 {layer=7}
 T {No Model} 2030 -590 0 0 0.3 0.3 {layer=7}
-T {No Model} 1870 -930 0 0 0.3 0.3 {layer=7}
 T {Digital standard cells} 20 -1050 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 530 -1610 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 450 -990 0 0 0.3 0.3 {layer=11}
@@ -91,16 +91,15 @@ cap_vpp_11p5x11p7_l1m1m2m3_shieldm4
 cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4
 cap_vpp_06p8x06p1_m1m2m3_shieldl1m4
 cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5} 2020 -1530 0 0 0.2 0.2 {}
-T {No Model} 2040 -710 0 0 0.3 0.3 {layer=7}
-T {No Model} 2200 -710 0 0 0.3 0.3 {layer=7}
-T {No Model} 2340 -710 0 0 0.3 0.3 {layer=7}
-T {No Model} 3040 -710 0 0 0.3 0.3 {layer=7}
 T {3 PIN
 NFET} 2580 -860 0 0 1 1 { hcenter=true}
-T {No Model} 3030 -930 0 0 0.3 0.3 {layer=7}
 T {3 PIN
 PFET} 2580 -1070 0 0 1 1 { hcenter=true}
 T {Decred_hash_macro: import of a big RTL design from spice netlist} 430 -760 0 0 0.3 0.3 {layer=11}
+T {Need to include: 
+sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice} 2096.25 -713.75 0 0 0.2 0.2 {layer=7}
+T {Need to include: 
+sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice} 1816.25 -923.75 0 0 0.2 0.2 {layer=7}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 590 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -246,13 +245,6 @@ nf=1 mult=1
 model=nfet_g5v0d16v0
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_20v0.sym} 1890 -750 0 0 {name=M7
-L=0.5
-W=20.0
-nf=1 mult=1
-model=nfet_20v0
-spiceprefix=X
- spice_ignore=true}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 1890 -1070 0 0 {name=M8
 L=0.15
 W=1
@@ -327,28 +319,6 @@ W=1
 L=1 
 mult=1 
 spiceprefix=X}
-C {sky130_fd_pr/nfet_20v0_iso.sym} 2050 -750 0 0 {name=M14
-L=0.5
-W=20.0
-sa=0 sb=0 sd=0
-nf=1 mult=1
-model=nfet_20v0_iso
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_20v0_nvt.sym} 2210 -750 0 0 {name=M15
-L=0.5
-W=20.0
-nf=1 mult=1
-model=nfet_20v0_nvt
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_20v0_zvt.sym} 2350 -750 0 0 {name=M16
-L=0.5
-W=20.0
-nf=1 mult=1
-model=nfet_20v0_zvt
-spiceprefix=X
-}
 C {devices/launcher.sym} 590 -1260 0 0 {name=h8
 descr="Open_pdks documentation"
 url="http://opencircuitdesign.com/open_pdks/index.html"}
@@ -401,14 +371,6 @@ nf=1 mult=1
 model=nfet_g5v0d16v0
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_20v0.sym} 3060 -750 0 0 {name=M23
-L=0.5
-W=20.0
-body=GND
-nf=1 mult=1
-model=nfet_20v0
-spiceprefix=X
- spice_ignore=true}
 C {sky130_fd_pr/pfet3_01v8_hvt.sym} 3050 -1070 0 0 {name=M24
 L=0.15
 W=1
@@ -560,3 +522,39 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
+C {sky130_fd_pr/nfet_20v0.sym} 1890 -750 0 0 {name=M7
+L=2.95
+W=29.41
+mult=1
+model=nfet_20v0
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_20v0.sym} 3060 -750 0 0 {name=M23
+L=2.95
+W=29.41
+body=GND
+mult=1
+model=nfet_20v0
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_20v0_iso.sym} 2050 -750 0 0 {name=M14
+L=1.5
+W=30
+mult=1
+model=nfet_20v0_iso
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_20v0_nvt.sym} 2210 -750 0 0 {name=M15
+L=1.5
+W=30
+mult=1
+model=nfet_20v0_nvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_20v0_zvt.sym} 2370 -750 0 0 {name=M16
+L=5
+W=30
+mult=1
+model=nfet_20v0_zvt
+spiceprefix=X
+}

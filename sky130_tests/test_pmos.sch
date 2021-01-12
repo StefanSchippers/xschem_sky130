@@ -20,8 +20,8 @@ K {}
 V {}
 S {}
 E {}
-T {Disabled
-No Model} 1910 -550 0 0 0.3 0.3 {layer=7}
+T {Need to include: 
+sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice} 1836.25 -533.75 0 0 0.2 0.2 {layer=7}
 N 680 -490 680 -470 {lab=S}
 N 680 -440 700 -440 {lab=B}
 N 620 -440 640 -440 {lab=G1v8}
@@ -89,7 +89,7 @@ plot all.vd2#branch vs D1v8
 plot all.vd3#branch vs D1v8
 plot all.vd4#branch vs D10v5
 plot all.vd5#branch vs D16v0
-
+plot all.vd6#branch vs D20v0
 .endc
 " }
 C {devices/lab_pin.sym} 540 -90 0 0 {name=p15 lab=D1v8}
@@ -184,11 +184,10 @@ C {devices/lab_pin.sym} 1350 -590 0 1 {name=p52 lab=0}
 C {devices/lab_pin.sym} 1350 -670 0 1 {name=p53 lab=D20v0}
 C {devices/lab_pin.sym} 1310 -600 0 0 {name=p54 lab=0}
 C {sky130_fd_pr/pfet_20v0.sym} 1930 -440 0 0 {name=M6
-L=1
+L=0.5
 W=30
 nf=1 mult=1
 model=pfet_20v0
-spice_ignore=true
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1950 -490 2 0 {name=p48 lab=S}
@@ -233,4 +232,10 @@ value="
 .include \\\\$::SKYWATER_MODELS\\\\/models/all.spice
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
+"}
+C {devices/code.sym} 240 -190 0 0 {name=pfet_20v0_MODEL
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_20v0/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice
 "}
