@@ -558,3 +558,4 @@ mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
+C {sky130_tests/tb_ft_test.sym} 280 -1090 0 0 {name=x23}
