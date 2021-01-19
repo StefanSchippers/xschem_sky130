@@ -36,9 +36,9 @@ T {RES} 1420 -550 0 0 1 1 { hcenter=true}
 T {DIODE} 1420 -195 0 0 1 1 { hcenter=true}
 T {PNP} 1420 -70 0 0 1 1 { hcenter=true}
 T {No Model} 2030 -590 0 0 0.3 0.3 {layer=7}
-T {Digital standard cells} 20 -1050 0 0 0.6 0.6 {layer=8}
+T {Digital standard cells} 20 -1010 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 530 -1610 0 0 0.3 0.3 {layer=11}
-T {Ctrl-Click to open link} 450 -990 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 450 -950 0 0 0.3 0.3 {layer=11}
 T {* Copyright 2020 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0
@@ -95,7 +95,7 @@ T {3 PIN
 NFET} 2580 -860 0 0 1 1 { hcenter=true}
 T {3 PIN
 PFET} 2580 -1070 0 0 1 1 { hcenter=true}
-T {Decred_hash_macro: import of a big RTL design from spice netlist} 430 -760 0 0 0.3 0.3 {layer=11}
+T {Decred_hash_macro: import of a big RTL design from spice netlist} 430 -720 0 0 0.3 0.3 {layer=11}
 T {Need to include: 
 sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice} 2096.25 -713.75 0 0 0.2 0.2 {layer=7}
 T {Need to include: 
@@ -289,13 +289,13 @@ model=pfet_20v0
 spiceprefix=X
 spice_ignore=true
 }
-C {sky130_tests/gates.sym} 280 -950 0 0 {name=x8}
-C {devices/launcher.sym} 480 -950 0 0 {name=h4
+C {sky130_tests/gates.sym} 280 -910 0 0 {name=x8}
+C {devices/launcher.sym} 480 -910 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1670 -1180 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1830 -1180 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_tests/test_format_override.sym} 280 -910 0 0 {name=x9}
+C {sky130_tests/test_format_override.sym} 280 -870 0 0 {name=x9}
 C {sky130_tests/test_nmos_sizes.sym} 280 -1170 0 0 {name=x11}
 C {devices/launcher.sym} 590 -1380 0 0 {name=h5
 descr="XSCHEM on Github" 
@@ -303,9 +303,9 @@ url="https://github.com/StefanSchippers/xschem"}
 C {devices/launcher.sym} 590 -1340 0 0 {name=h6
 descr="XSCHEM SKY130 Libraries on Github" 
 url="https://github.com/StefanSchippers/xschem_sky130"}
-C {sky130_tests/gates_sky130.sym} 280 -870 0 0 {name=x10}
-C {sky130_tests/test_stdcells.sym} 280 -990 0 0 {name=x12}
-C {sky130_tests/all_sky130_gates.sym} 280 -830 0 0 {name=x13}
+C {sky130_tests/gates_sky130.sym} 280 -830 0 0 {name=x10}
+C {sky130_tests/test_stdcells.sym} 280 -950 0 0 {name=x12}
+C {sky130_tests/all_sky130_gates.sym} 280 -790 0 0 {name=x13}
 C {devices/launcher.sym} 590 -1300 0 0 {name=h7
 descr="A good tutorial for using XSCHEM with SKY130 pdk" 
 url="https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md"}
@@ -322,7 +322,7 @@ spiceprefix=X}
 C {devices/launcher.sym} 590 -1260 0 0 {name=h8
 descr="Open_pdks documentation"
 url="http://opencircuitdesign.com/open_pdks/index.html"}
-C {mips_cpu/tb.sym} 280 -790 0 0 {name=x16}
+C {mips_cpu/tb.sym} 280 -750 0 0 {name=x16}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 2740 -840 0 0 {name=M17
 L=0.15
 W=1
@@ -420,10 +420,10 @@ model=pfet_20v0
 spiceprefix=X
 spice_ignore=true
 }
-C {decred_hash_macro/user_project_wrapper.sym} 280 -750 0 0 {name=x17 prefix=sky130_fd_sc_hd__ }
+C {decred_hash_macro/user_project_wrapper.sym} 280 -710 0 0 {name=x17 prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/test_mim_cap.sym} 280 -1570 0 0 {name=x18}
-C {sky130_tests/LACG.sym} 280 -710 0 0 {name=x19}
-C {sky130_tests/test_ff.sym} 280 -670 0 0 {name=x20}
+C {sky130_tests/LACG.sym} 280 -670 0 0 {name=x19}
+C {sky130_tests/test_ff.sym} 280 -630 0 0 {name=x20}
 C {sky130_tests/test_analog.sym} 280 -1130 0 0 {name=x21}
 C {devices/launcher.sym} 590 -1220 0 0 {name=h10
 descr="westonb/sky130-analog" 
@@ -441,7 +441,7 @@ C {devices/launcher.sym} 590 -1560 0 0 {name=h14
 descr="Step-by-step install instructions,
 xschem + skywater-pdk + ngspice" 
 url="https://xschem.sourceforge.io/stefan/xschem_man/video_tutorials/install_xschem_sky130_and_ngspice.mp4"}
-C {sky130_tests/simulate_ff.sym} 280 -630 0 0 {name=x22}
+C {sky130_tests/simulate_ff.sym} 280 -590 0 0 {name=x22}
 C {devices/code.sym} 880 -980 0 0 {name=FF_MODELS
 spice_ignore=false
 only_toplevel=true
@@ -559,3 +559,4 @@ model=nfet_20v0_zvt
 spiceprefix=X
 }
 C {sky130_tests/tb_ft_test.sym} 280 -1090 0 0 {name=x23}
+C {sky130_tests/tb_ft_test_2.sym} 280 -1050 0 0 {name=x24}
