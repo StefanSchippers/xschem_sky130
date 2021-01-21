@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-T {Transistor ft measurement} 130 -620 0 0 0.8 0.8 {}
+T {Transistor ft measurement} 130 -780 0 0 0.8 0.8 {}
 T {A transient simulation is done showing the
 small signal current gain at 10GHz.
 
@@ -24,33 +24,42 @@ run simulation at *this* level} 760 -560 0 0 0.2 0.2 {layer=4}
 T {This will display the raw file of the top
 most schematic where presumably simulation
 has been run} 760 -420 0 0 0.2 0.2 {layer=4}
-N 30 -510 30 -360 { lab=D}
-N 30 -300 30 -110 { lab=GND}
-N 400 -320 430 -320 { lab=GND}
-N 430 -320 430 -270 { lab=GND}
+T {RF transistor} 790 -720 0 0 0.4 0.4 {}
+T {Standard LVT transistor} 1040 -720 0 0 0.4 0.4 {}
+N 30 -590 30 -440 { lab=D}
+N 30 -380 30 -190 { lab=GND}
+N 400 -400 430 -400 { lab=#net1}
+N 430 -290 430 -270 { lab=GND}
 N 400 -270 430 -270 { lab=GND}
-N 400 -270 400 -110 { lab=GND}
-N 220 -110 400 -110 { lab=GND}
-N 270 -510 400 -510 { lab=#net1}
-N 320 -320 360 -320 { lab=#net2}
-N 140 -230 140 -200 { lab=#net3}
-N 140 -140 140 -110 { lab=GND}
-N 140 -320 140 -290 { lab=G}
-N 220 -140 220 -110 { lab=GND}
-N 140 -320 220 -320 { lab=G}
-N 220 -320 260 -320 { lab=G}
-N 400 -290 400 -270 { lab=GND}
-N 30 -110 140 -110 { lab=GND}
-N 140 -110 220 -110 { lab=GND}
-N 400 -510 480 -510 { lab=#net1}
-N 480 -510 480 -500 { lab=#net1}
-N 400 -380 480 -380 { lab=#net4}
-N 220 -320 220 -290 { lab=G}
-N 220 -230 220 -190 { lab=#net5}
-N 400 -510 400 -500 { lab=#net1}
-N 400 -380 400 -350 { lab=#net4}
-N 30 -510 210 -510 { lab=D}
-N 400 -440 400 -380 { lab=#net4}
+N 400 -270 400 -190 { lab=GND}
+N 220 -190 400 -190 { lab=GND}
+N 270 -590 400 -590 { lab=#net2}
+N 320 -400 360 -400 { lab=#net3}
+N 140 -310 140 -280 { lab=#net4}
+N 140 -220 140 -190 { lab=GND}
+N 140 -400 140 -370 { lab=G}
+N 220 -220 220 -190 { lab=GND}
+N 140 -400 220 -400 { lab=G}
+N 220 -400 260 -400 { lab=G}
+N 400 -370 400 -270 { lab=GND}
+N 30 -190 140 -190 { lab=GND}
+N 140 -190 220 -190 { lab=GND}
+N 400 -590 480 -590 { lab=#net2}
+N 480 -590 480 -580 { lab=#net2}
+N 400 -460 480 -460 { lab=#net5}
+N 220 -400 220 -370 { lab=G}
+N 220 -310 220 -270 { lab=#net6}
+N 400 -590 400 -580 { lab=#net2}
+N 400 -460 400 -430 { lab=#net5}
+N 30 -590 210 -590 { lab=D}
+N 400 -520 400 -460 { lab=#net5}
+N 430 -400 430 -350 { lab=#net1}
+N 850 -680 850 -600 { lab=GND}
+N 810 -600 850 -600 { lab=GND}
+N 810 -650 810 -600 { lab=GND}
+N 1140 -680 1140 -600 { lab=GND}
+N 1100 -600 1140 -600 { lab=GND}
+N 1100 -650 1100 -600 { lab=GND}
 C {devices/code.sym} 530 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -90,8 +99,8 @@ value="
 * Corner
 .include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
 "}
-C {devices/vsource.sym} 30 -330 0 0 {name=VDS value=1.5}
-C {devices/gnd.sym} 400 -110 0 0 {name=l1 lab=GND}
+C {devices/vsource.sym} 30 -410 0 0 {name=VDS value=1.5}
+C {devices/gnd.sym} 400 -190 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 530 -350 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
@@ -101,6 +110,7 @@ value="
 .options method=gear savecurrents
 .control
   save all
+* save @m.xm1.msky130_fd_pr__rf_nfet_01v8_lvt_bm02w5p00l0p18[gm]
   save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 
   op
@@ -120,11 +130,67 @@ value="
 .endc
 
 "}
-C {devices/lab_wire.sym} 90 -510 0 0 {name=l2 sig_type=std_logic lab=D}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 380 -320 0 0 {name=M1
-L=0.15
-W=10
-nf=4
+C {devices/lab_wire.sym} 90 -590 0 0 {name=l2 sig_type=std_logic lab=D}
+C {devices/title.sym} 160 -30 0 0 {name=l4 author="Rafael Marinho"}
+C {devices/vsource.sym} 140 -250 0 0 {name=VGS value=1}
+C {devices/lab_wire.sym} 190 -400 0 0 {name=l3 sig_type=std_logic lab=G}
+C {devices/ammeter.sym} 480 -490 0 0 {name=Vd current=0.0000e+00}
+C {devices/ind.sym} 140 -340 0 0 {name=L1
+m=1
+value=1m
+footprint=1206
+device=inductor}
+C {devices/ammeter.sym} 290 -400 3 0 {name=Vg current=0.0000e+00}
+C {devices/ind.sym} 400 -550 0 0 {name=L2
+m=1
+value=1m
+footprint=1206
+device=inductor}
+C {devices/capa.sym} 480 -550 0 0 {name=C1
+m=1
+value=1m
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 220 -340 0 0 {name=C2
+m=1
+value=1m
+footprint=1206
+device="ceramic capacitor"}
+C {devices/vsource.sym} 220 -250 0 0 {name=VGS1 value="ac 1 0 sin(0 0.01 10G)"}
+C {devices/ngspice_get_value.sym} 390 -430 0 1 {name=r9 node=i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])
+descr="I="}
+C {devices/launcher.sym} 820 -450 0 0 {name=h1
+descr=Annotate 
+tclcommand="ngspice::annotate"}
+C {devices/launcher.sym} 820 -350 0 0 {name=h2
+descr="View Raw file" 
+tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
+}
+C {devices/ammeter.sym} 240 -590 3 1 {name=Vd_dc current=6.6592e-04}
+C {devices/spice_probe.sym} 140 -400 0 1 {name=p1 attrs="" voltage=1}
+C {devices/spice_probe.sym} 30 -490 0 0 {name=p2 attrs="" voltage=1.5}
+C {devices/ngspice_get_value.sym} 380 -350 0 1 {name=r1 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+descr="gm="}
+C {devices/ammeter.sym} 430 -320 0 0 {name=Vb current=1.8163e-10}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 830 -650 0 0 {name=M2
+L=0.18
+W=5.05
+nf=1
+mult=1
+ad=0
+pd=0
+as=0
+ps=0
+nrd=0 nrs=0
+sa=0 sb=0 sd=0
+model=rf_nfet_01v8_lvt_bM02W5p00L0p18
+spiceprefix=X
+}
+C {devices/gnd.sym} 810 -600 0 0 {name=l5 lab=GND}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1120 -650 0 0 {name=M3
+L=0.18
+W=5.05
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -135,43 +201,18 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/title.sym} 160 -30 0 0 {name=l4 author="Rafael Marinho"}
-C {devices/vsource.sym} 140 -170 0 0 {name=VGS value=1}
-C {devices/lab_wire.sym} 190 -320 0 0 {name=l3 sig_type=std_logic lab=G}
-C {devices/ammeter.sym} 480 -410 0 0 {name=Vd current=0.0000e+00}
-C {devices/ind.sym} 140 -260 0 0 {name=L1
-m=1
-value=1
-footprint=1206
-device=inductor}
-C {devices/ammeter.sym} 290 -320 3 0 {name=Vg current=0.0000e+00}
-C {devices/ind.sym} 400 -470 0 0 {name=L2
-m=1
-value=1
-footprint=1206
-device=inductor}
-C {devices/capa.sym} 480 -470 0 0 {name=C1
-m=1
-value=1
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} 220 -260 0 0 {name=C2
-m=1
-value=1
-footprint=1206
-device="ceramic capacitor"}
-C {devices/vsource.sym} 220 -170 0 0 {name=VGS1 value="ac 1 0 sin(0 0.1 10G)"}
-C {devices/ngspice_get_value.sym} 390 -350 0 1 {name=r9 node=i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])
-descr="I="}
-C {devices/launcher.sym} 820 -450 0 0 {name=h1
-descr=Annotate 
-tclcommand="ngspice::annotate"}
-C {devices/launcher.sym} 820 -350 0 0 {name=h2
-descr="View Raw file" 
-tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
+C {devices/gnd.sym} 1100 -600 0 0 {name=l6 lab=GND}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 380 -400 0 0 {name=M1
+L=0.18
+W=5.05
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
 }
-C {devices/ammeter.sym} 240 -510 3 1 {name=Vd_dc current=0.001606}
-C {devices/spice_probe.sym} 140 -320 0 1 {name=p1 attrs="" voltage=1}
-C {devices/spice_probe.sym} 30 -410 0 0 {name=p2 attrs="" voltage=1.5}
-C {devices/ngspice_get_value.sym} 380 -270 0 1 {name=r1 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-descr="gm="}
