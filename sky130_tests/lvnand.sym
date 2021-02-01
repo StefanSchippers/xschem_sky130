@@ -1,8 +1,9 @@
 v {xschem version=2.9.9 file_version=1.2 }
 G {}
 K {type=subcircuit
-format="@name @pinlist @symname WidthN=@WidthN LenN=@LenN WidthP=@WidthP LenP=@LenP m=@m"
-template="name=x1 WidthN=1 LenN=0.15 WidthP=1 LenP=0.15 m=1"
+format="@name @pinlist @VCCPIN @VSSPIN @symname WidthN=@WidthN LenN=@LenN WidthP=@WidthP LenP=@LenP m=@m"
+template="name=x1 WidthN=1 LenN=0.15 WidthP=1 LenP=0.15 VCCPIN=VCC VSSPIN=VSS m=1"
+extra="VCCPIN VSSPIN"
 function2="0 1 & ~"
 }
 V {}

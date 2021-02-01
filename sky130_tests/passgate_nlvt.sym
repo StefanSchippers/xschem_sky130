@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -15,11 +15,10 @@ v {xschem version=2.9.8 file_version=1.2
 * limitations under the License.
 
 }
-G {type=subcircuit
-format="@name @pinlist @VCCBPIN @VSSBPIN @symname W_N=@W_N L_N=@L_N W_P=@W_P L_P=@L_P ad=@ad as=@as pd=@pd ps=@psm=@m"
-template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 
-+ ad=0 as=0 pd=0 ps=0 
-+ VCCBPIN=VCC VSSBPIN=VSS  m=1"
+G {}
+K {type=subcircuit
+format="@name @pinlist @VCCBPIN @VSSBPIN @symname W_N=@W_N L_N=@L_N W_P=@W_P L_P=@L_P m=@m"
+template="name=x1 W_N=1 L_N=0.35 W_P=1 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1"
 extra="VCCBPIN VSSBPIN"
 
 }
@@ -51,3 +50,4 @@ T {@name
 @W_N / @L_N} 10 40 0 0 0.2 0.2 {}
 T {m=@m
 @W_P / @L_P} 10 -60 0 0 0.2 0.2 {}
+T {LVT} -15 -32.5 0 1 0.15 0.15 { layer=4}

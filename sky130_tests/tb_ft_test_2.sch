@@ -60,6 +60,8 @@ N 810 -650 810 -600 { lab=GND}
 N 1140 -680 1140 -600 { lab=GND}
 N 1100 -600 1140 -600 { lab=GND}
 N 1100 -650 1100 -600 { lab=GND}
+N 580 -680 580 -600 { lab=GND}
+N 540 -600 580 -600 { lab=GND}
 C {devices/code.sym} 530 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -108,6 +110,8 @@ value="
 * selection based on W/NF instead of W
 .option wnflag=1 
 .options method=gear savecurrents
+.save all
+
 .control
   save all
 * save @m.xm1.msky130_fd_pr__rf_nfet_01v8_lvt_bm02w5p00l0p18[gm]
@@ -203,6 +207,22 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 1100 -600 0 0 {name=l6 lab=GND}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 380 -400 0 0 {name=M1
+L=0.18
+W=5.05
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 540 -650 0 0 {name=l7 sig_type=std_logic lab=D}
+C {devices/gnd.sym} 540 -600 0 0 {name=l8 lab=GND}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 560 -650 0 0 {name=M4
 L=0.18
 W=5.05
 nf=1

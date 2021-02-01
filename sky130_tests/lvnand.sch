@@ -20,22 +20,25 @@ K {}
 V {}
 S {}
 E {}
-N 440 -230 440 -190 { lab=#net1}
+N 440 -230 440 -190 { lab=S}
 N 440 -320 440 -290 { lab=Y}
 N 530 -390 530 -320 { lab=Y}
-N 250 -320 530 -320 { lab=Y}
+N 440 -320 530 -320 { lab=Y}
 N 250 -390 250 -320 { lab=Y}
-N 250 -470 250 -450 { lab=VDD}
-N 250 -470 530 -470 { lab=VDD}
-N 530 -470 530 -450 { lab=VDD}
-N 440 -130 440 -110 { lab=GND}
+N 250 -470 250 -450 { lab=VCCPIN}
+N 250 -470 530 -470 { lab=VCCPIN}
+N 530 -470 530 -450 { lab=VCCPIN}
+N 440 -130 440 -110 { lab=VSSPIN}
 N 530 -320 630 -320 { lab=Y}
-N 120 -420 210 -420 { lab=A}
+N 190 -420 210 -420 { lab=A}
 N 190 -420 190 -160 { lab=A}
 N 190 -160 400 -160 { lab=A}
-N 120 -260 400 -260 { lab=B}
+N 380 -260 400 -260 { lab=B}
 N 380 -420 380 -260 { lab=B}
 N 380 -420 490 -420 { lab=B}
+N 250 -320 440 -320 { lab=Y}
+N 120 -420 190 -420 { lab=A}
+N 120 -260 380 -260 { lab=B}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 840 -200 0 0 {name=STIMULI 
 only_toplevel=true
@@ -110,9 +113,9 @@ C {devices/ipin.sym} 120 -420 0 0 {name=p1 lab=A}
 C {sky130_fd_pr/nfet3_01v8.sym} 420 -260 0 0 {name=M1
 L=LenN
 W=WidthN
-body=GND
+body=VSSPIN
 nf=1
-mult=m
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -125,9 +128,9 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 230 -420 0 0 {name=M2
 L=LenP
 W=WidthP
-body=VDD
+body=VCCPIN
 nf=1
-mult=m
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -140,9 +143,9 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 510 -420 0 0 {name=M3
 L=LenP
 W=WidthP
-body=VDD
+body=VCCPIN
 nf=1
-mult=m
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -152,13 +155,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 440 -110 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/nfet3_01v8.sym} 420 -160 0 0 {name=M4
 L=LenN
 W=WidthN
-body=GND
+body=VSSPIN
 nf=1
-mult=m
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -168,7 +170,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} 400 -470 0 0 {name=l3 lab=VDD}
 C {devices/ipin.sym} 120 -260 0 0 {name=p2 lab=B}
 C {devices/opin.sym} 630 -320 0 0 {name=p3 lab=Y}
 C {devices/lab_wire.sym} 440 -200 0 0 {name=l4 sig_type=std_logic lab=S}
+C {devices/lab_pin.sym} 250 -470 2 1 {name=p179 lab=VCCPIN}
+C {devices/lab_pin.sym} 440 -110 2 1 {name=p4 lab=VSSPIN}

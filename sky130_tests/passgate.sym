@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -15,9 +15,10 @@ v {xschem version=2.9.8 file_version=1.2
 * limitations under the License.
 
 }
-G {type=subcircuit
+G {}
+K {type=subcircuit
 format="@name @pinlist @VCCBPIN @VSSBPIN @symname W_N=@W_N L_N=@L_N W_P=@W_P L_P=@L_P m=@m"
-template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS  m=1"
+template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS m=1"
 extra="VCCBPIN VSSBPIN"
 
 }

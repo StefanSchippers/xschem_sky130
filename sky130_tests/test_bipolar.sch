@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -32,6 +32,7 @@ only_toplevel=true
 value="
 .control
 dc i0 5n 5u 0.05u
+tran 1n 2u
 plot vc1#branch / vb1#branch
 plot e1
 

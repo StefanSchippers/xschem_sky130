@@ -75,15 +75,15 @@ multiple instances (even at different hierarchy
 levels) will display each their own data.} 600 -750 0 0 0.4 0.4 {}
 T {only_toplevel=true attribute set, 
 will be netlisted only if toplevel cell} 830 -580 0 0 0.2 0.2 {layer=4}
-N 180 -620 180 -530 { lab=#net1}
-N 470 -620 470 -530 { lab=OUT}
+N 180 -590 180 -530 { lab=#net1}
+N 470 -580 470 -530 { lab=OUT}
 N 470 -720 470 -680 { lab=VDD}
 N 180 -720 470 -720 { lab=VDD}
 N 180 -720 180 -680 { lab=VDD}
 N 180 -470 180 -420 { lab=S}
-N 180 -420 470 -420 { lab=S}
+N 410 -420 470 -420 { lab=S}
 N 470 -470 470 -420 { lab=S}
-N 220 -650 430 -650 { lab=#net1}
+N 240 -650 430 -650 { lab=#net1}
 N 240 -650 240 -590 { lab=#net1}
 N 180 -590 240 -590 { lab=#net1}
 N 100 -500 140 -500 { lab=PLUS}
@@ -97,6 +97,11 @@ N 940 -530 940 -500 { lab=NBIAS}
 N 750 -530 750 -500 { lab=MINUS}
 N 320 -320 320 -250 { lab=#net2}
 N 320 -420 320 -380 { lab=S}
+N 220 -650 240 -650 { lab=#net1}
+N 180 -620 180 -590 { lab=#net1}
+N 470 -620 470 -580 { lab=OUT}
+N 320 -420 410 -420 { lab=S}
+N 180 -420 320 -420 { lab=S}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 1050 -180 0 0 {name=STIMULI 
 only_toplevel=true
