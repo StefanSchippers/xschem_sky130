@@ -28,7 +28,7 @@ N 480 -220 480 -200 { lab=START}
 N 740 -220 740 -200 { lab=CLK}
 C {devices/code.sym} 10 -450 0 0 {name=NGSPICE
 only_toplevel=true
-value=".option seed=3
+value=".option seed=13
 
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
@@ -43,17 +43,17 @@ value=".option seed=3
 .param sky130_fd_pr__nfet_01v8__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8__vth0_slope'
 .param sky130_fd_pr__pfet_01v8__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8__vth0_slope'
 
-.param sky130_fd_pr__pfet_01v8__toxe_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8__toxe_slope'
-.param sky130_fd_pr__nfet_01v8__toxe_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8__toxe_slope'
-.param sky130_fd_pr__pfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__toxe_slope'
-.param sky130_fd_pr__nfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__toxe_slope'
+.param sky130_fd_pr__pfet_01v8__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__pfet_01v8__toxe_slope'
+.param sky130_fd_pr__nfet_01v8__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__nfet_01v8__toxe_slope'
+.param sky130_fd_pr__pfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__pfet_01v8_lvt__toxe_slope'
+.param sky130_fd_pr__nfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__nfet_01v8_lvt__toxe_slope'
 
-.param sky130_fd_pr__res_xhigh_po__var_mult='agauss(0, ABSVAR, 3)'
+.param sky130_fd_pr__res_high_po__var_mult=agauss(0, 'ABSVAR*8', 1)
 
 * .options savecurrents
 .control
   let run=1
-  dowhile run <= 4
+  dowhile run <= 40
     if run > 1
       reset
       set appendwrite
