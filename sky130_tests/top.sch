@@ -36,9 +36,9 @@ T {RES} 1660 -550 0 0 1 1 { hcenter=true}
 T {DIODE} 1660 -195 0 0 1 1 { hcenter=true}
 T {PNP} 1660 -70 0 0 1 1 { hcenter=true}
 T {No Model} 2270 -590 0 0 0.3 0.3 {layer=7}
-T {Digital standard cells} 20 -1010 0 0 0.6 0.6 {layer=8}
+T {Digital standard cells} 20 -1060 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 750 -1610 0 0 0.3 0.3 {layer=11}
-T {Ctrl-Click to open link} 360 -950 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 780 -950 0 0 0.3 0.3 {layer=11}
 T {* Copyright 2020 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0
@@ -78,7 +78,7 @@ sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn
 } 2340 -190 0 0 0.2 0.2 {}
 T {VARACTORS} 1630 -1355 0 0 1 1 { hcenter=true}
-T {Analog primitives validation} 30 -1660 0 0 0.6 0.6 {layer=8}
+T {Analog primitives validation} 10 -1750 0 0 0.6 0.6 {layer=8}
 T {PERP. VPP CAP} 1660 -1475 0 0 1 1 { hcenter=true}
 T {Available models:
 cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
@@ -100,6 +100,10 @@ T {Need to include:
 sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice} 2336.25 -713.75 0 0 0.2 0.2 {layer=7}
 T {Need to include: 
 sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice} 2056.25 -923.75 0 0 0.2 0.2 {layer=7}
+T {Select with a mouse Click then press 'e'
+key to descend into these subcircuits} 60 -1700 0 0 0.3 0.3 {layer=11}
+T {Select with a mouse Click then press 'e'
+key to descend into these subcircuits} 60 -1010 0 0 0.3 0.3 {layer=11}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -110,12 +114,12 @@ url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs"}
 C {devices/launcher.sym} 810 -1460 0 0 {name=h3
 descr="Google-Skywater PDK documentation: Device details" 
 url="https://skywater-pdk.readthedocs.io/en/latest/rules/device-details.html"}
-C {sky130_tests/test_nmos.sym} 190 -1330 0 0 {name=x1}
-C {sky130_tests/test_pmos.sym} 190 -1290 0 0 {name=x2}
-C {sky130_tests/test_inv.sym} 190 -1250 0 0 {name=x5}
-C {sky130_tests/test_res.sym} 190 -1370 0 0 {name=x3}
-C {sky130_tests/test_bipolar.sym} 190 -1410 0 0 {name=x4}
-C {sky130_tests/test_diode.sym} 190 -1450 0 0 {name=x6}
+C {sky130_tests/test_nmos.sym} 190 -1400 0 0 {name=x1}
+C {sky130_tests/test_pmos.sym} 190 -1360 0 0 {name=x2}
+C {sky130_tests/test_inv.sym} 190 -1320 0 0 {name=x5}
+C {sky130_tests/test_res.sym} 190 -1440 0 0 {name=x3}
+C {sky130_tests/test_bipolar.sym} 190 -1480 0 0 {name=x4}
+C {sky130_tests/test_diode.sym} 190 -1520 0 0 {name=x6}
 C {sky130_fd_pr/diode.sym} 2200 -140 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1
@@ -280,7 +284,7 @@ nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
 }
-C {sky130_tests/test_comparator.sym} 190 -1210 0 0 {name=x7}
+C {sky130_tests/test_comparator.sym} 190 -1280 0 0 {name=x7}
 C {sky130_fd_pr/pfet_20v0.sym} 2130 -970 0 0 {name=M13
 L=1
 W=30
@@ -290,13 +294,13 @@ spiceprefix=X
 spice_ignore=true
 }
 C {sky130_tests/gates.sym} 190 -910 0 0 {name=x8}
-C {devices/launcher.sym} 390 -910 0 0 {name=h4
+C {devices/launcher.sym} 810 -910 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1910 -1180 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 2070 -1180 0 0 {name=C2 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {sky130_tests/test_format_override.sym} 190 -870 0 0 {name=x9}
-C {sky130_tests/test_nmos_sizes.sym} 190 -1170 0 0 {name=x11}
+C {sky130_tests/test_nmos_sizes.sym} 190 -1240 0 0 {name=x11}
 C {devices/launcher.sym} 810 -1380 0 0 {name=h5
 descr="XSCHEM on Github" 
 url="https://github.com/StefanSchippers/xschem"}
@@ -311,8 +315,8 @@ descr="A good tutorial for using XSCHEM with SKY130 pdk"
 url="https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md"}
 C {sky130_fd_pr/cap_var_lvt.sym} 1910 -1320 0 0 {name=C3 model=cap_var_lvt W=0.5 L=0.5 VM=1 spiceprefix=X}
 C {sky130_fd_pr/cap_var_hvt.sym} 2070 -1320 0 0 {name=C4 model=cap_var_hvt W=0.5 L=0.5 VM=1 spiceprefix=X}
-C {sky130_tests/test_varactor.sym} 190 -1490 0 0 {name=x14}
-C {sky130_tests/test_vpp_cap.sym} 190 -1530 0 0 {name=x15}
+C {sky130_tests/test_varactor.sym} 190 -1560 0 0 {name=x14}
+C {sky130_tests/test_vpp_cap.sym} 190 -1600 0 0 {name=x15}
 C {sky130_fd_pr/vpp_cap.sym} 1960 -1440 0 0 {name=C5
 model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
 W=1
@@ -421,10 +425,10 @@ spiceprefix=X
 spice_ignore=true
 }
 C {decred_hash_macro/user_project_wrapper.sym} 190 -710 0 0 {name=x17 prefix=sky130_fd_sc_hd__ }
-C {sky130_tests/test_mim_cap.sym} 190 -1570 0 0 {name=x18}
+C {sky130_tests/test_mim_cap.sym} 190 -1640 0 0 {name=x18}
 C {sky130_tests/LACG.sym} 190 -670 0 0 {name=x19}
 C {sky130_tests/test_ff.sym} 190 -630 0 0 {name=x20}
-C {sky130_tests/test_analog.sym} 190 -1130 0 0 {name=x21}
+C {sky130_tests/test_analog.sym} 190 -1200 0 0 {name=x21}
 C {devices/launcher.sym} 810 -1220 0 0 {name=h10
 descr="westonb/sky130-analog" 
 url="https://github.com/westonb/sky130-analog/blob/main/designs/basic_opa/README.md"}
@@ -558,6 +562,6 @@ mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {sky130_tests/tb_ft_test.sym} 190 -1090 0 0 {name=x23}
-C {sky130_tests/tb_ft_test_2.sym} 190 -1050 0 0 {name=x24}
-C {sky130_tests/tb_bandgap.sym} 490 -1570 0 0 {name=x25}
+C {sky130_tests/tb_ft_test.sym} 190 -1160 0 0 {name=x23}
+C {sky130_tests/tb_ft_test_2.sym} 190 -1120 0 0 {name=x24}
+C {sky130_tests/tb_bandgap.sym} 490 -1640 0 0 {name=x25}
