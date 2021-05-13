@@ -31,6 +31,7 @@ set XSCHEM_LIBRARY_PATH {}
 append XSCHEM_LIBRARY_PATH ${XSCHEM_SHAREDIR}/xschem_library
 #### include skywater libraries. Here i use [pwd]. This works if i start xschem from here.
 append XSCHEM_LIBRARY_PATH :$env(PWD)
+# append XSCHEM_LIBRARY_PATH :/mnt/sda7/home/schippes/pdks/sky130A/libs.tech/xschem
 #### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
@@ -267,5 +268,11 @@ lappend tcl_files scripts/sky130_models.tcl
 ###########################################################################
 #### SKYWATER PDK SPECIFIC VARIABLES
 ###########################################################################
+
+## (spice patched) skywater-pdk install
 set SKYWATER_MODELS ~/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
 set SKYWATER_STDCELLS ~/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+
+## opencircuitdesign pdks install
+# set SKYWATER_MODELS ~/pdks/sky130A/libs.tech/ngspice
+# set SKYWATER_STDCELLS ~/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice
