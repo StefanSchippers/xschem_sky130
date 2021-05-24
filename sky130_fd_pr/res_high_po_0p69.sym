@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -17,7 +17,7 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {type=high_precision_poly_resistor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L mult=@mult m=@mult"
 template="name=R1
 W=0.69
 L=1
