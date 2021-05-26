@@ -589,20 +589,17 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_tests/passgate_nlvt.sym} 860 -1270 0 1 {name=x1 m=1
-W_N=0.42 L_N=0.15
-W_P=0.42 L_P=0.15
-ad=0.12 as=0.12 pd=0.9 ps=0.9
-VCCBPIN=VCC VSSBPIN=VSS nf=1 }
+W_N=0.42 L_N=0.4
+W_P=0.42 L_P=0.4
+VCCBPIN=VCC VSSBPIN=VSS}
 C {sky130_tests/passgate_nlvt.sym} 1350 -1270 0 1 {name=x2 m=1
-W_N=0.42 L_N=0.15
-W_P=0.42 L_P=0.15
-ad=0.12 as=0.12 pd=0.9 ps=0.9
-VCCBPIN=VCC VSSBPIN=VSS nf=1 }
+W_N=0.42 L_N=0.4
+W_P=0.42 L_P=0.4
+VCCBPIN=VCC VSSBPIN=VSS}
 C {sky130_tests/passgate_nlvt.sym} 1840 -1270 0 1 {name=x3 m=1
-W_N=0.42 L_N=0.15
-W_P=0.42 L_P=0.15
-ad=0.12 as=0.12 pd=0.9 ps=0.9
-VCCBPIN=VCC VSSBPIN=VSS nf=1 }
+W_N=0.42 L_N=0.4
+W_P=0.42 L_P=0.4
+VCCBPIN=VCC VSSBPIN=VSS}
 C {devices/capa.sym} 980 -1070 0 0 {name=C2
 m=1
 value=15f
@@ -635,42 +632,12 @@ load $netlist_dir/$rawfile
 table_set $rawfile\\"
 unset rawfile"
 }
-C {devices/code.sym} 720 -160 0 0 {name=TT_MODELS
+C {devices/code.sym} 730 -160 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value="
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/nonfet.spice
-* Mismatch parameters
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
-* Resistor\\\\$::SKYWATER_MODELS\\\\/Capacitor
-.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical.spice
-.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical__lin.spice
-* Special cells
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/specialized_cells.spice
-* All models
-.include \\\\$::SKYWATER_MODELS\\\\/models/all.spice
-* Corner
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
+value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
+.param mc_mm_switch=0
+.param mc_pr_switch=1
+
 "}

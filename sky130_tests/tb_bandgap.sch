@@ -83,45 +83,6 @@ C {devices/lab_pin.sym} 560 -530 0 1 {name=p1 lab=VBG}
 C {devices/lab_pin.sym} 260 -490 0 0 {name=p2 lab=EN_N}
 C {devices/vsource.sym} 240 -290 0 0 {name=V1 value=0}
 C {devices/lab_pin.sym} 240 -340 0 1 {name=p3 lab=EN_N}
-C {devices/code.sym} 10 -250 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/nonfet.spice
-* Mismatch parameters
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
-.include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
-* Resistor\\\\$::SKYWATER_MODELS\\\\/Capacitor
-.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical.spice
-.include \\\\$::SKYWATER_MODELS\\\\/models/r+c/res_typical__cap_typical__lin.spice
-* Special cells
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/specialized_cells.spice
-* All models
-.include \\\\$::SKYWATER_MODELS\\\\/models/all.spice
-* Corner
-.include \\\\$::SKYWATER_MODELS\\\\/models/corners/tt/rf.spice
-"}
 C {devices/vsource.sym} 740 -290 0 0 {name=V2 value="pwl 0 0 1u 0 4u VCC"}
 C {devices/lab_pin.sym} 740 -340 0 1 {name=l29 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 260 -470 0 0 {name=p4 lab=VCC}
@@ -147,3 +108,12 @@ C {devices/lab_pin.sym} 740 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 740 -220 0 1 {name=p6 lab=CLK}
 C {devices/lab_pin.sym} 260 -530 0 0 {name=p8 lab=START}
 C {devices/lab_pin.sym} 260 -510 0 0 {name=p9 lab=CLK}
+C {devices/code.sym} 10 -230 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+
+"}

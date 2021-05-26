@@ -54,6 +54,9 @@ C {devices/code.sym} 210 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
-.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice mc tt
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 .include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
+.param mc_mm_switch=0
+.param mc_pr_switch=1
+
 "}
