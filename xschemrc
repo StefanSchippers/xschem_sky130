@@ -134,6 +134,8 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### and dest file as arguments, example: ps2pdf plot.ps plot.pdf)
 #### default: ps2pdf
 # set to_pdf ps2pdf
+set to_pdf {ps2pdf -dAutoRotatePages=/None}
+
 
 ###########################################################################
 #### CUSTOM GRID / SNAP VALUE SETTINGS

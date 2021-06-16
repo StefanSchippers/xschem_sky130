@@ -16,12 +16,12 @@ v {xschem version=2.9.9 file_version=1.2
 
 }
 G {}
-K {type=high_precision_poly_resistor
+K {type=high_precision_poly_p-_resistor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L mult=@mult m=@mult"
 template="name=R1
-W=1.41
+W=2.85
 L=5
-model=res_high_po_1p41
+model=res_xhigh_po_2p85
 spiceprefix=X
 mult=1"
 }

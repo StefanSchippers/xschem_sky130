@@ -20,7 +20,7 @@ K {type=high_precision_poly_p-_resistor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L mult=@mult m=@mult"
 template="name=R1
 W=1.41
-L=1
+L=5
 model=res_xhigh_po_1p41
 spiceprefix=X
 mult=1"
