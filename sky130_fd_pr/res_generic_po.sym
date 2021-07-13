@@ -17,12 +17,11 @@ v {xschem version=2.9.9 file_version=1.2
 }
 G {}
 K {type=poly_resistor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
+format="@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
 template="name=R1
 W=1
 L=1
 model=res_generic_po
-spiceprefix=X
 mult=1"
 }
 V {}
