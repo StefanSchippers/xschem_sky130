@@ -58,5 +58,5 @@ value="
 .include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
 .param mc_mm_switch=0
 .param mc_pr_switch=1
-
-"}
+"
+spice_ignore=false}
