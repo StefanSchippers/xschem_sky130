@@ -117,12 +117,11 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 320 -320 0 0 {name=l3 sig_type=std_logic lab=G}
 C {devices/title.sym} 160 -30 0 0 {name=l4 author="Rafael Marinho"}
-C {devices/code.sym} 530 -190 0 0 {name=TT_MODELS
+C {devices/code.sym} 530 -170 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
-
 .param mc_mm_switch=0
 .param mc_pr_switch=0
-
-"}
+"
+spice_ignore=false}

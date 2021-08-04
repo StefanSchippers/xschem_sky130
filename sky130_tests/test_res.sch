@@ -169,12 +169,11 @@ spiceprefix=X
 C {devices/ipin.sym} 310 -200 0 0 {name=p45 lab=P}
 C {devices/ipin.sym} 310 -160 0 0 {name=p46 lab=M}
 C {devices/ipin.sym} 310 -120 0 0 {name=p47 lab=B}
-C {devices/code.sym} 60 -210 0 0 {name=TT_MODELS
+C {devices/code.sym} 50 -210 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
-
 .param mc_mm_switch=0
-.param mc_pr_switch=1
-
-"}
+.param mc_pr_switch=0
+"
+spice_ignore=false}

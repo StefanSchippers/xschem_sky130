@@ -97,8 +97,7 @@ C {devices/code.sym} 840 -380 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
-
 .param mc_mm_switch=0
 .param mc_pr_switch=0
-
-"}
+"
+spice_ignore=false}

@@ -632,12 +632,11 @@ load $netlist_dir/$rawfile
 table_set $rawfile\\"
 unset rawfile"
 }
-C {devices/code.sym} 730 -160 0 0 {name=TT_MODELS
+C {devices/code.sym} 720 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
-
 .param mc_mm_switch=0
-.param mc_pr_switch=1
-
-"}
+.param mc_pr_switch=0
+"
+spice_ignore=false}

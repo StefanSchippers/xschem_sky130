@@ -252,18 +252,17 @@ mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {devices/code.sym} 50 -180 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
-
-.param mc_mm_switch=0
-.param mc_pr_switch=1
-
-"}
 C {devices/code.sym} 50 -350 0 0 {name=nfet_20v0_MODEL
 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice
 "}
+C {devices/code.sym} 50 -190 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+"
+spice_ignore=false}
