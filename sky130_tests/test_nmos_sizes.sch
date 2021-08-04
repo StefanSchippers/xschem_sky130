@@ -93,10 +93,15 @@ spiceprefix=X
 C {devices/ammeter.sym} 520 -390 0 0 {name=V2}
 C {devices/ammeter.sym} 330 -390 0 0 {name=V1}
 C {devices/lab_pin.sym} 280 -420 0 0 {name=p7 lab=D}
-C {devices/code.sym} 840 -380 0 0 {name=TT_MODELS
+C {devices/code.sym} 830 -400 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "

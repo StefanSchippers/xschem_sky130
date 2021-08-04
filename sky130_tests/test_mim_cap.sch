@@ -74,10 +74,15 @@ C {devices/vsource.sym} 390 -390 0 0 {name=V1 value=-2}
 C {devices/lab_pin.sym} 390 -360 0 0 {name=p14 lab=0}
 C {devices/lab_pin.sym} 390 -440 0 1 {name=p15 lab=REF}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 580 -220 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=1 spiceprefix=X }
-C {devices/code.sym} 70 -240 0 0 {name=TT_MODELS
+C {devices/code.sym} 70 -280 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "

@@ -109,10 +109,15 @@ C {sky130_tests/lvtnot.sym} 810 -440 0 0 {name=x11 m=1 VCCPIN=VCC VSSPIN=VSS W_N
 C {sky130_tests/lvtnot.sym} 890 -440 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {sky130_tests/lvtnot.sym} 970 -440 0 0 {name=x13 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {sky130_tests/lvtnot.sym} 1050 -440 0 0 {name=x14 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {devices/code.sym} 60 -210 0 0 {name=TT_MODELS
+C {devices/code.sym} 120 -270 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "

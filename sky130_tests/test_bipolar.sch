@@ -53,9 +53,18 @@ C {devices/ammeter.sym} 650 -350 0 0 {name=Ve1 net_name=true}
 C {devices/code.sym} 210 -180 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value="
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
 .lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
+** manual skywater-pdk install (with patches applied).
+* .include \\\\$::SKYWATER_MODELS\\\\/cells/pnp_05v5/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
+
+** opencircuitdesign pdks install
 .include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
+
 .param mc_mm_switch=0
 .param mc_pr_switch=1
 "

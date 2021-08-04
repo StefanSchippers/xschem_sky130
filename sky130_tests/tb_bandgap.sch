@@ -108,10 +108,15 @@ C {devices/lab_pin.sym} 740 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 740 -220 0 1 {name=p6 lab=CLK}
 C {devices/lab_pin.sym} 260 -530 0 0 {name=p8 lab=START}
 C {devices/lab_pin.sym} 260 -510 0 0 {name=p9 lab=CLK}
-C {devices/code.sym} 10 -230 0 0 {name=TT_MODELS
+C {devices/code.sym} 10 -250 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "

@@ -81,10 +81,15 @@ W=1
 L=1 
 mult=1 
 spiceprefix=X}
-C {devices/code.sym} 40 -260 0 0 {name=TT_MODELS
+C {devices/code.sym} 40 -290 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "

@@ -194,17 +194,26 @@ C {devices/lab_pin.sym} 1950 -490 2 0 {name=p48 lab=S}
 C {devices/lab_pin.sym} 1970 -440 0 1 {name=p49 lab=B}
 C {devices/ammeter.sym} 1950 -360 0 1 {name=Vd6}
 C {devices/lab_pin.sym} 1890 -440 0 0 {name=p55 lab=G5v0}
-C {devices/code.sym} 240 -190 0 0 {name=pfet_20v0_MODEL
+C {devices/code.sym} 20 -190 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value="
-.include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice
-"}
-C {devices/code.sym} 60 -190 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value="** manual skywater pdks install (with patches applied)
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+
+** opencircuitdesign pdks install
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "
 spice_ignore=false}
+C {devices/code.sym} 210 -190 0 0 {name=pfet_20v0_MODEL
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** manual skywater-pdk install (with patches applied).
+* .include \\\\$::SKYWATER_MODELS\\\\/cells/pfet_20v0/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice
+
+** opencircuitdesign pdks install
+.include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice
+"}
