@@ -595,3 +595,4 @@ L=5.73
 model=res_xhigh_po_5p73
 spiceprefix=X
  mult=1}
+C {sky130_tests/logic_ngspice.sym} 190 -1080 0 0 {name=x26}
