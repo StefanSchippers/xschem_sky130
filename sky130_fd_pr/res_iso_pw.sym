@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -17,7 +17,7 @@ v {xschem version=2.9.9 file_version=1.2
 }
 G {}
 K {type=pwell_resistor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
 template="name=R1
 rho=3050
 W=2.65

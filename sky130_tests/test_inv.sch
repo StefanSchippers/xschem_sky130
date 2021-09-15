@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -58,7 +58,7 @@ vvss vss 0 dc 0
 vvcc vcc 0 pwl 0 0 10n 0 10.1n 1.8 20n 1.8 20.1n 0
 
 .control
-.save all
+save all
 tran 0.01n 30n
 plot \\"z[2]\\" \\"z[3]\\" \\"z[4]\\"
 plot \\"y[2]\\" \\"y[3]\\" \\"y[4]\\"
