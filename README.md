@@ -5,7 +5,7 @@ environment for xschem + skywater-pdk + ngspice, that is, compile and install xs
 and libraries, install the skywater-pdk files, and finally build the pre-master development branch of ngspice.
 
 ## Open_Pdks UPDATE
-instead of manually installing skywater-pdk as explained in the video, follow the open_pdks install as shown [here](http://opencircuitdesign.com/open_pdks/index.html). This will (among other things) install all the spice models. Current xschem_sky130 examples now use the model file locations as installed by open_pdks
+instead of manually installing skywater-pdk as explained in the video, follow the `open_pdks` install as shown [here](http://opencircuitdesign.com/open_pdks/index.html). This will (among other things) install all the spice models. Current `xschem_sky130` examples now use the model file locations as installed by `open_pdks`
 
 ## This repository contains:
 
@@ -14,9 +14,10 @@ instead of manually installing skywater-pdk as explained in the video, follow th
 - [`sky130_stdcells   `](https://github.com/StefanSchippers/xschem_sky130/tree/main/sky130_stdcells) Xschem digital standard cell library specifically targeted to the Skywater `sky130_fd_sc_hd` digital gate library
 - [`mips_cpu          `](https://github.com/StefanSchippers/xschem_sky130/tree/main/mips_cpu) Xschem port of Diadatp [mips_cpu](https://github.com/diadatp/mips_cpu) verilog project
 - `sky130_tests      ` Xschem testbenches for testing sky130_fd_pr components with NGSPICE
-- `sky130_fd_pr.patch` Patch file (apply in `sky130_fd_pr` directory) to move 'nf' parameter before 'AD','AS','PD','PS' that might contain equations that depend on 'nf'. Ngspice considers 'nf' as undefined if not found before the equations.
+- `sky130_fd_pr.patch` Patch file (apply in `sky130_fd_pr` directory) to move 'nf' parameter before 'AD','AS','PD','PS' that might contain equations that depend on 'nf'. Ngspice considers 'nf' as undefined if not found before the equations. **This patch** is **not** needed if models are installed via `open_pdks`.
 - [`decred_hash_macro `](https://github.com/StefanSchippers/xschem_sky130/tree/main/decred_hash_macro) Import of a big RTL design from spice netlist.
 - `xschemrc          ` Xschem configuration file.
 
 Run xschem from this directory. It will read the xschemrc file to correctly set the search paths.
+
 Stefan
