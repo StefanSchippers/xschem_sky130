@@ -1,6 +1,6 @@
 v {xschem version=2.9.9 file_version=1.2 
 
-* Copyright 2020 Stefan Frederik Schippers
+* Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ T {No Model} 2420 -590 0 0 0.3 0.3 {layer=7}
 T {Digital standard cells} 20 -1060 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 750 -1610 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 780 -950 0 0 0.3 0.3 {layer=11}
-T {* Copyright 2020 Stefan Frederik Schippers
+T {* Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0
 * (the "License"); you may not use this file

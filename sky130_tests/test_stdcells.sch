@@ -1,6 +1,6 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
-* Copyright 2020 Stefan Frederik Schippers
+* Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -54,7 +54,8 @@ N 1230 -700 1310 -700 { lab=#net3}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 540 -190 0 0 {name=STIMULI 
 only_toplevel=true
-value=" 
+value="
+.options acct list
 .temp 25
 vvcc vcc 0 dc 1.8
 vvss vss 0 0
@@ -105,7 +106,7 @@ C {sky130_stdcells/a31o_2.sym} 1440 -540 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VCC V
 C {devices/lab_pin.sym} 1570 -540 0 1 {name=p15 lab=XSCHEM}
 C {devices/noconn.sym} 790 -610 2 0 {name=l2}
 C {devices/noconn.sym} 1530 -540 3 0 {name=l3}
-C {sky130_stdcells/inv_2.sym} 1190 -700 0 0 {name=x8 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_2.sym} 1190 -700 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/code.sym} 860 -190 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"

@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 T {All the *_1 sized gates of the skywater_pdk sky130_fd_sc_hd library} 345 -215 0 0 2 2 {layer=1}
-T {* Copyright 2020 Stefan Frederik Schippers
+T {* Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.

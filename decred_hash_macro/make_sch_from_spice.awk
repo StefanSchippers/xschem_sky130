@@ -14,7 +14,7 @@
 #
 # Import of a hierarchical SPICE netlist to xschem schematic/symbols
 #
-# Copyright 2020 Stefan Frederik Schippers
+# Copyright 2021 Stefan Frederik Schippers
 #
 gawk '
 

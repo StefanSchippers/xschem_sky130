@@ -158,7 +158,7 @@ text {font-family: Sans-Serif;}
 </style>
 <rect class="l0" x="0" y="0" width="1912" height="1127"/>
 <text fill="#0044ee"  xml:space="preserve" font-size="38.8258" transform="translate(273.117, 955.498)" >All the *_1 sized gates of the skywater_pdk sky130_fd_sc_hd library</text>
-<text fill="#222222"  xml:space="preserve" font-size="11.6477" transform="translate(1129.9, 118.838)" >* Copyright 2020 Stefan Frederik Schippers</text>
+<text fill="#222222"  xml:space="preserve" font-size="11.6477" transform="translate(1129.9, 118.838)" >* Copyright 2021 Stefan Frederik Schippers</text>
 <text fill="#222222"  xml:space="preserve" font-size="11.6477" transform="translate(1129.9, 131.838)" >* </text>
 <text fill="#222222"  xml:space="preserve" font-size="11.6477" transform="translate(1129.9, 144.838)" >* Licensed under the Apache License, Version 2.0 (the "License");</text>
 <text fill="#222222"  xml:space="preserve" font-size="11.6477" transform="translate(1129.9, 158.838)" >* you may not use this file except in compliance with the License.</text>
