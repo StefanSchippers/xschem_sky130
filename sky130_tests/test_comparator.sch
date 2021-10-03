@@ -47,6 +47,12 @@ T {Offset-compensated comparator. Detects +/- 8mV differential signal on PLUS, M
 Variations on per-instance process parameters (tt_mm corner), VCC and Temperature.
 Output on SAOUT
 } 1110 -220 0 0 0.6 0.6 {}
+T {Before running this simulation:
+copy file stimuli.test_comparator to xschem's
+simulation directory, then use menu:
+Simulation-> Utile Stimuli Editor (GUI)
+to translate the stimuli file to 
+stimuli_test_comparator.cir} 20 -1490 0 0 0.6 0.6 {}
 N 120 -480 120 -460 {lab=TEMPERAT}
 N 290 -1090 320 -1090 {lab=VSS}
 N 290 -1060 290 -1030 {lab=VSS}
@@ -219,21 +225,20 @@ C {devices/lab_pin.sym} 120 -580 0 0 {name=l50 lab=CAL}
 C {devices/code.sym} 720 -340 0 0 {name=STIMULI 
 only_toplevel=true
 place=end
-value="* .option SCALE=1e-6 
-* .option method=gear
-
-* this experimental option enables mos model bin 
-* selection based on W/NF instead of W
+value="
+** this experimental option enables mos model bin 
+** selection based on W/NF instead of W
 .option wnflag=1 
 
-* .param VCC=1.8
 .param VCCGAUSS=agauss(1.8, 0.05, 1)
-.param VCC=VCCGAUSS
+.param VCC='VCCGAUSS'
+** use following line to remove VCC variations
+* .param VCC=1.8
 .param VDL='VCC/2+0.2'
-.param ABSVAR=0.02
-* .temp VCCGAUS
 .param TEMPGAUSS=agauss(40, 30, 1)
 .option temp='TEMPGAUSS'
+** use following line to remove temperature variations
+* .option temp=25
 
 ** to generate following file: 
 ** copy .../xschem_sky130/sky130_tests/stimuli.test_comparator to simulation directory
@@ -335,7 +340,7 @@ C {devices/lab_pin.sym} 660 -780 0 1 {name=l11 lab=PLUS}
 C {devices/lab_pin.sym} 680 -710 0 1 {name=l12 lab=OUTDIFF}
 C {devices/parax_cap.sym} 500 -640 0 0 {name=C7  value=4f}
 C {devices/lab_pin.sym} 530 -870 0 0 {name=l13 lab=SP}
-C {devices/launcher.sym} 910 -270 0 0 {name=h2 
+C {devices/launcher.sym} 910 -320 0 0 {name=h2 
 descr="Simulate" 
 tclcommand="execute 0 sh -c \\"cd $netlist_dir && \\\\ 
   XSCHEM_SHAREDIR=$XSCHEM_SHAREDIR $utile_cmd_path stimuli.test_comparator \\" 
@@ -619,7 +624,7 @@ value=15f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1930 -1020 0 0 {name=p7 lab=VCC}
-C {devices/launcher.sym} 910 -310 0 0 {name=h3
+C {devices/launcher.sym} 910 -270 0 0 {name=h3
 descr="Load file into gaw" 
 comment="
   This launcher gets raw filename from current schematic using 'xschem get schname'
