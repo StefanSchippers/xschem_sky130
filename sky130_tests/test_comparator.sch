@@ -220,7 +220,7 @@ C {devices/code.sym} 720 -340 0 0 {name=STIMULI
 only_toplevel=true
 place=end
 value="* .option SCALE=1e-6 
-* .option method=gear seed=12
+* .option method=gear
 
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
@@ -241,6 +241,7 @@ value="* .option SCALE=1e-6
 .include \\"stimuli_test_comparator.cir\\"
 
 .control
+  option seed=12
   let run=1
   dowhile run <= 40
     if run > 1
