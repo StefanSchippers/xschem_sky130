@@ -68,8 +68,6 @@ value="** manual skywater pdks install (with patches applied)
 ** opencircuitdesign pdks install
 .lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 
-.param mc_mm_switch=0
-.param mc_pr_switch=0
 "
 spice_ignore=false}
 C {devices/vsource.sym} 340 -440 0 0 {name=V4 value=0}

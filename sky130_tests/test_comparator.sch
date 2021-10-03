@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -33,7 +33,7 @@ L 4 410 -180 410 -160 {}
 L 4 410 -160 570 -160 {}
 L 4 570 -180 570 -160 {}
 L 4 570 -180 690 -180 {}
-L 7 1310 -240 2740 -240 {}
+L 7 1090 -240 2470 -240 {}
 T {CAL} 140 -190 0 1 0.4 0.4 {}
 T {EN} 140 -140 0 1 0.4 0.4 {}
 T {CALIBRATION
@@ -42,10 +42,11 @@ T {SENSING
   30ns} 530 -310 0 1 0.4 0.4 {}
 T {OFF} 660 -310 0 1 0.4 0.4 {}
 T {OFF} 210 -310 0 1 0.4 0.4 {}
-T {NGSPICE MONTE CARLO SIMULATION} 1430 -290 0 0 0.8 0.8 {}
-T {Offset-compensated comparator. Detects +/- 2mv differential signal on PLUS, MINUS.
+T {NGSPICE MISMATCH SIMULATION} 1210 -290 0 0 0.8 0.8 {}
+T {Offset-compensated comparator. Detects +/- 8mV differential signal on PLUS, MINUS.
+Variations on per-instance process parameters (tt_mm corner), VCC and Temperature.
 Output on SAOUT
-Gaussian Threshold variation is added to all MOS transistors.} 1330 -220 0 0 0.6 0.6 {}
+} 1110 -220 0 0 0.6 0.6 {}
 N 120 -480 120 -460 {lab=TEMPERAT}
 N 290 -1090 320 -1090 {lab=VSS}
 N 290 -1060 290 -1030 {lab=VSS}
@@ -219,7 +220,7 @@ C {devices/code.sym} 720 -340 0 0 {name=STIMULI
 only_toplevel=true
 place=end
 value="* .option SCALE=1e-6 
-.option method=gear seed=12
+* .option method=gear seed=12
 
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
@@ -230,22 +231,18 @@ value="* .option SCALE=1e-6
 .param VCC=VCCGAUSS
 .param VDL='VCC/2+0.2'
 .param ABSVAR=0.02
-.temp 25
+* .temp VCCGAUS
+.param TEMPGAUSS=agauss(40, 30, 1)
+.option temp='TEMPGAUSS'
 
 ** to generate following file: 
 ** copy .../xschem_sky130/sky130_tests/stimuli.test_comparator to simulation directory
 ** then do 'Simulation->Utile Stimuli Editor (GUI)' and press 'Translate'
 .include \\"stimuli_test_comparator.cir\\"
 
-** variation marameters:
-.param sky130_fd_pr__nfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__vth0_slope'
-.param sky130_fd_pr__pfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__vth0_slope'
-
-* .tran 0.1n 900n uic
-
 .control
   let run=1
-  dowhile run <= 20
+  dowhile run <= 40
     if run > 1
       reset
       set appendwrite
@@ -339,7 +336,10 @@ C {devices/parax_cap.sym} 500 -640 0 0 {name=C7  value=4f}
 C {devices/lab_pin.sym} 530 -870 0 0 {name=l13 lab=SP}
 C {devices/launcher.sym} 910 -270 0 0 {name=h2 
 descr="Simulate" 
-tclcommand="xschem netlist; xschem simulate"}
+tclcommand="execute 0 sh -c \\"cd $netlist_dir && \\\\ 
+  XSCHEM_SHAREDIR=$XSCHEM_SHAREDIR $utile_cmd_path stimuli.test_comparator \\" 
+xschem netlist; xschem simulate"
+}
 C {sky130_tests/not.sym} 160 -710 0 0 {name=x4 m=1 
 + W_N=1 L_N=0.15 W_P=2 L_P=0.15 
 + VCCPIN=VCC VSSPIN=VSS}
@@ -618,7 +618,7 @@ value=15f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1930 -1020 0 0 {name=p7 lab=VCC}
-C {devices/launcher.sym} 1150 -310 0 0 {name=h3
+C {devices/launcher.sym} 910 -310 0 0 {name=h3
 descr="Load file into gaw" 
 comment="
   This launcher gets raw filename from current schematic using 'xschem get schname'
@@ -639,9 +639,7 @@ value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 
 ** opencircuitdesign pdks install
-.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt_mm
 
-.param mc_mm_switch=0
-.param mc_pr_switch=0
 "
 spice_ignore=false}

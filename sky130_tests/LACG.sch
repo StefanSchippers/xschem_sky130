@@ -268,7 +268,5 @@ format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
-.param mc_mm_switch=0
-.param mc_pr_switch=0
 "
 spice_ignore=false}
