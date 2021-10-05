@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -252,16 +252,6 @@ mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {devices/code.sym} 50 -350 0 0 {name=nfet_20v0_MODEL
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** manual skywater-pdk install (with patches applied).
-* .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_20v0/sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice
-
-** opencircuitdesign pdks install
-.include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice
-"}
 C {devices/code.sym} 50 -190 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"

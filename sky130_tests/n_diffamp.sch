@@ -248,11 +248,5 @@ value="** manual skywater pdks install (with patches applied)
 ** opencircuitdesign pdks install
 .lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 
-** manual skywater-pdk install (with patches applied).
-* .include \\\\$::SKYWATER_MODELS\\\\/cells/pnp_05v5/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
-
-** opencircuitdesign pdks install
-.include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
-
 "
 spice_ignore=false}

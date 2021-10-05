@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -58,12 +58,5 @@ value="** manual skywater pdks install (with patches applied)
 
 ** opencircuitdesign pdks install
 .lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
-
-** manual skywater-pdk install (with patches applied).
-* .include \\\\$::SKYWATER_MODELS\\\\/cells/pnp_05v5/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
-
-** opencircuitdesign pdks install
-.include \\\\$::SKYWATER_MODELS\\\\/../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
-
 "
 spice_ignore=false}

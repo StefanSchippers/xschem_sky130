@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -28,8 +28,7 @@ N 480 -220 480 -200 { lab=START}
 N 740 -220 740 -200 { lab=CLK}
 C {devices/code.sym} 10 -450 0 0 {name=NGSPICE
 only_toplevel=true
-value=".option seed=13
-
+value="
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
 .options wnflag=1 XMU=0.49 METHOD=GEAR ITL4=100 CHGTOL=1e-15 TRTOL=1 RELTOL=0.0001 VNTOL=0.1u
@@ -38,22 +37,11 @@ value=".option seed=13
 .param VCC=VCCGAUSS
 * .param VCC=1.8
 ** variation marameters:
-.param sky130_fd_pr__nfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__vth0_slope'
-.param sky130_fd_pr__pfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__vth0_slope'
-.param sky130_fd_pr__nfet_01v8__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8__vth0_slope'
-.param sky130_fd_pr__pfet_01v8__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8__vth0_slope'
-
-.param sky130_fd_pr__pfet_01v8__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__pfet_01v8__toxe_slope'
-.param sky130_fd_pr__nfet_01v8__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__nfet_01v8__toxe_slope'
-.param sky130_fd_pr__pfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__pfet_01v8_lvt__toxe_slope'
-.param sky130_fd_pr__nfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__nfet_01v8_lvt__toxe_slope'
-
-.param sky130_fd_pr__res_high_po__var_mult=agauss(0, 'ABSVAR*8', 1)
-
 * .options savecurrents
 .control
+  option seed=12
   let run=1
-  dowhile run <= 40
+  dowhile run <= 14
     if run > 1
       reset
       set appendwrite
@@ -112,10 +100,10 @@ C {devices/code.sym} 10 -250 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
-* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt_mm
 
 ** opencircuitdesign pdks install
-.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt_mm
 
 "
 spice_ignore=false}
