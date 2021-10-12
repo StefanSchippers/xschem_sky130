@@ -1,8 +1,13 @@
 # xschem_sky130
 XSCHEM symbol libraries for the Google-Skywater 130nm process design kit. 
-A [step by step video](https://xschem.sourceforge.io/stefan/xschem_man/video_tutorials/install_xschem_sky130_and_ngspice.mp4) shows how to boostrap a working 
-environment for xschem + skywater-pdk + ngspice, that is, compile and install xschem, download the xschem_sky130 symbols
-and libraries, install the skywater-pdk files, and finally build the pre-master development branch of ngspice.
+
+If you use open_pdks it will install also the xschem libraries, so you don't need to clone this repository directly.
+
+A [step by step video](https://xschem.sourceforge.io/stefan/xschem_man/video_tutorials/install_xschem_and_open_pdks.mp4) shows how to boostrap a working 
+environment for xschem + open_pdks + ngspice, that is, compile and install xschem,
+install the open_pdks files, and finally build the pre-master development branch of ngspice.
+For ngspice building refer to this [old video](https://xschem.sourceforge.io/stefan/xschem_man/video_tutorials/install_xschem_sky130_and_ngspice.mp4),
+but follow only the instructions for ngspice, as the rest is superseeded by the xschem + open_pdks video.
 
 ## Open_Pdks UPDATE
 instead of manually installing skywater-pdk as explained in the video, follow the `open_pdks` install as shown [here](http://opencircuitdesign.com/open_pdks/index.html). This will (among other things) install all the spice models. Current `xschem_sky130` examples now use the model file locations as installed by `open_pdks`
