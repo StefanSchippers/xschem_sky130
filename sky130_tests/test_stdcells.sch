@@ -109,7 +109,7 @@ C {devices/noconn.sym} 1530 -540 3 0 {name=l3}
 C {sky130_stdcells/inv_2.sym} 1190 -700 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/code.sym} 860 -190 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
 "

@@ -76,7 +76,7 @@ C {devices/lab_pin.sym} 390 -440 0 1 {name=p15 lab=REF}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 580 -220 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=1 spiceprefix=X }
 C {devices/code.sym} 70 -280 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 

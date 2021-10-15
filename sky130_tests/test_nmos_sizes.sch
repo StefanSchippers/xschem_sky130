@@ -95,7 +95,7 @@ C {devices/ammeter.sym} 330 -390 0 0 {name=V1}
 C {devices/lab_pin.sym} 280 -420 0 0 {name=p7 lab=D}
 C {devices/code.sym} 830 -400 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 

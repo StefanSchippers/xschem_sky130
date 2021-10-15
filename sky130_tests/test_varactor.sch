@@ -134,7 +134,7 @@ C {sky130_fd_pr/cap_var_lvt.sym} 550 -180 0 0 {name=C4 model=cap_var_lvt W=5 L=5
 C {devices/lab_pin.sym} 510 -160 0 0 {name=p20 lab=0}
 C {devices/code.sym} 70 -310 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 

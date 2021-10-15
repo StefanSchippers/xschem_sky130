@@ -67,7 +67,7 @@ dc vd 0 2 0.01 vg 0 2 0.2
 "}
 C {devices/code.sym} 830 -350 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice

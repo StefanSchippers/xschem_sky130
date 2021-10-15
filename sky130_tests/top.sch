@@ -449,7 +449,7 @@ C {sky130_tests/simulate_ff.sym} 190 -590 0 0 {name=x22}
 C {devices/code.sym} 890 -480 0 0 {name=FF_MODELS
 spice_ignore=false
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__ff.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__ff.corner.spice
@@ -489,7 +489,7 @@ value="
 C {devices/code.sym} 1040 -480 0 0 {name=TT_MODELS
 spice_ignore=false
 only_toplevel=true
-format="tcleval( @value )"
+format="tcleval(@value )"
 value="
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
 .include \\\\$::SKYWATER_MODELS\\\\/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
