@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -63,7 +63,7 @@ C {devices/lab_pin.sym} 460 -390 0 0 {name=p1 lab=0}
 C {devices/ammeter.sym} 460 -270 0 0 {name=Vk1 net_name=true}
 C {sky130_fd_pr/diode.sym} 460 -140 0 0 {name=D1
 model=diode_pw2nd_05v5
-area=1
+area=1e12
 
 }
 C {devices/lab_pin.sym} 460 -80 0 0 {name=p2 lab=0}
@@ -72,9 +72,7 @@ C {devices/lab_pin.sym} 900 -390 0 0 {name=p5 lab=0}
 C {devices/ammeter.sym} 900 -270 0 0 {name=Vk2 net_name=true}
 C {sky130_fd_pr/lvsdiode.sym} 900 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
-area=1
-
-}
+area=1e12}
 C {devices/lab_pin.sym} 900 -80 0 0 {name=p6 lab=0}
 C {devices/cccs.sym} 900 -330 0 0 {name=F1 vnam=vk1 value=1}
 C {devices/code.sym} 40 -270 0 0 {name=TT_MODELS
