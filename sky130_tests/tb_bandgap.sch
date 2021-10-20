@@ -20,6 +20,14 @@ K {}
 V {}
 S {}
 E {}
+T {Example of Mismatch simulation of a 
+bandgap reference. 
+Variations are generated also on Vcc and
+temperature between -40C and 125C
+
+Plot shows bandgap varying outputs before
+and after the offset cancellation.
+} 660 -600 0 0 0.4 0.4 {}
 N 240 -340 240 -320 { lab=EN_N}
 N 740 -340 740 -320 { lab=VCC}
 N 480 -340 480 -320 { lab=VSS}
