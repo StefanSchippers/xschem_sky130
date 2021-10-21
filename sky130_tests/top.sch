@@ -27,6 +27,7 @@ L 4 1610 -300 2570 -300 {}
 L 4 1610 -95 2570 -95 {}
 L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
+P 4 5 1860 -1910 3050 -1910 3050 -1560 1860 -1560 1860 -1910 {}
 P 7 3 2330 -700 2100 -700 2100 -710 {}
 P 7 3 2610 -700 2730 -700 2730 -710 {}
 T {Git / Google-Skywater PDK links} 780 -1660 0 0 0.6 0.6 {layer=8}
@@ -104,6 +105,12 @@ T {Select with a mouse Click then press 'e'
 key to descend into these subcircuits} 60 -1700 0 0 0.3 0.3 {layer=11}
 T {Select with a mouse Click then press 'e'
 key to descend into these subcircuits} 60 -1010 0 0 0.3 0.3 {layer=11}
+T {To simulate with ngspice please create a .spiceinit file
+in the simulation directory (the directory where xschem 
+writes the spice netlist and runs the simulator) with the
+following content:} 1910 -1880 0 0 0.7 0.7 {layer=8}
+T {set ngbehavior=hsa
+set ng_nomodcheck } 2090 -1680 0 0 0.8 0.8 {font=Monospace}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
