@@ -20,8 +20,6 @@ K {}
 V {}
 S {}
 E {}
-T {Need to include: 
-sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice} 1836.25 -533.75 0 0 0.2 0.2 {layer=7}
 N 680 -490 680 -470 {lab=S}
 N 680 -440 700 -440 {lab=B}
 N 620 -440 640 -440 {lab=G1v8}

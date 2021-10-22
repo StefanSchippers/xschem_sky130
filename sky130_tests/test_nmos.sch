@@ -20,8 +20,6 @@ K {}
 V {}
 S {}
 E {}
-P 7 3 2180 -30 2130 -30 2130 -40 {}
-P 7 3 2470 -30 2520 -30 2520 -40 {}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -29,8 +27,6 @@ T {Ctrl-Click to annotate operating point data.
 For this to work open this schematic as the
 top most schematic (so you have not 
 descended into it) and run ngspice simulation.} 10 -570 0 0 0.3 0.3 {layer=15}
-T {Need to include: 
-sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice} 2186.25 -43.75 0 0 0.2 0.2 {layer=7}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}

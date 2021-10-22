@@ -28,15 +28,12 @@ L 4 1610 -95 2570 -95 {}
 L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
 P 4 5 1860 -1910 3050 -1910 3050 -1560 1860 -1560 1860 -1910 {}
-P 7 3 2330 -700 2100 -700 2100 -710 {}
-P 7 3 2610 -700 2730 -700 2730 -710 {}
 T {Git / Google-Skywater PDK links} 780 -1660 0 0 0.6 0.6 {layer=8}
 T {PFET} 1660 -1040 0 0 1 1 { hcenter=true}
 T {NFET} 1660 -800 0 0 1 1 { hcenter=true}
 T {RES} 1660 -550 0 0 1 1 { hcenter=true}
 T {DIODE} 1660 -195 0 0 1 1 { hcenter=true}
 T {PNP} 1660 -70 0 0 1 1 { hcenter=true}
-T {No Model} 2420 -590 0 0 0.3 0.3 {layer=7}
 T {Digital standard cells} 20 -1060 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 750 -1610 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 780 -950 0 0 0.3 0.3 {layer=11}
@@ -97,10 +94,6 @@ NFET} 2820 -860 0 0 1 1 { hcenter=true}
 T {3 PIN
 PFET} 2820 -1070 0 0 1 1 { hcenter=true}
 T {Decred_hash_macro: import of a big RTL design from spice netlist} 430 -720 0 0 0.3 0.3 {layer=11}
-T {Need to include: 
-sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice} 2336.25 -713.75 0 0 0.2 0.2 {layer=7}
-T {Need to include: 
-sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice} 2056.25 -923.75 0 0 0.2 0.2 {layer=7}
 T {Select with a mouse Click then press 'e'
 key to descend into these subcircuits} 60 -1700 0 0 0.3 0.3 {layer=11}
 T {Select with a mouse Click then press 'e'
