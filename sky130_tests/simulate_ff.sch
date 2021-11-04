@@ -79,7 +79,7 @@ Xschem will be only partially
 responsive during simulation.
 Will run for 100 iterations.
 If you need to stop:
-Simulation -> Forced stop tcl scripts} 1620 -960 0 0 1.3 1.3 {}
+press Escape key} 1620 -960 0 0 1.3 1.3 {}
 T {Brown: High Impedance (Z)} 3260 -770 0 0 1.5 1.5 {layer=13}
 N 2340 -2250 2340 -2170 { lab=#net1}
 N 2220 -2250 2340 -2250 { lab=#net1}
@@ -334,7 +334,7 @@ descr="START SIMULATION"
 comment="
   This launcher Starts a simple interactive simulation of the LFSR
 "
-tclcommand="  set tclstop 0  ;# clear stop flag
+tclcommand="
   set count 0
   set duration 1000
   xschem select instance p8  ;# CLEAR_
