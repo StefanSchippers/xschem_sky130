@@ -272,7 +272,7 @@ lappend tcl_files scripts/sky130_models.tcl
 #### XSCHEM TOOLBAR
 ###########################################################################
 #### default: not enabled.
-# set toolbar_visible 1
+set toolbar_visible 1
 # set toolbar_horiz   1
 
 ###########################################################################
