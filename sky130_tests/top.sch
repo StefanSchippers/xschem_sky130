@@ -107,13 +107,13 @@ set ng_nomodcheck } 2090 -1680 0 0 0.8 0.8 {font=Monospace}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
-url="http://skywater-pdk.readthedocs.io/en/latest"}
+url="http://skywater-pdk.readthedocs.io/en/main"}
 C {devices/launcher.sym} 810 -1420 0 0 {name=h2
 descr="Google-Skywater PDK git repo" 
 url="https://foss-eda-tools.googlesource.com/skywater-pdk/libs"}
 C {devices/launcher.sym} 810 -1460 0 0 {name=h3
 descr="Google-Skywater PDK documentation: Device details" 
-url="https://skywater-pdk.readthedocs.io/en/latest/rules/device-details.html"}
+url="https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html"}
 C {sky130_tests/test_nmos.sym} 190 -1400 0 0 {name=x1}
 C {sky130_tests/test_pmos.sym} 190 -1360 0 0 {name=x2}
 C {sky130_tests/test_inv.sym} 190 -1320 0 0 {name=x5}
