@@ -356,7 +356,7 @@ spiceprefix=X
 mult=1 net_name=true}
 C {devices/code.sym} 40 -170 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt_mm
 

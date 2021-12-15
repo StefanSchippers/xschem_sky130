@@ -78,7 +78,7 @@ C {sky130_tests/lvnand.sym} 500 -400 2 1 {name=x2 WidthN=1 LenN=0.15 WidthP=1 Le
 C {sky130_tests/lvnand.sym} 500 -520 0 0 {name=x3 WidthN=1 LenN=0.15 WidthP=1 LenP=0.15 m=1}
 C {devices/code.sym} 840 -350 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt_mm
 

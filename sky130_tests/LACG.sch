@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -251,20 +251,11 @@ C {devices/lab_wire.sym} 2170 -550 0 0 {name=l15 sig_type=std_logic lab=Q_C}
 C {devices/lab_wire.sym} 140 -2070 0 0 {name=l31 sig_type=std_logic lab=V1}
 C {devices/lab_wire.sym} 150 -1620 0 0 {name=l32 sig_type=std_logic lab=V2}
 C {devices/lab_wire.sym} 150 -1160 0 0 {name=l33 sig_type=std_logic lab=V3}
-C {devices/code.sym} 630 -490 0 0 {spice_ignore=true
-name=ALL_MODELS
-only_toplevel=true
-format="tcleval(@value )"
-value="
-
-.lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
-
-"}
 C {devices/title.sym} 160 -50 0 0 {name=l34 author="Promach"}
 C {devices/lab_wire.sym} 1250 -240 0 0 {name=l30 sig_type=std_logic lab=XCB}
 C {devices/code.sym} 470 -500 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice

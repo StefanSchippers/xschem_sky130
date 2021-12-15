@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -222,7 +222,7 @@ C {devices/lab_pin.sym} 1980 -670 0 1 {name=l40 sig_type=std_logic lab=Q4}
 C {devices/lab_pin.sym} 1980 -650 0 1 {name=l41 sig_type=std_logic lab=Q4B}
 C {devices/code.sym} 840 -370 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice

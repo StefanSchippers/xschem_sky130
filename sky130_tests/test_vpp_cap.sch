@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -83,7 +83,7 @@ mult=1
 spiceprefix=X}
 C {devices/code.sym} 40 -290 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 

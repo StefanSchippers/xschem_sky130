@@ -119,7 +119,7 @@ C {devices/lab_wire.sym} 320 -320 0 0 {name=l3 sig_type=std_logic lab=G}
 C {devices/title.sym} 160 -30 0 0 {name=l4 author="Rafael Marinho"}
 C {devices/code.sym} 530 -180 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 

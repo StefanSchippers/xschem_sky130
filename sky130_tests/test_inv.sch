@@ -111,7 +111,7 @@ C {sky130_tests/lvtnot.sym} 970 -440 0 0 {name=x13 m=1 VCCPIN=VCC VSSPIN=VSS W_N
 C {sky130_tests/lvtnot.sym} 1050 -440 0 0 {name=x14 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {devices/code.sym} 120 -270 0 0 {name=TT_MODELS
 only_toplevel=true
-format="tcleval(@value )"
+format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
 * .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
 
