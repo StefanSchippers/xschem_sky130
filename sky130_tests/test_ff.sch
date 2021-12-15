@@ -225,7 +225,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
-.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 
 
 "}
