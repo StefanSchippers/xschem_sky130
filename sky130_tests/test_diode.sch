@@ -78,11 +78,9 @@ C {devices/cccs.sym} 900 -330 0 0 {name=F1 vnam=vk1 value=1}
 C {devices/code.sym} 40 -270 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value="** manual skywater pdks install (with patches applied)
-* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
-
+value="
 ** opencircuitdesign pdks install
-.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 "
 spice_ignore=false}

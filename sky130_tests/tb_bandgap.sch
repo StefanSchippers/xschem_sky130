@@ -107,11 +107,9 @@ C {devices/lab_pin.sym} 260 -510 0 0 {name=p9 lab=CLK}
 C {devices/code.sym} 10 -250 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value="** manual skywater pdks install (with patches applied)
-* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt_mm
-
+value="
 ** opencircuitdesign pdks install
-.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt_mm
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
 
 "
 spice_ignore=false}

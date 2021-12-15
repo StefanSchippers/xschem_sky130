@@ -256,7 +256,7 @@ C {devices/lab_wire.sym} 1250 -240 0 0 {name=l30 sig_type=std_logic lab=XCB}
 C {devices/code.sym} 470 -500 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
 "

@@ -154,11 +154,9 @@ C {devices/ngspice_get_expr.sym} 950 -690 0 1 {name=r8 node="[ngspice::get_curre
 C {devices/code.sym} 1050 -370 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value="** manual skywater pdks install (with patches applied)
-* .lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
-
+value="
 ** opencircuitdesign pdks install
-.lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 "
 spice_ignore=false}
