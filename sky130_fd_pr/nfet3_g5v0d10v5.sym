@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -45,7 +45,7 @@ L 4 7.5 -17.5 20 -17.5 {}
 L 4 7.5 17.5 15 17.5 {}
 L 4 7.5 -22.5 7.5 22.5 {}
 L 4 -20 0 -2.5 0 {}
-B 5 17.5 -32.5 22.5 -27.5 {name=S dir=inout}
+B 5 17.5 -32.5 22.5 -27.5 {name=D dir=inout}
 B 5 -22.5 -2.5 -17.5 2.5 {name=G dir=in}
 B 5 17.5 27.5 22.5 32.5 {name=S dir=inout}
 P 4 4 15 15 20 17.5 15 20 15 15 {fill=true}
