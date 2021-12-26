@@ -20,6 +20,37 @@ K {}
 V {}
 S {}
 E {}
+B 2 690 -700 1150 -600 {flags=1
+y1 = 0
+y2 = 2
+divy = 5
+x1=0
+x2=0.00015
+divx=5
+node="v(vbg) v(en_n) v(start)"
+color="4 5 9" subdivx=4}
+B 2 690 -840 1150 -710 {flags=1
+y1 = 1.02751
+y2 = 1.27786
+divy = 5
+subdivy=1
+x1=0
+x2=0.00015
+divx=4
+subdivx=4
+node="v(vbg)"
+color="4 5"}
+B 2 690 -980 1150 -850 {flags=1
+y1 = 1.14681
+y2 = 1.17695
+divy = 5
+subdivy=1
+x1=0
+x2=0.00015
+divx=4
+subdivx=4
+node="v(vbg)"
+color="4 5"}
 T {Example of Mismatch simulation of a 
 bandgap reference. 
 Variations are generated also on Vcc and
@@ -27,7 +58,9 @@ temperature between -40C and 125C
 
 Plot shows bandgap varying outputs before
 and after the offset cancellation.
-} 660 -600 0 0 0.4 0.4 {}
+} 660 -560 0 0 0.4 0.4 {}
+T {Select one or more graphs (and no other objects)
+and use arrow keys to zoom / pan waveforms} 190 -600 0 0 0.3 0.3 {}
 N 240 -340 240 -320 { lab=EN_N}
 N 740 -340 740 -320 { lab=VCC}
 N 480 -340 480 -320 { lab=VSS}
@@ -113,3 +146,10 @@ value="
 
 "
 spice_ignore=false}
+C {devices/launcher.sym} 215 -635 0 0 {name=h1 
+descr="Select arrow and 
+Ctrl-Left-Click to load/unload waveforms" 
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}

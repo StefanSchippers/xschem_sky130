@@ -252,15 +252,6 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 #### set bespice wave listening port; default: not enabled
 set bespice_listen_port 2022
 
-
-
-###########################################################################
-#### UTILE SPICE STIMULI DESCRIPTION LANGUAGE AND TRANSLATOR
-###########################################################################
-#### default paths are set as shown here: 
-# set utile_gui_path ${XSCHEM_SHAREDIR}/utile/utile3
-# set utile_cmd_path ${XSCHEM_SHAREDIR}/utile/utile
-
 ###########################################################################
 #### TCL FILES TO LOAD AT STARTUP
 ###########################################################################
