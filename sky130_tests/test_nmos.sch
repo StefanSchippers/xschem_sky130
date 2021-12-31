@@ -20,6 +20,39 @@ K {}
 V {}
 S {}
 E {}
+B 2 1030 -950 1460 -630 {flags=1
+y1 = 0
+y2 = 0.00058
+divy = 5
+subdivy=1
+x1=0
+x2=1.8
+divx=4
+subdivx=4
+node="i(vd1) i(vd2)"
+color="4 5" unity=u}
+B 2 1470 -950 1900 -630 {flags=1
+y1 = -0
+y2 = 0.00063
+divy = 5
+subdivy=1
+x1=0
+x2=1.8
+divx=4
+subdivx=4
+node="i(vd4)"
+color="4 5" unity=u}
+B 2 1910 -950 2340 -630 {flags=1
+y1 = -2.69515e-05
+y2 = 0.00101078
+divy = 5
+subdivy=1
+x1=0
+x2=1.8
+divx=4
+subdivx=4
+node="i(vd5)"
+color="4 5" unity=u}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -27,6 +60,8 @@ T {Ctrl-Click to annotate operating point data.
 For this to work open this schematic as the
 top most schematic (so you have not 
 descended into it) and run ngspice simulation.} 10 -570 0 0 0.3 0.3 {layer=15}
+T {Select one or more graphs (and no other objects)
+and use arrow keys to zoom / pan waveforms} 500 -720 0 0 0.3 0.3 {}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}
@@ -90,7 +125,7 @@ C {devices/lab_pin.sym} 1210 -140 0 1 {name=p13 lab=B}
 C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3 current=5.6511e-04}
 C {devices/lab_pin.sym} 940 -90 0 1 {name=p16 lab=S}
 C {devices/lab_pin.sym} 960 -140 0 1 {name=p21 lab=B}
-C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2 current=5.0094e-04}
+C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2  current=5.0094e-04}
 C {devices/lab_pin.sym} 1440 -90 0 1 {name=p7 lab=S}
 C {devices/lab_pin.sym} 1460 -140 0 1 {name=p8 lab=B}
 C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4 current=6.2333e-04}
@@ -143,7 +178,7 @@ C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6 current=0.003311}
 C {devices/lab_pin.sym} 2190 -90 0 1 {name=p40 lab=S}
 C {devices/lab_pin.sym} 2210 -140 0 1 {name=p41 lab=B}
 C {devices/lab_pin.sym} 2130 -140 0 0 {name=p42 lab=G1v8}
-C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7 current=0.0000e+00}
+C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7 current=0.001217}
 C {devices/lab_pin.sym} 640 -470 0 0 {name=p43 lab=D20v0}
 C {devices/vcvs.sym} 1490 -550 0 0 {name=E7 value='20.0/1.8'}
 C {devices/lab_pin.sym} 1450 -570 0 0 {name=p44 lab=D1v8}
@@ -153,9 +188,9 @@ C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
 C {devices/ipin.sym} 520 -420 0 0 {name=p48 lab=G1v8}
 C {devices/ipin.sym} 520 -380 0 0 {name=p49 lab=D1v8}
 C {devices/ipin.sym} 520 -340 0 0 {name=p50 lab=B}
-C {devices/code_shown.sym} 30 -1030 0 0 {name=NGSPICE
+C {devices/code_shown.sym} 0 -1120 0 0 {name=NGSPICE
 only_toplevel=true
-value="* this experimental option enables mos model bin 
+value="* this option enables mos model bin 
 * selection based on W/NF instead of W
 .option wnflag=1 
 .option savecurrents
@@ -164,8 +199,10 @@ vs s 0 0
 vd D1v8 0 1.8
 vb b 0 0
 .control
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 save all
 dc vd 0 1.8 0.01 vg 0 1.8 0.2
+write test_nmos.raw
 * dc vd 0 1.8 0.01 vg 0 1.2 0.1
 plot all.vd1#branch vs D1v8
 *plot all.vd2#branch vs D1v8
@@ -175,7 +212,7 @@ plot all.vd5#branch vs D10v5
 *plot all.vd6#branch vs D16v0
 plot all.vd8#branch vs D1v8
 plot all.vd7#branch vs D1v8
-save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+set appendwrite
 op
 write test_nmos.raw
 .endc
@@ -233,7 +270,7 @@ url="https://xschem.sourceforge.io/stefan/xschem_man/tutorial_ngspice_backannota
 C {devices/lab_pin.sym} 2430 -90 0 1 {name=p51 lab=S}
 C {devices/lab_pin.sym} 2450 -140 0 1 {name=p52 lab=B}
 C {devices/lab_pin.sym} 2370 -140 0 0 {name=p53 lab=G1v8}
-C {devices/ammeter.sym} 2430 -220 0 0 {name=Vd8 current=0.0000e+00}
+C {devices/ammeter.sym} 2430 -220 0 0 {name=Vd8 current=0.001321}
 C {sky130_fd_pr/nfet_20v0.sym} 2170 -140 0 0 {name=M7
 L=2.95
 W=29.41
@@ -257,3 +294,10 @@ value="
 
 "
 spice_ignore=false}
+C {devices/launcher.sym} 525 -755 0 0 {name=h4 
+descr="Select arrow and 
+Ctrl-Left-Click to load/unload waveforms" 
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}

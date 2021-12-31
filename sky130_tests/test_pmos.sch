@@ -20,6 +20,30 @@ K {}
 V {}
 S {}
 E {}
+B 2 880 -1060 1310 -740 {flags=1
+y1 = -0
+y2 = 0.00021
+divy = 5
+subdivy=1
+x1=-1.02545e-06
+x2=-1.8
+divx=4
+subdivx=4
+node="i(vd1) i(vd2)"
+color="4 5" unity=u}
+B 2 1320 -1060 1750 -740 {flags=1
+y1 = -0
+y2 = 0.00063
+divy = 5
+subdivy=1
+x1=0
+x2=-1.8
+divx=4
+subdivx=4
+node="i(vd4)"
+color="4 5" unity=u}
+T {Select one or more graphs (and no other objects)
+and use arrow keys to zoom / pan waveforms} 350 -830 0 0 0.3 0.3 {}
 N 680 -490 680 -470 {lab=S}
 N 680 -440 700 -440 {lab=B}
 N 620 -440 640 -440 {lab=G1v8}
@@ -72,9 +96,12 @@ C {devices/lab_pin.sym} 870 -440 0 0 {name=p3 lab=G1v8}
 C {devices/lab_pin.sym} 930 -490 2 0 {name=p12 lab=S}
 C {devices/lab_pin.sym} 950 -440 0 1 {name=p13 lab=B}
 C {devices/ammeter.sym} 930 -360 0 1 {name=Vd2}
-C {devices/code_shown.sym} 20 -890 0 0 {name=NGSPICE
+C {devices/code_shown.sym} 10 -1030 0 0 {name=NGSPICE
 only_toplevel=true
-value="
+value="* this option enables mos model bin 
+* selection based on W/NF instead of W
+.opton wnflag=1
+.option savecurrents
 vg G1v8 0 0
 vs s 0 0
 vd D1v8 0 0
@@ -82,12 +109,16 @@ vb b 0 0
 .control
 save all
 dc vd 0 -1.8 -0.01 vg 0 -1.8 -0.2
+write test_pmos.raw
 plot all.vd1#branch vs D1v8
 plot all.vd2#branch vs D1v8
 plot all.vd3#branch vs D1v8
 plot all.vd4#branch vs D10v5
 plot all.vd5#branch vs D16v0
 plot all.vd6#branch vs D20v0
+set appendwrite
+op
+write test_pmos.raw
 .endc
 " }
 C {devices/lab_pin.sym} 540 -90 0 0 {name=p15 lab=D1v8}
@@ -172,9 +203,9 @@ C {devices/lab_pin.sym} 1140 -640 0 0 {name=p18 lab=D1v8}
 C {devices/lab_pin.sym} 1180 -590 0 1 {name=p20 lab=0}
 C {devices/lab_pin.sym} 1180 -670 0 1 {name=p43 lab=D16v0}
 C {devices/lab_pin.sym} 1140 -600 0 0 {name=p44 lab=0}
-C {devices/ipin.sym} 200 -500 0 0 {name=p45 lab=G1v8}
-C {devices/ipin.sym} 200 -460 0 0 {name=p46 lab=D1v8}
-C {devices/ipin.sym} 200 -420 0 0 {name=p47 lab=B}
+C {devices/ipin.sym} 150 -410 0 0 {name=p45 lab=G1v8}
+C {devices/ipin.sym} 150 -370 0 0 {name=p46 lab=D1v8}
+C {devices/ipin.sym} 150 -330 0 0 {name=p47 lab=B}
 C {devices/lab_pin.sym} 540 -290 0 0 {name=p50 lab=D20v0}
 C {devices/vcvs.sym} 1350 -620 0 0 {name=E7 value='20.0/1.8'}
 C {devices/lab_pin.sym} 1310 -640 0 0 {name=p51 lab=D1v8}
@@ -201,3 +232,16 @@ value="
 
 "
 spice_ignore=false}
+C {devices/launcher.sym} 375 -865 0 0 {name=h4 
+descr="Select arrow and 
+Ctrl-Left-Click to load/unload waveforms" 
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}
+C {devices/launcher.sym} 110 -560 0 0 {name=h1
+descr=Annotate 
+tclcommand="ngspice::annotate"}
+C {devices/launcher.sym} 110 -510 0 0 {name=h2
+descr="View Raw file" 
+tclcommand="textwindow $netlist_dir/test_pmos.raw"}
