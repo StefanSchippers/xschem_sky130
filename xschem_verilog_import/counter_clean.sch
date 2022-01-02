@@ -4,52 +4,55 @@ K {}
 V {}
 S {}
 E {}
-B 2 790 -1260 2220 -800 {flags=1
+B 2 730 -1260 2220 -800 {flags=1
 digital=1
 dig_max_waves=10
-y1 = -0.174613
-y2 = 1.8254
+y1 = -0.26576
+y2 = 1.73425
 divy = 1
-x1=-1.61379e-08
-x2=8.61133e-07
+x1=-5.24603e-09
+x2=8.81323e-07
 divx=12
 subdivx=4
+unitx=n
 node="
 out_o[3:0],v(out_o[3]),v(out_o[2]),v(out_o[1]),v(out_o[0])
 v(clk_i) v(reset_i)
 v(net1) v(_00_) v(_01_) v(clknet_0_clk_i) v(clknet_1_0_0_clk_i)
 "
-color="8 9 10 11 12 13 14"
-unitx=n
-}
-B 2 790 -1610 2220 -1260 {flags=1
-digital=0
-dig_max_waves=12
+color="5 4 4 1 1 1 1 1 1 1"}
+B 2 730 -1610 2220 -1260 {flags=1
 y1 = 0
 y2 = 2
 divy = 5
-x1=5.1884e-07
-x2=5.22012e-07
+x1=2.78741e-07
+x2=2.82036e-07
 divx=8
 subdivx=4
-node="
-v(out_o[3]) v(out_o[2]) v(out_o[1]) v(out_o[0]) 
-v(clk_i)
-"
-color="8 9 10 11 12 13 14"
 unitx=n
+node="
+v(clk_i)
+v(out_o[3]) v(out_o[2]) v(out_o[1]) v(out_o[0]) 
+
+"
+color="4 5 5 5 5 "
+
 }
 T {Inside the graph: 
 Mouse wheel : move left/right
 Shift + mouse wheel : zoom
 click and drag also can be used to move around
 To resize the graph: ctrl and drag a corner, then press 'm'
-pressing 'a' and 'b' brings up time cursors
+pressing 'a' and 'b' brings up time cursors.
 
 x-axis of graphs are locked but if you select one graph by
 dragging the mouse around it its x-axis can be adjusted
 independently.
 
+To add nets to a graph select it by dragging around its 
+container rectangle and press 'q'.
+Top graph is an 'analog' graph, bottom graph has 'digital=1'
+attribute set to make it 'digital' style.
 } 10 -1180 0 0 0.4 0.4 {}
 T {VERILOG IMPORTED 
 4 BIT COUNTER,
@@ -57,28 +60,28 @@ SYNCHRONOUS RESET} 10 -1630 0 0 1 1 {layer=5}
 C {devices/ipin.sym} 100 -200 0 0 {name=p67 lab=clk_i }
 C {devices/ipin.sym} 100 -180 0 0 {name=p68 lab=reset_i }
 C {devices/opin.sym} 180 -200 0 0 {name=p69 lab=out_o[3:0] }
-C {devices/lab_pin.sym} 910 -720 0 0 {name=p0 lab=net2 }
-C {devices/lab_pin.sym} 990 -720 0 1 {name=p1 lab=_04_ }
-C {sky130_stdcells/inv_2.sym} 950 -720 0 0 {name=X_12_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1590 -690 0 0 {name=p2 lab=net3 }
-C {devices/lab_pin.sym} 1670 -690 0 1 {name=p3 lab=_05_ }
-C {sky130_stdcells/inv_2.sym} 1630 -690 0 0 {name=X_13_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 440 -830 0 0 {name=p4 lab=net4 }
-C {devices/lab_pin.sym} 520 -830 0 1 {name=p5 lab=_06_ }
-C {sky130_stdcells/inv_2.sym} 480 -830 0 0 {name=X_14_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 420 -730 0 0 {name=p6 lab=_04_ }
-C {devices/lab_pin.sym} 420 -690 0 0 {name=p7 lab=_05_ }
-C {devices/lab_pin.sym} 420 -650 0 0 {name=p8 lab=_06_ }
-C {devices/lab_pin.sym} 540 -690 0 1 {name=p9 lab=_07_ }
-C {sky130_stdcells/or3_1.sym} 480 -690 0 0 {name=X_15_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 440 -550 0 0 {name=p10 lab=_07_ }
-C {devices/lab_pin.sym} 520 -550 0 1 {name=p11 lab=_08_ }
-C {sky130_stdcells/inv_2.sym} 480 -550 0 0 {name=X_16_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 400 -450 0 0 {name=p12 lab=_04_ }
-C {devices/lab_pin.sym} 400 -410 0 0 {name=p13 lab=_05_ }
-C {devices/lab_pin.sym} 400 -370 0 0 {name=p14 lab=_06_ }
-C {devices/lab_pin.sym} 560 -410 0 1 {name=p15 lab=_09_ }
-C {sky130_stdcells/o21a_1.sym} 480 -410 0 0 {name=X_17_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 910 -680 0 0 {name=p0 lab=net2 }
+C {devices/lab_pin.sym} 990 -680 0 1 {name=p1 lab=_04_ }
+C {sky130_stdcells/inv_2.sym} 950 -680 0 0 {name=X_12_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1590 -660 0 0 {name=p2 lab=net3 }
+C {devices/lab_pin.sym} 1670 -660 0 1 {name=p3 lab=_05_ }
+C {sky130_stdcells/inv_2.sym} 1630 -660 0 0 {name=X_13_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 390 -710 0 0 {name=p4 lab=net4 }
+C {devices/lab_pin.sym} 470 -710 0 1 {name=p5 lab=_06_ }
+C {sky130_stdcells/inv_2.sym} 430 -710 0 0 {name=X_14_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 380 -640 0 0 {name=p6 lab=_04_ }
+C {devices/lab_pin.sym} 380 -600 0 0 {name=p7 lab=_05_ }
+C {devices/lab_pin.sym} 380 -560 0 0 {name=p8 lab=_06_ }
+C {devices/lab_pin.sym} 500 -600 0 1 {name=p9 lab=_07_ }
+C {sky130_stdcells/or3_1.sym} 440 -600 0 0 {name=X_15_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 400 -500 0 0 {name=p10 lab=_07_ }
+C {devices/lab_pin.sym} 480 -500 0 1 {name=p11 lab=_08_ }
+C {sky130_stdcells/inv_2.sym} 440 -500 0 0 {name=X_16_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 400 -420 0 0 {name=p12 lab=_04_ }
+C {devices/lab_pin.sym} 400 -380 0 0 {name=p13 lab=_05_ }
+C {devices/lab_pin.sym} 400 -340 0 0 {name=p14 lab=_06_ }
+C {devices/lab_pin.sym} 560 -380 0 1 {name=p15 lab=_09_ }
+C {sky130_stdcells/o21a_1.sym} 480 -380 0 0 {name=X_17_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
 C {devices/lab_pin.sym} 420 -290 0 0 {name=p16 lab=net1 }
 C {devices/lab_pin.sym} 420 -250 0 0 {name=p17 lab=_08_ }
 C {devices/lab_pin.sym} 420 -210 0 0 {name=p18 lab=_09_ }
@@ -87,68 +90,68 @@ C {sky130_stdcells/nor3_1.sym} 480 -250 0 0 {name=X_18_ VGND=VGND VNB=VGND VPB=V
 C {devices/lab_pin.sym} 490 -120 0 0 {name=p20 lab=net1 }
 C {devices/lab_pin.sym} 570 -120 0 1 {name=p21 lab=_10_ }
 C {sky130_stdcells/inv_2.sym} 530 -120 0 0 {name=X_19_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1290 -720 0 0 {name=p22 lab=_04_ }
-C {devices/lab_pin.sym} 1290 -680 0 0 {name=p23 lab=_05_ }
-C {devices/lab_pin.sym} 1290 -640 0 0 {name=p24 lab=net2 }
-C {devices/lab_pin.sym} 1290 -600 0 0 {name=p25 lab=net3 }
-C {devices/lab_pin.sym} 1290 -560 0 0 {name=p26 lab=_10_ }
-C {devices/lab_pin.sym} 1450 -640 0 1 {name=p27 lab=_01_ }
-C {sky130_stdcells/o221a_1.sym} 1370 -640 0 0 {name=X_20_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1310 -490 0 0 {name=p28 lab=net1 }
-C {devices/lab_pin.sym} 1310 -450 0 0 {name=p29 lab=net2 }
-C {devices/lab_pin.sym} 1430 -470 0 1 {name=p30 lab=_00_ }
-C {sky130_stdcells/nor2_1.sym} 1370 -470 0 0 {name=X_21_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1330 -380 0 0 {name=p31 lab=net5 }
-C {devices/lab_pin.sym} 1410 -380 0 1 {name=p32 lab=_11_ }
-C {sky130_stdcells/inv_2.sym} 1370 -380 0 0 {name=X_22_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1290 -300 0 0 {name=p33 lab=net5 }
-C {devices/lab_pin.sym} 1290 -260 0 0 {name=p34 lab=_08_ }
-C {devices/lab_pin.sym} 1290 -220 0 0 {name=p35 lab=_11_ }
-C {devices/lab_pin.sym} 1290 -180 0 0 {name=p36 lab=_07_ }
-C {devices/lab_pin.sym} 1290 -140 0 0 {name=p37 lab=_10_ }
-C {devices/lab_pin.sym} 1450 -220 0 1 {name=p38 lab=_03_ }
-C {sky130_stdcells/o221a_1.sym} 1370 -220 0 0 {name=X_23_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 870 -660 0 0 {name=p39 lab=clknet_1_0_0_clk_i }
-C {devices/lab_pin.sym} 870 -640 0 0 {name=p40 lab=_00_ }
-C {devices/lab_pin.sym} 1050 -660 0 1 {name=p41 lab=net2 }
-C {sky130_stdcells/dfxtp_1.sym} 960 -650 0 0 {name=X_24_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 870 -590 0 0 {name=p42 lab=clknet_1_1_0_clk_i }
-C {devices/lab_pin.sym} 870 -570 0 0 {name=p43 lab=_01_ }
-C {devices/lab_pin.sym} 1050 -590 0 1 {name=p44 lab=net3 }
-C {sky130_stdcells/dfxtp_1.sym} 960 -580 0 0 {name=X_25_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 870 -520 0 0 {name=p45 lab=clknet_1_0_0_clk_i }
-C {devices/lab_pin.sym} 870 -500 0 0 {name=p46 lab=_02_ }
-C {devices/lab_pin.sym} 1050 -520 0 1 {name=p47 lab=net4 }
-C {sky130_stdcells/dfxtp_1.sym} 960 -510 0 0 {name=X_26_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 870 -450 0 0 {name=p48 lab=clknet_1_1_0_clk_i }
-C {devices/lab_pin.sym} 870 -430 0 0 {name=p49 lab=_03_ }
-C {devices/lab_pin.sym} 1050 -450 0 1 {name=p50 lab=net5 }
-C {sky130_stdcells/dfxtp_1.sym} 960 -440 0 0 {name=X_27_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 920 -350 0 0 {name=p51 lab=clk_i }
-C {devices/lab_pin.sym} 1000 -350 0 1 {name=p52 lab=clknet_0_clk_i }
-C {sky130_stdcells/clkbuf_16.sym} 960 -350 0 0 {name=Xclkbuf_0_clk_i VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1290 -690 0 0 {name=p22 lab=_04_ }
+C {devices/lab_pin.sym} 1290 -650 0 0 {name=p23 lab=_05_ }
+C {devices/lab_pin.sym} 1290 -610 0 0 {name=p24 lab=net2 }
+C {devices/lab_pin.sym} 1290 -570 0 0 {name=p25 lab=net3 }
+C {devices/lab_pin.sym} 1290 -530 0 0 {name=p26 lab=_10_ }
+C {devices/lab_pin.sym} 1450 -610 0 1 {name=p27 lab=_01_ }
+C {sky130_stdcells/o221a_1.sym} 1370 -610 0 0 {name=X_20_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1310 -460 0 0 {name=p28 lab=net1 }
+C {devices/lab_pin.sym} 1310 -420 0 0 {name=p29 lab=net2 }
+C {devices/lab_pin.sym} 1430 -440 0 1 {name=p30 lab=_00_ }
+C {sky130_stdcells/nor2_1.sym} 1370 -440 0 0 {name=X_21_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1330 -350 0 0 {name=p31 lab=net5 }
+C {devices/lab_pin.sym} 1410 -350 0 1 {name=p32 lab=_11_ }
+C {sky130_stdcells/inv_2.sym} 1370 -350 0 0 {name=X_22_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1290 -270 0 0 {name=p33 lab=net5 }
+C {devices/lab_pin.sym} 1290 -230 0 0 {name=p34 lab=_08_ }
+C {devices/lab_pin.sym} 1290 -190 0 0 {name=p35 lab=_11_ }
+C {devices/lab_pin.sym} 1290 -150 0 0 {name=p36 lab=_07_ }
+C {devices/lab_pin.sym} 1290 -110 0 0 {name=p37 lab=_10_ }
+C {devices/lab_pin.sym} 1450 -190 0 1 {name=p38 lab=_03_ }
+C {sky130_stdcells/o221a_1.sym} 1370 -190 0 0 {name=X_23_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 870 -620 0 0 {name=p39 lab=clknet_1_0_0_clk_i }
+C {devices/lab_pin.sym} 870 -600 0 0 {name=p40 lab=_00_ }
+C {devices/lab_pin.sym} 1050 -620 0 1 {name=p41 lab=net2 }
+C {sky130_stdcells/dfxtp_1.sym} 960 -610 0 0 {name=X_24_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 870 -550 0 0 {name=p42 lab=clknet_1_1_0_clk_i }
+C {devices/lab_pin.sym} 870 -530 0 0 {name=p43 lab=_01_ }
+C {devices/lab_pin.sym} 1050 -550 0 1 {name=p44 lab=net3 }
+C {sky130_stdcells/dfxtp_1.sym} 960 -540 0 0 {name=X_25_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 870 -480 0 0 {name=p45 lab=clknet_1_0_0_clk_i }
+C {devices/lab_pin.sym} 870 -460 0 0 {name=p46 lab=_02_ }
+C {devices/lab_pin.sym} 1050 -480 0 1 {name=p47 lab=net4 }
+C {sky130_stdcells/dfxtp_1.sym} 960 -470 0 0 {name=X_26_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 870 -410 0 0 {name=p48 lab=clknet_1_1_0_clk_i }
+C {devices/lab_pin.sym} 870 -390 0 0 {name=p49 lab=_03_ }
+C {devices/lab_pin.sym} 1050 -410 0 1 {name=p50 lab=net5 }
+C {sky130_stdcells/dfxtp_1.sym} 960 -400 0 0 {name=X_27_ VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 920 -310 0 0 {name=p51 lab=clk_i }
+C {devices/lab_pin.sym} 1000 -310 0 1 {name=p52 lab=clknet_0_clk_i }
+C {sky130_stdcells/clkbuf_16.sym} 960 -310 0 0 {name=Xclkbuf_0_clk_i VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
 C {devices/lab_pin.sym} 920 -230 0 0 {name=p53 lab=clknet_0_clk_i }
 C {devices/lab_pin.sym} 1000 -230 0 1 {name=p54 lab=clknet_1_0_0_clk_i }
 C {sky130_stdcells/clkbuf_2.sym} 960 -230 0 0 {name=Xclkbuf_1_0_0_clk_i VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
 C {devices/lab_pin.sym} 920 -110 0 0 {name=p55 lab=clknet_0_clk_i }
 C {devices/lab_pin.sym} 1000 -110 0 1 {name=p56 lab=clknet_1_1_0_clk_i }
 C {sky130_stdcells/clkbuf_2.sym} 960 -110 0 0 {name=Xclkbuf_1_1_0_clk_i VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1590 -590 0 0 {name=p57 lab=reset_i }
-C {devices/lab_pin.sym} 1670 -590 0 1 {name=p58 lab=net1 }
-C {sky130_stdcells/clkbuf_1.sym} 1630 -590 0 0 {name=Xinput1 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1590 -470 0 0 {name=p59 lab=net2 }
-C {devices/lab_pin.sym} 1670 -470 0 1 {name=p60 lab=out_o[0] }
-C {sky130_stdcells/buf_2.sym} 1630 -470 0 0 {name=Xoutput2 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1590 -350 0 0 {name=p61 lab=net3 }
-C {devices/lab_pin.sym} 1670 -350 0 1 {name=p62 lab=out_o[1] }
-C {sky130_stdcells/buf_2.sym} 1630 -350 0 0 {name=Xoutput3 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1590 -230 0 0 {name=p63 lab=net4 }
-C {devices/lab_pin.sym} 1670 -230 0 1 {name=p64 lab=out_o[2] }
-C {sky130_stdcells/buf_2.sym} 1630 -230 0 0 {name=Xoutput4 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/lab_pin.sym} 1590 -110 0 0 {name=p65 lab=net5 }
-C {devices/lab_pin.sym} 1670 -110 0 1 {name=p66 lab=out_o[3] }
-C {sky130_stdcells/buf_2.sym} 1630 -110 0 0 {name=Xoutput5 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
-C {devices/code.sym} 90 -810 0 0 {name=NGSPICE
+C {devices/lab_pin.sym} 1590 -560 0 0 {name=p57 lab=reset_i }
+C {devices/lab_pin.sym} 1670 -560 0 1 {name=p58 lab=net1 }
+C {sky130_stdcells/clkbuf_1.sym} 1630 -560 0 0 {name=Xinput1 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1590 -440 0 0 {name=p59 lab=net2 }
+C {devices/lab_pin.sym} 1670 -440 0 1 {name=p60 lab=out_o[0] }
+C {sky130_stdcells/buf_2.sym} 1630 -440 0 0 {name=Xoutput2 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1590 -320 0 0 {name=p61 lab=net3 }
+C {devices/lab_pin.sym} 1670 -320 0 1 {name=p62 lab=out_o[1] }
+C {sky130_stdcells/buf_2.sym} 1630 -320 0 0 {name=Xoutput3 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1590 -200 0 0 {name=p63 lab=net4 }
+C {devices/lab_pin.sym} 1670 -200 0 1 {name=p64 lab=out_o[2] }
+C {sky130_stdcells/buf_2.sym} 1630 -200 0 0 {name=Xoutput4 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/lab_pin.sym} 1590 -80 0 0 {name=p65 lab=net5 }
+C {devices/lab_pin.sym} 1670 -80 0 1 {name=p66 lab=out_o[3] }
+C {sky130_stdcells/buf_2.sym} 1630 -80 0 0 {name=Xoutput5 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
+C {devices/code.sym} 70 -600 0 0 {name=NGSPICE
 only_toplevel=true
 value="
 * this experimental option enables mos model bin 
@@ -168,7 +171,7 @@ vreset_i reset_i 0  pwl
   write counter_clean.raw
 .endc
 " }
-C {devices/code.sym} 90 -620 0 0 {name=TT_MODELS
+C {devices/code.sym} 70 -410 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
