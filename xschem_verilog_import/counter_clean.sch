@@ -10,8 +10,8 @@ dig_max_waves=12
 y1 = 0
 y2 = 2
 divy = 1
-x1=0
-x2=1e-06
+x1=-9.77208e-09
+x2=8.76794e-07
 divx=12
 subdivx=4
 unitx=n
@@ -29,8 +29,8 @@ B 2 730 -1510 2220 -1260 {flags=3
 y1 = 0
 y2 = 2
 divy = 5
-x1=2.73918e-07
-x2=2.91932e-07
+x1=2.75112e-07
+x2=2.93126e-07
 divx=8
 subdivx=4
 unitx=n
@@ -46,8 +46,8 @@ y1 = -0.00083
 y2 = 6.1e-05
 divy = 5
 unity=u
-x1=2.73918e-07
-x2=2.91932e-07
+x1=2.75112e-07
+x2=2.93126e-07
 divx=8
 subdivx=4
 unitx=n
@@ -94,7 +94,7 @@ abilities
 Ctrl-Click to start simulation.
 Xschem will be only partially 
 responsive during simulation.
-Will run for 30 iterations.
+Will run for 40 iterations.
 If you need to stop:
 press Escape key} 1840 -520 0 0 0.5 0.5 {}
 C {devices/ipin.sym} 100 -200 0 0 {name=p67 lab=clk_i }
@@ -231,8 +231,8 @@ descr="View Raw file"
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
 }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/launcher.sym} 1960 -190 0 0 {name=h3
-descr="START SIMULATION" 
+C {devices/launcher.sym} 1900 -200 0 0 {name=h3
+descr="START LOGIC SIMULATION" 
 comment="
   This launcher Starts a simple interactive simulation of the counter
 "
@@ -268,7 +268,7 @@ tclcommand="
   while \{1\} \{
     update ;# allow event loop to come in (update screen, user input etc) 
     incr count
-    if \{$count>30 || $tclstop == 1\} break
+    if \{$count>40 || $tclstop == 1\} break
     puts \\"simulating: loop $count\\"
     xschem logic_set $logic_value
     after $duration
