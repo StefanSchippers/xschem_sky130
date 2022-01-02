@@ -4,11 +4,11 @@ K {}
 V {}
 S {}
 E {}
-B 2 730 -1260 2220 -800 {flags=1
+B 2 730 -1260 2220 -740 {flags=1
 digital=1
-dig_max_waves=10
-y1 = -0.26576
-y2 = 1.73425
+dig_max_waves=12
+y1 = -0.141057
+y2 = 1.85894
 divy = 1
 x1=-5.24603e-09
 x2=8.81323e-07
@@ -17,10 +17,14 @@ subdivx=4
 unitx=n
 node="
 out_o[3:0],v(out_o[3]),v(out_o[2]),v(out_o[1]),v(out_o[0])
+---OUTPUT---
 v(clk_i) v(reset_i)
+---INPUTS---
 v(net1) v(_00_) v(_01_) v(clknet_0_clk_i) v(clknet_1_0_0_clk_i)
+---INTERNALS---
 "
-color="5 4 4 1 1 1 1 1 1 1"}
+color="5 5 4 4 4 1 1 1 1 1 1 1"
+}
 B 2 730 -1610 2220 -1260 {flags=1
 y1 = 0
 y2 = 2
@@ -50,10 +54,11 @@ dragging the mouse around it its x-axis can be adjusted
 independently.
 
 To add nets to a graph select it by dragging around its 
-container rectangle and press 'q'.
+container rectangle and press 'q', add nodes to the 'node'
+attribute.
 Top graph is an 'analog' graph, bottom graph has 'digital=1'
 attribute set to make it 'digital' style.
-} 10 -1180 0 0 0.4 0.4 {}
+} 10 -1200 0 0 0.4 0.4 {}
 T {VERILOG IMPORTED 
 4 BIT COUNTER,
 SYNCHRONOUS RESET} 10 -1630 0 0 1 1 {layer=5}
