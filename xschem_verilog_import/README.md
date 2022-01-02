@@ -9,8 +9,7 @@ This will create schematic `counter.sch` (and symbol `counter.sym`)
 ![2](https://user-images.githubusercontent.com/69359491/147863353-ee0a7433-9cd7-4f15-bff4-167062b674a5.png)
 
 The schematic has been cleaned up by removing power taps, filler cells
-and power decaps, since these are not used in sim.
-
+and power decaps, since these are not used in simulation.
 The cleaned up example is saved in `counter_clean.v`
 
 You must edit `make_sky130_sch_from_verilog.awk` and change the 
