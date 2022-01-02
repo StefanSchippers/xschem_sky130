@@ -13,8 +13,10 @@ and power decaps, since these are not used in simulation.
 The cleaned up example is saved in `counter_clean.v`
 
 You must edit `make_sky130_sch_from_verilog.awk` and change the 
-`xschem_lib_path` to point to the `xschem_stdcell` directory
+`xschem_lib_path` to point to the `sky130_stdcells` directory
 containing xschem symbols for the `sky130_fd_sc_hd` standard cells.
+If you are using open_pdks it is usually located in:  
+`<install_path>/share/pdk/sky130A/libs.tech/xschem/sky130_stdcells`
 
 After adding the code.sym elements for locating the Skywater spice models and giving spice 
 commands and voltage sources the circuit can be simulated right away. I have added also a graph in 
