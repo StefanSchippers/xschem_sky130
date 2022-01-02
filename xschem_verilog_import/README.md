@@ -16,7 +16,7 @@ You must edit `make_sky130_sch_from_verilog.awk` and change the
 `xschem_lib_path` to point to the `xschem_stdcell` directory
 containing xschem symbols for the `sky130_fd_sc_hd` standard cells.
 
-After adding the code.sym elements for pointing to the wkywater spice models and giving spice 
+After adding the code.sym elements for pointing to the Skywater spice models and giving spice 
 commands and voltage sources the circuit can be simulated right away. I have added also a graph in 
 the schematic (New xschem feature!) so waveforms can be loaded / viewed / zoomed directly.
 For waveform raw file loading into xschem ngspice must save the file in **binary** format.
