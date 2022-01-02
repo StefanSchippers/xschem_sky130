@@ -13,7 +13,7 @@ and power decaps, since these are not used in simulation.
 The cleaned up example is saved in `counter_clean.v`
 
 You must edit `make_sky130_sch_from_verilog.awk` and change the 
-`xschem_lib_path` to point to the `xschem_stdcell` directory
+`xschem_lib_path` to point to the `sky130_stdcells` directory
 containing xschem symbols for the `sky130_fd_sc_hd` standard cells.
 
 After adding the code.sym elements for locating the Skywater spice models and giving spice 
