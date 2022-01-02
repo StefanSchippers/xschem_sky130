@@ -21,7 +21,7 @@ V {}
 S {}
 E {}
 B 2 1030 -950 1460 -630 {flags=1
-y1 = 0
+y1 = -2.4e-18
 y2 = 0.00058
 divy = 5
 subdivy=1
@@ -32,7 +32,7 @@ subdivx=4
 node="i(vd1) i(vd2)"
 color="4 5" unity=u}
 B 2 1470 -950 1900 -630 {flags=1
-y1 = -0
+y1 = -1.9e-18
 y2 = 0.00063
 divy = 5
 subdivy=1
@@ -43,8 +43,8 @@ subdivx=4
 node="i(vd4)"
 color="4 5" unity=u}
 B 2 1910 -950 2340 -630 {flags=1
-y1 = -2.69515e-05
-y2 = 0.00101078
+y1 = -5.2e-18
+y2 = 0.0053
 divy = 5
 subdivy=1
 x1=0

@@ -1,0 +1,16 @@
+K {type=primitive
+format="@name @@A @LVPWR @VGND @VNB @VPB @VPWR @@X sky130_fd_sc_hvl__lsbuflv2hv_1"
+template="name=x1 LVPWR=LVPWR VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_pr__ "
+extra="LVPWR VGND VNB VPB VPWR prefix"}
+T {@symname} 0 -6 0 0 0.3 0.3 {hcenter=true}
+T {@name} 135 -32 0 0 0.2 0.2 {}
+L 4 -130 -20 130 -20 {}
+L 4 -130 20 130 20 {}
+L 4 -130 -20 -130 20 {}
+L 4 130 -20 130 20 {}
+B 5 147.5 -12.5 152.5 -7.5 {name=A dir=inout }
+L 7 130 -10 150 -10 {}
+T {A} 125 -14 0 1 0.2 0.2 {}
+B 5 147.5 7.5 152.5 12.5 {name=X dir=inout }
+L 7 130 10 150 10 {}
+T {X} 125 6 0 1 0.2 0.2 {}
