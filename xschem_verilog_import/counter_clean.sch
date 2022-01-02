@@ -4,33 +4,33 @@ K {}
 V {}
 S {}
 E {}
-B 2 730 -1260 2220 -740 {flags=1
+B 2 730 -1260 2220 -740 {flags=3
 digital=1
 dig_max_waves=12
-y1 = -0.141057
-y2 = 1.85894
+y1 = 0
+y2 = 2
 divy = 1
-x1=-5.24603e-09
-x2=8.81323e-07
+x1=-1.19266e-08
+x2=8.82928e-07
 divx=12
 subdivx=4
 unitx=n
 node="
-out_o[3:0],v(out_o[3]),v(out_o[2]),v(out_o[1]),v(out_o[0])
 ---OUTPUT---
-v(clk_i) v(reset_i)
+out_o[3:0],v(out_o[3]),v(out_o[2]),v(out_o[1]),v(out_o[0])
 ---INPUTS---
-v(net1) v(_00_) v(_01_) v(clknet_0_clk_i) v(clknet_1_0_0_clk_i)
+v(clk_i) v(reset_i)
 ---INTERNALS---
+v(net1) v(_00_) v(_01_) v(clknet_0_clk_i) v(clknet_1_0_0_clk_i)
 "
 color="5 5 4 4 4 1 1 1 1 1 1 1"
 }
-B 2 730 -1610 2220 -1260 {flags=1
+B 2 730 -1510 2220 -1260 {flags=3
 y1 = 0
 y2 = 2
 divy = 5
-x1=2.78741e-07
-x2=2.82036e-07
+x1=2.77893e-07
+x2=2.91833e-07
 divx=8
 subdivx=4
 unitx=n
@@ -38,6 +38,22 @@ node="
 v(clk_i)
 v(out_o[3]) v(out_o[2]) v(out_o[1]) v(out_o[0]) 
 
+"
+color="4 5 5 5 5 "
+
+}
+B 2 730 -1780 2220 -1510 {flags=3
+y1 = -0.00083
+y2 = 6.1e-05
+divy = 5
+unity=u
+x1=2.77893e-07
+x2=2.91833e-07
+divx=8
+subdivx=4
+unitx=n
+node="
+i(vvpwr)
 "
 color="4 5 5 5 5 "
 
