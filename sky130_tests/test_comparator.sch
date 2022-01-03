@@ -34,6 +34,33 @@ L 4 410 -160 570 -160 {}
 L 4 570 -180 570 -160 {}
 L 4 570 -180 690 -180 {}
 L 7 1090 -240 2470 -240 {}
+B 2 800 -1930 2170 -1510 {flags=1
+y1=0.02
+y2=1.9
+divy=4
+subdivy=1
+x1=3.5806e-08
+x2=2.92632e-07
+divx=8
+subdivx=1
+node="v(saout)"
+color="7 8 10 11 12 13 14 15 16 17"
+unitx=n
+}
+B 2 800 -2200 2170 -1930 {flags=1
+y1=1.09017
+y2=1.10752
+divy=4
+subdivy=1
+x1=3.5806e-08
+x2=2.92632e-07
+divx=8
+subdivx=1
+node="v(plus) v(minus)"
+color="7 8 10 11 12 13 14 15 16 17"
+dataset=0
+unitx=n
+}
 T {CAL} 140 -190 0 1 0.4 0.4 {}
 T {EN} 140 -140 0 1 0.4 0.4 {}
 T {CALIBRATION
@@ -647,3 +674,15 @@ value="
 
 "
 spice_ignore=false}
+C {devices/launcher.sym} 245 -1705 0 0 {name=h1 
+descr="Select arrow and 
+Ctrl-Left-Click to load/unload waveforms
+after running simulation" 
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}
+C {devices/launcher.sym} 250 -1620 0 0 {name=h4
+descr="View Raw file" 
+tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
+}

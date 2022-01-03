@@ -10,20 +10,21 @@ dig_max_waves=12
 y1 = 0
 y2 = 2
 divy = 1
-x1=-9.77208e-09
-x2=8.76794e-07
+x1=1.22655e-08
+x2=8.98831e-07
 divx=12
 subdivx=4
 unitx=n
 node="
 OUTPUT
-out_o[3:0],v(out_o[3]),v(out_o[2]),v(out_o[1]),v(out_o[0])
+out_o[3:0],out_o[3],out_o[2],out_o[1],out_o[0]
 INPUTS
-v(clk_i) v(reset_i)
+clk_i reset_i
 INTERNALS
-v(net1) v(_00_) v(_01_) v(clknet_0_clk_i) v(clknet_1_0_0_clk_i)
+net1 _00_ _01_ clknet_0_clk_i clknet_1_0_0_clk_i
 "
 color="5 5 4 4 4 1 1 1 1 1 1 1"
+ ypos1=0.10156 ypos2=2.2912
 }
 B 2 730 -1510 2220 -1260 {flags=3
 y1 = 0
@@ -35,8 +36,8 @@ divx=8
 subdivx=4
 unitx=n
 node="
-v(clk_i)
-v(out_o[3]) v(out_o[2]) v(out_o[1]) v(out_o[0]) 
+clk_i
+out_o[3] out_o[2] out_o[1] out_o[0] 
 "
 color="4 5 5 5 5 "
 
@@ -97,8 +98,8 @@ responsive during simulation.
 Will run for 40 iterations.
 If you need to stop:
 press Escape key} 1840 -520 0 0 0.5 0.5 {}
-C {devices/ipin.sym} 100 -200 0 0 {name=p67 lab=clk_i }
-C {devices/ipin.sym} 100 -180 0 0 {name=p68 lab=reset_i }
+C {devices/ipin.sym} 100 -200 0 0 {name=clock lab=clk_i }
+C {devices/ipin.sym} 100 -180 0 0 {name=reset lab=reset_i }
 C {devices/opin.sym} 180 -200 0 0 {name=p69 lab=out_o[3:0] }
 C {devices/lab_pin.sym} 550 -250 0 0 {name=p0 lab=net2 }
 C {devices/lab_pin.sym} 630 -250 0 1 {name=p1 lab=_04_ }
@@ -240,31 +241,30 @@ tclcommand="
   set count 0
   set duration 1000
   set logic_value 0
-  xschem select instance p67 ;# clk_i
-  xschem select instance p68 ;# reset_i
-  xschem logic_set 0         ;# reset pulse (active high) 
+  xschem select instance clock
+  xschem select instance reset
+  xschem logic_set 0
   update ; after $duration
-  xschem select instance p67 clear ;# release clk_i
+  xschem select instance clock clear ;# release clk
 
-  xschem select instance p68 ;# reset_i
+  xschem select instance reset
   xschem logic_set 1
   update ; after $duration
-  xschem select instance p68 clear
+  xschem select instance reset clear
   update ; after $duration
 
-  xschem select instance p67 ;# clk_i
+  xschem select instance clock
   xschem logic_set 1
   update ; after $duration
 
   xschem logic_set 0
   update ; after $duration
 
-  xschem select instance p68 ;# reset_i
+  xschem select instance reset
   xschem logic_set 0
   update ; after $duration
-  xschem select instance p68 clear ;# release reset_i
-  xschem select instance p67 ;# select clk_i
-
+  xschem select instance reset clear ;# release reset_i
+  xschem select instance clock
   while \{1\} \{
     update ;# allow event loop to come in (update screen, user input etc) 
     incr count

@@ -25,69 +25,69 @@ y1 = 0
 y2 = 2
 divy = 5
 subdivx=4
-x1=-4.03723e-06
-x2=0.000145963
+x1=0
+x2=0.00015
 divx=4
 node="v(x1.adj) "
 color="5 13 14 15 16"
-dataset=5 unitx=u}
+dataset=2 unitx=u}
 B 2 2250 -250 2710 -170 {flags=1
 y1 = 0
 y2 = 2
 divy = 1
-x1=-4.03723e-06
-x2=0.000145963
+x1=0
+x2=0.00015
 subdivx=4
 divx=4
 node="v(x1.f2)"
 color="12 13 14 15 16"
-dataset=5 unitx=u}
+dataset=2 unitx=u}
 B 2 2250 -140 2710 -60 {flags=1
 y1 = 0
 y2 = 2
 divy = 1
-x1=-4.03723e-06
-x2=0.000145963
+x1=0
+x2=0.00015
 subdivx=4
 divx=4
 node="v(x1.f1)"
 color=" 13 14 15 16"
-dataset=5 unitx=u}
+dataset=2 unitx=u}
 B 2 2250 -650 2710 -460 {flags=1
-y1 = 0
-y2 = 2
+y1 = -0.22508
+y2 = 2.05492
 divy = 5
 subdivx=4
-x1=-4.03723e-06
-x2=0.000145963
+x1=0
+x2=0.00015
 divx=4
 node="v(x1.adj2)  v(clk)"
 color="12 13 14 15 16"
- dataset=5 unitx=u}
+ dataset=2 unitx=u}
 B 2 2250 -850 2710 -660 {flags=1
-y1 = 0.859092
-y2 = 0.860686
+y1 = 0.85919
+y2 = 0.85963
 divy = 8
 subdivy=1
 unity=m
-x1=-4.03723e-06
-x2=0.000145963
+x1=0
+x2=0.00015
 divx=4
 node="v(x1.net3) v(x1.plus) "
 color="12 13 14 15 16"
- subdivx=4 dataset=5 unitx=u}
+ subdivx=4 dataset=2 unitx=u}
 B 2 2250 -1050 2710 -860 {flags=1
-y1 = 0.859023
-y2 = 0.860689
+y1 = 0.859255
+y2 = 0.859478
 divy = 8
 subdivy=1
 unity=m
-x1=-4.03723e-06
-x2=0.000145963
+x1=0
+x2=0.00015
 divx=4
 node="v(x1.minus) v(x1.plus) "
 color="12 13 14 15 16"
- subdivx=4 dataset=5 unitx=u}
+ subdivx=4 dataset=2 unitx=u}
 N 660 -230 660 -200 { lab=E2}
 N 410 -80 660 -80 { lab=VSS}
 N 570 -170 570 -140 { lab=#net1}
