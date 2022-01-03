@@ -41,8 +41,8 @@ subdivx=4
 node="vbg"
 color="4 5" unitx=u}
 B 2 820 -740 1280 -610 {flags=1
-y1 = 0.995427
-y2 = 1.34776
+y1 = 1.14304
+y2 = 1.18664
 divy = 5
 subdivy=1
 x1=0
