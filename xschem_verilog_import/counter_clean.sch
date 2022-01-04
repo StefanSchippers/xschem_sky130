@@ -24,14 +24,14 @@ INTERNALS
 net1 _00_ _01_ clknet_0_clk_i clknet_1_0_0_clk_i
 "
 color="5 5 4 4 4 1 1 1 1 1 1 1"
- ypos1=0.10156 ypos2=2.2912
+ ypos1=0.143511 ypos2=2.14352
 }
 B 2 730 -1510 2220 -1260 {flags=3
 y1 = 0
 y2 = 2
 divy = 5
-x1=2.75112e-07
-x2=2.93126e-07
+x1=2.7952e-07
+x2=2.91049e-07
 divx=8
 subdivx=4
 unitx=n
@@ -47,8 +47,8 @@ y1 = -0.00083
 y2 = 6.1e-05
 divy = 5
 unity=u
-x1=2.75112e-07
-x2=2.93126e-07
+x1=2.7952e-07
+x2=2.91049e-07
 divx=8
 subdivx=4
 unitx=n
