@@ -23,8 +23,8 @@ clk_i reset_i
 INTERNALS
 net1 _00_ _01_ clknet_0_clk_i clknet_1_0_0_clk_i
 "
-color="5 5 4 4 4 1 1 1 1 1 1 1"
- ypos1=0.143511 ypos2=2.14352
+color="18 5 18 4 4 18 1 1 1 1 1 1"
+ ypos1=0.149421 ypos2=2.35443
 }
 B 2 730 -1510 2220 -1260 {flags=3
 y1 = 0
