@@ -54,6 +54,7 @@ BEGIN{
     # print "<" $0 ">" " " NF
     gsub(/$/, ";")
     gsub(/[\n \t]+/, " ")
+    gsub(/\\/, "\\\\\\\\\\\\\\\\")
 
     if($1 ~/^ *module/) {
       spice_subckt()
@@ -78,7 +79,6 @@ BEGIN{
     process()
   }
 }
-
 
 #  module counter (VGND, VPWR, clk_i, reset_i, out_o);
 #  input VGND;
@@ -141,7 +141,9 @@ function getdir(s)
 #  sky130_fd_sc_hd__buf_2 output5 (.A(net5), .VGND(VGND), .VNB(VGND), .VPB(VPWR), .VPWR(VPWR), .X(out_o[3]));
 function spice_instance(     s, i, net, pin)
 {
-  gsub(/[.(), ;]+/, " ")
+  gsub(/[(), ;]+/, " ")
+  gsub(/ \./, " ")
+  gsub(/\(\./," ")
   # sky130_fd_sc_hd__decap_8 FILLER_0_19 VGND VGND VNB VGND VPB VPWR VPWR VPWR 
   sub(skip_symbol_prefix,"")
   s = "X" $2 " " # instance name
@@ -158,7 +160,7 @@ function spice_instance(     s, i, net, pin)
     if(pin in implicit_pin) s = s " " pin "=" net
     else continue
   }
-  #print "<<" s ">>"
+  # print "<<" s ">>"
   netlist[netlist_lines++] = s
 }
 
