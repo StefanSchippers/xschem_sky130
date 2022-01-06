@@ -7,8 +7,8 @@ BEGIN{
   error_missing=0 ## flag to terminate or continue in case of missing subckt definitions in netlist
 
   # this must be adjusted to match system library installation path
-  xschem_lib_path="$HOME/.xschem/xschem_library/xschem_sky130/sky130_stdcells"
-
+  # xschem_lib_path="$HOME/.xschem/xschem_library/xschem_sky130/sky130_stdcells"
+  xschem_lib_path="$PDK_ROOT/sky130A/libs.tech/xschem/sky130_stdcells"
   xschem_lib_name= "sky130_stdcells"
   skip_symbol_prefix= "sky130_fd_sc_hd__"
 
@@ -51,6 +51,7 @@ BEGIN{
   netlist_lines=0
   spice_line = ""
   while( (err = getline) >0) {
+    # print "<" $0 ">" " " NF
     gsub(/$/, ";")
     gsub(/[\n \t]+/, " ")
 
@@ -85,30 +86,33 @@ BEGIN{
 #  input clk_i;
 #  input reset_i;
 #  output [3:0] out_o;
-function spice_subckt(        i, j, s, tmp, hi, low, pinname, pindir, npin)
+function spice_subckt(        k, i, j, s, tmp, hi, low, pinname, pindir, npin)
 {
   gsub(/[(), ;]+/, " ")
   # module counter VGND VPWR clk_i reset_i out_o 
   s = ".subckt " $2
   npin = NF - 2
+  k = 0
   for(i = 0; i < npin; i++) {
     RS="\n"
     getline
+    # print "<<" $0 ">>" " " npin
     sub(/;/, "")
     if( $2 ~ /\[.*\]/) {  # [3:0]
       hi = $2; sub(/^.*\[/, "", hi); sub(/ *:.*/, "", hi) # 3
       low = $2; sub(/^.*: */, "", low); sub(/\].*/, "", low) # 0
       if(hi < low) { tmp = hi; hi = low; low = tmp; }
-      npin += hi - low  # += 3
+      
       for(j = hi; j >= low; j--) {
-        pinname[i] = $3 "[" j "]"
-        pindir[i++] = getdir($1)
+        pinname[k] = $3 "[" j "]"
+        pindir[k++] = getdir($1)
       }
     } else {
-      pinname[i] = $2
-      pindir[i] = getdir($1)
+      pinname[k] = $2
+      pindir[k++] = getdir($1)
     }
   }
+  npin = k
   for(i = 0; i < npin; i++) {
     if(pinname[i] in implicit_pin) continue
     s = s " " pinname[i]
@@ -154,7 +158,7 @@ function spice_instance(     s, i, net, pin)
     if(pin in implicit_pin) s = s " " pin "=" net
     else continue
   }
-  # print s
+  #print "<<" s ">>"
   netlist[netlist_lines++] = s
 }
 
