@@ -1,6 +1,7 @@
-v { version=2.9.8 file_version=1.2}
+v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {type=primitive
+function2="0 1 |"
 format="@name @@A @@B @VGND @VNB @VPB @VPWR @@X @prefix\\\\or2_2"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"

@@ -2,7 +2,7 @@
 
 Run this command: 
 
-`./make_sky130_sch_from_verilog.awk counter.v`
+`./make_sky130_sch_from_verilog.awk counter.v > log`
 
 This will create schematic `counter.sch` (and symbol `counter.sym`) 
 

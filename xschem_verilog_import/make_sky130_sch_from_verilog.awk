@@ -54,7 +54,6 @@ BEGIN{
     # print "<" $0 ">" " " NF
     gsub(/$/, ";")
     gsub(/[\n \t]+/, " ")
-    gsub(/\\/, "\\\\\\\\\\\\\\\\")
 
     if($1 ~/^ *module/) {
       spice_subckt()
@@ -144,11 +143,14 @@ function spice_instance(     s, i, net, pin)
   gsub(/[(), ;]+/, " ")
   gsub(/ \./, " ")
   gsub(/\(\./," ")
+  gsub(/[.\\$]/, "_")
+  
   # sky130_fd_sc_hd__decap_8 FILLER_0_19 VGND VGND VNB VGND VPB VPWR VPWR VPWR 
   sub(skip_symbol_prefix,"")
   s = "X" $2 " " # instance name
   for(i = 3; i <= NF; i+=2) { # pin list
     pin = $i
+    if(pin ~ /^\\/) gsub(/[][]/, "_", pin)
     net = $(i+1)
     if(pin in implicit_pin) continue
     else s = s " " net
