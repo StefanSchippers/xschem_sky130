@@ -1,9 +1,11 @@
 V {}
 G {}
 S {}
-C {devices/ipin} 190 20 0 0  {name=p67 lab=clk_i }
-C {devices/ipin} 190 40 0 0  {name=p68 lab=reset_i }
-C {devices/opin} 270 20 0 0  {name=p69 lab=out_o[3:0] }
+C {devices/ipin} 190 20 0 0  {name=p67 lab=VGND }
+C {devices/ipin} 190 40 0 0  {name=p68 lab=VPWR }
+C {devices/ipin} 190 60 0 0  {name=p69 lab=clk_i }
+C {devices/ipin} 190 80 0 0  {name=p70 lab=reset_i }
+C {devices/opin} 270 20 0 0  {name=p71 lab=out_o[3:0] }
 C {sky130_stdcells/decap_8} 1300 60 0 0 {name=XFILLER_0_19 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
 C {sky130_stdcells/fill_1} 1300 160 0 0 {name=XFILLER_0_27 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }
 C {sky130_stdcells/decap_8} 1300 260 0 0 {name=XFILLER_0_29 VGND=VGND VNB=VGND VPB=VPWR VPWR=VPWR }

@@ -1,19 +1,25 @@
 K {type=primitive
-format="@name @@clk_i @@reset_i @@out_o[3] @@out_o[2] @@out_o[1] @@out_o[0] counter VGND=@VGND VPWR=@VPWR"
-template="name=x1 prefix=sky130_fd_sc_hd__ VGND=VGND VPWR=VPWR "
+format="@name @@VGND @@VPWR @@clk_i @@reset_i @@out_o[3] @@out_o[2] @@out_o[1] @@out_o[0] counter"
+template="name=x1 prefix=sky130_fd_sc_hd__ "
 extra=" prefix"}
 T {@symname} 0 -6 0 0 0.3 0.3 {hcenter=true}
-T {@name} 135 -32 0 0 0.2 0.2 {}
-L 4 -130 -20 130 -20 {}
-L 4 -130 20 130 20 {}
-L 4 -130 -20 -130 20 {}
-L 4 130 -20 130 20 {}
-B 5 -152.5 -12.5 -147.5 -7.5 {name=clk_i dir=in }
+T {@name} 135 -52 0 0 0.2 0.2 {}
+L 4 -130 -40 130 -40 {}
+L 4 -130 40 130 40 {}
+L 4 -130 -40 -130 40 {}
+L 4 130 -40 130 40 {}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=VGND dir=in }
+L 4 -150 -30 -130 -30 {}
+T {VGND} -125 -34 0 0 0.2 0.2 {}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=VPWR dir=in }
 L 4 -150 -10 -130 -10 {}
-T {clk_i} -125 -14 0 0 0.2 0.2 {}
-B 5 -152.5 7.5 -147.5 12.5 {name=reset_i dir=in }
+T {VPWR} -125 -14 0 0 0.2 0.2 {}
+B 5 -152.5 7.5 -147.5 12.5 {name=clk_i dir=in }
 L 4 -150 10 -130 10 {}
-T {reset_i} -125 6 0 0 0.2 0.2 {}
-B 5 147.5 -12.5 152.5 -7.5 {name=out_o[3:0] dir=out }
-L 4 130 -10 150 -10 {}
-T {out_o[3:0]} 125 -14 0 1 0.2 0.2 {}
+T {clk_i} -125 6 0 0 0.2 0.2 {}
+B 5 -152.5 27.5 -147.5 32.5 {name=reset_i dir=in }
+L 4 -150 30 -130 30 {}
+T {reset_i} -125 26 0 0 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=out_o[3:0] dir=out }
+L 4 130 -30 150 -30 {}
+T {out_o[3:0]} 125 -34 0 1 0.2 0.2 {}

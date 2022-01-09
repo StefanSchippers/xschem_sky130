@@ -24,6 +24,9 @@ BEGIN{
   implicit_pin["VNB"]=1
   implicit_pin["VPB"]=1
 
+  # put power connections in subckt pin list
+  dis_implicit_subckt=1
+
   # sym_type = "subcircuit"
   sym_type = "primitive" # do not use schematics although they will be generated
 
@@ -112,17 +115,18 @@ function spice_subckt(        k, i, j, s, tmp, hi, low, pinname, pindir, npin)
   }
   npin = k
   for(i = 0; i < npin; i++) {
-    if(pinname[i] in implicit_pin) continue
+    if(!dis_implicit_subckt && (pinname[i] in implicit_pin)) continue
     s = s " " pinname[i]
   }
   for(i = 0; i < npin; i++) {
-    if(pinname[i] in implicit_pin) s = s " " pinname[i] "=" pinname[i] 
+    if(!dis_implicit_subckt && (pinname[i] in implicit_pin))
+      s = s " " pinname[i] "=" pinname[i] 
   }
   # print s
   netlist[netlist_lines++] = s
   s = "*.PININFO"
   for(i = 0; i < npin; i++) {
-    if(pinname[i] in implicit_pin) continue
+    if(!dis_implicit_subckt && (pinname[i] in implicit_pin)) continue
     s = s " " pinname[i] ":" pindir[i]
   }
   # print s
@@ -141,7 +145,6 @@ function spice_instance(     s, i, net, pin)
 {
   gsub(/[(), ;]+/, " ")
   gsub(/ \./, " ")
-  gsub(/[.$]/, "_")
   
   # sky130_fd_sc_hd__decap_8 FILLER_0_19 VGND VGND VNB VGND VPB VPWR VPWR VPWR 
   sub(skip_symbol_prefix,"")
@@ -149,7 +152,15 @@ function spice_instance(     s, i, net, pin)
   for(i = 3; i <= NF; i+=2) { # pin list
     pin = $i
     net = $(i+1)
-    if(net ~ /^\\/) gsub(/[][]/, "_", net)
+    if(net ~ /^\\/) {
+      gsub(/[_]/, "__", net)
+      gsub(/[]]/, "_c", net)
+      gsub(/[[]/, "_o", net)
+      # gsub(/[\\]/, "_b", net)
+      gsub(/[\\]/, "", net) # we remove backslash since it is already an escape character for verilog
+      gsub(/[.]/, "_d", net)
+      gsub(/[$]/, "_s", net)
+     }
     if(pin in implicit_pin) continue
     else s = s " " net
   }
@@ -224,7 +235,7 @@ function process_subckts(         j, i,name)
    j = 1
    for(i=3;i<=NF;i++) {
      if($i~ /=/) { template=i; break}
-     if(!($i in implicit_pin)) {
+     if(dis_implicit_subckt || !($i in implicit_pin)) {
        pin_ar[curr_subckt,j]=$i
        pin_ar[curr_subckt,"format"]=pin_ar[curr_subckt,"format"] " @@" $i
        j++
