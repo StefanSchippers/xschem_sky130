@@ -68,7 +68,6 @@ BEGIN{
   skip=0
   for(i=0;i<netlist_lines; i++) { 
     $0=netlist[i]
-    print
     process_subckts()
   }
 
@@ -142,16 +141,15 @@ function spice_instance(     s, i, net, pin)
 {
   gsub(/[(), ;]+/, " ")
   gsub(/ \./, " ")
-  gsub(/\(\./," ")
-  gsub(/[.\\$]/, "_")
+  gsub(/[.$]/, "_")
   
   # sky130_fd_sc_hd__decap_8 FILLER_0_19 VGND VGND VNB VGND VPB VPWR VPWR VPWR 
   sub(skip_symbol_prefix,"")
   s = "X" $2 " " # instance name
   for(i = 3; i <= NF; i+=2) { # pin list
     pin = $i
-    if(pin ~ /^\\/) gsub(/[][]/, "_", pin)
     net = $(i+1)
+    if(net ~ /^\\/) gsub(/[][]/, "_", net)
     if(pin in implicit_pin) continue
     else s = s " " net
   }
