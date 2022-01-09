@@ -172,6 +172,9 @@ function translate(cellname)
  else return cellname
 }
 
+# B 5 -92.5 17.5 -87.5 22.5 {name=RESET_B dir=in
+# goto=3
+# clock=2}
 
 function insert_symbol(sym, lib,          n,cellname, name, dir, tmp)
 {
@@ -192,7 +195,7 @@ function insert_symbol(sym, lib,          n,cellname, name, dir, tmp)
     sub(/.*=/,"",name)
     dir=$0
     sub(/.*dir[ \t]*=/,"",dir)
-    sub(/[ \t]+.*\}.*/,"",dir)
+    sub(/[ \t]+.*/,"",dir)
     dir= (dir=="in") ? "I" : ( (dir=="out") ? "O" : "B" )
     pin_ar[cellname, ++n] = name
     pin_x[cellname,name]=($3+$5)/2
