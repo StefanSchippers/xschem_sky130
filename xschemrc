@@ -63,6 +63,22 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 # set netlist_dir $env(HOME)/.xschem/simulations
 
 ###########################################################################
+#### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
+###########################################################################
+#### xschem_libs is a list of patterns of cells to exclude from netlisting.
+#### Matching is done as regular expression on full cell path
+#### Example:
+#### set xschem_libs { {/cmoslib/} {/analoglib/.*pass} buffer }
+#### in this case all schematic cells of directory cmoslib and cells containing
+#### /analoglib/...pass and buffer will be excluded from netlisting
+#### default value: empty
+# set xschem_libs {}
+#### noprint_libs is a list with same rules as for xschem_libs. This
+#### variable controls hierarchical print
+#### default value: empty
+# set noprint_libs {}
+
+###########################################################################
 #### CHANGE DEFAULT [] WITH SOME OTHER CHARACTERS FOR BUSSED SIGNALS 
 #### IN SPICE NETLISTS (EXAMPLE: DATA[7] --> DATA<7>) 
 ###########################################################################
@@ -107,6 +123,10 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### default: 0
 # set persistent_command 1
 
+#### if set to 1 a wire is inserted when separating components that are
+#### connected by pins. Default: not enabled (0)
+# set connect_by_kissing 1
+
 #### if set to 1 automatically join/trim wires while editing
 #### this may slow down on rally big designs. Can be disabled via menu 
 #### default: 0
@@ -136,6 +156,17 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 # set to_pdf ps2pdf
 set to_pdf {ps2pdf -dAutoRotatePages=/None}
 
+###########################################################################
+#### UNDO: SAVE ON DISK OR KEEP IN MEMORY
+###########################################################################
+#### Alloved: 'disk'or 'memory'. 
+#### Saving undo on disk is safer but slower on extremely big schematics.
+#### In most cases you won't notice any delay. Undo on disk allows previous
+#### state recovery in case of crashes. In-memory undo is extremely fast
+#### but should a crash occur everything is lost.
+#### It is highly recommended to keep undo on disk.
+#### Default: disk
+# set undo_type disk
 
 ###########################################################################
 #### CUSTOM GRID / SNAP VALUE SETTINGS
@@ -258,12 +289,20 @@ set bespice_listen_port 2022
 #### list of tcl files to preload.
 # lappend tcl_files ${XSCHEM_SHAREDIR}/change_index.tcl
 lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
+
 ###########################################################################
 #### XSCHEM TOOLBAR
 ###########################################################################
 #### default: not enabled.
 set toolbar_visible 1
 # set toolbar_horiz   1
+
+###########################################################################
+#### TABBED WINDOWS
+###########################################################################
+# default: not enabled. Interface can be changed runtime if only one window 
+# or tab is open.
+set tabbed_interface 1
 
 ###########################################################################
 #### SKYWATER PDK SPECIFIC VARIABLES
