@@ -20,7 +20,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 880 -1060 1310 -740 {flags=1
+B 2 880 -1060 1310 -740 {flags=graph
 y1 = -0
 y2 = 0.00021
 divy = 5
@@ -31,7 +31,7 @@ divx=4
 subdivx=4
 node="i(vd1) i(vd2)"
 color="4 5" unity=u}
-B 2 1320 -1060 1750 -740 {flags=1
+B 2 1320 -1060 1750 -740 {flags=graph
 y1 = -0
 y2 = 0.00063
 divy = 5

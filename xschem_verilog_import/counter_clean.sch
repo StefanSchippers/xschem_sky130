@@ -4,14 +4,14 @@ K {}
 V {}
 S {}
 E {}
-B 2 730 -1260 2220 -740 {flags=3
+B 2 730 -1260 2220 -740 {flags=graph_unlocked
 digital=1
 dig_max_waves=12
 y1 = 0
 y2 = 2
 divy = 1
-x1=1.22655e-08
-x2=8.98831e-07
+x1=-2.40796e-09
+x2=8.84161e-07
 divx=12
 subdivx=4
 unitx=n
@@ -26,7 +26,7 @@ net1 _00_ _01_ clknet_0_clk_i clknet_1_0_0_clk_i
 color="18 5 18 4 4 18 1 1 1 1 1 1"
  ypos1=0.149421 ypos2=2.35443
 }
-B 2 730 -1510 2220 -1260 {flags=3
+B 2 730 -1510 2220 -1260 {flags=graph_unlocked
 y1 = 0
 y2 = 2
 divy = 5
@@ -42,7 +42,7 @@ out_o[3] out_o[2] out_o[1] out_o[0]
 color="4 5 5 5 5 "
 
 }
-B 2 730 -1780 2220 -1510 {flags=3
+B 2 730 -1780 2220 -1510 {flags=graph_unlocked
 y1 = -0.00083
 y2 = 6.1e-05
 divy = 5

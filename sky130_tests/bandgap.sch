@@ -20,7 +20,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 2150 -480 2610 -290 {flags=1
+B 2 2150 -480 2610 -290 {flags=graph
 y1 = 0
 y2 = 2
 divy = 5
@@ -31,7 +31,7 @@ divx=4
 node="x1.adj"
 color="5 13 14 15 16"
 dataset=2 unitx=u}
-B 2 2150 -280 2610 -200 {flags=1
+B 2 2150 -280 2610 -200 {flags=graph
 y1 = 0
 y2 = 2
 divy = 1
@@ -42,7 +42,7 @@ divx=4
 node="x1.f2"
 color="12 13 14 15 16"
 dataset=2 unitx=u}
-B 2 2150 -170 2610 -90 {flags=1
+B 2 2150 -170 2610 -90 {flags=graph
 y1 = 0
 y2 = 2
 divy = 1
@@ -53,7 +53,7 @@ divx=4
 node="x1.f1"
 color=" 13 14 15 16"
 dataset=2 unitx=u}
-B 2 2150 -680 2610 -490 {flags=1
+B 2 2150 -680 2610 -490 {flags=graph
 y1 = -0.22508
 y2 = 2.05492
 divy = 5
@@ -64,7 +64,7 @@ divx=4
 node="x1.adj2 clk"
 color="12 13 14 15 16"
  dataset=2 unitx=u}
-B 2 2150 -880 2610 -690 {flags=1
+B 2 2150 -880 2610 -690 {flags=graph
 y1 = 0.85919
 y2 = 0.85963
 divy = 8
@@ -76,7 +76,7 @@ divx=4
 node="x1.net3 x1.plus"
 color="12 13 14 15 16"
  subdivx=4 dataset=2 unitx=u}
-B 2 2150 -1080 2610 -890 {flags=1
+B 2 2150 -1080 2610 -890 {flags=graph
 y1 = 0.859206
 y2 = 0.859512
 divy = 8
