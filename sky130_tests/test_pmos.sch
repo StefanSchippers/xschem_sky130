@@ -249,8 +249,7 @@ C {devices/launcher.sym} 435 -955 0 0 {name=h5
 descr=" Ctrl-Left-Click to load/unload
 embedded waveforms" 
 tclcommand="xschem raw_read_from_attr"
-
- spice_data="
+spice_data="
 VGl0bGU6ICoqIHNjaF9wYXRoOiAvaG9tZS9zY2hpcHBlcy8ueHNjaGVtL3hzY2hlbV9saWJyYXJ5L3hzY2hlbV9za3kxMzAvc2t5MTMwX3Rlc3RzL3Rlc3RfcG1vcy5z
 Y2gKRGF0ZTogRnJpIEphbiAyMSAxOTowMzoxNyAgMjAyMgpQbG90bmFtZTogREMgdHJhbnNmZXIgY2hhcmFjdGVyaXN0aWMKRmxhZ3M6IHJlYWwKTm8uIFZhcmlhYmxl
 czogNTUKTm8uIFBvaW50czogMTgxMApWYXJpYWJsZXM6CgkwCXYodi1zd2VlcCkJdm9sdGFnZQoJMQl2KGIpCXZvbHRhZ2UKCTIJdihkMXY4KQl2b2x0YWdlCgkzCXYo
