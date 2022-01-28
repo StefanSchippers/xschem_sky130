@@ -24,17 +24,19 @@ B 2 820 -460 1280 -220 {flags=graph
 y1 = -2e-18
 y2 = 1.8
 divy = 5
-x1=0
+x1=-6.30462e-12
 x2=0.00015
 divx=5
-node="vbg en_n start"
+node="vbg
+en_n
+start"
 color="4 5 9" subdivx=4 unitx=u}
 B 2 820 -600 1280 -470 {flags=graph
 y1 = 0.997821
 y2 = 1.36482
 divy = 5
 subdivy=1
-x1=0
+x1=-6.30462e-12
 x2=0.00015
 divx=4
 subdivx=4
@@ -45,24 +47,24 @@ y1 = 1.14304
 y2 = 1.18664
 divy = 5
 subdivy=1
-x1=0
+x1=-6.30462e-12
 x2=0.00015
 divx=4
 subdivx=4
-node="vbg"
-color="4 5" unitx=u}
+node=vbg
+color=4 unitx=u}
 B 2 820 -880 1280 -750 {flags=graph
 y1 = -4.36801e-05
 y2 = -1.68365e-05
 divy = 5
 unity=u
 subdivy=1
-x1=0
+x1=-6.30462e-12
 x2=0.00015
 divx=4
 subdivx=4
 node="i(v2)"
-color="4 5" unitx=u}
+color=4 unitx=u}
 T {Example of Mismatch simulation of a 
 bandgap reference. 
 Variations are generated also on Vcc
@@ -98,7 +100,6 @@ value="
       reset
       set appendwrite
     end
-    * save vbg x1.plus x1.minus i(v2) vcc
     save all
     if run % 3 = 0
       set temp=-40

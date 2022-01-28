@@ -29,7 +29,8 @@ x1=-1.02545e-06
 x2=-1.8
 divx=4
 subdivx=4
-node="i(vd1) i(vd2)"
+node="i(vd1)
+i(vd2)"
 color="4 5" unity=u}
 B 2 1320 -1060 1750 -740 {flags=graph
 y1 = -0
@@ -40,8 +41,8 @@ x1=0
 x2=-1.8
 divx=4
 subdivx=4
-node="i(vd4)"
-color="4 5" unity=u}
+node=i(vd4)
+color=4 unity=u}
 T {Select one or more graphs (and no other objects)
 and use arrow keys to zoom / pan waveforms} 870 -780 0 1 0.3 0.3 {}
 N 680 -490 680 -470 {lab=S}

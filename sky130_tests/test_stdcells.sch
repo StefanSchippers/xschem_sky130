@@ -32,8 +32,14 @@ ypos1=0.0757089
 ypos2=1.62518
 divx=5
 subdivx=1
-node="xschem clk a b reset_b qlatch q"
-color="7 8 10 11 12 13 14 15 16 17"
+node="xschem
+clk
+a
+b
+reset_b
+qlatch 
+q"
+color="7 8 10 11 12 13 14"
 dataset=0
 unitx=n
  }

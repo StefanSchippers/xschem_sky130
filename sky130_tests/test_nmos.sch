@@ -29,7 +29,8 @@ x1=-8.00918e-07
 x2=1.8
 divx=4
 subdivx=4
-node="i(vd1) i(vd2)"
+node="i(vd1)
+i(vd2)"
 color="4 5" unity=u}
 B 2 1470 -950 1900 -630 {flags=graph
 y1 = -1.9e-18
@@ -41,7 +42,7 @@ x2=1.8
 divx=4
 subdivx=4
 node="i(vd4)"
-color="4 5" unity=u}
+color=4 unity=u}
 B 2 1910 -950 2340 -630 {flags=graph
 y1 = -5.2e-18
 y2 = 0.0053

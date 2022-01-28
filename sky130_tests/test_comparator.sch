@@ -43,8 +43,8 @@ x1=3.5806e-08
 x2=2.92632e-07
 divx=8
 subdivx=1
-node="v(saout)"
-color="7 8 10 11 12 13 14 15 16 17"
+node=saout
+color=7
 unitx=n
 }
 B 2 800 -2200 2170 -1930 {flags=graph
@@ -56,8 +56,9 @@ x1=3.5806e-08
 x2=2.92632e-07
 divx=8
 subdivx=1
-node="v(plus) v(minus)"
-color="7 8 10 11 12 13 14 15 16 17"
+node="plus
+minus"
+color="7 8"
 dataset=0
 unitx=n
 }

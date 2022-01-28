@@ -21,17 +21,17 @@ V {}
 S {}
 E {}
 B 2 2150 -480 2610 -290 {flags=graph
-y1 = 0
-y2 = 2
+y1 = -0.0358395
+y2 = 0.907882
 divy = 5
 subdivx=4
 x1=0
 x2=0.00015
 divx=4
 node="x1.adj"
-color="5 13 14 15 16"
+color=5
 dataset=2 unitx=u}
-B 2 2150 -280 2610 -200 {flags=graph
+B 2 2150 -280 2610 -170 {flags=graph
 y1 = 0
 y2 = 2
 divy = 1
@@ -42,7 +42,7 @@ divx=4
 node="x1.f2"
 color="12 13 14 15 16"
 dataset=2 unitx=u}
-B 2 2150 -170 2610 -90 {flags=graph
+B 2 2150 -170 2610 -50 {flags=graph
 y1 = 0
 y2 = 2
 divy = 1
@@ -61,32 +61,35 @@ subdivx=4
 x1=0
 x2=0.00015
 divx=4
-node="x1.adj2 clk"
-color="12 13 14 15 16"
+node="x1.adj2
+clk"
+color="12 13"
  dataset=2 unitx=u}
 B 2 2150 -880 2610 -690 {flags=graph
-y1 = 0.85919
-y2 = 0.85963
+y1 = 0.860478
+y2 = 0.86115
 divy = 8
 subdivy=1
 unity=m
 x1=0
 x2=0.00015
 divx=4
-node="x1.net3 x1.plus"
-color="12 13 14 15 16"
+node="x1.net3
+x1.plus"
+color="12 13"
  subdivx=4 dataset=2 unitx=u}
 B 2 2150 -1080 2610 -890 {flags=graph
-y1 = 0.859206
-y2 = 0.859512
+y1 = 0.860518
+y2 = 0.861219
 divy = 8
 subdivy=1
 unity=m
 x1=0
 x2=0.00015
 divx=4
-node="x1.minus x1.plus "
-color="12 13 14 15 16"
+node="x1.minus
+x1.plus"
+color="12 13"
  subdivx=4 dataset=2 unitx=u}
 T {Load waveforms in
 parent testbench} 1880 -1070 0 0 0.5 0.5 {}
