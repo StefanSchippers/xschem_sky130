@@ -23,7 +23,7 @@ format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W
 + mult=@mult m=@mult"
 template="name=M1
 L=0.165
-W=1
+W=20.35
 nf=1
 mult=1
 ad=\\"'int((nf+1)/2) * W/nf * 0.29'\\" 
