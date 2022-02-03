@@ -27,6 +27,7 @@ L 4 1610 -300 2570 -300 {}
 L 4 1610 -95 2570 -95 {}
 L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
+L 4 2610 -1250 3570 -1250 {}
 B 2 1580 -1890 2214 -1575 {flags=image_unscaled
 alpha=0.6
 image=/home/schippes/x/1.png
@@ -79,7 +80,7 @@ sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn
 } 2340 -190 0 0 0.2 0.2 {}
-T {VARACTORS} 1630 -1355 0 0 1 1 { hcenter=true}
+T {VARACTORS} 1630 -1345 0 0 1 1 { hcenter=true}
 T {Analog primitives validation} 10 -1750 0 0 0.6 0.6 {layer=8}
 T {PERP. VPP CAP} 1660 -1475 0 0 1 1 { hcenter=true}
 T {Available models:
@@ -108,6 +109,7 @@ writes the spice netlist and runs the simulator) with the
 following content:} 2320 -1880 0 0 0.7 0.7 {layer=8}
 T {set ngbehavior=hsa
 set ng_nomodcheck } 2500 -1680 0 0 0.8 0.8 {font=Monospace}
+T {ESD} 2770 -1345 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -529,3 +531,45 @@ value="
 
 "
 spice_ignore=false}
+C {sky130_fd_pr/nfet_01v8_esd.sym} 2970 -1300 0 0 {name=M30
+L=0.165
+W=20.35
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=esd_nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d10v5_esd.sym} 3150 -1300 0 0 {name=M31
+L=0.55
+W=21.5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=esd_nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d10v5_nvt_esd.sym} 3340 -1300 0 0 {name=M32
+L=0.55
+W=21.5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=esd_nfet_g5v0d10v5_nvt
+spiceprefix=X
+}
