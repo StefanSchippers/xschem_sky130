@@ -308,12 +308,35 @@ set tabbed_interface 1
 #### SKYWATER PDK SPECIFIC VARIABLES
 ###########################################################################
 
-## (spice patched) skywater-pdk install
-# set SKYWATER_MODELS ~/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
-# set SKYWATER_STDCELLS ~/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+## check if env var PDK_ROOT exists, and use it for building open_pdks paths
+if { [info exists env(PDK_ROOT)] && $env(PDK_ROOT) ne {} } {
+  ## found variable, set tcl PDK_ROOT var
+  if {![file isdir $env(PDK_ROOT)]} {
+    puts stderr "Warning: PDK_ROOT environment variable is set but path not found on the system."
+  }
+  set PDK_ROOT $env(PDK_ROOT)
+} else {
+  ## not existing or empty. 
+  puts stderr "Warning: PDK_ROOT env. var. not found or empty, trying to find an open_pdks install"
+  if {[file isdir /usr/share/pdk]} {set PDK_ROOT /usr/share/pdk
+  } elseif {[file isdir /usr/local/share/pdk]} {set PDK_ROOT /usr/local/share/pdk
+  } elseif {[file isdir $env(HOME)/share/pdk]} {set PDK_ROOT $env(HOME)/share/pdk
+  } else {
+    puts stderr {No open_pdks installation found, set PDK_ROOT env. var. and restart xschem}
+  }
+}
 
-## opencircuitdesign pdks install. You need to change these to point to your open_pdks installation
-# set SKYWATER_MODELS /usr/local/share/pdk/sky130A/libs.tech/ngspice
-# set SKYWATER_STDCELLS /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice
-set SKYWATER_MODELS $env(HOME)/share/pdk/sky130A/libs.tech/ngspice
-set SKYWATER_STDCELLS $env(HOME)/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice
+if {[info exists PDK_ROOT]} {
+  ## get process variant
+  if {[info exists env(PDK)]} {
+    set PDK $env(PDK)
+  } else {
+    set PDK sky130A
+  }
+  set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/ngspice
+  set SKYWATER_STDCELLS ${PDK_ROOT}/${PDK}/libs.ref/sky130_fd_sc_hd/spice
+  puts stderr "open_pdks installation: using $PDK_ROOT"
+  puts stderr "SKYWATER_MODELS: $SKYWATER_MODELS"
+  puts stderr "SKYWATER_STDCELLS: $SKYWATER_STDCELLS"
+}
+
