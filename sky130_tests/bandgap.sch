@@ -20,7 +20,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 1830 -220 2290 -100 {flags=graph
+B 2 1830 -140 2290 -20 {flags=graph
 y1 = 0
 
 divy = 1
@@ -33,11 +33,11 @@ color="7 8"
 dataset=2 unitx=u
 digital=1
 y2=1.8
-ypos1=0.124035
-ypos2=0.598498}
-B 2 1830 -420 2290 -230 {flags=graph
-y1 = 0.36
-y2 = 2.16
+ypos1=0.0874617
+ypos2=0.561794}
+B 2 1830 -340 2290 -150 {flags=graph
+y1 = -2.2e-17
+y2 = 1.9
 divy = 5
 subdivx=4
 x1=0
@@ -47,34 +47,48 @@ node="x1.adj2 x1.adj
 clk"
 color="12 10 7"
   unitx=u}
-B 2 1830 -620 2290 -430 {flags=graph
-y1 = 0.860478
-y2 = 0.86115
+B 2 1830 -540 2290 -350 {flags=graph
+y1 = -0.000657762
+y2 = 0.000563566
 divy = 8
 subdivy=1
 unity=m
 x1=0
 x2=0.00015
 divx=4
-node="x1.net3
-x1.plus"
-color="12 13"
- subdivx=4 dataset=2 unitx=u}
-B 2 1830 -820 2290 -630 {flags=graph
-y1 = 0.860518
-y2 = 0.861219
+node="\\"x1.zminus x1.plus -\\""
+color=8
+ subdivx=4  unitx=u}
+B 2 1830 -1010 2290 -820 {flags=graph
+y1 = -0.000749783
+y2 = 0.000590183
 divy = 8
 subdivy=1
 unity=m
 x1=0
 x2=0.00015
 divx=4
-node="x1.minus
-x1.plus"
-color="12 13"
- subdivx=4 dataset=2 unitx=u}
+node="\\"x1.minus x1.plus -\\""
+color=8
+ subdivx=4  unitx=u}
+B 2 1830 -730 2290 -540 {flags=graph
+y1 = -0.0279359
+y2 = 0.0194078
+divy = 8
+subdivy=1
+unity=m
+x1=0
+x2=0.00015
+divx=4
+node="\\"x1.minus x1.plus -\\""
+color=7
+ subdivx=4  unitx=u}
+P 7 7 1930 -770 1930 -750 1920 -750 1930 -730 1940 -750 1930 -750 1930 -770 {fill=true}
+P 8 7 2070 -1050 2070 -1030 2060 -1030 2070 -1010 2080 -1030 2070 -1030 2070 -1050 {fill=true}
 T {Load waveforms in
-parent testbench} 1920 -910 0 0 0.5 0.5 {}
+parent testbench} 1940 -1140 0 0 0.5 0.5 {}
+T {OPAMP differential voltage after offset compensation} 1840 -1070 0 0 0.3 0.3 {layer=8}
+T {OPAMP differential voltage before offset compensation} 1830 -790 0 0 0.3 0.3 {layer=7}
 N 330 -440 330 -410 { lab=E2}
 N 80 -290 330 -290 { lab=VSS}
 N 240 -380 240 -350 { lab=#net1}
@@ -93,16 +107,16 @@ N 80 -590 530 -590 { lab=PLUS}
 N 80 -630 80 -590 { lab=PLUS}
 N 330 -530 530 -530 { lab=MINUS}
 N 330 -630 330 -530 { lab=MINUS}
-N 920 -510 940 -510 { lab=#net3}
-N 940 -440 940 -360 { lab=#net3}
-N 920 -360 940 -360 { lab=#net3}
-N 940 -440 1050 -440 { lab=#net3}
-N 940 -510 940 -440 { lab=#net3}
-N 1320 -530 1340 -530 { lab=#net4}
-N 1320 -250 1340 -250 { lab=#net4}
-N 1320 -470 1320 -250 { lab=#net4}
-N 1210 -470 1320 -470 { lab=#net4}
-N 1320 -530 1320 -470 { lab=#net4}
+N 920 -510 940 -510 { lab=ZMINUS}
+N 940 -440 940 -360 { lab=ZMINUS}
+N 920 -360 940 -360 { lab=ZMINUS}
+N 940 -440 1050 -440 { lab=ZMINUS}
+N 940 -510 940 -440 { lab=ZMINUS}
+N 1320 -530 1340 -530 { lab=#net3}
+N 1320 -250 1340 -250 { lab=#net3}
+N 1320 -470 1320 -250 { lab=#net3}
+N 1210 -470 1320 -470 { lab=#net3}
+N 1320 -530 1320 -470 { lab=#net3}
 N 1620 -530 1720 -530 { lab=ADJ2}
 N 1620 -250 1720 -250 { lab=ADJ}
 N 870 -780 1020 -780 {lab=CLK}
@@ -110,12 +124,12 @@ N 1020 -880 1120 -880 {lab=CLK}
 N 1020 -780 1020 -680 {lab=CLK}
 N 1020 -880 1020 -780 {lab=CLK}
 N 1020 -680 1040 -680 { lab=CLK}
-N 1560 -760 1560 -700 { lab=#net5}
-N 1120 -810 1560 -760 { lab=#net5}
-N 1120 -840 1120 -810 { lab=#net5}
-N 1560 -860 1560 -800 { lab=#net6}
-N 1120 -750 1560 -800 { lab=#net6}
-N 1120 -750 1120 -720 { lab=#net6}
+N 1560 -760 1560 -700 { lab=#net4}
+N 1120 -810 1560 -760 { lab=#net4}
+N 1120 -840 1120 -810 { lab=#net4}
+N 1560 -860 1560 -800 { lab=#net5}
+N 1120 -750 1560 -800 { lab=#net5}
+N 1120 -750 1120 -720 { lab=#net5}
 N 1620 -530 1620 -440 { lab=ADJ2}
 N 1420 -530 1620 -530 { lab=ADJ2}
 N 1620 -360 1620 -250 { lab=ADJ}
@@ -315,3 +329,4 @@ L=10
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1 net_name=true}
+C {devices/lab_pin.sym} 940 -460 0 1 {name=l39 sig_type=std_logic lab=ZMINUS}

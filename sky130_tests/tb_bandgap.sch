@@ -32,8 +32,8 @@ en_n
 start"
 color="4 5 9" subdivx=4 unitx=u}
 B 2 820 -600 1280 -470 {flags=graph
-y1 = 0.997821
-y2 = 1.36482
+y1 = 0.96496
+y2 = 1.30318
 divy = 5
 subdivy=1
 x1=-6.30462e-12
@@ -41,10 +41,11 @@ x2=0.00015
 divx=4
 subdivx=4
 node="vbg"
-color="4 5" unitx=u}
+color=4 unitx=u
+}
 B 2 820 -740 1280 -610 {flags=graph
-y1 = 1.14304
-y2 = 1.18664
+y1 = 1.14744
+y2 = 1.18232
 divy = 5
 subdivy=1
 x1=-6.30462e-12
@@ -95,7 +96,7 @@ value="
 .control
   option seed=12
   let run=1
-  dowhile run <= 14
+  dowhile run <= 18
     if run > 1
       reset
       set appendwrite
