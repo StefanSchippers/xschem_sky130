@@ -20,7 +20,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 820 -460 1280 -220 {flags=graph
+B 2 820 -310 1280 -70 {flags=graph
 y1 = -2e-18
 y2 = 1.8
 divy = 5
@@ -31,7 +31,7 @@ node="vbg
 en_n
 start"
 color="4 5 9" subdivx=4 unitx=u}
-B 2 820 -600 1280 -470 {flags=graph
+B 2 820 -450 1280 -320 {flags=graph
 y1 = 0.96496
 y2 = 1.30318
 divy = 5
@@ -41,9 +41,9 @@ x2=0.00015
 divx=4
 subdivx=4
 node="vbg"
-color=4 unitx=u
+color=7 unitx=u
 }
-B 2 820 -740 1280 -610 {flags=graph
+B 2 820 -650 1280 -520 {flags=graph
 y1 = 1.14744
 y2 = 1.18232
 divy = 5
@@ -53,7 +53,7 @@ x2=0.00015
 divx=4
 subdivx=4
 node=vbg
-color=4 unitx=u}
+color=8 unitx=u}
 B 2 820 -880 1280 -750 {flags=graph
 y1 = -4.36801e-05
 y2 = -1.68365e-05
@@ -66,6 +66,8 @@ divx=4
 subdivx=4
 node="i(v2)"
 color=4 unitx=u}
+P 7 7 920 -480 920 -470 910 -470 920 -450 930 -470 920 -470 920 -480 {fill=true}
+P 8 7 1070 -680 1070 -670 1060 -670 1070 -650 1080 -670 1070 -670 1070 -680 {fill=true}
 T {Example of Mismatch simulation of a 
 bandgap reference. 
 Variations are generated also on Vcc
@@ -75,6 +77,8 @@ and after the offset cancellation.
 } 230 -880 0 0 0.4 0.4 {}
 T {Select one or more graphs (and no other objects)
 and use arrow keys to zoom / pan waveforms} 250 -610 0 0 0.3 0.3 {}
+T {Bandgap voltage after offset compensation} 880 -700 0 0 0.3 0.3 {layer=8}
+T {Bandgap voltage before offset compensation} 820 -500 0 0 0.3 0.3 {layer=7}
 N 240 -340 240 -320 { lab=EN_N}
 N 650 -340 650 -320 { lab=VCC}
 N 390 -340 390 -320 { lab=VSS}
