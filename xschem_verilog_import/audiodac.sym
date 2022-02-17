@@ -1,0 +1,52 @@
+K {type=primitive
+format="@name @@VGND @@VPWR @@clk_i @@ds_n_o @@ds_o @@fifo_ack_o @@fifo_empty_o @@fifo_full_o @@fifo_rdy_i @@mode_i @@rst_n_i @@fifo_i[15] @@fifo_i[14] @@fifo_i[13] @@fifo_i[12] @@fifo_i[11] @@fifo_i[10] @@fifo_i[9] @@fifo_i[8] @@fifo_i[7] @@fifo_i[6] @@fifo_i[5] @@fifo_i[4] @@fifo_i[3] @@fifo_i[2] @@fifo_i[1] @@fifo_i[0] @@osr_i[1] @@osr_i[0] @@volume_i[3] @@volume_i[2] @@volume_i[1] @@volume_i[0] audiodac"
+template="name=x1 prefix=sky130_fd_sc_hd__ "
+extra=" prefix"}
+T {@symname} 0 -6 0 0 0.3 0.3 {hcenter=true}
+T {@name} 135 -102 0 0 0.2 0.2 {}
+L 4 -130 -90 130 -90 {}
+L 4 -130 90 130 90 {}
+L 4 -130 -90 -130 90 {}
+L 4 130 -90 130 90 {}
+B 5 -152.5 -82.5 -147.5 -77.5 {name=VGND dir=in }
+L 4 -150 -80 -130 -80 {}
+T {VGND} -125 -84 0 0 0.2 0.2 {}
+B 5 -152.5 -62.5 -147.5 -57.5 {name=VPWR dir=in }
+L 4 -150 -60 -130 -60 {}
+T {VPWR} -125 -64 0 0 0.2 0.2 {}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=clk_i dir=in }
+L 4 -150 -40 -130 -40 {}
+T {clk_i} -125 -44 0 0 0.2 0.2 {}
+B 5 147.5 -82.5 152.5 -77.5 {name=ds_n_o dir=out }
+L 4 130 -80 150 -80 {}
+T {ds_n_o} 125 -84 0 1 0.2 0.2 {}
+B 5 147.5 -62.5 152.5 -57.5 {name=ds_o dir=out }
+L 4 130 -60 150 -60 {}
+T {ds_o} 125 -64 0 1 0.2 0.2 {}
+B 5 147.5 -42.5 152.5 -37.5 {name=fifo_ack_o dir=out }
+L 4 130 -40 150 -40 {}
+T {fifo_ack_o} 125 -44 0 1 0.2 0.2 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=fifo_empty_o dir=out }
+L 4 130 -20 150 -20 {}
+T {fifo_empty_o} 125 -24 0 1 0.2 0.2 {}
+B 5 147.5 -2.5 152.5 2.5 {name=fifo_full_o dir=out }
+L 4 130 0 150 0 {}
+T {fifo_full_o} 125 -4 0 1 0.2 0.2 {}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=fifo_rdy_i dir=in }
+L 4 -150 -20 -130 -20 {}
+T {fifo_rdy_i} -125 -24 0 0 0.2 0.2 {}
+B 5 -152.5 -2.5 -147.5 2.5 {name=mode_i dir=in }
+L 4 -150 0 -130 0 {}
+T {mode_i} -125 -4 0 0 0.2 0.2 {}
+B 5 -152.5 17.5 -147.5 22.5 {name=rst_n_i dir=in }
+L 4 -150 20 -130 20 {}
+T {rst_n_i} -125 16 0 0 0.2 0.2 {}
+B 5 -152.5 37.5 -147.5 42.5 {name=fifo_i[15:0] dir=in }
+L 4 -150 40 -130 40 {}
+T {fifo_i[15:0]} -125 36 0 0 0.2 0.2 {}
+B 5 -152.5 57.5 -147.5 62.5 {name=osr_i[1:0] dir=in }
+L 4 -150 60 -130 60 {}
+T {osr_i[1:0]} -125 56 0 0 0.2 0.2 {}
+B 5 -152.5 77.5 -147.5 82.5 {name=volume_i[3:0] dir=in }
+L 4 -150 80 -130 80 {}
+T {volume_i[3:0]} -125 76 0 0 0.2 0.2 {}
