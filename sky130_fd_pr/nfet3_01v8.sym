@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -55,4 +55,5 @@ T {S} 22.5 17.5 0 0 0.15 0.15 {layer=7}
 T {D} 22.5 -17.5 2 1 0.15 0.15 {layer=7}
 T {G} -10 -10 0 1 0.15 0.15 {layer=7}
 T {@model} 30 -8.75 2 1 0.2 0.2 {}
-T {@mult x @W / @L} 31.25 11.25 0 0 0.2 0.2 { layer=13}
+T {@mult x @W / @L} 31.25 13.75 0 0 0.2 0.2 { layer=13}
+T {nf=@nf} 31.25 1.25 0 0 0.2 0.2 { layer=13}

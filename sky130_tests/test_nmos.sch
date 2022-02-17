@@ -21,11 +21,11 @@ V {}
 S {}
 E {}
 B 2 1030 -950 1460 -630 {flags=graph
-y1 = -2.4e-18
+y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=-8.00918e-07
+x1=0
 x2=1.8
 divx=4
 subdivx=4
@@ -33,22 +33,22 @@ node="i(vd1)
 i(vd2)"
 color="4 5" unity=u}
 B 2 1470 -950 1900 -630 {flags=graph
-y1 = -1.9e-18
+y1 = -0
 y2 = 0.00063
 divy = 5
 subdivy=1
-x1=-8.00918e-07
+x1=0
 x2=1.8
 divx=4
 subdivx=4
 node="i(vd4)"
 color=4 unity=u}
 B 2 1910 -950 2340 -630 {flags=graph
-y1 = -5.2e-18
+y1 = 0
 y2 = 0.0053
 divy = 5
 subdivy=1
-x1=-8.00918e-07
+x1=0
 x2=1.8
 divx=4
 subdivx=4
@@ -202,9 +202,9 @@ vb b 0 0
 .control
 save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 save all
-dc vd 0 1.8 0.01 vg 0 1.8 0.2
+dc vd 0 1.8 0.0005 vg 0 1.8 0.2
 write test_nmos.raw
-* dc vd 0 1.8 0.01 vg 0 1.2 0.1
+* dc vd 0 1.8 0.001 vg 0 1.2 0.1
 plot all.vd1#branch vs D1v8
 *plot all.vd2#branch vs D1v8
 plot all.vd3#branch vs D3v3

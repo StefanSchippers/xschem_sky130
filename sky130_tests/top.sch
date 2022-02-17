@@ -573,3 +573,4 @@ sa=0 sb=0 sd=0
 model=esd_nfet_g5v0d10v5_nvt
 spiceprefix=X
 }
+C {sky130_tests/tb_reram.sym} 490 -1600 0 0 {name=x27}
