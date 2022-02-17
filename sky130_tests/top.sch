@@ -112,7 +112,7 @@ T {set ngbehavior=hsa
 set ng_nomodcheck } 2500 -1680 0 0 0.8 0.8 {font=Monospace}
 T {ESD} 2770 -1345 0 0 1 1 { hcenter=true}
 T {RERAM} 2770 -1475 0 0 1 1 { hcenter=true}
-T {Note: Still untested!} 3100 -1470 0 0 0.7 0.7 {}
+T {Note: Still untested!} 2840 -1540 0 0 0.7 0.7 {}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
