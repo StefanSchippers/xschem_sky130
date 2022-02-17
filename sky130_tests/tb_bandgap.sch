@@ -67,8 +67,10 @@ subdivx=4
 node="\\"Icc;i(v2)\\"";i(v2)\\";i(v2)\\"
  unitx=u
 color=4}
-P 7 7 920 -480 920 -470 910 -470 920 -450 930 -470 920 -470 920 -480 {fill=true}
+P 7 7 910 -480 910 -470 900 -470 910 -450 920 -470 910 -470 910 -480 {fill=true}
+P 7 7 940 -480 940 -250 930 -250 940 -230 950 -250 940 -250 940 -480 {fill=true}
 P 8 7 1070 -680 1070 -670 1060 -670 1070 -650 1080 -670 1070 -670 1070 -680 {fill=true}
+P 8 7 1130 -680 1130 -250 1120 -250 1130 -230 1140 -250 1130 -250 1130 -680 {fill=true}
 T {Example of Mismatch simulation of a 
 bandgap reference. 
 Variations are generated also on Vcc

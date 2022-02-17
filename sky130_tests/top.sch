@@ -42,7 +42,7 @@ T {DIODE} 1660 -195 0 0 1 1 { hcenter=true}
 T {PNP} 1660 -70 0 0 1 1 { hcenter=true}
 T {Digital standard cells} 20 -1060 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 750 -1610 0 0 0.3 0.3 {layer=11}
-T {Ctrl-Click to open link} 780 -950 0 0 0.3 0.3 {layer=11}
+T {Ctrl-Click to open link} 780 -850 0 0 0.3 0.3 {layer=11}
 T {* Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0
@@ -113,6 +113,7 @@ set ng_nomodcheck } 2500 -1680 0 0 0.8 0.8 {font=Monospace}
 T {ESD} 2770 -1345 0 0 1 1 { hcenter=true}
 T {RERAM} 2770 -1475 0 0 1 1 { hcenter=true}
 T {Note: Still untested!} 2840 -1540 0 0 0.7 0.7 {}
+T {Git / Google-Skywater RERAM PDK links} 780 -1060 0 0 0.6 0.6 {layer=8}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -303,7 +304,7 @@ spiceprefix=X
 spice_ignore=true
 }
 C {sky130_tests/gates.sym} 190 -910 0 0 {name=x8}
-C {devices/launcher.sym} 810 -910 0 0 {name=h4
+C {devices/launcher.sym} 810 -810 0 0 {name=h4
 descr="List of gates" 
 url="https://github.com/RTimothyEdwards/open_pdks/blob/master/common/gate_list.txt"}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1910 -1180 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
@@ -580,3 +581,6 @@ C {sky130_tests/tb_reram.sym} 490 -1600 0 0 {name=x27}
 C {sky130_fd_pr/reram.sym} 2980 -1440 0 0 {name=Y1
 model=rram2_model
 mult=1}
+C {devices/launcher.sym} 810 -980 0 0 {name=h9
+descr=google/skywater-pdk-libs-sky130_fd_pr_reram
+url=https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram}
