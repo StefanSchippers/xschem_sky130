@@ -28,6 +28,7 @@ L 4 1610 -95 2570 -95 {}
 L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
 L 4 2610 -1250 3570 -1250 {}
+L 4 2610 -1380 3570 -1380 {}
 B 2 1580 -1890 2214 -1575 {flags=image_unscaled
 alpha=0.6
 image=/home/schippes/x/1.png
@@ -110,6 +111,8 @@ following content:} 2320 -1880 0 0 0.7 0.7 {layer=8}
 T {set ngbehavior=hsa
 set ng_nomodcheck } 2500 -1680 0 0 0.8 0.8 {font=Monospace}
 T {ESD} 2770 -1345 0 0 1 1 { hcenter=true}
+T {RERAM} 2770 -1475 0 0 1 1 { hcenter=true}
+T {Note: Still untested!} 3100 -1470 0 0 0.7 0.7 {}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -574,3 +577,6 @@ model=esd_nfet_g5v0d10v5_nvt
 spiceprefix=X
 }
 C {sky130_tests/tb_reram.sym} 490 -1600 0 0 {name=x27}
+C {sky130_fd_pr/reram.sym} 2980 -1440 0 0 {name=Y1
+model=rram2_model
+mult=1}
