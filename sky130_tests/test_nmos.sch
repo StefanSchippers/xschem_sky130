@@ -25,8 +25,8 @@ y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=0
-x2=1.8
+x1=-0.0119195
+x2=1.7881
 divx=4
 subdivx=4
 node="i(vd1)
@@ -37,8 +37,8 @@ y1 = -0
 y2 = 0.00063
 divy = 5
 subdivy=1
-x1=0
-x2=1.8
+x1=-0.0119195
+x2=1.7881
 divx=4
 subdivx=4
 node="i(vd4)"
@@ -48,11 +48,23 @@ y1 = 0
 y2 = 0.0053
 divy = 5
 subdivy=1
-x1=0
-x2=1.8
+x1=-0.0119195
+x2=1.7881
 divx=4
 subdivx=4
 node="i(vd5)"
+color="4 5" unity=u}
+B 2 2370 -950 2800 -630 {flags=graph
+y1 = 0
+y2 = 0.00058
+divy = 5
+subdivy=1
+x1=-0.0119195
+x2=1.7881
+divx=4
+subdivx=4
+node="i(vd1)
+i(vd9)"
 color="4 5" unity=u}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
@@ -116,6 +128,11 @@ N 2370 -140 2390 -140 {lab=G1v8}
 N 2430 -190 2430 -170 {lab=#net8}
 N 2430 -110 2430 -90 {lab=S}
 N 2430 -270 2430 -250 { lab=D1v8}
+N 2670 -140 2690 -140 {lab=B}
+N 2610 -140 2630 -140 {lab=G1v8}
+N 2670 -190 2670 -170 {lab=#net9}
+N 2670 -110 2670 -90 {lab=S}
+N 2670 -270 2670 -250 { lab=D1v8}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 640 -270 0 0 {name=p17 lab=D1v8}
 C {devices/lab_pin.sym} 690 -90 0 1 {name=p3 lab=S}
@@ -221,6 +238,7 @@ write test_nmos.raw
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
 L=0.15
 W=1
+nf=1
 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X}
@@ -10468,3 +10486,16 @@ E9U+cbmvZJUT1T6IV1gdkeu8P3tnlh+R66w/bTNVHZHrrD+oef171cGVP2XnLIbVwYU/Hx37e9XBhT/2
 UMk9CMcwwAB8pD3NzMzMzMz8P2VmZmZmZgpAzczMzMzM/D8BAAAAAAAUQAAAAAAAACVAAAAAAAAAMEDNzMzMzMz8P83MzMzMzPw/AAAAAAAAAACYOokQD/51PzamGIsq
 k22/AAAZYIy4Qj8AIGeQM2pAPwBA8k5/hEI/AACmeNtsRD8AYG3+fV91P6jjfrW8H2s/mAiwtJjxUz/UM0FpXKNVPwAAAAAAAAAA2WaR84ZMgD+8Y2KEprcnQINlKZc3
 k+w/C9dMZBBy9z8="}
+C {devices/lab_pin.sym} 2670 -90 0 1 {name=p54 lab=S}
+C {devices/lab_pin.sym} 2690 -140 0 1 {name=p55 lab=B}
+C {devices/ammeter.sym} 2670 -220 0 0 {name=Vd9 current=5.7132e-04}
+C {devices/lab_pin.sym} 2610 -140 0 0 {name=p56 lab=G1v8}
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 2650 -140 0 0 {name=M8
+L=0.15
+W=0.5
+mult=1
+nf=2
+model=nfet_01v8_lvt
+spiceprefix=X}
+C {devices/ngspice_get_value.sym} 2680 -170 0 0 {name=r3 node="i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])"
+descr="Id="}

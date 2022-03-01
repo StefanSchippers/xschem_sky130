@@ -114,6 +114,10 @@ T {ESD} 2770 -1345 0 0 1 1 { hcenter=true}
 T {RERAM} 2770 -1475 0 0 1 1 { hcenter=true}
 T {Note: Still untested!} 2840 -1540 0 0 0.7 0.7 {}
 T {Git / Google-Skywater RERAM PDK links} 780 -1060 0 0 0.6 0.6 {layer=8}
+T {PFET} 3050 -390 0 0 1 1 { hcenter=true}
+T {NFET} 3050 -150 0 0 1 1 { hcenter=true}
+T {These symbols take W as Finger length
+instead of total width} 3450 -600 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -584,3 +588,80 @@ mult=1}
 C {devices/launcher.sym} 810 -980 0 0 {name=h9
 descr=google/skywater-pdk-libs-sky130_fd_pr_reram
 url=https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram}
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 3200 -190 0 0 {name=M33
+L=0.15
+W=1
+nf=1 mult=1
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8_nf.sym} 3360 -190 0 0 {name=M34
+L=0.15
+W=1  
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_03v3_nvt_nf.sym} 3520 -190 0 0 {name=M35
+L=0.5
+W=1
+nf=1 mult=1
+model=nfet_03v3_nvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_05v0_nvt_nf.sym} 3680 -190 0 0 {name=M36
+L=0.9
+W=1
+nf=1 mult=1
+model=nfet_05v0_nvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d10v5_nf.sym} 3200 -100 0 0 {name=M37
+L=0.5
+W=1
+nf=1 mult=1
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d16v0_nf.sym} 3360 -100 0 0 {name=M38
+L=0.7
+W=5.0
+nf=1 mult=1
+model=nfet_g5v0d16v0
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_hvt_nf.sym} 3520 -420 0 0 {name=M39
+L=0.15
+W=1
+nf=1 mult=1
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_g5v0d10v5_nf.sym} 3200 -320 0 0 {name=M40
+L=0.5
+W=1
+nf=1 mult=1
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 3200 -420 0 0 {name=M41
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 3360 -420 0 0 {name=M42
+L=0.15
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_g5v0d16v0_nf.sym} 3360 -320 0 0 {name=M43
+L=0.66
+W=5.0
+nf=1 mult=1
+model=pfet_g5v0d16v0
+spiceprefix=X
+}
