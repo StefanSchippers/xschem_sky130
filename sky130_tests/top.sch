@@ -665,3 +665,4 @@ nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
 }
+C {sky130_tests/test_carry_lookahead.sym} 490 -1560 0 0 {name=x28}

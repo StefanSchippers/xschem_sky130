@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {type=varactor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L VM=@VM"
@@ -25,3 +25,4 @@ T {b} -35 8.75 0 0 0.15 0.15 {layer=7}
 T {@name} 15 -28.75 0 0 0.2 0.2 {}
 T {@W / @L * @VM} 15 6.25 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -11.25 0 0 0.2 0.2 {}
+T {tcleval(C=[ev \{@W * @L * 7.6e-15\}])} -5 -23.75 0 1 0.2 0.2 {layer=13}
