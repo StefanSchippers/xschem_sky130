@@ -88,7 +88,15 @@ value="
 .options savecurrents
 .control
 save all
+save @m.x1.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x1.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.x1.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
+save @m.x2.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x2.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x2.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.x2.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
 op
 write test_analog.raw

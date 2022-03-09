@@ -48,10 +48,10 @@ color=7
 unitx=n
 }
 B 2 800 -2200 2170 -1930 {flags=graph
-y1=1.09017
-y2=1.10752
-divy=4
-subdivy=1
+y1=1.06966
+y2=1.09064
+divy=5
+subdivy=4
 x1=3.5806e-08
 x2=2.92632e-07
 divx=8

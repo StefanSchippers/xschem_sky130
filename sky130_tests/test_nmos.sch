@@ -211,14 +211,15 @@ only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
 .option wnflag=1 
-*.option savecurrents
+.option savecurrents
 vg G1v8 0 1.8
 vs s 0 0
 vd D1v8 0 1.8
 vb b 0 0
 .control
-save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 save all
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm2.msky130_fd_pr__nfet_01v8[gm]
 dc vd 0 1.8 0.0005 vg 0 1.8 0.2
 write test_nmos.raw
 * dc vd 0 1.8 0.001 vg 0 1.2 0.1
@@ -280,7 +281,7 @@ tclcommand="ngspice::annotate"}
 C {devices/launcher.sym} 100 -420 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/test_nmos.raw"}
-C {devices/ngspice_get_value.sym} 620 -170 0 0 {name=r2 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+C {devices/ngspice_get_value.sym} 600 -170 0 0 {name=r2 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 descr="gm="}
 C {devices/launcher.sym} 360 -140 0 0 {name=h3
 descr="Annotation
@@ -10499,3 +10500,5 @@ model=nfet_01v8_lvt
 spiceprefix=X}
 C {devices/ngspice_get_value.sym} 2680 -170 0 0 {name=r3 node="i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])"
 descr="Id="}
+C {devices/spice_probe.sym} 640 -140 2 0 {name=p57 attrs=""
+voltage=1.8}

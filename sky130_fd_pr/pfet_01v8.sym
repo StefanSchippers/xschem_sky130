@@ -60,3 +60,7 @@ T {G} -10 -10 0 1 0.15 0.15 {layer=7}
 T {@model} 30 -8.75 2 1 0.2 0.2 {}
 T {@mult x @W / @L} 31.25 13.75 0 0 0.2 0.2 { layer=13}
 T {nf=@nf} 31.25 1.25 0 0 0.2 0.2 { layer=13}
+T {tcleval(gm=[ ngspice::get_node [subst -nocommand \{\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__pfet_01v8[gm]\}]] )} 32.5 -7.5 0 0 0.15 0.15 {layer=15
+hide=true}
+T {tcleval(id=[ ngspice::get_node [subst -nocommand \{i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__pfet_01v8[id])\}]] )} 32.5 -30 0 0 0.15 0.15 {layer=15
+hide=true}
