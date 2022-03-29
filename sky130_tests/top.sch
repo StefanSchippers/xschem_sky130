@@ -24,11 +24,12 @@ L 4 1610 -1130 3590 -1130 {}
 L 4 1610 -895 3590 -895 {}
 L 4 1610 -685 3590 -685 {}
 L 4 1610 -300 2570 -300 {}
-L 4 1610 -95 2570 -95 {}
+L 4 1610 -95 2100 -95 {}
 L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
 L 4 2610 -1250 3570 -1250 {}
 L 4 2610 -1380 3570 -1380 {}
+L 4 2190 -95 2680 -95 {}
 B 2 1580 -1890 2214 -1575 {flags=image_unscaled
 alpha=0.6
 image=/home/schippes/x/1.png
@@ -118,6 +119,7 @@ T {PFET} 3050 -390 0 0 1 1 { hcenter=true}
 T {NFET} 3050 -150 0 0 1 1 { hcenter=true}
 T {These symbols take W as Finger length
 instead of total width} 3450 -600 0 0 1 1 { hcenter=true}
+T {NPN} 2240 -70 0 0 1 1 { hcenter=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 810 -1500 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -667,3 +669,7 @@ spiceprefix=X
 }
 C {sky130_tests/test_carry_lookahead.sym} 490 -1560 0 0 {name=x28}
 C {sky130_tests/test_reram.sym} 490 -1520 0 0 {name=x29}
+C {sky130_fd_pr/npn_05v5.sym} 2570 -50 0 0 {name=Q2
+model=npn_05v5_w1p00l2p00
+spiceprefix=X
+}
