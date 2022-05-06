@@ -159,12 +159,4 @@ C {devices/gnd.sym} 440 -140 0 1 {name=l21 lab=GND}
 C {devices/ngspice_get_value.sym} 500 -90 0 0 {name=r9 node=i(@b.$\{path\}xr2.xsky130_fd_pr__res_xhigh_po_0p35.brbody[i])
 descr="I="}
 C {devices/ngspice_get_expr.sym} 950 -690 0 1 {name=r8 node="[ngspice::get_current v3]"}
-C {devices/code.sym} 1050 -370 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
+C {sky130_fd_pr/corner.sym} 1050 -370 0 0 {name=CORNER only_toplevel=true corner=tt}

@@ -305,15 +305,6 @@ mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {devices/code.sym} 50 -190 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/launcher.sym} 655 -825 0 0 {name=h4 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload
@@ -10502,3 +10493,4 @@ C {devices/ngspice_get_value.sym} 2680 -170 0 0 {name=r3 node="i(@m.xm1.msky130_
 descr="Id="}
 C {devices/spice_probe.sym} 640 -140 2 0 {name=p57 attrs=""
 voltage=1.8}
+C {sky130_fd_pr/corner.sym} 70 -240 0 0 {name=CORNER only_toplevel=true corner=tt}

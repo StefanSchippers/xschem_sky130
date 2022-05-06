@@ -224,15 +224,6 @@ C {devices/lab_pin.sym} 1950 -490 2 0 {name=p48 lab=S}
 C {devices/lab_pin.sym} 1970 -440 0 1 {name=p49 lab=B}
 C {devices/ammeter.sym} 1950 -360 0 1 {name=Vd6}
 C {devices/lab_pin.sym} 1890 -440 0 0 {name=p55 lab=G5v0}
-C {devices/code.sym} 20 -190 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/launcher.sym} 435 -875 0 0 {name=h4 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
@@ -8591,3 +8582,4 @@ eVtEkQEUiABSmZD/Nc9Y/qIXwXoyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAb0j5////OBTx67DbisHE
 D4QoeIrOBBeC1B2CihluUZXxHoKKt8pFSgUa24FuIBwP6VPkgaWPTOAeU+SB61IvQQWpOLZGuYd5N9NOtmoM/aBBqSi23RR6ALyOnjJH8SkDvI6OMn5R9n81GbMyAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcTH7kKqQ/7W1ZwUDh7zambVnBQOHvNqZGe+NVYa0P5EO+56OmuouCm7GunlbRJEBFIgA
 UpmQ/zXPWP6iF8F6MgAAAAAAAAAAjf5nmvo+8TRbxUpQ1I+sNvEhLwoCCgkz"}
+C {sky130_fd_pr/corner.sym} 50 -210 0 0 {name=CORNER only_toplevel=true corner=tt}
