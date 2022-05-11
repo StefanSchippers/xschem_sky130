@@ -4,13 +4,19 @@ K {}
 V {}
 S {}
 E {}
-C {devices/ipin.sym} 110 -220 0 0 {name=p1 lab=A}
-C {devices/ipin.sym} 110 -190 0 0 {name=p2 lab=B}
+N 110 -250 130 -250 {
+lab=A}
+N 110 -200 130 -200 {
+lab=B}
+N 110 -150 130 -150 {
+lab=CIN}
+C {devices/ipin.sym} 110 -250 0 0 {name=p1 lab=A}
+C {devices/ipin.sym} 110 -200 0 0 {name=p2 lab=B}
 C {devices/ipin.sym} 110 -150 0 0 {name=p3 lab=CIN}
-C {devices/opin.sym} 210 -220 0 0 {name=p4 lab=S}
+C {devices/opin.sym} 270 -250 0 0 {name=p4 lab=S}
 C {devices/title.sym} 160 -30 0 0 {name=l2}
-C {devices/opin.sym} 210 -140 0 0 { name=p7 lab=P }
-C {devices/opin.sym} 210 -160 0 0 { name=p8 lab=G }
+C {devices/opin.sym} 270 -170 0 0 { name=p7 lab=P }
+C {devices/opin.sym} 270 -190 0 0 { name=p8 lab=G }
 C {devices/lab_pin.sym} 650 -640 0 1 {name=l4 lab=G}
 C {devices/lab_pin.sym} 530 -660 0 0 {name=l5 lab=A}
 C {devices/lab_pin.sym} 530 -620 0 0 {name=l11 lab=B}
@@ -33,6 +39,6 @@ VGND=VSS
 VNB=VSS
 VPB=VCC
 VPWR=VCC}
-C {devices/parax_cap.sym} 650 -630 0 0 {name=C1 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 650 -540 0 0 {name=C2 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 650 -420 0 0 {name=C3 gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 130 -240 0 0 {name=C17 gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 130 -190 0 0 {name=C4 gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 130 -140 0 0 {name=C5 gnd=0 value=5f m=1}

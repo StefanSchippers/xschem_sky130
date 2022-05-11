@@ -12,16 +12,22 @@ C4 = G[3] | P[3] & G[2] | P[3] & P[2] & G[1] | P[3] & P[2] & P[1] & G[0] | P[3] 
 T {SG = G[3] | P[3] & G[2] | P[3] & P[2] & G[1] | P[3] & P[2] & P[1] & G[0];
 SP = P[3] & P[2] & P[1] & P[0];
 } 40 -1050 0 0 0.4 0.4 {font=monospace}
-C {devices/ipin.sym} 110 -220 0 0 {name=p1 lab=P[3:0]}
-C {devices/ipin.sym} 110 -190 0 0 {name=p2 lab=G[3:0]}
-C {devices/ipin.sym} 110 -150 0 0 {name=p3 lab=C0}
+N 100 -270 120 -270 {
+lab=P[3:0]}
+N 100 -210 120 -210 {
+lab=G[3:0]}
+N 90 -150 110 -150 {
+lab=C0}
+C {devices/ipin.sym} 100 -270 0 0 {name=p1 lab=P[3:0]}
+C {devices/ipin.sym} 100 -210 0 0 {name=p2 lab=G[3:0]}
+C {devices/ipin.sym} 90 -150 0 0 {name=p3 lab=C0}
 C {devices/title.sym} 160 -30 0 0 {name=l2}
-C {devices/opin.sym} 180 -160 0 0 { name=p4 lab=C4 }
-C {devices/opin.sym} 180 -180 0 0 { name=p5 lab=C3 }
-C {devices/opin.sym} 180 -200 0 0 { name=p7 lab=C2 }
-C {devices/opin.sym} 180 -220 0 0 { name=p9 lab=C1 }
-C {devices/opin.sym} 180 -270 0 0 { name=p58 lab=SG }
-C {devices/opin.sym} 180 -250 0 0 { name=p59 lab=SP }
+C {devices/opin.sym} 250 -130 0 0 { name=p4 lab=C4 }
+C {devices/opin.sym} 250 -150 0 0 { name=p5 lab=C3 }
+C {devices/opin.sym} 250 -170 0 0 { name=p7 lab=C2 }
+C {devices/opin.sym} 250 -190 0 0 { name=p9 lab=C1 }
+C {devices/opin.sym} 250 -240 0 0 { name=p58 lab=SG }
+C {devices/opin.sym} 250 -220 0 0 { name=p59 lab=SP }
 C {devices/lab_pin.sym} 790 -740 0 1 {name=p0 lab=net1 }
 C {devices/lab_pin.sym} 710 -740 0 0 {name=p6 lab=G[0] }
 C {devices/lab_pin.sym} 790 -570 0 1 {name=p8 lab=net2 }
@@ -177,9 +183,6 @@ C {devices/parax_cap.sym} 790 -350 0 0 {name=C7 gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 790 -250 0 0 {name=C8 gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 490 -650 0 0 {name=C9 gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 270 -670 0 0 {name=C10 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 1160 -880 0 0 {name=C11 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 1130 -760 0 0 {name=C12 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 1140 -620 0 0 {name=C13 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 1130 -500 0 0 {name=C14 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 1140 -360 0 0 {name=C15 gnd=0 value=5f m=1}
-C {devices/parax_cap.sym} 1130 -240 0 0 {name=C16 gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 120 -260 0 0 {name=C19[3:0] gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 120 -200 0 0 {name=C18[3:0] gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 110 -140 0 0 {name=C17 gnd=0 value=5f m=1}

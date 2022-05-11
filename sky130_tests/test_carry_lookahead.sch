@@ -37,10 +37,14 @@ divx=10}
 T {256 bit adders: Carry Look Ahead vs Ripple Carry.} 50 -980 0 0 1 1 {}
 T {Global
 nodes} 210 -560 0 0 0.4 0.4 {}
-N 750 -280 900 -280 {
+N 750 -280 1030 -280 {
 lab=COUT3}
-N 750 -150 900 -150 {
+N 750 -150 1030 -150 {
 lab=COUT2}
+N 750 -300 910 -300 {
+lab=S3[255:0]}
+N 750 -170 910 -170 {
+lab=S2[31:0]}
 C {devices/title.sym} 160 -30 0 0 {name=l2}
 C {devices/ipin.sym} 290 -300 0 0 {name=p11 lab=A[255:0] verilog_type=reg}
 C {devices/ipin.sym} 290 -280 0 0 {name=p12 lab=B[255:0] verilog_type=reg}
@@ -51,9 +55,9 @@ C {devices/lab_pin.sym} 640 -380 0 1 {name=p23 lab=S0[255:0]}
 C {sky130_stdcells/fah_1.sym} 580 -420 0 0 {name=x3[255:0]
 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC}
 C {devices/lab_pin.sym} 450 -300 0 0 {name=p1 lab=A[255:0]}
-C {devices/lab_pin.sym} 750 -300 0 1 {name=p2 lab=S3[255:0]}
+C {devices/lab_pin.sym} 910 -300 0 1 {name=p2 lab=S3[255:0]}
 C {devices/lab_pin.sym} 450 -280 0 0 {name=p3 lab=B[255:0]}
-C {devices/lab_pin.sym} 900 -280 0 1 {name=p5 lab=COUT3}
+C {devices/lab_pin.sym} 1030 -280 0 1 {name=p5 lab=COUT3}
 C {devices/lab_pin.sym} 750 -260 0 1 {name=p6 lab=SG3}
 C {devices/lab_pin.sym} 450 -260 0 0 {name=p7 lab=CIN}
 C {devices/lab_pin.sym} 750 -240 0 1 {name=p8 lab=SP3}
@@ -100,8 +104,8 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/spice_probe.sym} 290 -300 0 0 {name=p10 attrs=""}
 C {devices/spice_probe.sym} 290 -280 0 0 {name=p14 attrs=""}
 C {devices/spice_probe.sym} 290 -260 0 0 {name=p15 attrs=""}
-C {devices/spice_probe.sym} 750 -300 0 0 {name=p16 attrs=""}
-C {devices/spice_probe.sym} 900 -280 0 0 {name=p17 attrs=""}
+C {devices/spice_probe.sym} 910 -300 0 0 {name=p16 attrs=""}
+C {devices/spice_probe.sym} 1030 -280 0 0 {name=p17 attrs=""}
 C {devices/spice_probe.sym} 640 -460 0 0 {name=p18 attrs=""}
 C {devices/spice_probe.sym} 640 -380 0 0 {name=p19 attrs=""}
 C {devices/spice_probe.sym} 300 -570 1 0 {name=p20 attrs=""}
@@ -112,11 +116,11 @@ C {sky130_tests/adder_32bit.sym} 600 -140 0 0 {name=x0}
 C {devices/lab_pin.sym} 450 -170 0 0 {name=p24 lab=A[31:0]}
 C {devices/lab_pin.sym} 450 -150 0 0 {name=p25 lab=B[31:0]}
 C {devices/lab_pin.sym} 450 -130 0 0 {name=p26 lab=CIN}
-C {devices/lab_pin.sym} 750 -170 0 1 {name=p27 lab=S2[31:0]}
-C {devices/lab_pin.sym} 900 -150 0 1 {name=p28 lab=COUT2}
+C {devices/lab_pin.sym} 910 -170 0 1 {name=p27 lab=S2[31:0]}
+C {devices/lab_pin.sym} 1030 -150 0 1 {name=p28 lab=COUT2}
 C {devices/lab_pin.sym} 750 -130 0 1 {name=p29 lab=SG2}
 C {devices/lab_pin.sym} 750 -110 0 1 {name=p30 lab=SP2}
-C {devices/spice_probe.sym} 900 -150 0 0 {name=p31 attrs=""}
+C {devices/spice_probe.sym} 1030 -150 0 0 {name=p31 attrs=""}
 C {devices/lab_pin.sym} 980 -380 0 0 {name=p32 lab=CARRY1[30:0],CIN}
 C {devices/lab_pin.sym} 1100 -460 0 1 {name=p33 lab=CARRY1[31:0]}
 C {devices/lab_pin.sym} 1100 -380 0 1 {name=p34 lab=S1[31:0]}
@@ -128,4 +132,8 @@ C {devices/spice_probe.sym} 1100 -460 0 0 {name=p37 attrs=""}
 C {devices/spice_probe.sym} 1100 -380 0 0 {name=p38 attrs=""}
 C {devices/parax_cap.sym} 1100 -370 0 0 {name=C2[31:0] gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 1100 -450 0 0 {name=C3[31:0] gnd=0 value=5f m=1}
-C {devices/spice_probe.sym} 750 -170 0 0 {name=p39 attrs=""}
+C {devices/spice_probe.sym} 910 -170 0 0 {name=p39 attrs=""}
+C {devices/parax_cap.sym} 860 -310 2 0 {name=C2[255:0] gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 860 -180 2 0 {name=C3[255:0] gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 860 -270 0 0 {name=C5 gnd=0 value=5f m=1}
+C {devices/parax_cap.sym} 860 -140 0 0 {name=C1 gnd=0 value=5f m=1}
