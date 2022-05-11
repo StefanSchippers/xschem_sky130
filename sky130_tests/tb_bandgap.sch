@@ -162,15 +162,6 @@ C {devices/lab_pin.sym} 650 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 650 -220 0 1 {name=p6 lab=CLK}
 C {devices/lab_pin.sym} 260 -530 0 0 {name=p8 lab=START}
 C {devices/lab_pin.sym} 260 -510 0 0 {name=p9 lab=CLK}
-C {devices/code.sym} 10 -250 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
-
-"
-spice_ignore=false}
 C {devices/launcher.sym} 235 -665 0 0 {name=h1 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
@@ -178,3 +169,4 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
+C {sky130_fd_pr/corner.sym} 20 -220 0 0 {name=CORNER only_toplevel=true corner=tt}
