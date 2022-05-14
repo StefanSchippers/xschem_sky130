@@ -169,4 +169,4 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {sky130_fd_pr/corner.sym} 20 -220 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {sky130_fd_pr/corner.sym} 20 -220 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
