@@ -42,7 +42,7 @@ plot v(p,m) / vr9#branch
 plot v(p,m) / vr10#branch
 *plot v(p,m) / vr11#branch
 *plot v(p,m) / vr12#branch
-
+plot v(p,m) / vr13#branch
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
@@ -176,10 +176,10 @@ value="
 
 "
 spice_ignore=false}
-C {devices/ammeter.sym} 600 -150 0 0 {name=Vr13}
+C {devices/ammeter.sym} 600 -150 0 0 {name=Vr14}
 C {devices/lab_pin.sym} 600 -180 0 1 {name=p11 lab=P}
 C {devices/lab_pin.sym} 600 -60 0 1 {name=p37 lab=M}
-C {sky130_fd_pr/res_generic_m1.sym} 600 -90 0 0 {name=R13
+C {sky130_fd_pr/res_generic_m1.sym} 600 -90 0 0 {name=R14
 W=1
 L=1
 model=res_generic_m1
@@ -187,3 +187,13 @@ spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 730 -660 0 0 {name=p5 lab=B}
 C {devices/lab_pin.sym} 910 -660 0 0 {name=p8 lab=B}
+C {devices/ammeter.sym} 1280 -340 0 0 {name=Vr13}
+C {devices/lab_pin.sym} 1280 -370 0 1 {name=p38 lab=P}
+C {devices/lab_pin.sym} 1280 -250 0 1 {name=p39 lab=M}
+C {devices/lab_pin.sym} 1260 -280 0 0 {name=p40 lab=B}
+C {sky130_fd_pr/res_xhigh_po_2p85.sym} 1280 -280 0 0 {name=R13
+W=2.85
+L=2.85
+model=res_xhigh_po_2p85
+spiceprefix=X
+ mult=1}
