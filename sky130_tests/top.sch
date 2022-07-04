@@ -668,7 +668,6 @@ model=pfet_g5v0d16v0
 spiceprefix=X
 }
 C {sky130_tests/test_carry_lookahead.sym} 490 -1560 0 0 {name=x28}
-C {sky130_tests/test_reram.sym} 490 -1520 0 0 {name=x29}
 C {sky130_fd_pr/npn_05v5.sym} 2570 -50 0 0 {name=Q2
 model=npn_05v5_w1p00l2p00
 spiceprefix=X
