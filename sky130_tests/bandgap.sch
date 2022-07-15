@@ -140,11 +140,11 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 80 -130 0 0 {name=p1 lab=EN_N}
 C {devices/opin.sym} 150 -130 0 0 {name=p2 lab=VBG}
 C {sky130_fd_pr/pnp_05v5.sym} 100 -380 0 1 {name=Q1
-model="pnp_05v5_W0p68L0p68 m=1"
+model=pnp_05v5_W0p68L0p68 m=1
 spiceprefix=X
 }
 C {sky130_fd_pr/pnp_05v5.sym} 310 -380 0 0 {name=Q2
-model="pnp_05v5_W0p68L0p68 m=8"
+model=pnp_05v5_W0p68L0p68 m=8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 780 -1110 0 1 {name=l2 sig_type=std_logic lab=VBG}

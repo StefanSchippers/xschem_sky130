@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.0.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -17,9 +17,10 @@ v {xschem version=2.9.9 file_version=1.2
 }
 G {}
 K {type=pnp
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model m=@m"
 template="name=Q1
 model=pnp_05v5_W3p40L3p40
+m=1
 spiceprefix=X
 "}
 V {}
@@ -38,3 +39,4 @@ T {@name} 22.5 -26.25 0 0 0.2 0.2 {}
 T {e} 10 -35.625 0 0 0.15 0.15 {layer=7}
 T {c} 10 26.875 0 0 0.15 0.15 {layer=7}
 T {b} -10.625 -10.625 0 1 0.15 0.15 {layer=7}
+T {m=@m} 22.5 2.5 0 0 0.2 0.2 {}

@@ -21,47 +21,49 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = -2e-18
-y2 = 1.8
+y1 = 1.16451
+y2 = 1.20685
 divy = 5
 x1=0
-x2=0.00015
+x2=0.0001
 divx=5
 node="vbg
 en_n
 start"
-color="4 5 9" subdivx=4 unitx=u}
+color="4 5 9" subdivx=4 unitx=u
+subdivy=1
+}
 B 2 820 -450 1280 -320 {flags=graph
-y1 = 0.96496
-y2 = 1.30318
+y1 = -7.1e-15
+y2 = 1.5
 divy = 5
 subdivy=1
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 subdivx=4
 node="vbg"
 color=7 unitx=u
 }
 B 2 820 -650 1280 -520 {flags=graph
-y1 = 1.14744
-y2 = 1.18232
+y1 = 1.17481
+y2 = 1.19394
 divy = 5
 subdivy=1
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 subdivx=4
 node=vbg
 color=8 unitx=u}
 B 2 820 -880 1280 -750 {flags=graph
-y1 = -4.2e-05
-y2 = -6e-06
+y1 = -0.00028
+y2 = 4.4e-17
 divy = 5
 unity=u
 subdivy=1
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 subdivx=4
 node="\\"Icc;i(v2)\\"";i(v2)\\";i(v2)\\"
@@ -103,22 +105,22 @@ value="
 .control
   option seed=12
   let run=1
-  dowhile run <= 18
+  dowhile run <= 20
     if run > 1
       reset
       set appendwrite
     end
     save all
-    if run % 3 = 0
+    if run % 3 = 1
       set temp=-40
     end
-    if run % 3 = 1
+    if run % 3 = 2
       set temp=27
     end
-    if run % 3 = 2
+    if run % 3 = 0
       set temp=125
     end
-    tran 0.05u 150u
+    tran 0.05u 100u
     write tb_bandgap.raw
     let run = run + 1
   end
@@ -169,4 +171,12 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {sky130_fd_pr/corner.sym} 20 -220 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
+C {devices/code.sym} 10 -280 0 0 {name=TT_MM_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
+
+"
+spice_ignore=false}
