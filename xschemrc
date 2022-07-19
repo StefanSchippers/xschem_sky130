@@ -60,7 +60,7 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### DIRECTORY WHERE SIMULATIONS, NETLIST AND SIMULATOR OUTPUTS ARE PLACED
 ###########################################################################
 #### If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
-# set netlist_dir $env(HOME)/.xschem/simulations
+set netlist_dir $env(PWD)/.xschem/simulations
 
 ###########################################################################
 #### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
