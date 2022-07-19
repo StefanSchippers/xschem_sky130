@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -93,14 +93,17 @@ save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
 save @m.x1.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x1.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
+save @m.x1.xm5.msky130_fd_pr__nfet_01v8[vth]
 save @m.x2.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 save @m.x2.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
 save @m.x2.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x2.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 op
 write test_analog.raw
 .endc
+.print @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 "}
 C {sky130_tests/n_diffamp.sym} 330 -200 0 0 {name=x1}
 C {sky130_tests/n_diffamp.sym} 330 -480 0 0 {name=x2}

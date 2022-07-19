@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -248,3 +248,5 @@ devicename=M1
 devicemodel=nfet_01v8_lvt
 deviceparam=gm}
 C {sky130_fd_pr/corner.sym} 1050 -360 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {devices/ngspice_get_value.sym} 280 -250 0 1 {name=r14 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vth])
+descr="vth="}

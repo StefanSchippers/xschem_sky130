@@ -258,15 +258,15 @@ value="
 ** selection based on W/NF instead of W
 .option wnflag=1 
 
-.param VCCGAUSS=agauss(1.8, 0.05, 1)
-.param VCC='VCCGAUSS'
+* .param VCCGAUSS=agauss(1.8, 0.05, 1)
+* .param VCC='VCCGAUSS'
 ** use following line to remove VCC variations
-* .param VCC=1.8
+.param VCC=1.8
 .param VDL='VCC/2+0.2'
-.param TEMPGAUSS=agauss(40, 30, 1)
-.option temp='TEMPGAUSS'
+* .param TEMPGAUSS=agauss(40, 30, 1)
+* .option temp='TEMPGAUSS'
 ** use following line to remove temperature variations
-* .option temp=25
+.option temp=25
 
 ** to generate following file: 
 ** copy .../xschem_sky130/sky130_tests/stimuli.test_comparator to simulation directory
