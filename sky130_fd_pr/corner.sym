@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {type=netlist_commands
 template="name=CORNER only_toplevel=false corner=tt"
@@ -153,8 +153,7 @@ set sky130_corner(mc) \\"
 .include $::SKYWATER_MODELS/parameters/critical.spice
 .include $::SKYWATER_MODELS/parameters/montecarlo.spice
 \\"
-return \{\}
-]$sky130_corner(@corner\\\\))"
+return $sky130_corner(@corner\\\\)])"
 }
 V {}
 S {}
