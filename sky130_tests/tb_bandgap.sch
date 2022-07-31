@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -21,8 +21,8 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = 1.16451
-y2 = 1.20685
+y1 = -4.4e-17
+y2 = 1.9
 divy = 5
 x1=0
 x2=0.0001
@@ -34,8 +34,8 @@ color="4 5 9" subdivx=4 unitx=u
 subdivy=1
 }
 B 2 820 -450 1280 -320 {flags=graph
-y1 = -7.1e-15
-y2 = 1.5
+y1 = -4.4e-17
+y2 = 1.6
 divy = 5
 subdivy=1
 x1=0
@@ -46,8 +46,8 @@ node="vbg"
 color=7 unitx=u
 }
 B 2 820 -650 1280 -520 {flags=graph
-y1 = 1.17481
-y2 = 1.19394
+y1 = -4.4e-17
+y2 = 1.6
 divy = 5
 subdivy=1
 x1=0
@@ -58,7 +58,7 @@ node=vbg
 color=8 unitx=u}
 B 2 820 -880 1280 -750 {flags=graph
 y1 = -0.00028
-y2 = 4.4e-17
+y2 = 4.5e-17
 divy = 5
 unity=u
 subdivy=1

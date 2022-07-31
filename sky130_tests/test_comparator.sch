@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -39,39 +39,56 @@ y1=0.02
 y2=1.9
 divy=4
 subdivy=1
-x1=3.5806e-08
-x2=2.92632e-07
+x1=-1.4999e-08
+x2=2.85e-07
 divx=8
 subdivx=1
 node=saout
-color=7
+color=4
 unitx=n
 }
-B 2 800 -2200 2170 -1930 {flags=graph
-y1=1.06966
-y2=1.09064
+B 2 800 -2120 2170 -1930 {flags=graph
+y1=-0.002
+y2=0.002
 divy=5
 subdivy=4
-x1=3.5806e-08
-x2=2.92632e-07
+x1=-1.4999e-08
+x2=2.85e-07
 divx=8
 subdivx=1
-node="plus
-minus"
-color="7 8"
+node="\\"VDIFF;plus minus -\\""
+color=7
 dataset=0
 unitx=n
 }
+B 2 800 -2280 2170 -2120 {flags=graph
+y1=0
+y2=2
+divy=5
+subdivy=4
+x1=-1.4999e-08
+x2=2.85e-07
+divx=8
+subdivx=1
+
+
+dataset=0
+unitx=n
+color="4 7"
+node="en cal"
+digital=1
+ypos1=0.114056
+ypos2=0.641102}
 T {CAL} 140 -190 0 1 0.4 0.4 {}
 T {EN} 140 -140 0 1 0.4 0.4 {}
 T {CALIBRATION
-  30ns} 400 -310 0 1 0.4 0.4 {}
+  20ns} 400 -310 0 1 0.4 0.4 {}
 T {SENSING
-  30ns} 530 -310 0 1 0.4 0.4 {}
+  20ns} 530 -310 0 1 0.4 0.4 {}
 T {OFF} 660 -310 0 1 0.4 0.4 {}
 T {OFF} 210 -310 0 1 0.4 0.4 {}
 T {NGSPICE MISMATCH SIMULATION} 1210 -290 0 0 0.8 0.8 {}
-T {Offset-compensated comparator. Detects +/- 8mV differential signal on PLUS, MINUS.
+T {Offset-compensated comparator. Detects +/- 2mV differential signal on PLUS, MINUS.
 Variations on per-instance process parameters (tt_mm corner), VCC and Temperature.
 Output on SAOUT
 } 1110 -220 0 0 0.6 0.6 {}
@@ -258,15 +275,15 @@ value="
 ** selection based on W/NF instead of W
 .option wnflag=1 
 
-* .param VCCGAUSS=agauss(1.8, 0.05, 1)
-* .param VCC='VCCGAUSS'
+.param VCCGAUSS=agauss(1.8, 0.05, 1)
+.param VCC='VCCGAUSS'
 ** use following line to remove VCC variations
-.param VCC=1.8
+* .param VCC=1.8
 .param VDL='VCC/2+0.2'
-* .param TEMPGAUSS=agauss(40, 30, 1)
-* .option temp='TEMPGAUSS'
+.param TEMPGAUSS=agauss(40, 30, 1)
+.option temp='TEMPGAUSS'
 ** use following line to remove temperature variations
-.option temp=25
+* .option temp=25
 
 ** to generate following file: 
 ** copy .../xschem_sky130/sky130_tests/stimuli.test_comparator to simulation directory
@@ -622,33 +639,33 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
  }
-C {sky130_tests/passgate_nlvt.sym} 860 -1270 0 1 {name=x1 m=1
-W_N=0.42 L_N=0.4
-W_P=0.42 L_P=0.4
+C {sky130_tests/passgate.sym} 860 -1270 0 1 {name=x1 m=1
+W_N=0.42 L_N=0.15
+W_P=0.42 L_P=0.15
 VCCBPIN=VCC VSSBPIN=VSS}
-C {sky130_tests/passgate_nlvt.sym} 1350 -1270 0 1 {name=x2 m=1
-W_N=0.42 L_N=0.4
-W_P=0.42 L_P=0.4
+C {sky130_tests/passgate.sym} 1350 -1270 0 1 {name=x2 m=1
+W_N=0.42 L_N=0.15
+W_P=0.42 L_P=0.15
 VCCBPIN=VCC VSSBPIN=VSS}
-C {sky130_tests/passgate_nlvt.sym} 1840 -1270 0 1 {name=x3 m=1
-W_N=0.42 L_N=0.4
-W_P=0.42 L_P=0.4
+C {sky130_tests/passgate.sym} 1840 -1270 0 1 {name=x3 m=1
+W_N=0.42 L_N=0.15
+W_P=0.42 L_P=0.15
 VCCBPIN=VCC VSSBPIN=VSS}
 C {devices/capa.sym} 980 -1070 0 0 {name=C2
 m=1
-value=15f
+value=25f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 950 -1020 0 0 {name=p5 lab=VCC}
 C {devices/capa.sym} 1470 -1070 0 0 {name=C4
 m=1
-value=15f
+value=25f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1440 -1020 0 0 {name=p6 lab=VCC}
 C {devices/capa.sym} 1960 -1070 0 0 {name=C6
 m=1
-value=15f
+value=25f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1930 -1020 0 0 {name=p7 lab=VCC}

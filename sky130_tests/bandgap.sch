@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -25,7 +25,7 @@ y1 = 0
 
 divy = 1
 x1=0
-x2=0.00015
+x2=0.0001
 subdivx=4
 divx=4
 node="x1.f1 x1.f2"
@@ -41,32 +41,32 @@ y2 = 1.9
 divy = 5
 subdivx=4
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 node="x1.adj2 x1.adj
 clk"
 color="12 10 7"
   unitx=u}
 B 2 1830 -540 2290 -350 {flags=graph
-y1 = -0.000657762
-y2 = 0.000563566
+y1 = -0.000861365
+y2 = 0.000694628
 divy = 8
 subdivy=1
 unity=m
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 node="\\"x1.zminus x1.plus -\\""
 color=8
  subdivx=4  unitx=u}
 B 2 1830 -1010 2290 -820 {flags=graph
-y1 = -0.000749783
-y2 = 0.000590183
+y1 = -0.00086934
+y2 = 0.000919108
 divy = 8
 subdivy=1
 unity=m
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 node="\\"x1.minus x1.plus -\\""
 color=8
@@ -78,7 +78,7 @@ divy = 8
 subdivy=1
 unity=m
 x1=0
-x2=0.00015
+x2=0.0001
 divx=4
 node="\\"x1.minus x1.plus -\\""
 color=7
