@@ -34,7 +34,7 @@ L 4 410 -160 570 -160 {}
 L 4 570 -180 570 -160 {}
 L 4 570 -180 690 -180 {}
 L 7 1090 -240 2470 -240 {}
-B 2 800 -1930 2170 -1510 {flags=graph
+B 2 1090 -1930 2170 -1510 {flags=graph
 y1=0.02
 y2=1.9
 divy=4
@@ -42,26 +42,28 @@ subdivy=1
 x1=-1.4999e-08
 x2=2.85e-07
 divx=8
-subdivx=1
+subdivx=4
 node=saout
 color=4
 unitx=n
 }
-B 2 800 -2120 2170 -1930 {flags=graph
+B 2 1090 -2120 2170 -1930 {flags=graph
 y1=-0.002
 y2=0.002
-divy=5
-subdivy=4
+
+subdivy=1
 x1=-1.4999e-08
 x2=2.85e-07
 divx=8
-subdivx=1
+
 node="\\"VDIFF;plus minus -\\""
-color=7
+color=8
 dataset=0
 unitx=n
-}
-B 2 800 -2280 2170 -2120 {flags=graph
+subdivx=1
+divy=2
+unity=m}
+B 2 1090 -2280 2170 -2120 {flags=graph
 y1=0
 y2=2
 divy=5
@@ -69,7 +71,7 @@ subdivy=4
 x1=-1.4999e-08
 x2=2.85e-07
 divx=8
-subdivx=1
+subdivx=4
 
 
 dataset=0
