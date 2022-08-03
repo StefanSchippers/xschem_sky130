@@ -1,9 +1,26 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
 S {}
 E {}
+B 2 760 -580 1560 -180 {flags=graph
+y1=4.9e+10
+y2=1.3e+11
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=G
+x1=0.0001
+x2=0.00985467
+divx=5
+subdivx=1
+node=ft
+color=4
+dataset=0
+unitx=u
+}
 T {Transistor ft measurement} 130 -590 0 0 0.8 0.8 {}
 N 220 -480 400 -480 { lab=D}
 N 30 -480 30 -360 { lab=D}
@@ -47,7 +64,7 @@ C {devices/code.sym} 530 -350 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
 
-.options filetype=ascii
+* .options filetype=ascii
 .save all
 
 .op
@@ -126,3 +143,11 @@ value="
 
 "
 spice_ignore=false}
+C {devices/launcher.sym} 765 -135 0 0 {name=h4 
+descr="Select arrow and 
+Ctrl-Left-Click to load/unload
+simulation .raw file" 
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}
