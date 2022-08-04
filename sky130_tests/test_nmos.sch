@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -20,52 +20,57 @@ K {}
 V {}
 S {}
 E {}
-B 2 1030 -950 1460 -630 {flags=graph
+B 2 1030 -950 1460 -630 {flags=graph,unlocked
 y1 = 0
-y2 = 0.00058
+y2 = 0.00065
 divy = 5
 subdivy=1
-x1=-0.0119195
-x2=1.7881
+x1=0
+x2=1.8
 divx=4
 subdivx=4
-node="i(vd1)
-i(vd2)"
-color="4 5" unity=u}
-B 2 1470 -950 1900 -630 {flags=graph
+node="\\"01v8_lvt;i(vd1)\\"
+\\"01v8;i(vd2)\\""
+color="4 5" unity=u
+}
+B 2 1470 -950 1900 -630 {flags=graph,unlocked
 y1 = -0
-y2 = 0.00063
+y2 = 0.00069
 divy = 5
 subdivy=1
-x1=-0.0119195
-x2=1.7881
-divx=4
-subdivx=4
+x1=-0.0698882
+x2=4.40906
+divx=8
+subdivx=0
 node="i(vd4)"
-color=4 unity=u}
-B 2 1910 -950 2340 -630 {flags=graph
-y1 = 0
-y2 = 0.0053
+color=4 unity=u
+sweep=d5v0}
+B 2 1910 -950 2340 -630 {flags=graph,unlocked
+y1 = -5.18484e-05
+y2 = 0.0013443
 divy = 5
 subdivy=1
-x1=-0.0119195
-x2=1.7881
-divx=4
+x1=-0.0441504
+x2=9.81639
+divx=5
 subdivx=4
 node="i(vd5)"
-color="4 5" unity=u}
-B 2 2370 -950 2800 -630 {flags=graph
+color=4 unity=u
+sweep=v(d10v5)
+}
+B 2 2370 -950 2800 -630 {flags=graph,unlocked
 y1 = 0
-y2 = 0.00058
+y2 = 0.00066
 divy = 5
 subdivy=1
-x1=-0.0119195
-x2=1.7881
+x1=-3.70306e-06
+x2=1.79999
 divx=4
 subdivx=4
 node="i(vd1)
 i(vd9)"
-color="4 5" unity=u}
+color="4 5" unity=u
+}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -137,16 +142,16 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 640 -270 0 0 {name=p17 lab=D1v8}
 C {devices/lab_pin.sym} 690 -90 0 1 {name=p3 lab=S}
 C {devices/lab_pin.sym} 710 -140 0 1 {name=p4 lab=B}
-C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1 current=5.7132e-04}
+C {devices/ammeter.sym} 690 -220 0 0 {name=Vd1 current=6.4523e-04}
 C {devices/lab_pin.sym} 1190 -90 0 1 {name=p12 lab=S}
 C {devices/lab_pin.sym} 1210 -140 0 1 {name=p13 lab=B}
-C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3 current=5.6511e-04}
+C {devices/ammeter.sym} 1190 -220 0 0 {name=Vd3 current=6.2562e-04}
 C {devices/lab_pin.sym} 940 -90 0 1 {name=p16 lab=S}
 C {devices/lab_pin.sym} 960 -140 0 1 {name=p21 lab=B}
-C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2  current=5.0094e-04}
+C {devices/ammeter.sym} 940 -220 0 0 {name=Vd2  current=5.8357e-04}
 C {devices/lab_pin.sym} 1440 -90 0 1 {name=p7 lab=S}
 C {devices/lab_pin.sym} 1460 -140 0 1 {name=p8 lab=B}
-C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4 current=6.2333e-04}
+C {devices/ammeter.sym} 1440 -220 0 0 {name=Vd4 current=6.8315e-04}
 C {devices/lab_pin.sym} 640 -310 0 0 {name=p9 lab=D3v3}
 C {devices/lab_pin.sym} 640 -350 0 0 {name=p14 lab=D5v0}
 C {devices/vcvs.sym} 960 -550 0 0 {name=E1 value='5/1.8'}
@@ -175,7 +180,7 @@ C {devices/lab_pin.sym} 1130 -140 0 0 {name=p11 lab=G3v3}
 C {devices/lab_pin.sym} 1380 -140 0 0 {name=p15 lab=G5v0}
 C {devices/lab_pin.sym} 1690 -90 0 1 {name=p1 lab=S}
 C {devices/lab_pin.sym} 1710 -140 0 1 {name=p5 lab=B}
-C {devices/ammeter.sym} 1690 -220 0 0 {name=Vd5 current=0.005218}
+C {devices/ammeter.sym} 1690 -220 0 0 {name=Vd5 current=0.006585}
 C {devices/lab_pin.sym} 1630 -140 0 0 {name=p10 lab=G5v0}
 C {devices/lab_pin.sym} 640 -390 0 0 {name=p22 lab=D10v5}
 C {devices/vcvs.sym} 1140 -550 0 0 {name=E5 value='10.5/1.8'}
@@ -192,11 +197,11 @@ C {devices/lab_pin.sym} 1280 -570 0 0 {name=p36 lab=D1v8}
 C {devices/lab_pin.sym} 1320 -520 0 1 {name=p37 lab=0}
 C {devices/lab_pin.sym} 1320 -600 0 1 {name=p38 lab=D16v0}
 C {devices/lab_pin.sym} 1280 -530 0 0 {name=p39 lab=0}
-C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6 current=0.003311}
+C {devices/ammeter.sym} 1940 -220 0 0 {name=Vd6 current=0.005304}
 C {devices/lab_pin.sym} 2190 -90 0 1 {name=p40 lab=S}
 C {devices/lab_pin.sym} 2210 -140 0 1 {name=p41 lab=B}
 C {devices/lab_pin.sym} 2130 -140 0 0 {name=p42 lab=G1v8}
-C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7 current=0.001217}
+C {devices/ammeter.sym} 2190 -220 0 0 {name=Vd7 current=0.001841}
 C {devices/lab_pin.sym} 640 -470 0 0 {name=p43 lab=D20v0}
 C {devices/vcvs.sym} 1490 -550 0 0 {name=E7 value='20.0/1.8'}
 C {devices/lab_pin.sym} 1450 -570 0 0 {name=p44 lab=D1v8}
@@ -290,7 +295,7 @@ url="https://xschem.sourceforge.io/stefan/xschem_man/tutorial_ngspice_backannota
 C {devices/lab_pin.sym} 2430 -90 0 1 {name=p51 lab=S}
 C {devices/lab_pin.sym} 2450 -140 0 1 {name=p52 lab=B}
 C {devices/lab_pin.sym} 2370 -140 0 0 {name=p53 lab=G1v8}
-C {devices/ammeter.sym} 2430 -220 0 0 {name=Vd8 current=0.001321}
+C {devices/ammeter.sym} 2430 -220 0 0 {name=Vd8 current=0.002168}
 C {sky130_fd_pr/nfet_20v0.sym} 2170 -140 0 0 {name=M7
 L=2.95
 W=29.41
@@ -10480,7 +10485,7 @@ k22/AAAZYIy4Qj8AIGeQM2pAPwBA8k5/hEI/AACmeNtsRD8AYG3+fV91P6jjfrW8H2s/mAiwtJjxUz/U
 k+w/C9dMZBBy9z8="}
 C {devices/lab_pin.sym} 2670 -90 0 1 {name=p54 lab=S}
 C {devices/lab_pin.sym} 2690 -140 0 1 {name=p55 lab=B}
-C {devices/ammeter.sym} 2670 -220 0 0 {name=Vd9 current=5.7132e-04}
+C {devices/ammeter.sym} 2670 -220 0 0 {name=Vd9 current=6.6010e-04}
 C {devices/lab_pin.sym} 2610 -140 0 0 {name=p56 lab=G1v8}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 2650 -140 0 0 {name=M8
 L=0.15
