@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -123,12 +123,11 @@ value="* .option SCALE=1e-6
     end
     save all
     * save saout cal i(vvcc) en plus minus
-    tran 1n 10000n uic
-    plot saout
-    plot plus minus
+    tran 10n 10000n uic
     write bandgap_opamp.raw
     let run = run + 1
   end
+  plot plus minus all.diffout
 .endc
 "}
 C {devices/lab_pin.sym} 580 -450 0 0 {name=p20 lab=VCC}
@@ -355,12 +354,4 @@ nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
  }
-C {devices/code.sym} 50 -200 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
-
-"
-spice_ignore=false}
+C {sky130_fd_pr/corner.sym} 40 -200 0 0 {name=CORNER only_toplevel=true corner=tt_mm}

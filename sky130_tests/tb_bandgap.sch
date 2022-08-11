@@ -171,12 +171,4 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code.sym} 10 -280 0 0 {name=TT_MM_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
-
-"
-spice_ignore=false}
+C {sky130_fd_pr/corner.sym} 20 -270 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
