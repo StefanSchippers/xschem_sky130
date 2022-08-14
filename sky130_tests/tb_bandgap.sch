@@ -21,44 +21,25 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = -4.4e-17
+y1 = -2.9e-16
 y2 = 1.9
-divy = 5
+
 x1=0
 x2=0.0001
 divx=5
 node="vbg
 en_n
 start"
-color="4 5 9" subdivx=4 unitx=u
+color="4 5 9"  unitx=u
+
+
+divy=8
+subdivx=4
 subdivy=1
 }
-B 2 820 -450 1280 -320 {flags=graph
-y1 = -4.4e-17
-y2 = 1.6
-divy = 5
-subdivy=1
-x1=0
-x2=0.0001
-divx=4
-subdivx=4
-node="vbg"
-color=7 unitx=u
-}
-B 2 820 -650 1280 -520 {flags=graph
-y1 = -4.4e-17
-y2 = 1.6
-divy = 5
-subdivy=1
-x1=0
-x2=0.0001
-divx=4
-subdivx=4
-node=vbg
-color=8 unitx=u}
-B 2 820 -880 1280 -750 {flags=graph
-y1 = -0.00028
-y2 = 4.5e-17
+B 2 820 -590 1280 -460 {flags=graph
+y1 = 1.7008e-05
+y2 = 4.36367e-05
 divy = 5
 unity=u
 subdivy=1
@@ -66,30 +47,33 @@ x1=0
 x2=0.0001
 divx=4
 subdivx=4
-node="\\"Icc;i(v2)\\"";i(v2)\\";i(v2)\\"
+node="\\"Icc;i(vcc)\\"";i(v2)\\";i(v2)\\"
  unitx=u
 color=4}
-P 7 7 910 -480 910 -470 900 -470 910 -450 920 -470 910 -470 910 -480 {fill=true}
-P 7 7 940 -480 940 -250 930 -250 940 -230 950 -250 940 -250 940 -480 {fill=true}
-P 8 7 1070 -680 1070 -670 1060 -670 1070 -650 1080 -670 1070 -670 1070 -680 {fill=true}
-P 8 7 1130 -680 1130 -250 1120 -250 1130 -230 1140 -250 1130 -250 1130 -680 {fill=true}
-T {Example of Mismatch simulation of a 
-bandgap reference. 
-Variations are generated also on Vcc
-
-Plot shows bandgap varying outputs before
-and after the offset cancellation.
-} 230 -880 0 0 0.4 0.4 {}
+P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
+P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
+T {Example of Mismatch simulation of a bandgap reference. Variations are generated also on Vcc
+Plot shows bandgap varying outputs before and after the offset cancellation.} 10 -720 0 0 0.4 0.4 {}
 T {Select one or more graphs (and no other objects)
-and use arrow keys to zoom / pan waveforms} 250 -610 0 0 0.3 0.3 {}
-T {Bandgap voltage after offset compensation} 880 -700 0 0 0.3 0.3 {layer=8}
-T {Bandgap voltage before offset compensation} 820 -500 0 0 0.3 0.3 {layer=7}
+and use arrow keys to zoom / pan waveforms} 290 -580 0 0 0.3 0.3 {}
+T {Bandgap voltage after offset compensation} 950 -350 0 0 0.3 0.3 {layer=4}
+T {Bandgap voltage before offset compensation} 820 -410 0 0 0.3 0.3 {layer=4}
 N 240 -340 240 -320 { lab=EN_N}
-N 650 -340 650 -320 { lab=VCC}
+N 650 -340 650 -320 { lab=#net1}
 N 390 -340 390 -320 { lab=VSS}
 N 240 -220 240 -200 {lab=TEMPERAT}
 N 390 -220 390 -200 { lab=START}
 N 650 -220 650 -200 { lab=CLK}
+N 240 -460 300 -460 {
+lab=EN_N}
+N 240 -440 300 -440 {
+lab=VCC}
+N 240 -420 300 -420 {
+lab=VSS}
+N 240 -500 300 -500 {
+lab=START}
+N 240 -480 300 -480 {
+lab=CLK}
 C {devices/code.sym} 10 -450 0 0 {name=NGSPICE
 only_toplevel=true
 value="
@@ -105,12 +89,12 @@ value="
 .control
   option seed=12
   let run=1
-  dowhile run <= 20
+  dowhile run <= 30
     if run > 1
       reset
       set appendwrite
     end
-    save all
+    * save all
     if run % 3 = 1
       set temp=-40
     end
@@ -129,15 +113,15 @@ value="
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {sky130_tests/bandgap.sym} 410 -490 0 0 {name=x1}
-C {devices/lab_pin.sym} 560 -530 0 1 {name=p1 lab=VBG}
-C {devices/lab_pin.sym} 260 -490 0 0 {name=p2 lab=EN_N}
+C {sky130_tests/bandgap.sym} 450 -460 0 0 {name=x1}
+C {devices/lab_pin.sym} 600 -500 0 1 {name=p1 lab=VBG}
+C {devices/lab_pin.sym} 240 -460 0 0 {name=p2 lab=EN_N}
 C {devices/vsource.sym} 240 -290 0 0 {name=V1 value=0}
 C {devices/lab_pin.sym} 240 -340 0 1 {name=p3 lab=EN_N}
 C {devices/vsource.sym} 650 -290 0 0 {name=V2 value="pwl 0 0 1u 0 4u VCC"}
-C {devices/lab_pin.sym} 650 -340 0 1 {name=l29 sig_type=std_logic lab=VCC}
-C {devices/lab_pin.sym} 260 -470 0 0 {name=p4 lab=VCC}
-C {devices/lab_pin.sym} 260 -450 0 0 {name=p5 lab=VSS}
+C {devices/lab_pin.sym} 650 -400 0 1 {name=l29 sig_type=std_logic lab=VCC}
+C {devices/lab_pin.sym} 240 -440 0 0 {name=p4 lab=VCC}
+C {devices/lab_pin.sym} 240 -420 0 0 {name=p5 lab=VSS}
 C {devices/vsource.sym} 390 -290 0 0 {name=V3 value=0}
 C {devices/lab_pin.sym} 390 -340 0 1 {name=l3 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 240 -260 0 0 {name=l2 sig_type=std_logic lab=VSS}
@@ -162,9 +146,9 @@ value="dc 0 pulse
 }
 C {devices/lab_pin.sym} 650 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 650 -220 0 1 {name=p6 lab=CLK}
-C {devices/lab_pin.sym} 260 -530 0 0 {name=p8 lab=START}
-C {devices/lab_pin.sym} 260 -510 0 0 {name=p9 lab=CLK}
-C {devices/launcher.sym} 235 -665 0 0 {name=h1 
+C {devices/lab_pin.sym} 240 -500 0 0 {name=p8 lab=START}
+C {devices/lab_pin.sym} 240 -480 0 0 {name=p9 lab=CLK}
+C {devices/launcher.sym} 365 -625 0 0 {name=h1 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
 tclcommand="
@@ -172,3 +156,11 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 "
 }
 C {sky130_fd_pr/corner.sym} 20 -270 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
+C {devices/spice_probe.sym} 600 -500 0 0 {name=p10 attrs=""}
+C {devices/spice_probe.sym} 300 -500 0 1 {name=p11 attrs=""}
+C {devices/spice_probe.sym} 300 -480 0 1 {name=p12 attrs=""}
+C {devices/spice_probe.sym} 300 -460 0 1 {name=p13 attrs=""}
+C {devices/spice_probe.sym} 300 -440 0 1 {name=p14 attrs=""}
+C {devices/spice_probe.sym} 300 -420 0 1 {name=p15 attrs=""}
+C {devices/spice_probe.sym} 240 -220 0 1 {name=p16 attrs=""}
+C {devices/ammeter.sym} 650 -370 2 0 {name=VCC}

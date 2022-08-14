@@ -176,8 +176,8 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 630 -450 0 1 {name=M20
-L=1
-W=4
+L=2
+W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
@@ -187,8 +187,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 320 -450 0 0 {name=M6
-L=1
-W=4
+L=2
+W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0

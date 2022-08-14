@@ -46,10 +46,11 @@ divx=4
 node="x1.adj2 x1.adj
 clk"
 color="12 10 7"
-  unitx=u}
+  unitx=u
+subdivy=1}
 B 2 1830 -540 2290 -350 {flags=graph
-y1 = -0.000861365
-y2 = 0.000694628
+y1 = -0.000609787
+y2 = 0.000635008
 divy = 8
 subdivy=1
 unity=m
@@ -60,8 +61,8 @@ node="\\"x1.zminus x1.plus -\\""
 color=8
  subdivx=4  unitx=u}
 B 2 1830 -1010 2290 -820 {flags=graph
-y1 = -0.00086934
-y2 = 0.000919108
+y1 = -0.00066109
+y2 = 0.000483517
 divy = 8
 subdivy=1
 unity=m
@@ -89,24 +90,18 @@ T {Load waveforms in
 parent testbench} 1940 -1140 0 0 0.5 0.5 {}
 T {OPAMP differential voltage after offset compensation} 1840 -1070 0 0 0.3 0.3 {layer=8}
 T {OPAMP differential voltage before offset compensation} 1830 -790 0 0 0.3 0.3 {layer=7}
-N 330 -440 330 -410 { lab=E2}
-N 80 -290 330 -290 { lab=VSS}
-N 240 -380 240 -350 { lab=#net1}
-N 240 -380 290 -380 { lab=#net1}
-N 170 -380 170 -350 { lab=#net2}
-N 120 -380 170 -380 { lab=#net2}
-N 50 -380 80 -380 { lab=VSS}
-N 330 -530 330 -500 { lab=MINUS}
-N 80 -590 80 -410 { lab=PLUS}
-N 80 -1110 710 -1110 { lab=VBG}
-N 330 -380 360 -380 { lab=VSS}
-N 690 -560 710 -560 { lab=VBG}
-N 710 -1110 710 -560 { lab=VBG}
-N 710 -1110 780 -1110 { lab=VBG}
-N 80 -590 530 -590 { lab=PLUS}
-N 80 -630 80 -590 { lab=PLUS}
-N 330 -530 530 -530 { lab=MINUS}
-N 330 -630 330 -530 { lab=MINUS}
+N 80 -220 330 -220 { lab=VSS}
+N 240 -310 240 -280 { lab=#net1}
+N 240 -310 290 -310 { lab=#net1}
+N 170 -310 170 -280 { lab=#net2}
+N 120 -310 170 -310 { lab=#net2}
+N 330 -470 330 -440 { lab=MINUS}
+N 80 -530 80 -340 { lab=PLUS}
+N 80 -930 710 -930 { lab=VBG}
+N 690 -500 710 -500 { lab=VBG}
+N 710 -930 710 -500 { lab=VBG}
+N 80 -530 530 -530 { lab=PLUS}
+N 330 -470 530 -470 { lab=MINUS}
 N 920 -510 940 -510 { lab=ZMINUS}
 N 940 -440 940 -360 { lab=ZMINUS}
 N 920 -360 940 -360 { lab=ZMINUS}
@@ -119,7 +114,7 @@ N 1210 -470 1320 -470 { lab=#net3}
 N 1320 -530 1320 -470 { lab=#net3}
 N 1620 -530 1720 -530 { lab=ADJ2}
 N 1620 -250 1720 -250 { lab=ADJ}
-N 870 -780 1020 -780 {lab=CLK}
+N 990 -780 1020 -780 {lab=CLK}
 N 1020 -880 1120 -880 {lab=CLK}
 N 1020 -780 1020 -680 {lab=CLK}
 N 1020 -880 1020 -780 {lab=CLK}
@@ -136,53 +131,42 @@ N 1620 -360 1620 -250 { lab=ADJ}
 N 1420 -250 1620 -250 { lab=ADJ}
 N 1640 -930 1640 -860 { lab=F2}
 N 1640 -700 1640 -630 { lab=F1}
+N 330 -380 330 -340 {
+lab=E2}
+N 330 -570 330 -470 {
+lab=MINUS}
+N 80 -570 80 -530 {
+lab=PLUS}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 80 -130 0 0 {name=p1 lab=EN_N}
 C {devices/opin.sym} 150 -130 0 0 {name=p2 lab=VBG}
-C {sky130_fd_pr/pnp_05v5.sym} 100 -380 0 1 {name=Q1
+C {sky130_fd_pr/pnp_05v5.sym} 100 -310 0 1 {name=Q1
 model=pnp_05v5_W0p68L0p68 m=1
 spiceprefix=X
 }
-C {sky130_fd_pr/pnp_05v5.sym} 310 -380 0 0 {name=Q2
-model=pnp_05v5_W0p68L0p68 m=8
+C {sky130_fd_pr/pnp_05v5.sym} 310 -310 0 0 {name=Q2
+model=pnp_05v5_W0p68L0p68 m=20
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 780 -1110 0 1 {name=l2 sig_type=std_logic lab=VBG}
-C {devices/ammeter.sym} 80 -320 0 0 {name=Vc1 net_name=true}
-C {devices/ammeter.sym} 170 -320 0 0 {name=Vb1 net_name=true}
-C {devices/ammeter.sym} 240 -320 0 0 {name=Vb2 net_name=true}
-C {devices/ammeter.sym} 330 -320 0 0 {name=Vc2 net_name=true}
-C {devices/lab_pin.sym} 80 -600 0 1 {name=l26 sig_type=std_logic lab=PLUS}
-C {devices/lab_pin.sym} 330 -420 0 1 {name=l27 sig_type=std_logic lab=E2}
-C {devices/lab_pin.sym} 330 -540 0 1 {name=l28 sig_type=std_logic lab=MINUS}
-C {sky130_tests/bandgap_opamp.sym} 610 -560 0 0 {name=x1}
-C {devices/lab_pin.sym} 530 -430 0 0 {name=l30 sig_type=std_logic lab=VCC}
-C {devices/lab_pin.sym} 530 -410 0 0 {name=l31 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 530 -450 0 0 {name=l32 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 710 -930 0 1 {name=l2 sig_type=std_logic lab=VBG}
+C {devices/ammeter.sym} 80 -250 0 0 {name=Vc1 net_name=true}
+C {devices/ammeter.sym} 170 -250 0 0 {name=Vb1 net_name=true}
+C {devices/ammeter.sym} 240 -250 0 0 {name=Vb2 net_name=true}
+C {devices/ammeter.sym} 330 -250 0 0 {name=Vc2 net_name=true}
+C {devices/lab_pin.sym} 80 -540 0 1 {name=l26 sig_type=std_logic lab=PLUS}
+C {devices/lab_pin.sym} 330 -350 0 1 {name=l27 sig_type=std_logic lab=E2}
+C {devices/lab_pin.sym} 330 -480 0 1 {name=l28 sig_type=std_logic lab=MINUS}
+C {sky130_tests/bandgap_opamp.sym} 610 -500 0 0 {name=x1}
+C {devices/lab_pin.sym} 530 -370 0 0 {name=l30 sig_type=std_logic lab=VCC}
+C {devices/lab_pin.sym} 530 -350 0 0 {name=l31 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 530 -390 0 0 {name=l32 sig_type=std_logic lab=EN_N}
 C {devices/ipin.sym} 80 -110 0 0 {name=p3 lab=VCC}
-C {devices/lab_pin.sym} 80 -290 0 0 {name=l3 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 80 -220 0 0 {name=l3 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 80 -90 0 0 {name=p4 lab=VSS}
-C {devices/lab_pin.sym} 50 -380 0 0 {name=l6 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 360 -380 0 1 {name=l7 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -960 0 0 {name=l4 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -900 0 0 {name=l5 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -840 0 0 {name=l8 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -780 0 0 {name=l9 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -720 0 0 {name=l10 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -660 0 0 {name=l11 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -960 0 0 {name=l12 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -900 0 0 {name=l13 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -840 0 0 {name=l14 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -780 0 0 {name=l16 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -720 0 0 {name=l17 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -660 0 0 {name=l18 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -470 0 0 {name=l19 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 60 -1020 0 0 {name=l15 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 310 -1020 0 0 {name=l20 sig_type=std_logic lab=VSS}
-C {devices/ammeter.sym} 80 -1080 0 0 {name=V1 net_name=true}
-C {devices/ammeter.sym} 330 -1080 0 0 {name=V2 net_name=true}
-C {devices/lab_pin.sym} 530 -470 0 0 {name=p5 lab=ADJ}
-C {devices/lab_pin.sym} 530 -490 0 0 {name=p6 lab=START}
+C {devices/ammeter.sym} 80 -900 0 0 {name=V1 net_name=true}
+C {devices/ammeter.sym} 330 -900 0 0 {name=V2 net_name=true}
+C {devices/lab_pin.sym} 530 -410 0 0 {name=p5 lab=ADJ}
+C {devices/lab_pin.sym} 530 -430 0 0 {name=p6 lab=START}
 C {sky130_tests/zero_opamp.sym} 1130 -470 0 0 {name=x2}
 C {sky130_tests/passgate.sym} 880 -510 0 0 {name=x3 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
 C {sky130_tests/passgate.sym} 880 -360 0 0 {name=x4 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
@@ -222,111 +206,105 @@ C {sky130_tests/not.sym} 1360 -700 0 0 {name=x17 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0
 C {sky130_tests/not.sym} 1440 -700 0 0 {name=x18 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
 C {sky130_tests/not.sym} 1520 -700 0 0 {name=x19 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
 C {sky130_tests/not.sym} 1600 -700 0 0 {name=x20 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {devices/capa.sym} 520 -1080 0 0 {name=c2 value=5p}
-C {devices/lab_pin.sym} 520 -1050 0 0 {name=l45 sig_type=std_logic lab=VSS}
+C {devices/capa.sym} 520 -900 0 0 {name=c2 value=5p}
+C {devices/lab_pin.sym} 520 -870 0 0 {name=l45 sig_type=std_logic lab=VSS}
 C {sky130_tests/passgate.sym} 1620 -400 1 0 {name=x7 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
-C {sky130_tests/not.sym} 580 -310 0 0 {name=x21 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {devices/lab_pin.sym} 540 -310 0 0 {name=p15 lab=START}
-C {devices/lab_pin.sym} 620 -310 0 1 {name=p16 lab=START_N}
+C {sky130_tests/not.sym} 580 -280 0 0 {name=x21 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
+C {devices/lab_pin.sym} 540 -280 0 0 {name=p15 lab=START}
+C {devices/lab_pin.sym} 620 -280 0 1 {name=p16 lab=START_N}
 C {devices/lab_pin.sym} 1590 -400 0 0 {name=p8 lab=START}
 C {devices/lab_pin.sym} 1650 -400 0 1 {name=p9 lab=START_N}
 C {sky130_tests/not.sym} 1680 -630 0 0 {name=x22 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
 C {sky130_tests/not.sym} 1680 -930 0 0 {name=x23 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {devices/lab_pin.sym} 870 -780 0 0 {name=l22 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 990 -780 0 0 {name=l22 sig_type=std_logic lab=CLK}
 C {devices/ipin.sym} 80 -150 0 0 { name=p10 lab=CLK }
 C {devices/ipin.sym} 80 -170 0 0 { name=p7 lab=START }
 C {devices/lab_pin.sym} 1490 -470 0 0 {name=l21 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1490 -500 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1490 -500 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=20 spiceprefix=X }
 C {devices/lab_pin.sym} 1490 -190 0 0 {name=l40 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1490 -220 0 0 {name=C1 model=cap_mim_m3_2 W=10 L=10 MF=20 spiceprefix=X }
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -1020 0 0 {name=R1
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -960 0 0 {name=R2
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -900 0 0 {name=R3
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -840 0 0 {name=R4
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -780 0 0 {name=R5
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -720 0 0 {name=R6
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -660 0 0 {name=R7
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -1020 0 0 {name=R8
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -960 0 0 {name=R9
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -900 0 0 {name=R10
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -840 0 0 {name=R11
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -780 0 0 {name=R12
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -720 0 0 {name=R13
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -660 0 0 {name=R14
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -470 0 0 {name=R15
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
 C {devices/lab_pin.sym} 940 -460 0 1 {name=l39 sig_type=std_logic lab=ZMINUS}
+C {devices/spice_probe.sym} 430 -530 0 1 {name=p11 attrs=""}
+C {devices/spice_probe.sym} 430 -470 0 1 {name=p12 attrs=""}
+C {devices/spice_probe.sym} 1050 -440 0 1 {name=p13 attrs=""}
+C {devices/spice_probe.sym} 1680 -530 0 1 {name=p14 attrs=""}
+C {devices/spice_probe.sym} 1680 -250 0 1 {name=p17 attrs=""}
+C {devices/spice_probe.sym} 1640 -700 0 0 {name=p18 attrs=""}
+C {devices/spice_probe.sym} 1640 -860 2 1 {name=p19 attrs=""}
+C {devices/lab_pin.sym} 310 -410 0 0 {name=l6 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -410 0 0 {name=R1
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {devices/lab_pin.sym} 60 -840 0 0 {name=l4 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 60 -780 0 0 {name=l7 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 60 -720 0 0 {name=l12 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 60 -660 0 0 {name=l15 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 60 -600 0 0 {name=l19 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 310 -840 0 0 {name=l20 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 310 -780 0 0 {name=l46 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 310 -720 0 0 {name=l47 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 310 -660 0 0 {name=l48 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 310 -600 0 0 {name=l49 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -840 0 0 {name=R2
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -780 0 0 {name=R8
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -720 0 0 {name=R9
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -660 0 0 {name=R15
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -600 0 0 {name=R16
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -840 0 0 {name=R17
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -780 0 0 {name=R18
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -720 0 0 {name=R19
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -660 0 0 {name=R20
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -600 0 0 {name=R21
+W=0.69
+L=10
+model=res_xhigh_po_0p69
+spiceprefix=X
+mult=1 net_name=true}

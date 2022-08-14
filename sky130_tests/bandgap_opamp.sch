@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -70,7 +70,6 @@ N 950 -770 1090 -770 { lab=#net3}
 N 1130 -830 1130 -800 { lab=START}
 N 1130 -740 1130 -710 { lab=START_N}
 N 1170 -770 1210 -770 { lab=G2}
-N 1210 -770 1210 -370 { lab=G2}
 N 820 -370 1210 -370 { lab=G2}
 N 820 -370 820 -320 {lab=G2}
 N 1350 -720 1410 -720 { lab=EN_N}
@@ -83,6 +82,8 @@ N 1450 -520 1450 -430 { lab=DIFFOUT}
 N 1300 -460 1300 -430 { lab=#net6}
 N 1300 -560 1300 -520 { lab=DIFFOUT}
 N 1300 -560 1450 -560 { lab=DIFFOUT}
+N 1210 -770 1210 -370 {
+lab=G2}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 100 -520 0 0 { name=p93 lab=PLUS }
 C {devices/ipin.sym} 100 -540 0 0 { name=p94 lab=MINUS }
@@ -181,8 +182,8 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 840 -460 0 1 {name=M20
-L=1
-W=4
+L=2
+W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
@@ -192,8 +193,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 530 -460 0 0 {name=M6
-L=1
-W=4
+L=2
+W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
@@ -224,13 +225,13 @@ C {devices/lab_pin.sym} 1480 -370 0 1 {name=p2 lab=VSS}
 C {devices/lab_pin.sym} 1670 -520 0 1 {name=l10 lab=DIFFOUT}
 C {devices/parax_cap.sym} 1520 -510 0 0 {name=C5  value=4f}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1430 -370 0 0 {name=M11
-L=3
+L=4
 W=6
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
-nf=1 mult=4
+nf=1 mult=5
 model=nfet_01v8_lvt
 spiceprefix=X
  }
@@ -240,8 +241,8 @@ C {devices/lab_pin.sym} 1350 -720 0 0 {name=l2 lab=EN_N}
 C {devices/lab_pin.sym} 370 -460 0 1 {name=p4 lab=VCC}
 C {devices/lab_pin.sym} 300 -460 0 0 {name=l4 lab=DIFFOUT}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 320 -460 0 0 {name=M5
-L=1
-W=4
+L=2
+W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
@@ -328,7 +329,7 @@ C {devices/lab_pin.sym} 1130 -830 0 0 {name=p17 lab=START}
 C {devices/lab_pin.sym} 1130 -710 0 0 {name=p18 lab=START_N}
 C {devices/ipin.sym} 100 -500 0 0 { name=p19 lab=START }
 C {devices/lab_pin.sym} 950 -610 0 0 {name=p27 lab=VSS}
-C {sky130_tests/passgate_nlvt.sym} 1130 -770 0 0 {name=x3 W_N=1 L_N=0.35 W_P=1 L_P=0.35 
+C {sky130_tests/passgate_nlvt.sym} 1130 -770 0 0 {name=x3 W_N=0.5 L_N=0.35 W_P=0.5 L_P=0.35 
     
 VCCBPIN=VCC VSSBPIN=VSS  m=1}
 C {devices/lab_pin.sym} 1480 -720 0 1 {name=p29 lab=VCC}
