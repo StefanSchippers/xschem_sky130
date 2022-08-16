@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -17,7 +17,7 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {
 y <= not a after 0.1 ns ;}
-G {}
+K {}
 V {assign #150 y=~a ;}
 S {}
 E {}
