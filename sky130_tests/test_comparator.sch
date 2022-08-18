@@ -39,8 +39,8 @@ y1=0.014
 y2=2
 divy=4
 subdivy=1
-x1=1e-12
-x2=3e-07
+x1=-1.54321e-08
+x2=3.84567e-07
 divx=8
 subdivx=4
 node=saout
@@ -52,8 +52,8 @@ y1=-0.005
 y2=0.005
 
 subdivy=1
-x1=1e-12
-x2=3e-07
+x1=-1.54321e-08
+x2=3.84567e-07
 divx=8
 
 node="\\"VDIFF;plus minus -\\""
@@ -68,8 +68,8 @@ y1=0
 y2=2
 divy=5
 subdivy=4
-x1=1e-12
-x2=3e-07
+x1=-1.54321e-08
+x2=3.84567e-07
 divx=8
 subdivx=4
 
@@ -86,49 +86,34 @@ y1=0.66
 y2=1.5
 divy=4
 subdivy=1
-x1=1e-12
-x2=3e-07
+x1=-1.54321e-08
+x2=3.84567e-07
 divx=8
 subdivx=4
 node=outdiff
 color=4
 unitx=n
 }
-B 2 2210 -2710 3290 -2370 {flags=graph
-y1=0.83
+B 2 2210 -2220 3290 -1880 {flags=graph
+y1=9.60948e-07
 y2=1.5
 divy=4
 subdivy=1
-x1=1e-12
-x2=3e-07
+x1=-1.54321e-08
+x2=3.84567e-07
 divx=8
 subdivx=4
 node="plus minus"
 color="4 8"
 unitx=n
 }
-B 2 2210 -2360 3290 -2000 {flags=graph
-y1=-0.026
-y2=2
-divy=4
-subdivy=1
-x1=1e-12
-x2=3e-07
-divx=8
-subdivx=4
-node="zero0
-calb
-calbb"
-color="4 8 7"
-unitx=n
-dataset=2}
-B 2 2210 -1990 3290 -1630 {flags=graph
+B 2 2210 -1870 3290 -1510 {flags=graph
 y1=-0.000224097
 y2=1.08198e-06
 divy=4
 subdivy=1
-x1=1e-12
-x2=3e-07
+x1=-1.54321e-08
+x2=3.84567e-07
 divx=8
 subdivx=4
 
@@ -137,6 +122,32 @@ unitx=n
 color=8
 node=i(vvcc)
 unity=u}
+B 2 2210 -2580 3290 -2240 {flags=graph
+y1=-57.7549
+y2=115.045
+divy=4
+subdivy=1
+x1=-1.54321e-08
+x2=3.84567e-07
+divx=8
+subdivx=4
+node=temperat
+color=4
+unitx=n
+}
+B 2 1090 -3070 2170 -2730 {flags=graph
+y1=1.6
+y2=2
+divy=4
+subdivy=1
+x1=-1.54321e-08
+x2=3.84567e-07
+divx=8
+subdivx=4
+node=vcc
+color=4
+unitx=n
+}
 T {CAL} 140 -190 0 1 0.4 0.4 {}
 T {EN} 140 -140 0 1 0.4 0.4 {}
 T {CALIBRATION
@@ -146,7 +157,7 @@ T {SENSING
 T {OFF} 660 -310 0 1 0.4 0.4 {}
 T {OFF} 210 -310 0 1 0.4 0.4 {}
 T {NGSPICE MISMATCH SIMULATION} 1210 -290 0 0 0.8 0.8 {}
-T {Offset-compensated comparator. Detects +/- 3mV differential signal on PLUS, MINUS.
+T {Offset-compensated comparator. Detects +/- 2mV differential signal on PLUS, MINUS.
 Variations on per-instance process parameters (tt_mm corner), VCC and Temperature.
 Output on SAOUT
 } 1110 -220 0 0 0.6 0.6 {}
@@ -556,7 +567,7 @@ model=pfet_01v8
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 2620 -1280 0 0 {name=M12
-L=1
+L=2
 W=0.42
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
@@ -567,7 +578,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 2130 -1280 0 0 {name=M13
-L=1
+L=2
 W=0.42
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
@@ -578,7 +589,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1640 -1280 0 0 {name=M14
-L=1
+L=2
 W=0.42
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
@@ -600,7 +611,7 @@ model=nfet_01v8
 spiceprefix=X
  }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1640 -1030 0 0 {name=M2
-L=1
+L=2
 W=0.42
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
@@ -611,7 +622,7 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2130 -1030 0 0 {name=M3
-L=1
+L=2
 W=0.42
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
@@ -622,7 +633,7 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2620 -1030 0 0 {name=M7
-L=1
+L=2
 W=0.42
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
