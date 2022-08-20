@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2 
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -672,3 +672,4 @@ C {sky130_fd_pr/npn_05v5.sym} 2570 -50 0 0 {name=Q2
 model=npn_05v5_w1p00l2p00
 spiceprefix=X
 }
+C {sky130_tests/test_nand2_noschematic.sym} 490 -1520 0 0 {name=x29}

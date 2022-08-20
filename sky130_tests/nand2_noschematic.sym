@@ -1,0 +1,56 @@
+v {xschem version=3.1.0 file_version=1.2 }
+G {}
+K {type=nand
+vhdl_stop=true
+format="#xa#@name @@Z @@A @VCCPIN @VCCBPIN @modelp w=@wpa l=@lpa nf=1 m=@m
+#xb#@name @@Z @@B @VCCPIN @VCCBPIN @modelp w=@wpb l=@lpb nf=1 m=@m
+#xc#@name @@Z @@A #na#@name @VSSBPIN @modeln w=@wna l=@lna nf=1 m=@m
+#xd#@name #na#@name @@B @VSSPIN @VSSBPIN @modeln w=@wnb l=@lnb nf=1 m=@m"
+
+template="name=x1 m=1 
++ wna=4 lna=0.1
++ wnb=4 lnb=0.1 modeln=NCH
++ wpa=2 lpa=0.1
++ wpb=2 lpb=0.1 modelp=PCH
++ VCCPIN=VCC VCCBPIN=VCC VSSPIN=VSS VSSBPIN=VSS"
+
+extra="VCCPIN VCCBPIN VSSPIN VSSBPIN"
+
+generic_type="m=integer 
+wna=real lna=real 
+wpa=real lpa=real 
+wnb=real lnb=real 
+wpb=real lpb=real 
+VCCPIN=string 
+VCCBPIN=string
+VSSPIN=string 
+VSSBPIN=string
+modeln=string
+modelp=string"
+
+verilog_stop=true
+}
+V {}
+S {}
+E {}
+L 4 -40 -20 -25 -20 {}
+L 4 45 0 60 0 {}
+L 4 -25 -30 -25 30 {}
+L 4 -25 -30 5 -30 {}
+L 4 -25 30 5 30 {}
+L 4 -40 20 -25 20 {}
+B 5 57.5 -2.5 62.5 2.5 {name=Z dir=out verilog_type=wire}
+B 5 -42.5 -22.5 -37.5 -17.5 {name=A dir=in}
+B 5 -42.5 17.5 -37.5 22.5 {name=B dir=in}
+A 4 40 0 5 180 360 {}
+A 4 5 0 30 270 180 {}
+T {@name
+A:@wna\\/@lna
+B:@wnb\\/@lnb
+@modeln} -30 90 2 1 0.2 0.2 {}
+T {m=@m
+A:@wpa\\/@lpa
+B:@wpb\\/@lpb
+@modelp} -30 -40 2 1 0.2 0.2 {}
+T {A} -21.25 -27.5 0 0 0.2 0.2 {}
+T {B} -21.25 15 0 0 0.2 0.2 {}
