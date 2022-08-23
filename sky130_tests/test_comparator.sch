@@ -65,8 +65,8 @@ subdivx=1
 divy=2
 unity=m}
 B 2 20 -2050 1000 -1620 {flags=graph
-y1=0.045
-y2=2
+y1=0.02
+y2=2.1
 divy=4
 subdivy=1
 x1=4.52957e-08
@@ -430,17 +430,17 @@ lab=GP2}
 N 1500 -450 1530 -450 {lab=VSS}
 N 1500 -420 1500 -400 {lab=VSSI}
 N 1470 -400 1500 -400 {lab=VSSI}
-N 1500 -790 1530 -790 {lab=VCC}
-N 1500 -840 1500 -820 {lab=VCC}
-N 1470 -840 1500 -840 {
+N 1500 -740 1530 -740 {lab=VCC}
+N 1500 -790 1500 -770 {lab=VCC}
+N 1470 -790 1500 -790 {
 lab=VCC}
 N 1500 -650 1500 -480 {
 lab=OUTDIFF}
 N 1500 -650 1760 -650 {
 lab=OUTDIFF}
-N 1500 -760 1500 -650 {
+N 1500 -710 1500 -650 {
 lab=OUTDIFF}
-N 1350 -790 1460 -790 {
+N 1350 -740 1460 -740 {
 lab=GP1}
 N 1350 -450 1460 -450 {
 lab=GN1}
@@ -776,15 +776,15 @@ spiceprefix=X
  }
 C {sky130_tests/passgate.sym} 1400 -1200 0 1 {name=x1 m=1
 W_N=0.42 L_N=0.15
-W_P=0.7 L_P=0.15
+W_P=0.84 L_P=0.15
 VCCBPIN=VCC VSSBPIN=VSS}
 C {sky130_tests/passgate.sym} 1890 -1200 0 1 {name=x2 m=1
 W_N=0.42 L_N=0.15
-W_P=0.7 L_P=0.15
+W_P=0.84 L_P=0.15
 VCCBPIN=VCC VSSBPIN=VSS}
 C {sky130_tests/passgate.sym} 2380 -1200 0 1 {name=x3 m=1
 W_N=0.42 L_N=0.15
-W_P=0.7 L_P=0.15
+W_P=0.84 L_P=0.15
 VCCBPIN=VCC VSSBPIN=VSS}
 C {devices/lab_pin.sym} 1490 -950 0 0 {name=p5 lab=VSS}
 C {devices/lab_pin.sym} 1980 -950 0 0 {name=p6 lab=VSS}
@@ -847,8 +847,8 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 1470 -400 0 0 {name=p27 lab=VSSI}
-C {devices/lab_pin.sym} 1530 -790 0 1 {name=p28 lab=VCC}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1480 -790 0 0 {name=M26
+C {devices/lab_pin.sym} 1530 -740 0 1 {name=p28 lab=VCC}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1480 -740 0 0 {name=M26
 L=2
 W=2
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -859,13 +859,13 @@ nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
  }
-C {devices/lab_pin.sym} 1470 -840 0 0 {name=p29 lab=VCC}
+C {devices/lab_pin.sym} 1470 -790 0 0 {name=p29 lab=VCC}
 C {devices/lab_pin.sym} 1350 -450 0 0 {name=l21 lab=GN1}
-C {devices/lab_pin.sym} 1350 -790 0 0 {name=l22 lab=GP1}
+C {devices/lab_pin.sym} 1350 -740 0 0 {name=l22 lab=GP1}
 C {sky130_fd_pr/corner.sym} 40 -190 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2500 -1000 0 0 {name=C5 model=cap_mim_m3_1 W=3 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2010 -1000 0 0 {name=C2 model=cap_mim_m3_1 W=3 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1520 -1000 0 0 {name=C4 model=cap_mim_m3_1 W=3 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2500 -1000 0 0 {name=C5 model=cap_mim_m3_1 W=4 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2010 -1000 0 0 {name=C2 model=cap_mim_m3_1 W=4 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1520 -1000 0 0 {name=C4 model=cap_mim_m3_1 W=4 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2130 -1030 0 0 {name=M3
 L=3
 W=0.8
