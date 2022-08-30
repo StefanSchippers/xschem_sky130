@@ -20,73 +20,92 @@ K {}
 V {}
 S {}
 E {}
-N 380 -260 480 -260 { lab=X}
-N 400 -520 440 -520 { lab=Y}
-N 850 -550 870 -550 { lab=Qlatch}
-N 770 -530 780 -530 { lab=#net1}
-N 1170 -500 1190 -500 { lab=#net2}
-N 1170 -560 1170 -500 { lab=#net2}
-N 1140 -560 1170 -560 { lab=#net2}
-N 400 -620 400 -520 { lab=Y}
-N 1300 -520 1350 -520 { lab=#net3}
-N 1310 -480 1350 -480 { lab=#net4}
-N 1350 -440 1350 -420 { lab=Q}
-N 340 -520 400 -520 { lab=Y}
-N 440 -420 1350 -420 { lab=Q}
-N 1340 -400 1340 -350 { lab=RESET_B}
-N 1340 -400 1350 -400 { lab=RESET_B}
-N 850 -460 1190 -460 { lab=Qlatch}
-N 850 -550 850 -460 { lab=Qlatch}
-N 1510 -460 1560 -460 { lab=XSCHEM}
-N 260 -350 1340 -350 { lab=RESET_B}
-N 260 -380 260 -350 { lab=RESET_B}
-N 970 -620 970 -580 { lab=Y}
-N 970 -580 1020 -580 { lab=Y}
-N 770 -550 850 -550 { lab=Qlatch}
-N 400 -620 970 -620 { lab=Y}
-N 970 -620 1140 -620 { lab=Y}
-N 1300 -620 1300 -520 { lab=#net3}
-N 1220 -620 1300 -620 { lab=#net3}
-C {devices/lab_pin.sym} 260 -280 0 0 {name=p1 lab=A}
-C {devices/lab_pin.sym} 260 -240 0 0 {name=p2 lab=B}
-C {devices/lab_pin.sym} 480 -260 0 1 {name=p3 lab=X}
-C {sky130_stdcells/nand2_1.sym} 320 -260 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/parax_cap.sym} 420 -250 0 0 {name=C1 gnd=0 value=3f m=1}
-C {sky130_stdcells/dfrtp_1.sym} 350 -400 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ 
+P 4 5 670 -870 1030 -870 1030 -500 670 -500 670 -870 {}
+T {OUTPUT BUFFERS} 650 -930 0 0 1 1 {}
+N 420 -110 520 -110 { lab=IX}
+N 440 -370 480 -370 { lab=IY}
+N 890 -400 910 -400 { lab=IQLATCH}
+N 810 -380 820 -380 { lab=#net1}
+N 1210 -350 1230 -350 { lab=#net2}
+N 1210 -410 1210 -350 { lab=#net2}
+N 1180 -410 1210 -410 { lab=#net2}
+N 440 -470 440 -370 { lab=IY}
+N 1340 -370 1390 -370 { lab=#net3}
+N 1350 -330 1390 -330 { lab=#net4}
+N 1390 -290 1390 -270 { lab=IQ}
+N 380 -370 440 -370 { lab=IY}
+N 480 -270 1390 -270 { lab=IQ}
+N 1380 -250 1380 -200 { lab=RESET_B}
+N 1380 -250 1390 -250 { lab=RESET_B}
+N 890 -310 1230 -310 { lab=IQLATCH}
+N 890 -400 890 -310 { lab=IQLATCH}
+N 1550 -310 1600 -310 { lab=IXSCHEM}
+N 300 -200 1380 -200 { lab=RESET_B}
+N 300 -230 300 -200 { lab=RESET_B}
+N 1010 -470 1010 -430 { lab=IY}
+N 1010 -430 1060 -430 { lab=IY}
+N 810 -400 890 -400 { lab=IQLATCH}
+N 440 -470 1010 -470 { lab=IY}
+N 1010 -470 1180 -470 { lab=IY}
+N 1340 -470 1340 -370 { lab=#net3}
+N 1260 -470 1340 -470 { lab=#net3}
+N 520 -110 580 -110 {
+lab=IX}
+C {devices/lab_pin.sym} 300 -130 0 0 {name=p1 lab=A}
+C {devices/lab_pin.sym} 300 -90 0 0 {name=p2 lab=B}
+C {sky130_stdcells/nand2_1.sym} 360 -110 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/parax_cap.sym} 460 -100 0 0 {name=C1 gnd=0 value=3f m=1}
+C {sky130_stdcells/dfrtp_1.sym} 390 -250 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ 
 }
-C {devices/lab_pin.sym} 260 -420 0 0 {name=p10 lab=CLK}
-C {devices/lab_pin.sym} 260 -400 0 0 {name=p11 lab=A}
-C {devices/lab_pin.sym} 260 -380 0 0 {name=p14 lab=RESET_B}
-C {devices/lab_wire.sym} 540 -420 0 1 {name=l15 lab=Q}
-C {devices/parax_cap.sym} 480 -410 0 0 {name=C2 gnd=0 value=3f m=1}
-C {devices/lab_pin.sym} 220 -540 0 0 {name=p16 lab=A}
-C {devices/lab_pin.sym} 220 -500 0 0 {name=p17 lab=B}
-C {devices/lab_pin.sym} 440 -520 0 1 {name=p18 lab=Y}
-C {devices/parax_cap.sym} 380 -510 0 0 {name=C3 gnd=0 value=3f m=1}
-C {sky130_stdcells/nor2b_1.sym} 280 -520 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/dlrbn_1.sym} 680 -530 0 0 {name=x4 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 590 -530 0 0 {name=p19 lab=CLK}
-C {devices/lab_pin.sym} 590 -550 0 0 {name=p20 lab=A}
-C {devices/lab_pin.sym} 590 -510 0 0 {name=p21 lab=RESET_B}
-C {devices/lab_pin.sym} 870 -550 0 1 {name=p22 lab=Qlatch}
-C {devices/parax_cap.sym} 810 -540 0 0 {name=C4 gnd=0 value=3f m=1}
-C {devices/lab_pin.sym} 1020 -540 0 0 {name=p24 lab=B}
-C {sky130_stdcells/nor2b_1.sym} 1080 -560 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/nand2_1.sym} 1250 -480 0 0 {name=x6 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/a31o_2.sym} 1430 -460 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 1560 -460 0 1 {name=p15 lab=XSCHEM}
-C {devices/noconn.sym} 780 -530 2 0 {name=l2}
-C {devices/noconn.sym} 1520 -460 3 0 {name=l3}
-C {sky130_stdcells/inv_2.sym} 1180 -620 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 300 -270 0 0 {name=p10 lab=CLK}
+C {devices/lab_pin.sym} 300 -250 0 0 {name=p11 lab=A}
+C {devices/lab_pin.sym} 300 -230 0 0 {name=p14 lab=RESET_B}
+C {devices/lab_wire.sym} 580 -270 0 1 {name=l15 lab=IQ}
+C {devices/parax_cap.sym} 520 -260 0 0 {name=C2 gnd=0 value=3f m=1}
+C {devices/lab_pin.sym} 260 -390 0 0 {name=p16 lab=A}
+C {devices/lab_pin.sym} 260 -350 0 0 {name=p17 lab=B}
+C {devices/lab_pin.sym} 480 -370 0 1 {name=p18 lab=IY}
+C {devices/parax_cap.sym} 420 -360 0 0 {name=C3 gnd=0 value=3f m=1}
+C {sky130_stdcells/nor2b_1.sym} 320 -370 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dlrbn_1.sym} 720 -380 0 0 {name=x4 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 630 -380 0 0 {name=p19 lab=CLK}
+C {devices/lab_pin.sym} 630 -400 0 0 {name=p20 lab=A}
+C {devices/lab_pin.sym} 630 -360 0 0 {name=p21 lab=RESET_B}
+C {devices/lab_pin.sym} 910 -400 0 1 {name=p22 lab=IQLATCH}
+C {devices/parax_cap.sym} 850 -390 0 0 {name=C4 gnd=0 value=3f m=1}
+C {devices/lab_pin.sym} 1060 -390 0 0 {name=p24 lab=B}
+C {sky130_stdcells/nor2b_1.sym} 1120 -410 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/nand2_1.sym} 1290 -330 0 0 {name=x6 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/a31o_2.sym} 1470 -310 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 1600 -310 0 1 {name=p15 lab=IXSCHEM}
+C {devices/noconn.sym} 820 -380 2 0 {name=l2}
+C {devices/noconn.sym} 1560 -310 3 0 {name=l3}
+C {sky130_stdcells/inv_2.sym} 1220 -470 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/ipin.sym} 210 -710 0 0 { name=p1 lab=RESET_B }
-C {devices/ipin.sym} 210 -730 0 0 { name=p2 lab=CLK }
-C {devices/ipin.sym} 210 -750 0 0 { name=p3 lab=B }
-C {devices/ipin.sym} 210 -770 0 0 { name=p4 lab=A }
-C {devices/opin.sym} 320 -740 0 0 { name=p1 lab=Y }
-C {devices/opin.sym} 320 -760 0 0 { name=p2 lab=X }
-C {devices/opin.sym} 320 -780 0 0 { name=p3 lab=Qlatch }
-C {devices/opin.sym} 320 -720 0 0 { name=p1 lab=Q }
-C {devices/opin.sym} 320 -700 0 0 { name=p1 lab=XSCHEM }
-C {devices/ipin.sym} 210 -640 0 0 { name=p1 lab=VCC }
-C {devices/ipin.sym} 210 -620 0 0 { name=p1 lab=VSS }
+C {devices/ipin.sym} 250 -560 0 0 { name=p1 lab=RESET_B }
+C {devices/ipin.sym} 250 -580 0 0 { name=p2 lab=CLK }
+C {devices/ipin.sym} 250 -600 0 0 { name=p3 lab=B }
+C {devices/ipin.sym} 250 -620 0 0 { name=p4 lab=A }
+C {devices/opin.sym} 360 -590 0 0 { name=p1 lab=Y }
+C {devices/opin.sym} 360 -610 0 0 { name=p2 lab=X }
+C {devices/opin.sym} 360 -630 0 0 { name=p3 lab=QLATCH}
+C {devices/opin.sym} 360 -570 0 0 { name=p1 lab=Q }
+C {devices/opin.sym} 360 -550 0 0 { name=p1 lab=XSCHEM }
+C {devices/ipin.sym} 250 -490 0 0 { name=p1 lab=VCC }
+C {devices/ipin.sym} 250 -470 0 0 { name=p1 lab=VSS }
+C {devices/lab_wire.sym} 520 -110 0 1 {name=l15 lab=IX}
+C {devices/lab_pin.sym} 880 -600 0 1 {name=p24 lab=Y}
+C {sky130_stdcells/buf_2.sym} 840 -600 0 0 {name=x13 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 800 -600 0 0 {name=p18 lab=IY}
+C {devices/lab_pin.sym} 880 -670 0 1 {name=p24 lab=X}
+C {sky130_stdcells/buf_2.sym} 840 -670 0 0 {name=x9 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 800 -670 0 0 {name=p18 lab=IX}
+C {devices/lab_pin.sym} 880 -740 0 1 {name=p24 lab=Q}
+C {sky130_stdcells/buf_2.sym} 840 -740 0 0 {name=x14 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 800 -740 0 0 {name=p18 lab=IQ}
+C {devices/lab_pin.sym} 880 -810 0 1 {name=p24 lab=QLATCH}
+C {sky130_stdcells/buf_2.sym} 840 -810 0 0 {name=x15 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 800 -810 0 0 {name=p18 lab=IQLATCH}
+C {devices/lab_pin.sym} 880 -530 0 1 {name=p24 lab=XSCHEM}
+C {sky130_stdcells/buf_2.sym} 840 -530 0 0 {name=x11 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 800 -530 0 0 {name=p18 lab=IXSCHEM}
