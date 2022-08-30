@@ -20,9 +20,8 @@ K {}
 V {}
 S {}
 E {}
-T {xspice used models are defined in top level.} 10 -230 0 0 0.5 0.5 {}
-T {xspice netlist obtained from qflow's spi2xspice.py, 
-with *numerous* manual tweaks and fixes} 10 -320 0 0 0.5 0.5 {}
+T {xspice used "code" models are defined in top level.} 10 -280 0 0 0.5 0.5 {}
+T {xspice netlist obtained from qflow's spi2xspice.py} 10 -320 0 0 0.5 0.5 {}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 250 -560 0 0 { name=p1 lab=a_RESET_B }
 C {devices/ipin.sym} 250 -580 0 0 { name=p2 lab=a_CLK }
@@ -38,7 +37,7 @@ C {devices/ipin.sym} 250 -470 0 0 { name=p1 lab=a_VSS }
 C {devices/code_shown.sym} 750 -620 0 0 {name=XSPICE only_toplevel=false value="A1 [A B] IX d_lut_sky130_fd_sc_hd__nand2_1
 A2 A CLK NULL ~RESET_B IQ NULL ddflop
 A3 [A B] IY d_lut_sky130_fd_sc_hd__nor2b_1
-A4 A ~CLK NULL ~RESET_B IQLATCH NULL dlatch
+A4 A ~CLK NULL ~RESET_B IQLATCH net1 dlatch
 A5 [IY B] net2 d_lut_sky130_fd_sc_hd__nor2b_1
 A6 [net2 IQLATCH] net4 d_lut_sky130_fd_sc_hd__nand2_1
 A7 [net3 net4 IQ RESET_B] IXSCHEM d_lut_sky130_fd_sc_hd__a31o_2

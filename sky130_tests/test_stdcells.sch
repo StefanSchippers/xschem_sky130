@@ -20,7 +20,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 260 -970 1400 -430 {flags=graph
+B 2 260 -1150 1400 -800 {flags=graph
 digital=1
 y1=-0.12
 y2=1.9
@@ -28,26 +28,22 @@ divy=4
 
 x1=0
 x2=8e-08
-ypos1=0.0336579
-ypos2=2.40748
+ypos1=0.1619
+ypos2=1.51212
 divx=10
 subdivx=4
-node="\\"INPUTS; 0.9\\"
-clk
-a
-b
-reset_b
-\\"OUTPUTS; 0.9\\"
+node="\\"OUTPUTS
+SPICE; nothing\\"
 q
 x
 y
 qlatch
 xschem"
-color="9 4 4 4 4 9 7 7 7 7 7"
+color="9 10 10 10 10 10"
 dataset=0
 unitx=n
  subdivy=1}
-B 2 260 -1510 1400 -970 {flags=graph
+B 2 260 -800 1400 -450 {flags=graph
 digital=1
 y1=-0.12
 y2=1.9
@@ -55,29 +51,45 @@ divy=4
 
 x1=0
 x2=8e-08
-ypos1=0.0336579
-ypos2=2.40748
+ypos1=0.177443
+ypos2=1.52431
 divx=10
 subdivx=4
-node="\\"INPUTS; 0.9\\"
-clk
-a
-b
-reset_b
-\\"OUTPUTS; 0.9\\"
+node="\\"OUTPUTS
+XSPICE; nothing\\"
 x_q
 x_x
 x_y
 x_qlatch
 x_xschem"
-color="9 4 4 4 4 9 7 7 7 7 7"
+color="9 8 8 8 8 8"
+dataset=0
+unitx=n
+ subdivy=1}
+B 2 260 -1500 1400 -1150 {flags=graph
+digital=1
+y1=-0.12
+y2=1.9
+divy=4
+
+x1=0
+x2=8e-08
+ypos1=0.0842025
+ypos2=1.28762
+divx=10
+subdivx=4
+node="\\"INPUTS; nothing\\"
+clk
+a
+b
+reset_b"
+color="9 4 4 4 4"
 dataset=0
 unitx=n
  subdivy=1}
 T {Comparison of transistor level vs Xspice simulation
 xspice netlist obtained with spi2xspice.py script
-from qflow.
-Lot of manual fixes where needed.} 1450 -1460 0 0 1 1 {}
+from qflow.} 1450 -1460 0 0 1 1 {}
 N 50 -580 50 -560 { lab=A}
 N 50 -470 50 -450 { lab=B}
 N 50 -720 50 -700 { lab=CLK}
