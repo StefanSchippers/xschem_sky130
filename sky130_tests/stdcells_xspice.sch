@@ -48,8 +48,6 @@ A9 [IX] X d_lut_sky130_fd_sc_hd__buf_2
 A14 [IQ] Q d_lut_sky130_fd_sc_hd__buf_2
 A15 [IQLATCH] QLATCH d_lut_sky130_fd_sc_hd__buf_2
 A11 [IXSCHEM] XSCHEM d_lut_sky130_fd_sc_hd__buf_2
-AZERO ZERO dzero
-AONE ONE done
 
 AD2A1 [QLATCH] [a_QLATCH] toana_1v8
 AA2D1 [a_A] [A] todig_1v8
@@ -62,4 +60,5 @@ AA2D4 [a_RESET_B] [RESET_B] todig_1v8
 AD2A5 [XSCHEM] [a_XSCHEM] toana_1v8
 AA2D5 [a_VCC] [VCC] todig_1v8
 AA2D6 [a_VSS] [VSS] todig_1v8
+AZERO ZERO dzero
 "}

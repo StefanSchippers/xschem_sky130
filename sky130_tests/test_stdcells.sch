@@ -103,7 +103,7 @@ vvss vss 0 0
   plot clk+18 a+16 b+14 reset_b+12 q+10 x+6 y+4 qlatch+2 xschem
   write test_stdcells.raw
   eprvcd x1.IQ x1.IQLATCH x1.iX x1.iY x1.IXSCHEM x1.RESET_B
-+ x1.A x1.B x1.CLK x1.ONE x1.ZERO > test_stdcells.vcd
++ x1.A x1.B x1.CLK > test_stdcells.vcd
 .endc
 "}
 C {devices/sqwsource.sym} 50 -530 0 0 {name=V1 vhi=1.8 freq=0.09e9}
