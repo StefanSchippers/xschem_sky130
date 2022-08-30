@@ -36,9 +36,9 @@ C {devices/opin.sym} 360 -550 0 0 { name=p1 lab=a_XSCHEM }
 C {devices/ipin.sym} 250 -490 0 0 { name=p1 lab=a_VCC }
 C {devices/ipin.sym} 250 -470 0 0 { name=p1 lab=a_VSS }
 C {devices/code_shown.sym} 750 -620 0 0 {name=XSPICE only_toplevel=false value="A1 [A B] IX d_lut_sky130_fd_sc_hd__nand2_1
-A2 A CLK ZERO ~RESET_B IQ FLOAT1 ddflop
+A2 A CLK NULL ~RESET_B IQ NULL ddflop
 A3 [A B] IY d_lut_sky130_fd_sc_hd__nor2b_1
-A4 A ~CLK ZERO ~RESET_B IQLATCH FLOAT2 dlatch
+A4 A ~CLK NULL ~RESET_B IQLATCH NULL dlatch
 A5 [IY B] net2 d_lut_sky130_fd_sc_hd__nor2b_1
 A6 [net2 IQLATCH] net4 d_lut_sky130_fd_sc_hd__nand2_1
 A7 [net3 net4 IQ RESET_B] IXSCHEM d_lut_sky130_fd_sc_hd__a31o_2
@@ -60,5 +60,4 @@ AA2D4 [a_RESET_B] [RESET_B] todig_1v8
 AD2A5 [XSCHEM] [a_XSCHEM] toana_1v8
 AA2D5 [a_VCC] [VCC] todig_1v8
 AA2D6 [a_VSS] [VSS] todig_1v8
-AZERO ZERO dzero
 "}
