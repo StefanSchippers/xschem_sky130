@@ -16,15 +16,11 @@ BEGIN{
 }
 
 {
-  if($0 ~/^ *} *$/) {
-    start = 1
-  }
-  if($0 ~/^ *$/) {
-    found = 1
+  if(FNR==2 && $0 ~/^ *$/) {
+    found=1
     next
   }
 }
-
 
 
 ###### end  user code  ########################
@@ -38,7 +34,6 @@ function beginfile(f)
 {
  __lines=0
  found=0
- start = 0
 }
 
 function endfile(f,   i)

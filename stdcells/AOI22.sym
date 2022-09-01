@@ -1,5 +1,4 @@
 v {xschem version=2.9.8 file_version=1.2
-
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
