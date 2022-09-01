@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.1.0 file_version=1.2
 
 * Copyright 2021 Stefan Frederik Schippers
 * 
@@ -71,3 +71,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 320 -230 3 1 {name=p179 lab=VSSBPIN}
 C {devices/lab_pin.sym} 320 -440 3 0 {name=p180 lab=VCCBPIN}
+C {devices/lab_pin.sym} 640 -380 0 0 {name=l2 sig_type=std_logic lab=VCCBPIN}
+C {devices/noconn.sym} 640 -380 0 1 {name=l1}
+C {devices/lab_pin.sym} 640 -360 0 0 {name=l2 sig_type=std_logic lab=VSSBPIN}
+C {devices/noconn.sym} 640 -360 0 1 {name=l3}
