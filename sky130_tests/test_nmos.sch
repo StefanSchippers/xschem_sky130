@@ -19,7 +19,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 1030 -950 1460 -630 {flags=graph,unlocked
+B 2 1040 -990 1470 -670 {flags=graph
 y1 = 0
 y2 = 0.00065
 divy = 5
@@ -31,8 +31,8 @@ subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
 \\"01v8;i(vd2)\\""
 color="4 5" unity=u
-}
-B 2 1470 -950 1900 -630 {flags=graph,unlocked
+dataset=-1}
+B 2 1480 -990 1910 -670 {flags=graph,unlocked
 y1 = -0
 y2 = 0.00069
 divy = 5
@@ -43,8 +43,9 @@ divx=8
 subdivx=0
 node="i(vd4)"
 color=4 unity=u
-sweep=d5v0}
-B 2 1910 -950 2340 -630 {flags=graph,unlocked
+sweep=d5v0
+dataset=0}
+B 2 1920 -990 2350 -670 {flags=graph,unlocked
 y1 = -5.18484e-05
 y2 = 0.0013443
 divy = 5
@@ -57,7 +58,7 @@ node="i(vd5)"
 color=4 unity=u
 sweep=v(d10v5)
 }
-B 2 2370 -950 2800 -630 {flags=graph,unlocked
+B 2 2380 -990 2810 -670 {flags=graph
 y1 = 0
 y2 = 0.00066
 divy = 5
@@ -69,7 +70,19 @@ subdivx=4
 node="i(vd1)
 i(vd9)"
 color="4 5" unity=u
-}
+dataset=-1}
+B 2 770 -990 1030 -670 {flags=graph
+y1 = 0
+y2 = 1.8
+divy = 5
+subdivy=4
+x1=0
+x2=1.8
+divx=4
+subdivx=4
+node=g1v8
+color=4 unity=1
+dataset=-1}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -77,8 +90,9 @@ T {Ctrl-Click to annotate operating point data.
 For this to work open this schematic as the
 top most schematic (so you have not 
 descended into it) and run ngspice simulation.} 10 -570 0 0 0.3 0.3 {layer=15}
-T {Select one or more graphs (and no other objects)
-and use arrow keys to zoom / pan waveforms } 1010 -670 0 1 0.3 0.3 {}
+T {select one single gate voltage
+by pressing 't' with mouse close
+to one of the waveforms} 1020 -1060 0 1 0.3 0.3 {}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}
@@ -309,7 +323,7 @@ mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
 }
-C {devices/launcher.sym} 655 -825 0 0 {name=h4 
+C {devices/launcher.sym} 445 -815 0 0 {name=h4 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload
 simulation .raw file" 

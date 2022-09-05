@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,31 +19,47 @@ K {}
 V {}
 S {}
 E {}
-B 2 880 -1060 1310 -740 {flags=graph
+B 2 1150 -1050 1580 -730 {flags=graph
 y1 = -0
 y2 = 0.00021
-divy = 5
-subdivy=1
-x1=-1.02545e-06
-x2=-1.8
-divx=4
-subdivx=4
-node="i(vd1)
-i(vd2)"
-color="4 5" unity=u}
-B 2 1320 -1060 1750 -740 {flags=graph
-y1 = -0
-y2 = 0.00063
 divy = 5
 subdivy=1
 x1=0
 x2=-1.8
 divx=4
 subdivx=4
+node="i(vd1)
+i(vd2)"
+color="4 5" unity=u
+dataset=-1}
+B 2 1590 -1050 2020 -730 {flags=graph,unlocked
+y1 = 0
+y2 = 0.00043
+divy = 5
+subdivy=1
+x1=0.301093
+x2=-10.1989
+divx=4
+subdivx=4
 node=i(vd4)
-color=4 unity=u}
-T {Select one or more graphs (and no other objects)
-and use arrow keys to zoom / pan waveforms} 870 -780 0 1 0.3 0.3 {}
+color=4 unity=u
+dataset=-1
+sweep=d10v5}
+B 2 880 -1050 1140 -730 {flags=graph
+y1 = -1.8
+y2 = 0
+divy = 5
+subdivy=4
+x1=0
+x2=-1.8
+divx=4
+subdivx=4
+node=g1v8
+color=4 unity=1
+dataset=-1}
+T {select one single gate voltage
+by pressing 't' with mouse close
+to one of the waveforms} 1130 -1120 0 1 0.3 0.3 {}
 N 680 -490 680 -470 {lab=S}
 N 680 -440 700 -440 {lab=B}
 N 620 -440 640 -440 {lab=G1v8}
