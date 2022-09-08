@@ -257,14 +257,6 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 # set show_infowindow 0
 
 ###########################################################################
-#### CONFIGURE COMPUTER FARM JOB REDIRECTORS FOR SIMULATIONS
-###########################################################################
-#### RTDA NC
-# set computerfarm {nc run -Il}
-#### LSF BSUB
-# set computerfarm {bsub -Is}
-
-###########################################################################
 #### TCP CONNECTION WITH GAW
 ###########################################################################
 #### set gaw address for socket connection: {host port}
