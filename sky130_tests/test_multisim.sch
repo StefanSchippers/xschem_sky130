@@ -33,7 +33,7 @@ on some condition. Helper procedures sim_is_xyce and sim_is_ngspice
 are provided for the most used simulators.
 
 Set up ngspice or Xyce in "Simulations -> Configure simulators and tools"
-and see the different netlists that are generated.} 730 -810 0 0 0.45 0.45 {}
+and see the different netlists that are generated.} 730 -840 0 0 0.45 0.45 {}
 T {Alternative way to do same thing using the standard code_shown.sym
 element. These are disabled by attribute spice_ignore=true} 730 -410 0 0 0.45 0.45 {}
 T {DISABLED} 1310 -110 0 0 0.45 0.45 {layer=7}
@@ -63,15 +63,7 @@ m=1
 value=30p
 }
 C {devices/lab_wire.sym} 400 -220 0 0 {name=l20 lab=A}
-C {devices/launcher.sym} 205 -455 0 0 {name=h1 
-descr="Select arrow and 
-Ctrl-Left-Click to load/unload waveforms
-after running simulation" 
-tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
-"
-}
-C {sky130_tests/simulator_commands_shown.sym} 790 -580 0 0 {name=COMMANDS1
+C {sky130_tests/simulator_commands_shown.sym} 790 -610 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -79,10 +71,11 @@ value="
 .control
   save all
   tran 1n 20u uic
-  write test_multisim.raw
+  write test_multisim_ngspice.raw\\
+  acct
 .endc
 "}
-C {sky130_tests/simulator_commands_shown.sym} 1130 -580 0 0 {name=COMMANDS2
+C {sky130_tests/simulator_commands_shown.sym} 1130 -610 0 0 {name=COMMANDS2
 simulator=xyce
 only_toplevel=false 
 value="
@@ -113,3 +106,32 @@ value="[if [sim_is_xyce] \{return \{
 .tran 1n 20u uic
 
 \}\}]"}
+C {devices/launcher.sym} 200 -350 0 0 {name=h2
+descr="SIMULATE NGSPICE AND XYCE"
+tclcommand="
+
+set_sim_defaults
+# set ngspice interactive run
+set sim(spice,default) 0 ;# 1st simulator: ngpice
+set sim(spice,0,st) 0 ;# interactive ngspice: no status reporting
+xschem set netlist_name test_multisim_ngspice.spice
+xschem netlist
+xschem simulate
+#set Xyce batch run
+set sim(spice,default) 2 ;# 3rd simulator: Xyce
+set sim(spice,2,st) 1 ;# status reporting
+xschem set netlist_name test_multisim_xyce.spice
+xschem netlist
+xschem simulate
+
+"
+}
+C {devices/launcher.sym} 195 -465 0 0 {name=h3 
+descr="Ctrl-click to load Xyce or ngspice data" 
+tclcommand="
+# 'xschem get netlist_name fallback' returns the user set netlist name or
+# the name derived from circuit (fallback) without 'fallback' it returns empty
+# string if custom netlist name is not defined.
+xschem raw_read $netlist_dir/[file rootname [xschem get netlist_name fallback]].raw
+"
+}
