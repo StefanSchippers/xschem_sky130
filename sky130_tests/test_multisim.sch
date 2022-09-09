@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 20 -660 700 -360 {flags=graph
+B 2 10 -810 690 -510 {flags=graph
 y1=0
 y2=2
 ypos1=0
@@ -27,14 +27,16 @@ hilight_wave=-1
 color="4 7"
 node="a
 vcc"}
-T {Example below shows how to include different
-commands in netlist depending on some condition.
-Helper procedures sim_is_xyce and sim_is_ngspice
+P 7 5 750 -340 750 -70 1450 -70 1450 -340 750 -340 {}
+T {Example below shows how to include different commands in netlist depending
+on some condition. Helper procedures sim_is_xyce and sim_is_ngspice
 are provided for the most used simulators.
 
-Set up ngspice or Xyce in
-"Simulations -> Configure simulators and tools"
-and see the different netlist that are generated.} 730 -610 0 0 0.5 0.5 {}
+Set up ngspice or Xyce in "Simulations -> Configure simulators and tools"
+and see the different netlists that are generated.} 730 -810 0 0 0.45 0.45 {}
+T {Alternative way to do same thing using the standard code_shown.sym
+element. These are disabled by attribute spice_ignore=true} 730 -410 0 0 0.45 0.45 {}
+T {DISABLED} 1310 -110 0 0 0.45 0.45 {layer=7}
 N 250 -220 250 -180 {
 lab=VCC}
 N 350 -220 460 -220 {
@@ -61,7 +63,34 @@ m=1
 value=30p
 }
 C {devices/lab_wire.sym} 400 -220 0 0 {name=l20 lab=A}
-C {devices/code_shown.sym} 750 -280 0 0 {name=COMMANDS_NGSPICE
+C {devices/launcher.sym} 205 -455 0 0 {name=h1 
+descr="Select arrow and 
+Ctrl-Left-Click to load/unload waveforms
+after running simulation" 
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}
+C {sky130_tests/simulator_commands_shown.sym} 790 -580 0 0 {name=COMMANDS1
+simulator=ngspice
+only_toplevel=false 
+value="
+** ngspice
+.control
+  save all
+  tran 1n 20u uic
+  write test_multisim.raw
+.endc
+"}
+C {sky130_tests/simulator_commands_shown.sym} 1130 -580 0 0 {name=COMMANDS2
+simulator=xyce
+only_toplevel=false 
+value="
+** Xyce
+.tran 1n 20u uic
+"}
+C {devices/code_shown.sym} 780 -300 0 0 {name=COMMANDS_NGSPICE
+spice_ignore=true
 only_toplevel=false 
 format="tcleval( @value )"
 value="[if [sim_is_ngspice] \{return \{
@@ -74,15 +103,8 @@ value="[if [sim_is_ngspice] \{return \{
 .endc
 
 \}\}]"}
-C {devices/launcher.sym} 215 -305 0 0 {name=h1 
-descr="Select arrow and 
-Ctrl-Left-Click to load/unload waveforms
-after running simulation" 
-tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
-"
-}
-C {devices/code_shown.sym} 1110 -280 0 0 {name=COMMANDS_XYCE 
+C {devices/code_shown.sym} 1140 -300 0 0 {name=COMMANDS_XYCE 
+spice_ignore=true
 only_toplevel=false 
 format="tcleval( @value )"
 value="[if [sim_is_xyce] \{return \{
