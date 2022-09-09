@@ -697,3 +697,4 @@ model=res_generic_li
 spiceprefix=X
 mult=1}
 C {sky130_tests/test_s_xfer.sym} 490 -1480 0 0 {name=x30}
+C {sky130_tests/test_multisim.sym} 490 -1430 0 0 {name=x31}
