@@ -63,7 +63,7 @@ m=1
 value=30p
 }
 C {devices/lab_wire.sym} 400 -220 0 0 {name=l20 lab=A}
-C {sky130_tests/simulator_commands_shown.sym} 790 -610 0 0 {name=COMMANDS1
+C {devices/simulator_commands_shown.sym} 790 -610 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -75,7 +75,7 @@ value="
   acct
 .endc
 "}
-C {sky130_tests/simulator_commands_shown.sym} 1130 -610 0 0 {name=COMMANDS2
+C {devices/simulator_commands_shown.sym} 1130 -610 0 0 {name=COMMANDS2
 simulator=xyce
 only_toplevel=false 
 value="
