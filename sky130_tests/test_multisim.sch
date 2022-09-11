@@ -80,6 +80,8 @@ simulator=xyce
 only_toplevel=false 
 value="
 ** Xyce
+.print tran format=raw file=test_multisim_xyce.raw
++ v(*) i(v4)
 .tran 1n 20u uic
 "}
 C {devices/code_shown.sym} 780 -300 0 0 {name=COMMANDS_NGSPICE
@@ -129,9 +131,9 @@ xschem simulate
 C {devices/launcher.sym} 195 -465 0 0 {name=h3 
 descr="Ctrl-click to load Xyce or ngspice data" 
 tclcommand="
-# 'xschem get netlist_name fallback' returns the user set netlist name or
-# the name derived from circuit (fallback) without 'fallback' it returns empty
-# string if custom netlist name is not defined.
-xschem raw_read $netlist_dir/[file rootname [xschem get netlist_name fallback]].raw
-"
+if \{ [sim_is_xyce] \} \{ 
+  xschem raw_read $netlist_dir/test_multisim_xyce.raw
+\} else \{
+  xschem raw_read $netlist_dir/test_multisim_ngspice.raw
+\}"
 }

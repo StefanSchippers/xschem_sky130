@@ -143,10 +143,12 @@ spice_ignore=false}
 C {devices/launcher.sym} 1045 -355 0 0 {name=h3 
 descr="Ctrl-click to load Xyce or ngspice data" 
 tclcommand="
-# 'xschem get netlist_name fallback' returns the user set netlist name or
-# the name derived from circuit (fallback) without 'fallback' it returns empty
-# string if custom netlist name is not defined.
-xschem raw_read $netlist_dir/[file rootname [xschem get netlist_name fallback]].raw
+
+  if \{ [sim_is_xyce] \} \{
+    xschem raw_read $netlist_dir/test_inv_xyce.raw
+  \} else \{
+    xschem raw_read $netlist_dir/test_inv_ngspice.raw
+  \}
 "
 }
 C {devices/simulator_commands_shown.sym} 10 -640 0 0 {name=COMMANDS2
@@ -159,8 +161,8 @@ vvcc vcc 0
 **** interactive sim
 .control
 save all
-tran 0.001n 30n
-write test_inv.raw
+tran 0.01n 30n
+write test_inv_ngspice.raw
 .endc
 "}
 C {devices/simulator_commands_shown.sym} 500 -640 0 0 {name=COMMANDS1
@@ -170,6 +172,15 @@ value="
 vvss vss 0 dc 0
 vvcc vcc 0
 + pwl 0 0 10n 0 10.1n 1.8 20n 1.8 20.1n 0
-
-.tran 0.001n 30n
+.print tran format=raw file=test_inv_xyce.raw
++ v(*) i(*)
+.tran 0.01n 30n
 "}
+C {devices/launcher.sym} 485 -405 0 0 {name=h1 
+descr="View simulation status" 
+tclcommand="
+  if \{ [info exists execute(id)] \} \{
+     viewdata $execute(data,$execute(id)) ro
+  \}
+"
+}
