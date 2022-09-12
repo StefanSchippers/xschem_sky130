@@ -10,13 +10,13 @@ E {}
 B 2 390 -800 1220 -480 {flags=graph
 y1=0
 
-ypos1=0.0983228
-ypos2=1.41817
+ypos1=0.175635
+ypos2=1.7799
 divy=5
 subdivy=1
 unity=1
-x1=3.2247e-08
-x2=1.34644e-07
+x1=-3.71402e-09
+x2=2.46286e-07
 
 subdivx=1
 
@@ -81,7 +81,7 @@ C {devices/noconn.sym} 300 -510 0 0 {name=l5}
 C {devices/launcher.sym} 1245 -205 0 0 {name=h2 
 descr="load Xyce waves" 
 tclcommand="
-xschem raw_read $netlist_dir/test_carry_lookahead.spice.raw
+xschem raw_read $netlist_dir/test_carry_lookahead_xyce.spice.raw
 "
 }
 C {devices/spice_probe.sym} 290 -300 0 0 {name=p10 attrs=""}
@@ -147,7 +147,7 @@ value="
 .control
 * save all
 tran 0.4n 250n uic
-write test_carry_lookahead.raw
+write test_carry_lookahead_ngspice.raw
 acct
 rusage
 .endc
@@ -157,7 +157,7 @@ C {devices/parax_cap.sym} 1110 -420 0 0 {name=C5[31:0] gnd=0 value=5f m=1}
 C {devices/launcher.sym} 1245 -165 0 0 {name=h1 
 descr="load Ngspice waves" 
 tclcommand="
-xschem raw_read $netlist_dir/test_carry_lookahead.raw
+xschem raw_read $netlist_dir/test_carry_lookahead_ngspice.raw
 "
 }
 C {devices/launcher.sym} 1250 -250 0 0 {name=h3
