@@ -108,14 +108,14 @@ divx=8
 
 node="\\"VDIFF;plus minus -\\""
 color=8
-dataset=0
+dataset=-1
 unitx=n
 subdivx=4
 divy=2
 unity=m}
 B 2 30 -1910 1010 -1480 {flags=graph
-y1=0.02
-y2=2.1
+y1=-0.00023
+y2=2
 divy=4
 subdivy=1
 x1=1e-12
@@ -129,8 +129,8 @@ color="4 8 7"
 unitx=n
 dataset=-1}
 B 2 2030 -1820 3010 -1480 {flags=graph
-y1=0.252348
-y2=1.51236
+y1=0.147272
+y2=1.65928
 divy=4
 subdivy=1
 x1=1e-12
@@ -142,8 +142,8 @@ color="4 8"
 unitx=n
 dataset=-1}
 B 2 1030 -2380 2010 -2080 {flags=graph
-y1=-0.000154598
-y2=7.05823e-05
+y1=-0.000106156
+y2=1.08285e-05
 divy=4
 subdivy=1
 x1=1e-12
@@ -158,8 +158,8 @@ node=i(vvcc)
 unity=u
 dataset=-1}
 B 2 2030 -2180 3010 -1840 {flags=graph
-y1=-54.4434
-y2=114.037
+y1=-51.3036
+y2=110.437
 divy=4
 subdivy=1
 x1=1e-12
@@ -171,8 +171,8 @@ color=4
 unitx=n
 dataset=-1}
 B 2 2030 -2530 3010 -2200 {flags=graph
-y1=1.63746
-y2=2.0678
+y1=1.60124
+y2=2.03158
 divy=4
 subdivy=1
 x1=1e-12
@@ -184,8 +184,8 @@ color=4
 unitx=n
 dataset=-1}
 B 2 30 -2230 1010 -1910 {flags=graph
-y1=0.1258
-y2=1.6658
+y1=0.00021
+y2=1.2
 divy=4
 subdivy=1
 x1=1e-12
@@ -230,11 +230,11 @@ unitx=n
 color="4 7"
 node="en cal"
 digital=1
-ypos1=0.197345
-ypos2=0.605159}
+ypos1=0
+ypos2=2}
 B 2 1030 -2080 2010 -1780 {flags=graph
-y1=0.15
-y2=2
+y1=0.0046
+y2=1.9
 divy=4
 subdivy=1
 x1=1e-12
@@ -251,8 +251,8 @@ color="4 7"
 node="GN1 GP1"
 dataset=-1}
 B 2 1030 -1780 2010 -1480 {flags=graph
-y1=0.0643481
-y2=1.91434
+y1=0.0063
+y2=1.9
 divy=4
 subdivy=1
 x1=1e-12
@@ -482,8 +482,8 @@ lab=GP1}
 N 1120 -660 1120 -650 {
 lab=GP2}
 N 1560 -290 1590 -290 {lab=VSS}
-N 1560 -260 1560 -240 {lab=VSSI}
-N 1530 -240 1560 -240 {lab=VSSI}
+N 1560 -200 1560 -180 {lab=VSSI}
+N 1530 -180 1560 -180 {lab=VSSI}
 N 1560 -580 1590 -580 {lab=VCC}
 N 1560 -630 1560 -610 {lab=VCC}
 N 1530 -630 1560 -630 {
@@ -526,7 +526,7 @@ descr="Select arrow and
 Ctrl-Left-Click to load/unload waveforms
 after running simulation" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/test_comparator.raw
 "
 }
 C {devices/launcher.sym} 1980 -1440 0 0 {name=h4
@@ -535,9 +535,9 @@ tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schna
 }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 110 -490 0 0 { name=p92 lab=CAL }
-C {devices/ipin.sym} 110 -550 0 0 { name=p93 lab=PLUS }
-C {devices/ipin.sym} 110 -590 0 0 { name=p94 lab=MINUS }
-C {devices/ipin.sym} 110 -630 0 0 { name=p95 lab=EN }
+C {devices/ipin.sym} 110 -520 0 0 { name=p93 lab=PLUS }
+C {devices/ipin.sym} 110 -550 0 0 { name=p94 lab=MINUS }
+C {devices/ipin.sym} 110 -590 0 0 { name=p95 lab=EN }
 C {devices/ipin.sym} 110 -420 0 0 { name=p96 lab=VSS }
 C {devices/ipin.sym} 110 -450 0 0 { name=p97 lab=VCC }
 C {devices/opin.sym} 150 -540 0 0 { name=p116 lab=SAOUT }
@@ -585,16 +585,21 @@ C {devices/parax_cap.sym} 1780 -480 0 0 {name=C1  value=15f}
 C {devices/lab_pin.sym} 980 -400 0 0 {name=p198 lab=VCC}
 C {devices/lab_pin.sym} 880 -530 0 0 {name=l54 lab=PLUS}
 C {devices/lab_pin.sym} 1160 -530 0 1 {name=l55 lab=MINUS}
-C {devices/ammeter.sym} 1020 -330 0 0 {name=vndiff}
-C {devices/ammeter.sym} 2070 -220 0 0 {name=v3}
-C {devices/ammeter.sym} 2210 -800 0 0 {name=v4}
-C {devices/ammeter.sym} 1720 -800 0 0 {name=v6}
+C {devices/ammeter.sym} 1020 -330 0 0 {name=vndiff
+current=5.5476e-07}
+C {devices/ammeter.sym} 2070 -220 0 0 {name=v3
+current=6.1104e-06}
+C {devices/ammeter.sym} 2210 -800 0 0 {name=v4
+current=2.4124e-06}
+C {devices/ammeter.sym} 1720 -800 0 0 {name=v6
+current=4.2035e-06}
 C {devices/lab_pin.sym} 2590 -290 0 1 {name=p9 lab=VSS}
 C {devices/lab_pin.sym} 2590 -580 0 1 {name=p10 lab=VCC}
 C {devices/lab_pin.sym} 2530 -660 0 0 {name=p11 lab=VCC}
 C {devices/lab_pin.sym} 2530 -150 0 0 {name=p12 lab=VSSI}
 C {devices/parax_cap.sym} 2630 -480 0 0 {name=C13  value=15f}
-C {devices/ammeter.sym} 2560 -220 0 0 {name=v1}
+C {devices/ammeter.sym} 2560 -220 0 0 {name=v1
+current=3.7104e-06}
 C {devices/lab_pin.sym} 2890 -490 0 1 {name=l3 lab=SAOUT}
 C {devices/lab_pin.sym} 2440 -1070 0 1 {name=l5 sig_type=std_logic lab=CALB}
 C {devices/lab_pin.sym} 2440 -1010 0 1 {name=l6 sig_type=std_logic lab=CALBB}
@@ -603,7 +608,8 @@ C {devices/lab_pin.sym} 2730 -1120 0 1 {name=p14 lab=VCC}
 C {devices/lab_pin.sym} 2670 -1200 0 0 {name=p16 lab=VCC}
 C {devices/lab_pin.sym} 2670 -730 0 0 {name=p17 lab=VSSI}
 C {devices/lab_pin.sym} 2560 -1100 0 0 {name=l8 lab=ZERO2}
-C {devices/ammeter.sym} 2700 -800 0 0 {name=v5}
+C {devices/ammeter.sym} 2700 -800 0 0 {name=v5
+current=4.6610e-06}
 C {devices/lab_pin.sym} 2810 -590 0 1 {name=p18 lab=VCC}
 C {devices/lab_pin.sym} 2750 -670 0 0 {name=p19 lab=VCC}
 C {devices/lab_pin.sym} 2740 -590 0 0 {name=l2 lab=EN}
@@ -848,7 +854,7 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
  }
-C {devices/lab_pin.sym} 1530 -240 0 0 {name=p27 lab=VSSI}
+C {devices/lab_pin.sym} 1530 -180 0 0 {name=p27 lab=VSSI}
 C {devices/lab_pin.sym} 1590 -580 0 1 {name=p28 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1540 -580 0 0 {name=M26
 L=2
@@ -947,7 +953,8 @@ spiceprefix=X
  }
 C {devices/lab_pin.sym} 700 -1090 0 0 {name=p31 lab=VCC}
 C {devices/lab_pin.sym} 690 -1040 0 0 {name=l17 lab=GP2}
-C {devices/ammeter.sym} 1030 -1250 0 0 {name=vpdiff}
+C {devices/ammeter.sym} 1030 -1250 0 0 {name=vpdiff
+current=6.0224e-06}
 C {devices/vsource.sym} 120 -1110 0 0 {name=VVSS value=0}
 C {devices/lab_pin.sym} 120 -1200 0 0 {name=p3 lab=VSS}
 C {devices/lab_pin.sym} 120 -1080 0 0 {name=p4 lab=0}
@@ -983,7 +990,7 @@ C {devices/vsource.sym} 300 -960 0 0 {name=VMINUS value="pwl
 spice_ignore=false}
 C {devices/lab_pin.sym} 300 -930 0 0 {name=p36 lab=0}
 C {devices/lab_pin.sym} 300 -1020 0 0 {name=p37 lab=MINUS}
-C {devices/vsource.sym} 120 -750 0 0 {name=VCAL value="pwl
+C {devices/vsource.sym} 120 -750 0 0 {name=VCAL value="dc VCC pwl
 +0 0
 +29.9n 0
 +30.1n VCC
@@ -996,7 +1003,7 @@ C {devices/vsource.sym} 120 -750 0 0 {name=VCAL value="pwl
 spice_ignore=false}
 C {devices/lab_pin.sym} 120 -720 0 0 {name=p38 lab=0}
 C {devices/lab_pin.sym} 120 -810 0 0 {name=p39 lab=CAL}
-C {devices/vsource.sym} 300 -750 0 0 {name=VEN value="pwl 
+C {devices/vsource.sym} 300 -750 0 0 {name=VEN value="dc VCC pwl 
 +0 0
 +29.9n 0
 +30.1n VCC
@@ -1034,17 +1041,20 @@ value="
 .control
   option seed = 8
   let run = 1
+  save all
+  op
+  write test_comparator_op.raw
+  reset
   dowhile run < = 100
-    if run > 1
-      reset
-      set appendwrite
-    end
-    * save all
     save saout cal i(vvcc) en plus minus temperat vcc vss gp1 gp2 gn1 gn2 
-    save outdiff saoutf zero0 zero1 zero2 sn sp i(vndiff) i(vpdiff)
+    + outdiff saoutf zero0 zero1 zero2 sn sp i(vndiff) i(vpdiff)
+    + i(v3) i(v2) i(v1) i(v4) i(v5) i(v6)
+    * save all
     tran 0.1n 250n uic
-    write test_comp.raw
+    write test_comparator.raw
     let run = run + 1
+    reset
+    set appendwrite
   end
 .endc
 "}
@@ -1054,3 +1064,35 @@ C {devices/lab_pin.sym} 640 -240 0 1 {name=p113 lab=TEMPERAT}
 C {devices/lab_pin.sym} 640 -160 0 0 {name=p114 lab=VSS}
 C {devices/noconn.sym} 640 -240 0 0 {name=l12}
 C {devices/title.sym} 3180 -120 0 0 {name=lx author="Stefan Schippers"}
+C {devices/launcher.sym} 850 -140 0 0 {name=h2
+descr="Annotate OP" 
+tclcommand="ngspice::annotate $netlist_dir/test_comparator_op.raw"
+}
+C {devices/ngspice_probe.sym} 730 -640 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 110 -590 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 300 -810 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 1110 -760 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 990 -480 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 1100 -1120 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 1120 -990 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 920 -990 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 1120 -570 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 920 -570 0 1 {name=r4}
+C {devices/ngspice_probe.sym} 1480 -580 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 1480 -290 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 1660 -490 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 2230 -490 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 2070 -930 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 1580 -920 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 2560 -930 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 2740 -490 0 1 {name=r3}
+C {devices/ammeter.sym} 1560 -230 0 0 {name=v2
+current=2.9544e-06}
+C {devices/ngspice_probe.sym} 1160 -1050 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 880 -1050 0 1 {name=r3}
+C {devices/ngspice_probe.sym} 1160 -530 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 880 -530 0 1 {name=r4}
+C {devices/ngspice_probe.sym} 120 -810 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 120 -1020 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 300 -1020 0 0 {name=r3}
+C {devices/ngspice_probe.sym} 300 -1200 0 1 {name=r3}
