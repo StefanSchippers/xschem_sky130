@@ -1,0 +1,26 @@
+unit n
+voltage {VCC}
+slope 0.1
+format hspice_simple
+
+buswidth A 256 [ ]
+buswidth B 256 [ ] 
+
+beginfile stimuli_test_carry_lookahead.cir
+set VCC 0
+set VSS 0
+set CIN 0
+set A 0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000
+set B 0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000
+s 1
+slope 5
+set VCC {VCC}
+s 5
+slope 0.1
+
+set A ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff
+s 43.5
+set CIN 1
+s 200
+
+endfile
