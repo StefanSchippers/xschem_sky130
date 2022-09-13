@@ -94,7 +94,6 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 # set netlist_type spice
 
 #### Some netlisting options (these are the defaults)
-# set hspice_netlist 1
 # set verilog_2001 1
 
 #### to use a fixed line with set change_lw to 0 and set some value to line_width
