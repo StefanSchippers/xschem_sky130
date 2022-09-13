@@ -142,6 +142,7 @@ value="
 * generate following file with Simulation->Utile stimuli editor and pressing 'Translate'
 .include stimuli_test_carry_lookahead.cir
 .tran 0.4n 250n uic
+.print tran format=raw file=carry_lookahead_xyce.spice.raw v(*)
 "}
 C {devices/simulator_commands.sym} 140 -180 0 0 {name=COMMANDS1
 simulator=ngspice
