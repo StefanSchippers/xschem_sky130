@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-05
+x1=5.4399e-07
+x2=2.0544e-05
 divx=5
 subdivx=1
 
@@ -144,3 +144,5 @@ if \{ [sim_is_xyce] \} \{
   xschem raw_read $netlist_dir/test_multisim_ngspice.raw
 \}"
 }
+C {devices/ngspice_probe.sym} 270 -260 0 0 {name=r2}
+C {devices/ngspice_probe.sym} 420 -260 0 0 {name=r2}

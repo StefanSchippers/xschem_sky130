@@ -24,14 +24,14 @@ y1 = -0
 y2 = 0.00021
 divy = 5
 subdivy=1
-x1=0
-x2=-1.8
+x1=-0.0516144
+x2=-1.85162
 divx=4
 subdivx=4
 node="i(vd1)
 i(vd2)"
 color="4 5" unity=u
-dataset=-1}
+dataset=8}
 B 2 1590 -1050 2020 -730 {flags=graph,unlocked
 y1 = 0
 y2 = 0.00043
@@ -50,13 +50,13 @@ y1 = -1.8
 y2 = 0
 divy = 5
 subdivy=4
-x1=0
-x2=-1.8
+x1=-0.0853633
+x2=-1.88536
 divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
-dataset=-1}
+dataset=8}
 T {select one single gate voltage
 by pressing 't' with mouse close
 to one of the waveforms} 1130 -1120 0 1 0.3 0.3 {}
@@ -117,7 +117,7 @@ only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
 .opton wnflag=1
-*.option savecurrents
+.option savecurrents
 vg G1v8 0 0
 vs s 0 0
 vd D1v8 0 0
