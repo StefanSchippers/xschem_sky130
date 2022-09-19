@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,6 +38,7 @@ C {devices/code_shown.sym} 20 -490 0 0 {name=NGSPICE
 only_toplevel=true
 value="
 .control
+save all
 tran 10n 6u
 plot g g2
 write test_mim_cap.raw
@@ -65,14 +66,14 @@ device=resistor
 m=1}
 C {devices/lab_pin.sym} 1150 -230 0 0 {name=p13 lab=REF}
 C {devices/capa.sym} 1010 -220 0 0 {name=C1
-m=1
+m=2
 value=0.205p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/vsource.sym} 390 -390 0 0 {name=V1 value=-2}
 C {devices/lab_pin.sym} 390 -360 0 0 {name=p14 lab=0}
 C {devices/lab_pin.sym} 390 -440 0 1 {name=p15 lab=REF}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 580 -220 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=1 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} 580 -220 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=2 spiceprefix=X }
 C {devices/code.sym} 70 -280 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
