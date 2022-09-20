@@ -139,9 +139,9 @@ C {devices/launcher.sym} 195 -465 0 0 {name=h3
 descr="Ctrl-click to load Xyce or ngspice data" 
 tclcommand="
 if \{ [sim_is_xyce] \} \{ 
-  xschem raw_read $netlist_dir/test_multisim_xyce.raw
+  xschem raw_read $netlist_dir/test_multisim_xyce.raw tran
 \} else \{
-  xschem raw_read $netlist_dir/test_multisim_ngspice.raw
+  xschem raw_read $netlist_dir/test_multisim_ngspice.raw tran
 \}"
 }
 C {devices/ngspice_probe.sym} 270 -260 0 0 {name=r2}

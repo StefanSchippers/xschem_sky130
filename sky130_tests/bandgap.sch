@@ -29,7 +29,7 @@ subdivx=4
 divx=4
 node="x1.f1 x1.f2"
 color="7 8"
-dataset=2 unitx=u
+dataset=-1 unitx=u
 digital=1
 y2=1.8
 ypos1=0.0874617
@@ -46,7 +46,8 @@ node="x1.adj2 x1.adj
 clk"
 color="12 10 7"
   unitx=u
-subdivy=1}
+subdivy=1
+dataset=-1}
 B 2 1830 -540 2290 -350 {flags=graph
 y1 = -0.000609787
 y2 = 0.000635008
@@ -58,7 +59,8 @@ x2=0.0001
 divx=4
 node="\\"x1.zminus x1.plus -\\""
 color=8
- subdivx=4  unitx=u}
+ subdivx=4  unitx=u
+dataset=-1}
 B 2 1830 -1010 2290 -820 {flags=graph
 y1 = -0.00066109
 y2 = 0.000483517
@@ -70,7 +72,8 @@ x2=0.0001
 divx=4
 node="\\"x1.minus x1.plus -\\""
 color=8
- subdivx=4  unitx=u}
+ subdivx=4  unitx=u
+dataset=-1}
 B 2 1830 -730 2290 -540 {flags=graph
 y1 = -0.0279359
 y2 = 0.0194078
@@ -82,7 +85,8 @@ x2=0.0001
 divx=4
 node="\\"x1.minus x1.plus -\\""
 color=7
- subdivx=4  unitx=u}
+ subdivx=4  unitx=u
+dataset=-1}
 P 7 7 1930 -770 1930 -750 1920 -750 1930 -730 1940 -750 1930 -750 1930 -770 {fill=true}
 P 8 7 2070 -1050 2070 -1030 2060 -1030 2070 -1010 2080 -1030 2070 -1030 2070 -1050 {fill=true}
 T {Load waveforms in
@@ -188,7 +192,7 @@ C {devices/lab_pin.sym} 1050 -400 0 0 {name=l41 lab=ADJ2}
 C {devices/lab_pin.sym} 1050 -360 0 0 {name=l42 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 1050 -340 0 0 {name=l43 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1050 -380 0 0 {name=l44 sig_type=std_logic lab=EN_N}
-C {devices/lab_pin.sym} 1640 -860 0 1 {name=l243 sig_type=std_logic lab=F2}
+C {devices/lab_pin.sym} 1640 -880 0 1 {name=l243 sig_type=std_logic lab=F2}
 C {devices/lab_pin.sym} 1640 -700 0 1 {name=l244 sig_type=std_logic lab=F1}
 C {devices/lab_pin.sym} 1720 -930 0 1 {name=l61 sig_type=std_logic lab=F2N}
 C {devices/lab_pin.sym} 1720 -630 0 1 {name=l62 sig_type=std_logic lab=F1N}
@@ -222,10 +226,7 @@ C {devices/lab_pin.sym} 1490 -470 0 0 {name=l21 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1490 -500 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=20 spiceprefix=X }
 C {devices/lab_pin.sym} 1490 -190 0 0 {name=l40 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1490 -220 0 0 {name=C1 model=cap_mim_m3_2 W=10 L=10 MF=20 spiceprefix=X }
-C {devices/lab_pin.sym} 940 -460 0 1 {name=l39 sig_type=std_logic lab=ZMINUS}
-C {devices/spice_probe.sym} 430 -530 0 1 {name=p11 attrs=""}
-C {devices/spice_probe.sym} 430 -470 0 1 {name=p12 attrs=""}
-C {devices/spice_probe.sym} 1050 -440 0 1 {name=p13 attrs=""}
+C {devices/lab_pin.sym} 940 -450 0 1 {name=l39 sig_type=std_logic lab=ZMINUS}
 C {devices/spice_probe.sym} 1680 -530 0 1 {name=p14 attrs=""}
 C {devices/spice_probe.sym} 1680 -250 0 1 {name=p17 attrs=""}
 C {devices/spice_probe.sym} 1640 -700 0 0 {name=p18 attrs=""}
@@ -307,3 +308,7 @@ L=10
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1 net_name=true}
+C {devices/spice_probe.sym} 1050 -440 0 1 {name=p15 attrs=""}
+C {devices/spice_probe.sym} 240 -530 0 1 {name=p1 attrs=""}
+C {devices/spice_probe.sym} 470 -470 0 1 {name=p2 attrs=""}
+C {devices/spice_probe.sym} 620 -280 0 1 {name=p3 attrs=""}

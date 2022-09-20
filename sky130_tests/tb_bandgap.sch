@@ -151,7 +151,7 @@ C {devices/launcher.sym} 365 -625 0 0 {name=h1
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
 "
 }
 C {sky130_fd_pr/corner.sym} 20 -270 0 0 {name=CORNER only_toplevel=true corner=tt_mm}

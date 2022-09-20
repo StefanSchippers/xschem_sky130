@@ -20,15 +20,15 @@ V {}
 S {}
 E {}
 B 2 790 -700 1590 -300 {flags=graph
-y1=0.49765
-y2=0.760306
+y1=0.531391
+y2=0.759391
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-8.56529
-x2=-4.97001
+x1=-8.30103
+x2=-5.30496
 divx=5
 subdivx=8
 node=e1
@@ -38,8 +38,6 @@ unitx=n
 logx=1
 logy=0
 }
-T {Warning: in this case models linked
-to opencircuitdesign pdks/ install} 110 -260 0 0 0.4 0.4 {}
 N 560 -220 610 -220 { lab=#net1}
 N 560 -220 560 -190 { lab=#net1}
 N 650 -470 650 -440 { lab=0}
@@ -75,6 +73,6 @@ descr="Select arrow and
 Ctrl-Left-Click to load/unload
 simulation .raw file" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
 "
 }

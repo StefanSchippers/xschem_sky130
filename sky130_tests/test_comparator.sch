@@ -526,7 +526,7 @@ descr="Select arrow and
 Ctrl-Left-Click to load/unload waveforms
 after running simulation" 
 tclcommand="
-xschem raw_read $netlist_dir/test_comparator.raw
+xschem raw_read $netlist_dir/test_comparator.raw tran
 "
 }
 C {devices/launcher.sym} 1980 -1440 0 0 {name=h4

@@ -145,9 +145,9 @@ descr="Ctrl-click to load Xyce or ngspice data"
 tclcommand="
 
   if \{ [sim_is_xyce] \} \{
-    xschem raw_read $netlist_dir/test_inv_xyce.raw
+    xschem raw_read $netlist_dir/test_inv_xyce.raw tran
   \} else \{
-    xschem raw_read $netlist_dir/test_inv_ngspice.raw
+    xschem raw_read $netlist_dir/test_inv_ngspice.raw tran
   \}
 "
 }

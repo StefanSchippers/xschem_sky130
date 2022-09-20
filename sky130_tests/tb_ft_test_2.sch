@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -126,7 +127,7 @@ C {devices/ngspice_get_value.sym} 390 -430 0 1 {name=r9 node=i(@m.xm1.msky130_fd
 descr="I="}
 C {devices/launcher.sym} 820 -450 0 0 {name=h1
 descr=Annotate 
-tclcommand="ngspice::annotate"}
+tclcommand="xschem annotate_op"}
 C {devices/launcher.sym} 820 -350 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"

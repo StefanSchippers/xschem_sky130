@@ -150,7 +150,7 @@ C {devices/launcher.sym} 335 -395 0 0 {name=h1
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
 "
 }
 C {sky130_fd_pr/pfet_01v8.sym} 80 -600 1 0 {name=M2

@@ -705,3 +705,4 @@ spiceprefix=X
 mult=1}
 C {sky130_tests/test_s_xfer.sym} 490 -1480 0 0 {name=x30}
 C {sky130_tests/test_multisim.sym} 490 -1440 0 0 {name=x31}
+C {sky130_tests/test_ac.sym} 490 -1400 0 0 {name=x32}

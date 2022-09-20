@@ -135,7 +135,7 @@ descr="Select arrow and
 Ctrl-Left-Click to load/unload waveforms
 after running simulation" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
 "
 }
 C {sky130_tests/stdcells.sym} 1340 -280 0 0 {name=x2}

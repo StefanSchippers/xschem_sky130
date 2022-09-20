@@ -328,7 +328,7 @@ descr="Select arrow and
 Ctrl-Left-Click to load/unload
 simulation .raw file" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
 "
 }
 C {devices/lab_pin.sym} 2670 -90 0 1 {name=p54 lab=S}

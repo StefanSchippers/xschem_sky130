@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1e-05
+x1=-2.71332e-12
+x2=9.99997e-06
 divx=5
 subdivx=1
 node="a
@@ -55,7 +55,7 @@ descr="Select arrow and
 Ctrl-Left-Click to load/unload waveforms
 after running simulation" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
 "
 }
 C {devices/vsource.sym} 140 -230 0 0 {name=VIN value="pwl 0 0 1u 0 1.001u 1"}

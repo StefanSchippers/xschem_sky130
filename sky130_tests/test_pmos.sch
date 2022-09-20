@@ -31,7 +31,7 @@ subdivx=4
 node="i(vd1)
 i(vd2)"
 color="4 5" unity=u
-dataset=8}
+dataset=-1}
 B 2 1590 -1050 2020 -730 {flags=graph,unlocked
 y1 = 0
 y2 = 0.00043
@@ -56,7 +56,7 @@ divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
-dataset=8}
+dataset=-1}
 T {select one single gate voltage
 by pressing 't' with mouse close
 to one of the waveforms} 1130 -1120 0 1 0.3 0.3 {}
@@ -243,19 +243,19 @@ C {devices/launcher.sym} 435 -875 0 0 {name=h4
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
 tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
 "
 }
 C {devices/launcher.sym} 110 -560 0 0 {name=h1
 descr=Annotate 
-tclcommand="ngspice::annotate"}
+tclcommand="xschem annotate_op"}
 C {devices/launcher.sym} 110 -510 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/test_pmos.raw"}
 C {devices/launcher.sym} 435 -955 0 0 {name=h5 
 descr=" Ctrl-Left-Click to load/unload
 embedded waveforms" 
-tclcommand="xschem raw_read_from_attr"
+tclcommand="xschem raw_read_from_attr dc"
 spice_data="
 VGl0bGU6ICoqIHNjaF9wYXRoOiAvaG9tZS9zY2hpcHBlcy8ueHNjaGVtL3hzY2hlbV9saWJyYXJ5L3hzY2hlbV9za3kxMzAvc2t5MTMwX3Rlc3RzL3Rlc3RfcG1vcy5z
 Y2gKRGF0ZTogRnJpIEphbiAyMSAxOTowMzoxNyAgMjAyMgpQbG90bmFtZTogREMgdHJhbnNmZXIgY2hhcmFjdGVyaXN0aWMKRmxhZ3M6IHJlYWwKTm8uIFZhcmlhYmxl
