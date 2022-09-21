@@ -295,7 +295,7 @@ C {devices/ngspice_get_value.sym} 700 -170 0 0 {name=r1 node="i(@m.xm1.msky130_f
 descr="Id="}
 C {devices/launcher.sym} 100 -470 0 0 {name=h1
 descr=Annotate 
-tclcommand="ngspice::annotate"}
+tclcommand="xschem annotate_op"}
 C {devices/launcher.sym} 100 -420 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/test_nmos.raw"}

@@ -206,7 +206,7 @@ C {devices/ngspice_get_value.sym} 470 -190 0 1 {name=r3 node=i(@m.$\{path\}xm5.m
 descr="Id="}
 C {devices/launcher.sym} 830 -200 0 0 {name=h1
 descr=Annotate 
-tclcommand="ngspice::annotate"}
+tclcommand="xschem annotate_op"}
 C {devices/ngspice_probe.sym} 250 -220 0 0 {name=r5}
 C {devices/ngspice_probe.sym} 110 -500 0 0 {name=r6}
 C {devices/ngspice_probe.sym} 530 -500 0 0 {name=r7}

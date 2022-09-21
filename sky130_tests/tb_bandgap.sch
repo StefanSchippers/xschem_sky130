@@ -35,7 +35,7 @@ color="4 5 9"  unitx=u
 divy=8
 subdivx=4
 subdivy=1
-}
+dataset=20}
 B 2 820 -590 1280 -460 {flags=graph
 y1 = 1.7008e-05
 y2 = 4.36367e-05
@@ -48,7 +48,8 @@ divx=4
 subdivx=4
 node="\\"Icc;i(vcc)\\""
  unitx=u
-color=4}
+color=4
+dataset=20}
 P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
 P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
 T {Example of Mismatch simulation of a bandgap reference. Variations are generated also on Vcc
@@ -118,7 +119,7 @@ C {devices/lab_pin.sym} 240 -460 0 0 {name=p2 lab=EN_N}
 C {devices/vsource.sym} 240 -290 0 0 {name=V1 value=0}
 C {devices/lab_pin.sym} 240 -340 0 1 {name=p3 lab=EN_N}
 C {devices/vsource.sym} 650 -290 0 0 {name=V2 value="pwl 0 0 1u 0 4u VCC"}
-C {devices/lab_pin.sym} 650 -400 0 1 {name=l29 sig_type=std_logic lab=VCC}
+C {devices/lab_pin.sym} 650 -400 0 0 {name=l29 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 240 -440 0 0 {name=p4 lab=VCC}
 C {devices/lab_pin.sym} 240 -420 0 0 {name=p5 lab=VSS}
 C {devices/vsource.sym} 390 -290 0 0 {name=V3 value=0}
