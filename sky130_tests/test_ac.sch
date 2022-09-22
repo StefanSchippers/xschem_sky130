@@ -236,7 +236,8 @@ C {devices/ngspice_probe.sym} 490 -570 0 0 {name=r1}
 C {devices/ngspice_probe.sym} 430 -310 0 0 {name=r1}
 C {devices/launcher.sym} 630 -220 0 0 {name=h1
 descr="Annotate OP" 
-tclcommand="xschem annotate_op"}
+tclcommand="xschem annotate_op"
+}
 C {devices/ngspice_probe.sym} 560 -360 0 0 {name=r1}
 C {devices/ngspice_probe.sym} 270 -360 0 1 {name=r1}
 C {devices/ngspice_probe.sym} 370 -180 0 1 {name=r1}
@@ -261,13 +262,16 @@ C {devices/simulator_commands_shown.sym} 10 -860 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
-.option reltol=1e-5 abstol=1e-14
+.option reltol=1e-5
++  abstol=1e-14 savecurrents
 .control
   save all
   op
+  remzerovec 
   write test_ac.raw
   set appendwrite
   ac dec 10 1 1e12
+  remzerovec
   write test_ac.raw
   tran 1e-15 6e-12
   write test_ac.raw
