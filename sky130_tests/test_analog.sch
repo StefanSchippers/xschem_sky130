@@ -121,9 +121,6 @@ C {devices/vsource.sym} 980 -690 0 0 {name=V3 value=1.8 net_name=true}
 C {devices/gnd.sym} 980 -660 0 0 {name=l13 lab=GND}
 C {devices/vdd.sym} 980 -720 0 0 {name=l14 lab=VDD}
 C {devices/lab_pin.sym} 480 -480 0 1 {name=l4 sig_type=std_logic lab=OUT2}
-C {devices/launcher.sym} 800 -210 0 0 {name=h1
-descr=Annotate 
-tclcommand="xschem annotate_op"}
 C {devices/ngspice_probe.sym} 410 -580 0 0 {name=r1}
 C {devices/ngspice_probe.sym} 410 -300 0 0 {name=r2}
 C {devices/ngspice_probe.sym} 310 -90 0 0 {name=r3}
@@ -162,3 +159,7 @@ C {devices/ngspice_get_value.sym} 500 -90 0 0 {name=r9 node=i(@b.$\{path\}xr2.xs
 descr="I="}
 C {devices/ngspice_get_expr.sym} 950 -690 0 1 {name=r8 node="[ngspice::get_current v3]"}
 C {sky130_fd_pr/corner.sym} 1050 -370 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {devices/launcher.sym} 800 -210 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}

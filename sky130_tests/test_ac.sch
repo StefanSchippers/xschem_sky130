@@ -230,17 +230,6 @@ C {devices/lab_pin.sym} 50 -240 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 50 -330 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 50 -420 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/corner.sym} 930 -190 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/ngspice_probe.sym} 350 -470 0 0 {name=r1}
-C {devices/ngspice_probe.sym} 570 -450 0 0 {name=r1}
-C {devices/ngspice_probe.sym} 490 -570 0 0 {name=r1}
-C {devices/ngspice_probe.sym} 430 -310 0 0 {name=r1}
-C {devices/launcher.sym} 630 -220 0 0 {name=h1
-descr="Annotate OP" 
-tclcommand="xschem annotate_op"
-}
-C {devices/ngspice_probe.sym} 560 -360 0 0 {name=r1}
-C {devices/ngspice_probe.sym} 270 -360 0 1 {name=r1}
-C {devices/ngspice_probe.sym} 370 -180 0 1 {name=r1}
 C {devices/launcher.sym} 630 -260 0 0 {name=h3
 descr="Netlist & sim" 
 tclcommand="xschem netlist; xschem simulate"}
@@ -286,11 +275,11 @@ vvgnd GND 0 dc 0
 .ac dec 10 1 1e12
 * .tran 1e-15 6e-12 0 1e-15
 * .print dc format=raw
-* + file=test_ac_op.raw v(*) i(*)
+* + file=test_ac.raw v(*) i(*)
 .print ac format=raw
-+ file=test_ac_ac.raw v(*) i(*)
++ file=test_ac.raw v(*) i(*)
 *.print tran format=raw
-* + file=test_ac_tran.raw v(*) i(*)
+* + file=test_ac.raw v(*) i(*)
 "}
 C {devices/capa.sym} 900 -520 3 1 {name=C2
 m=1
@@ -304,7 +293,6 @@ footprint=1206
 device=inductor}
 C {devices/lab_pin.sym} 760 -500 0 0 {name=l2 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 990 -520 0 1 {name=l2 sig_type=std_logic lab=IN}
-C {devices/ngspice_probe.sym} 950 -520 0 0 {name=r1}
 C {devices/vcvs.sym} 870 -630 0 1 {name=E1 value=1}
 C {devices/lab_pin.sym} 910 -610 0 1 {name=l2 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 910 -650 0 1 {name=l3 sig_type=std_logic lab=S}
@@ -328,5 +316,7 @@ C {devices/lab_pin.sym} 910 -800 0 1 {name=l5 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 870 -580 0 1 {name=l6 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 870 -730 0 1 {name=l7 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 840 -690 0 1 {name=l8 sig_type=std_logic lab=GND}
-C {devices/ngspice_probe.sym} 830 -660 2 0 {name=r1}
-C {devices/ngspice_probe.sym} 800 -810 0 0 {name=r2}
+C {devices/launcher.sym} 630 -220 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}

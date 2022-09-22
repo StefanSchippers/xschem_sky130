@@ -20,7 +20,7 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = -2.9e-16
+y1 = -2.3e-14
 y2 = 1.9
 
 x1=0
@@ -35,7 +35,7 @@ color="4 5 9"  unitx=u
 divy=8
 subdivx=4
 subdivy=1
-dataset=20}
+dataset=-1}
 B 2 820 -590 1280 -460 {flags=graph
 y1 = 1.7008e-05
 y2 = 4.36367e-05
@@ -49,7 +49,7 @@ subdivx=4
 node="\\"Icc;i(vcc)\\""
  unitx=u
 color=4
-dataset=20}
+dataset=-1}
 P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
 P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
 T {Example of Mismatch simulation of a bandgap reference. Variations are generated also on Vcc

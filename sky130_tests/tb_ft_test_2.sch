@@ -125,9 +125,6 @@ device="ceramic capacitor"}
 C {devices/vsource.sym} 220 -250 0 0 {name=VGS1 value="ac 1 0 sin(0 0.01 10G)"}
 C {devices/ngspice_get_value.sym} 390 -430 0 1 {name=r9 node=i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])
 descr="I="}
-C {devices/launcher.sym} 820 -450 0 0 {name=h1
-descr=Annotate 
-tclcommand="xschem annotate_op"}
 C {devices/launcher.sym} 820 -350 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
@@ -207,3 +204,7 @@ value="
 
 "
 spice_ignore=false}
+C {devices/launcher.sym} 820 -450 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}

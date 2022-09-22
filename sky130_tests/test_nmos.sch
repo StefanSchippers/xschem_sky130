@@ -31,7 +31,7 @@ subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
 \\"01v8;i(vd2)\\""
 color="4 5" unity=u
-dataset=-1}
+dataset=6}
 B 2 1480 -990 1910 -670 {flags=graph,unlocked
 y1 = -0
 y2 = 0.00063
@@ -70,7 +70,7 @@ subdivx=4
 node="i(vd1)
 i(vd9)"
 color="4 5" unity=u
-dataset=-1}
+dataset=6}
 B 2 770 -990 1030 -670 {flags=graph
 y1 = 0
 y2 = 1.8
@@ -82,7 +82,7 @@ divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
-dataset=-1}
+dataset=6}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -293,9 +293,6 @@ model=nfet_g5v0d16v0
 spiceprefix=X}
 C {devices/ngspice_get_value.sym} 700 -170 0 0 {name=r1 node="i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])"
 descr="Id="}
-C {devices/launcher.sym} 100 -470 0 0 {name=h1
-descr=Annotate 
-tclcommand="xschem annotate_op"}
 C {devices/launcher.sym} 100 -420 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/test_nmos.raw"}
@@ -348,3 +345,7 @@ C {sky130_fd_pr/corner.sym} 70 -240 0 0 {name=CORNER only_toplevel=true corner=t
 C {devices/ngspice_probe.sym} 780 -600 0 0 {name=r1}
 C {devices/ngspice_probe.sym} 1100 -570 0 1 {name=r1}
 C {devices/ngspice_probe.sym} 640 -140 0 1 {name=r1}
+C {devices/launcher.sym} 100 -470 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
