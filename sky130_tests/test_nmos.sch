@@ -30,8 +30,8 @@ divx=4
 subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
 \\"01v8;i(vd2)\\""
-color="4 5" unity=u
-dataset=6}
+color="4 5" unity=1
+dataset=-1}
 B 2 1480 -990 1910 -670 {flags=graph,unlocked
 y1 = -0
 y2 = 0.00063
@@ -42,7 +42,7 @@ x2=5
 divx=8
 subdivx=0
 node="i(vd4)"
-color=4 unity=u
+color=4 unity=1
 sweep=d5v0
 dataset=-1}
 B 2 1920 -990 2350 -670 {flags=graph,unlocked
@@ -55,7 +55,7 @@ x2=10.5
 divx=5
 subdivx=4
 node="i(vd5)"
-color=4 unity=u
+color=4 unity=1
 sweep=v(d10v5)
 }
 B 2 2380 -990 2810 -670 {flags=graph
@@ -69,8 +69,8 @@ divx=4
 subdivx=4
 node="i(vd1)
 i(vd9)"
-color="4 5" unity=u
-dataset=6}
+color="4 5" unity=1
+dataset=-1}
 B 2 770 -990 1030 -670 {flags=graph
 y1 = 0
 y2 = 1.8
@@ -82,7 +82,7 @@ divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
-dataset=6}
+dataset=-1}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
