@@ -34,7 +34,7 @@ subdivx=8
 node=e1
 color=4
 dataset=0
-unitx=n
+unitx=1
 logx=1
 logy=0
 }

@@ -20,7 +20,7 @@ subdivx=1
 
 
 dataset=0
-unitx=u
+unitx=1
 logx=0
 logy=0
 hilight_wave=-1

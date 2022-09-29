@@ -19,7 +19,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 510 -850 1020 -460 {flags=graph
+B 2 710 -830 1220 -440 {flags=graph
 y1=-0.84
 y2=-0.53
 ypos1=0
@@ -39,7 +39,8 @@ logx=1
 logy=0
 color="7 4"
 node="k1
-k2"}
+k2"
+hilight_wave=-1}
 T {Available models:
 sky130_fd_pr__diode_pw2nd_05v5
 sky130_fd_pr__diode_pw2nd_11v0
@@ -66,16 +67,6 @@ N 380 -110 380 -80 { lab=0}
 N 900 -390 900 -360 { lab=0}
 N 900 -240 900 -170 { lab=K2}
 N 900 -110 900 -80 { lab=0}
-C {devices/code_shown.sym} 30 -530 0 0 {name=NGSPICE
-only_toplevel=true
-value="
-.control
-save all
-dc i1 1p 50u 0.1u 
-* plot k1 k2
-write test_diode.raw
-.endc
-" }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 380 -200 0 0 {name=p4 lab=K1}
 C {devices/isource.sym} 380 -330 2 0 {name=I1 value=0}
@@ -96,7 +87,6 @@ area=1e12
 pj=4e6}
 C {devices/lab_pin.sym} 900 -80 0 0 {name=p6 lab=0}
 C {devices/cccs.sym} 900 -330 0 0 {name=F1 vnam=vk1 value=1}
-C {sky130_fd_pr/corner.sym} 70 -215 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/launcher.sym} 620 -430 0 0 {name=h17 
 descr="Load waves" 
 tclcommand="
@@ -105,3 +95,24 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 "
 }
 C {devices/ammeter.sym} 380 -270 0 0 {name=Vk1 net_name=true}
+C {devices/simulator_commands_shown.sym} 10 -780 0 0 {name=COMMANDS1
+simulator=ngspice
+only_toplevel=false 
+value="
+.control
+save all
+dc i1 1p 50u 0.1u 
+* plot k1 k2
+write test_diode.raw
+.endc"}
+C {devices/simulator_commands_shown.sym} 10 -580 0 0 {name=COMMANDS2
+simulator=xyce
+only_toplevel=false 
+value="
+
+** Currently (Xyce 7.5) these diode models
+** are not recognized
+.dc i1 1p 50u 0.1u 
+.print dc format=raw file=test_diode.raw v(*) i(*)
+"}
+C {sky130_fd_pr/corner.sym} 20 -205 0 0 {name=CORNER only_toplevel=false corner=tt}
