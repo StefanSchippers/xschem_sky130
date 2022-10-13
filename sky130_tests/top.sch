@@ -738,3 +738,4 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 
 "
 }
+C {sky130_tests/test_mos_binning.sym} 490 -1360 0 0 {name=x33}
