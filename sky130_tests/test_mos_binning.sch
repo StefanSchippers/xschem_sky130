@@ -6,12 +6,12 @@ V {}
 S {}
 E {}
 B 2 520 -610 1030 -310 {flags=graph
-y1 = 0
+y1 = 1.8e-05
 
 divy = 8
 subdivy=1
-x1=0.155
-x2=0.999054
+x1=151m
+x2=1
 divx=4
 subdivx=1
 
@@ -22,15 +22,15 @@ hilight_wave=0
 rainbow=1
 dataset=-1
 color=4
-node="Id;curr"
+node="Id;i(curr)"
 y2=70u}
 B 2 520 -870 1030 -620 {flags=graph
-y1 = -0.0004
-y2 = -1.4e-05
+y1 = -0.00042
+y2 = 0
 divy = 5
 subdivy=4
-x1=0.155
-x2=0.999054
+x1=151m
+x2=1
 divx=4
 subdivx=4
 
@@ -41,7 +41,7 @@ hilight_wave=0
 rainbow=1
 dataset=-1
 color=4
-node="\\"dI/dL; curr deriv()\\""}
+node="\\"dI/dL; i(curr) deriv()\\""}
 T {Example of a DC sweep to plot mos
 current vs channel length} 200 -980 0 0 0.8 0.8 {}
 N 730 -140 750 -140 {lab=B}
@@ -57,41 +57,45 @@ C {devices/code_shown.sym} 0 -820 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
-.option wnflag=1 
+.option wnflag = 1 
 .option savecurrents
-.param VGATE=1
-.param VDRAIN=1
-.param WIDTH=1
+.param VGATE = 1
+.param VDRAIN = 1
+.param WIDTH = 1
 .param LENGTH=0.15
 vd d 0 \{VDRAIN\}
 vg g 0 \{VGATE\}
 vs s 0 0
 vb b 0 0
 .control
-  save all
-  let par=0.15
-  let i=0
-  settype current curr
+  save i(vd2)
+  let npoints = 200
+  let start = 0.15
+  let end = 1.0
+  let step = (end - start) / npoints
+  let i = 0
+  let j = start
   set curplot = new
   set myplot = $curplot
-  let curr=vector(171)
-  while par <= 1.00001
-    alterparam LENGTH = $&par
+  let curr = vector(npoints + 1)
+  let len = vector(npoints + 1)
+  while j <= end + step / 2
+    alterparam LENGTH = $&j
     reset
     op
-    setplot $myplot
     set idx = $&i
+    let \{$myplot\}.curr[\{$&i\}] = i(vd2)
+    let \{$myplot\}.len[\{$&i\}] = j
+    let j = j + step
     let i = i + 1
-    set plot_idx = $&i
-    let curr[\{$idx\}]=op\{$plot_idx\}.i(vd2)
-    let par = par + 0.005
   end
-  compose len start=0.15 stop=1.00001 step=0.005
+  setplot $myplot
   setscale len
   deftype v length L
   settype length len
-  set curplottitle=\\"MOS current vs length sweep\\"
-  set curplotname= \\"DC transfer characteristic\\"
+  settype current curr
+  setcs curplottitle = \\"MOS current vs length sweep\\"
+  setcs curplotname = \\"DC transfer characteristic\\"
   write test_mos_binning.raw 
 .endc
 " }
