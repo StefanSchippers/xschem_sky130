@@ -98,6 +98,9 @@ save @m.x2.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
 save @m.x2.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x2.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gds]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gmbs]
+
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 op
 write test_analog.raw

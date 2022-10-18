@@ -5,12 +5,17 @@ K {}
 V {}
 S {}
 E {}
+L 4 250 -790 460 -790 {}
+L 4 460 -800 460 -790 {}
+L 4 460 -800 510 -790 {}
+L 4 460 -780 510 -790 {}
+L 4 460 -790 460 -780 {}
 B 2 520 -610 1030 -310 {flags=graph
-y1 = 5.2e-06
+y1 = -3.48637e-06
 
-divy = 8
+divy = 5
 subdivy=1
-x1=151m
+x1=0.1501
 x2=1
 divx=4
 subdivx=1
@@ -22,20 +27,20 @@ hilight_wave=0
 rainbow=1
 dataset=-1
 color=4
-node="Id;i(curr)"
-y2=0.00048
+node="\\"Id;i(curr)\\""
+y2=0.000472246
 digital=0
 ypos1=-8.09765e-05
 ypos2=0.000250171}
 B 2 520 -870 1030 -620 {flags=graph
-y1 = -0.00110205
-y2 = 5.50783e-05
+y1 = -0.000873999
+
 divy = 5
-subdivy=4
-x1=151m
+subdivy=1
+x1=0.1501
 x2=1
 divx=4
-subdivx=4
+subdivx=1
 
  unity=1
 
@@ -44,13 +49,25 @@ hilight_wave=0
 rainbow=1
 dataset=-1
 color=4
-node="\\"dI/dL; i(curr) deriv()\\""}
+node="\\"d(Id)/dL;i(curr) deriv()\\""
+y2=5.16851e-05
+digital=0
+ypos1=-8.09765e-05
+ypos2=0.000250171}
 T {Id vs Length for
 nfet_01v8, W=1, 
 L=X-axis, 
 Vds = Vgs = sweep
 from 0.8 to 1.8 step 0.2
-Vb = Vs = 0} 40 -820 0 0 0.5 0.5 {}
+Vb = Vs = 0} 70 -540 0 0 0.5 0.5 {}
+T {Vgs,Vds=0.8} 1040 -370 0 0 0.4 0.4 {layer=4}
+T {Vgs,Vds=1.0} 1040 -400 0 0 0.4 0.4 {layer=5}
+T {Vgs,Vds=1.2} 1040 -430 0 0 0.4 0.4 {layer=6}
+T {Vgs,Vds=1.4} 1040 -470 0 0 0.4 0.4 {layer=7}
+T {Vgs,Vds=1.6} 1040 -520 0 0 0.4 0.4 {layer=8}
+T {Vgs,Vds=1.8} 1040 -570 0 0 0.4 0.4 {layer=9}
+T {Binning (different models for W/L classes)
+produce discontinuities} 10 -770 0 0 0.4 0.4 {}
 N 730 -140 750 -140 {lab=B}
 N 670 -140 690 -140 {lab=G}
 N 730 -190 730 -170 {lab=#net1}
@@ -80,7 +97,7 @@ vb b 0 0
   ** here we are in the const plot, so declare all vectors.
   let npoints = 100
   let startl = 0.15
-  let endl = 1.0
+  let endl = 1
   let stepl = (endl - startl) / npoints
   let startv = 0.8
   let endv = 1.8

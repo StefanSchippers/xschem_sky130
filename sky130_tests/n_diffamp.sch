@@ -94,8 +94,8 @@ N 410 -420 410 -370 { lab=S}
 N 850 -530 850 -500 { lab=PLUS}
 N 940 -530 940 -500 { lab=NBIAS}
 N 750 -530 750 -500 { lab=MINUS}
-N 320 -320 320 -250 { lab=#net2}
-N 320 -420 320 -380 { lab=S}
+N 320 -330 320 -250 { lab=#net2}
+N 320 -420 320 -390 { lab=S}
 N 220 -650 240 -650 { lab=#net1}
 N 180 -620 180 -590 { lab=#net1}
 N 470 -620 470 -580 { lab=OUT}
@@ -236,8 +236,6 @@ C {devices/vsource.sym} 750 -470 0 0 {name=V4 value=0.7 only_toplevel=true}
 C {devices/gnd.sym} 750 -440 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 750 -530 0 1 {name=l6 sig_type=std_logic lab=MINUS}
 C {devices/ngspice_get_expr.sym} 1070 -470 0 1 {name=r10 node="[ngspice::get_current v3]"}
-C {devices/ngspice_get_expr.sym} 290 -340 0 1 {name=r11 node="[ngspice::get_current V5]"}
-C {devices/vsource.sym} 320 -350 0 0 {name=V5 value=0}
 C {devices/device_param_probe.sym} 460 -530 0 1 {name=r12
 devicename=M2
 devicemodel=nfet_01v8_lvt
@@ -249,3 +247,8 @@ deviceparam=gm}
 C {sky130_fd_pr/corner.sym} 1050 -360 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/ngspice_get_value.sym} 280 -250 0 1 {name=r14 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
+C {devices/ngspice_get_value.sym} 280 -310 0 1 {name=r15 node=@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 280 -350 0 1 {name=r11 node=@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[gmbs]
+descr="gmbs="}
+C {devices/ammeter.sym} 320 -360 0 0 {name=V5}
