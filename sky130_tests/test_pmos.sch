@@ -112,7 +112,7 @@ C {devices/lab_pin.sym} 870 -440 0 0 {name=p3 lab=G1v8}
 C {devices/lab_pin.sym} 930 -490 2 0 {name=p12 lab=S}
 C {devices/lab_pin.sym} 950 -440 0 1 {name=p13 lab=B}
 C {devices/ammeter.sym} 930 -360 0 1 {name=Vd2}
-C {devices/code_shown.sym} 10 -1030 0 0 {name=NGSPICE
+C {devices/code_shown.sym} 0 -1290 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
@@ -124,6 +124,16 @@ vd D1v8 0 -1.8
 vb b 0 0
 .control
 save all
+save @m.xm6.m1[gm]
+save @m.xm5.xmain1.msky130_fd_pr__pfet_g5v0d16v0__base[gm]
+save @m.xm4.msky130_fd_pr__pfet_g5v0d10v5[gm]
+save @m.xm3.msky130_fd_pr__pfet_01v8_hvt[gm]
+save @m.xm2.msky130_fd_pr__pfet_01v8[gm]
+save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @d.xm6.dnw2[gm]
+save @d.xm6.dnw1[gm]
+save @d.xm5.dnw2[gm]
+save @d.xm5.dnw1[gm]
 dc vd 0 -1.8 -0.01 vg 0 -1.8 -0.2
 write test_pmos.raw
 * plot all.vd1#branch vs D1v8

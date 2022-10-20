@@ -108,7 +108,7 @@ divx=8
 
 node="\\"VDIFF;plus minus -\\""
 color=8
-dataset=-1
+dataset=67
 unitx=n
 subdivx=4
 divy=2
@@ -127,7 +127,7 @@ saoutf
 saout"
 color="4 8 7"
 unitx=n
-dataset=-1}
+dataset=67}
 B 2 2030 -1820 3010 -1480 {flags=graph
 y1=0.147272
 y2=1.65928
@@ -140,7 +140,7 @@ subdivx=4
 node="plus minus"
 color="4 8"
 unitx=n
-dataset=-1}
+dataset=67}
 B 2 1030 -2380 2010 -2080 {flags=graph
 y1=-0.000106156
 y2=1.08285e-05
@@ -156,7 +156,7 @@ unitx=n
 color=8
 node=i(vvcc)
 unity=u
-dataset=-1}
+dataset=67}
 B 2 2030 -2180 3010 -1840 {flags=graph
 y1=-51.3036
 y2=110.437
@@ -169,7 +169,7 @@ subdivx=4
 node=temperat
 color=4
 unitx=n
-dataset=-1}
+dataset=67}
 B 2 2030 -2530 3010 -2200 {flags=graph
 y1=1.60124
 y2=2.03158
@@ -182,7 +182,7 @@ subdivx=4
 node=vcc
 color=4
 unitx=n
-dataset=-1}
+dataset=67}
 B 2 30 -2230 1010 -1910 {flags=graph
 y1=0.00021
 y2=1.2
@@ -195,7 +195,7 @@ subdivx=4
 node="zero0 zero1 zero2"
 color="4 8 7"
 unitx=n
-dataset=-1}
+dataset=67}
 B 2 30 -2580 1010 -2420 {flags=graph
 y1=0
 y2=2
@@ -207,7 +207,7 @@ divx=8
 subdivx=4
 
 
-dataset=-1
+dataset=67
 unitx=n
 color="4 7"
 node="en cal"
@@ -225,7 +225,7 @@ divx=8
 subdivx=4
 
 
-dataset=-1
+dataset=67
 unitx=n
 color="4 7"
 node="en cal"
@@ -249,7 +249,7 @@ unitx=n
 unity=1
 color="4 7"
 node="GN1 GP1"
-dataset=-1}
+dataset=67}
 B 2 1030 -1780 2010 -1480 {flags=graph
 y1=0.0063
 y2=1.9
@@ -267,7 +267,7 @@ unitx=n
 unity=1
 color="4 7"
 node="GN2 GP2"
-dataset=-1}
+dataset=67}
 A 4 3035 -715 5 0 360 {fill=true}
 A 4 3035 -665 5 0 360 {fill=true}
 A 4 3035 -615 5 0 360 {fill=true}
@@ -440,7 +440,7 @@ N 1020 -870 1120 -870 {lab=VSSI}
 N 920 -890 920 -870 {lab=VSSI}
 N 990 -830 1020 -830 {lab=VSSI}
 N 1020 -870 1020 -830 {lab=VSSI}
-N 1030 -1190 1060 -1190 {lab=VCC}
+N 1030 -1190 1120 -1190 {lab=VCC}
 N 1030 -1160 1030 -1120 {lab=SP}
 N 1030 -1310 1030 -1280 {lab=VCC}
 N 1550 -790 1580 -790 {lab=VSS}
@@ -534,6 +534,8 @@ lab=GP2}
 N 900 -400 980 -400 {
 lab=VCC}
 N 430 -170 430 -140 {lab=VSS}
+N 920 -1190 990 -1190 {
+lab=VSS}
 C {devices/launcher.sym} 1345 -1435 0 0 {name=h1 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms
@@ -628,9 +630,9 @@ C {devices/lab_wire.sym} 1000 -1050 0 1 {name=l21 lab=VCC}
 C {devices/lab_pin.sym} 820 -920 0 0 {name=p22 lab=VSS}
 C {devices/lab_pin.sym} 1230 -920 0 1 {name=p23 lab=VSS}
 C {devices/lab_pin.sym} 990 -830 0 0 {name=p24 lab=VSSI}
-C {devices/lab_pin.sym} 1060 -1190 0 1 {name=p25 lab=VCC}
+C {devices/lab_pin.sym} 1120 -1190 0 1 {name=p25 lab=VCC}
 C {devices/lab_pin.sym} 1030 -1310 0 0 {name=p26 lab=VCC}
-C {devices/lab_pin.sym} 990 -1190 0 0 {name=l7 lab=VSS}
+C {devices/lab_pin.sym} 920 -1190 0 0 {name=l7 lab=VSS}
 C {devices/lab_pin.sym} 960 -960 0 1 {name=l9 lab=GN1}
 C {devices/lab_pin.sym} 1220 -1050 0 1 {name=l10 lab=MINUS}
 C {devices/lab_pin.sym} 820 -1050 0 0 {name=l11 lab=PLUS}

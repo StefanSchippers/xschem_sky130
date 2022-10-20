@@ -24,30 +24,30 @@ y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=-0.09
-x2=1.71
+x1=-1.10952e-06
+x2=1.8
 divx=4
 subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
 \\"01v8;i(vd2)\\""
 color="4 5" unity=1
-dataset=-1}
+dataset=8}
 B 2 1480 -990 1910 -670 {flags=graph,unlocked
 y1 = -0
 y2 = 0.00063
 divy = 5
 subdivy=1
-x1=0
-x2=5
+x1=-0.143377
+x2=4.85662
 divx=8
 subdivx=0
-node="i(vd4)"
+node=i(vd4)
 color=4 unity=1
 sweep=d5v0
 dataset=-1}
 B 2 1920 -990 2350 -670 {flags=graph,unlocked
-y1 = -7.67938e-05
-y2 = 0.0008124
+y1 = -8.01012e-06
+y2 = 0.000703341
 divy = 5
 subdivy=1
 x1=0
@@ -63,26 +63,26 @@ y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=-0.09
-x2=1.71
+x1=-1.10952e-06
+x2=1.8
 divx=4
 subdivx=4
 node="i(vd1)
 i(vd9)"
 color="4 5" unity=1
-dataset=-1}
+dataset=8}
 B 2 770 -990 1030 -670 {flags=graph
 y1 = 0
 y2 = 1.8
 divy = 5
 subdivy=4
-x1=-0.09
-x2=1.71
+x1=-0.03375
+x2=1.76626
 divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
-dataset=-1}
+dataset=8}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -224,7 +224,7 @@ C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
 C {devices/ipin.sym} 520 -420 0 0 {name=p48 lab=G1v8}
 C {devices/ipin.sym} 520 -380 0 0 {name=p49 lab=D1v8}
 C {devices/ipin.sym} 520 -340 0 0 {name=p50 lab=B}
-C {devices/code_shown.sym} 0 -1120 0 0 {name=NGSPICE
+C {devices/code_shown.sym} 0 -1200 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
@@ -236,9 +236,17 @@ vd D1v8 0 1.8
 vb b 0 0
 .control
 save all
-save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm8.m1[gm]
+save @m.xm7.m1[gm]
+save @m.xm6.xmain1.msky130_fd_pr__nfet_g5v0d16v0__base[gm]
+save @m.xm5.msky130_fd_pr__nfet_g5v0d10v5[gm]
+save @m.xm4.msky130_fd_pr__nfet_05v0_nvt[gm]
+save @m.xm3.msky130_fd_pr__nfet_03v3_nvt[gm]
 save @m.xm2.msky130_fd_pr__nfet_01v8[gm]
-dc vd 0 1.8 0.0005 vg 0 1.8 0.2
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+
+dc vd 0 1.8 0.005 vg 0 1.8 0.2
 write test_nmos.raw
 * dc vd 0 1.8 0.001 vg 0 1.2 0.1
 plot all.vd1#branch vs D1v8
@@ -291,13 +299,9 @@ W=5.0
 mult=1 nf=1
 model=nfet_g5v0d16v0
 spiceprefix=X}
-C {devices/ngspice_get_value.sym} 700 -170 0 0 {name=r1 node="i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])"
-descr="Id="}
 C {devices/launcher.sym} 100 -420 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/test_nmos.raw"}
-C {devices/ngspice_get_value.sym} 600 -170 0 0 {name=r2 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-descr="gm="}
 C {devices/launcher.sym} 360 -140 0 0 {name=h3
 descr="Annotation
 manual page"
@@ -313,7 +317,7 @@ mult=1
 model=nfet_20v0
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_20v0_zvt.sym} 2410 -140 0 0 {name=M16
+C {sky130_fd_pr/nfet_20v0_zvt.sym} 2410 -140 0 0 {name=M8
 L=5
 W=30
 mult=1
@@ -332,15 +336,13 @@ C {devices/lab_pin.sym} 2670 -90 0 1 {name=p54 lab=S}
 C {devices/lab_pin.sym} 2690 -140 0 1 {name=p55 lab=B}
 C {devices/ammeter.sym} 2670 -220 0 0 {name=Vd9 current=5.4633e-04}
 C {devices/lab_pin.sym} 2610 -140 0 0 {name=p56 lab=G1v8}
-C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 2650 -140 0 0 {name=M8
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 2650 -140 0 0 {name=M9
 L=0.15
 W=0.5
 mult=1
 nf=2
 model=nfet_01v8_lvt
 spiceprefix=X}
-C {devices/ngspice_get_value.sym} 2680 -170 0 0 {name=r3 node="i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])"
-descr="Id="}
 C {sky130_fd_pr/corner.sym} 70 -240 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/ngspice_probe.sym} 780 -600 0 0 {name=r1}
 C {devices/ngspice_probe.sym} 1100 -570 0 1 {name=r1}
