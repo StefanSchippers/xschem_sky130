@@ -478,8 +478,8 @@ descr="pradeepsk13/vsdsram_sky130_1.8V"
 url="https://github.com/pradeepsk13/vsdsram_sky130_1.8V"}
 C {devices/launcher.sym} 810 -1560 0 0 {name=h14
 descr="Step-by-step install instructions,
-xschem + skywater-pdk + ngspice" 
-url="https://xschem.sourceforge.io/stefan/xschem_man/video_tutorials/install_xschem_sky130_and_ngspice.mp4"}
+xschem + open_pdks (sky130 pdk) + ngspice" 
+url="https://xschem.sourceforge.io/stefan/xschem_man/tutorial_xschem_sky130.html"}
 C {sky130_tests/simulate_ff.sym} 190 -590 0 0 {name=x22}
 C {sky130_fd_pr/nfet_20v0.sym} 2130 -750 0 0 {name=M7
 L=2.95
