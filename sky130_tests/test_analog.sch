@@ -79,34 +79,6 @@ N 460 -200 460 -170 { lab=OUT}
 N 430 -480 460 -480 { lab=OUT2}
 N 430 -200 460 -200 { lab=OUT}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/code.sym} 1050 -190 0 0 {name=STIMULI 
-only_toplevel=true
-place=end
-value="
-
-.options savecurrents
-.control
-save all
-save @m.x1.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x1.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x1.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
-save @m.x1.xm5.msky130_fd_pr__nfet_01v8[vth]
-save @m.x2.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x2.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x2.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x2.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gds]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gmbs]
-
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
-op
-write test_analog.raw
-.endc
-.print @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
-"}
 C {sky130_tests/n_diffamp.sym} 330 -200 0 0 {name=x1}
 C {sky130_tests/n_diffamp.sym} 330 -480 0 0 {name=x2}
 C {devices/lab_pin.sym} 280 -90 0 0 {name=l2 sig_type=std_logic lab=BIAS}
@@ -166,3 +138,31 @@ C {devices/launcher.sym} 800 -210 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
+C {devices/simulator_commands.sym} 1050 -190 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false
+place=end
+value="* ngspice commands
+.options savecurrents
+.control
+save all
+save @m.x1.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x1.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.x1.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
+save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gds]
+save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gmbs]
+save @m.x1.xm5.msky130_fd_pr__nfet_01v8[vth]
+save @m.x2.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x2.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.x2.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.x2.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gds]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gmbs]
+save @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
+op
+write test_analog.raw
+.endc
+.print @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]"}

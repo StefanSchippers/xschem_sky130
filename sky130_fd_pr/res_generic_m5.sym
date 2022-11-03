@@ -15,13 +15,12 @@ v {xschem version=3.1.0 file_version=1.2
 
 }
 G {}
-K {type=high_precision_poly_resistor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
+K {type=poly_resistor
+format="@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
 template="name=R1
 W=1
 L=1
-model=res_high_po
-spiceprefix=X
+model=res_generic_m5
 mult=1"
 }
 V {}
@@ -40,9 +39,7 @@ L 4 -7.5 -17.5 0 -20 {}
 L 4 0 -30 0 -20 {}
 B 5 -2.5 27.5 2.5 32.5 {name=M dir=inout propag=1 pinnumber=2}
 B 5 -2.5 -32.5 2.5 -27.5 {name=P dir=inout propag=0 pinnumber=1}
-B 5 -22.5 -2.5 -17.5 2.5 {name=B dir=inout pinnumber=1}
-T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
 T {@name} 15 -27.5 0 0 0.2 0.2 {}
 T {@mult * @W / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -13.75 0 0 0.2 0.2 {}
-T {tcleval(R=[ev \{ 317.4 * @L / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[ev \{ 0.0285 * @L / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
