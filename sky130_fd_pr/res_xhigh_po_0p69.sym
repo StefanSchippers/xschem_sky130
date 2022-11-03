@@ -18,8 +18,7 @@ G {}
 K {type=high_precision_poly_p-_resistor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L mult=@mult m=@mult"
 template="name=R1
-W=0.69
-L=1
+L=0.69
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1"
@@ -45,6 +44,6 @@ T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
 T {@#0:net_name} -10 16.25 0 1 0.15 0.15 {layer=15}
 T {@#1:net_name} -10 -25 0 1 0.15 0.15 {layer=15}
 T {@name} 15 -27.5 0 0 0.2 0.2 {}
-T {@mult * @W / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
+T {@mult * 0.69 / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -13.75 0 0 0.2 0.2 {}
-T {tcleval(R=[ev \{ 2000.0 * @L / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[ev \{ 2000.0 * @L / 0.69 / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}

@@ -18,8 +18,7 @@ G {}
 K {type=high_precision_poly_resistor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L mult=@mult m=@mult"
 template="name=R1
-W=0.35
-L=1
+L=0.35
 model=res_high_po_0p35
 spiceprefix=X
 mult=1"
@@ -43,6 +42,6 @@ B 5 -2.5 -32.5 2.5 -27.5 {name=P dir=inout propag=0 pinnumber=1}
 B 5 -22.5 -2.5 -17.5 2.5 {name=B dir=inout pinnumber=1}
 T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
 T {@name} 15 -27.5 0 0 0.2 0.2 {}
-T {@mult * @W / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
+T {@mult * 0.35 / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -13.75 0 0 0.2 0.2 {}
-T {tcleval(R=[ev \{ 1112.4 * @L / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[ev \{ 1112.4 * @L / 0.35 / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
