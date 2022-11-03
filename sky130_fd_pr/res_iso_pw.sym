@@ -18,7 +18,6 @@ G {}
 K {type=pwell_resistor
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
 template="name=R1
-rho=3050
 W=2.65
 L=2.65
 model=res_iso_pw
