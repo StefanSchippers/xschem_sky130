@@ -110,7 +110,7 @@ C {devices/lab_pin.sym} 810 -750 0 1 {name=l17 sig_type=std_logic lab=BIAS2}
 C {devices/ngspice_probe.sym} 310 -370 0 0 {name=r6}
 C {devices/launcher.sym} 800 -100 0 0 {name=h2
 descr="View Raw file" 
-tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
+tclcommand="textwindow $netlist_dir/test_analog.raw"
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 460 -420 0 0 {name=R1
 W=0.35

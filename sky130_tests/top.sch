@@ -737,3 +737,4 @@ W=1
 L=1
 model=res_generic_m5
 mult=1}
+C {sky130_tests/test_sweep_mos_w.sym} 480 -1320 0 0 {name=x34}
