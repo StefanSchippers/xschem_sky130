@@ -29,6 +29,7 @@ L 4 1610 -1250 2570 -1250 {}
 L 4 2610 -1250 3570 -1250 {}
 L 4 2610 -1380 3570 -1380 {}
 L 4 2190 -95 2680 -95 {}
+L 7 3480 -540 3960 -540 {dash=2}
 B 2 1580 -1890 2214 -1575 {flags=image_unscaled
 alpha=0.6
 image=/home/schippes/x/1.png
@@ -665,7 +666,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 3200 -420 0 0 {name=M41
 L=0.35
 W=1
-nf=1 mult=1
+nf=2 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
 }
