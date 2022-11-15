@@ -289,6 +289,13 @@ set toolbar_visible 1
 # set toolbar_horiz   1
 
 ###########################################################################
+#### WEB URL DOWNLOAD HELPER APPLICATION
+###########################################################################
+#### used to download files from web: default: {curl -f -s -O}
+# set download_url_helper {curl -f -s -O}
+# set download_url_helper {wget -N --quiet}
+
+###########################################################################
 #### TABBED WINDOWS
 ###########################################################################
 # default: not enabled. Interface can be changed runtime if only one window 
