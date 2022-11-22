@@ -20,6 +20,7 @@ function4="3 ~"
 format="@name @@D @@GATE @@RESET_B @VGND @VNB @VPB @VPWR @@Q @@Q_N @prefix\\\\dlrbp_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 }
 V {}
 S {}

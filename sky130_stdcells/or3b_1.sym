@@ -18,6 +18,7 @@ K {type=primitive
 format="@name @@A @@B @@C_N @VGND @VNB @VPB @VPWR @@X @prefix\\\\or3b_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 highlight=true}
 V {}
 S {}

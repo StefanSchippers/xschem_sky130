@@ -19,6 +19,7 @@ function3="1 d ~ 3 & x 0 & | 2 &"
 format="@name @@D @@GATE @@RESET_B @VGND @VNB @VPB @VPWR @@Q @prefix\\\\dlrtp_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 xfunction3="0 1 2 & & 1 ~ 2 3 & & |"}
 V {}
 S {}

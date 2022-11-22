@@ -19,6 +19,7 @@ function4="0 1 | 2 3 | &"
 format="@name @@A1 @@A2 @@B1 @@B2 @VGND @VNB @VPB @VPWR @@X @prefix\\\\o22a_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 highlight=true}
 V {}
 S {}

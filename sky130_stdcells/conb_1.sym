@@ -20,6 +20,7 @@ function1="L"
 format="@name @VGND @VNB @VPB @VPWR @@HI @@LO @prefix\\\\conb_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 highlight=true}
 V {}
 S {}

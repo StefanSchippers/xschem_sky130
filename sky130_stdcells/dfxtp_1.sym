@@ -19,6 +19,7 @@ function2="1 0 & 0 ~ 2 & |"
 format="@name @@CLK @@D @VGND @VNB @VPB @VPWR @@Q @prefix\\\\dfxtp_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 }
 V {}
 S {}

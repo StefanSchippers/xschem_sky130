@@ -14,11 +14,12 @@ v {xschem version=3.1.0 file_version=1.2
 * limitations under the License.
 }
 G {}
-K {type=stdcell
+K {type=primitive
 function3="3 1 0 M L 2 ~ M"
 format="@name @@CLK @@D @@RESET_B @VGND @VNB @VPB @VPWR @@Q @prefix\\\\dfrtp_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 }
 V {}
 S {}

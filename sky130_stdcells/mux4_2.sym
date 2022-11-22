@@ -19,6 +19,7 @@ function6="0 1 4 M 2 3 4 M 5 M"
 format="@name @@A0 @@A1 @@A2 @@A3 @@S0 @@S1 @VGND @VNB @VPB @VPWR @@X @prefix\\\\mux4_2"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
 highlight=true}
 V {}
 S {}
