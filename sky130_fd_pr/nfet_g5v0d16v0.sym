@@ -16,7 +16,7 @@ v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=nmos
-lvs_format="@name @pinlist sky130_fd_pr__@model L=@L W=@W nf=@nf" m=@mult"
+lvs_format="@name @pinlist sky130_fd_pr__@model L=@L W=@W nf=@nf m=@mult"
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W
 + nf=@nf ad=@ad as=@as pd=@pd ps=@ps
 + nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd 
