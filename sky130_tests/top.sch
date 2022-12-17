@@ -108,7 +108,6 @@ T {3 PIN
 NFET} 2820 -860 0 0 1 1 { hcenter=true}
 T {3 PIN
 PFET} 2820 -1070 0 0 1 1 { hcenter=true}
-T {Decred_hash_macro: import of a big RTL design from spice netlist} 430 -720 0 0 0.3 0.3 {layer=11}
 T {Select with a mouse Click then press 'e'
 key to descend into these subcircuits} 60 -1700 0 0 0.3 0.3 {layer=11}
 T {Select with a mouse Click then press 'e'
@@ -457,10 +456,9 @@ model=pfet_20v0
 spiceprefix=X
 spice_ignore=true
 }
-C {decred_hash_macro/user_project_wrapper.sym} 190 -710 0 0 {name=x17 prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/test_mim_cap.sym} 190 -1640 0 0 {name=x18}
-C {sky130_tests/LACG.sym} 190 -670 0 0 {name=x19}
-C {sky130_tests/test_ff.sym} 190 -630 0 0 {name=x20}
+C {sky130_tests/LACG.sym} 190 -710 0 0 {name=x19}
+C {sky130_tests/test_ff.sym} 190 -670 0 0 {name=x20}
 C {sky130_tests/test_analog.sym} 190 -1200 0 0 {name=x21}
 C {devices/launcher.sym} 810 -1220 0 0 {name=h10
 descr="westonb/sky130-analog" 
@@ -478,7 +476,7 @@ C {devices/launcher.sym} 810 -1560 0 0 {name=h14
 descr="Step-by-step install instructions,
 xschem + open_pdks (sky130 pdk) + ngspice" 
 url="https://xschem.sourceforge.io/stefan/xschem_man/tutorial_xschem_sky130.html"}
-C {sky130_tests/simulate_ff.sym} 190 -590 0 0 {name=x22}
+C {sky130_tests/simulate_ff.sym} 190 -630 0 0 {name=x22}
 C {sky130_fd_pr/nfet_20v0.sym} 2130 -750 0 0 {name=M7
 L=2.95
 W=29.41

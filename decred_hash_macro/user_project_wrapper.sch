@@ -1,9 +1,11 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
 E {}
+T {Decred_hash_macro: import of a big RTL design from spice netlist} 220 -980 0 0 1 1 {layer=11}
 C {devices/lab_pin.sym} 750 -810 0 0 {name=p41 lab=CLK }
 C {devices/lab_pin.sym} 1050 -810 0 1 {name=p42 lab=DATA_AVAILABLE[0] }
 C {devices/lab_pin.sym} 1050 -790 0 1 {name=p43 lab=DATA_FROM_HASH[0:7] }
