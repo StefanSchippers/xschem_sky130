@@ -85,50 +85,6 @@ C {devices/ipin.sym} 100 -580 0 0 { name=p95 lab=EN_N }
 C {devices/ipin.sym} 100 -430 0 0 { name=p96 lab=VSS }
 C {devices/ipin.sym} 100 -460 0 0 { name=p97 lab=VCC }
 C {devices/opin.sym} 140 -550 0 0 { name=p116 lab=DIFFOUT }
-C {devices/code.sym} 40 -370 0 0 {name=STIMULI 
-only_toplevel=true
-place=end
-value="* .option SCALE=1e-6 
-.option method=gear seed=12
-
-* this experimental option enables mos model bin 
-* selection based on W/NF instead of W
-.option wnflag=1 
-
-.param VCC=1.8
-* .param VCCGAUSS=agauss(1.8, 0.05, 1)
-* .param VCC=VCCGAUSS
-.param VDL=0.7
-.param ABSVAR=0.02
-.temp 25
-
-** to generate following file: 
-** copy .../xschem_sky130/sky130_tests/stimuli.test_comparator to simulation directory
-** then do 'Simulation->Utile Stimuli Editor (GUI)' and press 'Translate'
-.include \\"stimuli_bandgap_opamp.cir\\"
-
-** variation marameters:
-* .param sky130_fd_pr__nfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__vth0_slope'
-* .param sky130_fd_pr__pfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__vth0_slope'
-
-* .tran 0.1n 900n uic
-
-.control
-  let run=1
-  dowhile run <= 1
-    if run > 1
-      reset
-      set appendwrite
-    end
-    save all
-    * save saout cal i(vvcc) en plus minus
-    tran 10n 10000n uic
-    write bandgap_opamp.raw
-    let run = run + 1
-  end
-  plot plus minus all.diffout
-.endc
-"}
 C {devices/lab_pin.sym} 580 -450 0 0 {name=p20 lab=VCC}
 C {devices/lab_pin.sym} 370 -450 0 1 {name=p21 lab=VCC}
 C {devices/lab_pin.sym} 310 -280 0 0 {name=p22 lab=VSS}
@@ -185,7 +141,7 @@ nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
  }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 320 -450 0 0 {name=M6
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 320 -450 0 0 {name=M3
 L=2
 W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -217,7 +173,7 @@ C {devices/parax_cap.sym} 620 -400 3 1 {name=C1  value=2f}
 C {devices/lab_pin.sym} 1270 -360 0 1 {name=p2 lab=VSS}
 C {devices/lab_pin.sym} 1460 -510 0 1 {name=l10 lab=DIFFOUT}
 C {devices/parax_cap.sym} 1310 -500 0 0 {name=C5  value=4f}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 -360 0 0 {name=M11
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 -360 0 0 {name=M6
 L=4
 W=2
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -263,7 +219,7 @@ spiceprefix=X
  }
 C {devices/ammeter.sym} 1240 -770 0 0 {name=v17}
 C {devices/lab_pin.sym} 1130 -550 0 1 {name=p141 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 -550 0 0 {name=M53
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1080 -550 0 0 {name=M12
 L=4
 W=2
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -289,7 +245,7 @@ spiceprefix=X
  }
 C {devices/lab_pin.sym} 1100 -500 0 0 {name=p143 lab=VSS}
 C {devices/lab_pin.sym} 1270 -650 0 1 {name=p144 lab=VCC}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1220 -650 0 0 {name=M55
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1220 -650 0 0 {name=M5
 L=4
 W=4
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -353,4 +309,3 @@ nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
  }
-C {sky130_fd_pr/corner.sym} 40 -200 0 0 {name=CORNER only_toplevel=true corner=tt_mm}

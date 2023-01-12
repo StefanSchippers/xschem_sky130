@@ -1,0 +1,38 @@
+
+unit n
+voltage VCC
+slope 1
+format hspice_simple
+
+param eq 1000
+param vcommon 0.6
+param vdelta 0.001
+param eval 1000
+
+beginfile stimuli_tb_bandgap_opamp.cir
+set vss 0
+set vcc 1
+set en_n 1
+set plus vcommon
+set minus vcommon
+set start 0
+s 100
+set en_n 0
+s eq-100
+set start 1
+s 1
+set minus vcommon+vdelta
+s eval-1
+
+set minus vcommon
+set start 0
+s eq
+set start 1
+s 1
+set minus vcommon-vdelta
+s eval-1
+
+
+endfile
+
+

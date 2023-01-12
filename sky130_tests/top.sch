@@ -515,7 +515,7 @@ spiceprefix=X
 }
 C {sky130_tests/tb_ft_test.sym} 190 -1160 0 0 {name=x23}
 C {sky130_tests/tb_ft_test_2.sym} 190 -1120 0 0 {name=x24}
-C {sky130_tests/tb_bandgap.sym} 490 -1640 0 0 {name=x25}
+C {sky130_tests/tb_bandgap.sym} 480 -1560 0 0 {name=x25}
 C {sky130_fd_pr/res_generic_m1.sym} 2140 -550 0 0 {name=R13
 
 L=1
@@ -598,7 +598,7 @@ sa=0 sb=0 sd=0
 model=esd_nfet_g5v0d10v5_nvt
 spiceprefix=X
 }
-C {sky130_tests/tb_reram.sym} 490 -1600 0 0 {name=x27}
+C {sky130_tests/tb_reram.sym} 480 -1520 0 0 {name=x27}
 C {sky130_fd_pr/reram.sym} 2980 -1440 0 0 {name=Y1
 model=rram2_model
 mult=1}
@@ -682,12 +682,12 @@ nf=1 mult=1
 model=pfet_g5v0d16v0
 spiceprefix=X
 }
-C {sky130_tests/test_carry_lookahead.sym} 490 -1560 0 0 {name=x28}
+C {sky130_tests/test_carry_lookahead.sym} 480 -1480 0 0 {name=x28}
 C {sky130_fd_pr/npn_05v5.sym} 2570 -50 0 0 {name=Q2
 model=npn_05v5_w1p00l2p00
 spiceprefix=X
 }
-C {sky130_tests/test_nand2_noschematic.sym} 490 -1520 0 0 {name=x29}
+C {sky130_tests/test_nand2_noschematic.sym} 480 -1440 0 0 {name=x29}
 C {sky130_fd_pr/res_generic_m2.sym} 2290 -550 0 0 {name=R18
 L=1
 model=res_generic_m2
@@ -708,9 +708,9 @@ L=1
 model=res_generic_l1
 spiceprefix=X
 mult=1}
-C {sky130_tests/test_s_xfer.sym} 490 -1480 0 0 {name=x30}
-C {sky130_tests/test_multisim.sym} 490 -1440 0 0 {name=x31}
-C {sky130_tests/test_ac.sym} 490 -1400 0 0 {name=x32}
+C {sky130_tests/test_s_xfer.sym} 480 -1400 0 0 {name=x30}
+C {sky130_tests/test_multisim.sym} 480 -1360 0 0 {name=x31}
+C {sky130_tests/test_ac.sym} 480 -1320 0 0 {name=x32}
 C {devices/launcher.sym} 900 -270 0 0 {name=h15
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
@@ -730,10 +730,11 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 
 "
 }
-C {sky130_tests/test_mos_binning.sym} 490 -1360 0 0 {name=x33}
+C {sky130_tests/test_mos_binning.sym} 480 -1280 0 0 {name=x33}
 C {sky130_fd_pr/res_generic_m5.sym} 2770 -550 0 0 {name=R22
 W=1
 L=1
 model=res_generic_m5
 mult=1}
-C {sky130_tests/test_sweep_mos_w.sym} 490 -1320 0 0 {name=x34}
+C {sky130_tests/test_sweep_mos_w.sym} 480 -1240 0 0 {name=x34}
+C {sky130_tests/tb_bandgap_opamp.sym} 480 -1600 0 0 {name=x17}

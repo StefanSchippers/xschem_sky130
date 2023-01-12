@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
@@ -9,7 +10,6 @@ S {}
 E {}
 L 4 -60 -50 60 0 {}
 L 4 -60 50 60 0 {}
-L 4 -60 -50 -60 130 {}
 L 4 -80 90 -60 90 {}
 L 4 -80 30 -60 30 {}
 L 4 -80 -30 -60 -30 {}
@@ -17,6 +17,8 @@ L 4 60 0 80 0 {}
 L 4 -80 110 -60 110 {}
 L 4 -80 130 -60 130 {}
 L 4 -80 70 -60 70 {}
+L 4 -60 -50 -60 50 {}
+L 4 -60 50 -60 130 {bus=true}
 B 5 -82.5 87.5 -77.5 92.5 {name=EN_N dir=in }
 B 5 -82.5 27.5 -77.5 32.5 {name=MINUS dir=in }
 B 5 -82.5 -32.5 -77.5 -27.5 {name=PLUS dir=in }

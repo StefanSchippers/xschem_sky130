@@ -19,6 +19,64 @@ K {}
 V {}
 S {}
 E {}
+B 2 1800 -560 2600 -160 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1e-11
+x2=1.5e-06
+divx=5
+subdivx=1
+node=diffout
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1800 -960 2600 -560 {flags=graph
+y1=0.69
+y2=0.71
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1e-11
+x2=1.5e-06
+divx=5
+subdivx=1
+node="plus
+minus"
+color="4 7"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1800 -1360 2600 -960 {flags=graph
+y1=0.89
+y2=0.91
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1e-11
+x2=1.5e-06
+divx=5
+subdivx=1
+node=adj
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N 790 -460 820 -460 {lab=VCC}
 N 550 -460 580 -460 {lab=VCC}
 N 520 -290 550 -290 {lab=VSS}
@@ -90,51 +148,6 @@ C {devices/ipin.sym} 100 -580 0 0 { name=p95 lab=EN_N }
 C {devices/ipin.sym} 100 -430 0 0 { name=p96 lab=VSS }
 C {devices/ipin.sym} 100 -460 0 0 { name=p97 lab=VCC }
 C {devices/opin.sym} 140 -550 0 0 { name=p116 lab=DIFFOUT }
-C {devices/code.sym} 40 -370 0 0 {name=STIMULI 
-only_toplevel=true
-place=end
-value="* .option SCALE=1e-6 
-.option method=gear seed=12
-
-* this experimental option enables mos model bin 
-* selection based on W/NF instead of W
-.option wnflag=1 
-
-.param VCC=1.6
-* .param VCCGAUSS=agauss(1.8, 0.05, 1)
-* .param VCC=VCCGAUSS
-.param VDL=0.7
-.param ABSVAR=0.0
-.temp 25
-
-** to generate following file: 
-** copy .../xschem_sky130/sky130_tests/stimuli.test_comparator to simulation directory
-** then do 'Simulation->Utile Stimuli Editor (GUI)' and press 'Translate'
-.include \\"stimuli_bandgap_opamp.cir\\"
-
-** variation marameters:
-* .param sky130_fd_pr__nfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__vth0_slope'
-* .param sky130_fd_pr__pfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__vth0_slope'
-
-* .tran 0.1n 900n uic
-
-.control
-  let run=1
-  dowhile run <= 1
-    if run > 1
-      reset
-      set appendwrite
-    end
-    save all
-    * save saout cal i(vvcc) en plus minus
-    tran 1n 10000n uic
-    plot diffout
-    plot plus minus
-    write bandgap_opamp.raw
-    let run = run + 1
-  end
-.endc
-"}
 C {devices/lab_pin.sym} 790 -460 0 0 {name=p20 lab=VCC}
 C {devices/lab_pin.sym} 580 -460 0 1 {name=p21 lab=VCC}
 C {devices/lab_pin.sym} 520 -290 0 0 {name=p22 lab=VSS}
@@ -354,12 +367,3 @@ L=5
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1 net_name=true}
-C {devices/code.sym} 40 -170 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
-
-"
-spice_ignore=false}
