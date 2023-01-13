@@ -196,7 +196,7 @@ ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
-nf=1 mult=3
+nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
  }
