@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,12 +16,29 @@ v {xschem version=3.0.0 file_version=1.2
 }
 G {}
 K {type=reram
-format="@name @pinlist @model m=@mult"
-template="name=Y1
-model=rram2_model
-mult=1"
-device_model=".model rram2_model rram2 rram2_params.scs"
-
+format="@name @pinlist @model"
+template="name=N1
+model=sky130_fd_pr_reram__reram_model"
+xdevice_model=".model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_cell"
+device_model="
+.model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_cell area_ox=0.1024e-12
++ Tox=5.0e-9
++ Tfilament_max=4.9e-9
++ Tfilament_min=3.3e-9
++ Tfilament_0=3.5e-9
++ Eact_generation=1.501
++ Eact_recombination=1.500
++ I_k1=6.140e-5
++ Tfilament_ref=4.7249e-9
++ V_ref=0.430
++ velocity_k1=150
++ gamma_k0=16.5
++ gamma_k1=-1.25 
++ Temperature_0=300
++ C_thermal=3.1825e-16
++ tau_thermal=0.23e-9
++ t_step=1.0e-9
+"
 }
 V {}
 S {}
@@ -35,8 +52,8 @@ L 4 -3.75 5 3.75 5 {}
 L 4 -3.75 5 -3.75 15 {}
 L 4 -3.75 15 0 15 {}
 L 4 0 15 0 30 {}
-B 5 -2.5 27.5 2.5 32.5 {name=BE dir=inout}
 B 5 -2.5 -32.5 2.5 -27.5 {name=TE dir=inout}
+B 5 -2.5 27.5 2.5 32.5 {name=BE dir=inout}
 T {@name} 15 -13.75 0 0 0.2 0.2 {}
 T {@model} 15 2.5 0 0 0.2 0.2 {}
 T {TE} 10 -28.75 0 0 0.2 0.2 {}
