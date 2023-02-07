@@ -27,8 +27,8 @@ ypos2=3.35454
 divy=5
 subdivy=1
 unity=1
-x1=6.64105e-09
-x2=2.1309e-08
+x1=1.07891e-08
+x2=1.09582e-08
 divx=5
 subdivx=1
 
@@ -56,6 +56,29 @@ y[2]
 y[1]
 y[0]"
 digital=1}
+B 2 960 -1150 1540 -830 {flags=graph
+y1=-0.048
+y2=1.8
+ypos1=0.0967889
+ypos2=3.35454
+divy=5
+subdivy=1
+unity=1
+x1=1.07891e-08
+x2=1.09582e-08
+divx=5
+subdivx=1
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1
+
+color=4
+node=z[6]
+digital=0}
 T {Simple ring oscillator for
 speed testing} 1030 -800 0 0 0.6 0.6 {layer=4}
 N 360 -290 360 -130 { lab=Z[2]}
@@ -131,15 +154,6 @@ C {sky130_tests/lvtnot.sym} 1220 -190 0 0 {name=x11 m=1 VCCPIN=VCC VSSPIN=VSS W_
 C {sky130_tests/lvtnot.sym} 1300 -190 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {sky130_tests/lvtnot.sym} 1380 -190 0 0 {name=x13 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
 C {sky130_tests/lvtnot.sym} 1460 -190 0 0 {name=x14 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {devices/code.sym} 0 -180 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/launcher.sym} 1045 -355 0 0 {name=h3 
 descr="Ctrl-click to load Xyce or ngspice data" 
 tclcommand="
@@ -151,21 +165,27 @@ tclcommand="
   \}
 "
 }
-C {devices/simulator_commands_shown.sym} 10 -640 0 0 {name=COMMANDS2
+C {devices/simulator_commands_shown.sym} 10 -680 0 0 {name=COMMANDS2
 simulator=ngspice
 only_toplevel=false 
 value="
 vvss vss 0 dc 0
 vvcc vcc 0 
 + pwl 0 0 10n 0 10.1n 1.8 20n 1.8 20.1n 0
+
+
+.measure tran trise 
++ TRIG v(z[6]) TD=10.5n VAL=0.1 RISE=1
++ TARG v(z[6]) TD=10.5n VAL=1.7 RISE=1
+
 **** interactive sim
 .control
 save all
-tran 0.01n 30n
+tran 0.004n 30n
 write test_inv_ngspice.raw
 .endc
 "}
-C {devices/simulator_commands_shown.sym} 500 -640 0 0 {name=COMMANDS1
+C {devices/simulator_commands_shown.sym} 470 -690 0 0 {name=COMMANDS1
 simulator=xyce
 only_toplevel=false 
 value="
@@ -184,3 +204,5 @@ tclcommand="
   \}
 "
 }
+C {sky130_fd_pr/corner.sym} 20 -200 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {devices/lab_pin.sym} 680 -260 0 1 {name=l18 sig_type=std_logic lab=Z[6]}
