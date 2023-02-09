@@ -19,7 +19,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 960 -700 1540 -380 {flags=graph
+B 2 960 -700 1540 -380 {flags=graph,unlocked
 y1=0
 y2=2
 ypos1=0.0967889
@@ -27,8 +27,8 @@ ypos2=3.35454
 divy=5
 subdivy=1
 unity=1
-x1=1.07891e-08
-x2=1.09582e-08
+x1=8.97238e-09
+x2=2.11753e-08
 divx=5
 subdivx=1
 
@@ -56,7 +56,7 @@ y[2]
 y[1]
 y[0]"
 digital=1}
-B 2 960 -1150 1540 -830 {flags=graph
+B 2 960 -1150 1540 -830 {flags=graph,unlocked
 y1=-0.048
 y2=1.8
 ypos1=0.0967889
@@ -64,8 +64,8 @@ ypos2=3.35454
 divy=5
 subdivy=1
 unity=1
-x1=1.07891e-08
-x2=1.09582e-08
+x1=1.46333e-08
+x2=1.48033e-08
 divx=5
 subdivx=1
 

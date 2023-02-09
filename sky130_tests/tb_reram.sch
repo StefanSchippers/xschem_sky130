@@ -20,8 +20,8 @@ V {}
 S {}
 E {}
 B 2 1100 -390 1630 -80 {flags=graph
-y1=-0.000818796
-y2=0.00332389
+y1=-8.3e-05
+y2=6.9e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -61,17 +61,21 @@ logy=0
 T {Test with new OSDI enabled ngspice} 350 -840 0 0 1 1 {}
 T {Reram symbol created using info
 available here:} 170 -760 0 0 0.7 0.7 {}
-N 550 -200 550 -140 {
+N 550 -180 550 -140 {
 lab=0}
-N 550 -330 550 -260 {
+N 550 -370 550 -260 {
 lab=TOP}
 N 550 -180 810 -180 {
 lab=0}
 N 810 -190 810 -180 {
 lab=0}
-N 810 -280 810 -250 {
+N 550 -370 810 -370 {
 lab=TOP}
-N 550 -280 810 -280 {
+N 550 -200 550 -180 {
+lab=0}
+N 550 -420 550 -370 {
+lab=TOP}
+N 810 -370 810 -250 {
 lab=TOP}
 C {devices/code_shown.sym} 20 -580 0 0 {name=NGSPICE
 only_toplevel=true
@@ -86,7 +90,7 @@ value="
 
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/lab_pin.sym} 550 -330 0 1 {name=p3 lab=TOP}
+C {devices/lab_pin.sym} 550 -420 0 1 {name=p3 lab=TOP}
 C {devices/code_shown.sym} 10 -200 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"

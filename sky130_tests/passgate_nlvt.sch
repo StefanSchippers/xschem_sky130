@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -70,3 +70,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 580 -430 0 0 {name=l2 sig_type=std_logic lab=VCCBPIN}
+C {devices/noconn.sym} 580 -430 0 1 {name=l3}
+C {devices/lab_pin.sym} 580 -410 0 0 {name=l4 sig_type=std_logic lab=VSSBPIN}
+C {devices/noconn.sym} 580 -410 0 1 {name=l5}
