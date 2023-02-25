@@ -31,7 +31,7 @@ subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
 \\"01v8;i(vd2)\\""
 color="4 5" unity=1
-dataset=8}
+dataset=-1}
 B 2 1480 -990 1910 -670 {flags=graph,unlocked
 y1 = -0
 y2 = 0.00063
@@ -70,7 +70,7 @@ subdivx=4
 node="i(vd1)
 i(vd9)"
 color="4 5" unity=1
-dataset=8}
+dataset=-1}
 B 2 770 -990 1030 -670 {flags=graph
 y1 = 0
 y2 = 1.8
@@ -82,7 +82,7 @@ divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
-dataset=8}
+dataset=-1}
 P 15 6 300 -180 550 -180 540 -190 590 -180 540 -170 550 -180 {}
 T {Example usage 
 of annotators} 300 -250 0 0 0.5 0.5 {}
@@ -224,7 +224,7 @@ C {devices/lab_pin.sym} 1450 -530 0 0 {name=p47 lab=0}
 C {devices/ipin.sym} 520 -420 0 0 {name=p48 lab=G1v8}
 C {devices/ipin.sym} 520 -380 0 0 {name=p49 lab=D1v8}
 C {devices/ipin.sym} 520 -340 0 0 {name=p50 lab=B}
-C {devices/code_shown.sym} 0 -1200 0 0 {name=NGSPICE
+C {devices/code_shown.sym} 0 -1360 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W

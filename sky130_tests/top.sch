@@ -28,7 +28,7 @@ L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
 L 4 2610 -1250 3570 -1250 {}
 L 4 2610 -1380 3570 -1380 {}
-L 4 2190 -95 2680 -95 {}
+L 4 2250 -105 2740 -105 {}
 L 7 3480 -540 3960 -540 {dash=2}
 B 2 1580 -1890 2214 -1575 {flags=image_unscaled
 alpha=0.6
@@ -47,7 +47,7 @@ T {Git / Google-Skywater PDK links} 780 -1660 0 0 0.6 0.6 {layer=8}
 T {PFET} 1660 -1040 0 0 1 1 { hcenter=true}
 T {NFET} 1660 -800 0 0 1 1 { hcenter=true}
 T {RES} 1660 -550 0 0 1 1 { hcenter=true}
-T {DIODE} 1660 -195 0 0 1 1 { hcenter=true}
+T {DIODE} 1670 -245 0 0 1 1 { hcenter=true}
 T {PNP} 1660 -70 0 0 1 1 { hcenter=true}
 T {Digital standard cells} 20 -1060 0 0 0.6 0.6 {layer=8}
 T {Ctrl-Click to open link} 750 -1610 0 0 0.3 0.3 {layer=11}
@@ -89,7 +89,7 @@ sky130_fd_pr__diode_pw2nd_11v0
 sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn
-} 2340 -190 0 0 0.2 0.2 {}
+} 2410 -200 0 0 0.2 0.2 {}
 T {VARACTORS} 1630 -1345 0 0 1 1 { hcenter=true}
 T {Analog primitives validation} 10 -1750 0 0 0.6 0.6 {layer=8}
 T {PERP. VPP CAP} 1660 -1475 0 0 1 1 { hcenter=true}
@@ -155,12 +155,12 @@ C {sky130_tests/test_inv.sym} 190 -1320 0 0 {name=x5}
 C {sky130_tests/test_res.sym} 190 -1440 0 0 {name=x3}
 C {sky130_tests/test_bipolar.sym} 190 -1480 0 0 {name=x4}
 C {sky130_tests/test_diode.sym} 190 -1520 0 0 {name=x6}
-C {sky130_fd_pr/diode.sym} 2200 -140 0 0 {name=D1
+C {sky130_fd_pr/diode.sym} 2260 -150 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1
 
 }
-C {sky130_fd_pr/lvsdiode.sym} 1770 -140 0 0 {name=D2
+C {sky130_fd_pr/lvsdiode.sym} 1760 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
 area=1
 
