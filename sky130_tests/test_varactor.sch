@@ -38,7 +38,7 @@ unitx=1
 logx=0
 logy=0
 
-color="4 7 8"
+color="7 8 4"
 node="\\"Varactor cap;100e-9 g1 deriv0() /\\"
 
 \\"Varactor cap;100e-9 g2 deriv0() /\\"
@@ -179,7 +179,7 @@ m=1}
 C {devices/lab_pin.sym} 730 -580 0 0 {name=p5 lab=REF}
 C {sky130_fd_pr/cap_var_lvt.sym} 600 -570 0 0 {name=C1 model=cap_var_lvt W=5 L=5 VM=1 spiceprefix=X}
 C {devices/lab_pin.sym} 560 -550 0 0 {name=p20 lab=0}
-C {devices/vsource.sym} 600 -480 0 0 {name=V3 value=0.5}
+C {devices/vsource.sym} 600 -480 0 0 {name=V3 value=1.8}
 C {devices/ngspice_probe.sym} 620 -670 0 0 {name=r4}
 C {devices/ngspice_probe.sym} 370 -670 0 0 {name=r4}
 C {devices/ngspice_probe.sym} 100 -670 0 0 {name=r4}
