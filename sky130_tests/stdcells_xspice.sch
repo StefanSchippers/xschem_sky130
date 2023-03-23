@@ -59,3 +59,14 @@ AD2A5 [XSCHEM] [a_XSCHEM] toana_1v8
 AA2D5 [a_VCC] [VCC] todig_1v8
 AA2D6 [a_VSS] [VSS] todig_1v8
 "}
+C {devices/noconn.sym} 250 -620 0 1 {name=l2}
+C {devices/noconn.sym} 250 -600 0 1 {name=l3}
+C {devices/noconn.sym} 250 -580 0 1 {name=l4}
+C {devices/noconn.sym} 250 -560 0 1 {name=l5}
+C {devices/noconn.sym} 250 -490 0 1 {name=l6}
+C {devices/noconn.sym} 250 -470 0 1 {name=l7}
+C {devices/noconn.sym} 360 -630 0 0 {name=l8}
+C {devices/noconn.sym} 360 -610 0 0 {name=l9}
+C {devices/noconn.sym} 360 -590 0 0 {name=l10}
+C {devices/noconn.sym} 360 -570 0 0 {name=l11}
+C {devices/noconn.sym} 360 -550 0 0 {name=l12}

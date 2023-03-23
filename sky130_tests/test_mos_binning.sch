@@ -164,3 +164,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/lab_pin.sym} 730 -270 0 0 {name=p1 lab=D}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {sky130_fd_pr/corner.sym} 1050 -190 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {devices/lab_pin.sym} 300 -170 0 0 { name=p3 lab=G }
+C {devices/lab_pin.sym} 300 -210 0 0 { name=p5 lab=B }
+C {devices/noconn.sym} 300 -210 0 1 {name=l2}
+C {devices/noconn.sym} 300 -170 0 1 {name=l3}

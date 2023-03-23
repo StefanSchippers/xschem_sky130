@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,3 +52,11 @@ C {stdcells/AND2.sym} 650 -120 0 0 {name=x2 VCCPIN=VCC VSSPIN=VSS VCCBPIN=VCC VS
 C {devices/lab_pin.sym} 710 -120 0 1 {name=p4 lab=x2_Y}
 C {devices/lab_pin.sym} 590 -140 0 0 {name=p5 lab=x2_A}
 C {devices/lab_pin.sym} 590 -100 0 0 {name=p6 lab=x2_B}
+C {devices/lab_pin.sym} 70 -140 0 0 { name=p8 lab=x2_B }
+C {devices/lab_pin.sym} 70 -160 0 0 { name=p9 lab=x2_A }
+C {devices/lab_pin.sym} 70 -200 0 0 { name=p11 lab=x1_B }
+C {devices/lab_pin.sym} 70 -220 0 0 { name=p12 lab=x1_A }
+C {devices/noconn.sym} 70 -220 0 1 {name=l2}
+C {devices/noconn.sym} 70 -200 0 1 {name=l3}
+C {devices/noconn.sym} 70 -160 0 1 {name=l4}
+C {devices/noconn.sym} 70 -140 0 1 {name=l5}

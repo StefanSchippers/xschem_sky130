@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,11 +19,11 @@ K {}
 V {}
 S {}
 E {}
-N 330 -280 360 -280 {lab=VSS}
+N 330 -280 360 -280 {lab=0}
 N 300 -140 330 -140 {lab=0}
 N 330 -250 330 -140 {lab=0}
 N 330 -360 330 -310 { lab=D1}
-N 520 -280 550 -280 {lab=VSS}
+N 520 -280 550 -280 {lab=0}
 N 490 -140 520 -140 {lab=0}
 N 520 -250 520 -140 {lab=0}
 N 520 -360 520 -310 { lab=D2}
@@ -59,7 +59,7 @@ dc vd 0 2 0.01 vg 0 2 0.2
 
 
 "}
-C {devices/lab_pin.sym} 360 -280 0 1 {name=p194 lab=VSS}
+C {devices/lab_pin.sym} 360 -280 0 1 {name=p194 lab=0}
 C {devices/lab_pin.sym} 300 -140 0 0 {name=p197 lab=0}
 C {devices/lab_pin.sym} 290 -280 0 0 {name=p1 lab=G}
 C {devices/lab_pin.sym} 330 -360 0 0 {name=p2 lab=D1}
@@ -74,7 +74,7 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 550 -280 0 1 {name=p3 lab=VSS}
+C {devices/lab_pin.sym} 550 -280 0 1 {name=p3 lab=0}
 C {devices/lab_pin.sym} 490 -140 0 0 {name=p4 lab=0}
 C {devices/lab_pin.sym} 480 -280 0 0 {name=p5 lab=G}
 C {devices/lab_pin.sym} 520 -360 0 0 {name=p6 lab=D2}
@@ -101,3 +101,5 @@ value="
 
 "
 spice_ignore=false}
+C {devices/lab_pin.sym} 50 -160 0 0 {name=p8 lab=G}
+C {devices/noconn.sym} 50 -160 0 1 {name=l2}

@@ -19,7 +19,6 @@ K {}
 V {}
 S {}
 E {}
-L 2 2110 -680 2110 -680 {}
 L 2 2100 -690 2150 -690 {}
 L 2 2270 -640 2270 -620 {}
 L 2 2240 -610 2290 -610 {}
@@ -331,3 +330,19 @@ lvs_format=" "}
 C {devices/lab_pin.sym} 120 -1280 0 1 {name=p113 lab=TEMPERAT}
 C {devices/lab_pin.sym} 120 -1200 0 0 {name=p114 lab=VSS}
 C {devices/noconn.sym} 120 -1280 0 0 {name=l12}
+C {devices/lab_pin.sym} 80 -570 0 0 { name=p11 lab=VCC }
+C {devices/lab_pin.sym} 80 -590 0 0 { name=p20 lab=START }
+C {devices/lab_pin.sym} 80 -610 0 0 { name=p21 lab=PLUS }
+C {devices/lab_pin.sym} 80 -650 0 0 { name=p24 lab=MINUS }
+C {devices/lab_pin.sym} 80 -670 0 0 { name=p25 lab=EN_N }
+C {devices/ipin.sym} 0 -20 0 0 { name=p22 lab=VCC }
+C {devices/ipin.sym} 0 -40 0 0 { name=p26 lab=START }
+C {devices/ipin.sym} 0 -60 0 0 { name=p27 lab=PLUS }
+C {devices/opin.sym} 0 -80 0 0 { name=p28 lab=OUT }
+C {devices/ipin.sym} 0 -100 0 0 { name=p29 lab=MINUS }
+C {devices/ipin.sym} 0 -120 0 0 { name=p30 lab=EN_N }
+C {devices/noconn.sym} 80 -670 0 1 {name=l2}
+C {devices/noconn.sym} 80 -650 0 1 {name=l3}
+C {devices/noconn.sym} 80 -610 0 1 {name=l4}
+C {devices/noconn.sym} 80 -590 0 1 {name=l6}
+C {devices/noconn.sym} 80 -570 0 1 {name=l7}

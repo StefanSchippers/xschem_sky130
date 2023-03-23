@@ -198,3 +198,7 @@ C {devices/launcher.sym} 660 -310 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
 }
+C {devices/lab_pin.sym} 700 -90 0 0 {name=p14 lab=VCC}
+C {devices/lab_pin.sym} 700 -70 0 0 {name=p15 lab=VSS}
+C {devices/noconn.sym} 700 -90 0 1 {name=l2}
+C {devices/noconn.sym} 700 -70 0 1 {name=l3}
