@@ -158,10 +158,10 @@ C {devices/launcher.sym} 1045 -355 0 0 {name=h3
 descr="Ctrl-click to load Xyce or ngspice data" 
 tclcommand="
 
-  if \{ [sim_is_xyce] \} \{
-    xschem raw_read $netlist_dir/test_inv_xyce.raw tran
+  if \{ [sim_is_xyce] \} \{ ;# using an if \{\} allows to differentiate file names
+    xschem raw_read $netlist_dir/test_inv.raw tran
   \} else \{
-    xschem raw_read $netlist_dir/test_inv_ngspice.raw tran
+    xschem raw_read $netlist_dir/test_inv.raw tran
   \}
 "
 }
@@ -177,12 +177,12 @@ vvcc vcc 0
 .measure tran trise 
 + TRIG v(z[6]) TD=10.5n VAL=0.1 RISE=1
 + TARG v(z[6]) TD=10.5n VAL=1.7 RISE=1
-
+.save all
+.tran 0.004n 30n
 **** interactive sim
 .control
-save all
-tran 0.004n 30n
-write test_inv_ngspice.raw
+write test_inv.raw
+* exit
 .endc
 "}
 C {devices/simulator_commands_shown.sym} 470 -690 0 0 {name=COMMANDS1
@@ -192,7 +192,7 @@ value="
 vvss vss 0 dc 0
 vvcc vcc 0
 + pwl 0 0 10n 0 10.1n 1.8 20n 1.8 20.1n 0
-.print tran format=raw file=test_inv_xyce.raw
+.print tran format=raw file=test_inv.raw
 + v(*) i(*)
 .tran 0.01n 30n
 "}
