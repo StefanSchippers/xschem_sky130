@@ -1,445 +1,2631 @@
-v {xschem version=2.9.8 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
 E {}
 T {The skywater_pdk sky130_fd_sc_hd library cells} 1495 -235 0 0 2 2 {layer=1}
-C {sky130_stdcells/a2111o_1.sym} 150 -4040 0 0 {}
-C {sky130_stdcells/a2111o_2.sym} 410 -4040 0 0 {}
-C {sky130_stdcells/a2111o_4.sym} 670 -4040 0 0 {}
-C {sky130_stdcells/a2111oi_0.sym} 930 -4040 0 0 {}
-C {sky130_stdcells/a2111oi_1.sym} 1190 -4040 0 0 {}
-C {sky130_stdcells/a2111oi_2.sym} 1450 -4040 0 0 {}
-C {sky130_stdcells/a2111oi_4.sym} 1710 -4040 0 0 {}
-C {sky130_stdcells/a211o_1.sym} 1970 -4040 0 0 {}
-C {sky130_stdcells/a211o_2.sym} 2230 -4040 0 0 {}
-C {sky130_stdcells/a211o_4.sym} 2490 -4040 0 0 {}
-C {sky130_stdcells/a211oi_1.sym} 2750 -4040 0 0 {}
-C {sky130_stdcells/a211oi_2.sym} 3010 -4040 0 0 {}
-C {sky130_stdcells/a211oi_4.sym} 3270 -4040 0 0 {}
-C {sky130_stdcells/a21bo_1.sym} 3530 -4040 0 0 {}
-C {sky130_stdcells/a21bo_2.sym} 3790 -4040 0 0 {}
-C {sky130_stdcells/a21bo_4.sym} 4050 -4040 0 0 {}
-C {sky130_stdcells/a21boi_0.sym} 4310 -4040 0 0 {}
-C {sky130_stdcells/a21boi_1.sym} 4570 -4040 0 0 {}
-C {sky130_stdcells/a21boi_2.sym} 4830 -4040 0 0 {}
-C {sky130_stdcells/a21boi_4.sym} 5090 -4040 0 0 {}
-C {sky130_stdcells/a21o_1.sym} 5350 -4040 0 0 {}
-C {sky130_stdcells/a21o_2.sym} 5610 -4040 0 0 {}
-C {sky130_stdcells/a21o_4.sym} 5870 -4040 0 0 {}
-C {sky130_stdcells/a21oi_1.sym} 6130 -4040 0 0 {}
-C {sky130_stdcells/a21oi_2.sym} 6390 -4040 0 0 {}
-C {sky130_stdcells/a21oi_4.sym} 6650 -4040 0 0 {}
-C {sky130_stdcells/a221o_1.sym} 6910 -4040 0 0 {}
-C {sky130_stdcells/a221o_2.sym} 150 -3800 0 0 {}
-C {sky130_stdcells/a221o_4.sym} 410 -3800 0 0 {}
-C {sky130_stdcells/a221oi_1.sym} 670 -3800 0 0 {}
-C {sky130_stdcells/a221oi_2.sym} 930 -3800 0 0 {}
-C {sky130_stdcells/a221oi_4.sym} 1190 -3800 0 0 {}
-C {sky130_stdcells/a222oi_1.sym} 1450 -3800 0 0 {}
-C {sky130_stdcells/a22o_1.sym} 1710 -3800 0 0 {}
-C {sky130_stdcells/a22o_2.sym} 1970 -3800 0 0 {}
-C {sky130_stdcells/a22o_4.sym} 2230 -3800 0 0 {}
-C {sky130_stdcells/a22oi_1.sym} 2490 -3800 0 0 {}
-C {sky130_stdcells/a22oi_2.sym} 2750 -3800 0 0 {}
-C {sky130_stdcells/a22oi_4.sym} 3010 -3800 0 0 {}
-C {sky130_stdcells/a2bb2o_1.sym} 3270 -3800 0 0 {}
-C {sky130_stdcells/a2bb2o_2.sym} 3530 -3800 0 0 {}
-C {sky130_stdcells/a2bb2o_4.sym} 3790 -3800 0 0 {}
-C {sky130_stdcells/a2bb2oi_1.sym} 4050 -3800 0 0 {}
-C {sky130_stdcells/a2bb2oi_2.sym} 4310 -3800 0 0 {}
-C {sky130_stdcells/a2bb2oi_4.sym} 4570 -3800 0 0 {}
-C {sky130_stdcells/a311o_1.sym} 4830 -3800 0 0 {}
-C {sky130_stdcells/a311o_2.sym} 5090 -3800 0 0 {}
-C {sky130_stdcells/a311o_4.sym} 5350 -3800 0 0 {}
-C {sky130_stdcells/a311oi_1.sym} 5610 -3800 0 0 {}
-C {sky130_stdcells/a311oi_2.sym} 5870 -3800 0 0 {}
-C {sky130_stdcells/a311oi_4.sym} 6130 -3800 0 0 {}
-C {sky130_stdcells/a31o_1.sym} 6390 -3800 0 0 {}
-C {sky130_stdcells/a31o_2.sym} 6650 -3800 0 0 {}
-C {sky130_stdcells/a31o_4.sym} 6910 -3800 0 0 {}
-C {sky130_stdcells/a31oi_1.sym} 150 -3560 0 0 {}
-C {sky130_stdcells/a31oi_2.sym} 410 -3560 0 0 {}
-C {sky130_stdcells/a31oi_4.sym} 670 -3560 0 0 {}
-C {sky130_stdcells/a32o_1.sym} 930 -3560 0 0 {}
-C {sky130_stdcells/a32o_2.sym} 1190 -3560 0 0 {}
-C {sky130_stdcells/a32o_4.sym} 1450 -3560 0 0 {}
-C {sky130_stdcells/a32oi_1.sym} 1710 -3560 0 0 {}
-C {sky130_stdcells/a32oi_2.sym} 1970 -3560 0 0 {}
-C {sky130_stdcells/a32oi_4.sym} 2230 -3560 0 0 {}
-C {sky130_stdcells/a41o_1.sym} 2490 -3560 0 0 {}
-C {sky130_stdcells/a41o_2.sym} 2750 -3560 0 0 {}
-C {sky130_stdcells/a41o_4.sym} 3010 -3560 0 0 {}
-C {sky130_stdcells/a41oi_1.sym} 3270 -3560 0 0 {}
-C {sky130_stdcells/a41oi_2.sym} 3530 -3560 0 0 {}
-C {sky130_stdcells/a41oi_4.sym} 3790 -3560 0 0 {}
-C {sky130_stdcells/and2_0.sym} 4050 -3560 0 0 {}
-C {sky130_stdcells/and2_1.sym} 4310 -3560 0 0 {}
-C {sky130_stdcells/and2_2.sym} 4570 -3560 0 0 {}
-C {sky130_stdcells/and2_4.sym} 4830 -3560 0 0 {}
-C {sky130_stdcells/and2b_1.sym} 5090 -3560 0 0 {}
-C {sky130_stdcells/and2b_2.sym} 5350 -3560 0 0 {}
-C {sky130_stdcells/and2b_4.sym} 5610 -3560 0 0 {}
-C {sky130_stdcells/and3_1.sym} 5870 -3560 0 0 {}
-C {sky130_stdcells/and3_2.sym} 6130 -3560 0 0 {}
-C {sky130_stdcells/and3_4.sym} 6390 -3560 0 0 {}
-C {sky130_stdcells/and3b_1.sym} 6650 -3560 0 0 {}
-C {sky130_stdcells/and3b_2.sym} 6910 -3560 0 0 {}
-C {sky130_stdcells/and3b_4.sym} 150 -3320 0 0 {}
-C {sky130_stdcells/and4_1.sym} 410 -3320 0 0 {}
-C {sky130_stdcells/and4_2.sym} 670 -3320 0 0 {}
-C {sky130_stdcells/and4_4.sym} 930 -3320 0 0 {}
-C {sky130_stdcells/and4b_1.sym} 1190 -3320 0 0 {}
-C {sky130_stdcells/and4b_2.sym} 1450 -3320 0 0 {}
-C {sky130_stdcells/and4b_4.sym} 1710 -3320 0 0 {}
-C {sky130_stdcells/and4bb_1.sym} 1970 -3320 0 0 {}
-C {sky130_stdcells/and4bb_2.sym} 2230 -3320 0 0 {}
-C {sky130_stdcells/and4bb_4.sym} 2490 -3320 0 0 {}
-C {sky130_stdcells/buf_12.sym} 2750 -3320 0 0 {}
-C {sky130_stdcells/buf_16.sym} 3010 -3320 0 0 {}
-C {sky130_stdcells/buf_1.sym} 3270 -3320 0 0 {}
-C {sky130_stdcells/buf_2.sym} 3530 -3320 0 0 {}
-C {sky130_stdcells/buf_4.sym} 3790 -3320 0 0 {}
-C {sky130_stdcells/buf_6.sym} 4050 -3320 0 0 {}
-C {sky130_stdcells/buf_8.sym} 4310 -3320 0 0 {}
-C {sky130_stdcells/bufbuf_16.sym} 4570 -3320 0 0 {}
-C {sky130_stdcells/bufbuf_8.sym} 4830 -3320 0 0 {}
-C {sky130_stdcells/bufinv_16.sym} 5090 -3320 0 0 {}
-C {sky130_stdcells/bufinv_8.sym} 5350 -3320 0 0 {}
-C {sky130_stdcells/clkbuf_16.sym} 5610 -3320 0 0 {}
-C {sky130_stdcells/clkbuf_1.sym} 5870 -3320 0 0 {}
-C {sky130_stdcells/clkbuf_2.sym} 6130 -3320 0 0 {}
-C {sky130_stdcells/clkbuf_4.sym} 6390 -3320 0 0 {}
-C {sky130_stdcells/clkbuf_8.sym} 6650 -3320 0 0 {}
-C {sky130_stdcells/clkdlybuf4s15_1.sym} 6910 -3320 0 0 {}
-C {sky130_stdcells/clkdlybuf4s15_2.sym} 150 -3080 0 0 {}
-C {sky130_stdcells/clkdlybuf4s18_1.sym} 410 -3080 0 0 {}
-C {sky130_stdcells/clkdlybuf4s18_2.sym} 670 -3080 0 0 {}
-C {sky130_stdcells/clkdlybuf4s25_1.sym} 930 -3080 0 0 {}
-C {sky130_stdcells/clkdlybuf4s25_2.sym} 1190 -3080 0 0 {}
-C {sky130_stdcells/clkdlybuf4s50_1.sym} 1450 -3080 0 0 {}
-C {sky130_stdcells/clkdlybuf4s50_2.sym} 1710 -3080 0 0 {}
-C {sky130_stdcells/clkinv_16.sym} 1970 -3080 0 0 {}
-C {sky130_stdcells/clkinv_1.sym} 2230 -3080 0 0 {}
-C {sky130_stdcells/clkinv_2.sym} 2490 -3080 0 0 {}
-C {sky130_stdcells/clkinv_4.sym} 2750 -3080 0 0 {}
-C {sky130_stdcells/clkinv_8.sym} 3010 -3080 0 0 {}
-C {sky130_stdcells/clkinvlp_2.sym} 3270 -3080 0 0 {}
-C {sky130_stdcells/clkinvlp_4.sym} 3530 -3080 0 0 {}
-C {sky130_stdcells/conb_1.sym} 3790 -3080 0 0 {}
-C {sky130_stdcells/decap_12.sym} 4050 -3080 0 0 {}
-C {sky130_stdcells/decap_3.sym} 4310 -3080 0 0 {}
-C {sky130_stdcells/decap_4.sym} 4570 -3080 0 0 {}
-C {sky130_stdcells/decap_6.sym} 4830 -3080 0 0 {}
-C {sky130_stdcells/decap_8.sym} 5090 -3080 0 0 {}
-C {sky130_stdcells/dfbbn_1.sym} 5350 -3080 0 0 {}
-C {sky130_stdcells/dfbbn_2.sym} 5610 -3080 0 0 {}
-C {sky130_stdcells/dfbbp_1.sym} 5870 -3080 0 0 {}
-C {sky130_stdcells/dfrbp_1.sym} 6130 -3080 0 0 {}
-C {sky130_stdcells/dfrbp_2.sym} 6390 -3080 0 0 {}
-C {sky130_stdcells/dfrtn_1.sym} 6650 -3080 0 0 {}
-C {sky130_stdcells/dfrtp_1.sym} 6910 -3080 0 0 {}
-C {sky130_stdcells/dfrtp_2.sym} 150 -2840 0 0 {}
-C {sky130_stdcells/dfrtp_4.sym} 410 -2840 0 0 {}
-C {sky130_stdcells/dfsbp_1.sym} 670 -2840 0 0 {}
-C {sky130_stdcells/dfsbp_2.sym} 930 -2840 0 0 {}
-C {sky130_stdcells/dfstp_1.sym} 1190 -2840 0 0 {}
-C {sky130_stdcells/dfstp_2.sym} 1450 -2840 0 0 {}
-C {sky130_stdcells/dfstp_4.sym} 1710 -2840 0 0 {}
-C {sky130_stdcells/dfxbp_1.sym} 1970 -2840 0 0 {}
-C {sky130_stdcells/dfxbp_2.sym} 2230 -2840 0 0 {}
-C {sky130_stdcells/dfxtp_1.sym} 2490 -2840 0 0 {}
-C {sky130_stdcells/dfxtp_2.sym} 2750 -2840 0 0 {}
-C {sky130_stdcells/dfxtp_4.sym} 3010 -2840 0 0 {}
-C {sky130_stdcells/diode_2.sym} 3270 -2840 0 0 {}
-C {sky130_stdcells/dlclkp_1.sym} 3530 -2840 0 0 {}
-C {sky130_stdcells/dlclkp_2.sym} 3790 -2840 0 0 {}
-C {sky130_stdcells/dlclkp_4.sym} 4050 -2840 0 0 {}
-C {sky130_stdcells/dlrbn_1.sym} 4310 -2840 0 0 {}
-C {sky130_stdcells/dlrbn_2.sym} 4570 -2840 0 0 {}
-C {sky130_stdcells/dlrbp_1.sym} 4830 -2840 0 0 {}
-C {sky130_stdcells/dlrbp_2.sym} 5090 -2840 0 0 {}
-C {sky130_stdcells/dlrtn_1.sym} 5350 -2840 0 0 {}
-C {sky130_stdcells/dlrtn_2.sym} 5610 -2840 0 0 {}
-C {sky130_stdcells/dlrtn_4.sym} 5870 -2840 0 0 {}
-C {sky130_stdcells/dlrtp_1.sym} 6130 -2840 0 0 {}
-C {sky130_stdcells/dlrtp_2.sym} 6390 -2840 0 0 {}
-C {sky130_stdcells/dlrtp_4.sym} 6650 -2840 0 0 {}
-C {sky130_stdcells/dlxbn_1.sym} 6910 -2840 0 0 {}
-C {sky130_stdcells/dlxbn_2.sym} 150 -2600 0 0 {}
-C {sky130_stdcells/dlxbp_1.sym} 410 -2600 0 0 {}
-C {sky130_stdcells/dlxtn_1.sym} 670 -2600 0 0 {}
-C {sky130_stdcells/dlxtn_2.sym} 930 -2600 0 0 {}
-C {sky130_stdcells/dlxtn_4.sym} 1190 -2600 0 0 {}
-C {sky130_stdcells/dlxtp_1.sym} 1450 -2600 0 0 {}
-C {sky130_stdcells/dlygate4sd1_1.sym} 1710 -2600 0 0 {}
-C {sky130_stdcells/dlygate4sd2_1.sym} 1970 -2600 0 0 {}
-C {sky130_stdcells/dlygate4sd3_1.sym} 2230 -2600 0 0 {}
-C {sky130_stdcells/dlymetal6s2s_1.sym} 2490 -2600 0 0 {}
-C {sky130_stdcells/dlymetal6s4s_1.sym} 2750 -2600 0 0 {}
-C {sky130_stdcells/dlymetal6s6s_1.sym} 3010 -2600 0 0 {}
-C {sky130_stdcells/ebufn_1.sym} 3270 -2600 0 0 {}
-C {sky130_stdcells/ebufn_2.sym} 3530 -2600 0 0 {}
-C {sky130_stdcells/ebufn_4.sym} 3790 -2600 0 0 {}
-C {sky130_stdcells/ebufn_8.sym} 4050 -2600 0 0 {}
-C {sky130_stdcells/edfxbp_1.sym} 4310 -2600 0 0 {}
-C {sky130_stdcells/edfxtp_1.sym} 4570 -2600 0 0 {}
-C {sky130_stdcells/einvn_0.sym} 4830 -2600 0 0 {}
-C {sky130_stdcells/einvn_1.sym} 5090 -2600 0 0 {}
-C {sky130_stdcells/einvn_2.sym} 5350 -2600 0 0 {}
-C {sky130_stdcells/einvn_4.sym} 5610 -2600 0 0 {}
-C {sky130_stdcells/einvn_8.sym} 5870 -2600 0 0 {}
-C {sky130_stdcells/einvp_1.sym} 6130 -2600 0 0 {}
-C {sky130_stdcells/einvp_2.sym} 6390 -2600 0 0 {}
-C {sky130_stdcells/einvp_4.sym} 6650 -2600 0 0 {}
-C {sky130_stdcells/einvp_8.sym} 6910 -2600 0 0 {}
-C {sky130_stdcells/fa_1.sym} 150 -2360 0 0 {}
-C {sky130_stdcells/fa_2.sym} 410 -2360 0 0 {}
-C {sky130_stdcells/fa_4.sym} 670 -2360 0 0 {}
-C {sky130_stdcells/fah_1.sym} 930 -2360 0 0 {}
-C {sky130_stdcells/fahcin_1.sym} 1190 -2360 0 0 {}
-C {sky130_stdcells/fahcon_1.sym} 1450 -2360 0 0 {}
-C {sky130_stdcells/fill_1.sym} 1710 -2360 0 0 {}
-C {sky130_stdcells/fill_2.sym} 1970 -2360 0 0 {}
-C {sky130_stdcells/fill_4.sym} 2230 -2360 0 0 {}
-C {sky130_stdcells/fill_8.sym} 2490 -2360 0 0 {}
-C {sky130_stdcells/ha_1.sym} 2750 -2360 0 0 {}
-C {sky130_stdcells/ha_2.sym} 3010 -2360 0 0 {}
-C {sky130_stdcells/ha_4.sym} 3270 -2360 0 0 {}
-C {sky130_stdcells/inv_12.sym} 3530 -2360 0 0 {}
-C {sky130_stdcells/inv_16.sym} 3790 -2360 0 0 {}
-C {sky130_stdcells/inv_1.sym} 4050 -2360 0 0 {}
-C {sky130_stdcells/inv_2.sym} 4310 -2360 0 0 {}
-C {sky130_stdcells/inv_4.sym} 4570 -2360 0 0 {}
-C {sky130_stdcells/inv_6.sym} 4830 -2360 0 0 {}
-C {sky130_stdcells/inv_8.sym} 5090 -2360 0 0 {}
-C {sky130_stdcells/lpflow_bleeder_1.sym} 5350 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkbufkapwr_16.sym} 5610 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkbufkapwr_1.sym} 5870 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkbufkapwr_2.sym} 6130 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkbufkapwr_4.sym} 6390 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkbufkapwr_8.sym} 6650 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkinvkapwr_16.sym} 6910 -2360 0 0 {}
-C {sky130_stdcells/lpflow_clkinvkapwr_1.sym} 150 -2120 0 0 {}
-C {sky130_stdcells/lpflow_clkinvkapwr_2.sym} 410 -2120 0 0 {}
-C {sky130_stdcells/lpflow_clkinvkapwr_4.sym} 670 -2120 0 0 {}
-C {sky130_stdcells/lpflow_clkinvkapwr_8.sym} 930 -2120 0 0 {}
-C {sky130_stdcells/lpflow_decapkapwr_12.sym} 1190 -2120 0 0 {}
-C {sky130_stdcells/lpflow_decapkapwr_3.sym} 1450 -2120 0 0 {}
-C {sky130_stdcells/lpflow_decapkapwr_4.sym} 1710 -2120 0 0 {}
-C {sky130_stdcells/lpflow_decapkapwr_6.sym} 1970 -2120 0 0 {}
-C {sky130_stdcells/lpflow_decapkapwr_8.sym} 2230 -2120 0 0 {}
-C {sky130_stdcells/lpflow_inputiso0n_1.sym} 2490 -2120 0 0 {}
-C {sky130_stdcells/lpflow_inputiso0p_1.sym} 2750 -2120 0 0 {}
-C {sky130_stdcells/lpflow_inputiso1n_1.sym} 3010 -2120 0 0 {}
-C {sky130_stdcells/lpflow_inputiso1p_1.sym} 3270 -2120 0 0 {}
-C {sky130_stdcells/lpflow_inputisolatch_1.sym} 3530 -2120 0 0 {}
-C {sky130_stdcells/lpflow_isobufsrc_16.sym} 3790 -2120 0 0 {}
-C {sky130_stdcells/lpflow_isobufsrc_1.sym} 4050 -2120 0 0 {}
-C {sky130_stdcells/lpflow_isobufsrc_2.sym} 4310 -2120 0 0 {}
-C {sky130_stdcells/lpflow_isobufsrc_4.sym} 4570 -2120 0 0 {}
-C {sky130_stdcells/lpflow_isobufsrc_8.sym} 4830 -2120 0 0 {}
-C {sky130_stdcells/lpflow_isobufsrckapwr_16.sym} 5090 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_hl_isowell_tap_1.sym} 5350 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_hl_isowell_tap_2.sym} 5610 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_hl_isowell_tap_4.sym} 5870 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_isowell_4.sym} 6130 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_isowell_tap_1.sym} 6390 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_isowell_tap_2.sym} 6650 -2120 0 0 {}
-C {sky130_stdcells/lpflow_lsbuf_lh_isowell_tap_4.sym} 6910 -2120 0 0 {}
-C {sky130_stdcells/macro_sparecell.sym} 150 -1880 0 0 {}
-C {sky130_stdcells/maj3_1.sym} 410 -1880 0 0 {}
-C {sky130_stdcells/maj3_2.sym} 670 -1880 0 0 {}
-C {sky130_stdcells/maj3_4.sym} 930 -1880 0 0 {}
-C {sky130_stdcells/mux2_1.sym} 1190 -1880 0 0 {}
-C {sky130_stdcells/mux2_2.sym} 1450 -1880 0 0 {}
-C {sky130_stdcells/mux2_4.sym} 1710 -1880 0 0 {}
-C {sky130_stdcells/mux2_8.sym} 1970 -1880 0 0 {}
-C {sky130_stdcells/mux2i_1.sym} 2230 -1880 0 0 {}
-C {sky130_stdcells/mux2i_2.sym} 2490 -1880 0 0 {}
-C {sky130_stdcells/mux2i_4.sym} 2750 -1880 0 0 {}
-C {sky130_stdcells/mux4_1.sym} 3010 -1880 0 0 {}
-C {sky130_stdcells/mux4_2.sym} 3270 -1880 0 0 {}
-C {sky130_stdcells/mux4_4.sym} 3530 -1880 0 0 {}
-C {sky130_stdcells/nand2_1.sym} 3790 -1880 0 0 {}
-C {sky130_stdcells/nand2_2.sym} 4050 -1880 0 0 {}
-C {sky130_stdcells/nand2_4.sym} 4310 -1880 0 0 {}
-C {sky130_stdcells/nand2_8.sym} 4570 -1880 0 0 {}
-C {sky130_stdcells/nand2b_1.sym} 4830 -1880 0 0 {}
-C {sky130_stdcells/nand2b_2.sym} 5090 -1880 0 0 {}
-C {sky130_stdcells/nand2b_4.sym} 5350 -1880 0 0 {}
-C {sky130_stdcells/nand3_1.sym} 5610 -1880 0 0 {}
-C {sky130_stdcells/nand3_2.sym} 5870 -1880 0 0 {}
-C {sky130_stdcells/nand3_4.sym} 6130 -1880 0 0 {}
-C {sky130_stdcells/nand3b_1.sym} 6390 -1880 0 0 {}
-C {sky130_stdcells/nand3b_2.sym} 6650 -1880 0 0 {}
-C {sky130_stdcells/nand3b_4.sym} 6910 -1880 0 0 {}
-C {sky130_stdcells/nand4_1.sym} 150 -1640 0 0 {}
-C {sky130_stdcells/nand4_2.sym} 410 -1640 0 0 {}
-C {sky130_stdcells/nand4_4.sym} 670 -1640 0 0 {}
-C {sky130_stdcells/nand4b_1.sym} 930 -1640 0 0 {}
-C {sky130_stdcells/nand4b_2.sym} 1190 -1640 0 0 {}
-C {sky130_stdcells/nand4b_4.sym} 1450 -1640 0 0 {}
-C {sky130_stdcells/nand4bb_1.sym} 1710 -1640 0 0 {}
-C {sky130_stdcells/nand4bb_2.sym} 1970 -1640 0 0 {}
-C {sky130_stdcells/nand4bb_4.sym} 2230 -1640 0 0 {}
-C {sky130_stdcells/nor2_1.sym} 2490 -1640 0 0 {}
-C {sky130_stdcells/nor2_2.sym} 2750 -1640 0 0 {}
-C {sky130_stdcells/nor2_4.sym} 3010 -1640 0 0 {}
-C {sky130_stdcells/nor2_8.sym} 3270 -1640 0 0 {}
-C {sky130_stdcells/nor2b_1.sym} 3530 -1640 0 0 {}
-C {sky130_stdcells/nor2b_2.sym} 3790 -1640 0 0 {}
-C {sky130_stdcells/nor2b_4.sym} 4050 -1640 0 0 {}
-C {sky130_stdcells/nor3_1.sym} 4310 -1640 0 0 {}
-C {sky130_stdcells/nor3_2.sym} 4570 -1640 0 0 {}
-C {sky130_stdcells/nor3_4.sym} 4830 -1640 0 0 {}
-C {sky130_stdcells/nor3b_1.sym} 5090 -1640 0 0 {}
-C {sky130_stdcells/nor3b_2.sym} 5350 -1640 0 0 {}
-C {sky130_stdcells/nor3b_4.sym} 5610 -1640 0 0 {}
-C {sky130_stdcells/nor4_1.sym} 5870 -1640 0 0 {}
-C {sky130_stdcells/nor4_2.sym} 6130 -1640 0 0 {}
-C {sky130_stdcells/nor4_4.sym} 6390 -1640 0 0 {}
-C {sky130_stdcells/nor4b_1.sym} 6650 -1640 0 0 {}
-C {sky130_stdcells/nor4b_2.sym} 6910 -1640 0 0 {}
-C {sky130_stdcells/nor4b_4.sym} 150 -1400 0 0 {}
-C {sky130_stdcells/nor4bb_1.sym} 410 -1400 0 0 {}
-C {sky130_stdcells/nor4bb_2.sym} 670 -1400 0 0 {}
-C {sky130_stdcells/nor4bb_4.sym} 930 -1400 0 0 {}
-C {sky130_stdcells/o2111a_1.sym} 1190 -1400 0 0 {}
-C {sky130_stdcells/o2111a_2.sym} 1450 -1400 0 0 {}
-C {sky130_stdcells/o2111a_4.sym} 1710 -1400 0 0 {}
-C {sky130_stdcells/o2111ai_1.sym} 1970 -1400 0 0 {}
-C {sky130_stdcells/o2111ai_2.sym} 2230 -1400 0 0 {}
-C {sky130_stdcells/o2111ai_4.sym} 2490 -1400 0 0 {}
-C {sky130_stdcells/o211a_1.sym} 2750 -1400 0 0 {}
-C {sky130_stdcells/o211a_2.sym} 3010 -1400 0 0 {}
-C {sky130_stdcells/o211a_4.sym} 3270 -1400 0 0 {}
-C {sky130_stdcells/o211ai_1.sym} 3530 -1400 0 0 {}
-C {sky130_stdcells/o211ai_2.sym} 3790 -1400 0 0 {}
-C {sky130_stdcells/o211ai_4.sym} 4050 -1400 0 0 {}
-C {sky130_stdcells/o21a_1.sym} 4310 -1400 0 0 {}
-C {sky130_stdcells/o21a_2.sym} 4570 -1400 0 0 {}
-C {sky130_stdcells/o21a_4.sym} 4830 -1400 0 0 {}
-C {sky130_stdcells/o21ai_0.sym} 5090 -1400 0 0 {}
-C {sky130_stdcells/o21ai_1.sym} 5350 -1400 0 0 {}
-C {sky130_stdcells/o21ai_2.sym} 5610 -1400 0 0 {}
-C {sky130_stdcells/o21ai_4.sym} 5870 -1400 0 0 {}
-C {sky130_stdcells/o21ba_1.sym} 6130 -1400 0 0 {}
-C {sky130_stdcells/o21ba_2.sym} 6390 -1400 0 0 {}
-C {sky130_stdcells/o21ba_4.sym} 6650 -1400 0 0 {}
-C {sky130_stdcells/o21bai_1.sym} 6910 -1400 0 0 {}
-C {sky130_stdcells/o21bai_2.sym} 150 -1160 0 0 {}
-C {sky130_stdcells/o21bai_4.sym} 410 -1160 0 0 {}
-C {sky130_stdcells/o221a_1.sym} 670 -1160 0 0 {}
-C {sky130_stdcells/o221a_2.sym} 930 -1160 0 0 {}
-C {sky130_stdcells/o221a_4.sym} 1190 -1160 0 0 {}
-C {sky130_stdcells/o221ai_1.sym} 1450 -1160 0 0 {}
-C {sky130_stdcells/o221ai_2.sym} 1710 -1160 0 0 {}
-C {sky130_stdcells/o221ai_4.sym} 1970 -1160 0 0 {}
-C {sky130_stdcells/o22a_1.sym} 2230 -1160 0 0 {}
-C {sky130_stdcells/o22a_2.sym} 2490 -1160 0 0 {}
-C {sky130_stdcells/o22a_4.sym} 2750 -1160 0 0 {}
-C {sky130_stdcells/o22ai_1.sym} 3010 -1160 0 0 {}
-C {sky130_stdcells/o22ai_2.sym} 3270 -1160 0 0 {}
-C {sky130_stdcells/o22ai_4.sym} 3530 -1160 0 0 {}
-C {sky130_stdcells/o2bb2a_1.sym} 3790 -1160 0 0 {}
-C {sky130_stdcells/o2bb2a_2.sym} 4050 -1160 0 0 {}
-C {sky130_stdcells/o2bb2a_4.sym} 4310 -1160 0 0 {}
-C {sky130_stdcells/o2bb2ai_1.sym} 4570 -1160 0 0 {}
-C {sky130_stdcells/o2bb2ai_2.sym} 4830 -1160 0 0 {}
-C {sky130_stdcells/o2bb2ai_4.sym} 5090 -1160 0 0 {}
-C {sky130_stdcells/o311a_1.sym} 5350 -1160 0 0 {}
-C {sky130_stdcells/o311a_2.sym} 5610 -1160 0 0 {}
-C {sky130_stdcells/o311a_4.sym} 5870 -1160 0 0 {}
-C {sky130_stdcells/o311ai_0.sym} 6130 -1160 0 0 {}
-C {sky130_stdcells/o311ai_1.sym} 6390 -1160 0 0 {}
-C {sky130_stdcells/o311ai_2.sym} 6650 -1160 0 0 {}
-C {sky130_stdcells/o311ai_4.sym} 6910 -1160 0 0 {}
-C {sky130_stdcells/o31a_1.sym} 150 -920 0 0 {}
-C {sky130_stdcells/o31a_2.sym} 410 -920 0 0 {}
-C {sky130_stdcells/o31a_4.sym} 670 -920 0 0 {}
-C {sky130_stdcells/o31ai_1.sym} 930 -920 0 0 {}
-C {sky130_stdcells/o31ai_2.sym} 1190 -920 0 0 {}
-C {sky130_stdcells/o31ai_4.sym} 1450 -920 0 0 {}
-C {sky130_stdcells/o32a_1.sym} 1710 -920 0 0 {}
-C {sky130_stdcells/o32a_2.sym} 1970 -920 0 0 {}
-C {sky130_stdcells/o32a_4.sym} 2230 -920 0 0 {}
-C {sky130_stdcells/o32ai_1.sym} 2490 -920 0 0 {}
-C {sky130_stdcells/o32ai_2.sym} 2750 -920 0 0 {}
-C {sky130_stdcells/o32ai_4.sym} 3010 -920 0 0 {}
-C {sky130_stdcells/o41a_1.sym} 3270 -920 0 0 {}
-C {sky130_stdcells/o41a_2.sym} 3530 -920 0 0 {}
-C {sky130_stdcells/o41a_4.sym} 3790 -920 0 0 {}
-C {sky130_stdcells/o41ai_1.sym} 4050 -920 0 0 {}
-C {sky130_stdcells/o41ai_2.sym} 4310 -920 0 0 {}
-C {sky130_stdcells/o41ai_4.sym} 4570 -920 0 0 {}
-C {sky130_stdcells/or2_0.sym} 4830 -920 0 0 {}
-C {sky130_stdcells/or2_1.sym} 5090 -920 0 0 {}
-C {sky130_stdcells/or2_2.sym} 5350 -920 0 0 {}
-C {sky130_stdcells/or2_4.sym} 5610 -920 0 0 {}
-C {sky130_stdcells/or2b_1.sym} 5870 -920 0 0 {}
-C {sky130_stdcells/or2b_2.sym} 6130 -920 0 0 {}
-C {sky130_stdcells/or2b_4.sym} 6390 -920 0 0 {}
-C {sky130_stdcells/or3_1.sym} 6650 -920 0 0 {}
-C {sky130_stdcells/or3_2.sym} 6910 -920 0 0 {}
-C {sky130_stdcells/or3_4.sym} 150 -680 0 0 {}
-C {sky130_stdcells/or3b_1.sym} 410 -680 0 0 {}
-C {sky130_stdcells/or3b_2.sym} 670 -680 0 0 {}
-C {sky130_stdcells/or3b_4.sym} 930 -680 0 0 {}
-C {sky130_stdcells/or4_1.sym} 1190 -680 0 0 {}
-C {sky130_stdcells/or4_2.sym} 1450 -680 0 0 {}
-C {sky130_stdcells/or4_4.sym} 1710 -680 0 0 {}
-C {sky130_stdcells/or4b_1.sym} 1970 -680 0 0 {}
-C {sky130_stdcells/or4b_2.sym} 2230 -680 0 0 {}
-C {sky130_stdcells/or4b_4.sym} 2490 -680 0 0 {}
-C {sky130_stdcells/or4bb_1.sym} 2750 -680 0 0 {}
-C {sky130_stdcells/or4bb_2.sym} 3010 -680 0 0 {}
-C {sky130_stdcells/or4bb_4.sym} 3270 -680 0 0 {}
-C {sky130_stdcells/probec_p_8.sym} 3530 -680 0 0 {}
-C {sky130_stdcells/probe_p_8.sym} 3790 -680 0 0 {}
-C {sky130_stdcells/sdfbbn_1.sym} 4050 -680 0 0 {}
-C {sky130_stdcells/sdfbbn_2.sym} 4310 -680 0 0 {}
-C {sky130_stdcells/sdfbbp_1.sym} 4570 -680 0 0 {}
-C {sky130_stdcells/sdfrbp_1.sym} 4830 -680 0 0 {}
-C {sky130_stdcells/sdfrbp_2.sym} 5090 -680 0 0 {}
-C {sky130_stdcells/sdfrtn_1.sym} 5350 -680 0 0 {}
-C {sky130_stdcells/sdfrtp_1.sym} 5610 -680 0 0 {}
-C {sky130_stdcells/sdfrtp_2.sym} 5870 -680 0 0 {}
-C {sky130_stdcells/sdfrtp_4.sym} 6130 -680 0 0 {}
-C {sky130_stdcells/sdfsbp_1.sym} 6390 -680 0 0 {}
-C {sky130_stdcells/sdfsbp_2.sym} 6650 -680 0 0 {}
-C {sky130_stdcells/sdfstp_1.sym} 6910 -680 0 0 {}
-C {sky130_stdcells/sdfstp_2.sym} 150 -440 0 0 {}
-C {sky130_stdcells/sdfstp_4.sym} 410 -440 0 0 {}
-C {sky130_stdcells/sdfxbp_1.sym} 670 -440 0 0 {}
-C {sky130_stdcells/sdfxbp_2.sym} 930 -440 0 0 {}
-C {sky130_stdcells/sdfxtp_1.sym} 1190 -440 0 0 {}
-C {sky130_stdcells/sdfxtp_2.sym} 1450 -440 0 0 {}
-C {sky130_stdcells/sdfxtp_4.sym} 1710 -440 0 0 {}
-C {sky130_stdcells/sdlclkp_1.sym} 1970 -440 0 0 {}
-C {sky130_stdcells/sdlclkp_2.sym} 2230 -440 0 0 {}
-C {sky130_stdcells/sdlclkp_4.sym} 2490 -440 0 0 {}
-C {sky130_stdcells/sedfxbp_1.sym} 2750 -440 0 0 {}
-C {sky130_stdcells/sedfxbp_2.sym} 3010 -440 0 0 {}
-C {sky130_stdcells/sedfxtp_1.sym} 3270 -440 0 0 {}
-C {sky130_stdcells/sedfxtp_2.sym} 3530 -440 0 0 {}
-C {sky130_stdcells/sedfxtp_4.sym} 3790 -440 0 0 {}
-C {sky130_stdcells/tap_1.sym} 4050 -440 0 0 {}
-C {sky130_stdcells/tap_2.sym} 4310 -440 0 0 {}
-C {sky130_stdcells/tapvgnd_1.sym} 4570 -440 0 0 {}
-C {sky130_stdcells/tapvgnd2_1.sym} 4830 -440 0 0 {}
-C {sky130_stdcells/tapvpwrvgnd_1.sym} 5090 -440 0 0 {}
-C {sky130_stdcells/xnor2_1.sym} 5350 -440 0 0 {}
-C {sky130_stdcells/xnor2_2.sym} 5610 -440 0 0 {}
-C {sky130_stdcells/xnor2_4.sym} 5870 -440 0 0 {}
-C {sky130_stdcells/xnor3_1.sym} 6130 -440 0 0 {}
-C {sky130_stdcells/xnor3_2.sym} 6390 -440 0 0 {}
-C {sky130_stdcells/xnor3_4.sym} 6650 -440 0 0 {}
-C {sky130_stdcells/xor2_1.sym} 6910 -440 0 0 {}
-C {sky130_stdcells/xor2_2.sym} 150 -200 0 0 {}
-C {sky130_stdcells/xor2_4.sym} 410 -200 0 0 {}
-C {sky130_stdcells/xor3_1.sym} 670 -200 0 0 {}
-C {sky130_stdcells/xor3_2.sym} 930 -200 0 0 {}
-C {sky130_stdcells/xor3_4.sym} 1190 -200 0 0 {}
+C {sky130_stdcells/a2111o_1.sym} 150 -4040 0 0 {name=x1
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2111o_2.sym} 410 -4040 0 0 {name=x2
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2111o_4.sym} 670 -4040 0 0 {name=x3
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2111oi_0.sym} 930 -4040 0 0 {name=x4
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2111oi_1.sym} 1190 -4040 0 0 {name=x5
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2111oi_2.sym} 1450 -4040 0 0 {name=x6
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2111oi_4.sym} 1710 -4040 0 0 {name=x7
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a211o_1.sym} 1970 -4040 0 0 {name=x8
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a211o_2.sym} 2230 -4040 0 0 {name=x9
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a211o_4.sym} 2490 -4040 0 0 {name=x10
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a211oi_1.sym} 2750 -4040 0 0 {name=x11
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a211oi_2.sym} 3010 -4040 0 0 {name=x12
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a211oi_4.sym} 3270 -4040 0 0 {name=x13
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21bo_1.sym} 3530 -4040 0 0 {name=x14
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21bo_2.sym} 3790 -4040 0 0 {name=x15
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21bo_4.sym} 4050 -4040 0 0 {name=x16
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21boi_0.sym} 4310 -4040 0 0 {name=x17
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21boi_1.sym} 4570 -4040 0 0 {name=x18
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21boi_2.sym} 4830 -4040 0 0 {name=x19
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21boi_4.sym} 5090 -4040 0 0 {name=x20
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21o_1.sym} 5350 -4040 0 0 {name=x21
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21o_2.sym} 5610 -4040 0 0 {name=x22
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21o_4.sym} 5870 -4040 0 0 {name=x23
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21oi_1.sym} 6130 -4040 0 0 {name=x24
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21oi_2.sym} 6390 -4040 0 0 {name=x25
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a21oi_4.sym} 6650 -4040 0 0 {name=x26
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a221o_1.sym} 6910 -4040 0 0 {name=x27
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a221o_2.sym} 150 -3800 0 0 {name=x28
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a221o_4.sym} 410 -3800 0 0 {name=x29
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a221oi_1.sym} 670 -3800 0 0 {name=x30
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a221oi_2.sym} 930 -3800 0 0 {name=x31
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a221oi_4.sym} 1190 -3800 0 0 {name=x32
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a222oi_1.sym} 1450 -3800 0 0 {name=x33
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a22o_1.sym} 1710 -3800 0 0 {name=x34
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a22o_2.sym} 1970 -3800 0 0 {name=x35
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a22o_4.sym} 2230 -3800 0 0 {name=x36
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a22oi_1.sym} 2490 -3800 0 0 {name=x37
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a22oi_2.sym} 2750 -3800 0 0 {name=x38
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a22oi_4.sym} 3010 -3800 0 0 {name=x39
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2bb2o_1.sym} 3270 -3800 0 0 {name=x40
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2bb2o_2.sym} 3530 -3800 0 0 {name=x41
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2bb2o_4.sym} 3790 -3800 0 0 {name=x42
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2bb2oi_1.sym} 4050 -3800 0 0 {name=x43
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2bb2oi_2.sym} 4310 -3800 0 0 {name=x44
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a2bb2oi_4.sym} 4570 -3800 0 0 {name=x45
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a311o_1.sym} 4830 -3800 0 0 {name=x46
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a311o_2.sym} 5090 -3800 0 0 {name=x47
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a311o_4.sym} 5350 -3800 0 0 {name=x48
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a311oi_1.sym} 5610 -3800 0 0 {name=x49
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a311oi_2.sym} 5870 -3800 0 0 {name=x50
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a311oi_4.sym} 6130 -3800 0 0 {name=x51
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a31o_1.sym} 6390 -3800 0 0 {name=x52
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a31o_2.sym} 6650 -3800 0 0 {name=x53
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a31o_4.sym} 6910 -3800 0 0 {name=x54
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a31oi_1.sym} 150 -3560 0 0 {name=x55
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a31oi_2.sym} 410 -3560 0 0 {name=x56
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a31oi_4.sym} 670 -3560 0 0 {name=x57
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a32o_1.sym} 930 -3560 0 0 {name=x58
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a32o_2.sym} 1190 -3560 0 0 {name=x59
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a32o_4.sym} 1450 -3560 0 0 {name=x60
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a32oi_1.sym} 1710 -3560 0 0 {name=x61
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a32oi_2.sym} 1970 -3560 0 0 {name=x62
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a32oi_4.sym} 2230 -3560 0 0 {name=x63
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a41o_1.sym} 2490 -3560 0 0 {name=x64
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a41o_2.sym} 2750 -3560 0 0 {name=x65
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a41o_4.sym} 3010 -3560 0 0 {name=x66
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a41oi_1.sym} 3270 -3560 0 0 {name=x67
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a41oi_2.sym} 3530 -3560 0 0 {name=x68
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/a41oi_4.sym} 3790 -3560 0 0 {name=x69
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2_0.sym} 4050 -3560 0 0 {name=x70
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2_1.sym} 4310 -3560 0 0 {name=x71
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2_2.sym} 4570 -3560 0 0 {name=x72
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2_4.sym} 4830 -3560 0 0 {name=x73
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2b_1.sym} 5090 -3560 0 0 {name=x74
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2b_2.sym} 5350 -3560 0 0 {name=x75
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and2b_4.sym} 5610 -3560 0 0 {name=x76
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and3_1.sym} 5870 -3560 0 0 {name=x77
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and3_2.sym} 6130 -3560 0 0 {name=x78
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and3_4.sym} 6390 -3560 0 0 {name=x79
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and3b_1.sym} 6650 -3560 0 0 {name=x80
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and3b_2.sym} 6910 -3560 0 0 {name=x81
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and3b_4.sym} 150 -3320 0 0 {name=x82
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4_1.sym} 410 -3320 0 0 {name=x83
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4_2.sym} 670 -3320 0 0 {name=x84
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4_4.sym} 930 -3320 0 0 {name=x85
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4b_1.sym} 1190 -3320 0 0 {name=x86
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4b_2.sym} 1450 -3320 0 0 {name=x87
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4b_4.sym} 1710 -3320 0 0 {name=x88
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4bb_1.sym} 1970 -3320 0 0 {name=x89
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4bb_2.sym} 2230 -3320 0 0 {name=x90
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/and4bb_4.sym} 2490 -3320 0 0 {name=x91
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_12.sym} 2750 -3320 0 0 {name=x92
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_16.sym} 3010 -3320 0 0 {name=x93
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_1.sym} 3270 -3320 0 0 {name=x94
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_2.sym} 3530 -3320 0 0 {name=x95
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_4.sym} 3790 -3320 0 0 {name=x96
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_6.sym} 4050 -3320 0 0 {name=x97
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/buf_8.sym} 4310 -3320 0 0 {name=x98
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/bufbuf_16.sym} 4570 -3320 0 0 {name=x99
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/bufbuf_8.sym} 4830 -3320 0 0 {name=x100
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/bufinv_16.sym} 5090 -3320 0 0 {name=x101
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/bufinv_8.sym} 5350 -3320 0 0 {name=x102
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkbuf_16.sym} 5610 -3320 0 0 {name=x103
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkbuf_1.sym} 5870 -3320 0 0 {name=x104
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkbuf_2.sym} 6130 -3320 0 0 {name=x105
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkbuf_4.sym} 6390 -3320 0 0 {name=x106
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkbuf_8.sym} 6650 -3320 0 0 {name=x107
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s15_1.sym} 6910 -3320 0 0 {name=x108
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s15_2.sym} 150 -3080 0 0 {name=x109
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s18_1.sym} 410 -3080 0 0 {name=x110
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s18_2.sym} 670 -3080 0 0 {name=x111
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s25_1.sym} 930 -3080 0 0 {name=x112
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s25_2.sym} 1190 -3080 0 0 {name=x113
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s50_1.sym} 1450 -3080 0 0 {name=x114
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkdlybuf4s50_2.sym} 1710 -3080 0 0 {name=x115
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinv_16.sym} 1970 -3080 0 0 {name=x116
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinv_1.sym} 2230 -3080 0 0 {name=x117
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinv_2.sym} 2490 -3080 0 0 {name=x118
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinv_4.sym} 2750 -3080 0 0 {name=x119
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinv_8.sym} 3010 -3080 0 0 {name=x120
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinvlp_2.sym} 3270 -3080 0 0 {name=x121
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/clkinvlp_4.sym} 3530 -3080 0 0 {name=x122
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/conb_1.sym} 3790 -3080 0 0 {name=x123
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/decap_12.sym} 4050 -3080 0 0 {name=x124
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/decap_3.sym} 4310 -3080 0 0 {name=x125
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/decap_4.sym} 4570 -3080 0 0 {name=x126
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/decap_6.sym} 4830 -3080 0 0 {name=x127
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/decap_8.sym} 5090 -3080 0 0 {name=x128
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfbbn_1.sym} 5350 -3080 0 0 {name=x129
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfbbn_2.sym} 5610 -3080 0 0 {name=x130
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfbbp_1.sym} 5870 -3080 0 0 {name=x131
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfrbp_1.sym} 6130 -3080 0 0 {name=x132
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfrbp_2.sym} 6390 -3080 0 0 {name=x133
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfrtn_1.sym} 6650 -3080 0 0 {name=x134
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfrtp_1.sym} 6910 -3080 0 0 {name=x135
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfrtp_2.sym} 150 -2840 0 0 {name=x136
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfrtp_4.sym} 410 -2840 0 0 {name=x137
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfsbp_1.sym} 670 -2840 0 0 {name=x138
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfsbp_2.sym} 930 -2840 0 0 {name=x139
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfstp_1.sym} 1190 -2840 0 0 {name=x140
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfstp_2.sym} 1450 -2840 0 0 {name=x141
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfstp_4.sym} 1710 -2840 0 0 {name=x142
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfxbp_1.sym} 1970 -2840 0 0 {name=x143
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfxbp_2.sym} 2230 -2840 0 0 {name=x144
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfxtp_1.sym} 2490 -2840 0 0 {name=x145
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfxtp_2.sym} 2750 -2840 0 0 {name=x146
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dfxtp_4.sym} 3010 -2840 0 0 {name=x147
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/diode_2.sym} 3270 -2840 0 0 {name=x148
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlclkp_1.sym} 3530 -2840 0 0 {name=x149
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlclkp_2.sym} 3790 -2840 0 0 {name=x150
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlclkp_4.sym} 4050 -2840 0 0 {name=x151
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrbn_1.sym} 4310 -2840 0 0 {name=x152
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrbn_2.sym} 4570 -2840 0 0 {name=x153
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrbp_1.sym} 4830 -2840 0 0 {name=x154
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrbp_2.sym} 5090 -2840 0 0 {name=x155
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrtn_1.sym} 5350 -2840 0 0 {name=x156
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrtn_2.sym} 5610 -2840 0 0 {name=x157
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrtn_4.sym} 5870 -2840 0 0 {name=x158
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrtp_1.sym} 6130 -2840 0 0 {name=x159
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrtp_2.sym} 6390 -2840 0 0 {name=x160
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlrtp_4.sym} 6650 -2840 0 0 {name=x161
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxbn_1.sym} 6910 -2840 0 0 {name=x162
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxbn_2.sym} 150 -2600 0 0 {name=x163
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxbp_1.sym} 410 -2600 0 0 {name=x164
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxtn_1.sym} 670 -2600 0 0 {name=x165
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxtn_2.sym} 930 -2600 0 0 {name=x166
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxtn_4.sym} 1190 -2600 0 0 {name=x167
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlxtp_1.sym} 1450 -2600 0 0 {name=x168
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlygate4sd1_1.sym} 1710 -2600 0 0 {name=x169
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlygate4sd2_1.sym} 1970 -2600 0 0 {name=x170
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlygate4sd3_1.sym} 2230 -2600 0 0 {name=x171
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlymetal6s2s_1.sym} 2490 -2600 0 0 {name=x172
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlymetal6s4s_1.sym} 2750 -2600 0 0 {name=x173
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/dlymetal6s6s_1.sym} 3010 -2600 0 0 {name=x174
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ebufn_1.sym} 3270 -2600 0 0 {name=x175
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ebufn_2.sym} 3530 -2600 0 0 {name=x176
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ebufn_4.sym} 3790 -2600 0 0 {name=x177
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ebufn_8.sym} 4050 -2600 0 0 {name=x178
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/edfxbp_1.sym} 4310 -2600 0 0 {name=x179
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/edfxtp_1.sym} 4570 -2600 0 0 {name=x180
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvn_0.sym} 4830 -2600 0 0 {name=x181
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvn_1.sym} 5090 -2600 0 0 {name=x182
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvn_2.sym} 5350 -2600 0 0 {name=x183
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvn_4.sym} 5610 -2600 0 0 {name=x184
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvn_8.sym} 5870 -2600 0 0 {name=x185
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvp_1.sym} 6130 -2600 0 0 {name=x186
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvp_2.sym} 6390 -2600 0 0 {name=x187
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvp_4.sym} 6650 -2600 0 0 {name=x188
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/einvp_8.sym} 6910 -2600 0 0 {name=x189
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fa_1.sym} 150 -2360 0 0 {name=x190
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fa_2.sym} 410 -2360 0 0 {name=x191
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fa_4.sym} 670 -2360 0 0 {name=x192
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fah_1.sym} 930 -2360 0 0 {name=x193
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fahcin_1.sym} 1190 -2360 0 0 {name=x194
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fahcon_1.sym} 1450 -2360 0 0 {name=x195
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fill_1.sym} 1710 -2360 0 0 {name=x196
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fill_2.sym} 1970 -2360 0 0 {name=x197
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fill_4.sym} 2230 -2360 0 0 {name=x198
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/fill_8.sym} 2490 -2360 0 0 {name=x199
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ha_1.sym} 2750 -2360 0 0 {name=x200
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ha_2.sym} 3010 -2360 0 0 {name=x201
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/ha_4.sym} 3270 -2360 0 0 {name=x202
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_12.sym} 3530 -2360 0 0 {name=x203
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_16.sym} 3790 -2360 0 0 {name=x204
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_1.sym} 4050 -2360 0 0 {name=x205
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_2.sym} 4310 -2360 0 0 {name=x206
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_4.sym} 4570 -2360 0 0 {name=x207
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_6.sym} 4830 -2360 0 0 {name=x208
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/inv_8.sym} 5090 -2360 0 0 {name=x209
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_bleeder_1.sym} 5350 -2360 0 0 {name=x210
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkbufkapwr_16.sym} 5610 -2360 0 0 {name=x211
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkbufkapwr_1.sym} 5870 -2360 0 0 {name=x212
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkbufkapwr_2.sym} 6130 -2360 0 0 {name=x213
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkbufkapwr_4.sym} 6390 -2360 0 0 {name=x214
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkbufkapwr_8.sym} 6650 -2360 0 0 {name=x215
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkinvkapwr_16.sym} 6910 -2360 0 0 {name=x216
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkinvkapwr_1.sym} 150 -2120 0 0 {name=x217
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkinvkapwr_2.sym} 410 -2120 0 0 {name=x218
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkinvkapwr_4.sym} 670 -2120 0 0 {name=x219
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_clkinvkapwr_8.sym} 930 -2120 0 0 {name=x220
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_decapkapwr_12.sym} 1190 -2120 0 0 {name=x221
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_decapkapwr_3.sym} 1450 -2120 0 0 {name=x222
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_decapkapwr_4.sym} 1710 -2120 0 0 {name=x223
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_decapkapwr_6.sym} 1970 -2120 0 0 {name=x224
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_decapkapwr_8.sym} 2230 -2120 0 0 {name=x225
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_inputiso0n_1.sym} 2490 -2120 0 0 {name=x226
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_inputiso0p_1.sym} 2750 -2120 0 0 {name=x227
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_inputiso1n_1.sym} 3010 -2120 0 0 {name=x228
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_inputiso1p_1.sym} 3270 -2120 0 0 {name=x229
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_inputisolatch_1.sym} 3530 -2120 0 0 {name=x230
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_isobufsrc_16.sym} 3790 -2120 0 0 {name=x231
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_isobufsrc_1.sym} 4050 -2120 0 0 {name=x232
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_isobufsrc_2.sym} 4310 -2120 0 0 {name=x233
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_isobufsrc_4.sym} 4570 -2120 0 0 {name=x234
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_isobufsrc_8.sym} 4830 -2120 0 0 {name=x235
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_isobufsrckapwr_16.sym} 5090 -2120 0 0 {name=x236
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_hl_isowell_tap_1.sym} 5350 -2120 0 0 {name=x237
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_hl_isowell_tap_2.sym} 5610 -2120 0 0 {name=x238
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_hl_isowell_tap_4.sym} 5870 -2120 0 0 {name=x239
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_isowell_4.sym} 6130 -2120 0 0 {name=x240
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_isowell_tap_1.sym} 6390 -2120 0 0 {name=x241
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_isowell_tap_2.sym} 6650 -2120 0 0 {name=x242
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/lpflow_lsbuf_lh_isowell_tap_4.sym} 6910 -2120 0 0 {name=x243
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/macro_sparecell.sym} 150 -1880 0 0 {name=x244
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/maj3_1.sym} 410 -1880 0 0 {name=x245
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/maj3_2.sym} 670 -1880 0 0 {name=x246
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/maj3_4.sym} 930 -1880 0 0 {name=x247
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2_1.sym} 1190 -1880 0 0 {name=x248
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2_2.sym} 1450 -1880 0 0 {name=x249
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2_4.sym} 1710 -1880 0 0 {name=x250
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2_8.sym} 1970 -1880 0 0 {name=x251
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2i_1.sym} 2230 -1880 0 0 {name=x252
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2i_2.sym} 2490 -1880 0 0 {name=x253
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux2i_4.sym} 2750 -1880 0 0 {name=x254
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux4_1.sym} 3010 -1880 0 0 {name=x255
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux4_2.sym} 3270 -1880 0 0 {name=x256
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/mux4_4.sym} 3530 -1880 0 0 {name=x257
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2_1.sym} 3790 -1880 0 0 {name=x258
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2_2.sym} 4050 -1880 0 0 {name=x259
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2_4.sym} 4310 -1880 0 0 {name=x260
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2_8.sym} 4570 -1880 0 0 {name=x261
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2b_1.sym} 4830 -1880 0 0 {name=x262
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2b_2.sym} 5090 -1880 0 0 {name=x263
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand2b_4.sym} 5350 -1880 0 0 {name=x264
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand3_1.sym} 5610 -1880 0 0 {name=x265
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand3_2.sym} 5870 -1880 0 0 {name=x266
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand3_4.sym} 6130 -1880 0 0 {name=x267
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand3b_1.sym} 6390 -1880 0 0 {name=x268
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand3b_2.sym} 6650 -1880 0 0 {name=x269
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand3b_4.sym} 6910 -1880 0 0 {name=x270
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4_1.sym} 150 -1640 0 0 {name=x271
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4_2.sym} 410 -1640 0 0 {name=x272
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4_4.sym} 670 -1640 0 0 {name=x273
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4b_1.sym} 930 -1640 0 0 {name=x274
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4b_2.sym} 1190 -1640 0 0 {name=x275
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4b_4.sym} 1450 -1640 0 0 {name=x276
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4bb_1.sym} 1710 -1640 0 0 {name=x277
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4bb_2.sym} 1970 -1640 0 0 {name=x278
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nand4bb_4.sym} 2230 -1640 0 0 {name=x279
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2_1.sym} 2490 -1640 0 0 {name=x280
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2_2.sym} 2750 -1640 0 0 {name=x281
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2_4.sym} 3010 -1640 0 0 {name=x282
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2_8.sym} 3270 -1640 0 0 {name=x283
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2b_1.sym} 3530 -1640 0 0 {name=x284
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2b_2.sym} 3790 -1640 0 0 {name=x285
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor2b_4.sym} 4050 -1640 0 0 {name=x286
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor3_1.sym} 4310 -1640 0 0 {name=x287
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor3_2.sym} 4570 -1640 0 0 {name=x288
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor3_4.sym} 4830 -1640 0 0 {name=x289
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor3b_1.sym} 5090 -1640 0 0 {name=x290
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor3b_2.sym} 5350 -1640 0 0 {name=x291
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor3b_4.sym} 5610 -1640 0 0 {name=x292
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4_1.sym} 5870 -1640 0 0 {name=x293
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4_2.sym} 6130 -1640 0 0 {name=x294
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4_4.sym} 6390 -1640 0 0 {name=x295
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4b_1.sym} 6650 -1640 0 0 {name=x296
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4b_2.sym} 6910 -1640 0 0 {name=x297
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4b_4.sym} 150 -1400 0 0 {name=x298
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4bb_1.sym} 410 -1400 0 0 {name=x299
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4bb_2.sym} 670 -1400 0 0 {name=x300
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/nor4bb_4.sym} 930 -1400 0 0 {name=x301
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2111a_1.sym} 1190 -1400 0 0 {name=x302
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2111a_2.sym} 1450 -1400 0 0 {name=x303
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2111a_4.sym} 1710 -1400 0 0 {name=x304
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2111ai_1.sym} 1970 -1400 0 0 {name=x305
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2111ai_2.sym} 2230 -1400 0 0 {name=x306
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2111ai_4.sym} 2490 -1400 0 0 {name=x307
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o211a_1.sym} 2750 -1400 0 0 {name=x308
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o211a_2.sym} 3010 -1400 0 0 {name=x309
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o211a_4.sym} 3270 -1400 0 0 {name=x310
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o211ai_1.sym} 3530 -1400 0 0 {name=x311
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o211ai_2.sym} 3790 -1400 0 0 {name=x312
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o211ai_4.sym} 4050 -1400 0 0 {name=x313
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21a_1.sym} 4310 -1400 0 0 {name=x314
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21a_2.sym} 4570 -1400 0 0 {name=x315
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21a_4.sym} 4830 -1400 0 0 {name=x316
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ai_0.sym} 5090 -1400 0 0 {name=x317
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ai_1.sym} 5350 -1400 0 0 {name=x318
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ai_2.sym} 5610 -1400 0 0 {name=x319
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ai_4.sym} 5870 -1400 0 0 {name=x320
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ba_1.sym} 6130 -1400 0 0 {name=x321
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ba_2.sym} 6390 -1400 0 0 {name=x322
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21ba_4.sym} 6650 -1400 0 0 {name=x323
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21bai_1.sym} 6910 -1400 0 0 {name=x324
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21bai_2.sym} 150 -1160 0 0 {name=x325
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o21bai_4.sym} 410 -1160 0 0 {name=x326
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o221a_1.sym} 670 -1160 0 0 {name=x327
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o221a_2.sym} 930 -1160 0 0 {name=x328
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o221a_4.sym} 1190 -1160 0 0 {name=x329
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o221ai_1.sym} 1450 -1160 0 0 {name=x330
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o221ai_2.sym} 1710 -1160 0 0 {name=x331
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o221ai_4.sym} 1970 -1160 0 0 {name=x332
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o22a_1.sym} 2230 -1160 0 0 {name=x333
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o22a_2.sym} 2490 -1160 0 0 {name=x334
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o22a_4.sym} 2750 -1160 0 0 {name=x335
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o22ai_1.sym} 3010 -1160 0 0 {name=x336
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o22ai_2.sym} 3270 -1160 0 0 {name=x337
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o22ai_4.sym} 3530 -1160 0 0 {name=x338
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2bb2a_1.sym} 3790 -1160 0 0 {name=x339
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2bb2a_2.sym} 4050 -1160 0 0 {name=x340
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2bb2a_4.sym} 4310 -1160 0 0 {name=x341
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2bb2ai_1.sym} 4570 -1160 0 0 {name=x342
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2bb2ai_2.sym} 4830 -1160 0 0 {name=x343
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o2bb2ai_4.sym} 5090 -1160 0 0 {name=x344
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311a_1.sym} 5350 -1160 0 0 {name=x345
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311a_2.sym} 5610 -1160 0 0 {name=x346
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311a_4.sym} 5870 -1160 0 0 {name=x347
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311ai_0.sym} 6130 -1160 0 0 {name=x348
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311ai_1.sym} 6390 -1160 0 0 {name=x349
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311ai_2.sym} 6650 -1160 0 0 {name=x350
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o311ai_4.sym} 6910 -1160 0 0 {name=x351
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o31a_1.sym} 150 -920 0 0 {name=x352
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o31a_2.sym} 410 -920 0 0 {name=x353
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o31a_4.sym} 670 -920 0 0 {name=x354
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o31ai_1.sym} 930 -920 0 0 {name=x355
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o31ai_2.sym} 1190 -920 0 0 {name=x356
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o31ai_4.sym} 1450 -920 0 0 {name=x357
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o32a_1.sym} 1710 -920 0 0 {name=x358
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o32a_2.sym} 1970 -920 0 0 {name=x359
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o32a_4.sym} 2230 -920 0 0 {name=x360
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o32ai_1.sym} 2490 -920 0 0 {name=x361
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o32ai_2.sym} 2750 -920 0 0 {name=x362
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o32ai_4.sym} 3010 -920 0 0 {name=x363
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o41a_1.sym} 3270 -920 0 0 {name=x364
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o41a_2.sym} 3530 -920 0 0 {name=x365
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o41a_4.sym} 3790 -920 0 0 {name=x366
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o41ai_1.sym} 4050 -920 0 0 {name=x367
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o41ai_2.sym} 4310 -920 0 0 {name=x368
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/o41ai_4.sym} 4570 -920 0 0 {name=x369
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2_0.sym} 4830 -920 0 0 {name=x370
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2_1.sym} 5090 -920 0 0 {name=x371
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2_2.sym} 5350 -920 0 0 {name=x372
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2_4.sym} 5610 -920 0 0 {name=x373
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2b_1.sym} 5870 -920 0 0 {name=x374
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2b_2.sym} 6130 -920 0 0 {name=x375
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or2b_4.sym} 6390 -920 0 0 {name=x376
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or3_1.sym} 6650 -920 0 0 {name=x377
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or3_2.sym} 6910 -920 0 0 {name=x378
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or3_4.sym} 150 -680 0 0 {name=x379
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or3b_1.sym} 410 -680 0 0 {name=x380
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or3b_2.sym} 670 -680 0 0 {name=x381
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or3b_4.sym} 930 -680 0 0 {name=x382
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4_1.sym} 1190 -680 0 0 {name=x383
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4_2.sym} 1450 -680 0 0 {name=x384
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4_4.sym} 1710 -680 0 0 {name=x385
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4b_1.sym} 1970 -680 0 0 {name=x386
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4b_2.sym} 2230 -680 0 0 {name=x387
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4b_4.sym} 2490 -680 0 0 {name=x388
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4bb_1.sym} 2750 -680 0 0 {name=x389
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4bb_2.sym} 3010 -680 0 0 {name=x390
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/or4bb_4.sym} 3270 -680 0 0 {name=x391
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/probec_p_8.sym} 3530 -680 0 0 {name=x392
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/probe_p_8.sym} 3790 -680 0 0 {name=x393
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfbbn_1.sym} 4050 -680 0 0 {name=x394
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfbbn_2.sym} 4310 -680 0 0 {name=x395
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfbbp_1.sym} 4570 -680 0 0 {name=x396
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfrbp_1.sym} 4830 -680 0 0 {name=x397
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfrbp_2.sym} 5090 -680 0 0 {name=x398
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfrtn_1.sym} 5350 -680 0 0 {name=x399
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfrtp_1.sym} 5610 -680 0 0 {name=x400
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfrtp_2.sym} 5870 -680 0 0 {name=x401
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfrtp_4.sym} 6130 -680 0 0 {name=x402
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfsbp_1.sym} 6390 -680 0 0 {name=x403
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfsbp_2.sym} 6650 -680 0 0 {name=x404
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfstp_1.sym} 6910 -680 0 0 {name=x405
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfstp_2.sym} 150 -440 0 0 {name=x406
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfstp_4.sym} 410 -440 0 0 {name=x407
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfxbp_1.sym} 670 -440 0 0 {name=x408
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfxbp_2.sym} 930 -440 0 0 {name=x409
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfxtp_1.sym} 1190 -440 0 0 {name=x410
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfxtp_2.sym} 1450 -440 0 0 {name=x411
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdfxtp_4.sym} 1710 -440 0 0 {name=x412
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdlclkp_1.sym} 1970 -440 0 0 {name=x413
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdlclkp_2.sym} 2230 -440 0 0 {name=x414
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sdlclkp_4.sym} 2490 -440 0 0 {name=x415
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sedfxbp_1.sym} 2750 -440 0 0 {name=x416
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sedfxbp_2.sym} 3010 -440 0 0 {name=x417
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sedfxtp_1.sym} 3270 -440 0 0 {name=x418
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sedfxtp_2.sym} 3530 -440 0 0 {name=x419
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/sedfxtp_4.sym} 3790 -440 0 0 {name=x420
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/tap_1.sym} 4050 -440 0 0 {name=x421
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/tap_2.sym} 4310 -440 0 0 {name=x422
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/tapvgnd_1.sym} 4570 -440 0 0 {name=x423
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/tapvgnd2_1.sym} 4830 -440 0 0 {name=x424
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/tapvpwrvgnd_1.sym} 5090 -440 0 0 {name=x425
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xnor2_1.sym} 5350 -440 0 0 {name=x426
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xnor2_2.sym} 5610 -440 0 0 {name=x427
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xnor2_4.sym} 5870 -440 0 0 {name=x428
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xnor3_1.sym} 6130 -440 0 0 {name=x429
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xnor3_2.sym} 6390 -440 0 0 {name=x430
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xnor3_4.sym} 6650 -440 0 0 {name=x431
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xor2_1.sym} 6910 -440 0 0 {name=x432
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xor2_2.sym} 150 -200 0 0 {name=x433
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xor2_4.sym} 410 -200 0 0 {name=x434
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xor3_1.sym} 670 -200 0 0 {name=x435
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xor3_2.sym} 930 -200 0 0 {name=x436
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
+C {sky130_stdcells/xor3_4.sym} 1190 -200 0 0 {name=x437
+VGND=GND
+VNB=GND
+VPB=VCC
+VPWR=VCC
+prefix=sky130_fd_sc_hd__}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
