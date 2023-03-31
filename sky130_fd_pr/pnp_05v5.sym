@@ -34,7 +34,7 @@ B 5 17.5 27.5 22.5 32.5 {name=collector dir=inout pinnumber=3}
 B 5 -22.5 -2.5 -17.5 2.5 {name=base dir=in pinnumber=1}
 B 5 17.5 -32.5 22.5 -27.5 {name=emitter dir=inout pinnumber=2}
 P 4 4 0 -10 15 -15 5 -25 0 -10 {fill=true}
-T {pnp05v5} 22.5 15 0 0 0.2 0.2 {}
+T {@model} 22.5 15 0 0 0.2 0.2 {}
 T {@name} 22.5 -26.25 0 0 0.2 0.2 {}
 T {e} 10 -35.625 0 0 0.15 0.15 {layer=7}
 T {c} 10 26.875 0 0 0.15 0.15 {layer=7}
