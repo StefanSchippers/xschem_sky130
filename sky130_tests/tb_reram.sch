@@ -120,7 +120,7 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 64.53125 -384.6875 0 1 {name=p3 lab=TOP}
 C {devices/lab_pin.sym} 64.53125 -104.6875 0 1 {name=p1 lab=0}
 C {devices/launcher.sym} 301.71875 -646.875 0 0 {name=h1
-descr= google/skywater-pdk-libs-sky130_fd_pr_reram
+descr= https://github.com/barakhoffer/sky130_ngspice_reram
 url=https://github.com/barakhoffer/sky130_ngspice_reram}
 C {devices/vsource.sym} 324.53125 -184.6875 0 0 {name=V1 value="PWL (0 0 0.25u 1.8 0.5u 0 0.75u -1.8 1.0u 0.0)"
 }
