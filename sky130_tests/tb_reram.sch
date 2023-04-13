@@ -20,15 +20,15 @@ V {}
 S {}
 E {}
 B 2 1100 -390 1630 -80 {flags=graph
-y1=-8.3e-05
-y2=6.9e-06
+y1=-0.0015
+y2=0.00031
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4e-06
+x2=1.5e-06
 divx=5
 subdivx=1
 
@@ -48,7 +48,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4e-06
+x2=1.5e-06
 divx=5
 subdivx=1
 node=top
@@ -82,9 +82,8 @@ only_toplevel=true
 value="
 .control
   * Modify according to your specific location
-  pre_osdi /mnt/sda7/sky130_fd_pr_reram_git/cells/reram_cell/sky130_fd_pr_reram__reram_cell.osdi
   save all
-  tran 1n 4.0u
+  tran 0.1n 1.5u
   write tb_reram.raw
 .endc
 
@@ -100,12 +99,13 @@ value="
 "
 spice_ignore=false}
 C {devices/lab_pin.sym} 550 -140 0 1 {name=p1 lab=0}
-C {sky130_fd_pr/reram.sym} 550 -230 0 0 {name=N1}
 C {devices/launcher.sym} 480 -660 0 0 {name=h1
 descr= google/skywater-pdk-libs-sky130_fd_pr_reram
 url=https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram}
-C {/home/schippes/share/xschem/xschem_library/devices/vsource.sym} 810 -220 0 0 {name=V1 value="PWL (0 0 1u 2 2u 0 3u -2 4.0u 0.0)"}
+C {devices/vsource.sym} 810 -220 0 0 {name=V1 value="PWL (0 0 0.25u 1.8 0.5u 0 0.75u -1.8 1.0u 0.0)"
+}
 C {devices/launcher.sym} 1270 -50 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_reram.raw tran"
 }
+C {sky130_fd_pr/reram.sym} 550 -230 0 0 {name=R1 model=sky130_fd_pr_reram__reram_cell spiceprefix=X Tfilament_0=3.8e-9}

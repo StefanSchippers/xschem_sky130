@@ -16,29 +16,38 @@ v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=reram
-format="@name @pinlist @model"
-template="name=N1
-model=sky130_fd_pr_reram__reram_model"
-xdevice_model=".model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_cell"
-device_model="
-.model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_cell area_ox=0.1024e-12
-+ Tox=5.0e-9
-+ Tfilament_max=4.9e-9
-+ Tfilament_min=3.3e-9
-+ Tfilament_0=3.5e-9
-+ Eact_generation=1.501
-+ Eact_recombination=1.500
-+ I_k1=6.140e-5
-+ Tfilament_ref=4.7249e-9
-+ V_ref=0.430
-+ velocity_k1=150
-+ gamma_k0=16.5
-+ gamma_k1=-1.25 
-+ Temperature_0=300
-+ C_thermal=3.1825e-16
-+ tau_thermal=0.23e-9
-+ t_step=1.0e-9
-"
+format="@spiceprefix@name @pinlist @model Tfilament_0=@Tfilament_0"
+template="name=R1 model=sky130_fd_pr_reram__reram_cell spiceprefix=X Tfilament_0=3.8e-9"
+device_model="tcleval(
+.subckt sky130_fd_pr_reram__reram_cell TE BE Tfilament_0=3.3e-9 area_ox=0.1024e-12
+N1 TE BE nFilament sky130_fd_pr_reram__reram_model
+.ic v(nFilament)=\{Tfilament_0*1.0e9\}
+.ends sky130_fd_pr_reram__reram_cell
+
+.model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_module area_ox=0.1024e-12
++ area_ox = 0.1024e-12
++ Tox = 5.0
++ Tfilament_max = 4.9
++ Tfilament_min = 3.3
++ Eact_generation = 1.501
++ Eact_recombination  = 1.500
++ I_k1  = 6.140e-5
++ Tfilament_ref = 4.7249
++ V_ref = 0.430
++ velocity_k1 = 150
++ gamma_k0  = 16.5
++ gamma_k1  = -1.25
++ Temperature_0 = 300
++ C_thermal = 3.1825e-16
++ tau_thermal = 0.23e-9
++ t_step  = 1.0e-9
++ smoothing = 1e-7
++ Kclip = 200
+
+.control
+pre_osdi $SKYWATER_MODELS/sky130_fd_pr_reram__reram_module.osdi
+.endc
+)"
 }
 V {}
 S {}
@@ -54,7 +63,7 @@ L 4 -3.75 15 0 15 {}
 L 4 0 15 0 30 {}
 B 5 -2.5 -32.5 2.5 -27.5 {name=TE dir=inout}
 B 5 -2.5 27.5 2.5 32.5 {name=BE dir=inout}
-T {@name} 15 -13.75 0 0 0.2 0.2 {}
+T {@spiceprefix@name} 15 -13.75 0 0 0.2 0.2 {}
 T {@model} 15 2.5 0 0 0.2 0.2 {}
 T {TE} 10 -28.75 0 0 0.2 0.2 {}
 T {BE} 10 28.75 2 1 0.2 0.2 {}
