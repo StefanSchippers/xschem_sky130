@@ -19,17 +19,17 @@ K {}
 V {}
 S {}
 E {}
-L 7 905.3125 -476.25 917.1875 -467.5 {}
-L 7 905.3125 -460 916.5625 -466.875 {}
-L 7 926.5625 -427.5 945.9375 -420.625 {}
-L 7 925.3125 -409.375 925.9375 -427.5 {}
-L 7 734.6875 -484.375 750.3125 -485.625 {}
-L 7 734.6875 -483.125 743.90625 -471.875 {}
-L 7 684.6875 -478.125 695.9375 -468.125 {}
-L 7 682.8125 -460 695.9375 -466.875 {}
+L 7 899.375 -336.875 927.5 -330.625 {}
+L 7 896.875 -321.25 928.125 -330 {}
+L 7 927.5 -378.75 934.375 -408.75 {}
+L 7 927.5 -378.125 950 -390 {}
+L 7 715.625 -306.875 729.375 -326.25 {}
+L 7 716.25 -306.875 746.25 -312.5 {}
+L 7 680 -342.5 705 -328.125 {}
+L 7 675.625 -321.875 704.375 -328.125 {}
 B 2 1100 -390 1630 -80 {flags=graph,unlocked
-y1=-0.0015
-y2=0.00031
+y1=-0.00036471
+y2=0.00144529
 ypos1=0
 ypos2=2
 divy=5
@@ -46,7 +46,7 @@ unitx=1
 logx=0
 logy=0
 color=4
-node=i(v1)}
+node=i(vreram)}
 B 2 1100 -710 1630 -400 {flags=graph,unlocked
 y1=-2.17074
 y2=2.14926
@@ -66,9 +66,9 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 534.6875 -550 1064.6875 -240 {flags=graph,unlocked
-y1=-0.0015
-y2=0.00031
+B 2 530 -550 1060 -240 {flags=graph,unlocked
+y1=-0.000374848
+y2=0.00143515
 ypos1=0
 ypos2=2
 divy=5
@@ -85,28 +85,34 @@ unitx=1
 logx=0
 logy=0
 color=4
-node=i(v1)
+node=i(vreram)
 sweep=top}
-T {Test with new OSDI enabled ngspice} 21.09375 -873.4375 0 0 1 1 {}
+T {Test with new OSDI enabled ngspice} 20 -870 0 0 1 1 {}
 T {Reram symbol created using info
-available here (Courtesy Barak Hoffer):} 27.96875 -765 0 0 0.7 0.7 {}
-N 64.53125 -144.6875 64.53125 -104.6875 {
+available here (Courtesy Barak Hoffer):} 30 -770 0 0 0.7 0.7 {}
+T {1} 872.5 -321.25 0 0 0.4 0.4 { layer=7}
+T {2} 900 -400.625 0 0 0.4 0.4 { layer=7}
+T {3} 755 -313.125 0 0 0.4 0.4 { layer=7}
+T {4} 659.375 -363.75 0 0 0.4 0.4 { layer=7}
+N 60 -140 60 -100 {
 lab=0}
-N 64.53125 -334.6875 64.53125 -224.6875 {
+N 60 -330 60 -220 {
 lab=TOP}
-N 64.53125 -144.6875 324.53125 -144.6875 {
+N 60 -140 320 -140 {
 lab=0}
-N 324.53125 -154.6875 324.53125 -144.6875 {
+N 320 -150 320 -140 {
 lab=0}
-N 64.53125 -334.6875 324.53125 -334.6875 {
+N 60 -330 320 -330 {
 lab=TOP}
-N 64.53125 -164.6875 64.53125 -144.6875 {
+N 60 -160 60 -140 {
 lab=0}
-N 64.53125 -384.6875 64.53125 -334.6875 {
+N 60 -380 60 -330 {
 lab=TOP}
-N 324.53125 -334.6875 324.53125 -214.6875 {
+N 320 -330 320 -310 {
 lab=TOP}
-C {devices/code_shown.sym} 170.9375 -538.90625 0 0 {name=NGSPICE
+N 320 -250 320 -210 {
+lab=#net1}
+C {devices/code_shown.sym} 170 -540 0 0 {name=NGSPICE
 only_toplevel=true
 value="
 .control
@@ -117,15 +123,16 @@ value="
 
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/lab_pin.sym} 64.53125 -384.6875 0 1 {name=p3 lab=TOP}
-C {devices/lab_pin.sym} 64.53125 -104.6875 0 1 {name=p1 lab=0}
-C {devices/launcher.sym} 301.71875 -646.875 0 0 {name=h1
+C {devices/lab_pin.sym} 60 -380 0 1 {name=p3 lab=TOP}
+C {devices/lab_pin.sym} 60 -100 0 1 {name=p1 lab=0}
+C {devices/launcher.sym} 300 -650 0 0 {name=h1
 descr= https://github.com/barakhoffer/sky130_ngspice_reram
 url=https://github.com/barakhoffer/sky130_ngspice_reram}
-C {devices/vsource.sym} 324.53125 -184.6875 0 0 {name=V1 value="PWL (0 0 0.25u 1.8 0.5u 0 0.75u -1.8 1.0u 0.0)"
+C {devices/vsource.sym} 320 -180 0 0 {name=V1 value="PWL (0 0 0.25u 1.8 0.5u 0 0.75u -1.8 1.0u 0.0)"
 }
 C {devices/launcher.sym} 1270 -50 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_reram.raw tran"
 }
-C {sky130_fd_pr/reram.sym} 64.53125 -194.6875 0 0 {name=R1 model=sky130_fd_pr_reram__reram_cell spiceprefix=X Tfilament_0=3.8e-9}
+C {sky130_fd_pr/reram.sym} 60 -190 0 0 {name=R1 model=sky130_fd_pr_reram__reram_cell spiceprefix=X Tfilament_0=3.8e-9}
+C {devices/ammeter.sym} 320 -280 2 0 {name=Vreram}
