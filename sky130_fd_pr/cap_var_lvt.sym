@@ -1,6 +1,8 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {type=varactor
+lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@VM"
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L VM=@VM m=@VM"
 template="name=C1 model=cap_var_lvt W=0.5 L=0.5 VM=1 spiceprefix=X"
 }
