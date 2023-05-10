@@ -137,7 +137,10 @@ C {devices/launcher.sym} 590 -310 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_charge_pump.raw tran"
 }
-C {devices/isource.sym} 970 -120 0 0 {name=I0 value="pwl 0 0 2u 0 2.01u 50u 3u 50u 3.01u 200u"}
+C {devices/isource.sym} 970 -120 0 0 {name=I0 value="pwl 0 0 
++ 2u 0 2.01u 50u
++ 3u 50u 3.01u 100u
++ 4u 100u 4.01u 200u"}
 C {devices/lab_pin.sym} 970 -70 0 0 {name=p10 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 970 -180 0 0 {name=Vload}
 C {sky130_tests/charge_pump2.sym} 1470 -150 0 0 {name=x3}
@@ -153,7 +156,10 @@ value=20p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1700 -80 0 0 {name=p17 sig_type=std_logic lab=GND}
-C {devices/isource.sym} 1770 -70 0 0 {name=I1 value="pwl 0 0 2u 0 2.01u 50u 3u 50u 3.01u 200u"}
+C {devices/isource.sym} 1770 -70 0 0 {name=I1 value="pwl 0 0 
++ 2u 0 2.01u 50u
++ 3u 50u 3.01u 100u
++ 4u 100u 4.01u 200u"}
 C {devices/lab_pin.sym} 1770 -20 0 0 {name=p18 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1770 -130 0 0 {name=Vload1}
 C {devices/noconn.sym} 50 -450 0 1 {name=l3}
@@ -169,4 +175,7 @@ C {devices/lab_pin.sym} 1920 -400 0 1 {name=p21 lab=HV_IDEAL}
 C {sky130_tests/charge_pump_ideal.sym} 1470 -390 0 0 {name=x7}
 C {devices/lab_pin.sym} 1320 -330 0 0 {name=p22 lab=CK}
 C {devices/lab_pin.sym} 1320 -310 0 0 {name=p23 lab=CKN}
-C {devices/isource.sym} 1770 -310 0 0 {name=I2 value="pwl 0 0 2u 0 2.01u 50u 3u 50u 3.01u 200u"}
+C {devices/isource.sym} 1770 -310 0 0 {name=I2 value="pwl 0 0 
++ 2u 0 2.01u 50u
++ 3u 50u 3.01u 100u
++ 4u 100u 4.01u 200u"}
