@@ -761,3 +761,4 @@ C {devices/launcher.sym} 460 -600 0 0 {name=h23
 descr="PLL capacitive
 sensor" 
 tclcommand="xschem load_new_window https://raw.githubusercontent.com/JorgeMarinN/SDC_SKY130_MPW5/mpw5/xschem/user_analog_project_wrapper.sch"}
+C {sky130_tests/tb_charge_pump.sym} 480 -1200 0 0 {name=x35}
