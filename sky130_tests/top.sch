@@ -195,7 +195,6 @@ W=1
 L=1
 model=res_generic_po
 spiceprefix=X
-spice_ignore=true
  mult=1}
 C {sky130_fd_pr/res_high_po.sym} 1820 -470 0 0 {name=R5
 W=1
@@ -326,7 +325,6 @@ W=30
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
-spice_ignore=true
 }
 C {sky130_tests/gates.sym} 190 -910 0 0 {name=x8}
 C {devices/launcher.sym} 890 -800 0 0 {name=h4
@@ -457,7 +455,6 @@ body=VDD
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
-spice_ignore=true
 }
 C {sky130_tests/test_mim_cap.sym} 190 -1640 0 0 {name=x18}
 C {sky130_tests/LACG.sym} 190 -710 0 0 {name=x19}
