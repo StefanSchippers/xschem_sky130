@@ -95,6 +95,38 @@ N 160 -260 960 -260 {
 lab=CKN}
 N 160 -300 780 -300 {
 lab=CK}
+N 300 -420 360 -420 {
+lab=#net3}
+N 360 -420 360 -410 {
+lab=#net3}
+N 360 -350 360 -340 {
+lab=CK}
+N 300 -340 360 -340 {
+lab=CK}
+N 480 -420 540 -420 {
+lab=#net4}
+N 540 -420 540 -410 {
+lab=#net4}
+N 540 -350 540 -340 {
+lab=CKN}
+N 480 -340 540 -340 {
+lab=CKN}
+N 780 -420 840 -420 {
+lab=#net7}
+N 840 -420 840 -410 {
+lab=#net7}
+N 840 -350 840 -340 {
+lab=CK}
+N 780 -340 840 -340 {
+lab=CK}
+N 960 -420 1020 -420 {
+lab=#net8}
+N 1020 -420 1020 -410 {
+lab=#net8}
+N 1020 -350 1020 -340 {
+lab=CKN}
+N 960 -340 1020 -340 {
+lab=CKN}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 260 -880 1 1 {name=M8
 L=0.5
@@ -193,3 +225,11 @@ C {sky130_stdcells/inv_12.sym} 780 -380 3 0 {name=x2 VGND=GND VNB=GND VPB=VCC VP
 C {sky130_stdcells/inv_12.sym} 960 -380 3 0 {name=x3 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/ipin.sym} 160 -300 0 0 {name=p24 lab=CK}
 C {devices/ipin.sym} 160 -260 0 0 {name=p25 lab=CKN}
+C {devices/ammeter.sym} 360 -380 0 0 {name=Vmeas
+spice_ignore=true}
+C {devices/ammeter.sym} 540 -380 0 0 {name=Vmeas1
+spice_ignore=true}
+C {devices/ammeter.sym} 840 -380 0 0 {name=Vmeas2
+spice_ignore=true}
+C {devices/ammeter.sym} 1020 -380 0 0 {name=Vmeas3
+spice_ignore=true}

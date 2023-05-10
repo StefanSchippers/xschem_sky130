@@ -49,12 +49,13 @@ hv2
 hv_ideal
 \\"10000 * Iload; i(vload) 10000 *\\""
 color="15 7 12 11 17"
-dataset=-1
+
 unitx=1
 logx=0
 logy=0
 divy=10
-hilight_wave=-1}
+hilight_wave=-1
+}
 T {Global
 Node} 20 -620 0 0 0.4 0.4 {}
 T {Ideal charge pump} 1380 -450 0 0 0.4 0.4 {}
