@@ -50,11 +50,11 @@ lab=HV1}
 N 680 -700 740 -700 {
 lab=HV1}
 N 1000 -900 1060 -900 {
-lab=HV2}
+lab=HV}
 N 1060 -900 1060 -700 {
-lab=HV2}
+lab=HV}
 N 1000 -700 1060 -700 {
-lab=HV2}
+lab=HV}
 N 770 -700 970 -700 {
 lab=#net5}
 N 770 -900 970 -900 {
@@ -98,7 +98,7 @@ lab=CK}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 260 -880 1 1 {name=M8
 L=0.5
-W=5
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -112,7 +112,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 260 -720 1 0 {name=M9
 L=0.5
-W=5
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -126,14 +126,14 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 520 -880 1 1 {name=M10
 L=0.5
-W=10
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 520 -720 1 0 {name=M11
 L=0.5
-W=10
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -143,7 +143,7 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 480 -530 0 0 {name=C8 model=cap_mim_m3_1 W=30 
 C {devices/lab_pin.sym} 160 -800 0 0 {name=p20 lab=VCC}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 740 -880 1 1 {name=M12
 L=0.5
-W=5
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -157,7 +157,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 740 -720 1 0 {name=M13
 L=0.5
-W=5
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -171,14 +171,14 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1000 -880 1 1 {name=M14
 L=0.5
-W=10
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1000 -720 1 0 {name=M15
 L=0.5
-W=10
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X

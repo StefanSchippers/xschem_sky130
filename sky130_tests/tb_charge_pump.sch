@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 400 -540.3125 1280 -280.3125 {flags=graph
+B 2 400 -540 1280 -280 {flags=graph
 y1=0
 y2=2
 ypos1=0.143077
@@ -31,7 +31,7 @@ a
 b
 c
 d"}
-B 2 400 -940.3125 1280 -540.3125 {flags=graph
+B 2 400 -940 1280 -540 {flags=graph
 y1=0
 y2=6.3
 ypos1=0
@@ -56,11 +56,11 @@ divy=10
 hilight_wave=-1}
 T {Global
 Node} 20 -620 0 0 0.4 0.4 {}
-N 54.0625 -472.1875 54.0625 -452.1875 {
+N 50 -470 50 -450 {
 lab=GND}
-N 194.0625 -472.1875 194.0625 -452.1875 {
+N 190 -470 190 -450 {
 lab=GND}
-N 194.0625 -552.1875 194.0625 -532.1875 {
+N 190 -550 190 -530 {
 lab=CK}
 N 820 -210 1120 -210 {
 lab=HV}
@@ -76,9 +76,9 @@ N 390 -120 520 -120 {
 lab=D}
 N 970 -90 970 -70 {
 lab=GND}
-N 194.0625 -342.1875 194.0625 -322.1875 {
+N 190 -340 190 -320 {
 lab=GND}
-N 194.0625 -422.1875 194.0625 -402.1875 {
+N 190 -420 190 -400 {
 lab=CKN}
 N 1620 -210 1920 -210 {
 lab=HV2}
@@ -88,12 +88,12 @@ N 1770 -90 1770 -70 {
 lab=GND}
 C {sky130_tests/charge_pump.sym} 670 -150 0 0 {name=x1}
 C {sky130_tests/charge_pump_phasegen.sym} 240 -150 0 0 {name=x2}
-C {devices/vsource.sym} 54.0625 -502.1875 0 0 {name=V1 value=1.8}
-C {devices/vdd.sym} 54.0625 -532.1875 0 0 {name=l1 lab=VCC}
-C {devices/lab_pin.sym} 54.0625 -452.1875 0 0 {name=p9 sig_type=std_logic lab=GND}
-C {devices/vsource.sym} 194.0625 -502.1875 0 0 {name=V2 value="pulse 0 1.8 0 100p 100p 5n 10n"}
-C {devices/lab_pin.sym} 194.0625 -452.1875 0 0 {name=p1 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} 194.0625 -552.1875 0 1 {name=p2 sig_type=std_logic lab=CK}
+C {devices/vsource.sym} 50 -500 0 0 {name=V1 value=1.8}
+C {devices/vdd.sym} 50 -530 0 0 {name=l1 lab=VCC}
+C {devices/lab_pin.sym} 50 -450 0 0 {name=p9 sig_type=std_logic lab=GND}
+C {devices/vsource.sym} 190 -500 0 0 {name=V2 value="pulse 0 1.8 0 100p 100p 5n 10n"}
+C {devices/lab_pin.sym} 190 -450 0 0 {name=p1 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 190 -550 0 1 {name=p2 sig_type=std_logic lab=CK}
 C {devices/lab_wire.sym} 430 -180 0 1 {name=p3 lab=A}
 C {devices/lab_wire.sym} 430 -160 0 1 {name=p4 lab=B}
 C {devices/lab_wire.sym} 430 -140 0 1 {name=p5 lab=C}
@@ -124,7 +124,7 @@ value="
   write tb_charge_pump.raw
 .endc
 "}
-C {devices/launcher.sym} 590 -250.3125 0 0 {name=h5
+C {devices/launcher.sym} 590 -250 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_charge_pump.raw tran"
 }
@@ -132,9 +132,9 @@ C {devices/isource.sym} 970 -120 0 0 {name=I0 value="pwl 0 0 2u 0 2.01u 50u 3u 5
 C {devices/lab_pin.sym} 970 -70 0 0 {name=p10 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 970 -180 0 0 {name=Vload}
 C {sky130_tests/charge_pump2.sym} 1470 -200 0 0 {name=x3}
-C {devices/vsource.sym} 194.0625 -372.1875 0 0 {name=V3 value="pulse 1.8 0 0 100p 100p 5n 10n"}
-C {devices/lab_pin.sym} 194.0625 -322.1875 0 0 {name=p11 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} 194.0625 -422.1875 0 1 {name=p12 sig_type=std_logic lab=CKN}
+C {devices/vsource.sym} 190 -370 0 0 {name=V3 value="pulse 1.8 0 0 100p 100p 5n 10n"}
+C {devices/lab_pin.sym} 190 -320 0 0 {name=p11 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 190 -420 0 1 {name=p12 sig_type=std_logic lab=CKN}
 C {devices/lab_pin.sym} 1320 -140 0 0 {name=p14 lab=CK}
 C {devices/lab_pin.sym} 1320 -120 0 0 {name=p16 lab=CKN}
 C {devices/lab_pin.sym} 1920 -210 0 1 {name=p13 lab=HV2}
@@ -147,3 +147,4 @@ C {devices/lab_pin.sym} 1700 -130 0 0 {name=p17 sig_type=std_logic lab=GND}
 C {devices/isource.sym} 1770 -120 0 0 {name=I1 value="pwl 0 0 2u 0 2.01u 50u 3u 50u 3.01u 100u"}
 C {devices/lab_pin.sym} 1770 -70 0 0 {name=p18 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1770 -180 0 0 {name=Vload1}
+C {devices/noconn.sym} 50 -450 0 1 {name=l3}
