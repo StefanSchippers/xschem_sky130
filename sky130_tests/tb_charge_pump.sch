@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 400 -540 1280 -280 {flags=graph
+B 2 420 -740 1300 -480 {flags=graph
 y1=0
 y2=2
 ypos1=0.143077
@@ -31,7 +31,7 @@ a
 b
 c
 d"}
-B 2 400 -940 1280 -540 {flags=graph
+B 2 420 -1140 1300 -740 {flags=graph
 y1=0
 y2=6.3
 ypos1=0
@@ -43,11 +43,12 @@ x1=0
 x2=5e-06
 divx=5
 subdivx=1
-node="hv
-\\"10000 * Iload; i(vload) 10000 *\\"
-vcc
-hv2"
-color="4 7 12 10"
+node="vcc
+hv
+hv2
+hv_ideal
+\\"10000 * Iload; i(vload) 10000 *\\""
+color="15 7 12 11 17"
 dataset=-1
 unitx=1
 logx=0
@@ -56,6 +57,7 @@ divy=10
 hilight_wave=-1}
 T {Global
 Node} 20 -620 0 0 0.4 0.4 {}
+T {Ideal charge pump} 1370 -490 0 0 1 1 {}
 N 50 -470 50 -450 {
 lab=GND}
 N 190 -470 190 -450 {
@@ -85,6 +87,12 @@ lab=HV2}
 N 1700 -150 1700 -130 {
 lab=GND}
 N 1770 -90 1770 -70 {
+lab=GND}
+N 1620 -400 1920 -400 {
+lab=HV_IDEAL}
+N 1700 -340 1700 -320 {
+lab=GND}
+N 1770 -280 1770 -260 {
 lab=GND}
 C {sky130_tests/charge_pump.sym} 670 -150 0 0 {name=x1}
 C {sky130_tests/charge_pump_phasegen.sym} 240 -150 0 0 {name=x2}
@@ -124,7 +132,7 @@ value="
   write tb_charge_pump.raw
 .endc
 "}
-C {devices/launcher.sym} 590 -250 0 0 {name=h5
+C {devices/launcher.sym} 610 -450 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_charge_pump.raw tran"
 }
@@ -148,3 +156,16 @@ C {devices/isource.sym} 1770 -120 0 0 {name=I1 value="pwl 0 0 2u 0 2.01u 50u 3u 
 C {devices/lab_pin.sym} 1770 -70 0 0 {name=p18 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1770 -180 0 0 {name=Vload1}
 C {devices/noconn.sym} 50 -450 0 1 {name=l3}
+C {devices/capa.sym} 1700 -370 0 0 {name=C3
+m=1
+value=20p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 1700 -320 0 0 {name=p19 sig_type=std_logic lab=GND}
+C {devices/isource.sym} 1770 -310 0 0 {name=I2 value="pwl 0 0 2u 0 2.01u 50u 3u 50u 3.01u 100u"}
+C {devices/lab_pin.sym} 1770 -260 0 0 {name=p20 sig_type=std_logic lab=GND}
+C {devices/ammeter.sym} 1770 -370 0 0 {name=Vload2}
+C {devices/lab_pin.sym} 1920 -400 0 1 {name=p21 lab=HV_IDEAL}
+C {sky130_tests/charge_pump_ideal.sym} 1470 -390 0 0 {name=x7}
+C {devices/lab_pin.sym} 1320 -330 0 0 {name=p22 lab=CK}
+C {devices/lab_pin.sym} 1320 -310 0 0 {name=p23 lab=CKN}
