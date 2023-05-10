@@ -56,7 +56,7 @@ lab=D}
 N 100 -420 130 -420 {
 lab=CK}
 C {sky130_stdcells/nand2_2.sym} 470 -1000 0 0 {name=x1 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_8.sym} 660 -1000 0 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_12.sym} 660 -1000 0 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 470 -860 0 0 {name=x5 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 630 -800 0 0 {name=x6 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/lvtnot.sym} 450 -700 0 0 {name=x7 m=1 
@@ -65,10 +65,10 @@ C {sky130_tests/lvtnot.sym} 450 -700 0 0 {name=x7 m=1
 C {sky130_tests/lvtnot.sym} 530 -700 0 0 {name=x8 m=1 
 + W_N=0.5 L_N=1 W_P=1 L_P=1 
 + VCCPIN=VCC VSSPIN=GND}
-C {sky130_stdcells/inv_8.sym} 950 -800 0 0 {name=x9 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_12.sym} 950 -800 0 0 {name=x9 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 730 -800 0 0 {name=x10 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_2.sym} 470 -540 0 0 {name=x11 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_8.sym} 660 -540 0 0 {name=x12 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_12.sym} 660 -540 0 0 {name=x12 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 470 -400 0 0 {name=x13 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 630 -340 0 0 {name=x14 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/lvtnot.sym} 450 -240 0 0 {name=x15 m=1 
@@ -77,7 +77,7 @@ C {sky130_tests/lvtnot.sym} 450 -240 0 0 {name=x15 m=1
 C {sky130_tests/lvtnot.sym} 530 -240 0 0 {name=x16 m=1 
 + W_N=0.5 L_N=1 W_P=1 L_P=1 
 + VCCPIN=VCC VSSPIN=GND}
-C {sky130_stdcells/inv_8.sym} 950 -340 0 0 {name=x17 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_12.sym} 950 -340 0 0 {name=x17 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 730 -340 0 0 {name=x18 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 350 -1020 0 0 {name=p1 sig_type=std_logic lab=CKN}
 C {devices/lab_pin.sym} 350 -980 0 0 {name=p2 sig_type=std_logic lab=BN}
