@@ -59,7 +59,6 @@ hilight_wave=-1
 T {Global
 Node} 20 -620 0 0 0.4 0.4 {}
 T {Ideal charge pump} 1380 -450 0 0 0.4 0.4 {}
-T {This charge pump deadlocks on high loads} 1370 -210 0 0 0.4 0.4 {}
 N 50 -470 50 -450 {
 lab=GND}
 N 190 -470 190 -450 {
