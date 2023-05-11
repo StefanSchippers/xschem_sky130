@@ -60,25 +60,25 @@ N 1090 -800 1240 -800 {
 lab=HV}
 N 1090 -610 1110 -610 {
 lab=HV3}
-N 1110 -340 1110 -220 {
+N 1110 -340 1110 -160 {
 lab=B}
-N 950 -340 950 -260 {
+N 950 -340 950 -200 {
 lab=A}
-N 800 -340 800 -140 {
+N 800 -340 800 -80 {
 lab=D}
-N 640 -340 640 -180 {
+N 640 -340 640 -120 {
 lab=C}
-N 490 -340 490 -220 {
+N 490 -340 490 -160 {
 lab=B}
-N 330 -340 330 -260 {
+N 330 -340 330 -200 {
 lab=A}
-N 950 -260 1140 -260 {
+N 950 -200 1140 -200 {
 lab=A}
-N 1110 -220 1140 -220 {
+N 1110 -160 1140 -160 {
 lab=B}
-N 640 -180 1140 -180 {
+N 640 -120 1140 -120 {
 lab=C}
-N 800 -140 1140 -140 {
+N 800 -80 1140 -80 {
 lab=D}
 N 230 -610 330 -610 {
 lab=VCC}
@@ -96,17 +96,17 @@ N 950 -480 950 -460 {
 lab=G3}
 N 950 -460 1020 -460 {
 lab=G3}
-N 490 -220 1110 -220 {
+N 490 -160 1110 -160 {
 lab=B}
-N 330 -260 950 -260 {
+N 330 -200 950 -200 {
 lab=A}
-N 230 -140 800 -140 {
+N 230 -80 800 -80 {
 lab=D}
-N 230 -180 640 -180 {
+N 230 -120 640 -120 {
 lab=C}
-N 230 -220 490 -220 {
+N 230 -160 490 -160 {
 lab=B}
-N 230 -260 330 -260 {
+N 230 -200 330 -200 {
 lab=A}
 N 1060 -760 1060 -740 {
 lab=G3}
@@ -234,10 +234,10 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -370 0 0 {name=C3 model=cap_mim_m3_1 W=6 L
 C {sky130_fd_pr/cap_mim_m3_1.sym} 800 -370 0 0 {name=C4 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -370 0 0 {name=C5 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1110 -370 0 0 {name=C6 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {devices/ipin.sym} 230 -260 0 0 {name=p9 lab=A}
-C {devices/ipin.sym} 230 -220 0 0 {name=p10 lab=B}
-C {devices/ipin.sym} 230 -180 0 0 {name=p11 lab=C}
-C {devices/ipin.sym} 230 -140 0 0 {name=p12 lab=D}
+C {devices/ipin.sym} 230 -200 0 0 {name=p9 lab=A}
+C {devices/ipin.sym} 230 -160 0 0 {name=p10 lab=B}
+C {devices/ipin.sym} 230 -120 0 0 {name=p11 lab=C}
+C {devices/ipin.sym} 230 -80 0 0 {name=p12 lab=D}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_wire.sym} 580 -610 0 0 {name=p1 sig_type=std_logic lab=HV1}
 C {devices/lab_wire.sym} 890 -610 0 0 {name=p2 sig_type=std_logic lab=HV2}
