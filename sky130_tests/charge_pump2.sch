@@ -5,17 +5,17 @@ K {}
 V {}
 S {}
 E {}
-N 510 -1040 620 -1040 {
+N 520 -1040 620 -1040 {
 lab=VCC}
-N 510 -1040 510 -840 {
+N 520 -1040 520 -840 {
 lab=VCC}
-N 510 -840 620 -840 {
+N 520 -840 620 -840 {
 lab=VCC}
-N 880 -1040 970 -1040 {
+N 880 -1040 980 -1040 {
 lab=HV1}
-N 970 -1040 970 -840 {
+N 980 -1040 980 -840 {
 lab=HV1}
-N 880 -840 970 -840 {
+N 880 -840 980 -840 {
 lab=HV1}
 N 650 -840 850 -840 {
 lab=#net1}
@@ -29,19 +29,19 @@ N 840 -1040 840 -700 {
 lab=#net2}
 N 840 -640 840 -560 {
 lab=#net4}
-N 90 -940 510 -940 {
+N 90 -940 520 -940 {
 lab=VCC}
-N 1800 -1040 1910 -1040 {
+N 1810 -1040 1910 -1040 {
 lab=HV1}
-N 1800 -1040 1800 -840 {
+N 1810 -1040 1810 -840 {
 lab=HV1}
-N 1800 -840 1910 -840 {
+N 1810 -840 1910 -840 {
 lab=HV1}
-N 2170 -1040 2260 -1040 {
+N 2170 -1040 2270 -1040 {
 lab=HV}
-N 2260 -1040 2260 -840 {
+N 2270 -1040 2270 -840 {
 lab=HV}
-N 2170 -840 2260 -840 {
+N 2170 -840 2270 -840 {
 lab=HV}
 N 1940 -840 2140 -840 {
 lab=#net5}
@@ -55,9 +55,9 @@ N 2130 -1040 2130 -700 {
 lab=#net6}
 N 2130 -640 2130 -560 {
 lab=#net8}
-N 970 -940 1800 -940 {
+N 980 -940 1810 -940 {
 lab=HV1}
-N 2260 -940 2670 -940 {
+N 2270 -940 2670 -940 {
 lab=HV}
 N 840 -480 840 -400 {
 lab=CKN}
@@ -89,11 +89,11 @@ N 2170 -800 2170 -720 {
 lab=GP4}
 N 2170 -720 2560 -720 {
 lab=GP4}
-N 2170 -1000 2230 -1000 {
+N 2170 -1000 2240 -1000 {
 lab=GP3}
-N 2230 -1000 2230 -760 {
+N 2240 -1000 2240 -760 {
 lab=GP3}
-N 2230 -760 2380 -760 {
+N 2240 -760 2380 -760 {
 lab=GP3}
 N 1270 -940 1270 -880 {
 lab=HV1}
@@ -113,11 +113,11 @@ N 880 -800 880 -720 {
 lab=GP2}
 N 880 -720 1270 -720 {
 lab=GP2}
-N 880 -1000 940 -1000 {
+N 880 -1000 950 -1000 {
 lab=GP1}
-N 940 -1000 940 -760 {
+N 950 -1000 950 -760 {
 lab=GP1}
-N 940 -760 1090 -760 {
+N 950 -760 1090 -760 {
 lab=GP1}
 N 1090 -790 1230 -850 {
 lab=GP1}
@@ -409,7 +409,7 @@ C {devices/lab_wire.sym} 1030 -760 0 0 {name=p1 sig_type=std_logic lab=GP1}
 C {devices/lab_wire.sym} 1030 -720 0 0 {name=p2 sig_type=std_logic lab=GP2}
 C {devices/lab_wire.sym} 470 -760 0 1 {name=p3 sig_type=std_logic lab=GN1}
 C {devices/lab_wire.sym} 470 -720 0 1 {name=p4 sig_type=std_logic lab=GN2}
-C {devices/lab_wire.sym} 2310 -760 0 0 {name=p5 sig_type=std_logic lab=GP3}
-C {devices/lab_wire.sym} 2310 -720 0 0 {name=p6 sig_type=std_logic lab=GP4}
-C {devices/lab_wire.sym} 1750 -760 0 1 {name=p7 sig_type=std_logic lab=GN3}
-C {devices/lab_wire.sym} 1750 -720 0 1 {name=p8 sig_type=std_logic lab=GN4}
+C {devices/lab_wire.sym} 2320 -760 0 0 {name=p5 sig_type=std_logic lab=GP3}
+C {devices/lab_wire.sym} 2320 -720 0 0 {name=p6 sig_type=std_logic lab=GP4}
+C {devices/lab_wire.sym} 1760 -760 0 1 {name=p7 sig_type=std_logic lab=GN3}
+C {devices/lab_wire.sym} 1760 -720 0 1 {name=p8 sig_type=std_logic lab=GN4}

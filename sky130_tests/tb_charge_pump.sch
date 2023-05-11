@@ -62,7 +62,7 @@ Node} 80 -640 0 0 0.4 0.4 {}
 T {Ideal charge pump} 1340 -610 0 0 0.4 0.4 {}
 T {Equivalent circuit
 Rout = nstage  / Cstage / freq = 2 / 1.82p / 100Meg = 10.99k
-Vout = (nstage+1) *vcc = 3 * 1.8 = 5.4} 1240 -870 0 0 0.4 0.4 {}
+Vout = (nstage+1) * vcc = 3 * 1.8 = 5.4} 1240 -870 0 0 0.4 0.4 {}
 N 60 -530 60 -510 {
 lab=GND}
 N 60 -400 60 -380 {
