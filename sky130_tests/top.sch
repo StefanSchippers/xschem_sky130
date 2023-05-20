@@ -763,3 +763,4 @@ sensor"
 tclcommand="xschem load_new_window https://raw.githubusercontent.com/JorgeMarinN/SDC_SKY130_MPW5/mpw5/xschem/user_analog_project_wrapper.sch"}
 C {sky130_tests/tb_charge_pump.sym} 480 -1200 0 0 {name=x35}
 C {sky130_tests/cmos_ac_sweep.sym} 480 -1160 0 0 {name=x36}
+C {sky130_tests/test_hvl_cells.sym} 480 -1120 0 0 {name=x37}
