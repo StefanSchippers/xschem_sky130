@@ -46,7 +46,8 @@ unitx=1
 logx=0
 logy=0
 color=4
-node=i(vreram)}
+node=i(vreram)
+xlabmag=1.5}
 B 2 1100 -710 1630 -400 {flags=graph,unlocked
 y1=-2.17074
 y2=2.14926
@@ -65,7 +66,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+xlabmag=1.5}
 B 2 530 -550 1060 -240 {flags=graph,unlocked
 y1=-0.000374848
 y2=0.00143515
@@ -86,7 +87,8 @@ logx=0
 logy=0
 color=4
 node=i(vreram)
-sweep=top}
+sweep=top
+xlabmag=1.5}
 T {Test with new OSDI enabled ngspice} 20 -870 0 0 1 1 {}
 T {Reram symbol created using info
 available here (Courtesy Barak Hoffer):} 30 -770 0 0 0.7 0.7 {}
