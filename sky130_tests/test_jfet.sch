@@ -35,7 +35,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=-19.99
+x2=19.99
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,7 +47,7 @@ unitx=1
 logx=0
 logy=0
 rainbow=0
-sweep=d1}
+}
 N 340 -300 340 -250 {
 lab=#net1}
 N 340 -190 340 -110 {
