@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -222,7 +222,7 @@ lab=HV1}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 620 -1020 1 1 {name=M8
 L=0.5
-W=8
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -236,7 +236,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 620 -820 1 1 {name=M9
 L=0.5
-W=8
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -250,14 +250,14 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 880 -1020 1 1 {name=M10
 L=0.5
-W=16
+W=12
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 880 -820 1 1 {name=M11
 L=0.5
-W=16
+W=12
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -267,7 +267,7 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 840 -670 0 0 {name=C8 model=cap_mim_m3_1 W=30 
 C {devices/lab_pin.sym} 90 -940 0 0 {name=p20 lab=VCC}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1910 -1020 1 1 {name=M12
 L=0.5
-W=8
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -281,7 +281,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1910 -820 1 1 {name=M13
 L=0.5
-W=8
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -295,14 +295,14 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2170 -1020 1 1 {name=M14
 L=0.5
-W=16
+W=12
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2170 -820 1 1 {name=M15
 L=0.5
-W=16
+W=12
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -311,10 +311,10 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1950 -670 0 0 {name=C9 model=cap_mim_m3_1 W=30
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2130 -670 0 0 {name=C10 model=cap_mim_m3_1 W=30 L=15 MF=1 spiceprefix=X}
 C {devices/iopin.sym} 2670 -940 0 0 {name=p21 lab=HV}
 C {devices/lab_wire.sym} 1030 -940 0 0 {name=p22 sig_type=std_logic lab=HV1}
-C {sky130_stdcells/inv_12.sym} 660 -520 3 0 {name=x12 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 840 -520 3 0 {name=x1 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 1950 -520 3 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 2130 -520 3 0 {name=x3 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_6.sym} 660 -520 3 0 {name=x12 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_6.sym} 840 -520 3 0 {name=x1 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_6.sym} 1950 -520 3 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_6.sym} 2130 -520 3 0 {name=x3 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/ipin.sym} 90 -440 0 0 {name=p24 lab=CK}
 C {devices/ipin.sym} 90 -400 0 0 {name=p25 lab=CKN}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2400 -850 0 1 {name=M1
@@ -352,7 +352,7 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1270 -670 0 0 {name=C4 model=cap_mim_m3_1 W=6 
 C {sky130_stdcells/inv_2.sym} 2380 -520 3 0 {name=x4 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 2560 -520 3 0 {name=x5 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 1090 -520 3 0 {name=x6 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_4.sym} 1270 -520 3 0 {name=x7 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_2.sym} 1270 -520 3 0 {name=x7 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_fd_pr/cap_mim_m3_1.sym} 200 -670 0 0 {name=C5 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 380 -670 0 0 {name=C6 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
 C {sky130_stdcells/inv_2.sym} 200 -520 3 0 {name=x8 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }

@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -75,6 +75,8 @@ T {Ideal charge pump} 1340 -610 0 0 0.4 0.4 {}
 T {Equivalent circuit
 Rout = nstage  / Cstage / freq = 2 / 1.82p / 100Meg = 10.99k
 Vout = (nstage+1) * vcc = 3 * 1.8 = 5.4} 1240 -870 0 0 0.4 0.4 {}
+T {Comparison of two charge pump architectures with respect to ideal behaviour
+(thevenin equivalent and ideal devices dickson charge pump)} 140 -1030 0 0 0.8 0.8 {}
 N 60 -530 60 -510 {
 lab=GND}
 N 60 -400 60 -380 {
@@ -111,13 +113,13 @@ N 1660 -500 1660 -480 {
 lab=GND}
 N 1730 -440 1730 -420 {
 lab=GND}
-N 1300 -740 1350 -740 {
+N 1300 -740 1420 -740 {
 lab=#net1}
 N 1300 -740 1300 -710 {
 lab=#net1}
 N 1300 -650 1300 -630 {
 lab=GND}
-N 1410 -740 1580 -740 {
+N 1480 -740 1580 -740 {
 lab=HV_IDEAL2}
 N 1580 -740 1820 -740 {
 lab=HV_IDEAL2}
@@ -127,10 +129,11 @@ N 1730 -620 1730 -600 {
 lab=GND}
 C {sky130_tests/charge_pump.sym} 1430 -140 0 0 {name=x1}
 C {sky130_tests/charge_pump_phasegen.sym} 1050 -140 0 0 {name=x2}
-C {devices/vsource.sym} 60 -560 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 60 -560 0 0 {name=V1 value=VCC}
 C {devices/vdd.sym} 60 -590 0 0 {name=l1 lab=VCC}
 C {devices/lab_pin.sym} 60 -510 0 0 {name=p9 sig_type=std_logic lab=GND}
-C {devices/vsource.sym} 60 -430 0 0 {name=V2 value="pulse 0 1.8 0 100p 100p 5n 10n"}
+C {devices/vsource.sym} 60 -430 0 0 {name=V2 value="pulse 0 VCC 0 100p 100p
++ \{PER/2-0.1n\} PER"}
 C {devices/lab_pin.sym} 60 -380 0 0 {name=p1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 60 -480 0 1 {name=p2 sig_type=std_logic lab=CK}
 C {devices/lab_wire.sym} 1240 -170 0 1 {name=p3 lab=A}
@@ -141,7 +144,7 @@ C {devices/lab_wire.sym} 1240 -110 0 1 {name=p7 lab=D}
 C {devices/lab_pin.sym} 1820 -200 0 1 {name=p8 lab=HV}
 C {devices/capa.sym} 1660 -170 0 0 {name=C1
 m=1
-value=20p
+value=15p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1660 -120 0 0 {name=p15 sig_type=std_logic lab=GND}
@@ -154,9 +157,12 @@ value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 spice_ignore=false
 place=header}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stefan Schippers"}
-C {devices/code_shown.sym} 20 -840 0 0 {name=STIMULI 
+C {devices/code_shown.sym} 10 -860 0 0 {name=STIMULI 
 only_toplevel=true
 value="
+.param VCC=1.8
+.param FREQ=100e6
+.param PER=\{1/FREQ\}
 .control
   save all
   tran 100p 5u
@@ -168,13 +174,15 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/tb_charge_pump.raw tran"
 }
 C {devices/isource.sym} 1730 -110 0 0 {name=I0 value="pwl 0 0 
-+ 2u 0 2.01u 50u
-+ 3u 50u 3.01u 100u
-+ 4u 100u 4.01u 200u"}
++ 1u 0 1.01u 50u
++ 2u 50u 2.01u 100u
++ 3u 100u 3.01u 200u
++ 4u 200u 4.01u 300u"}
 C {devices/lab_pin.sym} 1730 -60 0 0 {name=p10 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -170 0 0 {name=Vload}
 C {sky130_tests/charge_pump2.sym} 1430 -370 0 0 {name=x3}
-C {devices/vsource.sym} 60 -300 0 0 {name=V3 value="pulse 1.8 0 0 100p 100p 5n 10n"}
+C {devices/vsource.sym} 60 -300 0 0 {name=V3 value="pulse VCC 0 0 100p 100p
++ \{PER/2-0.1n\} PER"}
 C {devices/lab_pin.sym} 60 -250 0 0 {name=p11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 60 -350 0 1 {name=p12 sig_type=std_logic lab=CKN}
 C {devices/lab_pin.sym} 1280 -310 0 0 {name=p14 lab=CK}
@@ -182,20 +190,21 @@ C {devices/lab_pin.sym} 1280 -290 0 0 {name=p16 lab=CKN}
 C {devices/lab_pin.sym} 1820 -380 0 1 {name=p13 lab=HV2}
 C {devices/capa.sym} 1660 -350 0 0 {name=C2
 m=1
-value=20p
+value=15p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1660 -300 0 0 {name=p17 sig_type=std_logic lab=GND}
 C {devices/isource.sym} 1730 -290 0 0 {name=I1 value="pwl 0 0 
-+ 2u 0 2.01u 50u
-+ 3u 50u 3.01u 100u
-+ 4u 100u 4.01u 200u"}
++ 1u 0 1.01u 50u
++ 2u 50u 2.01u 100u
++ 3u 100u 3.01u 200u
++ 4u 200u 4.01u 300u"}
 C {devices/lab_pin.sym} 1730 -240 0 0 {name=p18 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -350 0 0 {name=Vload1}
 C {devices/noconn.sym} 60 -510 0 1 {name=l3}
 C {devices/capa.sym} 1660 -530 0 0 {name=C3
 m=1
-value=20p
+value=15p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1660 -480 0 0 {name=p19 sig_type=std_logic lab=GND}
@@ -206,12 +215,13 @@ C {sky130_tests/charge_pump_ideal.sym} 1430 -550 0 0 {name=x7}
 C {devices/lab_pin.sym} 1280 -490 0 0 {name=p22 lab=CK}
 C {devices/lab_pin.sym} 1280 -470 0 0 {name=p23 lab=CKN}
 C {devices/isource.sym} 1730 -470 0 0 {name=I2 value="pwl 0 0 
-+ 2u 0 2.01u 50u
-+ 3u 50u 3.01u 100u
-+ 4u 100u 4.01u 200u"}
-C {devices/vsource.sym} 1300 -680 0 0 {name=V4 value=5.4}
-C {devices/res.sym} 1380 -740 1 0 {name=R1
-value=10.99k
++ 1u 0 1.01u 50u
++ 2u 50u 2.01u 100u
++ 3u 100u 3.01u 200u
++ 4u 200u 4.01u 300u"}
+C {devices/vsource.sym} 1300 -680 0 0 {name=V4 value="pwl 0 VCC 1n \{3*VCC\}"}
+C {devices/res.sym} 1450 -740 1 0 {name=R1
+value=\{2/1.82p/FREQ\}
 footprint=1206
 device=resistor
 m=1}
@@ -219,13 +229,14 @@ C {devices/lab_pin.sym} 1300 -630 0 0 {name=p24 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 1820 -740 0 1 {name=p25 lab=HV_IDEAL2}
 C {devices/capa.sym} 1660 -710 0 0 {name=C4
 m=1
-value=20p
+value=15p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1660 -660 0 0 {name=p26 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 1730 -600 0 0 {name=p27 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -710 0 0 {name=Vload3}
 C {devices/isource.sym} 1730 -650 0 0 {name=I3 value="pwl 0 0 
-+ 2u 0 2.01u 50u
-+ 3u 50u 3.01u 100u
-+ 4u 100u 4.01u 200u"}
++ 1u 0 1.01u 50u
++ 2u 50u 2.01u 100u
++ 3u 100u 3.01u 200u
++ 4u 200u 4.01u 300u"}

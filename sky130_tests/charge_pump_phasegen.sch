@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -68,7 +68,7 @@ lab=D}
 N 100 -420 130 -420 {
 lab=CK}
 C {sky130_stdcells/nand2_2.sym} 470 -1000 0 0 {name=x1 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 660 -1000 0 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_4.sym} 660 -1000 0 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 470 -860 0 0 {name=x5 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 630 -800 0 0 {name=x6 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/lvtnot.sym} 450 -700 0 0 {name=x7 m=1 
@@ -80,7 +80,7 @@ C {sky130_tests/lvtnot.sym} 530 -700 0 0 {name=x8 m=1
 C {sky130_stdcells/inv_12.sym} 950 -800 0 0 {name=x9 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 730 -800 0 0 {name=x10 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_2.sym} 470 -540 0 0 {name=x11 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_12.sym} 660 -540 0 0 {name=x12 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_4.sym} 660 -540 0 0 {name=x12 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 470 -400 0 0 {name=x13 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 630 -340 0 0 {name=x14 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_tests/lvtnot.sym} 450 -240 0 0 {name=x15 m=1 
