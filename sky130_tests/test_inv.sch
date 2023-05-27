@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -117,13 +117,6 @@ C {devices/parax_cap.sym} 520 -120 0 0 {name=C4 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 600 -120 0 0 {name=C5 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 680 -120 0 0 {name=C6 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 760 -120 0 0 {name=C7 gnd=0 value=4.01f m=1}
-C {devices/bus_connect.sym} 690 -300 3 1 {name=l2 lab=Z[6]}
-C {devices/bus_connect.sym} 610 -300 3 1 {name=l3 lab=Z[5]}
-C {devices/bus_connect.sym} 530 -300 3 1 {name=l4 lab=Z[4]}
-C {devices/bus_connect.sym} 450 -300 3 1 {name=l5 lab=Z[3]}
-C {devices/bus_connect.sym} 370 -300 3 1 {name=l6 lab=Z[2]}
-C {devices/bus_connect.sym} 290 -300 3 1 {name=l7 lab=Z[1]}
-C {devices/bus_connect.sym} 210 -300 3 1 {name=l8 lab=Z[0]}
 C {devices/lab_pin.sym} 760 -300 0 1 {name=l9 sig_type=std_logic lab=Z[6:0]}
 C {devices/parax_cap.sym} 1020 -120 0 0 {name=C8 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 1100 -120 0 0 {name=C9 gnd=0 value=4f m=1}
@@ -132,13 +125,6 @@ C {devices/parax_cap.sym} 1260 -120 0 0 {name=C11 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 1340 -120 0 0 {name=C12 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 1420 -120 0 0 {name=C13 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 1500 -120 0 0 {name=C14 gnd=0 value=4.01f m=1}
-C {devices/bus_connect.sym} 1430 -300 3 1 {name=l10 lab=Y[6]}
-C {devices/bus_connect.sym} 1350 -300 3 1 {name=l11 lab=Y[5]}
-C {devices/bus_connect.sym} 1270 -300 3 1 {name=l12 lab=Y[4]}
-C {devices/bus_connect.sym} 1190 -300 3 1 {name=l13 lab=Y[3]}
-C {devices/bus_connect.sym} 1110 -300 3 1 {name=l14 lab=Y[2]}
-C {devices/bus_connect.sym} 1030 -300 3 1 {name=l15 lab=Y[1]}
-C {devices/bus_connect.sym} 950 -300 3 1 {name=l16 lab=Y[0]}
 C {devices/lab_pin.sym} 1500 -300 0 1 {name=l17 sig_type=std_logic lab=Y[6:0]}
 C {sky130_tests/not.sym} 240 -190 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
 C {sky130_tests/not.sym} 320 -190 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
@@ -177,11 +163,11 @@ vvcc vcc 0
 .measure tran trise 
 + TRIG v(z[6]) TD=10.5n VAL=0.1 RISE=1
 + TARG v(z[6]) TD=10.5n VAL=1.7 RISE=1
-.save all
-.tran 0.004n 30n
 **** interactive sim
 .control
-write test_inv.raw
+  save all
+  tran 0.004n 30n
+  write test_inv.raw
 * exit
 .endc
 "}
@@ -205,4 +191,17 @@ tclcommand="
 "
 }
 C {sky130_fd_pr/corner.sym} 20 -200 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/lab_pin.sym} 680 -260 0 1 {name=l18 sig_type=std_logic lab=Z[6]}
+C {devices/bus_tap.sym} 210 -300 3 1 {name=l19 lab=[0]}
+C {devices/bus_tap.sym} 290 -300 3 1 {name=l2 lab=[1]}
+C {devices/bus_tap.sym} 370 -300 3 1 {name=l3 lab=[2]}
+C {devices/bus_tap.sym} 450 -300 3 1 {name=l4 lab=[3]}
+C {devices/bus_tap.sym} 530 -300 3 1 {name=l5 lab=[4]}
+C {devices/bus_tap.sym} 610 -300 3 1 {name=l6 lab=[5]}
+C {devices/bus_tap.sym} 690 -300 3 1 {name=l7 lab=[6]}
+C {devices/bus_tap.sym} 950 -300 3 1 {name=l8 lab=[0]}
+C {devices/bus_tap.sym} 1030 -300 3 1 {name=l10 lab=[1]}
+C {devices/bus_tap.sym} 1110 -300 3 1 {name=l11 lab=[2]}
+C {devices/bus_tap.sym} 1190 -300 3 1 {name=l12 lab=[3]}
+C {devices/bus_tap.sym} 1270 -300 3 1 {name=l13 lab=[4]}
+C {devices/bus_tap.sym} 1350 -300 3 1 {name=l14 lab=[5]}
+C {devices/bus_tap.sym} 1430 -300 3 1 {name=l15 lab=[6]}

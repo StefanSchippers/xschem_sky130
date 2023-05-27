@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,38 +20,39 @@ V {}
 S {}
 E {}
 B 2 1800 -560 2600 -160 {flags=graph
-y1=0
-y2=2
+y1=-5.5e-16
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=1.5e-06
+x1=0
+x2=0.0001
 divx=5
 subdivx=1
-node=diffout
-color=4
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+color=4
+node=vbg}
 B 2 1800 -960 2600 -560 {flags=graph
-y1=0.69
-y2=0.71
+y1=-4.7e-15
+y2=0.93
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=1.5e-06
+x1=0
+x2=0.0001
 divx=5
 subdivx=1
-node="plus
-minus"
+node="x1.plus
+x1.minus"
 color="4 7"
 dataset=-1
 unitx=1
@@ -59,24 +60,27 @@ logx=0
 logy=0
 }
 B 2 1800 -1360 2600 -960 {flags=graph
-y1=0.89
-y2=0.91
+y1=-7.7e-18
+y2=0.83
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=1.5e-06
+x1=0
+x2=0.0001
 divx=5
 subdivx=1
-node=adj
+node=x1.adj
 color=4
 dataset=-1
 unitx=1
 logx=0
 logy=0
 }
+T {@#0:resolved_net} 130 -650 0 0 0.3 0.3 {name=p116 layer=15}
+T {@#0:resolved_net} 100 -560 0 0 0.3 0.3 {name=p94 layer=15}
+T {@#0:resolved_net} 100 -530 0 0 0.3 0.3 {name=p93 layer=15}
 N 790 -460 820 -460 {lab=VCC}
 N 550 -460 580 -460 {lab=VCC}
 N 520 -290 550 -290 {lab=VSS}
@@ -142,12 +146,12 @@ N 1300 -560 1450 -560 { lab=DIFFOUT}
 N 1210 -770 1210 -370 {
 lab=G2}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/ipin.sym} 100 -520 0 0 { name=p93 lab=PLUS }
-C {devices/ipin.sym} 100 -540 0 0 { name=p94 lab=MINUS }
-C {devices/ipin.sym} 100 -580 0 0 { name=p95 lab=EN_N }
-C {devices/ipin.sym} 100 -430 0 0 { name=p96 lab=VSS }
-C {devices/ipin.sym} 100 -460 0 0 { name=p97 lab=VCC }
-C {devices/opin.sym} 140 -550 0 0 { name=p116 lab=DIFFOUT }
+C {devices/ipin.sym} 90 -520 0 0 { name=p93 lab=PLUS }
+C {devices/ipin.sym} 90 -550 0 0 { name=p94 lab=MINUS }
+C {devices/ipin.sym} 90 -610 0 0 { name=p95 lab=EN_N }
+C {devices/ipin.sym} 90 -400 0 0 { name=p96 lab=VSS }
+C {devices/ipin.sym} 90 -430 0 0 { name=p97 lab=VCC }
+C {devices/opin.sym} 130 -610 0 0 { name=p116 lab=DIFFOUT }
 C {devices/lab_pin.sym} 790 -460 0 0 {name=p20 lab=VCC}
 C {devices/lab_pin.sym} 580 -460 0 1 {name=p21 lab=VCC}
 C {devices/lab_pin.sym} 520 -290 0 0 {name=p22 lab=VSS}
@@ -333,13 +337,13 @@ spiceprefix=X
  }
 C {devices/lab_pin.sym} 910 -800 0 0 {name=l8 lab=ADJ}
 C {devices/lab_pin.sym} 910 -650 0 0 {name=p11 lab=VCC}
-C {devices/ipin.sym} 100 -480 0 0 { name=p12 lab=ADJ }
+C {devices/ipin.sym} 90 -450 0 0 { name=p12 lab=ADJ }
 C {sky130_tests/not.sym} 260 -780 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
 C {devices/lab_pin.sym} 220 -780 0 0 {name=p15 lab=START}
 C {devices/lab_pin.sym} 300 -780 0 1 {name=p16 lab=START_N}
 C {devices/lab_pin.sym} 1130 -830 0 0 {name=p17 lab=START}
 C {devices/lab_pin.sym} 1130 -710 0 0 {name=p18 lab=START_N}
-C {devices/ipin.sym} 100 -500 0 0 { name=p19 lab=START }
+C {devices/ipin.sym} 90 -470 0 0 { name=p19 lab=START }
 C {devices/lab_pin.sym} 950 -610 0 0 {name=p27 lab=VSS}
 C {sky130_tests/passgate_nlvt.sym} 1130 -770 0 0 {name=x3 W_N=0.5 L_N=0.35 W_P=0.5 L_P=0.35 
     

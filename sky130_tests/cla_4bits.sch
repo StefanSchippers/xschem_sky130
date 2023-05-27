@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -12,6 +13,8 @@ C4 = G[3] | P[3] & G[2] | P[3] & P[2] & G[1] | P[3] & P[2] & P[1] & G[0] | P[3] 
 T {SG = G[3] | P[3] & G[2] | P[3] & P[2] & G[1] | P[3] & P[2] & P[1] & G[0];
 SP = P[3] & P[2] & P[1] & P[0];
 } 40 -1050 0 0 0.4 0.4 {font=monospace}
+T {@#0:resolved_net} 300 -255 0 0 0.3 0.3 {name=p58 layer=15}
+T {@#0:resolved_net} 300 -225 0 0 0.3 0.3 {name=p59 layer=15}
 N 100 -270 120 -270 {
 lab=P[3:0]}
 N 100 -210 120 -210 {
