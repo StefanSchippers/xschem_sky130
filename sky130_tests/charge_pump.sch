@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -142,7 +142,7 @@ N 940 -800 1030 -800 {
 lab=HV2}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 440 -590 3 0 {name=M1
 L=0.5
-W=12
+W=16
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -170,7 +170,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 750 -590 3 0 {name=M3
 L=0.5
-W=12
+W=16
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -228,7 +228,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1060 -780 3 0 {name=M7
 L=0.5
-W=12
+W=16
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -240,12 +240,12 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -370 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -370 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 490 -370 0 0 {name=C2 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -370 0 0 {name=C3 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -370 0 0 {name=C3 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 800 -370 0 0 {name=C4 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -370 0 0 {name=C5 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1110 -370 0 0 {name=C6 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -370 0 0 {name=C5 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1110 -370 0 0 {name=C6 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
 C {devices/ipin.sym} 230 -200 0 0 {name=p9 lab=A}
 C {devices/ipin.sym} 230 -160 0 0 {name=p10 lab=B}
 C {devices/ipin.sym} 230 -120 0 0 {name=p11 lab=C}

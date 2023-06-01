@@ -222,7 +222,7 @@ lab=HV1}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 620 -1020 1 1 {name=M8
 L=0.5
-W=12
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -236,7 +236,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 620 -820 1 1 {name=M9
 L=0.5
-W=12
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -250,14 +250,14 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 880 -1020 1 1 {name=M10
 L=0.5
-W=12
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 880 -820 1 1 {name=M11
 L=0.5
-W=12
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -267,7 +267,7 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 840 -670 0 0 {name=C8 model=cap_mim_m3_1 W=30 
 C {devices/lab_pin.sym} 90 -940 0 0 {name=p20 lab=VCC}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1910 -1020 1 1 {name=M12
 L=0.5
-W=12
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -281,7 +281,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1910 -820 1 1 {name=M13
 L=0.5
-W=12
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -295,14 +295,14 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2170 -1020 1 1 {name=M14
 L=0.5
-W=12
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 2170 -820 1 1 {name=M15
 L=0.5
-W=12
+W=16
 nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
@@ -331,8 +331,8 @@ nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2380 -670 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2560 -670 0 0 {name=C2 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2380 -670 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2560 -670 0 0 {name=C2 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1110 -850 0 1 {name=M3
 L=0.5
 W=1
@@ -347,14 +347,14 @@ nf=1 mult=1
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1090 -670 0 0 {name=C3 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1270 -670 0 0 {name=C4 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1090 -670 0 0 {name=C3 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1270 -670 0 0 {name=C4 model=cap_mim_m3_1 W=6 L=8 MF=1 spiceprefix=X}
 C {sky130_stdcells/inv_2.sym} 2380 -520 3 0 {name=x4 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 2560 -520 3 0 {name=x5 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 1090 -520 3 0 {name=x6 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 1270 -520 3 0 {name=x7 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 200 -670 0 0 {name=C5 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 380 -670 0 0 {name=C6 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 200 -670 0 0 {name=C5 model=cap_mim_m3_1 W=6 L=4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 380 -670 0 0 {name=C6 model=cap_mim_m3_1 W=6 L=4 MF=1 spiceprefix=X}
 C {sky130_stdcells/inv_2.sym} 200 -520 3 0 {name=x8 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 380 -520 3 0 {name=x9 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 360 -850 0 0 {name=M5
@@ -385,8 +385,8 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -670 0 0 {name=C11 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1670 -670 0 0 {name=C12 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -670 0 0 {name=C11 model=cap_mim_m3_1 W=6 L=4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1670 -670 0 0 {name=C12 model=cap_mim_m3_1 W=6 L=4 MF=1 spiceprefix=X}
 C {sky130_stdcells/inv_2.sym} 1490 -520 3 0 {name=x10 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 1670 -520 3 0 {name=x11 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1650 -850 0 0 {name=M7

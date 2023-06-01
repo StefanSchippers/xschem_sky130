@@ -174,10 +174,10 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/tb_charge_pump.raw tran"
 }
 C {devices/isource.sym} 1730 -110 0 0 {name=I0 value="pwl 0 0 
-+ 1u 0 1.01u 50u
-+ 2u 50u 2.01u 100u
-+ 3u 100u 3.01u 200u
-+ 4u 200u 4.01u 300u"}
++ 1u 0 1.01u 100u
++ 2u 100u 2.01u 150u
++ 3u 150u 3.01u 200u
++ 4u 200u 4.01u 250u"}
 C {devices/lab_pin.sym} 1730 -60 0 0 {name=p10 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -170 0 0 {name=Vload}
 C {sky130_tests/charge_pump2.sym} 1430 -370 0 0 {name=x3}
@@ -195,10 +195,10 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1660 -300 0 0 {name=p17 sig_type=std_logic lab=GND}
 C {devices/isource.sym} 1730 -290 0 0 {name=I1 value="pwl 0 0 
-+ 1u 0 1.01u 50u
-+ 2u 50u 2.01u 100u
-+ 3u 100u 3.01u 200u
-+ 4u 200u 4.01u 300u"}
++ 1u 0 1.01u 100u
++ 2u 100u 2.01u 150u
++ 3u 150u 3.01u 200u
++ 4u 200u 4.01u 250u"}
 C {devices/lab_pin.sym} 1730 -240 0 0 {name=p18 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -350 0 0 {name=Vload1}
 C {devices/noconn.sym} 60 -510 0 1 {name=l3}
@@ -215,10 +215,10 @@ C {sky130_tests/charge_pump_ideal.sym} 1430 -550 0 0 {name=x7}
 C {devices/lab_pin.sym} 1280 -490 0 0 {name=p22 lab=CK}
 C {devices/lab_pin.sym} 1280 -470 0 0 {name=p23 lab=CKN}
 C {devices/isource.sym} 1730 -470 0 0 {name=I2 value="pwl 0 0 
-+ 1u 0 1.01u 50u
-+ 2u 50u 2.01u 100u
-+ 3u 100u 3.01u 200u
-+ 4u 200u 4.01u 300u"}
++ 1u 0 1.01u 100u
++ 2u 100u 2.01u 150u
++ 3u 150u 3.01u 200u
++ 4u 200u 4.01u 250u"}
 C {devices/vsource.sym} 1300 -680 0 0 {name=V4 value="pwl 0 VCC 1n \{3*VCC\}"}
 C {devices/res.sym} 1450 -740 1 0 {name=R1
 value=\{2/1.82p/FREQ\}
@@ -236,7 +236,7 @@ C {devices/lab_pin.sym} 1660 -660 0 0 {name=p26 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 1730 -600 0 0 {name=p27 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -710 0 0 {name=Vload3}
 C {devices/isource.sym} 1730 -650 0 0 {name=I3 value="pwl 0 0 
-+ 1u 0 1.01u 50u
-+ 2u 50u 2.01u 100u
-+ 3u 100u 3.01u 200u
-+ 4u 200u 4.01u 300u"}
++ 1u 0 1.01u 100u
++ 2u 100u 2.01u 150u
++ 3u 150u 3.01u 200u
++ 4u 200u 4.01u 250u"}
