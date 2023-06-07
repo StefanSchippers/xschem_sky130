@@ -33,6 +33,9 @@ it is used only to display the net
 name it is attached to. This works if
 Options->Show net names on symbol pins
 is enabled.} 960 -650 0 0 0.4 0.4 {}
+T {This component behaves either as
+an inverter or as a short
+depending on IGNORE} 1330 -760 0 0 0.4 0.4 { layer=1}
 N 430 -280 480 -280 {
 lab=NET_A}
 N 780 -280 830 -280 {
@@ -89,6 +92,12 @@ N 960 -470 960 -450 {
 lab=#net2}
 N 1150 -370 1170 -370 {
 lab=#net3}
+N 1580 -810 1700 -810 {
+lab=NET_B}
+N 1780 -810 1840 -810 {
+lab=NET_F}
+N 1230 -810 1500 -810 {
+lab=NET_B}
 C {devices/lab_pin.sym} 430 -280 0 0 {name=p3 sig_type=std_logic lab=NET_A}
 C {devices/iopin.sym} 390 -190 0 1 { name=p4 lab=NET_A }
 C {devices/title.sym} 470 -80 0 0 {name=l1
@@ -134,3 +143,11 @@ C {sky130_tests/not.sym} 640 -470 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.
 C {sky130_tests/not.sym} 640 -280 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
 C {sky130_tests/not.sym} 870 -470 0 0 {name=x6 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
 C {sky130_tests/not.sym} 870 -280 0 0 {name=x7 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
+C {devices/lab_pin.sym} 1840 -810 0 1 {name=p8 sig_type=std_logic lab=NET_F}
+C {devices/lab_pin.sym} 1230 -810 0 0 {name=p9 sig_type=std_logic lab=NET_B}
+C {devices/lab_show.sym} 1610 -810 0 1 {name=l7 }
+C {devices/lab_show.sym} 1400 -810 0 1 {name=l8 }
+C {sky130_tests/not.sym} 1540 -810 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1
+spice_ignore="tcleval([if \{$IGNORE == 0\} \{return \{false\}\} else \{return \{short\}\}])"
+}
+C {sky130_tests/not.sym} 1740 -810 0 0 {name=x8 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
