@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ N1 TE BE nFilament sky130_fd_pr_reram__reram_model
 .ic v(nFilament)=\{Tfilament_0*1.0e9\}
 .ends sky130_fd_pr_reram__reram_cell
 
-.model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_module area_ox=0.1024e-12
+.model sky130_fd_pr_reram__reram_model sky130_fd_pr_reram__reram_module
 + area_ox = 0.1024e-12
 + Tox = 5.0
 + Tfilament_max = 4.9
