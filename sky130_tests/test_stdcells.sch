@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -88,11 +88,23 @@ unitx=n
  subdivy=1}
 T {Comparison of transistor level vs Xspice simulation
 xspice netlist obtained with spi2xspice.py script
-from qflow.} 1450 -1460 0 0 1 1 {}
-N 50 -580 50 -560 { lab=A}
-N 50 -470 50 -450 { lab=B}
-N 50 -720 50 -700 { lab=CLK}
-N 50 -840 50 -820 { lab=RESET_B}
+from qflow.} 340 -1720 0 0 1 1 {}
+T {these small capacitors force ngspice
+auto-insertion of d2a bridges} 1640 -280 0 0 0.4 0.4 {}
+N 50 -670 50 -650 { lab=A}
+N 50 -560 50 -540 { lab=B}
+N 50 -810 50 -790 { lab=CLK}
+N 50 -930 50 -910 { lab=RESET_B}
+N 1730 -210 1800 -210 {
+lab=X_QLATCH}
+N 1670 -190 1800 -190 {
+lab=X_X}
+N 1730 -170 1800 -170 {
+lab=X_Y}
+N 1670 -150 1800 -150 {
+lab=X_Q}
+N 1730 -130 1800 -130 {
+lab=X_XSCHEM}
 C {devices/code.sym} 860 -190 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval(@value )"
@@ -101,34 +113,18 @@ value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false
 place=header}
-C {devices/code_shown.sym} 30 -330 0 0 {name=STIMULI 
-only_toplevel=true
-value="
-.options acct list
-.temp 25
-vvcc vcc 0 dc 1.8
-vvss vss 0 0
-.control
-  esave all
-  tran 30p 80n
-  plot clk+18 a+16 b+14 reset_b+12 q+10 x+6 y+4 qlatch+2 xschem
-  write test_stdcells.raw
-  eprvcd x1.IQ x1.IQLATCH x1.iX x1.iY x1.IXSCHEM x1.RESET_B
-+ x1.A x1.B x1.CLK > test_stdcells.vcd
-.endc
-"}
-C {devices/sqwsource.sym} 50 -530 0 0 {name=V1 vhi=1.8 freq=0.09e9}
-C {devices/sqwsource.sym} 50 -420 0 0 {name=V2 vhi=1.8 freq=0.02e9}
-C {devices/lab_pin.sym} 50 -390 0 0 {name=p4 lab=0}
-C {devices/lab_pin.sym} 50 -500 0 0 {name=p5 lab=0}
-C {devices/lab_pin.sym} 50 -580 0 1 {name=p6 lab=A}
-C {devices/lab_pin.sym} 50 -470 0 1 {name=p7 lab=B}
-C {devices/sqwsource.sym} 50 -670 0 0 {name=V3 vhi=1.8 freq=0.2e9}
-C {devices/lab_pin.sym} 50 -640 0 0 {name=p8 lab=0}
-C {devices/lab_pin.sym} 50 -720 0 1 {name=p9 lab=CLK}
-C {devices/sqwsource.sym} 50 -790 0 0 {name=V4 vhi=1.8 freq=0.7e8}
-C {devices/lab_pin.sym} 50 -760 0 0 {name=p12 lab=0}
-C {devices/lab_pin.sym} 50 -840 0 1 {name=p13 lab=RESET_B}
+C {devices/sqwsource.sym} 50 -620 0 0 {name=V1 vhi='vcc' freq=0.09e9}
+C {devices/sqwsource.sym} 50 -510 0 0 {name=V2 vhi='vcc' freq=0.02e9}
+C {devices/lab_pin.sym} 50 -480 0 0 {name=p4 lab=0}
+C {devices/lab_pin.sym} 50 -590 0 0 {name=p5 lab=0}
+C {devices/lab_pin.sym} 50 -670 0 1 {name=p6 lab=A}
+C {devices/lab_pin.sym} 50 -560 0 1 {name=p7 lab=B}
+C {devices/sqwsource.sym} 50 -760 0 0 {name=V3 vhi='vcc' freq=0.2e9}
+C {devices/lab_pin.sym} 50 -730 0 0 {name=p8 lab=0}
+C {devices/lab_pin.sym} 50 -810 0 1 {name=p9 lab=CLK}
+C {devices/sqwsource.sym} 50 -880 0 0 {name=V4 vhi='vcc' freq=0.7e8}
+C {devices/lab_pin.sym} 50 -850 0 0 {name=p12 lab=0}
+C {devices/lab_pin.sym} 50 -930 0 1 {name=p13 lab=RESET_B}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 655 -385 0 0 {name=h1 
 descr="Select arrow and 
@@ -162,12 +158,9 @@ C {devices/lab_pin.sym} 1190 -120 0 0 {name=p8 lab=RESET_B}
 C {devices/lab_pin.sym} 1490 -100 0 1 {name=p9 lab=X_XSCHEM}
 C {devices/lab_pin.sym} 1190 -100 0 0 {name=p10 lab=VCC}
 C {devices/lab_pin.sym} 1190 -80 0 0 {name=p11 lab=VSS}
-C {devices/code_shown.sym} 1440 -1050 0 0 {name=XSPICE_MODELS 
+C {devices/code_shown.sym} 1440 -930 0 0 {name=XSPICE_MODELS 
 only_toplevel=true
-value=".model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=200p fall_delay=200p)
-.model toana_1v8 dac_bridge(out_high=1.8 out_low=0 out_undef=0.9
-+ t_rise=200p t_fall=200p input_load=10f )
-
+value="
 .model ddflop d_dff(ic=0 rise_delay=200p fall_delay=200p
 + clk_delay=20p reset_delay=20p data_load=10f reset_load=10f clk_load=10f)
 .model dlatch d_dlatch(ic=0 rise_delay=200p fall_delay=200p
@@ -202,3 +195,37 @@ C {devices/lab_pin.sym} 700 -90 0 0 {name=p14 lab=VCC}
 C {devices/lab_pin.sym} 700 -70 0 0 {name=p15 lab=VSS}
 C {devices/noconn.sym} 700 -90 0 1 {name=l2}
 C {devices/noconn.sym} 700 -70 0 1 {name=l3}
+C {devices/lab_pin.sym} 1800 -210 0 1 {name=p16 lab=X_QLATCH}
+C {devices/lab_pin.sym} 1800 -190 0 1 {name=p17 lab=X_X}
+C {devices/lab_pin.sym} 1800 -170 0 1 {name=p18 lab=X_Y}
+C {devices/lab_pin.sym} 1800 -150 0 1 {name=p19 lab=X_Q}
+C {devices/lab_pin.sym} 1800 -130 0 1 {name=p20 lab=X_XSCHEM}
+C {devices/code_shown.sym} 1430 -1470 0 0 {name=STIMULI
+only_toplevel=true
+value="
+.options acct list
+.temp 25
+.param vcc=1.8
+vvcc vcc 0 dc vcc
+vvss vss 0 0
+.control
+
+pre_set auto_bridge_d_out =
++ ( \\".model auto_dac dac_bridge(out_low = 0 out_high = 1.8 out_undef=0.9 t_rise=0.2e-9 t_fall=0.2e-9)\\"
++ \\"auto_bridge%d [ %s ] [ %s ] auto_dac\\" )
+
+pre_set auto_bridge_d_in =
++ ( \\".model auto_adc adc_bridge(in_low = 0.6 in_high = 1.2 rise_delay=0.2e-9 fall_delay=0.2e-9)\\"
++ \\"auto_bridge%d [ %s ] [ %s ] auto_adc\\" )
+
+tran 30p 80n
+plot clk+18 a+16 b+14 reset_b+12 q+10 x+6 y+4 qlatch+2 xschem
+write test_stdcells.raw
+
+.endc
+"}
+C {devices/parax_cap.sym} 1720 -210 1 0 {name=C1 gnd=0 value=4f m=1}
+C {devices/parax_cap.sym} 1660 -190 1 0 {name=C2 gnd=0 value=4f m=1}
+C {devices/parax_cap.sym} 1720 -170 1 0 {name=C3 gnd=0 value=4f m=1}
+C {devices/parax_cap.sym} 1660 -150 1 0 {name=C4 gnd=0 value=4f m=1}
+C {devices/parax_cap.sym} 1720 -130 1 0 {name=C5 gnd=0 value=4f m=1}
