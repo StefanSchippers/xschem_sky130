@@ -60,6 +60,9 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 ###########################################################################
 #### If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 # set netlist_dir $env(HOME)/.xschem/simulations
+#### if this is set to '1' netlists and simulations will go into a simulation/ folder
+#### inside the directory containing the top level schematic. Default: not set (0)
+# set local_netlist_dir 1
 
 ###########################################################################
 #### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
@@ -99,13 +102,18 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### Some netlisting options (these are the defaults)
 # set verilog_2001 1
 
-#### to use a fixed line with set change_lw to 0 and set some value to line_width
+#### to use a fixed line width set change_lw to 0 and set some value to line_width
 #### these are the defaults
 # set line_width 0
 # set change_lw 1
 
 #### allow color postscript and svg exports. Default: 1, enable color
 # set color_ps 1
+
+#### set paper size: name, height, width. Sizes in 1/72 of an inch (typographical points)
+#### default: {a4 842 595}
+# set ps_paper_size {a4 842 595}
+# set ps_paper_size {letter 792 612}
 
 #### initial size of xschem window you can specify also position with (wxh+x+y)
 #### this is the default:
@@ -115,6 +123,10 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### allowing to move away by zooming / unzooming with mouse wheel
 #### default setting: 0
 # set unzoom_nodrift 0
+
+#### if set to 1 full zoom will center the drawing instead of anhoring to lower
+#### left corner. Default: 0
+set zoom_full_center 1
 
 #### if set to 1 allow to place multiple components with same name.
 #### Warning: this is normally not allowed in any simulation netlist.
@@ -138,11 +150,38 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### default: unset (tk uses its default) > 1.0 ==> bigger 
 # set tk_scaling 1.7
 
+#### use the tclreadline package if available , Default: 1 (enabled).
+# set use_tclreadline 1
+
 #### disable some symbol layers. Default: none, all layers are visible.
 # set enable_layer(5) 0 ;# example to disable pin red boxes
 
 #### enable to scale grid point size as done with lines at close zoom, default: 0
 # set big_grid_points 0
+
+#### enable grouping contiguous bits of bus slices in net->pin instance
+#### assignments for verilog netlists. Default: disabled (0)
+# set verilog_bitblast 0
+
+#### allow searching the full search path for schematics associated to symbols
+#### instead of looking only in symbol directory. Default: disabled (0).
+# set search_schematic 0
+
+#### focus the schematic window if mouse goes over it, even if a dialog box
+#### is displayed, without needing to click.
+#### This allows to move/zoom/pan the schematic while editing attributes.
+#### Clicking in the schematic window usually closes the dialog box or starts
+#### editing a new component if clicking on a new component.
+#### default: enabled (1)
+# set autofocus_mainwindow 1
+
+#### set component browser always above drawing canvas.
+#### default: enabled (1)
+# set component_browser_on_top 0
+
+#### set graph line with multiplier with respect to xschem actual line width
+#### default: 2.0
+# set graph_linewidth_mult 2.0
 
 ###########################################################################
 #### EXPORT FORMAT TRANSLATORS, PNG AND PDF
@@ -150,11 +189,15 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### command to translate xpm to png; (assumes command takes source 
 #### and dest file as arguments, example: gm convert plot.xpm plot.png)
 #### default: {gm convert}
+#### Windows ghostscript uses gswin64c
+# set to_png {gswin64c -sDEVICE=png16m -o}
 # set to_png {gm convert}
 
 #### command to translate ps to pdf; (assumes command takes source
 #### and dest file as arguments, example: ps2pdf plot.ps plot.pdf)
 #### default: ps2pdf
+#### Windows ghostscript uses gswin64c
+# set to_pdf {gswin64c -sDEVICE=pdfwrite -o}
 # set to_pdf ps2pdf
 set to_pdf {ps2pdf -dAutoRotatePages=/None}
 
@@ -175,8 +218,8 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 ###########################################################################
 #### Warning: changing these values will likely break compatibility
 #### with existing symbol libraries. Defaults: grid 20, snap 10.
-# set grid 20
-# set snap 10
+# set cadgrid 20
+# set cadsnap 10
 
 ###########################################################################
 #### CUSTOM COLORS  MAY BE DEFINED HERE
@@ -224,12 +267,12 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 #### KEYBINDINGS
 ###########################################################################
 #### General format for specifying a replacement for a keybind
-#### Replace Ctrl-d with Escape (so you wont kill the program)
-# set replace_key(Control-d) Escape
+#### Replace Ctrl-q with Escape (so you wont kill the program)
+# set replace_key(Control-q) Escape
 
 #### swap w and W keybinds; Always specify Shift for capital letters
-# set replace_key(Shift-W) w
-# set replace_key(w) Shift-W
+# set replace_key(Shift-W) Key-w
+# set replace_key(Key-w) Shift-W
 
 ###########################################################################
 #### TERMINAL
@@ -257,6 +300,12 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 ###########################################################################
 #### default: 0 (can be enabled by menu)
 # set show_infowindow 0
+
+###########################################################################
+#### ALWAYS SHOW ERC INFO WINDOW AFTER NETLIST
+###########################################################################
+#### default: 0 
+# set show_infowindow_after_netlist 0
 
 ###########################################################################
 #### TCP CONNECTION WITH GAW
@@ -287,18 +336,18 @@ lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
 # lappend tcl_files ....
 
 ###########################################################################
+#### WEB URL DOWNLOAD HELPER APPLICATION
+###########################################################################
+#### used to download files from web: default: {curl -f -s -O -J}
+# set download_url_helper {curl -f -s -O -J}
+# set download_url_helper {wget -N --quiet --content-disposition}
+
+###########################################################################
 #### XSCHEM TOOLBAR
 ###########################################################################
 #### default: not enabled.
 set toolbar_visible 1
 # set toolbar_horiz   1
-
-###########################################################################
-#### WEB URL DOWNLOAD HELPER APPLICATION
-###########################################################################
-#### used to download files from web: default: {curl -f -s -O}
-# set download_url_helper {curl -f -s -O}
-# set download_url_helper {wget -N --quiet}
 
 ###########################################################################
 #### TABBED WINDOWS
@@ -339,7 +388,7 @@ set tabbed_interface 1
 ###########################################################################
 ## if enabled will backannotate values in schematic at cursor 'b' position
 ## in graph. Default: not enabled (0)
-# set live_cursor2_backannotate 1
+set live_cursor2_backannotate 1
 
 ###########################################################################
 #### SKYWATER PDK SPECIFIC VARIABLES
