@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.1 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -83,6 +83,7 @@ value="
     reset
     save all
     save @m.xm1.msky130_fd_pr__nfet_01v8[gm]
+    save @m.xm1.msky130_fd_pr__nfet_01v8[W] 
     run
     remzerovec
     write test_sweep_mos_w.raw
@@ -109,3 +110,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/ngspice_get_value.sym} 880 -250 0 1 {name=r11 node=v(@m.xm1.msky130_fd_pr__nfet_01v8[w])
+descr="W="}
+C {devices/ngspice_get_value.sym} 880 -300 0 1 {name=r1 node=@m.xm1.msky130_fd_pr__nfet_01v8[gm]
+descr="gm="}
