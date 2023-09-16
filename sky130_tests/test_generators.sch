@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -51,7 +51,7 @@ N 520 -360 520 -280 {
 lab=VDD}
 C {sky130_tests/tier.tcl(@lab\\)} 130 -480 0 0 {name=p1 sig_type=std_logic lab=VDD
 tclcommand="edit_file [abs_sym_path tier.tcl]"}
-C {sky130_tests/tier.tcl(@lab\\)} 130 -240 2 0 {name=p2 sig_type=std_logic lab=VSS
+C {sky130_tests/tier.tcl(@lab\\)} 130 -240 0 0 {name=p2 sig_type=std_logic lab=VSS
 tclcommand="edit_file [abs_sym_path tier.tcl]"
 }
 C {devices/res.sym} 130 -330 0 0 {name=R1
@@ -74,8 +74,8 @@ value=1p
 footprint=1206
 device="ceramic capacitor"
 net_name=true}
-C {sky130_tests/tier.tcl(@lab\\)} 410 -220 2 0 {name=p3 sig_type=std_logic lab=VSS}
-C {sky130_tests/tier.tcl(@lab\\)} 520 -220 2 0 {name=p4 sig_type=std_logic lab=VSS}
+C {sky130_tests/tier.tcl(@lab\\)} 410 -220 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {sky130_tests/tier.tcl(@lab\\)} 520 -220 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {sky130_tests/res.tcl(@value\\)} 410 -390 0 0 {name=R2 value=100
 net_name=true
 tclcommand="edit_file [abs_sym_path res.tcl]"
