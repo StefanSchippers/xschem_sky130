@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -1063,7 +1063,8 @@ value="
 .param DELTA = 0.002
 
 .control
-  option seed = 8
+  setseed  8
+  reset
   let run = 1
   save all
   op

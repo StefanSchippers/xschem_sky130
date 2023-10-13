@@ -29,7 +29,7 @@ subdivx=4
 
 
 
-color="10 12 6 11 8 7"
+color="18 12 6 11 8 7"
 node="\\"gain@1.5; gain%0\\"
 \\"gain@1.6; gain%1\\"
 \\"gain@1.7; gain%2\\"

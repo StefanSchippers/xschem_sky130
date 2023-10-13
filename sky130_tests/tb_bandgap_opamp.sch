@@ -1,4 +1,4 @@
-v {xschem version=3.4.1 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,20 +54,22 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=4e-06
+x1=4.51405e-08
+x2=4.04515e-06
 divx=5
 subdivx=1
 node="diffout_n
 adj
-out"
-color="4 7 12"
+out
+out%97
+out%46"
+color="6 7 12 11 9"
 
 unitx=1
 logx=0
 logy=0
 dataset=-1
-hilight_wave=-1}
+hilight_wave=3}
 B 2 780 -1280 1580 -880 {flags=graph,unlocked
 y1=0.598227
 y2=0.601581
@@ -103,7 +105,7 @@ subdivx=1
 node="start
 en_n"
 color="4 4"
-dataset=-1
+dataset=0
 unitx=1
 logx=0
 logy=0
@@ -116,8 +118,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=4e-06
+x1=4.51405e-08
+x2=4.04515e-06
 divx=5
 subdivx=1
 
@@ -127,8 +129,11 @@ unitx=1
 logx=0
 logy=0
 
-color=6
-node=i(vvcc)}
+color="12 11 9"
+node="i(vvcc)
+i(vvcc)%97
+i(vvcc)%46"
+hilight_wave=-1}
 B 2 230 -1050 400 -900 {flags=graph
 y1=0.395916
 y2=0.732143
@@ -137,8 +142,8 @@ ypos2=0.678667
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=4e-06
+x1=4.51404e-08
+x2=4.04515e-06
 divx=3
 subdivx=1
 node=vth
@@ -156,8 +161,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=4e-06
+x1=4.51405e-08
+x2=4.04515e-06
 divx=5
 subdivx=1
 
@@ -176,8 +181,8 @@ ypos2=0.678667
 divy=5
 subdivy=1
 unity=1
-x1=1e-11
-x2=4e-06
+x1=4.51404e-08
+x2=4.04515e-06
 divx=3
 subdivx=1
 node=temperat
@@ -263,7 +268,8 @@ value="* .option SCALE=1e-6
 
 .include stimuli_tb_bandgap_opamp.cir
 .control
-  option seed=9
+  setseed 9
+  reset
   let run=0
   dowhile run <= 100
     save all

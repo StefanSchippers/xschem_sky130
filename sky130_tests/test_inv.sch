@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ divx=5
 subdivx=1
 
 
-dataset=0
+
 unitx=1
 logx=0
 logy=0
@@ -55,7 +55,8 @@ y[3]
 y[2]
 y[1]
 y[0]"
-digital=1}
+digital=1
+dataset=0}
 B 2 960 -1150 1540 -830 {flags=graph,unlocked
 y1=-0.048
 y2=1.8
@@ -64,8 +65,8 @@ ypos2=3.35454
 divy=5
 subdivy=1
 unity=1
-x1=1.46333e-08
-x2=1.48033e-08
+x1=1.45394e-08
+x2=1.48331e-08
 divx=5
 subdivx=1
 
@@ -76,9 +77,35 @@ logx=0
 logy=0
 hilight_wave=-1
 
-color=4
-node=z[6]
+color="4 7"
+node="\\"z[6] @ 1.8V; z[6]%0\\"
+\\"z[6] @ 1.6V; z[6]%1\\""
 digital=0}
+B 2 60 -1130 810 -930 {flags=graph,unlocked
+y1=0
+y2=2
+ypos1=0.0666859
+ypos2=0.750359
+divy=5
+subdivy=1
+unity=1
+x1=1.42038e-08
+x2=1.73299e-08
+divx=5
+subdivx=1
+
+
+
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1
+
+color="4 7"
+node="\\"z[6] @ 1.8V; z[6]%0\\"
+\\"z[6] @ 1.6V; z[6]%1\\""
+digital=0
+dataset=1}
 T {Simple ring oscillator for
 speed testing} 1030 -800 0 0 0.6 0.6 {layer=4}
 N 360 -290 360 -130 { lab=Z[2]}
@@ -151,22 +178,26 @@ tclcommand="
   \}
 "
 }
-C {devices/simulator_commands_shown.sym} 10 -680 0 0 {name=COMMANDS2
+C {devices/simulator_commands_shown.sym} 10 -840 0 0 {name=COMMANDS2
 simulator=ngspice
 only_toplevel=false 
-value="
+value=".param VCC=1.8
 vvss vss 0 dc 0
 vvcc vcc 0 
-+ pwl 0 0 10n 0 10.1n 1.8 20n 1.8 20.1n 0
-
-
-.measure tran trise 
-+ TRIG v(z[6]) TD=10.5n VAL=0.1 RISE=1
-+ TARG v(z[6]) TD=10.5n VAL=1.7 RISE=1
++ pwl 0 0 10n 0 10.1n VCC 20n VCC 20.1n 0
+* .measure tran trise 
+* + TRIG v(z[6]) TD=10.5n VAL=0.1 RISE=1
+* + TARG v(z[6]) TD=10.5n VAL=1.7 RISE=1
 **** interactive sim
 .control
   save all
   tran 0.004n 30n
+  write test_inv.raw
+  set appendwrite
+  alterparam VCC=1.6
+  reset
+  save all
+  tran 0.02n 30n
   write test_inv.raw
 * exit
 .endc
