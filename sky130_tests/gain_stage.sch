@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,13 +38,13 @@ N 670 -860 670 -830 {lab=VCC}
 N 670 -720 700 -720 {lab=VCC}
 N 670 -770 670 -750 { lab=#net3}
 N 670 -620 700 -620 {lab=VSS}
-N 670 -660 670 -650 { lab=OUT}
-N 670 -690 670 -660 { lab=OUT}
+N 670 -660 670 -650 { lab=#net4}
+N 670 -690 670 -660 { lab=#net4}
 N 630 -660 630 -620 { lab=ADJ}
 N 670 -540 700 -540 {lab=VSS}
 N 670 -510 670 -500 { lab=VSS}
-N 670 -590 670 -570 { lab=#net4}
-N 670 -660 1040 -660 { lab=OUT}
+N 670 -590 670 -570 { lab=#net5}
+N 860 -660 1040 -660 { lab=OUT}
 N 900 -110 1060 -110 {
 lab=VSS}
 N 810 -400 810 -240 {
@@ -66,6 +66,7 @@ N 630 -720 630 -660 { lab=ADJ}
 N 910 -320 1040 -320 {lab=OUT}
 N 720 -320 810 -320 {
 lab=IN}
+N 670 -660 800 -660 { lab=#net4}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 100 -580 0 0 { name=p95 lab=IN }
 C {devices/ipin.sym} 100 -430 0 0 { name=p96 lab=VSS }
@@ -204,3 +205,4 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 400 -630 0 0 {name=C2 model=cap_mim_m3_2 W=10 
 C {devices/ipin.sym} 100 -510 0 0 { name=p4 lab=START }
 C {devices/ipin.sym} 100 -490 0 0 { name=p12 lab=START_N }
 C {devices/ipin.sym} 100 -530 0 0 { name=p13 lab=EN_N }
+C {devices/ammeter.sym} 830 -660 3 0 {name=v1}

@@ -63,13 +63,13 @@ adj
 out
 out%97
 out%46"
-color="6 7 12 11 9"
+color="6 15 12 7 9"
 
 unitx=1
 logx=0
 logy=0
 dataset=-1
-hilight_wave=3}
+hilight_wave=-1}
 B 2 780 -1280 1580 -880 {flags=graph,unlocked
 y1=0.598227
 y2=0.601581
@@ -84,7 +84,7 @@ divx=5
 subdivx=1
 
 
-dataset=-1
+dataset=0
 unitx=1
 logx=0
 logy=0
