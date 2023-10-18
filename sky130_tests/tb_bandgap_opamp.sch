@@ -54,16 +54,15 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.51405e-08
-x2=4.04515e-06
+x1=-1.5486e-07
+x2=3.84515e-06
 divx=5
 subdivx=1
-node="diffout_n
-adj
+node="adj
 out
-out%97
-out%46"
-color="6 15 12 7 9"
+out%58
+out%59"
+color="6 18 9 8"
 
 unitx=1
 logx=0
@@ -89,7 +88,7 @@ unitx=1
 logx=0
 logy=0
 color="4 7"
-node="plus minus"}
+node="plus%0 minus%0"}
 B 2 780 -1480 1580 -1280 {flags=graph,unlocked
 y1=0
 y2=2
@@ -102,8 +101,8 @@ x1=-5.98366e-10
 x2=3.99937e-06
 divx=5
 subdivx=1
-node="start
-en_n"
+node="start%0
+en_n%0"
 color="4 4"
 dataset=0
 unitx=1
@@ -118,8 +117,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.51405e-08
-x2=4.04515e-06
+x1=1e-11
+x2=4e-06
 divx=5
 subdivx=1
 
@@ -134,7 +133,7 @@ node="i(vvcc)
 i(vvcc)%97
 i(vvcc)%46"
 hilight_wave=-1}
-B 2 230 -1050 400 -900 {flags=graph
+B 2 440 -1080 610 -930 {flags=graph
 y1=0.395916
 y2=0.732143
 ypos1=0.0639625
@@ -142,12 +141,13 @@ ypos2=0.678667
 divy=5
 subdivy=1
 unity=1
-x1=4.51404e-08
-x2=4.04515e-06
+x1=1e-11
+x2=4e-06
 divx=3
 subdivx=1
-node=vth
-color=4
+node="vth1
+vth2"
+color="4 7"
 dataset=-1
 unitx=1
 logx=0
@@ -161,8 +161,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.51405e-08
-x2=4.04515e-06
+x1=1e-11
+x2=4e-06
 divx=5
 subdivx=1
 
@@ -173,19 +173,38 @@ logx=0
 logy=0
 color=4
 node=vcc}
-B 2 230 -1250 400 -1110 {flags=graph
-y1=-102.256
-y2=137.935
+B 2 440 -1250 610 -1110 {flags=graph
+y1=-67.943
+y2=172.248
 ypos1=0.0639625
 ypos2=0.678667
 divy=5
 subdivy=1
 unity=1
-x1=4.51404e-08
-x2=4.04515e-06
+x1=1e-11
+x2=4e-06
 divx=3
 subdivx=1
 node=temperat
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=0}
+B 2 440 -920 610 -770 {flags=graph
+y1=-0.1
+y2=0.1
+ypos1=0.0639625
+ypos2=0.678667
+divy=5
+subdivy=1
+unity=1
+x1=1e-11
+x2=4e-06
+divx=3
+subdivx=1
+node="\\"vth1 - vth2; vth1 vth2 -\\""
 color=4
 dataset=-1
 unitx=1
@@ -199,7 +218,7 @@ A 4 1620 -1000 5 0 360 {fill=true}
 A 4 1620 -950 5 0 360 {fill=true}
 A 4 1620 -1050 5 0 360 {fill=true}
 A 4 1620 -1250 5 0 360 {fill=true}
-P 4 5 70 -1330 450 -1330 450 -780 70 -780 70 -1330 {dash=4}
+P 4 5 70 -1330 640 -1330 640 -760 70 -760 70 -1330 {dash=4}
 P 4 4 2270 -650 2267.5 -640 2272.5 -640 2270 -650 {fill=true}
 P 4 4 2270 -610 2272.5 -620 2267.5 -620 2270 -610 {fill=true}
 P 4 4 2113.75 -690 2111.25 -683.75 2116.25 -683.75 2113.75 -690 {fill=true}
@@ -227,16 +246,16 @@ T {Self calibration: no circuit trimming} 1640 -1060 0 0 0.6 0.6 {}
 T {Check devices. Not on layout
 will not be present in LVS
 netlist} 20 -1460 0 0 0.6 0.6 {}
-T {Mismatch checker} 250 -1070 0 0 0.3 0.3 { layer=4}
-T {Simulation temperature} 230 -1270 0 0 0.3 0.3 { layer=4}
+T {Mismatch checker} 460 -1070 0 0 0.3 0.3 { layer=4}
+T {Simulation temperature} 440 -1270 0 0 0.3 0.3 { layer=4}
 N 320 -540 340 -540 { lab=DIFFOUT_N}
 N 620 -540 720 -540 { lab=ADJ}
 N 420 -540 620 -540 { lab=ADJ}
 N 130 -880 160 -880 {lab=VSS}
-N 130 -930 130 -910 {lab=VTH}
-N 130 -960 130 -930 {lab=VTH}
-N 90 -930 90 -880 { lab=VTH}
-N 90 -930 130 -930 { lab=VTH}
+N 130 -930 130 -910 {lab=VTH1}
+N 130 -960 130 -930 {lab=VTH1}
+N 90 -930 90 -880 { lab=VTH1}
+N 90 -930 130 -930 { lab=VTH1}
 N 130 -850 130 -800 {
 lab=VSS}
 N 130 -1060 130 -1020 {
@@ -244,6 +263,15 @@ lab=VSS}
 N 430 -360 570 -360 {
 lab=DIFFOUT_N}
 N 120 -1280 120 -1260 {lab=TEMPERAT}
+N 290 -880 320 -880 {lab=VSS}
+N 290 -930 290 -910 {lab=VTH2}
+N 290 -960 290 -930 {lab=VTH2}
+N 250 -930 250 -880 { lab=VTH2}
+N 250 -930 290 -930 { lab=VTH2}
+N 290 -850 290 -800 {
+lab=VSS}
+N 290 -1060 290 -1020 {
+lab=VSS}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/code.sym} 40 -370 0 0 {name=STIMULI 
 only_toplevel=true
@@ -320,7 +348,7 @@ nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
  lvs_format=" "}
-C {devices/lab_pin.sym} 130 -930 0 1 {name=l5 lab=VTH}
+C {devices/lab_pin.sym} 130 -930 0 1 {name=l5 lab=VTH1}
 C {devices/lab_pin.sym} 130 -800 0 0 {name=p8 lab=VSS}
 C {devices/isource.sym} 130 -990 0 0 {name=I0 value=100n
 lvs_format=" "}
@@ -353,3 +381,20 @@ C {devices/noconn.sym} 80 -650 0 1 {name=l3}
 C {devices/noconn.sym} 80 -610 0 1 {name=l4}
 C {devices/noconn.sym} 80 -590 0 1 {name=l6}
 C {devices/noconn.sym} 80 -570 0 1 {name=l7}
+C {devices/lab_pin.sym} 320 -880 0 1 {name=p31 lab=VSS}
+C {sky130_fd_pr/nfet_01v8.sym} 270 -880 0 0 {name=M1
+L=0.15
+W=0.5
+ad="'W * 0.29'" pd="'2*(W + 0.29)'"
+as="'W * 0.29'" ps="'2*(W + 0.29)'"
+nrd=0 nrs=0
+sa=0 sb=0 sd=0
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+ lvs_format=" "}
+C {devices/lab_pin.sym} 290 -930 0 1 {name=l8 lab=VTH2}
+C {devices/lab_pin.sym} 290 -800 0 0 {name=p32 lab=VSS}
+C {devices/isource.sym} 290 -990 0 0 {name=I1 value=100n
+lvs_format=" "}
+C {devices/lab_pin.sym} 290 -1060 0 0 {name=p33 lab=VSS}
