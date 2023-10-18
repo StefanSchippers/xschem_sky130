@@ -71,6 +71,8 @@ node="\\"C1; i(vc1) g1 deriv() /\\"
 \\"C4; i(vc4) g4 deriv() /\\""
 x1=0}
 T {VPP_CAP vs ideal capacitors} 460 -940 0 0 1 1 {}
+T {@model} 280 -90 0 0 0.4 0.4 {name=C1 layer=15}
+T {@model} 1390 -90 0 0 0.4 0.4 {name=C4 layer=15}
 N 580 -470 580 -440 { lab=0}
 N 580 -270 580 -200 { lab=G1}
 N 580 -140 580 -110 { lab=0}
