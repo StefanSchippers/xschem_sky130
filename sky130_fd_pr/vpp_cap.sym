@@ -46,4 +46,4 @@ T {@name} 20 -28.75 0 0 0.2 0.2 {}
 T {mult=@mult} 20 16.25 0 0 0.2 0.2 {layer=13}
 T {@model} 5 -13.75 0 0 0.1 0.1 {}
 T {sub} -15 7.5 0 0 0.15 0.15 {layer=7}
-T {tcleval(C=[xschem getprop symbol @symref @model ])} 20 1.25 0 0 0.2 0.2 {layer=13}
+T {tcleval(C=[xschem getprop symbol @symref @model\\])} 20 1.25 0 0 0.2 0.2 {layer=13}
