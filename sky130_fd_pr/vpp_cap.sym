@@ -1,29 +1,34 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {type=capacitor
-lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L mult=@mult m=@mult"
+lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model m=@mult"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model mult=@mult m=@mult"
 template="name=C1
 model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-W=1
-L=1 
 mult=1 
 spiceprefix=X"
 
-available_models="
-cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5
-cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5
-cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4
-cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4
-cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4
-cap_vpp_11p5x11p7_l1m1m2m3_shieldm4
-cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4
-cap_vpp_06p8x06p1_m1m2m3_shieldl1m4
-cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5
-"
-
+cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5          = 137.45e-15
+cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5        = 141.23e-15
+cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5          = 108.4e-15
+cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4    = 10.69e-15
+cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4    = 96.99e-15
+cap_vpp_11p5x11p7_l1m1m2m3_shieldm4            = 118.5e-15
+cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4          = 121.9e-15
+cap_vpp_06p8x06p1_m1m2m3_shieldl1m4            = 42.11e-15
+cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5          = 340.9e-15
+cap_vpp_08p6x07p8_m1m2_noshield                = 35e-15
+cap_vpp_04p4x04p6_m1m2_noshield_o2             = TBD
+cap_vpp_02p4x04p6_m1m2_noshield                = 4.37e-15
+cap_vpp_04p4x04p6_m1m2_noshield                = 7.81e-15
+cap_vpp_11p5x11p7_m1m2_noshield                = 74.6e-15
+cap_vpp_44p7x23p1_pol1m1m2m3m4m5_noshield      = TBD
+cap_vpp_02p7x06p1_m1m2m3m4_shieldl1_fingercap  = TBD
+cap_vpp_02p9x06p1_m1m2m3m4_shieldl1_fingercap2 = TBD
+cap_vpp_02p7x11p1_m1m2m3m4_shieldl1_fingercap  = TBD
+cap_vpp_02p7x21p1_m1m2m3m4_shieldl1_fingercap  = TBD
+cap_vpp_02p7x41p1_m1m2m3m4_shieldl1_fingercap  = TBD
 }
 V {}
 S {}
@@ -33,14 +38,12 @@ L 4 0 -30 0 -5 {}
 L 4 -10 -5 10 -5 {}
 B 5 -2.5 -32.5 2.5 -27.5 {name=c0 dir=inout}
 B 5 -2.5 27.5 2.5 32.5 {name=c1 dir=inout}
-B 5 -22.5 -12.5 -17.5 -7.5 {name=top dir=in}
-B 5 -22.5 7.5 -17.5 12.5 {name=sub dir=in}
+B 5 -22.5 7.5 -17.5 12.5 {name=b dir=in}
 A 4 -0 23.75 21.25 61.92751306414704 56.14497387170592 {}
 T {c0} 5 -27.5 0 0 0.15 0.15 {layer=7}
 T {c1} 5 18.75 0 0 0.15 0.15 {layer=7}
 T {@name} 20 -28.75 0 0 0.2 0.2 {}
 T {mult=@mult} 20 16.25 0 0 0.2 0.2 {layer=13}
 T {@model} 5 -13.75 0 0 0.1 0.1 {}
-T {top} -15 -17.5 0 0 0.15 0.15 {layer=7}
 T {sub} -15 7.5 0 0 0.15 0.15 {layer=7}
-T {tcleval(C=[ev \{@W * @L * 1.48e-13\}])} 20 1.25 0 0 0.2 0.2 {layer=13}
+T {tcleval(C=[xschem getprop symbol @symref @model ])} 20 1.25 0 0 0.2 0.2 {layer=13}

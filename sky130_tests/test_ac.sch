@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 1070 -330 1510 -80 {flags=graph,unlocked
+B 2 1070 -330 1620 -80 {flags=graph,unlocked
 y1=-6.9
 y2=41
 ypos1=0
@@ -25,8 +25,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=12
+x1=3.91739
+x2=10.0856
 
 subdivx=8
 node="\\"out db20()\\""
@@ -36,19 +36,21 @@ unitx=1
 logx=1
 logy=0
 divx=5
-sweep=""}
-B 2 1070 -900 1510 -580 {flags=graph,unlocked
-y1=-0.00144827
-y2=0.00162373
+sweep=""
+rawfile=$netlist_dir/test_ac.raw
+sim_type=ac}
+B 2 1070 -900 1620 -580 {flags=graph,unlocked
+y1=-0.00135896
+y2=0.00142796
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.27009e-12
-x2=4.21921e-12
+x1=0
+x2=6e-12
 
-subdivx=4
+
 node="\\"minus .9101 -\\"
 \\"out 0.9101 -\\""
 color="7 4"
@@ -57,17 +59,22 @@ unitx=1
 logx=0
 logy=0
 divx=5
-hilight_wave=-1}
-B 2 1070 -580 1510 -330 {flags=graph,unlocked
-y1=1
+hilight_wave=-1
+rawfile=$netlist_dir/test_ac.raw
+sim_type=tran
+subdivx=3}
+B 2 1070 -580 1620 -330 {flags=graph,unlocked
+rawfile=$netlist_dir/test_ac.raw
+sim_type=ac
+y1=0
 y2=180
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=12
+x1=3.91739
+x2=10.0856
 
 subdivx=8
 node=ph(out)
