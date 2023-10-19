@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -46,3 +46,9 @@ C {devices/ipin.sym} 140 -120 0 0 {name=p2 lab=b_in[31:0]}
 C {devices/ipin.sym} 140 -90 0 0 {name=p3 lab=f_in[2:0]}
 C {devices/opin.sym} 410 -120 0 0 {name=p5 lab=c_out}
 C {devices/opin.sym} 410 -100 0 0 {name=p6 lab=y_out[31:0]}
+C {devices/noconn.sym} 410 -140 0 0 {name=l3}
+C {devices/noconn.sym} 140 -150 0 1 {name=l4}
+C {devices/noconn.sym} 140 -120 0 1 {name=l5}
+C {devices/noconn.sym} 140 -90 0 1 {name=l6}
+C {devices/noconn.sym} 410 -120 0 0 {name=l2}
+C {devices/noconn.sym} 410 -100 0 0 {name=l7}

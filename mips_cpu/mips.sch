@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -19,9 +19,9 @@ S {}
 E {}
 L 5 640 -700 760 -700 {}
 L 5 760 -700 760 -280 {}
-L 5 270 -280 760 -280 {}
-L 5 270 -280 270 -160 {}
-P 5 7 270 -160 290 -160 290 -170 310 -160 290 -150 290 -160 270 -160 { fill=true}
+L 5 260 -280 760 -280 {}
+L 5 260 -280 260 -160 {}
+P 5 7 260 -160 280 -160 280 -170 300 -160 280 -150 280 -160 260 -160 { fill=true}
 T {FIX} 550 -350 0 0 1 1 { layer=5}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 190 -180 0 0 {name=p11 lab=clk}
@@ -42,7 +42,7 @@ C {devices/lab_pin.sym} 530 -680 0 1 {name=p14 lab=reg_dst}
 C {devices/lab_pin.sym} 530 -660 0 1 {name=p15 lab=reg_write}
 C {devices/lab_pin.sym} 530 -640 0 1 {name=p16 lab=alucontrol[2:0]}
 C {devices/lab_pin.sym} 530 -620 0 1 {name=p17 lab=alu_src}
-C {mips_cpu/datapath.sym} 380 -460 0 0 {name=xdatapath_inst}
+C {mips_cpu/datapath.sym} 380 -450 0 0 {name=xdatapath_inst}
 C {devices/lab_pin.sym} 230 -560 0 0 {name=p18 lab=clk}
 C {devices/lab_pin.sym} 230 -540 0 0 {name=p19 lab=rst}
 C {devices/lab_pin.sym} 230 -520 0 0 {name=p20 lab=alucontrol[2:0]}
@@ -51,9 +51,18 @@ C {devices/lab_pin.sym} 230 -480 0 0 {name=p22 lab=branch}
 C {devices/lab_pin.sym} 230 -460 0 0 {name=p23 lab=jump}
 C {devices/lab_pin.sym} 230 -440 0 0 {name=p24 lab=mem_to_reg}
 C {devices/lab_pin.sym} 530 -560 0 1 {name=p26 lab=imem_addr[31:0]}
-C {devices/lab_pin.sym} 230 -420 0 0 {name=p27 lab=reg_dst}
+C {devices/lab_pin.sym} 230 -400 0 0 {name=p27 lab=reg_dst}
 C {devices/lab_pin.sym} 530 -540 0 1 {name=p28 lab=dmem_addr[31:0]}
-C {devices/lab_pin.sym} 230 -400 0 0 {name=p29 lab=reg_write}
+C {devices/lab_pin.sym} 230 -380 0 0 {name=p29 lab=reg_write}
 C {devices/lab_pin.sym} 530 -520 0 1 {name=p30 lab=dmem_wdata[31:0]}
-C {devices/lab_pin.sym} 230 -380 0 0 {name=p31 lab=imem_data[31:0]}
-C {devices/lab_pin.sym} 230 -360 0 0 {name=p32 lab=dmem_rdata[31:0]}
+C {devices/lab_pin.sym} 230 -360 0 0 {name=p31 lab=imem_data[31:0]}
+C {devices/lab_pin.sym} 230 -340 0 0 {name=p32 lab=dmem_rdata[31:0]}
+C {devices/lab_pin.sym} 230 -420 0 0 {name=p25 lab=dmem_we}
+C {devices/noconn.sym} 190 -180 0 1 {name=l3}
+C {devices/noconn.sym} 190 -160 0 1 {name=l4}
+C {devices/noconn.sym} 190 -140 0 1 {name=l5}
+C {devices/noconn.sym} 190 -120 0 1 {name=l6}
+C {devices/noconn.sym} 320 -190 0 0 {name=l2}
+C {devices/noconn.sym} 320 -160 0 0 {name=l7}
+C {devices/noconn.sym} 320 -130 0 0 {name=l8}
+C {devices/noconn.sym} 320 -100 0 0 {name=l9}

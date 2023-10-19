@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,10 +63,14 @@ following instructions: add, sub, and, or, slt, lw, sw, beq, addi, and j.} 20 -1
 T {Original work by Diadatp} 40 -820 0 0 0.6 0.6 { layer=5}
 T {Ctrl-Click
 to open link} 450 -860 0 0 0.3 0.3 {layer=11}
+N 270 -110 330 -110 {
+lab=clock}
+N 270 -90 330 -90 {
+lab=reset}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {mips_cpu/top.sym} 480 -100 0 0 {name=xuut}
-C {devices/lab_pin.sym} 330 -110 0 0 {name=p1 lab=clock verilog_type=reg}
-C {devices/lab_pin.sym} 330 -90 0 0 {name=p3 lab=reset verilog_type=reg}
+C {devices/lab_pin.sym} 270 -110 0 0 {name=p1 lab=clock verilog_type=reg}
+C {devices/lab_pin.sym} 270 -90 0 0 {name=p3 lab=reset verilog_type=reg}
 C {devices/architecture.sym} 0 -530 0 0 { nothing here, use global schematic properties }
 C {devices/verilog_preprocessor.sym} 30 -670 0 0 {name=s1  
 string="`define CLKP 10 // clock period
@@ -75,3 +79,5 @@ string="`define CLKP 10 // clock period
 C {devices/launcher.sym} 530 -800 0 0 {name=h1
 descr=Github 
 url=https://github.com/diadatp/mips_cpu}
+C {devices/noconn.sym} 290 -110 1 1 {name=l3}
+C {devices/noconn.sym} 300 -90 1 1 {name=l2}

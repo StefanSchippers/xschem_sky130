@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -91,3 +91,5 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 180 -130 0 0 {name=p11 lab=addr[5:0]}
 C {devices/opin.sym} 450 -150 0 0 {name=p13 lab=data[31:0] verilog_type=reg}
 C {devices/architecture.sym} 0 -1500 0 0 { nothing here, use global schematic properties }
+C {devices/noconn.sym} 450 -150 0 0 {name=l5}
+C {devices/noconn.sym} 180 -130 0 1 {name=l6}

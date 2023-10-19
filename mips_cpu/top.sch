@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -38,3 +38,4 @@ C {devices/lab_pin.sym} 520 -210 0 0 {name=p20 lab=dmem_addr[31:0]}
 C {devices/lab_pin.sym} 520 -190 0 0 {name=p21 lab=dmem_wdata[31:0]}
 C {devices/lab_pin.sym} 820 -140 0 1 {name=p22 lab=imem_data[31:0]}
 C {devices/lab_pin.sym} 520 -140 0 0 {name=p23 lab=imem_addr[7:2]}
+C {devices/noconn.sym} 820 -370 1 1 {name=l6}

@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -14,48 +14,42 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {}
-V {        wire [31:0] pc_plus_4;
-        assign pc_plus_4 = pc + 4;
-
-        wire [31:0] pc_jump;
-        assign pc_jump = \{pc_plus_4[31:28], instr[25:0], 2'b00\};
-
-        wire pc_src;
-        assign pc_src = branch & zero;
-
-        wire [31:0] pc_branch;
-        assign pc_branch = pc_plus_4 + \{imm_ext[29:0], 2'b00\};
-
-        wire [31:0] pc_next;
-        assign pc_next = jump ? pc_jump : (pc_src ? pc_branch : pc_plus_4);
-
-        always @(posedge clk) begin : proc_pc
-                if(~rst) begin
-                        pc = pc_next;
-                end else begin
-                        pc = 32'h00000000;
-                end
-        end
-
-        wire [5:0] rt;
-        assign rt = instr[20:16];
-
-        wire [5:0] rd;
-        assign rd = instr[15:11];
-
-        assign write_reg = reg_dst ? rd : rt;
-
-        assign result = mem_to_reg ? read_data : alu_result ;
-
-        assign src_b = alu_src ? imm_ext : reg_data2;
-        assign src_a = reg_data1;
-        assign src_b = alu_src ? imm_ext : reg_data2;
-        assign alu_result = alu_out;
-        assign write_data = reg_data2;
+V {
+  wire [31:0] pc_plus_4;
+  assign pc_plus_4 = pc + 4;
+  wire [31:0] pc_jump;
+  assign pc_jump = \{pc_plus_4[31:28], instr[25:0], 2'b00\};
+  wire pc_src;
+  assign pc_src = branch & zero;
+  wire [31:0] pc_branch;
+  assign pc_branch = pc_plus_4 + \{imm_ext[29:0], 2'b00\};
+  wire [31:0] pc_next;
+  assign pc_next = jump ? pc_jump : (pc_src ? pc_branch : pc_plus_4);
+  always @(posedge clk) begin : proc_pc
+    if(~rst) begin
+      pc = pc_next;
+    end else begin
+      pc = 32'h00000000;
+    end
+  end
+  wire [5:0] rt;
+  assign rt = instr[20:16];
+  wire [5:0] rd;
+  assign rd = instr[15:11];
+  assign write_reg = reg_dst ? rd : rt;
+  assign result = mem_to_reg ? read_data : alu_result ;
+  assign src_a = reg_data1;
+  assign src_b = alu_src ? imm_ext : reg_data2;
+  assign alu_result = alu_out;
+  assign write_data = reg_data2;
 
 }
 S {}
 E {}
+N 210 -440 310 -440 {
+lab=src_a[31:0]}
+N 210 -420 310 -420 {
+lab=src_b[31:0]}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 170 -350 0 0 {name=p2 lab=clk}
 C {devices/ipin.sym} 170 -330 0 0 {name=p3 lab=rst}
@@ -81,9 +75,9 @@ C {devices/lab_pin.sym} 610 -590 0 1 {name=p21 lab=reg_data2[31:0]}
 C {devices/lab_pin.sym} 310 -530 0 0 {name=p22 lab=write_reg[4:0]}
 C {devices/lab_pin.sym} 310 -510 0 0 {name=p23 lab=result[31:0]}
 C {mips_cpu/alu.sym} 460 -420 0 0 {name=xalu_inst}
-C {devices/lab_pin.sym} 310 -440 0 0 {name=p24 lab=src_a[31:0]}
+C {devices/lab_pin.sym} 210 -440 0 0 {name=p24 lab=src_a[31:0]}
 C {devices/lab_pin.sym} 610 -440 0 1 {name=p25 lab=zero}
-C {devices/lab_pin.sym} 310 -420 0 0 {name=p26 lab=src_b[31:0]}
+C {devices/lab_pin.sym} 210 -420 0 0 {name=p26 lab=src_b[31:0]}
 C {devices/lab_pin.sym} 610 -420 0 1 {name=p27 lab=c_out}
 C {devices/lab_pin.sym} 610 -400 0 1 {name=p28 lab=alu_out[31:0]}
 C {devices/lab_pin.sym} 310 -400 0 0 {name=p29 lab=alucontrol[2:0]}
@@ -91,3 +85,29 @@ C {mips_cpu/sign_extend.sym} 460 -680 0 0 {name=xsign_extend_inst}
 C {devices/lab_pin.sym} 310 -680 0 0 {name=p30 lab=instr[15:0]}
 C {devices/lab_pin.sym} 610 -680 0 1 {name=p31 lab=imm_ext[31:0]}
 C {devices/architecture.sym} 830 -880 0 0 { nothing here, use global schematic properties }
+C {devices/ipin.sym} 170 -210 0 0 {name=p10 lab=mem_write}
+C {devices/noconn.sym} 170 -350 0 1 {name=l3}
+C {devices/noconn.sym} 170 -330 0 1 {name=l4}
+C {devices/noconn.sym} 170 -310 0 1 {name=l5}
+C {devices/noconn.sym} 170 -290 0 1 {name=l6}
+C {devices/noconn.sym} 170 -270 0 1 {name=l2}
+C {devices/noconn.sym} 170 -250 0 1 {name=l7}
+C {devices/noconn.sym} 170 -230 0 1 {name=l8}
+C {devices/noconn.sym} 170 -210 0 1 {name=l9}
+C {devices/noconn.sym} 170 -190 0 1 {name=l10}
+C {devices/noconn.sym} 170 -170 0 1 {name=l11}
+C {devices/noconn.sym} 170 -130 0 1 {name=l12}
+C {devices/noconn.sym} 170 -110 0 1 {name=l13}
+C {devices/noconn.sym} 400 -200 0 0 {name=l14}
+C {devices/noconn.sym} 400 -160 0 0 {name=l15}
+C {devices/noconn.sym} 400 -180 0 0 {name=l16}
+C {devices/noconn.sym} 610 -400 3 0 {name=l17}
+C {devices/noconn.sym} 240 -440 3 1 {name=l18}
+C {devices/noconn.sym} 260 -420 3 1 {name=l19}
+C {devices/noconn.sym} 610 -680 3 0 {name=l20}
+C {devices/noconn.sym} 610 -610 3 0 {name=l21}
+C {devices/noconn.sym} 610 -590 3 0 {name=l22}
+C {devices/noconn.sym} 310 -510 1 1 {name=l23}
+C {devices/noconn.sym} 610 -420 3 0 {name=l24}
+C {devices/noconn.sym} 610 -440 3 0 {name=l25}
+C {devices/noconn.sym} 310 -530 1 1 {name=l26}

@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -39,3 +39,12 @@ C {devices/lab_pin.sym} 630 -500 0 1 {name=p17 lab=alu_src}
 C {mips_cpu/aludec.sym} 480 -440 0 0 {name=xaludec_inst}
 C {devices/lab_pin.sym} 330 -440 0 0 {name=p18 lab=instr[31:0]}
 C {devices/lab_pin.sym} 630 -440 0 1 {name=p19 lab=alucontrol[2:0]}
+C {devices/noconn.sym} 410 -260 0 0 {name=l3}
+C {devices/noconn.sym} 410 -240 0 0 {name=l4}
+C {devices/noconn.sym} 410 -220 0 0 {name=l5}
+C {devices/noconn.sym} 410 -200 0 0 {name=l6}
+C {devices/noconn.sym} 410 -180 0 0 {name=l2}
+C {devices/noconn.sym} 410 -160 0 0 {name=l7}
+C {devices/noconn.sym} 410 -140 0 0 {name=l8}
+C {devices/noconn.sym} 410 -120 0 0 {name=l9}
+C {devices/noconn.sym} 140 -260 0 1 {name=l10}

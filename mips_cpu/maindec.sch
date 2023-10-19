@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -53,3 +53,11 @@ C {devices/opin.sym} 340 -150 0 0 {name=p5 lab=reg_dst}
 C {devices/opin.sym} 340 -130 0 0 {name=p6 lab=reg_write}
 C {devices/opin.sym} 340 -110 0 0 {name=p7 lab=alu_src}
 C {devices/architecture.sym} 100 -770 0 0 { nothing here, use global schematic properties }
+C {devices/noconn.sym} 340 -230 0 0 {name=l3}
+C {devices/noconn.sym} 340 -210 0 0 {name=l4}
+C {devices/noconn.sym} 340 -190 0 0 {name=l5}
+C {devices/noconn.sym} 340 -170 0 0 {name=l6}
+C {devices/noconn.sym} 340 -150 0 0 {name=l2}
+C {devices/noconn.sym} 340 -130 0 0 {name=l7}
+C {devices/noconn.sym} 340 -110 0 0 {name=l8}
+C {devices/noconn.sym} 160 -180 0 1 {name=l10}

@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -14,7 +14,7 @@ v {xschem version=2.9.8 file_version=1.2
 }
 G {}
 K {}
-V {        reg [31:0] memdata[63:0];
+V {        reg [31:0] memdata[127:0];
 
         // always @(memdata[addr]) begin
         //        rdata = memdata[addr];
@@ -38,3 +38,8 @@ C {devices/ipin.sym} 180 -130 0 0 {name=p11 lab=addr[31:0]}
 C {devices/ipin.sym} 180 -110 0 0 {name=p12 lab=wdata[31:0]}
 C {devices/opin.sym} 450 -150 0 0 {name=p13 lab=rdata[31:0] }
 C {devices/architecture.sym} 170 -520 0 0 { nothing here, use global schematic properties }
+C {devices/noconn.sym} 450 -150 0 0 {name=l2}
+C {devices/noconn.sym} 180 -170 0 1 {name=l3}
+C {devices/noconn.sym} 180 -150 0 1 {name=l4}
+C {devices/noconn.sym} 180 -130 0 1 {name=l5}
+C {devices/noconn.sym} 180 -110 0 1 {name=l6}

@@ -1,4 +1,4 @@
-v {xschem version=2.9.8 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -50,3 +50,11 @@ C {devices/ipin.sym} 160 -160 0 0 {name=p8 lab=rw}
 C {devices/ipin.sym} 160 -140 0 0 {name=p4 lab=addr3[4:0]}
 C {devices/ipin.sym} 160 -120 0 0 {name=p1 lab=wdata[31:0]}
 C {devices/architecture.sym} 140 -740 0 0 { nothing here, use global schematic properties }
+C {devices/noconn.sym} 160 -220 0 1 {name=l3}
+C {devices/noconn.sym} 160 -200 0 1 {name=l4}
+C {devices/noconn.sym} 160 -180 0 1 {name=l5}
+C {devices/noconn.sym} 160 -160 0 1 {name=l6}
+C {devices/noconn.sym} 160 -140 0 1 {name=l2}
+C {devices/noconn.sym} 160 -120 0 1 {name=l7}
+C {devices/noconn.sym} 390 -170 0 0 {name=l8}
+C {devices/noconn.sym} 390 -150 0 0 {name=l9}
