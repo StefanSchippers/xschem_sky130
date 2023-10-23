@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,13 +22,13 @@ E {}
 B 2 390 -800 1220 -480 {flags=graph
 y1=0
 
-ypos1=0.175635
-ypos2=1.7799
+ypos1=0.0593465
+ypos2=1.83911
 divy=5
 subdivy=1
 unity=1
-x1=-3.71402e-09
-x2=2.46286e-07
+x1=0
+x2=2.5e-07
 
 subdivx=1
 
@@ -68,9 +68,9 @@ lab=S3[255:0]}
 N 760 -140 920 -140 {
 lab=S2[31:0]}
 C {devices/title.sym} 160 -30 0 0 {name=l2}
-C {devices/ipin.sym} 290 -300 0 0 {name=p11 lab=A[255:0] verilog_type=reg}
-C {devices/ipin.sym} 290 -280 0 0 {name=p12 lab=B[255:0] verilog_type=reg}
-C {devices/ipin.sym} 290 -260 0 0 {name=p13 lab=CIN verilog_type=reg}
+C {devices/ipin.sym} 280 -380 0 0 {name=p11 lab=A[255:0] verilog_type=reg}
+C {devices/ipin.sym} 280 -360 0 0 {name=p12 lab=B[255:0] verilog_type=reg}
+C {devices/ipin.sym} 280 -340 0 0 {name=p13 lab=CIN verilog_type=reg}
 C {devices/lab_pin.sym} 530 -350 0 0 {name=p21 lab=CARRY0[254:0],CIN}
 C {devices/lab_pin.sym} 650 -430 0 1 {name=p22 lab=CARRY0[255:0]}
 C {devices/lab_pin.sym} 650 -350 0 1 {name=p23 lab=S0[255:0]}
@@ -103,9 +103,9 @@ tclcommand="
 xschem raw_read $netlist_dir/test_carry_lookahead_xyce.spice.raw
 "
 }
-C {devices/spice_probe.sym} 290 -300 0 0 {name=p10 attrs=""}
-C {devices/spice_probe.sym} 290 -280 0 0 {name=p14 attrs=""}
-C {devices/spice_probe.sym} 290 -260 0 0 {name=p15 attrs=""}
+C {devices/spice_probe.sym} 280 -380 0 0 {name=p10 attrs=""}
+C {devices/spice_probe.sym} 280 -360 0 0 {name=p14 attrs=""}
+C {devices/spice_probe.sym} 280 -340 0 0 {name=p15 attrs=""}
 C {devices/spice_probe.sym} 920 -270 0 0 {name=p16 attrs=""}
 C {devices/spice_probe.sym} 1040 -250 0 0 {name=p17 attrs=""}
 C {devices/spice_probe.sym} 650 -430 0 0 {name=p18 attrs=""}
@@ -137,15 +137,6 @@ C {devices/parax_cap.sym} 870 -280 2 0 {name=C2[255:0] gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 870 -150 2 0 {name=C3[255:0] gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 870 -240 0 0 {name=C6 gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 870 -110 0 0 {name=C1 gnd=0 value=5f m=1}
-C {devices/launcher.sym} 1245 -115 0 0 {name=h6 
-descr="View simulation status
-(for Xyce)" 
-tclcommand="
-  if \{ [info exists execute(id)] \} \{
-     viewdata $execute(data,$execute(id)) ro
-  \}
-"
-}
 C {devices/simulator_commands.sym} 0 -180 0 0 {name=COMMANDS2
 simulator=xyce
 only_toplevel=false 
@@ -154,10 +145,11 @@ value="
 * generate following file with Simulation->Utile stimuli editor and pressing 'Translate'
 .include stimuli_test_carry_lookahead.cir
 .tran 0.4n 250n uic
-.print tran format=raw file=carry_lookahead_xyce.spice.raw v(*)
+.print tran format=raw file=test_carry_lookahead_xyce.spice.raw v(*)
 "}
-C {devices/simulator_commands.sym} 140 -180 0 0 {name=COMMANDS1
+C {devices/simulator_commands.sym} 120 -180 0 0 {name=NGSPICE
 simulator=ngspice
+spice_ignore=0
 only_toplevel=false 
 value="
 *.option method=gear
@@ -168,8 +160,7 @@ value="
 * save all
 tran 0.4n 250n uic
 write test_carry_lookahead_ngspice.raw
-acct
-rusage
+quit 0
 .endc
 "}
 C {devices/parax_cap.sym} 1110 -340 0 0 {name=C4[31:0] gnd=0 value=5f m=1}

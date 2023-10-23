@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -144,6 +144,7 @@ only_toplevel=false
 place=end
 value="* ngspice commands
 .options savecurrents
+
 .control
 save all
 save @m.x1.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
@@ -163,6 +164,8 @@ save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gds]
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gmbs]
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 op
+print @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 write test_analog.raw
+quit 0
 .endc
-.print @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]"}
+"}

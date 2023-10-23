@@ -47,7 +47,7 @@ L 4 2130 -610 2210 -650 {}
 L 4 2270 -640 2270 -620 {}
 L 4 2113.75 -683.75 2113.75 -676.25 {}
 B 2 780 -480 1580 -120 {flags=graph,unlocked
-y1=-0.014
+y1=-0.0033
 y2=1.8
 ypos1=0
 ypos2=2
@@ -92,8 +92,8 @@ node="plus%0 minus%0"}
 B 2 780 -1480 1580 -1280 {flags=graph,unlocked
 y1=0
 y2=2
-ypos1=0.106679
-ypos2=0.661454
+ypos1=0.0128593
+ypos2=0.756311
 divy=5
 subdivy=1
 unity=1
@@ -278,6 +278,7 @@ only_toplevel=true
 place=end
 value="* .option SCALE=1e-6 
 .option method=gear
+.option savecurrents
 
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
@@ -302,6 +303,10 @@ value="* .option SCALE=1e-6
   dowhile run <= 100
     save all
     tran 1n 4000n uic
+    print run
+    print @m.x1.xml.msky130_fd_pr__pfet_01v8_lvt[vth]
+    print @m.x1.xmr.msky130_fd_pr__pfet_01v8_lvt[vth]
+
     remzerovec
     write tb_bandgap_opamp.raw
     set appendwrite

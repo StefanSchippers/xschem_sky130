@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,8 +25,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.4399e-07
-x2=2.0544e-05
+x1=0
+x2=2e-05
 divx=5
 subdivx=1
 
@@ -133,14 +133,14 @@ tclcommand="
 
 set_sim_defaults
 # set ngspice interactive run
-set sim(spice,default) 0 ;# 1st simulator: ngpice
-set sim(spice,0,st) 0 ;# interactive ngspice: no status reporting
+set sim(spice,default) 1 ;# 1st simulator: ngpice
+set sim(spice,1,st) 1 ;# status reporting
 xschem set netlist_name test_multisim_ngspice.spice
 xschem netlist
 xschem simulate
 #set Xyce batch run
-set sim(spice,default) 2 ;# 3rd simulator: Xyce
-set sim(spice,2,st) 1 ;# status reporting
+set sim(spice,default) 3 ;# 3rd simulator: Xyce
+set sim(spice,3,st) 1 ;# status reporting
 xschem set netlist_name test_multisim_xyce.spice
 xschem netlist
 xschem simulate

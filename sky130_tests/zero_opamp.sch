@@ -183,7 +183,7 @@ nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
  }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 770 -400 0 1 {name=M20
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 770 -400 0 1 {name=MR
 L=2
 W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -194,7 +194,7 @@ nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
  }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -400 0 0 {name=M3
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -400 0 0 {name=ML
 L=2
 W=8
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
