@@ -216,6 +216,7 @@ value=".param VCM = 1 VDD=1.8
     write cmos_ac_sweep.raw
     let vddval = vddval + 0.1
   end
+  quit 0
 .endc
 " }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 670 -480 0 0 {name=M7

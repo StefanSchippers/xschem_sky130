@@ -1082,6 +1082,7 @@ value="
     let run = run + 1
     reset
   end
+  quit 0
 .endc
 "}
 C {sky130_fd_pr/corner.sym} 20 -190 0 0 {name=CORNER only_toplevel=true corner=tt_mm}

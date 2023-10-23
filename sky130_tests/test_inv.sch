@@ -199,7 +199,7 @@ vvcc vcc 0
   save all
   tran 0.02n 30n
   write test_inv.raw
-* exit
+  quit 0
 .endc
 "}
 C {devices/simulator_commands_shown.sym} 470 -690 0 0 {name=COMMANDS1
@@ -213,14 +213,6 @@ vvcc vcc 0
 + v(*) i(*)
 .tran 0.01n 30n
 "}
-C {devices/launcher.sym} 485 -405 0 0 {name=h1 
-descr="View simulation status" 
-tclcommand="
-  if \{ [info exists execute(id)] \} \{
-     viewdata $execute(data,$execute(id)) ro
-  \}
-"
-}
 C {sky130_fd_pr/corner.sym} 20 -200 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/bus_tap.sym} 210 -300 3 1 {name=l19 lab=[0]}
 C {devices/bus_tap.sym} 290 -300 3 1 {name=l2 lab=[1]}

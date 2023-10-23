@@ -21,11 +21,11 @@ S {}
 E {}
 B 2 1040 -990 1470 -670 {flags=graph
 y1 = 0
-y2 = 0.00058
+y2 = 0.00051
 divy = 5
 subdivy=1
-x1=0
-x2=1.8
+x1=0.152264
+x2=1.59226
 divx=4
 subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
@@ -63,8 +63,8 @@ y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=0
-x2=1.8
+x1=0.152264
+x2=1.59226
 divx=4
 subdivx=4
 node="i(vd1)
@@ -76,8 +76,8 @@ y1 = 0
 y2 = 1.8
 divy = 5
 subdivy=4
-x1=0
-x2=1.8
+x1=0.152264
+x2=1.59226
 divx=4
 subdivx=4
 node=g1v8
@@ -95,8 +95,11 @@ by pressing 't' with mouse close
 to one of the waveforms} 1020 -1060 0 1 0.3 0.3 {}
 T {tcleval(g1v8 = [
   set vgate [xschem getprop rect 2 0 dataset]
-  if \{$vgate != -1\} \{ return [format %.4g [expr \{$vgate * 0.2\}]] \} else \{ return \{All\} \}])
-} 1130 -660 0 0 0.4 0.4 {name=xxx}
+  if \{$vgate != -1\} \{
+   return [format %.4g [expr \{$vgate * 0.2\}]]
+  \} else \{
+   return \{All\}
+  \}])} 1130 -660 0 0 0.4 0.4 {name=xxx}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}
