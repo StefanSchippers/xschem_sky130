@@ -264,6 +264,7 @@ plot all.vd7#branch vs D1v8
 set appendwrite
 op
 write test_nmos.raw
+quit 0
 .endc
 " }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 670 -140 0 0 {name=M1
