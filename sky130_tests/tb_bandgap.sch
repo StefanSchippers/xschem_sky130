@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,8 +20,8 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = -2.3e-14
-y2 = 1.9
+y1 = 1.08421
+y2 = 1.33922
 
 x1=0
 x2=0.0001
@@ -50,14 +50,31 @@ node="\\"Icc;i(vcc)\\""
  unitx=u
 color=4
 dataset=-1}
+B 2 820 -740 1280 -610 {flags=graph
+y1 = -40
+y2 = 130
+divy = 5
+unity=u
+subdivy=1
+x1=0
+x2=0.0001
+divx=4
+subdivx=4
+node=temperat
+ unitx=u
+color=4
+dataset=-1}
 P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
 P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
-T {Example of Mismatch simulation of a bandgap reference. Variations are generated also on Vcc
-Plot shows bandgap varying outputs before and after the offset cancellation.} 10 -720 0 0 0.4 0.4 {}
+T {Example of Mismatch simulation of a bandgap reference.
+Variations are generated also on Vcc
+Plot shows bandgap varying outputs before
+and after the offset cancellation.} 10 -770 0 0 0.4 0.4 {}
 T {Select one or more graphs (and no other objects)
 and use arrow keys to zoom / pan waveforms} 290 -580 0 0 0.3 0.3 {}
 T {Bandgap voltage after offset compensation} 950 -350 0 0 0.3 0.3 {layer=4}
 T {Bandgap voltage before offset compensation} 820 -410 0 0 0.3 0.3 {layer=4}
+T {tcleval(Dataset=[xschem getprop rect 2 0 dataset])} 1020 -790 0 0 0.7 0.7 {floater=xxx}
 N 240 -340 240 -320 { lab=EN_N}
 N 650 -340 650 -320 { lab=#net1}
 N 390 -340 390 -320 { lab=VSS}
@@ -89,7 +106,7 @@ value="
 .control
   option seed=12
   let run=1
-  dowhile run <= 30
+  dowhile run <= 100
     if run > 1
       reset
       set appendwrite
@@ -108,8 +125,7 @@ value="
     write tb_bandgap.raw
     let run = run + 1
   end
-  set nolegend
-  plot all.vbg
+  quit 0
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
@@ -148,7 +164,7 @@ C {devices/lab_pin.sym} 650 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 650 -220 0 1 {name=p6 lab=CLK}
 C {devices/lab_pin.sym} 240 -500 0 0 {name=p8 lab=START}
 C {devices/lab_pin.sym} 240 -480 0 0 {name=p9 lab=CLK}
-C {devices/launcher.sym} 365 -625 0 0 {name=h1 
+C {devices/launcher.sym} 305 -635 0 0 {name=h1 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload waveforms" 
 tclcommand="

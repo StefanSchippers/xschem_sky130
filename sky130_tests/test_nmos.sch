@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=-1.10952e-06
+x1=0
 x2=1.8
 divx=4
 subdivx=4
@@ -37,8 +37,8 @@ y1 = -0
 y2 = 0.00063
 divy = 5
 subdivy=1
-x1=-0.143377
-x2=4.85662
+x1=0
+x2=5
 divx=8
 subdivx=0
 node=i(vd4)
@@ -63,7 +63,7 @@ y1 = 0
 y2 = 0.00058
 divy = 5
 subdivy=1
-x1=-1.10952e-06
+x1=0
 x2=1.8
 divx=4
 subdivx=4
@@ -76,8 +76,8 @@ y1 = 0
 y2 = 1.8
 divy = 5
 subdivy=4
-x1=-0.03375
-x2=1.76626
+x1=0
+x2=1.8
 divx=4
 subdivx=4
 node=g1v8
@@ -93,6 +93,10 @@ descended into it) and run ngspice simulation.} 10 -570 0 0 0.3 0.3 {layer=15}
 T {select one single gate voltage
 by pressing 't' with mouse close
 to one of the waveforms} 1020 -1060 0 1 0.3 0.3 {}
+T {tcleval(g1v8 = [
+  set vgate [xschem getprop rect 2 0 dataset]
+  if \{$vgate != -1\} \{ return [format %.4g [expr \{$vgate * 0.2\}]] \} else \{ return \{All\} \}])
+} 1130 -660 0 0 0.4 0.4 {name=xxx}
 N 690 -140 710 -140 {lab=B}
 N 630 -140 650 -140 {lab=G1v8}
 N 690 -190 690 -170 {lab=#net1}

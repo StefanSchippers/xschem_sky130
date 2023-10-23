@@ -330,6 +330,7 @@ T {IP1} 890 -1000 0 1 0.4 0.4 {}
 T {IN1} 890 -560 0 1 0.4 0.4 {}
 T {IN2 + IP1} 1530 -430 0 1 0.4 0.4 {}
 T {IN1 + IP2} 1530 -570 0 1 0.4 0.4 {}
+T {tcleval(Dataset=\\n[xschem getprop rect 2 1 dataset])} 520 -1470 0 0 0.7 0.7 {floater=xxx}
 N 430 -200 530 -200 {lab=VSS}
 N 430 -260 430 -230 {lab=VSSI}
 N 1720 -870 1750 -870 {lab=VSS}

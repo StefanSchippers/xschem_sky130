@@ -128,10 +128,10 @@ unitx=1
 logx=0
 logy=0
 
-color="12 11 9"
+color="12 8 9"
 node="i(vvcc)
-i(vvcc)%97
-i(vvcc)%46"
+i(vvcc)%59
+i(vvcc)%58"
 hilight_wave=-1}
 B 2 440 -1080 610 -930 {flags=graph
 y1=0.395916
@@ -248,6 +248,7 @@ will not be present in LVS
 netlist} 20 -1460 0 0 0.6 0.6 {}
 T {Mismatch checker} 460 -1070 0 0 0.3 0.3 { layer=4}
 T {Simulation temperature} 440 -1270 0 0 0.3 0.3 { layer=4}
+T {tcleval(Dataset=\\n[xschem getprop rect 2 0 dataset])} 1280 -110 0 0 0.7 0.7 {floater=xxx}
 N 320 -540 340 -540 { lab=DIFFOUT_N}
 N 620 -540 720 -540 { lab=ADJ}
 N 420 -540 620 -540 { lab=ADJ}
