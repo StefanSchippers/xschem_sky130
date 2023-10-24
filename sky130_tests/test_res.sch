@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -114,7 +114,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 1910 -710 2130 -550 {flags=graph
+B 2 1910 -1050 2130 -890 {flags=graph
 y1=690
 y2=760
 ypos1=0
@@ -171,7 +171,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 1910 -540 2130 -380 {flags=graph
+B 2 1910 -880 2130 -720 {flags=graph
 y1=947.998
 y2=1019.67
 ypos1=0
@@ -190,7 +190,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 1910 -370 2130 -210 {flags=graph
+B 2 1910 -540 2130 -380 {flags=graph
 y1=570
 y2=610
 ypos1=0
@@ -247,6 +247,158 @@ unitx=1
 logx=0
 logy=0
 }
+B 2 2140 -1050 2360 -890 {flags=graph
+y1=3400
+y2=3900
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"1/10 res_high_po;p i(vr23) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 2140 -880 2360 -720 {flags=graph
+y1=4300
+y2=4800
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"0.35/3.5 res_high_po_0p35;p i(vr24) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 2140 -540 2360 -380 {flags=graph
+y1=3400
+y2=3800
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"1.41/14.1 res_high_po_1p41;p i(vr26) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 2140 -200 2360 -40 {flags=graph
+y1=3200
+y2=3600
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"5.73/57.3 res_high_po_5p73;p i(vr28) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1910 -710 2130 -550 {flags=graph
+y1=720
+y2=760
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"0.69/0.69 res_high_po_0p69;p i(vr7) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 2140 -710 2360 -550 {flags=graph
+y1=3700
+y2=4100
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"0.69/6.9 res_high_po_0p69;p i(vr25) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1910 -370 2130 -210 {flags=graph
+y1=440
+y2=480
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"2.85/2.85 res_high_po_2p85;p i(vr15) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 2140 -370 2360 -210 {flags=graph
+y1=3200
+y2=3700
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-40
+x2=140
+divx=5
+subdivx=1
+node="\\"2.85/28.5 res_high_po_2p85;p i(vr27) /\\""
+color=8
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 C {devices/code_shown.sym} 60 -770 0 0 {name=NGSPICE
 only_toplevel=true
 value="
@@ -275,38 +427,38 @@ write test_res.raw
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
-C {devices/lab_pin.sym} 410 -680 0 0 {name=p22 lab=B}
-C {sky130_fd_pr/res_iso_pw.sym} 430 -680 0 0 {name=R1
+C {devices/lab_pin.sym} 410 -880 0 0 {name=p22 lab=B}
+C {sky130_fd_pr/res_iso_pw.sym} 430 -880 0 0 {name=R1
 W=2.65
 L=2.65
 model=res_iso_pw
 spiceprefix=X
  mult=1}
-C {devices/lab_pin.sym} 430 -650 0 1 {name=p1 lab=M}
-C {devices/lab_pin.sym} 430 -770 0 1 {name=p2 lab=P}
-C {devices/ammeter.sym} 430 -740 0 0 {name=Vr1}
-C {devices/ammeter.sym} 580 -740 0 0 {name=Vr2}
-C {devices/lab_pin.sym} 580 -770 0 1 {name=p3 lab=P}
-C {devices/lab_pin.sym} 580 -650 0 1 {name=p4 lab=M}
-C {sky130_fd_pr/res_generic_nd.sym} 580 -680 0 0 {name=R2
+C {devices/lab_pin.sym} 430 -850 0 1 {name=p1 lab=M}
+C {devices/lab_pin.sym} 430 -970 0 1 {name=p2 lab=P}
+C {devices/ammeter.sym} 430 -940 0 0 {name=Vr1}
+C {devices/ammeter.sym} 580 -940 0 0 {name=Vr2}
+C {devices/lab_pin.sym} 580 -970 0 1 {name=p3 lab=P}
+C {devices/lab_pin.sym} 580 -850 0 1 {name=p4 lab=M}
+C {sky130_fd_pr/res_generic_nd.sym} 580 -880 0 0 {name=R2
 W=1
 L=1
 model=res_generic_nd
 spiceprefix=X
  mult=1}
-C {devices/ammeter.sym} 760 -740 0 0 {name=Vr3}
-C {devices/lab_pin.sym} 760 -770 0 1 {name=p6 lab=P}
-C {devices/lab_pin.sym} 760 -650 0 1 {name=p7 lab=M}
-C {sky130_fd_pr/res_generic_pd.sym} 760 -680 0 0 {name=R3
+C {devices/ammeter.sym} 760 -940 0 0 {name=Vr3}
+C {devices/lab_pin.sym} 760 -970 0 1 {name=p6 lab=P}
+C {devices/lab_pin.sym} 760 -850 0 1 {name=p7 lab=M}
+C {sky130_fd_pr/res_generic_pd.sym} 760 -880 0 0 {name=R3
 W=1
 L=1
 model=res_generic_pd
 spiceprefix=X
  mult=1}
-C {devices/ammeter.sym} 930 -740 0 0 {name=Vr4}
-C {devices/lab_pin.sym} 930 -770 0 1 {name=p9 lab=P}
-C {devices/lab_pin.sym} 930 -650 0 1 {name=p10 lab=M}
-C {sky130_fd_pr/res_generic_po.sym} 930 -680 0 0 {name=R4
+C {devices/ammeter.sym} 930 -940 0 0 {name=Vr4}
+C {devices/lab_pin.sym} 930 -970 0 1 {name=p9 lab=P}
+C {devices/lab_pin.sym} 930 -850 0 1 {name=p10 lab=M}
+C {sky130_fd_pr/res_generic_po.sym} 930 -880 0 0 {name=R4
 W=1
 L=1
 model=res_generic_po
@@ -399,8 +551,8 @@ L=1
 model=res_generic_m1
 spiceprefix=X
 mult=1}
-C {devices/lab_pin.sym} 560 -680 0 0 {name=p5 lab=B}
-C {devices/lab_pin.sym} 740 -680 0 0 {name=p8 lab=B}
+C {devices/lab_pin.sym} 560 -880 0 0 {name=p5 lab=B}
+C {devices/lab_pin.sym} 740 -880 0 0 {name=p8 lab=B}
 C {devices/ammeter.sym} 1110 -360 0 0 {name=Vr13}
 C {devices/lab_pin.sym} 1110 -390 0 1 {name=p38 lab=P}
 C {devices/lab_pin.sym} 1110 -270 0 1 {name=p39 lab=M}
@@ -421,7 +573,7 @@ C {devices/lab_pin.sym} 1110 -580 0 1 {name=p41 lab=P}
 C {devices/lab_pin.sym} 1110 -460 0 1 {name=p42 lab=M}
 C {devices/lab_pin.sym} 1090 -490 0 0 {name=p43 lab=B}
 C {sky130_fd_pr/res_high_po_2p85.sym} 1110 -490 0 0 {name=R15
-L=5
+L=2.85
 model=res_high_po_2p85
 spiceprefix=X
 mult=1}
@@ -483,4 +635,60 @@ C {sky130_fd_pr/res_generic_m5.sym} 1290 -110 0 0 {name=R22
 W=1
 L=1
 model=res_generic_m5
+mult=1}
+C {devices/ammeter.sym} 430 -750 0 0 {name=Vr23}
+C {devices/lab_pin.sym} 430 -780 0 1 {name=p63 lab=P}
+C {devices/lab_pin.sym} 430 -660 0 1 {name=p64 lab=M}
+C {devices/lab_pin.sym} 410 -690 0 0 {name=p65 lab=B}
+C {sky130_fd_pr/res_high_po.sym} 430 -690 0 0 {name=R23
+W=1
+L=10
+model=res_high_po
+spiceprefix=X
+ mult=1}
+C {devices/ammeter.sym} 580 -750 0 0 {name=Vr24}
+C {devices/lab_pin.sym} 580 -780 0 1 {name=p66 lab=P}
+C {devices/lab_pin.sym} 580 -660 0 1 {name=p67 lab=M}
+C {devices/lab_pin.sym} 560 -690 0 0 {name=p68 lab=B}
+C {sky130_fd_pr/res_high_po_0p35.sym} 580 -690 0 0 {name=R24
+L=3.5
+model=res_high_po_0p35
+spiceprefix=X
+ mult=1}
+C {devices/ammeter.sym} 760 -750 0 0 {name=Vr25}
+C {devices/lab_pin.sym} 760 -780 0 1 {name=p69 lab=P}
+C {devices/lab_pin.sym} 760 -660 0 1 {name=p70 lab=M}
+C {devices/lab_pin.sym} 740 -690 0 0 {name=p71 lab=B}
+C {sky130_fd_pr/res_high_po_0p69.sym} 760 -690 0 0 {name=R25
+L=6.9
+model=res_high_po_0p69
+spiceprefix=X
+ mult=1}
+C {devices/ammeter.sym} 930 -750 0 0 {name=Vr26}
+C {devices/lab_pin.sym} 930 -780 0 1 {name=p72 lab=P}
+C {devices/lab_pin.sym} 930 -660 0 1 {name=p73 lab=M}
+C {devices/lab_pin.sym} 910 -690 0 0 {name=p74 lab=B}
+C {sky130_fd_pr/res_high_po_1p41.sym} 930 -690 0 0 {name=R26
+L=14.1
+model=res_high_po_1p41
+spiceprefix=X
+ mult=1}
+C {devices/ammeter.sym} 1110 -750 0 0 {name=Vr27}
+C {devices/lab_pin.sym} 1110 -780 0 1 {name=p75 lab=P}
+C {devices/lab_pin.sym} 1110 -660 0 1 {name=p76 lab=M}
+C {devices/lab_pin.sym} 1090 -690 0 0 {name=p77 lab=B}
+C {sky130_fd_pr/res_high_po_2p85.sym} 1110 -690 0 0 {name=R27
+L=28.5
+model=res_high_po_2p85
+spiceprefix=X
+mult=1}
+C {devices/ammeter.sym} 1290 -750 0 0 {name=Vr28}
+C {devices/lab_pin.sym} 1290 -780 0 1 {name=p78 lab=P}
+C {devices/lab_pin.sym} 1290 -660 0 1 {name=p79 lab=M}
+C {devices/lab_pin.sym} 1270 -690 0 0 {name=p80 lab=B}
+C {sky130_fd_pr/res_high_po_5p73.sym} 1290 -690 0 0 {name=R28
+
+L=57.3
+model=res_high_po_5p73
+spiceprefix=X
 mult=1}

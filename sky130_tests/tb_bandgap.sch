@@ -20,8 +20,8 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = 1.08421
-y2 = 1.33922
+y1 = -1.4e-15
+y2 = 3.6
 
 x1=0
 x2=0.0001
@@ -96,7 +96,7 @@ only_toplevel=true
 value="
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
-.options wnflag=1 XMU=0.49 METHOD=GEAR ITL4=100 CHGTOL=1e-15 TRTOL=1 RELTOL=0.0001 VNTOL=0.1u
+* .options wnflag=1 XMU=0.49 METHOD=GEAR ITL4=100 CHGTOL=1e-15 TRTOL=1 RELTOL=0.0001 VNTOL=0.1u
 .param ABSVAR=0.03
 .param VCCGAUSS=agauss(1.8, 'ABSVAR', 1)
 .param VCC=VCCGAUSS
@@ -104,7 +104,8 @@ value="
 ** variation marameters:
 * .options savecurrents
 .control
-  option seed=12
+  setseed 12
+  reset
   let run=1
   dowhile run <= 100
     if run > 1
@@ -121,6 +122,7 @@ value="
     if run % 3 = 0
       set temp=125
     end
+    echo \\"Run=$&run, Temp=$temp\\"
     tran 0.05u 100u
     write tb_bandgap.raw
     let run = run + 1

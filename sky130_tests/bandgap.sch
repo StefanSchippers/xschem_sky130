@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -232,12 +232,6 @@ C {devices/spice_probe.sym} 1680 -250 0 1 {name=p17 attrs=""}
 C {devices/spice_probe.sym} 1640 -700 0 0 {name=p18 attrs=""}
 C {devices/spice_probe.sym} 1640 -860 2 1 {name=p19 attrs=""}
 C {devices/lab_pin.sym} 310 -410 0 0 {name=l6 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -410 0 0 {name=R1
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
 C {devices/lab_pin.sym} 60 -840 0 0 {name=l4 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 60 -780 0 0 {name=l7 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 60 -720 0 0 {name=l12 sig_type=std_logic lab=VSS}
@@ -248,67 +242,73 @@ C {devices/lab_pin.sym} 310 -780 0 0 {name=l46 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 310 -720 0 0 {name=l47 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 310 -660 0 0 {name=l48 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 310 -600 0 0 {name=l49 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -840 0 0 {name=R2
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -780 0 0 {name=R8
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -720 0 0 {name=R9
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -660 0 0 {name=R15
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 330 -600 0 0 {name=R16
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -840 0 0 {name=R17
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -780 0 0 {name=R18
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -720 0 0 {name=R19
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -660 0 0 {name=R20
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
-C {sky130_fd_pr/res_xhigh_po_0p69.sym} 80 -600 0 0 {name=R21
-W=0.69
-L=10
-model=res_xhigh_po_0p69
-spiceprefix=X
-mult=1 net_name=true}
 C {devices/spice_probe.sym} 1050 -440 0 1 {name=p15 attrs=""}
 C {devices/spice_probe.sym} 240 -530 0 1 {name=p1 attrs=""}
 C {devices/spice_probe.sym} 470 -470 0 1 {name=p2 attrs=""}
 C {devices/spice_probe.sym} 620 -280 0 1 {name=p3 attrs=""}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 330 -840 0 0 {name=R12
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 330 -780 0 0 {name=R1
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 330 -720 0 0 {name=R2
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 330 -660 0 0 {name=R3
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 330 -600 0 0 {name=R4
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 80 -840 0 0 {name=R5
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 80 -780 0 0 {name=R6
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 80 -720 0 0 {name=R7
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 80 -660 0 0 {name=R8
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 80 -600 0 0 {name=R9
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 330 -410 0 0 {name=R10
+W=1.41
+L=20
+model=res_xhigh_po_1p41
+spiceprefix=X
+ mult=1}

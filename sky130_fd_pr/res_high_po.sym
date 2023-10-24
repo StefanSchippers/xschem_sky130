@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,4 +45,4 @@ T {B} -15 -12.5 0 1 0.15 0.15 {layer=7}
 T {@name} 15 -27.5 0 0 0.2 0.2 {}
 T {@mult * @W / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -13.75 0 0 0.2 0.2 {}
-T {tcleval(R=[ev \{ 317.4 * @L / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[ev \{ (378.3 + 317.17 * @L ) / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
