@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,6 +47,7 @@ L 4 -20 -0 -2.5 0 {}
 L 4 7.5 -22.5 7.5 -12.5 {}
 L 4 7.5 12.5 7.5 22.5 {}
 L 4 7.5 -5 7.5 5 {}
+L 4 7.5 -10 12.5 -10 {}
 B 5 17.5 -32.5 22.5 -27.5 {name=D dir=inout}
 B 5 -22.5 -2.5 -17.5 2.5 {name=G dir=in}
 B 5 17.5 27.5 22.5 32.5 {name=S dir=inout}
@@ -57,10 +58,11 @@ T {@name} 5 -30 0 1 0.2 0.2 {}
 T {S} 22.5 17.5 0 0 0.15 0.15 {layer=7}
 T {D} 22.5 -17.5 2 1 0.15 0.15 {layer=7}
 T {G} -10 -10 0 1 0.15 0.15 {layer=7}
-T {@model} 30 -8.75 2 1 0.2 0.2 {}
 T {@mult x @W / @L} 31.25 13.75 0 0 0.2 0.2 { layer=13}
 T {nf=@nf} 31.25 1.25 0 0 0.2 0.2 { layer=13}
-T {tcleval(gm=[ngspice::get_node [subst -nocommand \{\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\[gm]\}]] )} 32.5 -7.5 0 0 0.15 0.15 {layer=15
+T {@model} 30 -17.5 2 1 0.2 0.2 {}
+T {tcleval(gm=[ngspice::get_node [subst -nocommand \{\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\[gm]\}]] )} 30 -50 0 0 0.15 0.15 {layer=15
 hide=true}
-T {tcleval(id=[ngspice::get_node [subst -nocommand \{i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\[id])\}]] )} 32.5 -30 0 0 0.15 0.15 {layer=15
+T {tcleval(id=[ngspice::get_node [subst -nocommand \{i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\[id])\}]] )} 30 -40 0 0 0.15 0.15 {layer=15
 hide=true}
+T {@body} 12.5 -3.75 2 1 0.2 0.2 { layer=1}
