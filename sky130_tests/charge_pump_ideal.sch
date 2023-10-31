@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,6 @@ lab=HV}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 270 -190 0 0 {name=p24 lab=CK}
 C {devices/ipin.sym} 440 -190 0 0 {name=p25 lab=CKN}
-C {devices/lab_pin.sym} 180 -330 0 0 {name=p23 lab=VCC}
 C {sky130_tests/diode_ngspice.sym} 580 -330 3 0 {name=X4 m=1 Roff=1e9 Ron=0.1}
 C {sky130_tests/diode_ngspice.sym} 410 -330 3 0 {name=X5 m=1 Roff=1e9 Ron=0.1}
 C {sky130_tests/diode_ngspice.sym} 240 -330 3 0 {name=X6 m=1 Roff=1e9 Ron=0.1}
@@ -53,3 +52,4 @@ value=1.82p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/iopin.sym} 740 -330 0 0 {name=p21 lab=HV}
+C {devices/ipin.sym} 180 -330 0 0 {name=p20 lab=VCC}

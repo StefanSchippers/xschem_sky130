@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,6 +17,8 @@ K {}
 V {}
 S {}
 E {}
+T {Vcc to digital gates
+passed via attribute} 20 -620 0 0 0.4 0.4 {}
 N 530 -1000 620 -1000 {
 lab=AN}
 N 700 -1000 1030 -1000 {
@@ -50,13 +52,13 @@ lab=AN}
 N 350 -840 410 -840 {
 lab=CK}
 N 350 -700 410 -700 {
-lab=D}
+lab=DI}
 N 350 -420 410 -420 {
 lab=CN}
 N 350 -380 410 -380 {
 lab=CKN}
 N 350 -240 410 -240 {
-lab=B}
+lab=BI}
 N 770 -340 910 -340 {
 lab=DN}
 N 770 -800 910 -800 {
@@ -67,6 +69,10 @@ N 990 -340 1030 -340 {
 lab=D}
 N 100 -420 130 -420 {
 lab=CK}
+N 910 -800 910 -700 {
+lab=BN}
+N 910 -340 910 -240 {
+lab=DN}
 C {sky130_stdcells/nand2_2.sym} 470 -1000 0 0 {name=x1 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_4.sym} 660 -1000 0 0 {name=x2 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 470 -860 0 0 {name=x5 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
@@ -95,12 +101,12 @@ C {devices/lab_pin.sym} 350 -1020 0 0 {name=p1 sig_type=std_logic lab=CKN}
 C {devices/lab_pin.sym} 350 -980 0 0 {name=p2 sig_type=std_logic lab=BN}
 C {devices/lab_pin.sym} 350 -880 0 0 {name=p3 sig_type=std_logic lab=AN}
 C {devices/lab_pin.sym} 350 -840 0 0 {name=p4 sig_type=std_logic lab=CK}
-C {devices/lab_pin.sym} 350 -700 0 0 {name=p5 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 350 -700 0 0 {name=p5 sig_type=std_logic lab=DI}
 C {devices/lab_pin.sym} 350 -560 0 0 {name=p6 sig_type=std_logic lab=CK}
 C {devices/lab_pin.sym} 350 -520 0 0 {name=p7 sig_type=std_logic lab=DN}
 C {devices/lab_pin.sym} 350 -420 0 0 {name=p8 sig_type=std_logic lab=CN}
 C {devices/lab_pin.sym} 350 -380 0 0 {name=p9 sig_type=std_logic lab=CKN}
-C {devices/lab_pin.sym} 350 -240 0 0 {name=p10 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 350 -240 0 0 {name=p10 sig_type=std_logic lab=BI}
 C {devices/lab_wire.sym} 580 -1000 0 0 {name=p11 sig_type=std_logic lab=AN}
 C {devices/lab_wire.sym} 850 -800 0 0 {name=p12 sig_type=std_logic lab=BN}
 C {devices/lab_wire.sym} 850 -340 0 0 {name=p13 sig_type=std_logic lab=DN}
@@ -113,3 +119,9 @@ C {devices/opin.sym} 1030 -540 0 0 {name=p18 sig_type=std_logic lab=C}
 C {devices/opin.sym} 1030 -340 0 0 {name=p19 sig_type=std_logic lab=D}
 C {devices/lab_wire.sym} 580 -540 0 0 {name=p20 sig_type=std_logic lab=CN}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
+C {devices/ipin.sym} 90 -550 0 0 {name=p21 lab=VCC}
+C {devices/noconn.sym} 90 -550 0 1 {name=l2}
+C {sky130_stdcells/inv_2.sym} 950 -700 0 0 {name=x19 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 990 -700 0 1 {name=p23 sig_type=std_logic lab=BI}
+C {sky130_stdcells/inv_2.sym} 950 -240 0 0 {name=x20 VGND=GND VNB=GND VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 990 -240 0 1 {name=p24 sig_type=std_logic lab=DI}

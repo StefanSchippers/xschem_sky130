@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -264,7 +264,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/cap_mim_m3_1.sym} 660 -670 0 0 {name=C7 model=cap_mim_m3_1 W=30 L=15 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 840 -670 0 0 {name=C8 model=cap_mim_m3_1 W=30 L=15 MF=1 spiceprefix=X}
-C {devices/lab_pin.sym} 90 -940 0 0 {name=p20 lab=VCC}
+C {devices/ipin.sym} 90 -940 0 0 {name=p20 lab=VCC}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1910 -1020 1 1 {name=M12
 L=0.5
 W=8
