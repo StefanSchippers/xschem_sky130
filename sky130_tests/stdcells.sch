@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,9 +25,8 @@ N 420 -110 520 -110 { lab=IX}
 N 440 -370 480 -370 { lab=IY}
 N 890 -400 910 -400 { lab=IQLATCH}
 N 810 -380 820 -380 { lab=#net1}
-N 1210 -350 1230 -350 { lab=#net2}
-N 1210 -410 1210 -350 { lab=#net2}
-N 1180 -410 1210 -410 { lab=#net2}
+N 1230 -410 1230 -350 { lab=#net2}
+N 1180 -410 1230 -410 { lab=#net2}
 N 440 -470 440 -370 { lab=IY}
 N 1340 -370 1390 -370 { lab=#net3}
 N 1350 -330 1390 -330 { lab=#net4}
@@ -38,7 +37,7 @@ N 1380 -250 1380 -200 { lab=RESET_B}
 N 1380 -250 1390 -250 { lab=RESET_B}
 N 890 -310 1230 -310 { lab=IQLATCH}
 N 890 -400 890 -310 { lab=IQLATCH}
-N 1550 -310 1600 -310 { lab=IXSCHEM}
+N 1550 -310 1620 -310 { lab=IXSCHEM}
 N 300 -200 1380 -200 { lab=RESET_B}
 N 300 -230 300 -200 { lab=RESET_B}
 N 1010 -470 1010 -430 { lab=IY}
@@ -76,7 +75,7 @@ C {devices/lab_pin.sym} 1060 -390 0 0 {name=p24 lab=B}
 C {sky130_stdcells/nor2b_1.sym} 1120 -410 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 1290 -330 0 0 {name=x6 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/a31o_2.sym} 1470 -310 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 1600 -310 0 1 {name=p15 lab=IXSCHEM}
+C {devices/lab_pin.sym} 1620 -310 0 1 {name=p15 lab=IXSCHEM}
 C {devices/noconn.sym} 820 -380 2 0 {name=l2}
 C {devices/noconn.sym} 1560 -310 3 0 {name=l3}
 C {sky130_stdcells/inv_2.sym} 1220 -470 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
@@ -108,3 +107,8 @@ C {devices/lab_pin.sym} 800 -810 0 0 {name=p18 lab=IQLATCH}
 C {devices/lab_pin.sym} 880 -530 0 1 {name=p24 lab=XSCHEM}
 C {sky130_stdcells/buf_2.sym} 840 -530 0 0 {name=x11 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 800 -530 0 0 {name=p18 lab=IXSCHEM}
+C {devices/parax_cap.sym} 1180 -400 0 0 {name=C5 gnd=0 value=3f m=1}
+C {devices/parax_cap.sym} 1290 -460 0 0 {name=C6 gnd=0 value=3f m=1}
+C {devices/parax_cap.sym} 1580 -300 0 0 {name=C7 gnd=0 value=3f m=1}
+C {devices/parax_cap.sym} 520 -190 0 0 {name=C8 gnd=0 value=3f m=1}
+C {devices/parax_cap.sym} 1350 -320 0 0 {name=C9 gnd=0 value=3f m=1}

@@ -25,8 +25,8 @@ ypos2=1.39103
 divy=5
 subdivy=1
 unity=1
-x1=4.83082e-06
-x2=4.90286e-06
+x1=0
+x2=5e-06
 divx=5
 subdivx=1
 
@@ -44,15 +44,15 @@ b
 c
 d"}
 B 2 300 -890 1180 -490 {flags=graph
-y1=2.30452
-y2=2.98097
+y1=0
+y2=5.4
 ypos1=0
 ypos2=2
 
 subdivy=1
 unity=1
-x1=4.83082e-06
-x2=4.90286e-06
+x1=0
+x2=5e-06
 divx=5
 subdivx=1
 node="vcc

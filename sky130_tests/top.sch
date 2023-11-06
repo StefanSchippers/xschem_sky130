@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -774,3 +774,4 @@ tclcommand="xschem load_new_window https://raw.githubusercontent.com/yrrapt/amsa
 C {sky130_tests/test_short_option.sym} 480 -1260 0 0 {name=x40}
 C {sky130_tests/test_lvs_ignore.sym} 480 -1220 0 0 {name=x41}
 C {sky130_tests/test_generators.sym} 480 -1180 0 0 {name=x38}
+C {sky130_tests/optimize_delay.sym} 190 -1180 0 0 {name=x39}

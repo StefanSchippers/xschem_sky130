@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2022 Stefan Frederik Schippers
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,13 @@ v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=primitive
-function3="1 d ~ 3 & x 0 & | 2 &"
+xfunction3="1 d ~ 3 & x 0 & | 2 &"
+function3="3 0 1 M 2 &"
 format="@name @@D @@GATE @@RESET_B @VGND @VNB @VPB @VPWR @@Q @prefix\\\\dlrtp_1"
 template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
 extra="VGND VNB VPB VPWR prefix"
 verilogprefix=sky130_fd_sc_hd__
-xfunction3="0 1 2 & & 1 ~ 2 3 & & |"}
+}
 V {}
 S {}
 E {}
