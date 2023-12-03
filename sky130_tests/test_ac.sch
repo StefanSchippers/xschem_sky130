@@ -25,8 +25,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.91739
-x2=10.0856
+
+x2=12
 
 subdivx=8
 node="\\"out db20()\\""
@@ -38,17 +38,18 @@ logy=0
 divx=5
 sweep=""
 rawfile=$netlist_dir/test_ac.raw
-sim_type=ac}
+sim_type=ac
+x1=5}
 B 2 1070 -900 1620 -580 {flags=graph,unlocked
-y1=-0.00135896
-y2=0.00142796
+y1=-0.0028
+y2=0.00099
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=6e-12
+x2=1e-07
 
 
 node="\\"minus .9101 -\\"
@@ -66,15 +67,15 @@ subdivx=3}
 B 2 1070 -580 1620 -330 {flags=graph,unlocked
 rawfile=$netlist_dir/test_ac.raw
 sim_type=ac
-y1=0
+y1=1.4
 y2=180
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.91739
-x2=10.0856
+x1=5
+x2=12
 
 subdivx=8
 node=ph(out)
@@ -150,10 +151,12 @@ N 800 -810 870 -810 {
 lab=#net2}
 N 800 -810 800 -720 {
 lab=#net2}
-N 760 -690 760 -520 {
-lab=OUT}
 N 800 -690 840 -690 {
 lab=GND}
+N 760 -690 760 -550 {
+lab=OUT}
+N 760 -550 760 -520 {
+lab=OUT}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 290 -360 0 0 {name=M1
 L=2
 W=4
@@ -241,7 +244,7 @@ C {devices/lab_pin.sym} 50 -300 0 1 {name=l1 sig_type=std_logic lab=VCC}
 C {devices/vsource.sym} 50 -360 0 0 {name=V3 value=0.91}
 C {devices/lab_pin.sym} 50 -390 0 1 {name=l1 sig_type=std_logic lab=PLUS}
 C {devices/vsource.sym} 50 -450 0 0 {name=V4 value="0 ac 1 0
-+ sin(0 1m 1T 0 0 0)"}
++ sin(0 1m 100meg 0 0 0)"}
 C {devices/lab_pin.sym} 50 -480 0 1 {name=l2 sig_type=std_logic lab=IN}
 C {devices/lab_wire.sym} 430 -360 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 50 -160 0 0 {name=l1 sig_type=std_logic lab=GND}
@@ -281,7 +284,7 @@ value="
   ac dec 10 1 1e12
   remzerovec
   write test_ac.raw
-  tran 1e-15 6e-12
+  tran 0.1n 100n
   write test_ac.raw
 .endc
 "}
