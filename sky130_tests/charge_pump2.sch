@@ -17,6 +17,32 @@ K {}
 V {}
 S {}
 E {}
+B 2 500 -380 1460 -60 {flags=graph
+y1=0.95
+y2=3.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.63616e-06
+x2=4.65574e-06
+divx=5
+subdivx=1
+xlabmag=1.3
+ylabmag=1.0
+node="x3.gn1
+x3.hv1
+x3.gn2
+x3.gp2
+x3.gp1
+"
+color="7 8 9 10 11"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=0}
 N 520 -1040 620 -1040 {
 lab=VCC}
 N 520 -1040 520 -840 {
@@ -425,3 +451,26 @@ C {devices/lab_wire.sym} 2320 -760 0 0 {name=p5 sig_type=std_logic lab=GP3}
 C {devices/lab_wire.sym} 2320 -720 0 0 {name=p6 sig_type=std_logic lab=GP4}
 C {devices/lab_wire.sym} 1760 -760 0 1 {name=p7 sig_type=std_logic lab=GN3}
 C {devices/lab_wire.sym} 1760 -720 0 1 {name=p8 sig_type=std_logic lab=GN4}
+C {devices/launcher.sym} 1670 -320 0 0 {name=h1
+descr=hilight\\ MOS\\ with\\ current
+tclcommand="
+xschem unhilight_all
+set incr_hilight 0
+foreach \{i n t\} [xschem instance_list] \{
+  if \{ $t eq \{nmos\} || $t eq \{pmos\}\} \{
+     # ... The traditional TCL quoting hell....
+     #               tclcommand         set inst
+     #    \\\\\\\\\\\\\\[       -->      \\\\\\[   -->     \\[
+     set inst *$\{path\}x[string tolower $i]*\\\\\\\\\\\\\\[id\\\\\\\\\\\\\\]*
+     lassign [array get ngspice::ngspice_data $inst] node value
+     # puts $inst
+     if \{ $value > 1e-6 \} \{
+       xschem set hilight_color 0
+       xschem hilight_instname $i fast
+     \}
+  \}
+\}
+xschem redraw
+
+"
+}

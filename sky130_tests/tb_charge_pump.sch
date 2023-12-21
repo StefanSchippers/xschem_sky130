@@ -158,15 +158,16 @@ place=header}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stefan Schippers"}
 C {devices/code_shown.sym} 10 -860 0 0 {name=STIMULI 
 only_toplevel=true
-value="
+value=".option savecurrents
 .param VCC=1.8
 .param FREQ=100e6
 .param PER=\{1/FREQ\}
 .control
   save all
   tran 100p 5u
+  remzerovec
   write tb_charge_pump.raw
-  quit 0
+  * quit 0
 .endc
 "}
 C {devices/launcher.sym} 360 -200 0 0 {name=h5
