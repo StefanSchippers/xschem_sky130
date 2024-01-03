@@ -39,7 +39,7 @@ divx=5
 sweep=""
 rawfile=$netlist_dir/test_ac.raw
 sim_type=ac
-x1=5}
+x1=0}
 B 2 1070 -900 1620 -580 {flags=graph,unlocked
 y1=-0.0028
 y2=0.00099
@@ -67,14 +67,14 @@ subdivx=3}
 B 2 1070 -580 1620 -330 {flags=graph,unlocked
 rawfile=$netlist_dir/test_ac.raw
 sim_type=ac
-y1=1.4
+y1=1.1
 y2=180
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5
+x1=0
 x2=12
 
 subdivx=8
@@ -269,10 +269,21 @@ tclcommand="
 xschem raw_read $netlist_dir/test_ac.raw tran
 "
 }
-C {devices/simulator_commands_shown.sym} 10 -860 0 0 {name=COMMANDS1
+C {devices/simulator_commands_shown.sym} 0 -1070 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
+.save
++ @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
++ @m.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
++ @m.xm4.msky130_fd_pr__nfet_01v8_lvt[gm]
++ @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
++ @m.xm5.msky130_fd_pr__pfet_01v8_lvt[gm]
++ v(@m.xm5.msky130_fd_pr__pfet_01v8_lvt[vth])
++ @m.xm5.msky130_fd_pr__pfet_01v8_lvt[gds]
++ v(@m.xm3.msky130_fd_pr__pfet_01v8_lvt[vth])
++ @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gds]
+ 
 .option reltol=1e-5
 +  abstol=1e-14 savecurrents
 .control
@@ -288,7 +299,7 @@ value="
   write test_ac.raw
 .endc
 "}
-C {devices/simulator_commands_shown.sym} 360 -860 0 0 {name=COMMANDS2
+C {devices/simulator_commands_shown.sym} 420 -810 0 0 {name=COMMANDS2
 simulator=xyce
 only_toplevel=false 
 value="
@@ -342,3 +353,11 @@ C {devices/launcher.sym} 630 -220 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
+C {devices/ngspice_get_value.sym} 170 -470 0 1 {name=r14 node=v(@m.xm5.msky130_fd_pr__pfet_01v8_lvt[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 170 -510 0 1 {name=r15 node=@m.xm5.msky130_fd_pr__pfet_01v8_lvt[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 620 -490 0 0 {name=r1 node=v(@m.xm3.msky130_fd_pr__pfet_01v8_lvt[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 620 -530 0 0 {name=r2 node=@m.xm3.msky130_fd_pr__pfet_01v8_lvt[gds]
+descr="gds="}

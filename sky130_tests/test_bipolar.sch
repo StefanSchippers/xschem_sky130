@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -119,10 +119,6 @@ C {devices/launcher.sym} 1000 -140 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {sky130_fd_pr/npn_05v5.sym} 630 -750 0 0 {name=Q2
-model=npn_05v5_w1p00l2p00
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 650 -660 0 1 {name=p2 lab=0}
 C {devices/ammeter.sym} 650 -690 0 0 {name=Ve2 net_name=true}
 C {devices/ammeter.sym} 650 -810 0 0 {name=Vc2 net_name=true}
@@ -152,3 +148,7 @@ descr="Beta="
 }
 C {devices/ngspice_get_value.sym} 520 -670 0 1 {name=r3 node=v(@q.xq2.qsky130_fd_pr__npn_05v5_W1p00l2p00[vbe])
 descr="vbe="}
+C {sky130_fd_pr/npn_05v5.sym} 630 -750 0 0 {name=Q2
+model=npn_05v5_w1p00l2p00
+spiceprefix=X m=1
+}
