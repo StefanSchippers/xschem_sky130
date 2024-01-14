@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,53 +19,9 @@ K {}
 V {}
 S {}
 E {}
-L 4 110 -160 250 -160 {}
-L 4 110 -300 110 -160 {}
 L 4 740 -550 1110 -550 {}
 L 4 1110 -550 1120 -540 {}
 L 4 730 -540 740 -550 {}
-P 4 6 110 -430 110 -470 100 -470 110 -490 120 -470 110 -470 {}
-P 4 6 250 -160 250 -190 240 -190 250 -210 260 -190 250 -190 {}
-P 4 6 560 -380 540 -380 540 -370 520 -380 540 -390 540 -380 {}
-T {ngspice_get_value
-copy a spice variable as it appears 
-in the raw file. You mught replace
-the hierarchy path (x1.) with $\{path\}
-so annotation works if this circuit
-is simulated alone or within a parent
-hierarchy} 490 -270 0 0 0.2 0.2 {layer=4}
-T {ngspice_get_expr
-You can give here a tcl expression
-involving multiple spice variables
-tcl is very verbose and spice names often
-include square brackets (that tcl 
-interprets as subcommands) so variables
-with such characters must be enclosed
-within \{\} braces.} 490 -170 0 0 0.2 0.2 {layer=4}
-T {ngspice_probe} 220 -460 0 0 0.2 0.2 {layer=4}
-T {ngspice_probe} 250 -630 0 0 0.2 0.2 {layer=4}
-T {Annotate launcher works fetching data
-from the .raw file of the top most schematic
-where presumably simulation has been run.
-If this is not the case open this schematic 
-as the top level cell (File -> Open) and 
-run simulation at *this* level} 760 -300 0 0 0.2 0.2 {layer=4}
-T {This will display the raw file of the top
-most schematic where presumably simulation
-has been run} 760 -160 0 0 0.2 0.2 {layer=4}
-T {These values will be
-displayed only when
-simulating this circuit
-as the top level, other-
-wise these nodes are 
-available at the parent
-level since these are
-input ports.} 40 -410 0 0 0.2 0.2 {layer=4}
-T {using the $\{path\} in the node
-attribute ensures 
-correct data is imported for any
-instance of this schematic at any
-hierarchy level} 570 -400 0 0 0.2 0.2 {layer=4}
 T {This schematic contains annotators, ngspice_probe,
 ngspice_get_value and ngspice_get_expr.
 By using the $\{path\} expression instead of the
@@ -194,25 +150,18 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 240 -220 0 0 {name=p3 sig_type=std_logic lab=NBIAS}
-C {devices/ngspice_probe.sym} 230 -420 0 0 {name=r2}
-C {devices/ngspice_probe.sym} 240 -590 0 0 {name=r1}
 C {devices/launcher.sym} 830 -100 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
 }
-C {devices/ngspice_get_expr.sym} 470 -130 0 1 {name=r4 node="[format %.4g [expr [ngspice::get_node \{i(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[id])\}] * [ngspice::get_voltage s] ] ]"
-descr="power [W]"}
+C {devices/ngspice_get_expr.sym} 470 -130 0 1 {name=r4 node="[format %.4g [expr [ngspice::get_node \{i(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[id])\}] * [ngspice::get_node v($\{path\}s)] ] ]"
+descr="power W"}
 C {devices/ngspice_get_value.sym} 470 -190 0 1 {name=r3 node=i(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[id])
 descr="Id="}
 C {devices/launcher.sym} 830 -200 0 0 {name=h1
 descr=Annotate 
 tclcommand="xschem annotate_op"}
-C {devices/ngspice_probe.sym} 250 -220 0 0 {name=r5}
-C {devices/ngspice_probe.sym} 110 -500 0 0 {name=r6}
-C {devices/ngspice_probe.sym} 530 -500 0 0 {name=r7}
 C {devices/lab_pin.sym} 470 -420 0 1 {name=l4 sig_type=std_logic lab=S}
-C {devices/ngspice_get_value.sym} 470 -240 0 1 {name=r8 node=@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[gm]
-descr="gm="}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 410 -340 0 0 {name=R1
 W=0.35
 L=50
@@ -236,14 +185,6 @@ C {devices/vsource.sym} 750 -470 0 0 {name=V4 value=0.7 only_toplevel=true}
 C {devices/gnd.sym} 750 -440 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 750 -530 0 1 {name=l6 sig_type=std_logic lab=MINUS}
 C {devices/ngspice_get_expr.sym} 1070 -470 0 1 {name=r10 node="[ngspice::get_current v3]"}
-C {devices/device_param_probe.sym} 460 -530 0 1 {name=r12
-devicename=M2
-devicemodel=nfet_01v8_lvt
-deviceparam=gm}
-C {devices/device_param_probe.sym} 170 -530 0 1 {name=r13
-devicename=M1
-devicemodel=nfet_01v8_lvt
-deviceparam=gm}
 C {sky130_fd_pr/corner.sym} 1050 -360 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/ngspice_get_value.sym} 280 -250 0 1 {name=r14 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
