@@ -335,7 +335,7 @@ set bespice_listen_port 2022
 ###########################################################################
 #### list of tcl files to preload.
 set tcl_files {}
-lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
+# lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
 # lappend tcl_files ${XSCHEM_SHAREDIR}/change_index.tcl
 # lappend tcl_files ....
 
@@ -424,6 +424,7 @@ if {[info exists PDK_ROOT]} {
     set PDK sky130A
   }
   set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/ngspice
+  # set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/combined
   set SKYWATER_STDCELLS ${PDK_ROOT}/${PDK}/libs.ref/sky130_fd_sc_hd/spice
   puts stderr "open_pdks installation: using $PDK_ROOT"
   puts stderr "SKYWATER_MODELS: $SKYWATER_MODELS"

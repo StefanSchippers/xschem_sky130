@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,8 +27,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=p
-x1=-2.1
-x2=4.39255
+x1=-2.01747
+x2=4.47508
 
 subdivx=1
 

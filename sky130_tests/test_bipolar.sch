@@ -19,11 +19,6 @@ K {}
 V {}
 S {}
 E {}
-L 4 380 -270 380 -230 {}
-L 4 370 -230 380 -230 {}
-L 4 370 -230 380 -210 {}
-L 4 380 -210 390 -230 {}
-L 4 380 -230 390 -230 {}
 B 2 790 -700 1590 -300 {flags=graph
 y1=0.54
 y2=0.81
@@ -43,10 +38,6 @@ unitx=1
 logx=1
 logy=0
 }
-T {Temporary fix
-This is needed to fix
-wrong file inclusion
-for NPN inthe PDK} 290 -380 0 0 0.4 0.4 { layer=7}
 N 560 -220 610 -220 { lab=#net1}
 N 560 -220 560 -190 { lab=#net1}
 N 650 -470 650 -440 { lab=0}
@@ -65,8 +56,7 @@ N 650 -750 690 -750 {
 lab=0}
 C {devices/code_shown.sym} 0 -680 0 0 {name=NGSPICE
 only_toplevel=true
-value="
-.option savecurrents
+value=".option savecurrents
 .control
 save all
 save @q.xq1.qsky130_fd_pr__pnp_05v5_W3p40L3p40[vbe]
@@ -80,7 +70,6 @@ write test_bipolar.raw
 set appendwrite
 op
 write test_bipolar.raw
-
 
 .endc
 " }
@@ -126,18 +115,6 @@ C {devices/ammeter.sym} 560 -810 0 0 {name=Vb2 net_name=true}
 C {devices/isource.sym} 650 -870 0 0 {name=I1 value=1u}
 C {devices/lab_pin.sym} 650 -930 0 0 {name=p5 lab=0}
 C {devices/lab_pin.sym} 690 -750 0 1 {name=p6 lab=0}
-C {devices/code.sym} 320 -180 0 0 {name="NPN tt params"
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** Additional definitions for NPN
-.param
-+ dkisnpn1x1=8.7913e-01 dkbfnpn1x1=9.8501e-01
-+ dkisnpn1x2=9.0950e-01 dkbfnpn1x2=9.6759e-01
-+ dkisnpnpolyhv=1.0 dkbfnpnpolyhv=1.0
-
-"
-spice_ignore=false}
 C {devices/ngspice_get_expr.sym} 520 -730 0 1 {name=r2 
 node="[format %.4g [expr \{ 
       [ngspice::get_node \{i(@q.xq2.qsky130_fd_pr__npn_05v5_W1p00L2p00[ic])\}] 
