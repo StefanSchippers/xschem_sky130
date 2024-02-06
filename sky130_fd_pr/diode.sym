@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,12 @@ v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=diode
-format="@name @pinlist sky130_fd_pr__@model area=@area pj=@pj"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model area=@area pj=@pj"
 template="name=D1
 model=diode_pw2nd_05v5
 area=1e12
 pj=4e6
+spiceprefix=X
 "
 
 available_models="

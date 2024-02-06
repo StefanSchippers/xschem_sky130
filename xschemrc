@@ -423,8 +423,8 @@ if {[info exists PDK_ROOT]} {
   } else {
     set PDK sky130A
   }
-  set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/ngspice
-  # set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/combined
+  # set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/ngspice
+  set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/combined
   set SKYWATER_STDCELLS ${PDK_ROOT}/${PDK}/libs.ref/sky130_fd_sc_hd/spice
   puts stderr "open_pdks installation: using $PDK_ROOT"
   puts stderr "SKYWATER_MODELS: $SKYWATER_MODELS"

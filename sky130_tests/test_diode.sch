@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,15 +20,15 @@ V {}
 S {}
 E {}
 B 2 910 -700 1320 -490 {flags=graph
-y1=-9.9e+09
-y2=9.9e+09
+y1=-0.81
+y2=-0.59
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=2.2e-08
+x1=1e-12
+x2=4.99e-05
 divx=5
 subdivx=4
 
@@ -41,15 +41,15 @@ color=7
 node=k1
 hilight_wave=-1}
 B 2 910 -920 1320 -710 {flags=graph
-y1=-1e-05
-y2=1e-05
+y1=-5e-05
+y2=-1e-07
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=2.2e-08
+x1=1e-12
+x2=4.99e-05
 divx=5
 subdivx=4
 
@@ -81,8 +81,6 @@ sky130_fd_pr__diode_pw2nd_11v0
 sky130_fd_pr__diode_pd2nw_05v5
 sky130_fd_pr__diode_pd2nw_11v0
 sky130_fd_pr__model__parasitic__diode_ps2dn} 950 -280 0 0 0.2 0.2 {}
-T {Transient sim does not work
-Diodes behave as open circuits} 390 -870 0 0 0.5 0.5 {layer=7}
 T {Not clear what are the geometrical
 units. Area=1e12 ? should be
 Area=1 for a 1um x 1um device,

@@ -321,8 +321,8 @@ spiceprefix=X
 }
 C {sky130_tests/test_comparator.sym} 190 -1420 0 0 {name=x7}
 C {sky130_fd_pr/pfet_20v0.sym} 2130 -970 0 0 {name=M13
-L=1
-W=30
+L=0.5
+W=60
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
@@ -450,8 +450,8 @@ model=pfet_g5v0d16v0
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_20v0.sym} 3290 -970 0 0 {name=M29
-L=1
-W=30
+L=0.5
+W=60
 body=VDD
 nf=1 mult=1
 model=pfet_20v0
@@ -479,37 +479,37 @@ xschem + open_pdks (sky130 pdk) + ngspice"
 url="https://xschem.sourceforge.io/stefan/xschem_man/tutorial_xschem_sky130.html"}
 C {sky130_tests/simulate_ff.sym} 190 -630 0 0 {name=x22}
 C {sky130_fd_pr/nfet_20v0.sym} 2130 -750 0 0 {name=M7
-L=2.95
-W=29.41
+L=0.5
+W=40
 mult=1
 model=nfet_20v0
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_20v0.sym} 3300 -750 0 0 {name=M23
-L=2.95
-W=29.41
+L=0.5
+W=40
 body=GND
 mult=1
 model=nfet_20v0
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_20v0_iso.sym} 2290 -750 0 0 {name=M14
-L=1.5
-W=30
+L=0.5
+W=40
 mult=1
 model=nfet_20v0_iso
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_20v0_nvt.sym} 2450 -750 0 0 {name=M15
-L=1.5
-W=30
+L=0.5
+W=40
 mult=1
 model=nfet_20v0_nvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_20v0_zvt.sym} 2610 -750 0 0 {name=M16
-L=5
-W=30
+L=0.5
+W=60
 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X

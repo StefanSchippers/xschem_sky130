@@ -60,8 +60,8 @@ divx=5
 subdivx=1
 node="adj
 out
-out%58
-out%59"
+out%10
+out%23"
 color="6 18 9 8"
 
 unitx=1
@@ -128,10 +128,10 @@ unitx=1
 logx=0
 logy=0
 
-color="12 8 9"
+color="12 8 9 4 4"
 node="i(vvcc)
-i(vvcc)%59
-i(vvcc)%58"
+i(vvcc)%10
+i(vvcc)%23"
 hilight_wave=-1}
 B 2 440 -1080 610 -930 {flags=graph
 y1=0.395916

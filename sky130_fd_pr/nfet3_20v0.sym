@@ -16,11 +16,11 @@ v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {type=nmos
-lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W nf=@nf m=@mult"
+lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W m=@mult"
 format="@spiceprefix@name @pinlist @body sky130_fd_pr__@model L=@L W=@W m=@mult"
 template="name=M1
-L=2.95
-W=29.41
+L=0.5
+W=40
 body=GND
 mult=1
 model=nfet_20v0

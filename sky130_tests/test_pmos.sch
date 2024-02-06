@@ -276,7 +276,7 @@ C {devices/lab_pin.sym} 1230 -840 0 1 {name=p53 lab=D20v0}
 C {devices/lab_pin.sym} 1190 -770 0 0 {name=p54 lab=0}
 C {sky130_fd_pr/pfet_20v0.sym} 1930 -440 0 0 {name=M6
 L=0.5
-W=30
+W=60
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X
@@ -352,7 +352,7 @@ spiceprefix=X
 body=B}
 C {sky130_fd_pr/pfet3_20v0.sym} 2060 -610 0 0 {name=M12
 L=0.5
-W=30
+W=60
 nf=1 mult=1
 model=pfet_20v0
 spiceprefix=X

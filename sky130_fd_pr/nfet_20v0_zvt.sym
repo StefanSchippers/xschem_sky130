@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,11 @@ v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=nmos
-lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W nf=@nf m=@mult"
+lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W m=@mult"
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
 template="name=M1
-L=5
-W=30
+L=0.5
+W=60
 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X

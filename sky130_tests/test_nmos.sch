@@ -46,8 +46,8 @@ color=4 unity=1
 sweep=d5v0
 dataset=-1}
 B 2 1920 -1110 2350 -790 {flags=graph,unlocked
-y1 = 0
-y2 = 0.0053
+y1 = -4.32335e-05
+y2 = 0.00106827
 divy = 5
 subdivy=1
 x1=0
@@ -60,7 +60,7 @@ sweep=v(d10v5)
 dataset=-1}
 B 2 2380 -1110 2810 -790 {flags=graph
 y1 = 5e-13
-y2 = 0.00056
+y2 = 0.00051
 divy = 5
 subdivy=1
 x1=0.152264
@@ -367,15 +367,15 @@ C {devices/lab_pin.sym} 2450 -260 0 1 {name=p52 lab=B}
 C {devices/lab_pin.sym} 2370 -260 0 0 {name=p53 lab=G1v8}
 C {devices/ammeter.sym} 2430 -340 0 0 {name=Vd8 current=0.001321}
 C {sky130_fd_pr/nfet_20v0.sym} 2170 -260 0 0 {name=M7
-L=2.95
-W=29.41
+L=0.5
+W=40
 mult=1
 model=nfet_20v0
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_20v0_zvt.sym} 2410 -260 0 0 {name=M8
-L=5
-W=30
+L=0.5
+W=60
 mult=1
 model=nfet_20v0_zvt
 spiceprefix=X
@@ -472,8 +472,8 @@ model=nfet_g5v0d16v0
 spiceprefix=X
 body=B}
 C {sky130_fd_pr/nfet3_20v0.sym} 2270 -120 0 0 {name=M16
-L=2.95
-W=29.41
+L=0.5
+W=40
 mult=1
 model=nfet_20v0
 spiceprefix=X

@@ -989,7 +989,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/parax_cap.sym} 160 -1200 3 0 {name=C6 gnd=0 value=100p m=1}
-C {devices/vsource.sym} 300 -1110 0 0 {name=VVCC value=VCC}
+C {devices/vsource.sym} 300 -1110 0 0 {name=VVCC value='VCC'}
 C {devices/lab_pin.sym} 300 -1200 0 0 {name=p32 lab=VCC}
 C {devices/lab_pin.sym} 300 -1080 0 0 {name=p33 lab=0}
 C {devices/res.sym} 300 -1170 0 0 {name=R2
@@ -998,47 +998,48 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/parax_cap.sym} 340 -1200 3 0 {name=C11 gnd=0 value=100p m=1}
-C {devices/vsource.sym} 120 -960 0 0 {name=VPLUS value=VDL
+C {devices/vsource.sym} 120 -960 0 0 {name=VPLUS value='VDL'
 spice_ignore=false}
 C {devices/lab_pin.sym} 120 -930 0 0 {name=p34 lab=0}
 C {devices/lab_pin.sym} 120 -1020 0 0 {name=p35 lab=PLUS}
 C {devices/vsource.sym} 300 -960 0 0 {name=VMINUS value="pwl
-+0 VDL
-+70.2n VDL
++0 'VDL'
++70.2n 'VDL'
 +70.5n 'VDL-DELTA'
 +109.9n 'VDL-DELTA'
-+110.1n VDL
-+170.2n VDL
++110.1n 'VDL'
++170.2n 'VDL'
 +170.5n 'VDL+DELTA'
 +209.9n 'VDL+DELTA'
-+210.1n VDL"
++210.1n 'VDL'"
 spice_ignore=false}
 C {devices/lab_pin.sym} 300 -930 0 0 {name=p36 lab=0}
 C {devices/lab_pin.sym} 300 -1020 0 0 {name=p37 lab=MINUS}
-C {devices/vsource.sym} 120 -750 0 0 {name=VCAL value="dc VCC pwl
+C {devices/vsource.sym} 120 -750 0 0 {name=VCAL value="dc 'VCC' pwl
 +0 0
 +29.9n 0
-+30.1n VCC
-+69.9n VCC
++30.1n 'VCC'
++69.9n 'VCC'
 +70.1n 0
 +129.9n 0
-+130.1n VCC
-+169.9n VCC
++130.1n 'VCC'
++169.9n 'VCC'
 +170.1n 0"
 spice_ignore=false}
 C {devices/lab_pin.sym} 120 -720 0 0 {name=p38 lab=0}
 C {devices/lab_pin.sym} 120 -810 0 0 {name=p39 lab=CAL}
-C {devices/vsource.sym} 300 -750 0 0 {name=VEN value="dc VCC pwl 
+C {devices/vsource.sym} 300 -750 0 0 {name=VEN value="dc 'VCC' pwl 
 +0 0
 +29.9n 0
-+30.1n VCC
-+109.9n VCC
++30.1n 'VCC'
++109.9n 'VCC'
 +110.1n 0
 +129.9n 0
-+130.1n VCC
-+209.9n VCC
++130.1n 'VCC'
++209.9n 'VCC'
 +210.1n 0"
-spice_ignore=false}
+spice_ignore=false
+}
 C {devices/lab_pin.sym} 300 -720 0 0 {name=p40 lab=0}
 C {devices/lab_pin.sym} 300 -810 0 0 {name=p41 lab=EN}
 C {devices/code.sym} 190 -190 0 0 {name=STIMULI 
