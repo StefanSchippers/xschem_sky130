@@ -114,7 +114,7 @@ spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 460 -390 0 0 {name=l18 lab=GND}
 C {devices/gnd.sym} 440 -420 0 1 {name=l19 lab=GND}
-C {devices/ngspice_get_value.sym} 500 -370 0 0 {name=r7 node=i(@b.$\{path\}xr1.xsky130_fd_pr__res_xhigh_po_0p35.brbody[i])
+C {devices/ngspice_get_value.sym} 500 -370 0 0 {name=r7 node=i(@b.$\{path\}xr1.x0.brbody[i])
 descr="I="}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 460 -140 0 0 {name=R2
 W=0.35
@@ -124,7 +124,7 @@ spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 460 -110 0 0 {name=l20 lab=GND}
 C {devices/gnd.sym} 440 -140 0 1 {name=l21 lab=GND}
-C {devices/ngspice_get_value.sym} 500 -90 0 0 {name=r9 node=i(@b.$\{path\}xr2.xsky130_fd_pr__res_xhigh_po_0p35.brbody[i])
+C {devices/ngspice_get_value.sym} 500 -90 0 0 {name=r9 node=i(@b.$\{path\}xr2.x0.brbody[i])
 descr="I="}
 C {devices/ngspice_get_expr.sym} 950 -690 0 1 {name=r8 node="[ngspice::get_current v3]"}
 C {sky130_fd_pr/corner.sym} 1050 -370 0 0 {name=CORNER only_toplevel=true corner=tt}

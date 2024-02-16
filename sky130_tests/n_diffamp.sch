@@ -170,7 +170,7 @@ spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 410 -310 0 0 {name=l18 lab=GND}
 C {devices/gnd.sym} 390 -340 0 1 {name=l19 lab=GND}
-C {devices/ngspice_get_value.sym} 450 -360 0 0 {name=r9 node=i(@b.$\{path\}xr1.xsky130_fd_pr__res_xhigh_po_0p35.brbody[i])
+C {devices/ngspice_get_value.sym} 450 -360 0 0 {name=r9 node=i(@b.$\{path\}xr1.x0.brbody[i])
 descr="I="}
 C {devices/vsource.sym} 850 -470 0 0 {name=V1 value=0.7 only_toplevel=true}
 C {devices/gnd.sym} 850 -440 0 0 {name=l9 lab=GND}

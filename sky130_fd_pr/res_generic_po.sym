@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,12 @@ v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=poly_resistor
-format="@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
 template="name=R1
 W=1
 L=1
 model=res_generic_po
+spiceprefix=X
 mult=1"
 }
 V {}

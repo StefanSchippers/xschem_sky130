@@ -58,7 +58,7 @@ logx=0
 logy=0
 }
 B 2 1450 -370 1670 -210 {flags=graph
-y1=180
+y1=170
 y2=230
 ypos1=0
 ypos2=2
@@ -77,8 +77,8 @@ logx=0
 logy=0
 }
 B 2 1450 -540 1670 -380 {flags=graph
-y1=45
-y2=54
+y1=48
+y2=57
 ypos1=0
 ypos2=2
 divy=5
@@ -96,8 +96,8 @@ logx=0
 logy=0
 }
 B 2 1450 -710 1670 -550 {flags=graph
-y1=3500
-y2=6600
+y1=1000
+y2=1800
 ypos1=0
 ypos2=2
 divy=5
@@ -134,8 +134,8 @@ logx=0
 logy=0
 }
 B 2 1680 -540 1900 -380 {flags=graph
-y1=2300
-y2=2900
+y1=2100
+y2=2200
 ypos1=0
 ypos2=2
 divy=5
@@ -172,8 +172,8 @@ logx=0
 logy=0
 }
 B 2 1910 -880 2130 -720 {flags=graph
-y1=947.998
-y2=1019.67
+y1=1200
+y2=1400
 ypos1=0
 ypos2=2
 divy=5
@@ -191,8 +191,8 @@ logx=0
 logy=0
 }
 B 2 1910 -540 2130 -380 {flags=graph
-y1=570
-y2=610
+y1=590
+y2=640
 ypos1=0
 ypos2=2
 divy=5
@@ -324,8 +324,8 @@ logx=0
 logy=0
 }
 B 2 1910 -710 2130 -550 {flags=graph
-y1=720
-y2=760
+y1=830
+y2=890
 ypos1=0
 ypos2=2
 divy=5
@@ -343,7 +343,7 @@ logx=0
 logy=0
 }
 B 2 2140 -710 2360 -550 {flags=graph
-y1=3700
+y1=3600
 y2=4100
 ypos1=0
 ypos2=2
@@ -463,8 +463,8 @@ W=1
 L=1
 model=res_generic_po
 spiceprefix=X
-spice_ignore=false
- mult=1}
+spice_ignore=0
+mult=1}
 C {devices/ammeter.sym} 430 -550 0 0 {name=Vr5}
 C {devices/lab_pin.sym} 430 -580 0 1 {name=p12 lab=P}
 C {devices/lab_pin.sym} 430 -460 0 1 {name=p13 lab=M}
