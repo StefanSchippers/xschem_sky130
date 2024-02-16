@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,41 +39,41 @@ depending on IGNORE} 1330 -760 0 0 0.4 0.4 { layer=1}
 N 430 -280 480 -280 {
 lab=NET_A}
 N 780 -280 830 -280 {
-lab=NET_A}
+lab=NET_B}
 N 480 -380 480 -280 {
 lab=NET_A}
 N 780 -380 780 -280 {
-lab=NET_A}
+lab=NET_B}
 N 480 -380 600 -380 {
 lab=NET_A}
 N 660 -380 780 -380 {
-lab=NET_A}
-N 430 -470 480 -470 {
+lab=NET_B}
+N 420 -470 480 -470 {
 lab=NET_C}
 N 780 -470 830 -470 {
-lab=#net1}
+lab=NET_C}
 N 480 -570 480 -470 {
 lab=NET_C}
 N 780 -570 780 -470 {
-lab=#net1}
+lab=NET_C}
 N 480 -570 600 -570 {
 lab=NET_C}
 N 660 -570 780 -570 {
-lab=#net1}
+lab=NET_C}
 N 680 -470 780 -470 {
-lab=#net1}
+lab=NET_C}
 N 480 -470 600 -470 {
 lab=NET_C}
 N 680 -280 780 -280 {
-lab=NET_A}
+lab=NET_B}
 N 480 -280 600 -280 {
 lab=NET_A}
 N 910 -470 960 -470 {
-lab=#net2}
+lab=#net1}
 N 960 -450 960 -390 {
-lab=#net2}
+lab=#net1}
 N 960 -390 1030 -390 {
-lab=#net2}
+lab=#net1}
 N 960 -350 1030 -350 {
 lab=NET_B}
 N 960 -350 960 -280 {
@@ -81,23 +81,27 @@ lab=NET_B}
 N 910 -280 960 -280 {
 lab=NET_B}
 N 1170 -370 1210 -370 {
-lab=#net3}
+lab=NET_E}
 N 960 -450 1060 -450 {
-lab=#net2}
+lab=#net1}
 N 1120 -450 1170 -450 {
-lab=#net3}
+lab=NET_E}
 N 1170 -450 1170 -370 {
-lab=#net3}
+lab=NET_E}
 N 960 -470 960 -450 {
-lab=#net2}
+lab=#net1}
 N 1150 -370 1170 -370 {
-lab=#net3}
+lab=NET_E}
 N 1580 -810 1700 -810 {
-lab=NET_B}
+lab=#net2}
 N 1780 -810 1840 -810 {
 lab=NET_F}
 N 1230 -810 1500 -810 {
 lab=NET_B}
+N 420 -410 460 -410 {
+lab=NET_C}
+N 460 -470 460 -410 {
+lab=NET_C}
 C {devices/lab_pin.sym} 430 -280 0 0 {name=p3 sig_type=std_logic lab=NET_A}
 C {devices/iopin.sym} 390 -190 0 1 { name=p4 lab=NET_A }
 C {devices/title.sym} 470 -80 0 0 {name=l1
@@ -110,20 +114,20 @@ author="tcleval([
   return \{Stefan Schippers\}
 ])"
 }
-C {devices/short.sym} 630 -380 0 0 {name=x2
+C {devices/short.sym} 630 -380 1 0 {name=x2
 spice_ignore="tcleval([if \{$IGNORE == 1\} \{return \{false\}\} else \{return \{true\}\}])"
 }
 C {devices/lab_pin.sym} 960 -280 0 1 {name=p5 sig_type=std_logic lab=NET_B}
 C {devices/lab_show.sym} 780 -380 0 1 {name=l2 }
-C {devices/lab_pin.sym} 430 -470 0 0 {name=p1 sig_type=std_logic lab=NET_C}
-C {devices/short.sym} 630 -570 0 0 {name=x5
+C {devices/lab_pin.sym} 360 -470 0 0 {name=p1 sig_type=std_logic lab=NET_C}
+C {devices/short.sym} 630 -570 1 0 {name=x5
 spice_ignore="tcleval([if \{$IGNORE == 1\} \{return \{true\}\} else \{return \{false\}\}])"
 }
 C {devices/lab_show.sym} 780 -570 0 1 {name=l3 }
 C {devices/iopin.sym} 390 -160 0 1 { name=p7 lab=NET_C }
 C {devices/lab_show.sym} 960 -470 0 1 {name=l5 }
-C {devices/short.sym} 1090 -450 0 0 {name=x1
-spice_ignore="tcleval([if \{$IGNORE == 1\} \{return \{true\}\} else \{return \{false\}\}])"
+C {devices/short.sym} 1090 -450 1 0 {name=x1
+spice_ignore="tcleval([if \{$IGNORE == 0\} \{return \{true\}\} else \{return \{false\}\}])"
 }
 C {devices/lab_show.sym} 1210 -370 0 1 {name=l4 }
 C {devices/launcher.sym} 1060 -140 0 0 {name=h1
@@ -138,11 +142,17 @@ if \{![info exists IGNORE]\} \{
 xschem rebuild_connectivity
 xschem unhilight_all
 "}
-C {sky130_tests/lvnand.sym} 1080 -370 0 0 {name=x10 WidthN=1 LenN=0.15 WidthP=1 LenP=0.15 m=1}
+C {sky130_tests/lvnand.sym} 1080 -370 0 0 {name=x10 WidthN=1 LenN=0.15 WidthP=1 LenP=0.15 m=1
+spice_ignore="tcleval([if \{$IGNORE == 0\} \{return \{false\}\} else \{return \{true\}\}])"
+}
 C {sky130_tests/not.sym} 640 -470 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
-C {sky130_tests/not.sym} 640 -280 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
+C {sky130_tests/not.sym} 640 -280 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1
+spice_ignore="tcleval([if \{$IGNORE == 1\} \{return \{true\}\} else \{return \{false\}\}])"
+}
 C {sky130_tests/not.sym} 870 -470 0 0 {name=x6 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
-C {sky130_tests/not.sym} 870 -280 0 0 {name=x7 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
+C {sky130_tests/not.sym} 870 -280 0 0 {name=x7 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1
+spice_ignore="tcleval([if \{$IGNORE == 1\} \{return \{false\}\} else \{return \{short\}\}])"
+}
 C {devices/lab_pin.sym} 1840 -810 0 1 {name=p8 sig_type=std_logic lab=NET_F}
 C {devices/lab_pin.sym} 1230 -810 0 0 {name=p9 sig_type=std_logic lab=NET_B}
 C {devices/lab_show.sym} 1610 -810 0 1 {name=l7 }
@@ -151,3 +161,12 @@ C {sky130_tests/not.sym} 1540 -810 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.
 spice_ignore="tcleval([if \{$IGNORE == 0\} \{return \{false\}\} else \{return \{short\}\}])"
 }
 C {sky130_tests/not.sym} 1740 -810 0 0 {name=x8 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
+C {devices/lab_pin.sym} 360 -410 0 0 {name=p2 sig_type=std_logic lab=NET_D}
+C {devices/ammeter.sym} 390 -410 3 0 {name=Vopt1
+spice_ignore="tcleval([if \{$IGNORE == 0\} \{return \{true\}\} else \{return \{short\}\}])"
+}
+C {devices/ammeter.sym} 390 -470 3 0 {name=Vopt2
+spice_ignore="tcleval([if \{$IGNORE == 1\} \{return \{true\}\} else \{return \{short\}\}])"
+}
+C {devices/lab_show.sym} 480 -570 0 0 {name=l6 }
+C {devices/lab_pin.sym} 1170 -420 0 1 {name=p6 sig_type=std_logic lab=NET_E}
