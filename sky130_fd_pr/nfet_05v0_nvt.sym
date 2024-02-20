@@ -22,8 +22,8 @@ format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W
 + nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd 
 + mult=@mult m=@mult"
 template="name=M1
-L=0.9
 W=1
+L=0.9
 nf=1
 mult=1
 ad=\\"'int((nf+1)/2) * W/nf * 0.29'\\" 
