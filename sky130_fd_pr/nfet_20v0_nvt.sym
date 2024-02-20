@@ -19,8 +19,8 @@ K {type=nmos
 lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W m=@mult"
 format="@spiceprefix@name @pinlist sky130_fd_pr__@model W=@W L=@L m=@mult"
 template="name=M1
-L=0.5
 W=40
+L=0.5
 mult=1
 model=nfet_20v0_nvt
 spiceprefix=X

@@ -19,8 +19,8 @@ K {type=pmos
 lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W nf=@nf m=@mult"
 format="@spiceprefix@name @pinlist @body sky130_fd_pr__@model L=@L W=@W m=@mult"
 template="name=M1
-L=0.5
 W=60
+L=0.5
 body=VDD
 mult=1
 model=pfet_20v0
