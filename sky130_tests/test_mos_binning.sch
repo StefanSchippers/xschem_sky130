@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -130,8 +130,8 @@ vb b 0 0
       reset
       op
       set idx = $&i
-      let \{$myplot\}.curr[\{$&i\}] = i(vd2)
-      let \{$myplot\}.len[\{$&i\}] = j
+      let \{$myplot\}.curr[i] = i(vd2)
+      let \{$myplot\}.len[i] = j
       let j = j + stepl
       let i = i + 1
     end
