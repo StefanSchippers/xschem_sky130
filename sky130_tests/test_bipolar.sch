@@ -31,8 +31,9 @@ x1=-8.30103
 x2=-4.0002
 divx=5
 subdivx=8
-node=e1
-color=4
+node="e1
+b2"
+color="4 7"
 dataset=0
 unitx=1
 logx=1
@@ -50,7 +51,7 @@ lab=#net2}
 N 560 -780 560 -750 {
 lab=#net2}
 N 560 -840 650 -840 {
-lab=#net3}
+lab=B2}
 N 650 -930 650 -900 { lab=0}
 N 650 -750 690 -750 {
 lab=0}
@@ -112,7 +113,6 @@ C {devices/lab_pin.sym} 650 -660 0 1 {name=p2 lab=0}
 C {devices/ammeter.sym} 650 -690 0 0 {name=Ve2 net_name=true}
 C {devices/ammeter.sym} 650 -810 0 0 {name=Vc2 net_name=true}
 C {devices/ammeter.sym} 560 -810 0 0 {name=Vb2 net_name=true}
-C {devices/isource.sym} 650 -870 0 0 {name=I1 value=1u}
 C {devices/lab_pin.sym} 650 -930 0 0 {name=p5 lab=0}
 C {devices/lab_pin.sym} 690 -750 0 1 {name=p6 lab=0}
 C {devices/ngspice_get_expr.sym} 520 -730 0 1 {name=r2 
@@ -129,3 +129,5 @@ C {sky130_fd_pr/npn_05v5.sym} 630 -750 0 0 {name=Q2
 model=npn_05v5_w1p00l2p00
 spiceprefix=X m=1
 }
+C {devices/lab_pin.sym} 560 -840 0 0 {name=p7 lab=B2}
+C {devices/cccs.sym} 650 -870 0 0 {name=F1 vnam=Ve1 value=1}
