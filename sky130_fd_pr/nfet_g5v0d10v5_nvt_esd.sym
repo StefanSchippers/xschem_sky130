@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,8 +22,8 @@ format="@spiceprefix@name @pinlist sky130_fd_pr__@model L=@L W=@W
 + nrd=@nrd nrs=@nrs sa=@sa sb=@sb sd=@sd 
 + mult=@mult m=@mult"
 template="name=M1
-W=21.5
-L=0.55
+W=10
+L=2
 nf=1
 mult=1
 ad=\\"'int((nf+1)/2) * W/nf * 0.29'\\" 
@@ -32,7 +32,7 @@ as=\\"'int((nf+2)/2) * W/nf * 0.29'\\"
 ps=\\"'2*int((nf+2)/2) * (W/nf + 0.29)'\\"
 nrd=\\"'0.29 / W'\\" nrs=\\"'0.29 / W'\\"
 sa=0 sb=0 sd=0
-model=esd_nfet_g5v0d10v5_nvt
+model=esd_nfet_05v0_nvt
 spiceprefix=X
 "}
 V {}

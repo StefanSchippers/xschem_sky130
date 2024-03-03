@@ -24,8 +24,8 @@ y1 = 1.8e-13
 y2 = 0.00056
 divy = 5
 subdivy=1
-x1=0.152264
-x2=1.59226
+x1=0
+x2=1.8
 divx=4
 subdivx=4
 node="\\"01v8_lvt;i(vd1)\\"
@@ -37,8 +37,8 @@ y1 = -0
 y2 = 0.00063
 divy = 5
 subdivy=1
-x1=0
-x2=5
+x1=-0.5
+x2=4.5
 divx=8
 subdivx=0
 node=i(vd4)
@@ -63,8 +63,8 @@ y1 = 5e-13
 y2 = 0.00051
 divy = 5
 subdivy=1
-x1=0.152264
-x2=1.59226
+x1=0
+x2=1.8
 divx=4
 subdivx=4
 node="i(vd1)
@@ -76,12 +76,25 @@ y1 = 0
 y2 = 1.8
 divy = 5
 subdivy=4
-x1=0.152264
-x2=1.59226
+x1=0
+x2=1.8
 divx=4
 subdivx=4
 node=g1v8
 color=4 unity=1
+dataset=-1}
+B 2 2830 -1110 3260 -790 {flags=graph,unlocked
+y1 = -4.7e-86
+y2 = 0.0047
+divy = 5
+subdivy=1
+x1=0
+x2=5
+divx=8
+subdivx=0
+node=i(vd17)
+color=4 unity=1
+sweep=d5v0
 dataset=-1}
 P 15 6 300 -300 550 -300 540 -310 590 -300 540 -290 550 -300 {}
 T {Example usage 
@@ -106,7 +119,7 @@ N 690 -260 710 -260 {lab=B}
 N 630 -260 650 -260 {lab=G1v8}
 N 690 -310 690 -290 {lab=#net1}
 N 690 -230 690 -210 {lab=S}
-N 640 -390 2810 -390 { lab=D1v8}
+N 640 -390 3050 -390 { lab=D1v8}
 N 1190 -260 1210 -260 {lab=B}
 N 1130 -260 1150 -260 {lab=G3v3}
 N 1190 -310 1190 -290 {lab=#net2}
@@ -119,8 +132,8 @@ N 1440 -260 1460 -260 {lab=B}
 N 1380 -260 1400 -260 {lab=G5v0}
 N 1440 -310 1440 -290 {lab=#net4}
 N 1440 -230 1440 -210 {lab=S}
-N 640 -430 2810 -430 { lab=D3v3}
-N 640 -470 2810 -470 { lab=D5v0}
+N 640 -430 3050 -430 { lab=D3v3}
+N 640 -470 3050 -470 { lab=D5v0}
 N 960 -720 960 -700 { lab=D5v0}
 N 690 -390 690 -370 { lab=D1v8}
 N 940 -390 940 -370 { lab=D1v8}
@@ -134,21 +147,21 @@ N 1630 -260 1650 -260 {lab=G5v0}
 N 1690 -310 1690 -290 {lab=#net5}
 N 1690 -230 1690 -210 {lab=S}
 N 1690 -510 1690 -370 { lab=D10v5}
-N 640 -510 2810 -510 { lab=D10v5}
+N 640 -510 3050 -510 { lab=D10v5}
 N 1140 -720 1140 -700 { lab=D10v5}
 N 1940 -260 1960 -260 {lab=B}
 N 1880 -260 1900 -260 {lab=G5v0}
 N 1940 -310 1940 -290 {lab=#net6}
 N 1940 -230 1940 -210 {lab=S}
 N 1940 -550 1940 -370 { lab=D16v0}
-N 640 -550 2810 -550 { lab=D16v0}
+N 640 -550 3050 -550 { lab=D16v0}
 N 1320 -720 1320 -700 { lab=D16v0}
 N 2190 -260 2210 -260 {lab=B}
 N 2130 -260 2150 -260 {lab=G1v8}
 N 2190 -310 2190 -290 {lab=#net7}
 N 2190 -230 2190 -210 {lab=S}
 N 2190 -390 2190 -370 { lab=D1v8}
-N 640 -590 2810 -590 { lab=D20v0}
+N 640 -590 3050 -590 { lab=D20v0}
 N 1490 -720 1490 -700 { lab=D20v0}
 N 2430 -260 2450 -260 {lab=B}
 N 2370 -260 2390 -260 {lab=G1v8}
@@ -195,6 +208,12 @@ N 2040 -550 2040 -230 {
 lab=D16v0}
 N 2290 -390 2290 -230 {
 lab=D1v8}
+N 2840 -120 2860 -120 {lab=B}
+N 2840 -90 2840 -70 {lab=S}
+N 2840 -180 2840 -150 {
+lab=#net17}
+N 2840 -470 2840 -240 {
+lab=D5v0}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 640 -390 0 0 {name=p17 lab=D1v8}
 C {devices/lab_pin.sym} 690 -210 0 1 {name=p3 lab=S}
@@ -479,3 +498,21 @@ model=nfet_20v0
 spiceprefix=X
 body=B}
 C {devices/ngspice_probe.sym} 740 -120 0 1 {name=r2}
+C {sky130_fd_pr/nfet_g5v0d10v5_nvt_esd.sym} 2820 -120 0 0 {name=M32
+L=2
+W=10
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=esd_nfet_05v0_nvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 2840 -70 0 1 {name=p58 lab=S}
+C {devices/lab_pin.sym} 2860 -120 0 1 {name=p60 lab=B}
+C {devices/lab_pin.sym} 2800 -120 0 0 {name=p64 lab=G5v0}
+C {devices/ammeter.sym} 2840 -210 0 0 {name=Vd17 current=5.4633e-04}
