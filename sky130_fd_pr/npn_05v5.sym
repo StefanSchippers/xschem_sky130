@@ -17,7 +17,7 @@ v {xschem version=3.4.5 file_version=1.2
 G {}
 K {type=npn
 lvs_format="@spiceprefix@name @pinlist sky130_fd_pr__@model NE=1 m=@m"
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model m=@m"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model m=@m mult=@m"
 template="name=Q1
 model=npn_05v5_w1p00l2p00 m=1
 spiceprefix=X
