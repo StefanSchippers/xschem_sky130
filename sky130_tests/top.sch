@@ -776,3 +776,4 @@ C {sky130_tests/test_lvs_ignore.sym} 480 -1180 0 0 {name=x41}
 C {sky130_tests/test_generators.sym} 480 -1140 0 0 {name=x38}
 C {sky130_tests/optimize_delay.sym} 190 -1180 0 0 {name=x39}
 C {sky130_tests/test_customplot.sym} 480 -1380 0 0 {name=x42}
+C {sky130_tests/intuitive_interface_cheatsheet.sym} 1060 -1660 0 0 {name=x43}
