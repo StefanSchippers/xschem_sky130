@@ -166,7 +166,7 @@ area=1
 }
 C {sky130_fd_pr/lvsdiode.sym} 1760 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
-area=1
+area=1e12 perim=4e6
 
 }
 C {sky130_fd_pr/pnp_05v5.sym} 1980 -50 0 0 {name=Q1

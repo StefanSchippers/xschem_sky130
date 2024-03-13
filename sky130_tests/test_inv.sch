@@ -213,7 +213,6 @@ vvcc vcc 0
 + v(*) i(*)
 .tran 0.01n 30n
 "}
-C {sky130_fd_pr/corner.sym} 20 -200 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/bus_tap.sym} 210 -300 3 1 {name=l19 lab=[0]}
 C {devices/bus_tap.sym} 290 -300 3 1 {name=l2 lab=[1]}
 C {devices/bus_tap.sym} 370 -300 3 1 {name=l3 lab=[2]}
@@ -228,3 +227,12 @@ C {devices/bus_tap.sym} 1190 -300 3 1 {name=l12 lab=[3]}
 C {devices/bus_tap.sym} 1270 -300 3 1 {name=l13 lab=[4]}
 C {devices/bus_tap.sym} 1350 -300 3 1 {name=l14 lab=[5]}
 C {devices/bus_tap.sym} 1430 -300 3 1 {name=l15 lab=[6]}
+C {devices/code.sym} 20 -410 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}

@@ -20,15 +20,15 @@ V {}
 S {}
 E {}
 B 2 910 -700 1320 -490 {flags=graph
-y1=-0.81
-y2=-0.59
+y1=-0.79
+y2=-0.18
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=1e-12
-x2=4.99e-05
+x2=4.9900001e-05
 divx=5
 subdivx=4
 
@@ -42,14 +42,14 @@ node=k1
 hilight_wave=-1}
 B 2 910 -920 1320 -710 {flags=graph
 y1=-5e-05
-y2=-1e-07
+y2=-1e-12
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=1e-12
-x2=4.99e-05
+x2=4.9900001e-05
 divx=5
 subdivx=4
 
@@ -100,7 +100,7 @@ C {devices/lab_pin.sym} 400 -390 0 0 {name=p1 lab=0}
 C {sky130_fd_pr/diode.sym} 400 -140 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1e12
-pj=4e6
+perim=4e6
 
 }
 C {devices/lab_pin.sym} 400 -80 0 0 {name=p2 lab=0}
@@ -110,7 +110,7 @@ C {devices/ammeter.sym} 900 -270 0 0 {name=Vk2 net_name=true}
 C {sky130_fd_pr/lvsdiode.sym} 900 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
 area=1e12
-pj=4e6}
+perim=4e6}
 C {devices/lab_pin.sym} 900 -80 0 0 {name=p6 lab=0}
 C {devices/cccs.sym} 900 -330 0 0 {name=F1 vnam=vk1 value=1}
 C {devices/launcher.sym} 910 -430 0 0 {name=h17 
