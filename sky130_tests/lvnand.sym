@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {type=subcircuit
 format="@name @pinlist @VCCPIN @VSSPIN @symname WidthN=@WidthN LenN=@LenN WidthP=@WidthP LenP=@LenP m=@m"
@@ -25,5 +26,5 @@ T {@symname} -15 -15 0 0 0.2 0.2 {}
 T {A} -45 -34 0 0 0.2 0.2 {}
 T {B} -45 6 0 0 0.2 0.2 {}
 T {Y} 65 -14 0 1 0.2 0.2 {}
-T {@WidthP / @LenP} -15 -45 0 0 0.2 0.2 {}
-T {@WidthN / @LenN} -15 35 0 0 0.2 0.2 {}
+T {P: @WidthP / @LenP} -15 -45 0 0 0.2 0.2 {}
+T {N: @WidthN / @LenN} -15 35 0 0 0.2 0.2 {}
