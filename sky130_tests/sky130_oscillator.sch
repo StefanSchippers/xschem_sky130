@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 430 -1240 1460 -870 {flags=graph
-y1=-0.073
-y2=2.1
+y1=-0.00063
+y2=2
 ypos1=0.15165758
 ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=9.7089457e-08
-x2=1.9775274e-07
+x1=5.5714388e-08
+x2=2.1373577e-07
 
 subdivx=1
 xlabmag=1.4
@@ -39,8 +39,8 @@ ypos2=1.607846
 divy=5
 subdivy=1
 unity=1
-x1=9.7089457e-08
-x2=1.9775274e-07
+x1=5.5714388e-08
+x2=2.1373577e-07
 divx=5
 subdivx=1
 xlabmag=1.4
@@ -67,8 +67,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=9.7089457e-08
-x2=1.9775274e-07
+x1=5.5714388e-08
+x2=2.1373577e-07
 
 subdivx=1
 xlabmag=1.4
@@ -88,6 +88,34 @@ node="\\"Iavg @1.7V;i(vvcc) 42n ravg()%0\\"
 \\"Iavg @1.9V;i(vvcc) 42n ravg()%1\\"
 \\"cap charge@1.7V; i(vb) i(va) + 42n ravg() -1 *%0\\"
 \\"cap charge@1.9V; i(vb) i(va) + 42n ravg() -1 *%1\\""}
+B 2 430 -1980 1460 -1610 {flags=graph
+y1=6.3e-22
+y2=1.7e-05
+ypos1=0.15165758
+ypos2=0.98789807
+divy=5
+subdivy=1
+unity=1
+x1=5.5714388e-08
+x2=2.1373577e-07
+
+subdivx=1
+xlabmag=1.4
+ylabmag=1
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=0
+hilight_wave=-1
+divx=5
+
+
+color="4 7"
+node="i(@m.x5.xm1.msky130_fd_pr__nfet_01v8[id])
+i(@m.x4.xm1.msky130_fd_pr__nfet_01v8[id])"}
 T {Theoretical Period = 2 * RC ln(2)} 440 -490 0 0 0.6 0.6 { layer=6}
 N 590 -210 590 -160 {
 lab=RSTBB}
@@ -254,11 +282,15 @@ venab enab 0 pwl 0 0 100n 0 101n VCC
 .control
   tran 0.04n 600n
   remzerovec
+  plot @m.x4.xm1.msky130_fd_pr__nfet_01v8[id] @m.x5.xm1.msky130_fd_pr__nfet_01v8[id]
+
   write sky130_oscillator.raw
   alterparam vcc=1.9
   reset
   set appendwrite
   tran 0.04n 600n
+  plot @m.x4.xm1.msky130_fd_pr__nfet_01v8[id] @m.x5.xm1.msky130_fd_pr__nfet_01v8[id]
+  
   remzerovec
   write sky130_oscillator.raw
 .endc
@@ -304,3 +336,7 @@ mult=1}
 C {devices/gnd.sym} 1170 -250 0 1 {name=l7 lab=VSS}
 C {devices/ammeter.sym} 1190 -390 0 0 {name=VB savecurrent=false}
 C {devices/ammeter.sym} 1560 -390 0 0 {name=VA savecurrent=false}
+C {devices/launcher.sym} 230 -510 0 0 {name=h1
+descr="Show Raw file" 
+tclcommand="textwindow $netlist_dir/sky130_oscillator.raw"
+}
