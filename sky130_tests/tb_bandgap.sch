@@ -26,10 +26,10 @@ y2 = 3.6
 x1=0
 x2=0.0001
 divx=5
-node="vbg
-en_n
-start"
-color="4 5 9"  unitx=u
+node="VBG
+EN_N
+START"
+color="8 5 9"  unitx=u
 
 
 divy=8
@@ -46,9 +46,9 @@ x1=0
 x2=0.0001
 divx=4
 subdivx=4
-node="\\"Icc;i(vcc)\\""
+node="\\"Icc;i(VCC)\\""
  unitx=u
-color=4
+color=10
 dataset=-1}
 B 2 820 -740 1280 -610 {flags=graph
 y1 = -40
@@ -60,9 +60,9 @@ x1=0
 x2=0.0001
 divx=4
 subdivx=4
-node=temperat
+node=TEMPERAT
  unitx=u
-color=4
+color=12
 dataset=-1}
 P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
 P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
