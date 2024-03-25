@@ -37,12 +37,12 @@ logx=0
 logy=0
 digital=1
 color="7 9 4 4 4 4"
-node="ck
+node="CK
 \\" ; 0.9 \\"
-a
-b
-c
-d"}
+A
+B
+C
+D"}
 B 2 300 -890 1180 -490 {flags=graph
 y1=0
 y2=5.4
@@ -55,13 +55,13 @@ x1=0
 x2=5e-06
 divx=5
 subdivx=1
-node="vcc
-hv
-hv2
-hv_ideal
+node="VCC
+HV
+HV2
+HV_IDEAL
 \\"10k * Iload; i(vload) 10000 *\\"
-hv_ideal2"
-color="15 7 12 11 17 8"
+HV_IDEAL2"
+color="15 7 12 11 17 4"
 
 unitx=1
 logx=0

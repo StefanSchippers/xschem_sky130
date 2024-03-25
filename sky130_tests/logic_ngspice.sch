@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,10 +31,10 @@ x1=-2.16153e-09
 x2=1.85699e-07
 divx=5
 subdivx=1
-node="zz
-aa
-bb"
-color="4 4 4"
+node="ZZ
+AA
+BB"
+color="7 8 10"
 dataset=0
 unitx=u
 logx=0

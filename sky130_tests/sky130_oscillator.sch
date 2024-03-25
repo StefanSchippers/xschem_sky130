@@ -19,11 +19,11 @@ x2=2.1373577e-07
 subdivx=1
 xlabmag=1.4
 ylabmag=1
-node="a
-b
-vcc
+node="A
+B
+VCC
 \\"vcc/2; vcc 2 /\\""
-color="4 7 8 9"
+color="4 7 15 10"
 dataset=-1
 unitx=1
 logx=0
@@ -45,15 +45,15 @@ divx=5
 subdivx=1
 xlabmag=1.4
 ylabmag=1.0
-node="enab
-\\"qb@1.7; qb%0\\"
-\\"qb@1.9; qb%1\\"
-\\"q@1.7; q%0\\"
-\\"q@1.9; q%1\\"
+node="ENAB
+\\"qb@1.7;QB%0\\"
+\\"qb@1.9;QB%1\\"
+\\"q@1.7;Q%0\\"
+\\"q@1.9;Q%1\\"
 
-ab
-bb"
-color="6 4 4 8 8 4 4"
+AB
+BB"
+color="14 12 12 8 8 11 4"
 dataset=-1
 unitx=1
 logx=0

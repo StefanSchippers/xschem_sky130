@@ -27,8 +27,8 @@ x1=0
 x2=0.0001
 subdivx=4
 divx=4
-node="x1.f1 x1.f2"
-color="7 8"
+node="x1.F1 x1.F2"
+color="11 17"
 dataset=-1 unitx=u
 digital=1
 y2=1.8
@@ -42,8 +42,8 @@ subdivx=4
 x1=0
 x2=0.0001
 divx=4
-node="x1.adj2 x1.adj
-clk"
+node="x1.ADJ2 x1.ADJ
+CLK"
 color="12 10 7"
   unitx=u
 subdivy=1

@@ -58,11 +58,11 @@ x1=-1.5486e-07
 x2=3.84515e-06
 divx=5
 subdivx=1
-node="adj
-out
+node="ADJ
+OUT
 out%10
 out%23"
-color="6 18 9 8"
+color="13 21 9 4"
 
 unitx=1
 logx=0
@@ -87,13 +87,13 @@ dataset=0
 unitx=1
 logx=0
 logy=0
-color="4 7"
-node="plus%0 minus%0"}
+color="9 12"
+node="PLUS%0 MINUS%0"}
 B 2 780 -1480 1580 -1280 {flags=graph,unlocked
 y1=0
 y2=2
-ypos1=0.0128593
-ypos2=0.756311
+ypos1=0.027461778
+ypos2=0.93113195
 divy=5
 subdivy=1
 unity=1
@@ -101,9 +101,9 @@ x1=-5.98366e-10
 x2=3.99937e-06
 divx=5
 subdivx=1
-node="start%0
-en_n%0"
-color="4 4"
+node="START%0
+EN_N%0"
+color="7 10"
 dataset=0
 unitx=1
 logx=0
@@ -129,7 +129,7 @@ logx=0
 logy=0
 
 color="12 8 9 4 4"
-node="i(vvcc)
+node="i(VVCC)
 i(vvcc)%10
 i(vvcc)%23"
 hilight_wave=-1}
@@ -172,7 +172,7 @@ unitx=1
 logx=0
 logy=0
 color=4
-node=vcc}
+node=VCC}
 B 2 440 -1250 610 -1110 {flags=graph
 y1=-67.943
 y2=172.248

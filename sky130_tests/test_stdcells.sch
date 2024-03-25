@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,12 +33,12 @@ divx=10
 subdivx=4
 node="\\"OUTPUTS
 SPICE; nothing\\"
-q
-x
-y
-qlatch
-xschem"
-color="9 10 10 10 10 10"
+Q
+X
+Y
+QLATCH
+XSCHEM"
+color="9 7 8 12 10 15"
 dataset=0
 unitx=n
  subdivy=1}
@@ -56,12 +56,12 @@ divx=10
 subdivx=4
 node="\\"OUTPUTS
 XSPICE; nothing\\"
-x_q
-x_x
-x_y
-x_qlatch
-x_xschem"
-color="9 8 8 8 8 8"
+X_Q
+X_X
+X_Y
+X_QLATCH
+X_XSCHEM"
+color="9 7 8 12 10 15"
 dataset=0
 unitx=n
  subdivy=1}
