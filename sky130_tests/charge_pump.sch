@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,8 +18,8 @@ V {}
 S {}
 E {}
 B 2 20 -1420 800 -1140 {flags=graph
-y1=2.42944
-y2=2.5713
+y1=1.5
+y2=4.4
 ypos1=0
 ypos2=2
 divy=5
@@ -31,13 +31,15 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=hv
-color=4
+node="hv
+x1.HV2A
+x1.G3A"
+color="4 15 10"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+hilight_wave=0}
 B 2 20 -1140 800 -860 {flags=graph
 y1=1.7
 y2=5.2
@@ -82,8 +84,9 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=i(@m.x1.xm10.msky130_fd_pr__nfet_g5v0d10v5[id])}
+color="4 7"
+node="i(@m.x1.xm10.msky130_fd_pr__nfet_g5v0d10v5[id])
+i(@m.x1.xm3.msky130_fd_pr__nfet_g5v0d10v5[id])"}
 P 4 5 590 -830 590 -390 840 -390 840 -830 590 -830 {dash=4}
 P 4 5 1000 -920 1000 -390 1290 -390 1290 -920 1000 -920 {dash=4}
 P 4 5 190 -830 190 -390 440 -390 440 -830 190 -830 {dash=4}

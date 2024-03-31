@@ -18,31 +18,32 @@ V {}
 S {}
 E {}
 B 2 500 -380 1460 -60 {flags=graph
-y1=0.95
+y1=-0.066
 y2=3.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.63616e-06
-x2=4.65574e-06
+x1=4.958947e-06
+x2=4.9714065e-06
 divx=5
 subdivx=1
 xlabmag=1.3
 ylabmag=1.0
-node="x3.gn1
-x3.hv1
-x3.gn2
-x3.gp2
-x3.gp1
-"
-color="7 8 9 10 11"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=0}
+hilight_wave=0
+color="7 8 10 11 12"
+node="x3.GN1
+x3.D1
+x3.GP1
+x3.HV1
+VCC"}
 N 520 -1040 620 -1040 {
 lab=VCC}
 N 520 -1040 520 -840 {
@@ -56,17 +57,17 @@ lab=HV1}
 N 880 -840 980 -840 {
 lab=HV1}
 N 650 -840 850 -840 {
-lab=#net1}
+lab=D2}
 N 650 -1040 850 -1040 {
-lab=#net2}
+lab=D1}
 N 660 -840 660 -700 {
-lab=#net1}
+lab=D2}
 N 660 -640 660 -560 {
-lab=#net3}
+lab=#net1}
 N 840 -1040 840 -700 {
-lab=#net2}
+lab=D1}
 N 840 -640 840 -560 {
-lab=#net4}
+lab=#net2}
 N 90 -940 520 -940 {
 lab=VCC}
 N 1810 -1040 1910 -1040 {
@@ -82,17 +83,17 @@ lab=HV}
 N 2170 -840 2270 -840 {
 lab=HV}
 N 1940 -840 2140 -840 {
-lab=#net5}
+lab=D4}
 N 1940 -1040 2140 -1040 {
-lab=#net6}
+lab=D3}
 N 1950 -840 1950 -700 {
-lab=#net5}
+lab=D4}
 N 1950 -640 1950 -560 {
-lab=#net7}
+lab=#net3}
 N 2130 -1040 2130 -700 {
-lab=#net6}
+lab=D3}
 N 2130 -640 2130 -560 {
-lab=#net8}
+lab=#net4}
 N 980 -940 1810 -940 {
 lab=HV1}
 N 2270 -940 2670 -940 {
@@ -162,13 +163,13 @@ lab=GP1}
 N 2380 -790 2520 -850 {
 lab=GP3}
 N 2380 -640 2380 -560 {
-lab=#net9}
+lab=#net5}
 N 2560 -640 2560 -560 {
-lab=#net10}
+lab=#net6}
 N 1090 -640 1090 -560 {
-lab=#net11}
+lab=#net7}
 N 1270 -640 1270 -560 {
-lab=#net12}
+lab=#net8}
 N 380 -940 380 -880 {
 lab=VCC}
 N 200 -940 200 -880 {
@@ -186,9 +187,9 @@ lab=CK}
 N 200 -790 340 -850 {
 lab=GN1}
 N 200 -640 200 -560 {
-lab=#net13}
+lab=#net9}
 N 380 -640 380 -560 {
-lab=#net14}
+lab=#net10}
 N 2380 -880 2380 -850 {
 lab=HV}
 N 2560 -880 2560 -850 {
@@ -224,9 +225,9 @@ lab=CK}
 N 1490 -790 1630 -850 {
 lab=GN3}
 N 1490 -640 1490 -560 {
-lab=#net15}
+lab=#net11}
 N 1670 -640 1670 -560 {
-lab=#net16}
+lab=#net12}
 N 1670 -880 1670 -850 {
 lab=HV1}
 N 1490 -880 1490 -850 {
@@ -474,3 +475,7 @@ xschem redraw
 
 "
 }
+C {devices/lab_wire.sym} 750 -1040 0 0 {name=p9 sig_type=std_logic lab=D1}
+C {devices/lab_wire.sym} 750 -840 0 0 {name=p10 sig_type=std_logic lab=D2}
+C {devices/lab_wire.sym} 2040 -1040 0 0 {name=p11 sig_type=std_logic lab=D3}
+C {devices/lab_wire.sym} 2040 -840 0 0 {name=p12 sig_type=std_logic lab=D4}
