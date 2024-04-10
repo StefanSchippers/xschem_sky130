@@ -28,7 +28,7 @@ L 4 1610 -1380 2570 -1380 {}
 L 4 1610 -1250 2570 -1250 {}
 L 4 2610 -1250 3570 -1250 {}
 L 4 2610 -1380 3570 -1380 {}
-L 4 2250 -105 2740 -105 {}
+L 4 2250 -105 2900 -105 {}
 L 7 3480 -540 3960 -540 {dash=2}
 B 2 1580 -1890 2214 -1575 {flags=image_unscaled
 alpha=0.6
@@ -82,7 +82,7 @@ sky130_fd_pr__model__parasitic__rf_diode_pw2dn
 sky130_fd_pr__model__parasitic__diode_pw2dn
 sky130_fd_pr__model__parasitic__diode_ps2dn
 sky130_fd_pr__model__parasitic__diode_ps2nw
-} 1910 -290 0 0 0.2 0.2 {}
+} 1820 -290 0 0 0.2 0.2 {}
 T {Available_models:
 sky130_fd_pr__diode_pw2nd_05v5
 sky130_fd_pr__diode_pw2nd_11v0
@@ -143,6 +143,7 @@ T {Interesting
 remote repositories} 410 -1090 0 0 0.6 0.6 {layer=8}
 T {Takes some time to download...} 420 -990 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 420 -1010 0 0 0.3 0.3 {layer=11}
+T {Photodiode} 2750 -250 0 0 0.4 0.4 {}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 830 -1320 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -161,12 +162,11 @@ C {sky130_tests/test_bipolar.sym} 190 -1620 0 0 {name=x4}
 C {sky130_tests/test_diode.sym} 190 -1660 0 0 {name=x6}
 C {sky130_fd_pr/diode.sym} 2260 -150 0 0 {name=D1
 model=diode_pw2nd_05v5
-area=1
 
 }
-C {sky130_fd_pr/lvsdiode.sym} 1760 -140 0 0 {name=D2
+C {sky130_fd_pr/lvsdiode.sym} 1680 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
-area=1e12 perim=4e6
+
 
 }
 C {sky130_fd_pr/pnp_05v5.sym} 1980 -50 0 0 {name=Q1
@@ -778,3 +778,7 @@ C {sky130_tests/optimize_delay.sym} 190 -1180 0 0 {name=x39}
 C {sky130_tests/test_customplot.sym} 480 -1380 0 0 {name=x42}
 C {devices/intuitive_interface_cheatsheet.sym} 1060 -1660 0 0 {name=x43}
 C {sky130_tests/sky130_oscillator.sym} 190 -1140 0 0 {name=x44}
+C {sky130_fd_pr/diode.sym} 2800 -150 0 0 {name=D3
+model=photodiode
+
+}

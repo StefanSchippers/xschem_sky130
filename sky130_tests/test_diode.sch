@@ -37,8 +37,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=7
-node=k1
+color="7 4 10"
+node="k1
+k2
+k3"
 hilight_wave=-1}
 B 2 910 -920 1320 -710 {flags=graph
 y1=-5e-05
@@ -92,6 +94,9 @@ N 400 -110 400 -80 { lab=0}
 N 900 -390 900 -360 { lab=0}
 N 900 -240 900 -170 { lab=K2}
 N 900 -110 900 -80 { lab=0}
+N 1440 -390 1440 -360 { lab=0}
+N 1440 -240 1440 -170 { lab=K3}
+N 1440 -110 1440 -80 { lab=0}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 400 -200 0 0 {name=p4 lab=K1}
 C {devices/isource.sym} 400 -330 2 0 {name=I1 value="dc 0 pwl 0 0 5n 0 6n 10u 10n 10u 12n -10u 16n -10u 17n 0"
@@ -152,3 +157,12 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 
 "
 }
+C {sky130_fd_pr/diode.sym} 1440 -140 0 0 {name=D3
+model=photodiode
+
+}
+C {devices/lab_pin.sym} 1440 -200 0 0 {name=p7 lab=K3}
+C {devices/lab_pin.sym} 1440 -390 0 0 {name=p8 lab=0}
+C {devices/ammeter.sym} 1440 -270 0 0 {name=Vk3 net_name=true}
+C {devices/lab_pin.sym} 1440 -80 0 0 {name=p9 lab=0}
+C {devices/cccs.sym} 1440 -330 0 0 {name=F2 vnam=vk1 value=1}

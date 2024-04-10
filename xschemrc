@@ -118,6 +118,7 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 #### initial size of xschem window you can specify also position with (wxh+x+y)
 #### this is the default:
 # set initial_geometry {900x600}
+set initial_geometry {1280x695+0+0}
 
 #### if set to 0, when zooming out allow the viewport do drift toward the mouse position,
 #### allowing to move away by zooming / unzooming with mouse wheel
