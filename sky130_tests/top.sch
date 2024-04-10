@@ -778,7 +778,7 @@ C {sky130_tests/optimize_delay.sym} 190 -1180 0 0 {name=x39}
 C {sky130_tests/test_customplot.sym} 480 -1380 0 0 {name=x42}
 C {devices/intuitive_interface_cheatsheet.sym} 1060 -1660 0 0 {name=x43}
 C {sky130_tests/sky130_oscillator.sym} 190 -1140 0 0 {name=x44}
-C {sky130_fd_pr/diode.sym} 2800 -150 0 0 {name=D3
+C {sky130_fd_pr/photodiode.sym} 2800 -150 0 0 {name=D3
 model=photodiode
 
 }

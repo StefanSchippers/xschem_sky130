@@ -157,7 +157,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 
 "
 }
-C {sky130_fd_pr/diode.sym} 1440 -140 0 0 {name=D3
+C {sky130_fd_pr/photodiode.sym} 1440 -140 0 0 {name=D3
 model=photodiode
 
 }
