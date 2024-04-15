@@ -35,7 +35,8 @@ nrd=\\"'0.29 / W'\\" nrs=\\"'0.29 / W'\\"
 sa=0 sb=0 sd=0
 model=nfet_03v3_nvt
 spiceprefix=X
-"}
+"
+drc="fet_drc @name @symname @model @W @L @nf"}
 V {}
 S {}
 E {}

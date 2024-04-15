@@ -432,3 +432,65 @@ if {[info exists PDK_ROOT]} {
   puts stderr "SKYWATER_STDCELLS: $SKYWATER_STDCELLS"
 }
 
+# sky130 mosfets dimension checks
+proc fet_drc {instance symbol model w l nf} {
+  set res {}
+  # puts "$instance $model $symbol w=$w l=$l nf=$nf"
+  if { [string is double $w] && [string is double $l] && [string is integer $nf]} {
+    # not *_nf.sym devices: get single finger width
+    if {![regexp {fet.*_nf\.sym$} $symbol]} {
+      set w [expr { double($w) / double($nf)}]
+    }
+    switch -regexp $model {
+      {[np]fet_01v8$} {
+        if { $w < 0.42 } {
+          append res "${instance} ($model): finger width is too small, w / nf = $w" \n
+        }
+        if { $l < 0.15 } {
+          append res "${instance} ($model): length is too small, l = $l" \n
+        }
+      }
+      {pfet_01v8_lvt$} {
+        if { $w < 0.42 } {
+          append res "${instance} ($model): finger width is too small, w / nf = $w" \n
+        }
+        if { $l < 0.35 } {
+          append res "${instance} ($model): length is too small, l = $l" \n
+        }
+      }
+      {nfet_01v8_lvt$} {
+        if { $w < 0.42 } {
+          append res "${instance} ($model): finger width is too small, w / nf = $w" \n
+        }
+        if { $l < 0.15 } {
+          append res "${instance} ($model): length is too small, l = $l" \n
+        }
+      }
+      {[np]fet_g5v0d10v5$} {
+        if { $w < 0.42 } {
+          append res "${instance} ($model): finger width is too small, w / nf = $w" \n
+        }
+        if { $l < 0.5 } {
+          append res "${instance} ($model): length is too small, l = $l" \n
+        }
+      }
+      {pfet_g5v0d16v0$} {
+        if { $w < 5 } {
+          append res "${instance} ($model): finger width is too small, w / nf = $w" \n
+        }
+        if { $l < 0.66 } {
+          append res "${instance} ($model): length is too small, l = $l" \n
+        }
+      }
+      {nfet_g5v0d16v0$} {
+        if { $w < 5 } {
+          append res "${instance} ($model): finger width is too small, w / nf = $w" \n
+        }
+        if { $l < 0.7 } {
+          append res "${instance} ($model): length is too small, l = $l" \n
+        }
+      }
+    } ;# switch
+  }
+  return $res
+}
