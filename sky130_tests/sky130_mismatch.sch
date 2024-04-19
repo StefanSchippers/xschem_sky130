@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 10 -860 660 -560 {flags=graph,unlocked
+B 2 0 -790 650 -490 {flags=graph,unlocked
 y1=0.42
 y2=0.55
 ypos1=0
@@ -29,7 +29,7 @@ logy=0
 sweep=run
 rawfile=$netlist_dir/sky130_mismatch.raw
 sim_type=op}
-B 2 680 -860 1290 -280 {flags=graph,unlocked
+B 2 670 -790 1280 -210 {flags=graph,unlocked
 y1=-9.4550559
 y2=146.54494
 ypos1=0
@@ -52,32 +52,37 @@ logy=0
 sweep=idx
 rawfile=distrib
 sim_type=distrib}
-N 240 -270 270 -270 {lab=VSS}
-N 240 -320 240 -300 {lab=VTH1}
-N 240 -350 240 -320 {lab=VTH1}
-N 150 -320 150 -270 { lab=VTH1}
-N 150 -320 240 -320 { lab=VTH1}
-N 240 -240 240 -190 {
+T {This example shows differencies in vth1 / vth2 distributions 
+of a 
+m=10 / W=0.5 / L=0.15 transistor 
+vs 
+10 parallel W=0.5 / L=0.15 transistors} 650 -190 0 0 0.4 0.4 {}
+N 230 -200 260 -200 {lab=VSS}
+N 230 -250 230 -230 {lab=VTH1}
+N 230 -280 230 -250 {lab=VTH1}
+N 140 -250 140 -200 { lab=VTH1}
+N 140 -250 230 -250 { lab=VTH1}
+N 230 -170 230 -120 {
 lab=VSS}
-N 240 -430 240 -410 {
+N 230 -360 230 -340 {
 lab=#net1}
-N 500 -270 530 -270 {lab=VSS}
-N 500 -320 500 -300 {lab=VTH2}
-N 500 -350 500 -320 {lab=VTH2}
-N 410 -320 410 -270 { lab=VTH2}
-N 410 -320 500 -320 { lab=VTH2}
-N 500 -240 500 -190 {
+N 490 -200 520 -200 {lab=VSS}
+N 490 -250 490 -230 {lab=VTH2}
+N 490 -280 490 -250 {lab=VTH2}
+N 400 -250 400 -200 { lab=VTH2}
+N 400 -250 490 -250 { lab=VTH2}
+N 490 -170 490 -120 {
 lab=VSS}
-N 500 -510 500 -410 {
+N 490 -440 490 -340 {
 lab=VSS}
-N 240 -510 240 -490 {
+N 230 -440 230 -420 {
 lab=VSS}
-N 410 -270 460 -270 {
+N 400 -200 450 -200 {
 lab=VTH2}
-N 150 -270 200 -270 {
+N 140 -200 190 -200 {
 lab=VTH1}
-C {devices/lab_pin.sym} 270 -270 0 1 {name=p23 lab=VSS}
-C {sky130_fd_pr/nfet_01v8.sym} 220 -270 0 0 {name=M18
+C {devices/lab_pin.sym} 260 -200 0 1 {name=p23 lab=VSS}
+C {sky130_fd_pr/nfet_01v8.sym} 210 -200 0 0 {name=M18
 L=0.15
 W=0.5
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -88,12 +93,12 @@ nf=1 mult=10
 model=nfet_01v8
 spiceprefix=X
  lvs_format=" "}
-C {devices/lab_pin.sym} 240 -320 0 1 {name=l5 lab=VTH1}
-C {devices/lab_pin.sym} 240 -190 0 0 {name=p8 lab=VSS}
-C {devices/isource.sym} 240 -380 0 0 {name=I0 value=100n
+C {devices/lab_pin.sym} 230 -250 0 1 {name=l5 lab=VTH1}
+C {devices/lab_pin.sym} 230 -120 0 0 {name=p8 lab=VSS}
+C {devices/isource.sym} 230 -310 0 0 {name=I0 value=100n
 lvs_format=" "}
-C {devices/lab_pin.sym} 240 -510 0 0 {name=p10 lab=VSS}
-C {devices/code.sym} 0 -430 0 0 {name=STIMULI 
+C {devices/lab_pin.sym} 230 -440 0 0 {name=p10 lab=VSS}
+C {devices/code.sym} -10 -360 0 0 {name=STIMULI 
 only_toplevel=true
 place=end
 value="* .option SCALE=1e-6 
@@ -121,9 +126,9 @@ value="* .option SCALE=1e-6
   end
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 0 -270 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
-C {devices/lab_pin.sym} 530 -270 0 1 {name=p1 lab=VSS}
-C {sky130_fd_pr/nfet_01v8.sym} 480 -270 0 0 {name=M1[9:0]
+C {sky130_fd_pr/corner.sym} -10 -200 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
+C {devices/lab_pin.sym} 520 -200 0 1 {name=p1 lab=VSS}
+C {sky130_fd_pr/nfet_01v8.sym} 470 -200 0 0 {name=M1[9:0]
 L=0.15
 W=0.5
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -134,12 +139,11 @@ nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
  lvs_format=" "}
-C {devices/lab_pin.sym} 500 -320 0 1 {name=l1 lab=VTH2}
-C {devices/lab_pin.sym} 500 -190 0 0 {name=p2 lab=VSS}
-C {devices/lab_pin.sym} 500 -510 0 0 {name=p3 lab=VSS}
-C {devices/cccs.sym} 500 -380 0 0 {name=F1 vnam=V1 value=1}
-C {devices/ammeter.sym} 240 -460 0 0 {name=V1 savecurrent=true}
-C {devices/launcher.sym} 70 -540 0 0 {name=h5
+C {devices/lab_pin.sym} 490 -250 0 1 {name=l1 lab=VTH2}
+C {devices/lab_pin.sym} 490 -120 0 0 {name=p2 lab=VSS}
+C {devices/lab_pin.sym} 490 -440 0 0 {name=p3 lab=VSS}
+C {devices/ammeter.sym} 230 -390 0 0 {name=V1 savecurrent=true}
+C {devices/launcher.sym} 60 -470 0 0 {name=h5
 descr="load waves" 
 tclcommand="
 xschem raw_read $netlist_dir/sky130_mismatch.raw op
@@ -177,3 +181,6 @@ xschem draw_graph 0
 xschem draw_graph 1
 "
 }
+C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stefan Schippers"}
+C {devices/isource.sym} 490 -310 0 0 {name=I1 value=100n
+lvs_format=" "}
