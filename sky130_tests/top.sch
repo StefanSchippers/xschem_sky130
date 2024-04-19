@@ -782,3 +782,4 @@ C {sky130_fd_pr/photodiode.sym} 2800 -150 0 0 {name=D3
 model=photodiode
 
 }
+C {sky130_tests/sky130_mismatch.sym} 190 -1100 0 0 {name=x45}
