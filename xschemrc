@@ -433,7 +433,7 @@ if {[info exists PDK_ROOT]} {
 }
 
 # sky130 mosfets dimension checks
-proc fet_drc {instance symbol model w l nf} {
+proc fet_drc {instance symbol model w l {nf 1}} {
   set res {}
   # puts "$instance $model $symbol w=$w l=$l nf=$nf"
   if { [string is double $w] && [string is double $l] && [string is integer $nf]} {
