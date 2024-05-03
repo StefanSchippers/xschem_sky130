@@ -65,3 +65,5 @@ T {tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand \{\\@m.$\{path\}@spic
 hide=true}
 T {tcleval(id=[to_eng [ngspice::get_node [subst -nocommand \{i(\\@m.$\{path\}@spiceprefix@name\\.m1\\[id])\}]]] )} 30 -40 0 0 0.15 0.15 {layer=15
 hide=true}
+T {tcleval(vgs=[to_eng \{@#1:spice_get_voltage - @#2:spice_get_voltage \}]
+vds=[to_eng \{@#0:spice_get_voltage - @#2:spice_get_voltage \}])} -17.5 20 0 0 0.05 0.05 {layer=15 hide=instance}
