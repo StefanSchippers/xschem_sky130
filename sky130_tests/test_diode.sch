@@ -111,7 +111,7 @@ perim=4e6
 C {devices/lab_pin.sym} 400 -80 0 0 {name=p2 lab=0}
 C {devices/lab_pin.sym} 900 -200 0 0 {name=p3 lab=K2}
 C {devices/lab_pin.sym} 900 -390 0 0 {name=p5 lab=0}
-C {devices/ammeter.sym} 900 -270 0 0 {name=Vk2 net_name=true}
+C {devices/ammeter.sym} 900 -270 0 0 {name=Vk2 }
 C {sky130_fd_pr/lvsdiode.sym} 900 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
 area=1e12
@@ -125,7 +125,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 
 "
 }
-C {devices/ammeter.sym} 400 -270 0 0 {name=Vk1 net_name=true}
+C {devices/ammeter.sym} 400 -270 0 0 {name=Vk1 }
 C {devices/simulator_commands_shown.sym} 20 -810 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
@@ -163,6 +163,6 @@ model=photodiode
 }
 C {devices/lab_pin.sym} 1440 -200 0 0 {name=p7 lab=K3}
 C {devices/lab_pin.sym} 1440 -390 0 0 {name=p8 lab=0}
-C {devices/ammeter.sym} 1440 -270 0 0 {name=Vk3 net_name=true}
+C {devices/ammeter.sym} 1440 -270 0 0 {name=Vk3 }
 C {devices/lab_pin.sym} 1440 -80 0 0 {name=p9 lab=0}
 C {devices/cccs.sym} 1440 -330 0 0 {name=F2 vnam=vk1 value=1}

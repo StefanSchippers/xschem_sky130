@@ -86,20 +86,20 @@ C {devices/lab_pin.sym} 280 -370 0 0 {name=l3 sig_type=std_logic lab=BIAS2}
 C {devices/lab_pin.sym} 120 -160 0 0 {name=l5 sig_type=std_logic lab=IN}
 C {devices/lab_pin.sym} 540 -200 0 1 {name=l6 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 120 -440 0 0 {name=l7 sig_type=std_logic lab=IN2}
-C {devices/vsource.sym} 90 -690 0 0 {name=V1 value=1.2 net_name=true}
+C {devices/vsource.sym} 90 -690 0 0 {name=V1 value=1.2 }
 C {devices/gnd.sym} 90 -660 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 160 -750 0 1 {name=l10 sig_type=std_logic lab=IN}
-C {devices/vsource.sym} 550 -690 0 0 {name=V2 value=1.1 net_name=true}
+C {devices/vsource.sym} 550 -690 0 0 {name=V2 value=1.1 }
 C {devices/gnd.sym} 550 -660 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 620 -750 0 1 {name=l12 sig_type=std_logic lab=BIAS}
-C {devices/vsource.sym} 980 -690 0 0 {name=V3 value=1.8 net_name=true}
+C {devices/vsource.sym} 980 -690 0 0 {name=V3 value=1.8 }
 C {devices/gnd.sym} 980 -660 0 0 {name=l13 lab=GND}
 C {devices/vdd.sym} 980 -720 0 0 {name=l14 lab=VDD}
 C {devices/lab_pin.sym} 540 -480 0 1 {name=l4 sig_type=std_logic lab=OUT2}
-C {devices/vsource.sym} 340 -690 0 0 {name=V4 value=1.0 net_name=true}
+C {devices/vsource.sym} 340 -690 0 0 {name=V4 value=1.0 }
 C {devices/gnd.sym} 340 -660 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 410 -750 0 1 {name=l15 sig_type=std_logic lab=IN2}
-C {devices/vsource.sym} 740 -690 0 0 {name=V5 value=1.0 net_name=true}
+C {devices/vsource.sym} 740 -690 0 0 {name=V5 value=1.0 }
 C {devices/gnd.sym} 740 -660 0 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} 810 -750 0 1 {name=l17 sig_type=std_logic lab=BIAS2}
 C {devices/launcher.sym} 800 -100 0 0 {name=h2

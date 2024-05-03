@@ -370,4 +370,4 @@ W=0.69
 L=5
 model=res_xhigh_po_0p69
 spiceprefix=X
-mult=1 net_name=true}
+mult=1 }

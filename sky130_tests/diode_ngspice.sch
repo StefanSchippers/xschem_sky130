@@ -14,7 +14,7 @@ N 430 -310 430 -270 {
 lab=mn}
 C {devices/iopin.sym} 430 -150 0 0 {name=p1 lab=plus}
 C {devices/iopin.sym} 430 -370 0 0 {name=p2 lab=minus}
-C {devices/title.sym} 160 -40 0 0 {name=l1 author="Stefan Schippers" net_name=true}
+C {devices/title.sym} 160 -40 0 0 {name=l1 author="Stefan Schippers" }
 C {devices/ammeter.sym} 430 -340 2 0 {name=Vm}
 C {devices/ammeter.sym} 430 -180 2 0 {name=Vp}
 C {devices/lab_pin.sym} 430 -210 0 1 {name=l2 sig_type=std_logic lab=pn}

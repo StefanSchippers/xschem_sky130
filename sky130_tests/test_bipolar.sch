@@ -78,13 +78,13 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {sky130_fd_pr/pnp_05v5.sym} 630 -220 0 0 {name=Q1
 spiceprefix=X
 }
-C {devices/ammeter.sym} 650 -160 0 0 {name=Vc1 net_name=true}
-C {devices/ammeter.sym} 560 -160 0 0 {name=Vb1 net_name=true}
+C {devices/ammeter.sym} 650 -160 0 0 {name=Vc1 }
+C {devices/ammeter.sym} 560 -160 0 0 {name=Vb1 }
 C {devices/lab_pin.sym} 720 -130 0 1 {name=p3 lab=0}
 C {devices/lab_pin.sym} 650 -280 0 0 {name=p4 lab=E1}
 C {devices/isource.sym} 650 -410 0 0 {name=I0 value=1u}
 C {devices/lab_pin.sym} 650 -470 0 0 {name=p1 lab=0}
-C {devices/ammeter.sym} 650 -350 0 0 {name=Ve1 net_name=true}
+C {devices/ammeter.sym} 650 -350 0 0 {name=Ve1 }
 C {sky130_fd_pr/corner.sym} 170 -180 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/launcher.sym} 995 -225 0 0 {name=h4 
 descr="Select arrow and 
@@ -110,9 +110,9 @@ descr="Annotate OP"
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {devices/lab_pin.sym} 650 -660 0 1 {name=p2 lab=0}
-C {devices/ammeter.sym} 650 -690 0 0 {name=Ve2 net_name=true}
-C {devices/ammeter.sym} 650 -810 0 0 {name=Vc2 net_name=true}
-C {devices/ammeter.sym} 560 -810 0 0 {name=Vb2 net_name=true}
+C {devices/ammeter.sym} 650 -690 0 0 {name=Ve2 }
+C {devices/ammeter.sym} 650 -810 0 0 {name=Vc2 }
+C {devices/ammeter.sym} 560 -810 0 0 {name=Vb2 }
 C {devices/lab_pin.sym} 650 -930 0 0 {name=p5 lab=0}
 C {devices/lab_pin.sym} 690 -750 0 1 {name=p6 lab=0}
 C {devices/ngspice_get_expr.sym} 520 -730 0 1 {name=r2 

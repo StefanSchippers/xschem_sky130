@@ -152,10 +152,10 @@ model=pnp_05v5_W0p68L0p68 m=20
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 710 -930 0 1 {name=l2 sig_type=std_logic lab=VBG}
-C {devices/ammeter.sym} 80 -250 0 0 {name=Vc1 net_name=true}
-C {devices/ammeter.sym} 170 -250 0 0 {name=Vb1 net_name=true}
-C {devices/ammeter.sym} 240 -250 0 0 {name=Vb2 net_name=true}
-C {devices/ammeter.sym} 330 -250 0 0 {name=Vc2 net_name=true}
+C {devices/ammeter.sym} 80 -250 0 0 {name=Vc1 }
+C {devices/ammeter.sym} 170 -250 0 0 {name=Vb1 }
+C {devices/ammeter.sym} 240 -250 0 0 {name=Vb2 }
+C {devices/ammeter.sym} 330 -250 0 0 {name=Vc2 }
 C {devices/lab_pin.sym} 80 -540 0 1 {name=l26 sig_type=std_logic lab=PLUS}
 C {devices/lab_pin.sym} 330 -350 0 1 {name=l27 sig_type=std_logic lab=E2}
 C {devices/lab_pin.sym} 330 -480 0 1 {name=l28 sig_type=std_logic lab=MINUS}
@@ -166,8 +166,8 @@ C {devices/lab_pin.sym} 530 -390 0 0 {name=l32 sig_type=std_logic lab=EN_N}
 C {devices/ipin.sym} 80 -110 0 0 {name=p3 lab=VCC}
 C {devices/lab_pin.sym} 80 -220 0 0 {name=l3 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 80 -90 0 0 {name=p4 lab=VSS}
-C {devices/ammeter.sym} 80 -900 0 0 {name=V1 net_name=true}
-C {devices/ammeter.sym} 330 -900 0 0 {name=V2 net_name=true}
+C {devices/ammeter.sym} 80 -900 0 0 {name=V1 }
+C {devices/ammeter.sym} 330 -900 0 0 {name=V2 }
 C {devices/lab_pin.sym} 530 -410 0 0 {name=p5 lab=ADJ}
 C {devices/lab_pin.sym} 530 -430 0 0 {name=p6 lab=START}
 C {sky130_tests/zero_opamp.sym} 1130 -470 0 0 {name=x2}

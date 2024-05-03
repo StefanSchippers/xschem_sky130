@@ -90,10 +90,10 @@ N 400 -250 400 -190 {
 lab=DATA}
 N 400 -250 560 -250 {
 lab=DATA}
-C {devices/lab_pin.sym} 70 -110 0 0 {name=p17 lab=0  net_name=true}
-C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"  net_name=true}
+C {devices/lab_pin.sym} 70 -110 0 0 {name=p17 lab=0  }
+C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"  }
 C {devices/vsource.sym} 70 -140 0 0 {name=VVCC value="pwl 0 0 3n 5"}
-C {devices/lab_pin.sym} 100 -200 0 1 {name=p2 lab=VCC  net_name=true}
+C {devices/lab_pin.sym} 100 -200 0 1 {name=p2 lab=VCC  }
 C {devices/launcher.sym} 740 -60 0 0 {name=h1
 descr=Backannotate
 tclcommand="xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw"
@@ -123,20 +123,20 @@ value=".option savecurrents
 " }
 C {sky130_stdcells/dfrtp_1.sym} 500 -190 0 0 {name=x1 VGND=0 VNB=0 VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/and2_1.sym} 720 -230 0 0 {name=x2 VGND=0 VNB=0 VPB=VCC VPWR=VCC prefix=sky130_fd_sc_hvl__ }
-C {devices/lab_wire.sym} 610 -210 0 1 {name=p1 lab=Q  net_name=true}
-C {devices/lab_pin.sym} 810 -230 0 1 {name=p3 lab=OUT  net_name=true}
-C {devices/lab_pin.sym} 70 -480 0 0 {name=p4 lab=0  net_name=true}
+C {devices/lab_wire.sym} 610 -210 0 1 {name=p1 lab=Q  }
+C {devices/lab_pin.sym} 810 -230 0 1 {name=p3 lab=OUT  }
+C {devices/lab_pin.sym} 70 -480 0 0 {name=p4 lab=0  }
 C {devices/vsource.sym} 70 -510 0 0 {name=VCK value="pulse 0 5 30n 0.2n 0.2n 10n 20n"}
-C {devices/lab_pin.sym} 100 -570 0 1 {name=p5 lab=CK  net_name=true}
-C {devices/lab_pin.sym} 380 -210 0 0 {name=p6 lab=CK  net_name=true}
-C {devices/lab_pin.sym} 70 -240 0 0 {name=p7 lab=0  net_name=true}
+C {devices/lab_pin.sym} 100 -570 0 1 {name=p5 lab=CK  }
+C {devices/lab_pin.sym} 380 -210 0 0 {name=p6 lab=CK  }
+C {devices/lab_pin.sym} 70 -240 0 0 {name=p7 lab=0  }
 C {devices/vsource.sym} 70 -270 0 0 {name=VDATA value="pulse 0 5 20n 0.2n 0.2n 100n 200n"}
-C {devices/lab_pin.sym} 100 -330 0 1 {name=p8 lab=DATA  net_name=true}
-C {devices/lab_pin.sym} 70 -360 0 0 {name=p10 lab=0  net_name=true}
+C {devices/lab_pin.sym} 100 -330 0 1 {name=p8 lab=DATA  }
+C {devices/lab_pin.sym} 70 -360 0 0 {name=p10 lab=0  }
 C {devices/vsource.sym} 70 -390 0 0 {name=VRST_B value="pwl 0 0 10n 0 10.2n 5"}
-C {devices/lab_pin.sym} 100 -450 0 1 {name=p11 lab=RST_B  net_name=true}
-C {devices/lab_pin.sym} 380 -170 0 0 {name=p12 lab=RST_B  net_name=true}
-C {devices/lab_pin.sym} 380 -190 0 0 {name=p9 lab=DATA  net_name=true}
+C {devices/lab_pin.sym} 100 -450 0 1 {name=p11 lab=RST_B  }
+C {devices/lab_pin.sym} 380 -170 0 0 {name=p12 lab=RST_B  }
+C {devices/lab_pin.sym} 380 -190 0 0 {name=p9 lab=DATA  }
 C {devices/code.sym} 1000 -210 0 0 {name=TT_MODELS_STDCELLS
 only_toplevel=true
 format="tcleval(@value )"

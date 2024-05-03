@@ -127,30 +127,30 @@ N 690 -510 690 -480 {
 lab=VCC}
 N 500 -510 500 -480 {
 lab=VCC}
-C {devices/lab_pin.sym} 750 -360 0 0 {name=p20 lab=0  net_name=true}
-C {devices/lab_pin.sym} 30 -220 0 0 {name=p17 lab=0  net_name=true}
-C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"  net_name=true}
-C {devices/vsource.sym} 30 -250 0 0 {name=VVCC value=VDD  net_name=true}
-C {devices/lab_pin.sym} 570 -100 0 0 {name=p1 lab=0  net_name=true}
-C {devices/lab_pin.sym} 60 -310 0 1 {name=p2 lab=VCC  net_name=true}
-C {devices/lab_pin.sym} 260 -100 0 0 {name=p3 lab=0  net_name=true}
-C {devices/isource.sym} 260 -270 0 0 {name=IBIAS value=10u  net_name=true}
-C {devices/lab_pin.sym} 260 -300 0 0 {name=p4 lab=0  net_name=true}
-C {devices/lab_pin.sym} 520 -290 0 1 {name=p5 lab=0  net_name=true}
-C {devices/lab_pin.sym} 670 -290 0 0 {name=p0 lab=0  net_name=true}
-C {devices/lab_pin.sym} 570 -550 0 0 {name=p8 lab=VCC  net_name=true}
-C {devices/lab_pin.sym} 440 -290 0 0 {name=p9 lab=PLUS  net_name=true}
-C {devices/lab_pin.sym} 750 -290 0 1 {name=p10 lab=MINUS  net_name=true}
-C {devices/lab_pin.sym} 830 -420 0 1 {name=p11 lab=DIFFOUT  net_name=true}
-C {devices/lab_pin.sym} 260 -210 0 0 {name=p13 lab=GN  net_name=true}
-C {devices/lab_pin.sym} 70 -520 0 1 {name=p15 lab=PLUS  net_name=true}
-C {devices/lab_pin.sym} 70 -410 0 1 {name=p18 lab=MINUS  net_name=true}
+C {devices/lab_pin.sym} 750 -360 0 0 {name=p20 lab=0  }
+C {devices/lab_pin.sym} 30 -220 0 0 {name=p17 lab=0  }
+C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"  }
+C {devices/vsource.sym} 30 -250 0 0 {name=VVCC value=VDD  }
+C {devices/lab_pin.sym} 570 -100 0 0 {name=p1 lab=0  }
+C {devices/lab_pin.sym} 60 -310 0 1 {name=p2 lab=VCC  }
+C {devices/lab_pin.sym} 260 -100 0 0 {name=p3 lab=0  }
+C {devices/isource.sym} 260 -270 0 0 {name=IBIAS value=10u  }
+C {devices/lab_pin.sym} 260 -300 0 0 {name=p4 lab=0  }
+C {devices/lab_pin.sym} 520 -290 0 1 {name=p5 lab=0  }
+C {devices/lab_pin.sym} 670 -290 0 0 {name=p0 lab=0  }
+C {devices/lab_pin.sym} 570 -550 0 0 {name=p8 lab=VCC  }
+C {devices/lab_pin.sym} 440 -290 0 0 {name=p9 lab=PLUS  }
+C {devices/lab_pin.sym} 750 -290 0 1 {name=p10 lab=MINUS  }
+C {devices/lab_pin.sym} 830 -420 0 1 {name=p11 lab=DIFFOUT  }
+C {devices/lab_pin.sym} 260 -210 0 0 {name=p13 lab=GN  }
+C {devices/lab_pin.sym} 70 -520 0 1 {name=p15 lab=PLUS  }
+C {devices/lab_pin.sym} 70 -410 0 1 {name=p18 lab=MINUS  }
 C {devices/capa.sym} 750 -390 0 0 {name=CL
 m=1
 value=2p
 footprint=1206
-device="ceramic capacitor"  net_name=true}
-C {devices/lab_pin.sym} 500 -430 0 0 {name=p12 lab=G  net_name=true}
+device="ceramic capacitor"  }
+C {devices/lab_pin.sym} 500 -430 0 0 {name=p12 lab=G  }
 C {devices/launcher.sym} 740 -60 0 0 {name=h1
 descr=Backannotate
 tclcommand="xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw"
@@ -166,9 +166,9 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 "
 }
 C {devices/ammeter.sym} 690 -370 0 1 {name=Vright}
-C {devices/vsource.sym} 40 -460 0 0 {name=V3 value="dc 0 ac 1 0"  net_name=true}
-C {devices/lab_pin.sym} 40 -350 0 0 {name=p19 lab=0  net_name=true}
-C {devices/vsource.sym} 40 -380 0 0 {name=V2 value=VCM  net_name=true}
+C {devices/vsource.sym} 40 -460 0 0 {name=V3 value="dc 0 ac 1 0"  }
+C {devices/lab_pin.sym} 40 -350 0 0 {name=p19 lab=0  }
+C {devices/vsource.sym} 40 -380 0 0 {name=V2 value=VCM  }
 C {devices/code_shown.sym} 930 -950 0 0 {name=COMMANDS
 only_toplevel=true
 value=".param VCM = 1 VDD=1.8
