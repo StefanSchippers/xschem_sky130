@@ -762,20 +762,20 @@ C {devices/launcher.sym} 440 -660 0 0 {name=h23
 descr="PLL capacitive
 sensor" 
 tclcommand="xschem load_new_window https://raw.githubusercontent.com/JorgeMarinN/SDC_SKY130_MPW5/mpw5/xschem/user_analog_project_wrapper.sch"}
-C {sky130_tests/tb_charge_pump.sym} 480 -1340 0 0 {name=x35}
-C {sky130_tests/cmos_ac_sweep.sym} 480 -1300 0 0 {name=x36}
-C {sky130_tests/test_hvl_cells.sym} 480 -1260 0 0 {name=x37}
+C {sky130_tests/tb_charge_pump.sym} 480 -1300 0 0 {name=x35}
+C {sky130_tests/cmos_ac_sweep.sym} 480 -1260 0 0 {name=x36}
+C {sky130_tests/test_hvl_cells.sym} 480 -1220 0 0 {name=x37}
 C {devices/launcher.sym} 440 -570 0 0 {name=h24
 descr="SigmaDelta_tb.sch" 
 tclcommand="xschem load_new_window https://raw.githubusercontent.com/filippocarastro/SigmaDelta_ADC/main/xschem/SigmaDelta_tb.sch"}
 C {devices/launcher.sym} 440 -610 0 0 {name=h25
 descr="amsat_txrx_ic dac.sch" 
 tclcommand="xschem load_new_window https://raw.githubusercontent.com/yrrapt/amsat_txrx_ic/master/design/dac/dac.sch"}
-C {sky130_tests/test_short_option.sym} 480 -1220 0 0 {name=x40}
-C {sky130_tests/test_lvs_ignore.sym} 480 -1180 0 0 {name=x41}
-C {sky130_tests/test_generators.sym} 480 -1140 0 0 {name=x38}
+C {sky130_tests/test_short_option.sym} 480 -1180 0 0 {name=x40}
+C {sky130_tests/test_lvs_ignore.sym} 480 -1140 0 0 {name=x41}
+C {sky130_tests/test_generators.sym} 480 -1100 0 0 {name=x38}
 C {sky130_tests/optimize_delay.sym} 190 -1180 0 0 {name=x39}
-C {sky130_tests/test_customplot.sym} 480 -1380 0 0 {name=x42}
+C {sky130_tests/test_customplot.sym} 480 -1340 0 0 {name=x42}
 C {devices/intuitive_interface_cheatsheet.sym} 1060 -1660 0 0 {name=x43}
 C {sky130_tests/sky130_oscillator.sym} 190 -1140 0 0 {name=x44}
 C {sky130_fd_pr/photodiode.sym} 2800 -150 0 0 {name=D3
@@ -783,3 +783,4 @@ model=photodiode
 
 }
 C {sky130_tests/sky130_mismatch.sym} 190 -1100 0 0 {name=x45}
+C {sky130_tests/test_sweep_res_l.sym} 480 -1380 0 0 {name=x46}
