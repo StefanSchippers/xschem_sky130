@@ -312,7 +312,7 @@ save @m.xm2.msky130_fd_pr__nfet_01v8[gm]
 save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 
 save @m.xm16.m1[gm]
-save @m.xm15.xmain1.msky130_fd_pr__nfet_g5v0d16v0__base[gm]
+save @m.xm15.xsky130_fd_pr__nfet_g5v0d16v0.msky130_fd_pr__nfet_g5v0d16v0_base[gm]
 save @m.xm14.msky130_fd_pr__nfet_g5v0d10v5[gm]
 save @m.xm13.msky130_fd_pr__nfet_05v0_nvt[gm]
 save @m.xm12.msky130_fd_pr__nfet_03v3_nvt[gm]
