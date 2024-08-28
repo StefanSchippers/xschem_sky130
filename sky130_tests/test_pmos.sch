@@ -151,14 +151,14 @@ vb b 0 0
 .control
 save all
 save @m.xm6.m1[gm]
-save @m.xm5.xmain1.msky130_fd_pr__pfet_g5v0d16v0__base[gm]
+save @m.xm5.xsky130_fd_pr__pfet_g5v0d16v0.msky130_fd_pr__pfet_g5v0d16v0_base[gm]
 save @m.xm4.msky130_fd_pr__pfet_g5v0d10v5[gm]
 save @m.xm3.msky130_fd_pr__pfet_01v8_hvt[gm]
 save @m.xm2.msky130_fd_pr__pfet_01v8[gm]
 save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
 
 save @m.xm12.m1[gm]
-save @m.xm11.xmain1.msky130_fd_pr__pfet_g5v0d16v0__base[gm]
+save @m.xm11.xsky130_fd_pr__pfet_g5v0d16v0.msky130_fd_pr__pfet_g5v0d16v0_base[gm]
 save @m.xm10.msky130_fd_pr__pfet_g5v0d10v5[gm]
 save @m.xm9.msky130_fd_pr__pfet_01v8_hvt[gm]
 save @m.xm8.msky130_fd_pr__pfet_01v8[gm]

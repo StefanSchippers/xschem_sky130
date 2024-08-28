@@ -61,10 +61,10 @@ T {G} -10 -10 0 1 0.15 0.15 {layer=7}
 T {@mult x @W / @L} 31.25 13.75 0 0 0.2 0.2 { layer=13}
 T {nf=@nf} 31.25 1.25 0 0 0.2 0.2 { layer=13}
 T {@model} 30 -17.5 2 1 0.2 0.2 {}
-T {tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand \{\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\[gm]\}]]] )} 30 -50 0 0 0.15 0.15 {layer=15
-hide=true}
-T {tcleval(id=[to_eng [ngspice::get_node [subst -nocommand \{i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\[id])\}]]] )} 30 -40 0 0 0.15 0.15 {layer=15
-hide=true}
 T {@body} 12.5 -3.75 2 1 0.2 0.2 { layer=1}
 T {tcleval(vgs=[to_eng \{@#1:spice_get_voltage - @#2:spice_get_voltage \}]
 vds=[to_eng \{@#0:spice_get_voltage - @#2:spice_get_voltage \}])} -17.5 20 0 0 0.05 0.05 {layer=15 hide=instance}
+T {tcleval(gm=[to_eng [ngspice::get_node \\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[gm\\\\]]] )} 30 -50 0 0 0.15 0.15 {layer=15
+hide=true}
+T {tcleval(id=[to_eng [ngspice::get_node i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[id\\\\])]] )} 30 -40 0 0 0.15 0.15 {layer=15
+hide=true}

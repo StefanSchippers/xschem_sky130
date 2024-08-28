@@ -304,6 +304,7 @@ save @m.xm8.m1[gm]
 
 save @m.xm7.m1[gm]
 save @m.xm6.xmain1.msky130_fd_pr__nfet_g5v0d16v0__base[gm]
+save @m.xm6.xsky130_fd_pr__nfet_g5v0d16v0.msky130_fd_pr__nfet_g5v0d16v0_base[gm]
 save @m.xm5.msky130_fd_pr__nfet_g5v0d10v5[gm]
 save @m.xm4.msky130_fd_pr__nfet_05v0_nvt[gm]
 save @m.xm3.msky130_fd_pr__nfet_03v3_nvt[gm]
