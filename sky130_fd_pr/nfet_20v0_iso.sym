@@ -64,6 +64,6 @@ T {@model} 30 -8.75 2 1 0.2 0.2 {}
 T {@mult x @W / @L} 31.25 11.25 0 0 0.2 0.2 { layer=13}
 T {sub} -6.25 20 0 0 0.15 0.15 {layer=7}
 T {tcleval(gm=[to_eng [ngspice::get_node \\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[gm\\\\]]] )} 30 -10 0 0 0.15 0.15 {layer=15
-hide=true}
+hide=instance}
 T {tcleval(id=[to_eng [ngspice::get_node i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[id\\\\])]] )} 30 -30 0 0 0.15 0.15 {layer=15
-hide=true}
+hide=instance}
