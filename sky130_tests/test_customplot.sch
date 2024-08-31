@@ -27,7 +27,8 @@ unitx=1
 logx=0
 logy=0
 rawfile=$netlist_dir/test_customplot.raw
-sim_type=tran}
+sim_type=tran
+autoload=1}
 B 2 530 -950 1190 -540 {flags=graph,unlocked
 y1=0
 y2=3.3e-07
@@ -53,7 +54,8 @@ rawfile=$netlist_dir/delay.raw
 color=4
 node=del
 divx=5
-sim_type=foo}
+sim_type=foo
+autoload=1}
 T {Creating a plot with capacitor charge delay vs transistor width} 70 -1030 0 0 1 1 {}
 T {tcleval([xschem raw switch 2
   set table "W,Del"
