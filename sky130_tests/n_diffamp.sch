@@ -154,8 +154,6 @@ C {devices/launcher.sym} 830 -100 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
 }
-C {devices/ngspice_get_expr.sym} 470 -130 0 1 {name=r4 node="[format %.4g [expr [ngspice::get_node \{i(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[id])\}] * [ngspice::get_node v($\{path\}s)] ] ]"
-descr="power W"}
 C {devices/ngspice_get_value.sym} 470 -190 0 1 {name=r3 node=i(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[id])
 descr="Id="}
 C {devices/launcher.sym} 830 -200 0 0 {name=h1
@@ -193,3 +191,5 @@ descr="gds="}
 C {devices/ngspice_get_value.sym} 280 -350 0 1 {name=r11 node=@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[gmbs]
 descr="gmbs="}
 C {devices/ammeter.sym} 320 -360 0 0 {name=V5}
+C {devices/ngspice_get_expr.sym} 470 -140 0 1 {name=r2 node="[to_eng [ngspice::get_current \{xm5.msky130_fd_pr__nfet_01v8[id]\}] * [ngspice::get_voltage s] ]W"
+descr="power"}
