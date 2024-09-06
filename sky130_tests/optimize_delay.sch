@@ -27,7 +27,7 @@ logy=0
 divy=10
 hilight_wave=-1
 xlabmag=1.2}
-T {Target: W = 3 , delay = 1.869e-10} 840 -280 0 0 0.4 0.4 {
+T {Target: W = 3.5 , delay = 1.953e-10} 840 -280 0 0 0.4 0.4 {
 layer=3}
 T {This example sizes the delay chain inverters until a delay less than 200ps is obtained} 60 -820 0 0 0.5 0.5 {}
 N 90 -410 90 -390 {
@@ -94,10 +94,10 @@ C {devices/lab_pin.sym} 90 -490 0 1 {name=p32 sig_type=std_logic lab=VCC}
 C {devices/parax_cap.sym} 650 -110 0 0 {name=C1 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 730 -110 0 0 {name=C2 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 810 -110 0 0 {name=C3 gnd=0 value=4f m=1}
-C {sky130_tests/not.sym} 610 -180 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=GND W_N=3 L_N=0.15 W_P=6 L_P=0.15}
-C {sky130_tests/not.sym} 690 -180 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=GND W_N=3 L_N=0.15 W_P=6 L_P=0.15}
-C {sky130_tests/not.sym} 770 -180 0 0 {name=x2 m=1 VCCPIN=VCC VSSPIN=GND W_N=3 L_N=0.15 W_P=6 L_P=0.15}
-C {sky130_tests/not.sym} 850 -180 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=GND W_N=3 L_N=0.15 W_P=6 L_P=0.15}
+C {sky130_tests/not.sym} 610 -180 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=GND W_N=3.5 L_N=0.15 W_P=7.0 L_P=0.15}
+C {sky130_tests/not.sym} 690 -180 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=GND W_N=3.5 L_N=0.15 W_P=7.0 L_P=0.15}
+C {sky130_tests/not.sym} 770 -180 0 0 {name=x2 m=1 VCCPIN=VCC VSSPIN=GND W_N=3.5 L_N=0.15 W_P=7.0 L_P=0.15}
+C {sky130_tests/not.sym} 850 -180 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=GND W_N=3.5 L_N=0.15 W_P=7.0 L_P=0.15}
 C {devices/lab_pin.sym} 570 -180 0 0 {name=p3 sig_type=std_logic lab=CK}
 C {devices/lab_pin.sym} 920 -180 0 1 {name=p4 sig_type=std_logic lab=CK_DEL}
 C {devices/capa.sym} 900 -120 0 0 {name=C4
@@ -159,5 +159,4 @@ proc optimize_delay \{\} \{
 \}
 
 optimize_delay
-"
-}
+"}

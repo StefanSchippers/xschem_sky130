@@ -37,9 +37,10 @@ logx=1
 logy=0
 divx=5
 sweep=""
-rawfile=$netlist_dir/test_ac.raw
+
 sim_type=ac
-x1=0}
+x1=0
+autoload=1}
 B 2 1070 -900 1620 -580 {flags=graph,unlocked
 y1=-0.0028
 y2=0.00099
@@ -61,11 +62,12 @@ logx=0
 logy=0
 divx=5
 hilight_wave=-1
-rawfile=$netlist_dir/test_ac.raw
+
 sim_type=tran
-subdivx=3}
+subdivx=3
+autoload=1}
 B 2 1070 -580 1620 -330 {flags=graph,unlocked
-rawfile=$netlist_dir/test_ac.raw
+
 sim_type=ac
 y1=1.1
 y2=180
@@ -85,7 +87,8 @@ unitx=1
 logx=1
 logy=0
 divx=5
-sweep=""}
+sweep=""
+autoload=1}
 P 4 5 740 -840 740 -560 990 -560 990 -840 740 -840 {dash=3}
 T {Effect of M2
 loading on OUT} 760 -890 0 0 0.4 0.4 {layer=4}
