@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -124,7 +124,7 @@ T {Note: Still untested!} 2840 -1540 0 0 0.7 0.7 {}
 T {Git / Google-Skywater RERAM PDK links} 780 -890 0 0 0.6 0.6 {layer=8}
 T {PFET} 3050 -390 0 0 1 1 { hcenter=true}
 T {NFET} 3050 -150 0 0 1 1 { hcenter=true}
-T {These symbols take W as Finger length
+T {These symbols take W as Finger width
 instead of total width} 3450 -600 0 0 1 1 { hcenter=true}
 T {NPN} 2240 -70 0 0 1 1 { hcenter=true}
 T {Place these useful launchers in your schematic to:} 790 -680 0 0 0.6 0.6 {}
