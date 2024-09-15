@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ N 340 -150 440 -150 {
 lab=BB}
 N 540 -170 620 -170 {
 lab=ZZ[3:0]}
-C {nand2_noschematic.sym} 480 -170 0 0 {name=x1[3:0] m=1 
+C {sky130_tests/nand2_noschematic.sym} 480 -170 0 0 {name=x1[3:0] m=1 
 + wna=4 lna=0.1
 + wnb=4 lnb=0.1 modeln=NCH
 + wpa=2 lpa=0.1
