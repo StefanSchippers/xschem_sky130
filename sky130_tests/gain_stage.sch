@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,6 +19,14 @@ K {}
 V {}
 S {}
 E {}
+P 4 7 590 -610 590 -620 610 -610 590 -600 590 -610 540 -610 540 -290 {fill=1}
+P 4 7 610 -210 840 -210 840 -220 860 -210 840 -200 840 -210 610 -210 {fill=1}
+T {These transistors have parametrized
+"modeln" attribute that can be set
+in instance together with a instance
+based schematic=.... attribute.
+default modeln is set in symbol
+template attribute.} 210 -280 0 0 0.4 0.4 {layer=4}
 N 910 -240 940 -240 {lab=VSS}
 N 1060 -320 1130 -320 {lab=OUT}
 N 910 -320 910 -270 { lab=OUT}
@@ -91,13 +99,13 @@ C {devices/lab_pin.sym} 1130 -320 0 1 {name=l10 lab=OUT}
 C {devices/parax_cap.sym} 980 -310 0 0 {name=C5  value=4f}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 890 -240 0 0 {name=M6
 L=1
-W=0.5
+W=WN
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
 nf=1 mult=1
-model=nfet_01v8_lvt
+model=@modeln
 spiceprefix=X
  }
 C {devices/ammeter.sym} 910 -140 0 0 {name=v4}
@@ -132,7 +140,7 @@ C {devices/ammeter.sym} 910 -490 0 0 {name=v17}
 C {devices/lab_pin.sym} 940 -400 0 1 {name=p144 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 890 -400 0 0 {name=M5
 L=1
-W=1
+W=WP
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
@@ -147,7 +155,7 @@ C {devices/lab_pin.sym} 630 -800 0 0 {name=l7 lab=EN_N}
 C {devices/lab_pin.sym} 700 -720 0 1 {name=p8 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 650 -720 0 0 {name=M8
 L=1
-W=1
+W=WP
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
 as="'W * 0.29'" ps="'W + 2 * 0.29'"
 nrd=0 nrs=0
@@ -159,19 +167,19 @@ spiceprefix=X
 C {devices/lab_pin.sym} 700 -620 0 1 {name=p9 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 650 -620 0 0 {name=M9
 L=1
-W=0.5
+W=WN
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
 as="'W * 0.29'" ps="'W + 2 * 0.29'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
 nf=1 mult=1
-model=nfet_01v8_lvt
+model=@modeln
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 700 -540 0 1 {name=p10 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 650 -540 0 0 {name=M10
 L=4
-W=0.5
+W=WN
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
 as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
@@ -185,7 +193,7 @@ C {devices/lab_pin.sym} 630 -540 0 0 {name=p11 lab=VCC}
 C {devices/lab_pin.sym} 670 -500 0 0 {name=p27 lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 650 -800 0 0 {name=M1
 L=4
-W=1
+W=WP
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
 as="'W * 0.29'" ps="'W + 2 * 0.29'"
 nrd=0 nrs=0
@@ -201,7 +209,7 @@ C {sky130_tests/passgate.sym} 290 -660 0 0 {name=x6 W_N=0.5 L_N=0.15 W_P=0.5 L_P
 C {devices/lab_pin.sym} 290 -630 0 0 {name=l34 sig_type=std_logic lab=START_N}
 C {devices/lab_pin.sym} 290 -690 0 0 {name=l37 sig_type=std_logic lab=START}
 C {devices/lab_pin.sym} 400 -600 0 0 {name=l40 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 400 -630 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 400 -630 0 0 {name=C2 model=cap_mim_m3_2 W=wcap L=wcap MF=2 spiceprefix=X}
 C {devices/ipin.sym} 100 -510 0 0 { name=p4 lab=START }
 C {devices/ipin.sym} 100 -490 0 0 { name=p12 lab=START_N }
 C {devices/ipin.sym} 100 -530 0 0 { name=p13 lab=EN_N }

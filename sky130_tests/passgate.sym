@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,8 +17,9 @@ v {xschem version=3.1.0 file_version=1.2
 G {}
 K {type=subcircuit
 format="@name @pinlist @VCCBPIN @VSSBPIN @symname W_N=@W_N L_N=@L_N W_P=@W_P L_P=@L_P m=@m"
-template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS m=1"
-extra="VCCBPIN VSSBPIN"
+template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS 
+modeln=nfet_01v8 modelp=pfet_01v8 m=1"
+extra="VCCBPIN VSSBPIN modeln modelp"
 
 }
 V {}
