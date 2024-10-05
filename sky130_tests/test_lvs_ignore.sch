@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,14 +63,7 @@ N 770 -330 770 -300 {
 lab=GND}
 C {sky130_tests/not.sym} 970 -440 0 0 {name=x5 m=1 VCCPIN=VCC VSSPIN=VSS W_N=0.5 L_N=1 W_P=1 L_P=1}
 C {devices/title.sym} 130 -40 0 0 {name=l1
-author="tcleval([
-  if \{$show_pin_net_names == 0\} \{
-    set lvs_ignore 0
-    set show_pin_net_names 1
-    xschem update_all_sym_bboxes
-  \}
-  return \{Stefan Schippers\}
-])"
+author="Stefan Schippers"
 }
 C {devices/launcher.sym} 720 -100 0 0 {name=h1
 descr="Toggle lvs_ignore variable and

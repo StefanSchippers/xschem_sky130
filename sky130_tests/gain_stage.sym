@@ -3,7 +3,7 @@ v {xschem version=3.4.6RC file_version=1.2
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname WN=@WN WP=@WP wcap=@wcap"
-template="name=x1 wcap=10 modeln=nfet_01v8_lvt WN=0.5 WP=1"
+template="name=x1 wcap=10 WN=0.5 WP=1 modeln=nfet_01v8_lvt"
 extra="modeln"}
 V {}
 S {}

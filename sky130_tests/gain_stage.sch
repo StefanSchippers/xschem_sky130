@@ -19,62 +19,55 @@ K {}
 V {}
 S {}
 E {}
-P 4 7 590 -610 590 -620 610 -610 590 -600 590 -610 540 -610 540 -290 {fill=1}
 P 4 7 610 -210 840 -210 840 -220 860 -210 840 -200 840 -210 610 -210 {fill=1}
+P 4 5 580 -600 580 -610 600 -600 580 -590 580 -600 {fill=1}
+P 4 3 580 -600 540 -600 540 -290 {}
 T {These transistors have parametrized
 "modeln" attribute that can be set
 in instance together with a instance
 based schematic=.... attribute.
 default modeln is set in symbol
 template attribute.} 210 -280 0 0 0.4 0.4 {layer=4}
-N 910 -240 940 -240 {lab=VSS}
-N 1060 -320 1130 -320 {lab=OUT}
-N 910 -320 910 -270 { lab=OUT}
-N 910 -210 910 -170 { lab=#net1}
-N 1060 -170 1090 -170 {lab=VSS}
-N 1060 -320 1060 -200 { lab=OUT}
-N 1040 -320 1060 -320 {lab=OUT}
-N 1060 -140 1060 -110 { lab=VSS}
-N 910 -370 910 -320 { lab=OUT}
-N 910 -550 940 -550 {lab=VCC}
-N 910 -610 910 -580 {lab=VCC}
-N 810 -400 870 -400 { lab=IN}
-N 910 -400 940 -400 {lab=VCC}
-N 910 -460 910 -430 { lab=#net2}
-N 670 -800 700 -800 {lab=VCC}
-N 670 -860 670 -830 {lab=VCC}
-N 670 -720 700 -720 {lab=VCC}
-N 670 -770 670 -750 { lab=#net3}
-N 670 -620 700 -620 {lab=VSS}
-N 670 -660 670 -650 { lab=#net4}
-N 670 -690 670 -660 { lab=#net4}
-N 630 -660 630 -620 { lab=ADJ}
-N 670 -540 700 -540 {lab=VSS}
-N 670 -510 670 -500 { lab=VSS}
-N 670 -590 670 -570 { lab=#net5}
-N 860 -660 1040 -660 { lab=OUT}
-N 900 -110 1060 -110 {
-lab=VSS}
-N 810 -400 810 -240 {
-lab=IN}
-N 810 -240 870 -240 {
-lab=IN}
-N 330 -660 630 -660 { lab=ADJ}
-N 1040 -660 1040 -320 {
-lab=OUT}
-N 1040 -880 1040 -660 {
-lab=OUT}
-N 200 -880 1040 -880 {
-lab=OUT}
-N 200 -880 200 -660 {
-lab=OUT}
-N 200 -660 250 -660 {
-lab=OUT}
-N 630 -720 630 -660 { lab=ADJ}
-N 910 -320 1040 -320 {lab=OUT}
-N 720 -320 810 -320 {
-lab=IN}
-N 670 -660 800 -660 { lab=#net4}
+N 910 -240 940 -240 {}
+N 1060 -320 1130 -320 {}
+N 910 -320 910 -270 {}
+N 910 -210 910 -170 {}
+N 1060 -170 1090 -170 {}
+N 1060 -320 1060 -200 {}
+N 1040 -320 1060 -320 {}
+N 1060 -140 1060 -110 {}
+N 910 -370 910 -320 {}
+N 910 -550 940 -550 {}
+N 910 -610 910 -580 {}
+N 810 -400 870 -400 {}
+N 910 -400 940 -400 {}
+N 910 -460 910 -430 {}
+N 670 -800 700 -800 {}
+N 670 -860 670 -830 {}
+N 670 -720 700 -720 {}
+N 670 -770 670 -750 {}
+N 670 -620 700 -620 {}
+N 670 -660 670 -650 {}
+N 670 -690 670 -660 {}
+N 630 -660 630 -620 {}
+N 670 -540 700 -540 {}
+N 670 -510 670 -500 {}
+N 670 -590 670 -570 {}
+N 860 -660 1040 -660 {}
+N 900 -110 1060 -110 {}
+N 810 -400 810 -240 {}
+N 810 -240 870 -240 {}
+N 360 -660 630 -660 {}
+N 1040 -660 1040 -320 {}
+N 1040 -880 1040 -660 {}
+N 200 -880 1040 -880 {}
+N 200 -880 200 -660 {}
+N 630 -720 630 -660 {}
+N 910 -320 1040 -320 {}
+N 720 -320 810 -320 {}
+N 670 -660 800 -660 {}
+N 330 -660 360 -660 {}
+N 200 -660 250 -660 {}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 100 -580 0 0 { name=p95 lab=IN }
 C {devices/ipin.sym} 100 -430 0 0 { name=p96 lab=VSS }
@@ -205,11 +198,14 @@ spiceprefix=X
 C {devices/lab_pin.sym} 900 -110 0 0 {name=p1 lab=VSS}
 C {devices/lab_pin.sym} 720 -320 0 0 {name=l2 lab=IN}
 C {devices/parax_cap.sym} 830 -390 0 0 {name=C1  value=4f}
-C {sky130_tests/passgate.sym} 290 -660 0 0 {name=x6 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
+C {sky130_tests/passgate.sym} 290 -660 0 0 {name=x6 W_N=0.42 L_N=0.35 W_P=0.6 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1
+modeln=nfet_01v8
+modelp=pfet_01v8_lvt
+schematic=passgate_nlvt.sch}
 C {devices/lab_pin.sym} 290 -630 0 0 {name=l34 sig_type=std_logic lab=START_N}
 C {devices/lab_pin.sym} 290 -690 0 0 {name=l37 sig_type=std_logic lab=START}
-C {devices/lab_pin.sym} 400 -600 0 0 {name=l40 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 400 -630 0 0 {name=C2 model=cap_mim_m3_2 W=wcap L=wcap MF=2 spiceprefix=X}
+C {devices/lab_pin.sym} 450 -600 0 0 {name=l40 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 450 -630 0 0 {name=C2 model=cap_mim_m3_2 W=wcap L=wcap MF=2 spiceprefix=X}
 C {devices/ipin.sym} 100 -510 0 0 { name=p4 lab=START }
 C {devices/ipin.sym} 100 -490 0 0 { name=p12 lab=START_N }
 C {devices/ipin.sym} 100 -530 0 0 { name=p13 lab=EN_N }
