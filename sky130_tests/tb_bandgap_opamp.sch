@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -248,7 +248,7 @@ will not be present in LVS
 netlist} 20 -1460 0 0 0.6 0.6 {}
 T {Mismatch checker} 460 -1070 0 0 0.3 0.3 { layer=4}
 T {Simulation temperature} 440 -1270 0 0 0.3 0.3 { layer=4}
-T {tcleval(Dataset=\\n[xschem getprop rect 2 0 dataset])} 1280 -110 0 0 0.7 0.7 {floater=xxx}
+T {tcleval(Dataset=\\\\n[xschem getprop rect 2 0 dataset]\\\\n(-1=all))} 1280 -110 0 0 0.5 0.5 {floater=xxx}
 N 320 -540 340 -540 { lab=DIFFOUT_N}
 N 620 -540 720 -540 { lab=ADJ}
 N 420 -540 620 -540 { lab=ADJ}
