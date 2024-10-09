@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ y1 = 0
 
 divy = 1
 x1=0
-x2=0.0001
+x2=0.0002
 subdivx=4
 divx=4
 node="x1.F1 x1.F2"
@@ -35,12 +35,12 @@ y2=1.8
 ypos1=0.0874617
 ypos2=0.561794}
 B 2 1830 -340 2290 -150 {flags=graph
-y1 = -2.2e-17
+y1 = 0
 y2 = 1.9
 divy = 5
 subdivx=4
 x1=0
-x2=0.0001
+x2=0.0002
 divx=4
 node="x1.ADJ2 x1.ADJ
 CLK"
@@ -49,31 +49,35 @@ color="12 10 7"
 subdivy=1
 dataset=-1}
 B 2 1830 -540 2290 -350 {flags=graph
-y1 = -0.000609787
-y2 = 0.000635008
+y1 = -.4m
+y2 = .4m
 divy = 8
 subdivy=1
 unity=m
 x1=0
-x2=0.0001
+x2=0.0002
 divx=4
 node="\\"x1.zminus x1.plus -\\""
 color=8
  subdivx=4  unitx=u
-dataset=-1}
+dataset=-1
+ylabmag=1.3
+xlabmag=1.2}
 B 2 1830 -1010 2290 -820 {flags=graph
-y1 = -0.00066109
-y2 = 0.000483517
+y1 = -.4m
+y2 = .4m
 divy = 8
 subdivy=1
 unity=m
 x1=0
-x2=0.0001
+x2=0.0002
 divx=4
 node="\\"x1.minus x1.plus -\\""
 color=8
  subdivx=4  unitx=u
-dataset=-1}
+dataset=-1
+ylabmag=1.4
+xlabmag=1.2}
 B 2 1830 -730 2290 -540 {flags=graph
 y1 = -0.0279359
 y2 = 0.0194078
@@ -81,7 +85,7 @@ divy = 8
 subdivy=1
 unity=m
 x1=0
-x2=0.0001
+x2=0.0002
 divx=4
 node="\\"x1.minus x1.plus -\\""
 color=7
@@ -140,6 +144,10 @@ N 330 -570 330 -470 {
 lab=MINUS}
 N 80 -570 80 -530 {
 lab=PLUS}
+N 840 -360 840 -270 {lab=MINUS}
+N 840 -600 840 -510 {lab=PLUS}
+N 840 -690 840 -660 {lab=VSS}
+N 840 -210 840 -180 {lab=VSS}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 80 -130 0 0 {name=p1 lab=EN_N}
 C {devices/opin.sym} 150 -130 0 0 {name=p2 lab=VBG}
@@ -180,8 +188,10 @@ C {devices/lab_pin.sym} 880 -390 0 0 {name=l67 sig_type=std_logic lab=F1N}
 C {devices/lab_pin.sym} 1050 -500 0 0 {name=l25 sig_type=std_logic lab=PLUS}
 C {devices/lab_pin.sym} 840 -510 0 0 {name=l29 sig_type=std_logic lab=PLUS}
 C {devices/lab_pin.sym} 840 -360 0 0 {name=l33 sig_type=std_logic lab=MINUS}
-C {sky130_tests/passgate.sym} 1380 -530 0 0 {name=x5 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
-C {sky130_tests/passgate.sym} 1380 -250 0 0 {name=x6 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
+C {sky130_tests/passgate.sym} 1380 -530 0 0 {name=x5 W_N=0.5 L_N=0.35 W_P=0.6 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1
+modelp=pfet_01v8_lvt}
+C {sky130_tests/passgate.sym} 1380 -250 0 0 {name=x6 W_N=0.5 L_N=0.35 W_P=0.6 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1
+modelp=pfet_01v8_lvt}
 C {devices/lab_pin.sym} 1380 -220 0 0 {name=l34 sig_type=std_logic lab=F1}
 C {devices/lab_pin.sym} 1380 -500 0 0 {name=l35 sig_type=std_logic lab=F2}
 C {devices/lab_pin.sym} 1380 -560 0 0 {name=l36 sig_type=std_logic lab=F2N}
@@ -312,3 +322,7 @@ L=20
 model=res_xhigh_po_1p41
 spiceprefix=X
  mult=1}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 840 -240 0 0 {name=C3 model=cap_mim_m3_2 W=10 L=10 MF=2 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} 840 -630 2 1 {name=C4 model=cap_mim_m3_2 W=10 L=10 MF=2 spiceprefix=X }
+C {devices/lab_pin.sym} 840 -690 0 0 {name=l5 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 840 -180 2 1 {name=l8 sig_type=std_logic lab=VSS}

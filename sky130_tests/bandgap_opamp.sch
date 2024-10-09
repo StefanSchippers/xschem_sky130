@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -312,7 +312,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 980 -730 0 1 {name=p9 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 930 -730 0 0 {name=M9
+C {sky130_fd_pr/nfet_01v8.sym} 930 -730 0 0 {name=M9
 L=1
 W=0.5
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
@@ -320,11 +320,11 @@ as="'W * 0.29'" ps="'W + 2 * 0.29'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
 nf=1 mult=1
-model=nfet_01v8_lvt
+model=nfet_01v8
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 980 -650 0 1 {name=p10 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 930 -650 0 0 {name=M10
+C {sky130_fd_pr/nfet_01v8.sym} 930 -650 0 0 {name=M10
 L=6
 W=0.5
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -332,7 +332,7 @@ as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
 nf=1 mult=1
-model=nfet_01v8_lvt
+model=nfet_01v8
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 910 -800 0 0 {name=l8 lab=ADJ}
