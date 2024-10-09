@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,8 +33,9 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=x1.G1
-color=10
+node="x1.G1
+x1.G2"
+color="10 4"
 dataset=-1
 unitx=1
 logx=0
@@ -205,20 +206,6 @@ nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
  }
-C {devices/launcher.sym} 240 -90 0 0 {name=h3
-descr="Load file into gaw" 
-comment="
-  This launcher gets raw filename from current schematic using 'xschem get schname'
-  and stripping off path and suffix.  It then loads raw file into gaw.
-  This allow to use it in any schematic without changes.
-"
-tclcommand="
-set rawfile [file tail [file rootname [xschem get schname]]].raw
-gaw_cmd \\"tabledel $rawfile
-load $netlist_dir/$rawfile
-table_set $rawfile\\"
-unset rawfile"
-}
 C {devices/lab_pin.sym} 520 -280 0 1 {name=l3 lab=G1}
 C {devices/ammeter.sym} 480 -460 0 0 {name=v1}
 C {devices/parax_cap.sym} 700 -520 0 0 {name=C4  value=2f}
@@ -325,7 +312,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 990 -600 0 1 {name=p9 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 940 -600 0 0 {name=M9
+C {sky130_fd_pr/nfet_01v8.sym} 940 -600 0 0 {name=M9
 L=1
 W=0.5
 ad="'W * 0.29'" pd="'W + 2 * 0.29'"
@@ -333,11 +320,11 @@ as="'W * 0.29'" ps="'W + 2 * 0.29'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
 nf=1 mult=1
-model=nfet_01v8_lvt
+model=nfet_01v8
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 990 -520 0 1 {name=p10 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 940 -520 0 0 {name=M10
+C {sky130_fd_pr/nfet_01v8.sym} 940 -520 0 0 {name=M10
 L=8
 W=0.5
 ad="'W * 0.29'" pd="'2*(W + 0.29)'"
@@ -345,7 +332,7 @@ as="'W * 0.29'" ps="'2*(W + 0.29)'"
 nrd=0 nrs=0
 sa=0 sb=0 sd=0
 nf=1 mult=1
-model=nfet_01v8_lvt
+model=nfet_01v8
 spiceprefix=X
  }
 C {devices/lab_pin.sym} 880 -660 0 0 {name=l8 lab=ADJ}

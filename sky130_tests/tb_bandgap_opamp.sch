@@ -46,30 +46,30 @@ L 4 2290 -610 2410 -610 {}
 L 4 2130 -610 2210 -650 {}
 L 4 2270 -640 2270 -620 {}
 L 4 2113.75 -683.75 2113.75 -676.25 {}
-B 2 780 -480 1580 -120 {flags=graph,unlocked
-y1=-0.0033
+B 2 780 -480 1580 -120 {flags=graph
+y1=-0.0051
 y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5486e-07
-x2=3.84515e-06
+x1=1e-11
+x2=2.5e-06
 divx=5
 subdivx=1
 node="ADJ
 OUT
-out%10
-out%23"
-color="13 21 9 4"
+\\"out%88\\"
+\\"out%17\\""
+color="12 21 6 7"
 
 unitx=1
 logx=0
 logy=0
 dataset=-1
 hilight_wave=-1}
-B 2 780 -1280 1580 -880 {flags=graph,unlocked
+B 2 780 -1280 1580 -880 {flags=graph
 y1=0.598227
 y2=0.601581
 ypos1=0
@@ -78,37 +78,38 @@ divy=5
 subdivy=1
 unity=1
 x1=1e-11
-x2=4e-06
+x2=2.5e-06
 divx=5
 subdivx=1
 
 
-dataset=0
+dataset=-1
 unitx=1
 logx=0
 logy=0
 color="9 12"
 node="PLUS%0 MINUS%0"}
-B 2 780 -1480 1580 -1280 {flags=graph,unlocked
+B 2 780 -1480 1580 -1280 {flags=graph
 y1=0
 y2=2
-ypos1=0.027461778
-ypos2=0.93113195
+ypos1=-0.026338013
+ypos2=0.93805989
 divy=5
 subdivy=1
 unity=1
-x1=-5.98366e-10
-x2=3.99937e-06
+x1=1e-11
+x2=2.5e-06
 divx=5
 subdivx=1
 node="START%0
 EN_N%0"
 color="7 10"
-dataset=0
+dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+xlabmag=1.3}
 B 2 1650 -530 2450 -130 {flags=graph
 y1=-4.46498e-05
 y2=2.12872e-07
@@ -118,7 +119,7 @@ divy=5
 subdivy=1
 unity=1
 x1=1e-11
-x2=4e-06
+x2=2.5e-06
 divx=5
 subdivx=1
 
@@ -128,12 +129,12 @@ unitx=1
 logx=0
 logy=0
 
-color="12 8 9 4 4"
+color="12 6 7"
 node="i(VVCC)
-i(vvcc)%10
-i(vvcc)%23"
+\\"i(vvcc)%10\\"
+\\"i(vvcc)%23\\""
 hilight_wave=-1}
-B 2 440 -1080 610 -930 {flags=graph
+B 2 440 -1080 610 -930 {flags=graph,unlocked
 y1=0.395916
 y2=0.732143
 ypos1=0.0639625
@@ -142,7 +143,7 @@ divy=5
 subdivy=1
 unity=1
 x1=1e-11
-x2=4e-06
+x2=2.5e-06
 divx=3
 subdivx=1
 node="vth1
@@ -154,7 +155,7 @@ logx=0
 logy=0
 digital=0}
 B 2 780 -880 1580 -480 {flags=graph
-y1=1.6
+y1=-0.013
 y2=2
 ypos1=0
 ypos2=2
@@ -162,7 +163,7 @@ divy=5
 subdivy=1
 unity=1
 x1=1e-11
-x2=4e-06
+x2=2.5e-06
 divx=5
 subdivx=1
 
@@ -171,18 +172,19 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=VCC}
-B 2 440 -1250 610 -1110 {flags=graph
-y1=-67.943
-y2=172.248
+color="4 7"
+node="VCC
+diffout_n"}
+B 2 440 -1250 610 -1110 {flags=graph,unlocked
+y1=-102.256
+y2=137.935
 ypos1=0.0639625
 ypos2=0.678667
 divy=5
 subdivy=1
 unity=1
 x1=1e-11
-x2=4e-06
+x2=2.5e-06
 divx=3
 subdivx=1
 node=temperat
@@ -192,16 +194,16 @@ unitx=1
 logx=0
 logy=0
 digital=0}
-B 2 440 -920 610 -770 {flags=graph
-y1=-0.1
-y2=0.1
+B 2 440 -920 610 -770 {flags=graph,unlocked
+y1=-0.20379456
+y2=0.25485258
 ypos1=0.0639625
 ypos2=0.678667
 divy=5
 subdivy=1
 unity=1
 x1=1e-11
-x2=4e-06
+x2=2.5e-06
 divx=3
 subdivx=1
 node="\\"vth1 - vth2; vth1 vth2 -\\""
@@ -211,13 +213,13 @@ unitx=1
 logx=0
 logy=0
 digital=0}
-A 4 1620 -1200 5 0 360 {fill=true}
-A 4 1620 -1150 5 0 360 {fill=true}
-A 4 1620 -1100 5 0 360 {fill=true}
-A 4 1620 -1000 5 0 360 {fill=true}
-A 4 1620 -950 5 0 360 {fill=true}
-A 4 1620 -1050 5 0 360 {fill=true}
-A 4 1620 -1250 5 0 360 {fill=true}
+A 4 1620 -1190 5 0 360 {fill=true}
+A 4 1620 -1140 5 0 360 {fill=true}
+A 4 1620 -1090 5 0 360 {fill=true}
+A 4 1620 -990 5 0 360 {fill=true}
+A 4 1620 -890 5 0 360 {fill=true}
+A 4 1620 -1040 5 0 360 {fill=true}
+A 4 1620 -1240 5 0 360 {fill=true}
 P 4 5 70 -1330 640 -1330 640 -760 70 -760 70 -1330 {dash=4}
 P 4 4 2270 -650 2267.5 -640 2272.5 -640 2270 -650 {fill=true}
 P 4 4 2270 -610 2272.5 -620 2267.5 -620 2270 -610 {fill=true}
@@ -228,20 +230,21 @@ T {Comparator must detect a differential signal as low as +/-1mV} 1640 -1260 0 0
 T {1.8V VCC +/- 10%} 1640 -1210 0 0 0.6 0.6 {}
 T {-40C to 125C temperature} 1640 -1160 0 0 0.6 0.6 {}
 T {Simulate with device mismatch parameters} 1640 -1110 0 0 0.6 0.6 {}
-T {Sensing time: 1us calibration and 1us sensing (no speed optimization).} 1640 -1010 0 0 0.6 0.6 {}
+T {Sensing time: 500ns calibration and 500ns sensing
+(no speed optimization).} 1640 -1010 0 0 0.6 0.6 {}
 T {CAL} 1860 -800 0 1 0.4 0.4 {}
 T {EN} 1860 -750 0 1 0.4 0.4 {}
 T {CALIBRATION
-  40ns} 2120 -850 0 1 0.4 0.4 {}
+  1us} 2120 -850 0 1 0.4 0.4 {}
 T {SENSING
-  40ns} 2250 -850 0 1 0.4 0.4 {}
+  1us} 2250 -850 0 1 0.4 0.4 {}
 T {OFF} 2380 -850 0 1 0.4 0.4 {}
 T {OFF} 1930 -850 0 1 0.4 0.4 {}
 T {V+ - V-} 1860 -680 0 1 0.4 0.4 {}
 T {SAOUT} 1860 -620 0 1 0.4 0.4 {}
 T {2mV} 2050 -700 0 0 0.4 0.4 {}
 T {VCC} 2210 -650 0 0 0.4 0.4 {}
-T {Icc < 50uA} 1640 -960 0 0 0.6 0.6 {}
+T {Icc < 50uA} 1640 -910 0 0 0.6 0.6 {}
 T {Self calibration: no circuit trimming} 1640 -1060 0 0 0.6 0.6 {}
 T {Check devices. Not on layout
 will not be present in LVS
@@ -298,12 +301,12 @@ value="* .option SCALE=1e-6
 
 .include stimuli_tb_bandgap_opamp.cir
 .control
-  setseed 9
+  setseed 11
   reset
   let run=0
   dowhile run <= 100
     save all
-    tran 1n 4000n uic
+    tran 1n 2500n uic
     print run
     print @m.x1.xml.msky130_fd_pr__pfet_01v8_lvt[vth]
     print @m.x1.xmr.msky130_fd_pr__pfet_01v8_lvt[vth]
@@ -326,12 +329,14 @@ C {devices/lab_wire.sym} 460 -360 0 1 {name=p4 lab=DIFFOUT_N}
 C {devices/lab_pin.sym} 270 -250 0 0 {name=p5 lab=VCC}
 C {devices/lab_pin.sym} 270 -230 0 0 {name=p6 lab=VSS}
 C {devices/lab_pin.sym} 270 -290 0 0 {name=p7 lab=ADJ}
-C {sky130_tests/passgate.sym} 380 -540 0 0 {name=x6 W_N=0.5 L_N=0.15 W_P=0.5 L_P=0.15 VCCBPIN=VCC VSSBPIN=VSS m=1}
+C {sky130_tests/passgate.sym} 380 -540 0 0 {name=x6 W_N=0.42 L_N=0.3 W_P=0.7 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1
+modelp=pfet_01v8_lvt
+}
 C {devices/lab_pin.sym} 380 -510 0 0 {name=l34 sig_type=std_logic lab=START_N}
 C {devices/lab_pin.sym} 380 -570 0 0 {name=l37 sig_type=std_logic lab=START}
 C {devices/lab_pin.sym} 720 -540 0 1 {name=l255 lab=ADJ}
 C {devices/lab_pin.sym} 490 -480 0 0 {name=l40 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 490 -510 0 0 {name=C1 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} 490 -510 0 0 {name=C1 model=cap_mim_m3_2 W=9 L=9 MF=2 spiceprefix=X }
 C {devices/lab_pin.sym} 320 -540 0 0 {name=p9 lab=DIFFOUT_N}
 C {sky130_tests/not.sym} 540 -700 0 0 {name=x2 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
 C {devices/lab_pin.sym} 500 -700 0 0 {name=p15 lab=START}
@@ -359,7 +364,7 @@ C {devices/lab_pin.sym} 130 -800 0 0 {name=p8 lab=VSS}
 C {devices/isource.sym} 130 -990 0 0 {name=I0 value=100n
 lvs_format=" "}
 C {devices/lab_pin.sym} 130 -1060 0 0 {name=p10 lab=VSS}
-C {sky130_tests/gain_stage.sym} 630 -360 0 0 {name=x3}
+C {sky130_tests/gain_stage.sym} 630 -360 0 0 {name=x3 wcap=9 modeln=nfet_01v8}
 C {devices/lab_pin.sym} 690 -360 0 1 {name=p12 lab=OUT}
 C {devices/lab_pin.sym} 610 -250 0 0 {name=p13 lab=VCC}
 C {devices/lab_pin.sym} 610 -230 0 0 {name=p14 lab=VSS}
