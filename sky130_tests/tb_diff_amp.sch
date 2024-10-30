@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 840 -900 1640 -500 {flags=graph
-y1=2
-y2=4
+y1=0
+y2=6
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2
-x2=4
+x1=0
+x2=6
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -28,15 +28,15 @@ logx=0
 logy=0
 }
 B 2 840 -500 1640 -100 {flags=graph
-y1=-10
-y2=10
+y1=-30
+y2=30
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2
-x2=4
+x1=0
+x2=6
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,17 +54,20 @@ T {// importing libs
 
 `include "discipline.h"
 
-module diff_amp (out, in1, in2);
-output electrical out;
-input electrical in1, in2;
+module diff_amp(
+  output electrical out,
+  input electrical in1,
+  input electrical in2);
 
 parameter real gain = 10; // setting gain to 10 of the differential amplifier
 
 analog begin
 
-    V(out) <+ gain * (V(in1) - V(in2));
+    V(out) <+ gain * (V(in1, in2));
+    // V(out) <+ 2 * atan( gain / 2 * V(in1, in2) );
 
-end} 150 -840 0 0 0.2 0.2 {font=monospace}
+end
+endmodule} 150 -860 0 0 0.2 0.2 {font=monospace}
 T {create a diff_amp.va file with following code 
 and compile it into a .osdi file with openvaf.} 190 -930 0 0 0.4 0.4 {}
 N 180 -450 320 -450 {lab=B}
@@ -75,7 +78,7 @@ N 180 -330 180 -290 {lab=0}
 N 80 -330 80 -290 {lab=0}
 N 80 -530 80 -390 {lab=A}
 N 180 -450 180 -390 {lab=B}
-C {diff_amp.sym} 420 -490 0 0 {name=U1}
+C {sky130_tests/diff_amp.sym} 420 -490 0 0 {name=U1}
 C {lab_pin.sym} 640 -490 0 1 {name=p1 sig_type=std_logic lab=Z}
 C {lab_pin.sym} 80 -530 0 0 {name=p2 sig_type=std_logic lab=A}
 C {lab_pin.sym} 180 -450 0 0 {name=p3 sig_type=std_logic lab=B}
@@ -89,11 +92,13 @@ C {code_shown.sym} 240 -320 0 0 {name=COMMANDS only_toplevel=false value="
   op
   remzerovec
   write tb_diff_amp.raw
-  dc V1 2 4 0.01
+  dc V1 0 6 0.01
   set appendwrite
   remzerovec
   write tb_diff_amp.raw
-.endc"}
+  quit 0
+.endc
+"}
 C {launcher.sym} 670 -120 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_diff_amp.raw dc"
