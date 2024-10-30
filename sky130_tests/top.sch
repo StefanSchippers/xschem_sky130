@@ -144,6 +144,7 @@ remote repositories} 410 -1090 0 0 0.6 0.6 {layer=8}
 T {Takes some time to download...} 420 -990 0 0 0.3 0.3 {layer=11}
 T {Ctrl-Click to open link} 420 -1010 0 0 0.3 0.3 {layer=11}
 T {Photodiode} 2750 -250 0 0 0.4 0.4 {}
+T {Verilog-A example} 30 -610 0 0 0.6 0.6 {layer=8}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/launcher.sym} 830 -1320 0 0 {name=h1
 descr="Google-Skywater PDK documentation" 
@@ -784,3 +785,4 @@ model=photodiode
 }
 C {sky130_tests/sky130_mismatch.sym} 190 -1100 0 0 {name=x45}
 C {sky130_tests/test_sweep_res_l.sym} 480 -1380 0 0 {name=x46}
+C {sky130_tests/tb_diff_amp.sym} 190 -550 0 0 {name=x47}
