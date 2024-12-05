@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -137,8 +137,9 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-node="plus minus"
-color="4 8"
+node="plus
+minus"
+color="4 6"
 unitx=n
 dataset=-1}
 B 2 1030 -2380 2010 -2080 {flags=graph
@@ -192,8 +193,10 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-node="zero0 zero1 zero2"
-color="4 8 7"
+node="zero0
+zero1
+zero2"
+color="4 6 8"
 unitx=n
 dataset=-1}
 B 2 30 -2580 1010 -2420 {flags=graph
@@ -209,8 +212,9 @@ subdivx=4
 
 dataset=-1
 unitx=n
-color="4 7"
-node="en cal"
+color="4 6"
+node="en
+cal"
 digital=1
 ypos1=0.197345
 ypos2=0.605159}
@@ -227,8 +231,9 @@ subdivx=4
 
 dataset=-1
 unitx=n
-color="4 7"
-node="en cal"
+color="4 6"
+node="en
+cal"
 digital=1
 ypos1=0.0315737
 ypos2=0.586357}
@@ -247,8 +252,9 @@ unitx=n
 
 
 unity=1
-color="4 7"
-node="GN1 GP1"
+color="4 6"
+node="GN1
+GP1"
 dataset=-1}
 B 2 1030 -1780 2010 -1480 {flags=graph
 y1=0.0063
@@ -265,8 +271,9 @@ unitx=n
 
 
 unity=1
-color="4 7"
-node="GN2 GP2"
+color="4 6"
+node="GN2
+GP2"
 dataset=-1}
 A 4 3035 -715 5 0 360 {fill=true}
 A 4 3035 -665 5 0 360 {fill=true}

@@ -390,6 +390,14 @@ set tabbed_interface 1
 # set show_hidden_texts 1
 
 ###########################################################################
+#### USE CTRL MODIFIER TO OPERATE ON GRAPHS WITH MOUSE & KEYBOARD
+###########################################################################
+#### if enabled forces to hold Control key pressed to operate on graphs
+#### to prevent "graph event stealing to schematic"
+#### Default: 0 (not set)
+# set graph_use_ctrl_key 1
+
+###########################################################################
 #### LIVE BACKANNOTATION OF DATA AT CURSOR 2 (B) POSITION
 ###########################################################################
 ## if enabled will backannotate values in schematic at cursor 'b' position

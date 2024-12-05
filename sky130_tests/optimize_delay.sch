@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -17,9 +16,10 @@ x1=9.98449e-09
 x2=1.05299e-08
 divx=5
 subdivx=1
-node="ck ck_del
-\\" 0.9\\""
-color="15 4 13"
+node="ck
+ck_del
+ 0.9"
+color="15 8 4"
 
 unitx=1
 logx=0
@@ -45,10 +45,10 @@ N 890 -180 920 -180 {
 lab=CK_DEL}
 N 900 -180 900 -150 {
 lab=CK_DEL}
-C {devices/vsource.sym} 90 -440 0 0 {name=V1 value=VCC}
+C {devices/vsource.sym} 90 -440 0 0 {name=V1 value=\{VCC\}}
 C {devices/lab_pin.sym} 90 -390 0 0 {name=p9 sig_type=std_logic lab=GND}
-C {devices/vsource.sym} 220 -440 0 0 {name=V2 value="pulse 0 VCC 0 100p 100p
-+ \{PER/2-0.1n\} PER"}
+C {devices/vsource.sym} 220 -440 0 0 {name=V2 value="pulse 0 \{VCC\} 0 100p 100p
++ \{PER/2-0.1n\} \{PER\}"}
 C {devices/lab_pin.sym} 220 -390 0 0 {name=p1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 220 -490 0 1 {name=p2 sig_type=std_logic lab=CK}
 C {devices/code.sym} 10 -180 0 0 {name=TT_MODELS
@@ -159,4 +159,6 @@ proc optimize_delay \{\} \{
 \}
 
 optimize_delay
-"}
+"
+W_N=1
+W_P=2}

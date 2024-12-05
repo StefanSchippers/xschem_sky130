@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -43,8 +42,9 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="f1 f2"
-color="4 10"
+node="f1
+f2"
+color="4 8"
 
 unitx=1
 logx=0

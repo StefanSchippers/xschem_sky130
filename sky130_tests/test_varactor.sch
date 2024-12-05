@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,8 +27,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=p
-x1=-2.01747
-x2=4.47508
+x1=-2
+x2=6
 
 subdivx=1
 
@@ -40,9 +40,7 @@ logy=0
 
 color="7 8 4"
 node="\\"Varactor cap;100e-9 g1 deriv0() /\\"
-
 \\"Varactor cap;100e-9 g2 deriv0() /\\"
-
 \\"pmos cap;100e-9 g deriv0() /\\""
 sweep="g1 g2 g"
 divx=4
@@ -55,8 +53,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.76084e-06
-x2=9.47215e-06
+x1=0
+x2=9e-06
 
 subdivx=1
 
@@ -66,8 +64,10 @@ unitx=u
 logx=0
 logy=0
 
-color="4 7 8"
-node="g g1 g2"
+color="7 8 4"
+node="g1
+g2
+g"
 
 divx=8
 hilight_wave=-1}
