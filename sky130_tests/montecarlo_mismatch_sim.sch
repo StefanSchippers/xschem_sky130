@@ -31,7 +31,8 @@ sweep=run
 
 sim_type=op
 hilight_wave=-1
-rawfile=$netlist_dir/montecarlo_mismatch_sim.raw}
+rawfile=$netlist_dir/montecarlo_mismatch_sim.raw
+linewidth_mult=2}
 B 2 1090 -640 1540 -200 {flags=graph,unlocked
 y1=-0.03
 y2=0.02
@@ -59,15 +60,16 @@ sim_type=distrib
 
 sweep=freq
 color=4
-node=vdiff}
+node=vdiff
+linewidth_mult=4}
 P 4 7 330 -250 330 -260 325 -260 330 -270 335 -260 330 -260 330 -250 {fill=full}
 P 4 7 330 -250 330 -240 335 -240 330 -230 325 -240 330 -240 330 -250 {fill=full}
-T {tcleval(mean=[to_eng $mean]
-σ=[to_eng $rms]
+T {tcleval(mean=[to_eng $mean]V
+σ=[to_eng $rms]V
 Samples=$samples)} 930 -190 0 0 0.6 0.6 {layer=4 floater=yes}
 T {Vdiff} 270 -260 0 0 0.4 0.4 {}
 T {Montecarlo simulation. Get average, stddev and histogram
-of OTA differential input voltage mismatch.} 140 -760 0 0 0.7 0.7 {}
+of OTA differential input voltage mismatch.} 150 -750 0 0 0.7 0.7 {}
 N 400 -340 400 -310 {
 lab=VDD}
 N 400 -190 400 -150 {
