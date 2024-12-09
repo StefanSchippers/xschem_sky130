@@ -52,7 +52,7 @@ sweep=idx
 rawfile=distrib
 sim_type=distrib
 mode=HistoV
-linewidth_mult=3}
+linewidth_mult=5}
 B 2 670 -810 1280 -510 {flags=graph,unlocked
 y1=0
 y2=130
@@ -77,7 +77,7 @@ sweep=idx
 rawfile=distrib
 sim_type=distrib
 mode=HistoV
-linewidth_mult=3}
+linewidth_mult=5}
 T {This example shows differencies in vth1 / vth2 distributions 
 of a 
 m=10 / W=0.5 / L=0.15 transistor 
@@ -203,8 +203,7 @@ proc get_histo \{\} \{
 \}
 
 get_histo
-xschem draw_graph 0
-xschem draw_graph 1
+xschem redraw
 "
 }
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stefan Schippers"}
