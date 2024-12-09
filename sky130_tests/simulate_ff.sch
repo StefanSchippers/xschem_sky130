@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -360,17 +360,17 @@ tclcommand="
 "
 }
 C {sky130_stdcells/inv_2.sym} 2620 -1960 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {giant_label.sym} 1910 -1520 0 1 {name=l1 sig_type=std_logic lab=CLK text=CLK}
-C {giant_label.sym} 2660 -1960 0 1 {name=l3 sig_type=std_logic lab=R text="RESET
+C {sky130_tests/giant_label.sym} 1910 -1520 0 1 {name=l1 sig_type=std_logic lab=CLK text=CLK}
+C {sky130_tests/giant_label.sym} 2660 -1960 0 1 {name=l3 sig_type=std_logic lab=R text="RESET
 COUNTER"}
-C {giant_label.sym} 1900 -1280 0 1 {name=l4 sig_type=std_logic lab=CLEAR_ text="CLEAR (active low)"}
-C {segment.sym} 4555 -2235 0 0 {name=l6 sig_type=std_logic lab=S[3]}
-C {segment.sym} 4030 -2200 1 0 {name=l2 sig_type=std_logic lab=S[1]}
-C {segment.sym} 4520 -2200 3 1 {name=l5 sig_type=std_logic lab=S[2]}
-C {segment.sym} 4555 -2805 0 0 {name=l7 sig_type=std_logic lab=S[0]}
-C {segment.sym} 4520 -2190 3 0 {name=l8 sig_type=std_logic lab=S[5]}
-C {segment.sym} 4030 -2190 1 1 {name=l9 sig_type=std_logic lab=S[4]}
-C {segment.sym} 3995 -1585 2 0 {name=l10 sig_type=std_logic lab=S[6]}
+C {sky130_tests/giant_label.sym} 1900 -1280 0 1 {name=l4 sig_type=std_logic lab=CLEAR_ text="CLEAR (active low)"}
+C {sky130_tests/segment.sym} 4555 -2235 0 0 {name=l6 sig_type=std_logic lab=S[3]}
+C {sky130_tests/segment.sym} 4030 -2200 1 0 {name=l2 sig_type=std_logic lab=S[1]}
+C {sky130_tests/segment.sym} 4520 -2200 3 1 {name=l5 sig_type=std_logic lab=S[2]}
+C {sky130_tests/segment.sym} 4555 -2805 0 0 {name=l7 sig_type=std_logic lab=S[0]}
+C {sky130_tests/segment.sym} 4520 -2190 3 0 {name=l8 sig_type=std_logic lab=S[5]}
+C {sky130_tests/segment.sym} 4030 -2190 1 1 {name=l9 sig_type=std_logic lab=S[4]}
+C {sky130_tests/segment.sym} 3995 -1585 2 0 {name=l10 sig_type=std_logic lab=S[6]}
 C {devices/ipin.sym} 1900 -1280 0 0 {name=p8 sig_type=std_logic lab=CLEAR_}
 C {devices/ipin.sym} 1910 -1520 0 0 {name=p9 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2330 -1940 0 0 {name=l11 sig_type=std_logic lab=BNEXT[3]}
