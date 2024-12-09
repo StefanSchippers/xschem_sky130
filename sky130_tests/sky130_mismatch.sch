@@ -28,9 +28,9 @@ logy=0
 sweep=run
 rawfile=$netlist_dir/sky130_mismatch.raw
 sim_type=op}
-B 2 670 -790 1280 -210 {flags=graph,unlocked
-y1=-9.4550559
-y2=146.54494
+B 2 670 -510 1280 -210 {flags=graph,unlocked
+y1=0
+y2=130
 ypos1=0
 ypos2=2
 divy=5
@@ -42,16 +42,42 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="f1
-f2"
-color="4 8"
+node="vth2; f2"
+color=10
 
 unitx=1
 logx=0
 logy=0
 sweep=idx
 rawfile=distrib
-sim_type=distrib}
+sim_type=distrib
+mode=HistoV
+linewidth_mult=3}
+B 2 670 -810 1280 -510 {flags=graph,unlocked
+y1=0
+y2=130
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0.4
+x2=0.6
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="vth1; f1"
+color=4
+
+unitx=1
+logx=0
+logy=0
+sweep=idx
+rawfile=distrib
+sim_type=distrib
+mode=HistoV
+linewidth_mult=3}
 T {This example shows differencies in vth1 / vth2 distributions 
 of a 
 m=10 / W=0.5 / L=0.15 transistor 
