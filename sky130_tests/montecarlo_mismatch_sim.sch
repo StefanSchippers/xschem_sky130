@@ -166,7 +166,7 @@ proc variance \{mean\} \{
   set sum 0
   set points [xschem raw points]
   foreach i [xschem raw values vm -1] \{
-    set vdiff [expr \{($i - $vcm - $mean) ** 2\}]
+    set vdiff [expr \{pow($i - $vcm - $mean, 2)\}]
     set sum [expr \{$sum + $vdiff\}]
   \}
   set variance [expr \{$sum / $points\}]
