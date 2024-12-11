@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3000
+x1=1884.5082
+x2=1938.5515
 divx=5
 subdivx=1
 xlabmag=1.2
@@ -75,21 +75,21 @@ N 400 -340 400 -310 {
 lab=VDD}
 N 400 -190 400 -150 {
 lab=GND}
-N 240 -270 340 -270 {
+N 230 -270 340 -270 {
 lab=VM}
-N 240 -450 240 -270 {
+N 230 -450 230 -270 {
 lab=VM}
-N 240 -450 310 -450 {
+N 230 -450 310 -450 {
 lab=VM}
 N 370 -450 540 -450 {
 lab=#net1}
 N 490 -250 540 -250 {
 lab=#net1}
-N 240 -230 340 -230 {
+N 230 -230 340 -230 {
 lab=VCM}
-N 240 -230 240 -200 {
+N 230 -230 230 -200 {
 lab=VCM}
-N 240 -140 240 -100 {
+N 230 -140 230 -100 {
 lab=GND}
 N 540 -160 540 -120 {
 lab=GND}
@@ -104,8 +104,8 @@ lab=#net1}
 C {devices/vdd.sym} 400 -340 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 400 -150 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 340 -450 1 1 {name=Vprobe2 value=0 savecurrent=false}
-C {devices/vsource.sym} 240 -170 0 1 {name=VICM value="dc 0.85 ac 0" savecurrent=false}
-C {devices/gnd.sym} 240 -100 0 0 {name=l4 lab=GND}
+C {devices/vsource.sym} 230 -170 0 1 {name=VICM value="dc 0.85 ac 0" savecurrent=false}
+C {devices/gnd.sym} 230 -100 0 0 {name=l4 lab=GND}
 C {devices/capa.sym} 540 -190 0 0 {name=C1
 m=1
 value=5p
@@ -140,7 +140,7 @@ C {devices/launcher.sym} 580 -70 0 0 {name=h15
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/lab_pin.sym} 240 -230 0 0 {name=p2 sig_type=std_logic lab=VCM}
+C {devices/lab_pin.sym} 230 -220 0 0 {name=p2 sig_type=std_logic lab=VCM}
 C {devices/title.sym} 160 -30 0 0 {name=l8 author="Nithin P"}
 C {sky130_tests/ota1tb.sym} 490 -250 0 0 {name=x2}
 C {devices/launcher.sym} 770 -180 0 0 {name=h5
@@ -213,4 +213,5 @@ get_histo
 xschem draw_graph 1
 "
 }
-C {devices/lab_pin.sym} 240 -270 0 0 {name=p3 sig_type=std_logic lab=VM}
+C {devices/lab_pin.sym} 230 -340 0 0 {name=p3 sig_type=std_logic lab=VM}
+C {spice_probe_vdiff.sym} 230 -250 0 0 {name=p1}
