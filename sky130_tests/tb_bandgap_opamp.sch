@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -87,8 +87,9 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="9 12"
-node="PLUS%0 MINUS%0"}
+color="9 4"
+node="PLUS%0
+MINUS%0"}
 B 2 780 -1480 1580 -1280 {flags=graph
 y1=0
 y2=2

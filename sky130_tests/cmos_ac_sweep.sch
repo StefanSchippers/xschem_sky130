@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -130,7 +130,7 @@ lab=VCC}
 C {devices/lab_pin.sym} 750 -360 0 0 {name=p20 lab=0  }
 C {devices/lab_pin.sym} 30 -220 0 0 {name=p17 lab=0  }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"  }
-C {devices/vsource.sym} 30 -250 0 0 {name=VVCC value=VDD  }
+C {devices/vsource.sym} 30 -250 0 0 {name=VVCC value='VDD' }
 C {devices/lab_pin.sym} 570 -100 0 0 {name=p1 lab=0  }
 C {devices/lab_pin.sym} 60 -310 0 1 {name=p2 lab=VCC  }
 C {devices/lab_pin.sym} 260 -100 0 0 {name=p3 lab=0  }
@@ -168,7 +168,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/ammeter.sym} 690 -370 0 1 {name=Vright}
 C {devices/vsource.sym} 40 -460 0 0 {name=V3 value="dc 0 ac 1 0"  }
 C {devices/lab_pin.sym} 40 -350 0 0 {name=p19 lab=0  }
-C {devices/vsource.sym} 40 -380 0 0 {name=V2 value=VCM  }
+C {devices/vsource.sym} 40 -380 0 0 {name=V2 value='VCM'  }
 C {devices/code_shown.sym} 930 -950 0 0 {name=COMMANDS
 only_toplevel=true
 value=".param VCM = 1 VDD=1.8

@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -90,8 +90,9 @@ value="
 .control
   save all
   tran 1n 20u uic
-  write test_multisim_ngspice.raw\\
+  write test_multisim_ngspice.raw
   acct
+  quit 0
 .endc
 "}
 C {devices/simulator_commands_shown.sym} 1130 -610 0 0 {name=COMMANDS2
@@ -132,12 +133,13 @@ descr="SIMULATE NGSPICE AND XYCE"
 tclcommand="
 
 set_sim_defaults
-# set ngspice interactive run
+# set ngspice batch control mode
 set sim(spice,default) 1 ;# 1st simulator: ngpice
 set sim(spice,1,st) 1 ;# status reporting
 xschem set netlist_name test_multisim_ngspice.spice
 xschem netlist
 xschem simulate
+
 #set Xyce batch run
 set sim(spice,default) 3 ;# 3rd simulator: Xyce
 set sim(spice,3,st) 1 ;# status reporting

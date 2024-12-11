@@ -12,8 +12,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=5.5714388e-08
-x2=2.1373577e-07
+x1=0
+x2=6e-07
 
 subdivx=1
 xlabmag=1.4
@@ -38,8 +38,8 @@ ypos2=1.607846
 divy=5
 subdivy=1
 unity=1
-x1=5.5714388e-08
-x2=2.1373577e-07
+x1=0
+x2=6e-07
 divx=5
 subdivx=1
 xlabmag=1.4
@@ -66,8 +66,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=5.5714388e-08
-x2=2.1373577e-07
+x1=0
+x2=6e-07
 
 subdivx=1
 xlabmag=1.4
@@ -95,8 +95,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=5.5714388e-08
-x2=2.1373577e-07
+x1=0
+x2=6e-07
 
 subdivx=1
 xlabmag=1.4
@@ -274,9 +274,9 @@ value="
 .param VCC=1.7
 .option savecurrents method=gear
 .save all
-vvcc vcc 0 VCC
+vvcc vcc 0 'VCC'
 vvss vss 0 0
-venab enab 0 pwl 0 0 100n 0 101n VCC
+venab enab 0 pwl 0 0 100n 0 101n 'VCC'500n 'VCC' 501n 0
 
 .control
   tran 0.04n 600n

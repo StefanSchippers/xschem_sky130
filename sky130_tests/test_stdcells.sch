@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -206,7 +206,7 @@ value="
 .options acct list
 .temp 25
 .param vcc=1.8
-vvcc vcc 0 dc vcc
+vvcc vcc 0 dc 'vcc'
 vvss vss 0 0
 .control
 

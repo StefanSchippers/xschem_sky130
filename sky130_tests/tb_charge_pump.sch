@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -129,10 +129,10 @@ N 60 -620 60 -590 {
 lab=VCC}
 C {sky130_tests/charge_pump.sym} 1480 -210 0 0 {name=x1}
 C {sky130_tests/charge_pump_phasegen.sym} 1230 -120 0 0 {name=x2}
-C {devices/vsource.sym} 60 -560 0 0 {name=V1 value=VCC}
+C {devices/vsource.sym} 60 -560 0 0 {name=V1 value='VCC'}
 C {devices/lab_pin.sym} 60 -510 0 0 {name=p9 sig_type=std_logic lab=GND}
-C {devices/vsource.sym} 60 -430 0 0 {name=V2 value="pulse 0 VCC 0 100p 100p
-+ \{PER/2-0.1n\} PER"}
+C {devices/vsource.sym} 60 -430 0 0 {name=V2 value="pulse 0 \{VCC\} 0 100p 100p
++ \{PER/2-0.1n\} \{PER\}"}
 C {devices/lab_pin.sym} 60 -380 0 0 {name=p1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 60 -480 0 1 {name=p2 sig_type=std_logic lab=CK}
 C {devices/lab_wire.sym} 1420 -150 0 1 {name=p3 lab=A}
@@ -182,8 +182,8 @@ C {devices/isource.sym} 1730 -110 0 0 {name=I0 value="pwl 0 0
 C {devices/lab_pin.sym} 1730 -60 0 0 {name=p10 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1730 -170 0 0 {name=Vload}
 C {sky130_tests/charge_pump2.sym} 1480 -390 0 0 {name=x3}
-C {devices/vsource.sym} 60 -300 0 0 {name=V3 value="pulse VCC 0 0 100p 100p
-+ \{PER/2-0.1n\} PER"}
+C {devices/vsource.sym} 60 -300 0 0 {name=V3 value="pulse \{VCC\} 0 0 100p 100p
++ \{PER/2-0.1n\} \{PER\}"}
 C {devices/lab_pin.sym} 60 -250 0 0 {name=p11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 60 -350 0 1 {name=p12 sig_type=std_logic lab=CKN}
 C {devices/lab_pin.sym} 1460 -330 0 0 {name=p14 lab=CK}
@@ -220,7 +220,7 @@ C {devices/isource.sym} 1730 -470 0 0 {name=I2 value="pwl 0 0
 + 2u 100u 2.01u 150u
 + 3u 150u 3.01u 200u
 + 4u 200u 4.01u 250u"}
-C {devices/vsource.sym} 1300 -680 0 0 {name=V4 value="pwl 0 VCC 1n \{3*VCC\}"}
+C {devices/vsource.sym} 1300 -680 0 0 {name=V4 value="pwl 0 \{VCC\} 1n \{3*VCC\}"}
 C {devices/res.sym} 1450 -740 1 0 {name=R1
 value=\{2/1.82p/FREQ\}
 footprint=1206
