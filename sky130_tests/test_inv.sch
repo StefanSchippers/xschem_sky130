@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -65,8 +65,8 @@ ypos2=3.35454
 divy=5
 subdivy=1
 unity=1
-x1=1.45394e-08
-x2=1.48331e-08
+x1=1.4651792e-08
+x2=1.4945492e-08
 divx=5
 subdivx=1
 
@@ -184,7 +184,7 @@ only_toplevel=false
 value=".param VCC=1.8
 vvss vss 0 dc 0
 vvcc vcc 0 
-+ pwl 0 0 10n 0 10.1n VCC 20n VCC 20.1n 0
++ pwl 0 0 10n 0 10.1n 'VCC' 20n 'VCC' 20.1n 0
 * .measure tran trise 
 * + TRIG v(z[6]) TD=10.5n VAL=0.1 RISE=1
 * + TARG v(z[6]) TD=10.5n VAL=1.7 RISE=1
