@@ -504,6 +504,5 @@ proc fet_drc {instance symbol model w l {nf 1}} {
   return $res
 }
 
-# Set variables after ${PDK_ROOT} is known
-##to load library 
+#### Set sky130 xschem symbols path after ${PDK_ROOT} is known
 append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK}/libs.tech/xschem
