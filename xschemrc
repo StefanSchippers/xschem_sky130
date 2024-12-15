@@ -34,7 +34,6 @@ append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library
 append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
 #### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
-append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK}/libs.tech/xschem
 
 ###########################################################################
 #### SET CUSTOM COLORS FOR XSCHEM LIBRARIES MATCHING CERTAIN PATTERNS
@@ -504,3 +503,7 @@ proc fet_drc {instance symbol model w l {nf 1}} {
   }
   return $res
 }
+
+# Set variables after ${PDK_ROOT} is known
+##to load library 
+append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK}/libs.tech/xschem
