@@ -74,7 +74,7 @@ C {devices/ipin.sym} 280 -340 0 0 {name=p13 lab=CIN verilog_type=reg}
 C {devices/lab_pin.sym} 530 -350 0 0 {name=p21 lab=CARRY0[254:0],CIN}
 C {devices/lab_pin.sym} 650 -430 0 1 {name=p22 lab=CARRY0[255:0]}
 C {devices/lab_pin.sym} 650 -350 0 1 {name=p23 lab=S0[255:0]}
-C {sky130_stdcells/fah_1.sym} 590 -390 0 0 {name=x3[255:0]
+C {sky130_stdcells/fah_1.sym} 590 -390 0 0 {name=xaddcarry256[255:0]
 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC}
 C {devices/lab_pin.sym} 460 -270 0 0 {name=p1 lab=A[255:0]}
 C {devices/lab_pin.sym} 920 -270 0 1 {name=p2 lab=S3[255:0]}
@@ -85,7 +85,7 @@ C {devices/lab_pin.sym} 460 -230 0 0 {name=p7 lab=CIN}
 C {devices/lab_pin.sym} 760 -210 0 1 {name=p8 lab=SP3}
 C {devices/lab_pin.sym} 530 -430 0 0 {name=p4 lab=A[255:0]}
 C {devices/lab_pin.sym} 530 -390 0 0 {name=p9 lab=B[255:0]}
-C {sky130_tests/adder_256bit.sym} 610 -240 0 0 {name=x1}
+C {sky130_tests/adder_256bit.sym} 610 -240 0 0 {name=xadd256}
 C {devices/code.sym} 30 -430 0 0 {name=STDCELLS_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -114,7 +114,7 @@ C {devices/spice_probe.sym} 320 -280 1 0 {name=p20 attrs=""}
 C {devices/parax_cap.sym} 650 -340 0 0 {name=C7[255:0] gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 650 -420 0 0 {name=C8[255:0] gnd=0 value=5f m=1}
 C {sky130_fd_pr/corner.sym} 30 -600 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {sky130_tests/adder_32bit.sym} 610 -110 0 0 {name=x0}
+C {sky130_tests/adder_32bit.sym} 610 -110 0 0 {name=xadd32}
 C {devices/lab_pin.sym} 460 -140 0 0 {name=p24 lab=A[31:0]}
 C {devices/lab_pin.sym} 460 -120 0 0 {name=p25 lab=B[31:0]}
 C {devices/lab_pin.sym} 460 -100 0 0 {name=p26 lab=CIN}
@@ -126,7 +126,7 @@ C {devices/spice_probe.sym} 1040 -120 0 0 {name=p31 attrs=""}
 C {devices/lab_pin.sym} 990 -350 0 0 {name=p32 lab=CARRY1[30:0],CIN}
 C {devices/lab_pin.sym} 1110 -430 0 1 {name=p33 lab=CARRY1[31:0]}
 C {devices/lab_pin.sym} 1110 -350 0 1 {name=p34 lab=S1[31:0]}
-C {sky130_stdcells/fah_1.sym} 1050 -390 0 0 {name=x1[31:0]
+C {sky130_stdcells/fah_1.sym} 1050 -390 0 0 {name=xaddcarry32[31:0]
 VGND=VSS VNB=VSS VPB=VCC VPWR=VCC}
 C {devices/lab_pin.sym} 990 -430 0 0 {name=p35 lab=A[31:0]}
 C {devices/lab_pin.sym} 990 -390 0 0 {name=p36 lab=B[31:0]}

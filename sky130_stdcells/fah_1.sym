@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2022 Stefan Frederik Schippers
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ B 5 -62.5 37.5 -57.5 42.5 {name=CI dir=in }
 B 5 57.5 -42.5 62.5 -37.5 {name=COUT dir=out }
 B 5 57.5 37.5 62.5 42.5 {name=SUM dir=out }
 T {@symname} -10 -76 0 0 0.3 0.3 {hcenter=true}
-T {@name} -25 -22 0 0 0.2 0.2 {}
+T {@name} -25 -2 0 0 0.2 0.2 {}
 T {A} -35 -44 0 0 0.2 0.2 {}
 T {B} -35 -4 0 0 0.2 0.2 {}
 T {CI} -35 36 0 0 0.2 0.2 {}
