@@ -42,4 +42,4 @@ B 5 -2.5 -32.5 2.5 -27.5 {name=P dir=inout propag=0 pinnumber=1}
 T {@name} 15 -27.5 0 0 0.2 0.2 {}
 T {@mult * @W / @L} 15 13.75 0 0 0.2 0.2 {layer=13}
 T {@model} 15 -13.75 0 0 0.2 0.2 {}
-T {tcleval(R=[ev \{ 0.125 * @L / @W / @mult \}])} 15 0 0 0 0.2 0.2 {layer=13}
+T {tcleval(R=[to_eng [ev \{ 0.125 * @L / @W / @mult \}]])} 15 0 0 0 0.2 0.2 {layer=13}
