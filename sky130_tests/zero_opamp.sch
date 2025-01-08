@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,50 +19,6 @@ K {}
 V {}
 S {}
 E {}
-B 2 870 -300 1200 -90 {flags=graph
-y1=0.545369
-y2=0.799321
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=1e-11
-x2=4e-06
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node="x1.G1
-x1.G2"
-color="10 4"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
-B 2 870 -420 1200 -320 {flags=graph,unlocked
-y1=0
-
-ypos1=0.059784754
-ypos2=0.26529035
-divy=5
-subdivy=1
-unity=1
-x1=1e-11
-x2=4e-06
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=start
-color=4
-dataset=0
-unitx=1
-logx=0
-logy=0
-digital=1
-y2=0.9}
 T {@#0:resolved_net} 170 -570 0 0 0.3 0.3 {name=p116 layer=15}
 T {@#0:resolved_net} 130 -490 0 0 0.3 0.3 {name=p94 layer=15}
 T {@#0:resolved_net} 130 -460 0 0 0.3 0.3 {name=p93 layer=15}

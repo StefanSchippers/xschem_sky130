@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ logy=0
 color=4
 node=vbg}
 B 2 1800 -960 2600 -560 {flags=graph
-y1=-4.7e-15
+y1=-1.3e-11
 y2=0.93
 ypos1=0
 ypos2=2
@@ -60,8 +60,8 @@ logx=0
 logy=0
 }
 B 2 1800 -1360 2600 -960 {flags=graph
-y1=-7.7e-18
-y2=0.83
+y1=-4e-13
+y2=0.96
 ypos1=0
 ypos2=2
 divy=5

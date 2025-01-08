@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,13 +27,14 @@ x1=0
 x2=0.0002
 subdivx=4
 divx=4
-node="x1.F1 x1.F2"
-color="11 17"
-dataset=-1 unitx=u
+node="x1.F1 
+x1.F2"
+color="11 4"
+dataset=0 unitx=u
 digital=1
 y2=1.8
-ypos1=0.0874617
-ypos2=0.561794}
+ypos1=0.013347276
+ypos2=0.48767958}
 B 2 1830 -340 2290 -150 {flags=graph
 y1 = 0
 y2 = 1.9
@@ -43,8 +44,8 @@ x1=0
 x2=0.0002
 divx=4
 node="x1.ADJ2 x1.ADJ
-CLK"
-color="12 10 7"
+CLK%0"
+color="12 10"
   unitx=u
 subdivy=1
 dataset=-1}
