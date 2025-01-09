@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,11 +20,11 @@ V {}
 S {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
-y1 = 1.0865001
-y2 = 1.3338902
+y1 = 1.0555763
+y2 = 1.3029664
 
 x1=0
-x2=0.0001
+x2=0.0002
 divx=5
 node="VBG
 EN_N
@@ -43,7 +43,7 @@ divy = 5
 unity=u
 subdivy=1
 x1=0
-x2=0.0001
+x2=0.0002
 divx=4
 subdivx=4
 node="\\"Icc;i(VCC)\\""
@@ -54,15 +54,17 @@ B 2 820 -740 1280 -610 {flags=graph
 y1 = -40
 y2 = 130
 divy = 5
-unity=u
+unity=1
 subdivy=1
 x1=0
-x2=0.0001
+x2=0.0002
 divx=4
 subdivx=4
-node=TEMPERAT
+node="TEMPERAT%0
+TEMPERAT%1
+TEMPERAT%2"
  unitx=u
-color=12
+color="10 10 10"
 dataset=-1}
 P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
 P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
