@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,5 +63,5 @@ T {G} -10 -10 0 1 0.15 0.15 {layer=7}
 T {@model} 30 -8.75 2 1 0.2 0.2 {}
 T {@mult x @W / @L} 31.25 11.25 0 0 0.2 0.2 { layer=13}
 T {sub} -6.25 20 0 0 0.15 0.15 {layer=7}
-T {tcleval(gm=[to_eng [ngspice::get_node \\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[gm\\\\]]] )} 30 -10 0 0 0.15 0.15 {layer=15}
-T {tcleval(id=[to_eng [ngspice::get_node i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[id\\\\])]] )} 30 -30 0 0 0.15 0.15 {layer=17}
+T {id=@spice_get_node i(\\@m.@path@spiceprefix@name\\.msky130_fd_pr__@model\\_base[id])} 30 -30 0 0 0.15 0.15 {layer=17}
+T {gm=@spice_get_node \\@m.@path@spiceprefix@name\\.msky130_fd_pr__@model\\_base[gm]} 30 -10 0 0 0.15 0.15 {layer=15}

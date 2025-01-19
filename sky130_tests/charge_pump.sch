@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,8 +25,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.89104e-06
-x2=4.91511e-06
+x1=4.8898365e-06
+x2=4.9139065e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -41,15 +41,15 @@ logx=0
 logy=0
 hilight_wave=0}
 B 2 20 -1140 800 -860 {flags=graph
-y1=1.7
-y2=5.2
-ypos1=0
-ypos2=2
+y1=0
+y2=3
+ypos1=0.21133626
+ypos2=2.0830134
 divy=5
 subdivy=1
 unity=1
-x1=4.89104e-06
-x2=4.91511e-06
+x1=4.8898365e-06
+x2=4.9139065e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -60,9 +60,13 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 4 4 4 4"
-node="a b c d
-x1.g2b"
+color="4 4 4 4 4 4"
+node="a
+b
+c
+d
+x1.g2b
+x1.g2a"
 digital=1}
 B 2 20 -1740 800 -1460 {flags=graph
 y1=3.1e-15
@@ -72,8 +76,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.89104e-06
-x2=4.91511e-06
+x1=4.8898365e-06
+x2=4.9139065e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -616,7 +620,7 @@ foreach \{i n t\} [xschem instance_list] \{
   if \{ $t eq \{nmos\} || $t eq \{pmos\}\} \{
      set inst *$\{path\}x[string tolower $i].*\\\\\\\\\\\\[id\\\\\\\\\\\\]*
      lassign [array get ngspice::ngspice_data $inst] node value
-     puts \\"$i ---> $node ---> $value\\"
+     puts \\"$inst --> $i ---> $node ---> $value\\"
      if \{ $value > 5e-6 \} \{
        xschem set hilight_color 0
        xschem hilight_instname $i fast

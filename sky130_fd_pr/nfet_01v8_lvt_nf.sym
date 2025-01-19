@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -67,6 +67,6 @@ T {LVT} 0 -17.5 0 1 0.15 0.15 { layer=4}
 T {nf=@nf} 31.25 1.25 0 0 0.2 0.2 { layer=13}
 T {W} -22.5 10 0 1 0.1 0.1 {}
 T {tcleval(vgs=[to_eng \{@#1:spice_get_voltage - @#2:spice_get_voltage \}]
-vds=[to_eng \{@#0:spice_get_voltage - @#2:spice_get_voltage \}])} -17.5 20 0 0 0.07 0.07 {layer=15}
-T {tcleval(gm=[to_eng [ngspice::get_node \\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[gm\\\\]]] )} 30 -10 0 0 0.15 0.15 {layer=15}
-T {tcleval(id=[to_eng [ngspice::get_node i(\\@m.$\{path\}@spiceprefix@name\\.msky130_fd_pr__@model\\\\\\[id\\\\])]] )} 30 -30 0 0 0.15 0.15 {layer=17}
+vds=[to_eng \{@#0:spice_get_voltage - @#2:spice_get_voltage \}])} -17.5 20 0 0 0.07000000000000001 0.07000000000000001 {layer=15}
+T {id=@spice_get_node i(\\@m.@path@spiceprefix@name\\.msky130_fd_pr__@model\\[id])} 30 -30 0 0 0.15 0.15 {layer=17}
+T {gm=@spice_get_node \\@m.@path@spiceprefix@name\\.msky130_fd_pr__@model\\[gm]} 30 -10 0 0 0.15 0.15 {layer=15}
