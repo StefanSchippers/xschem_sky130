@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -452,20 +452,25 @@ C {devices/lab_wire.sym} 2320 -760 0 0 {name=p5 sig_type=std_logic lab=GP3}
 C {devices/lab_wire.sym} 2320 -720 0 0 {name=p6 sig_type=std_logic lab=GP4}
 C {devices/lab_wire.sym} 1760 -760 0 1 {name=p7 sig_type=std_logic lab=GN3}
 C {devices/lab_wire.sym} 1760 -720 0 1 {name=p8 sig_type=std_logic lab=GN4}
-C {devices/launcher.sym} 1670 -320 0 0 {name=h1
-descr=hilight\\ MOS\\ with\\ current
+C {devices/lab_wire.sym} 750 -1040 0 0 {name=p9 sig_type=std_logic lab=D1}
+C {devices/lab_wire.sym} 750 -840 0 0 {name=p10 sig_type=std_logic lab=D2}
+C {devices/lab_wire.sym} 2040 -1040 0 0 {name=p11 sig_type=std_logic lab=D3}
+C {devices/lab_wire.sym} 2040 -840 0 0 {name=p12 sig_type=std_logic lab=D4}
+C {devices/launcher.sym} 1630 -300 0 0 {name=h2
+descr="hilight conducting MOS"
 tclcommand="
 xschem unhilight_all
 set incr_hilight 0
 foreach \{i n t\} [xschem instance_list] \{
   if \{ $t eq \{nmos\} || $t eq \{pmos\}\} \{
-     # ... The traditional TCL quoting hell....
-     #               tclcommand         set inst
-     #    \\\\\\\\\\\\\\[       -->      \\\\\\[   -->     \\[
-     set inst *$\{path\}x[string tolower $i]*\\\\\\\\\\\\\\[id\\\\\\\\\\\\\\]*
+     # the quoting hell: the 6 backslashes below are reduced to 3
+     # backslashes when tclcommand attribute  is retrieved.
+     # when inst is assigned by TCL it gets only one backslash
+     # to indicate literal [ and ] characters
+     set inst *$\{path\}x[string tolower $i].*\\\\\\\\\\\\[id\\\\\\\\\\\\]*
      lassign [array get ngspice::ngspice_data $inst] node value
-     # puts $inst
-     if \{ $value > 1e-6 \} \{
+     puts \\"$inst --> $i ---> $node ---> $value\\"
+     if \{ $value > 5e-6 \} \{
        xschem set hilight_color 0
        xschem hilight_instname $i fast
      \}
@@ -475,7 +480,3 @@ xschem redraw
 
 "
 }
-C {devices/lab_wire.sym} 750 -1040 0 0 {name=p9 sig_type=std_logic lab=D1}
-C {devices/lab_wire.sym} 750 -840 0 0 {name=p10 sig_type=std_logic lab=D2}
-C {devices/lab_wire.sym} 2040 -1040 0 0 {name=p11 sig_type=std_logic lab=D3}
-C {devices/lab_wire.sym} 2040 -840 0 0 {name=p12 sig_type=std_logic lab=D4}

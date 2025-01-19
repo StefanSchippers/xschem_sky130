@@ -25,8 +25,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.8898365e-06
-x2=4.9139065e-06
+x1=4.890978e-06
+x2=4.915048e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -48,8 +48,8 @@ ypos2=2.0830134
 divy=5
 subdivy=1
 unity=1
-x1=4.8898365e-06
-x2=4.9139065e-06
+x1=4.890978e-06
+x2=4.915048e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -76,8 +76,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.8898365e-06
-x2=4.9139065e-06
+x1=4.890978e-06
+x2=4.915048e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -618,6 +618,10 @@ xschem unhilight_all
 set incr_hilight 0
 foreach \{i n t\} [xschem instance_list] \{
   if \{ $t eq \{nmos\} || $t eq \{pmos\}\} \{
+     # the quoting hell: the 6 backslashes below are reduced to 3
+     # backslashes when tclcommand attribute  is retrieved.
+     # when inst is assigned by TCL it gets only one backslash
+     # to indicate literal [ and ] characters
      set inst *$\{path\}x[string tolower $i].*\\\\\\\\\\\\[id\\\\\\\\\\\\]*
      lassign [array get ngspice::ngspice_data $inst] node value
      puts \\"$inst --> $i ---> $node ---> $value\\"
