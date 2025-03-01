@@ -257,7 +257,6 @@ C {devices/code.sym} 470 -500 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}

@@ -14,7 +14,6 @@ subdivy=1
 unity=1
 x1=0
 x2=6e-07
-
 subdivx=1
 xlabmag=1.4
 ylabmag=1
@@ -49,7 +48,6 @@ node="ENAB
 \\"qb@1.9;QB%1\\"
 \\"q@1.7;Q%0\\"
 \\"q@1.9;Q%1\\"
-
 AB
 BB"
 color="14 12 12 8 8 11 4"
@@ -68,12 +66,9 @@ subdivy=1
 unity=1
 x1=0
 x2=6e-07
-
 subdivx=1
 xlabmag=1.4
 ylabmag=1
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -81,7 +76,6 @@ logy=0
 digital=0
 hilight_wave=-1
 divx=5
-
 color="4 7 6 10"
 node="\\"Iavg @1.7V;i(vvcc) 42n ravg()%0\\"
 \\"Iavg @1.9V;i(vvcc) 42n ravg()%1\\"
@@ -97,12 +91,9 @@ subdivy=1
 unity=1
 x1=0
 x2=6e-07
-
 subdivx=1
 xlabmag=1.4
 ylabmag=1
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -110,8 +101,6 @@ logy=0
 digital=0
 hilight_wave=-1
 divx=5
-
-
 color="4 7"
 node="i(@m.x5.xm1.msky130_fd_pr__nfet_01v8[id])
 i(@m.x4.xm1.msky130_fd_pr__nfet_01v8[id])"}
@@ -203,12 +192,8 @@ W=4
 L=0.15
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=pfet_01v8
 spiceprefix=X
 }
@@ -219,12 +204,8 @@ W=1
 L=0.15
 nf=1 
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8
 spiceprefix=X
 }
@@ -237,12 +218,8 @@ W=4
 L=0.15
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=pfet_01v8
 spiceprefix=X
 }
@@ -253,12 +230,8 @@ W=1
 L=0.15
 nf=1 
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8
 spiceprefix=X
 }
@@ -277,19 +250,16 @@ value="
 vvcc vcc 0 'VCC'
 vvss vss 0 0
 venab enab 0 pwl 0 0 100n 0 101n 'VCC'500n 'VCC' 501n 0
-
 .control
   tran 0.04n 600n
   remzerovec
   plot @m.x4.xm1.msky130_fd_pr__nfet_01v8[id] @m.x5.xm1.msky130_fd_pr__nfet_01v8[id]
-
   write sky130_oscillator.raw
   alterparam vcc=1.9
   reset
   set appendwrite
   tran 0.04n 600n
   plot @m.x4.xm1.msky130_fd_pr__nfet_01v8[id] @m.x5.xm1.msky130_fd_pr__nfet_01v8[id]
-  
   remzerovec
   write sky130_oscillator.raw
 .endc

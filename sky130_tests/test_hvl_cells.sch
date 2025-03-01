@@ -21,16 +21,8 @@ B 2 290 -730 1010 -330 {flags=graph
 y1=0
 y2=5
 divy=4
-
 x1=0
 x2=1.49854e-07
-
-
-
-
-
-
-
 logx=0
 subdivy=4
 linewidth_mult=2.0
@@ -45,8 +37,6 @@ digital=1
 ypos1=0.360592
 ypos2=3.57788
 subdivx=4
-
-
 ylabmag=1
 xlabmag=1.2
 divx=5}

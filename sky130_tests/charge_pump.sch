@@ -54,8 +54,6 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -82,8 +80,6 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -374,12 +370,8 @@ L=0.5
 W=8
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -388,12 +380,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -402,12 +390,8 @@ L=0.5
 W=8
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -416,12 +400,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -430,12 +410,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -444,12 +420,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -458,12 +430,8 @@ L=0.5
 W=8
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -497,12 +465,8 @@ L=0.5
 W=8
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -511,12 +475,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -525,12 +485,8 @@ L=0.5
 W=8
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -539,12 +495,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -554,12 +506,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -568,12 +516,8 @@ L=0.5
 W=1.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -582,12 +526,8 @@ L=0.5
 W=8
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -632,7 +572,6 @@ foreach \{i n t\} [xschem instance_list] \{
   \}
 \}
 xschem redraw
-
 "
 }
 C {devices/ammeter.sym} 1910 -610 3 0 {name=V1 savecurrent=true}

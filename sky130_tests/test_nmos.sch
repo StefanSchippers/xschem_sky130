@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -301,7 +301,6 @@ vb b 0 0
 save all
 save @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]
 save @m.xm8.m1[gm]
-
 save @m.xm7.m1[gm]
 save @m.xm6.xmain1.msky130_fd_pr__nfet_g5v0d16v0__base[gm]
 save @m.xm6.xsky130_fd_pr__nfet_g5v0d16v0.msky130_fd_pr__nfet_g5v0d16v0_base[gm]
@@ -310,7 +309,6 @@ save @m.xm4.msky130_fd_pr__nfet_05v0_nvt[gm]
 save @m.xm3.msky130_fd_pr__nfet_03v3_nvt[gm]
 save @m.xm2.msky130_fd_pr__nfet_01v8[gm]
 save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-
 save @m.xm16.m1[gm]
 save @m.xm15.xsky130_fd_pr__nfet_g5v0d16v0.msky130_fd_pr__nfet_g5v0d16v0_base[gm]
 save @m.xm14.msky130_fd_pr__nfet_g5v0d10v5[gm]
@@ -318,9 +316,6 @@ save @m.xm13.msky130_fd_pr__nfet_05v0_nvt[gm]
 save @m.xm12.msky130_fd_pr__nfet_03v3_nvt[gm]
 save @m.xm11.msky130_fd_pr__nfet_01v8[gm]
 save @m.xm10.msky130_fd_pr__nfet_01v8_lvt[gm]
-
-
-
 dc vd 0 1.8 0.005 vg 0 1.8 0.2
 write test_nmos.raw
 * dc vd 0 1.8 0.001 vg 0 1.2 0.1
@@ -504,12 +499,6 @@ L=2
 W=10
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=esd_nfet_05v0_nvt
 spiceprefix=X
 }

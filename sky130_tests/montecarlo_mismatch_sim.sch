@@ -28,7 +28,6 @@ unitx=1
 logx=0
 logy=0
 sweep=run
-
 sim_type=op
 hilight_wave=-1
 rawfile=$netlist_dir/montecarlo_mismatch_sim.raw
@@ -47,17 +46,12 @@ divx=5
 subdivx=1
 xlabmag=1.2
 ylabmag=1.2
-
-
 dataset=-1
 unitx=1
 logx=0
 logy=0
-
 rawfile=distrib
 sim_type=distrib
-
-
 sweep=freq
 color=4
 node=vdiff
@@ -121,7 +115,6 @@ C {devices/code.sym} 10 -430 0 0 {name=NGSPICE only_toplevel=false value="
 .control
  let runs=1000
  let r=0
-
  dowhile r < runs
    reset
    op
@@ -133,7 +126,6 @@ C {devices/code.sym} 10 -430 0 0 {name=NGSPICE only_toplevel=false value="
    print v(vm,vcm)
    let r = r + 1
  end
-
 .endc
 "}
 C {sky130_fd_pr/corner.sym} 10 -230 0 0 {name=CORNER only_toplevel=true corner=tt_mm}
@@ -149,7 +141,6 @@ descr="load waves"
 tclcommand="
 xschem raw_read $netlist_dir/montecarlo_mismatch_sim.raw op
 xschem raw add avg \{vdiff avg()\} run
-
 proc mean \{\} \{
   set vcm [xschem raw value vcm 0]
   set sum 0
@@ -161,7 +152,6 @@ proc mean \{\} \{
   set mean [expr \{$sum / $points\}]
   return  $mean
 \}
-
 proc variance \{mean\} \{
   set vcm [xschem raw value vcm 0]
   set sum 0
@@ -173,7 +163,6 @@ proc variance \{mean\} \{
   set variance [expr \{$sum / $points\}]
   return  $variance
 \}
-
 proc get_histo \{var mean min max step\} \{
   xschem raw switch 0
   proc xround \{a size\} \{ return [expr \{round($a/$size) * $size\}]\}
@@ -195,7 +184,6 @@ proc get_histo \{var mean min max step\} \{
     incr j
   \}
 \}
-
 set mean [mean]
 set variance [variance $mean]
 set rms [expr \{sqrt($variance)\}]

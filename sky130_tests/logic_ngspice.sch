@@ -86,7 +86,6 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {devices/vsource.sym} 340 -440 0 0 {name=V4 value=0}

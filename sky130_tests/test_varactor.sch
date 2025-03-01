@@ -29,15 +29,11 @@ subdivy=1
 unity=p
 x1=-2
 x2=6
-
 subdivx=1
-
-
 dataset=0
 unitx=1
 logx=0
 logy=0
-
 color="7 8 4"
 node="\\"Varactor cap;100e-9 g1 deriv0() /\\"
 \\"Varactor cap;100e-9 g2 deriv0() /\\"
@@ -55,20 +51,15 @@ subdivy=1
 unity=1
 x1=0
 x2=9e-06
-
 subdivx=1
-
-
 dataset=0
 unitx=u
 logx=0
 logy=0
-
 color="7 8 4"
 node="g1
 g2
 g"
-
 divx=8
 hilight_wave=-1}
 N 350 -820 350 -790 { lab=0}
@@ -108,7 +99,6 @@ tran 1n 9u
 * plot '100n/deriv(g)' vs v(g) ylimit 0 0.3p
 * plot '100n/deriv(g1)' vs v(g1) ylimit 0 0.3p
 write test_varactor.raw
-
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
@@ -143,7 +133,6 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {devices/launcher.sym} 335 -395 0 0 {name=h1 
@@ -158,12 +147,6 @@ L=5
 W=5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }

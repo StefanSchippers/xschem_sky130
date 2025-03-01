@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,14 +20,11 @@ E {}
 T {Transistor ft measurement} 130 -780 0 0 0.8 0.8 {}
 T {A transient simulation is done showing the
 small signal current gain at 10GHz.
-
 An AC simulation is done showing the current
 gain vs frequency, to evaluate transistor ft.
-
 Bias conditions: vds=1.5, vgs=1.0
-
 ac/dc blockers are used to separate dc paths
-from ac paths.} 690 -320 0 0 0.4 0.4 {}
+from ac paths.} 700 -230 0 0 0.4 0.4 {}
 T {Annotate launcher works by fetching data
 from the .raw file of the top most schematic
 where presumably simulation has been run.
@@ -85,12 +82,11 @@ value="
 .option wnflag=1 
 .options method=gear savecurrents
 .save all
-
+.include tb_ft_test_2.save
 .control
   save all
 * save @m.xm1.msky130_fd_pr__rf_nfet_01v8_lvt_bm02w5p00l0p18[gm]
-  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-
+*  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
   op
   write tb_ft_test_2.raw
   tran 0.001n 2n
@@ -99,14 +95,11 @@ value="
   ac dec 10 1000 1000G
   set appendwrite
   write tb_ft_test_2.raw
-
   setplot tran1
   plot i(vg) i(vd)
-
   setplot ac1
   plot db(i(vd)/i(vg))
 .endc
-
 "}
 C {devices/lab_wire.sym} 90 -590 0 0 {name=l2 sig_type=std_logic lab=D}
 C {devices/title.sym} 160 -30 0 0 {name=l4 author="Rafael Marinho"}
@@ -135,8 +128,6 @@ value=1m
 footprint=1206
 device="ceramic capacitor"}
 C {devices/vsource.sym} 220 -250 0 0 {name=VGS1 value="ac 1 0 sin(0 0.01 10G)"}
-C {devices/ngspice_get_value.sym} 390 -430 0 1 {name=r9 node=i(@m.xm1.msky130_fd_pr__nfet_01v8_lvt[id])
-descr="I="}
 C {devices/launcher.sym} 820 -350 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
@@ -144,20 +135,12 @@ tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schna
 C {devices/ammeter.sym} 240 -590 3 1 {name=Vd_dc current=6.6592e-04}
 C {devices/spice_probe.sym} 140 -400 0 1 {name=p1 attrs="" voltage=1}
 C {devices/spice_probe.sym} 30 -490 0 0 {name=p2 attrs="" voltage=1.5}
-C {devices/ngspice_get_value.sym} 380 -350 0 1 {name=r1 node=@m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-descr="gm="}
 C {devices/ammeter.sym} 430 -320 0 0 {name=Vb current=1.8163e-10}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 830 -650 0 0 {name=M2
 L=0.18
 W=5.05
 nf=1
 mult=1
-ad=0
-pd=0
-as=0
-ps=0
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 model=rf_nfet_01v8_lvt_bM02W5p00L0p18
 spiceprefix=X
 }
@@ -167,12 +150,8 @@ L=0.18
 W=5.05
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -182,12 +161,8 @@ L=0.18
 W=5.05
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -198,12 +173,8 @@ L=0.18
 W=5.05
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -213,10 +184,16 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {devices/launcher.sym} 820 -450 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
+C {devices/launcher.sym} 820 -310 0 0 {name=h3
+descr="Generate .save lines" 
+tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+"
+}
+C {sky130_fd_pr/annotate_fet_params.sym} 540 -510 0 0 {name=annot1 ref=M1}

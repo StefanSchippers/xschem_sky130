@@ -22,7 +22,6 @@ E {}
 B 2 820 -310 1280 -70 {flags=graph
 y1 = 1.0555763
 y2 = 1.3029664
-
 x1=0
 x2=0.0002
 divx=5
@@ -30,8 +29,6 @@ node="VBG
 EN_N
 START"
 color="8 5 9"  unitx=u
-
-
 divy=8
 subdivx=4
 subdivy=1

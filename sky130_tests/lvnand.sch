@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,6 @@ value="* .option SCALE=1e-6
 .option method=gear seed=12
 .param L=0.15
 .param W=0.5
-
 vd d 0 0
 vg g 0 0
 .control
@@ -63,11 +62,7 @@ alterparam L=0.5
 alterparam W=3
 reset
 dc vd 0 2 0.01 vg 0 2 0.2
-
 .endc
-
-
-
 "}
 C {devices/ipin.sym} 120 -420 0 0 {name=p1 lab=A}
 C {sky130_fd_pr/nfet3_01v8.sym} 420 -260 0 0 {name=M1
@@ -76,12 +71,8 @@ W=WidthN
 body=VSSPIN
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8
 spiceprefix=X
 }
@@ -91,12 +82,8 @@ W=WidthP
 body=VCCPIN
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=pfet_01v8
 spiceprefix=X
 }
@@ -106,12 +93,8 @@ W=WidthP
 body=VCCPIN
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=pfet_01v8
 spiceprefix=X
 }
@@ -121,12 +104,8 @@ W=WidthN
 body=VSSPIN
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8
 spiceprefix=X
 }
@@ -141,6 +120,5 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
-
 "
 spice_ignore=false}

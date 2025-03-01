@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -93,10 +93,6 @@ C {devices/parax_cap.sym} 980 -310 0 0 {name=C5  value=4f}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 890 -240 0 0 {name=M6
 L=1
 W=WN
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=@modeln
 spiceprefix=X
@@ -106,10 +102,6 @@ C {devices/lab_pin.sym} 1090 -170 0 1 {name=p5 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 1040 -170 0 0 {name=M7
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=3
 model=nfet_01v8
 spiceprefix=X
@@ -121,10 +113,6 @@ C {devices/lab_pin.sym} 870 -550 0 0 {name=l65 lab=EN_N}
 C {sky130_fd_pr/pfet_01v8.sym} 890 -550 0 0 {name=M46
 L=0.15
 W=5
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -134,10 +122,6 @@ C {devices/lab_pin.sym} 940 -400 0 1 {name=p144 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 890 -400 0 0 {name=M5
 L=1
 W=WP
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -149,10 +133,6 @@ C {devices/lab_pin.sym} 700 -720 0 1 {name=p8 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 650 -720 0 0 {name=M8
 L=1
 W=WP
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -161,10 +141,6 @@ C {devices/lab_pin.sym} 700 -620 0 1 {name=p9 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 650 -620 0 0 {name=M9
 L=1
 W=WN
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=@modeln
 spiceprefix=X
@@ -173,10 +149,6 @@ C {devices/lab_pin.sym} 700 -540 0 1 {name=p10 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 650 -540 0 0 {name=M10
 L=4
 W=WN
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -187,10 +159,6 @@ C {devices/lab_pin.sym} 670 -500 0 0 {name=p27 lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 650 -800 0 0 {name=M1
 L=4
 W=WP
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -200,7 +168,8 @@ C {devices/lab_pin.sym} 720 -320 0 0 {name=l2 lab=IN}
 C {devices/parax_cap.sym} 830 -390 0 0 {name=C1  value=4f}
 C {sky130_tests/passgate.sym} 290 -660 0 0 {name=x6 W_N=0.42 L_N=0.35 W_P=0.6 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1
 modeln=nfet_01v8
-modelp=pfet_01v8_lvt}
+modelp=pfet_01v8_lvt
+schematic=passgate_1}
 C {devices/lab_pin.sym} 290 -630 0 0 {name=l34 sig_type=std_logic lab=START_N}
 C {devices/lab_pin.sym} 290 -690 0 0 {name=l37 sig_type=std_logic lab=START}
 C {devices/lab_pin.sym} 450 -600 0 0 {name=l40 sig_type=std_logic lab=VSS}

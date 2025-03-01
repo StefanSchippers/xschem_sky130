@@ -29,8 +29,6 @@ x1=0
 x2=2e-05
 divx=5
 subdivx=1
-
-
 dataset=0
 unitx=1
 logx=0
@@ -50,7 +48,6 @@ P 7 5 750 -340 750 -70 1450 -70 1450 -340 750 -340 {}
 T {Example below shows how to include different commands in netlist depending
 on some condition. Helper procedures sim_is_xyce and sim_is_ngspice
 are provided for the most used simulators.
-
 Set up ngspice or Xyce in "Simulations -> Configure simulators and tools"
 and see the different netlists that are generated.} 730 -840 0 0 0.45 0.45 {}
 T {Alternative way to do same thing using the standard code_shown.sym
@@ -109,29 +106,24 @@ spice_ignore=true
 only_toplevel=false 
 format="tcleval( @value )"
 value="[if [sim_is_ngspice] \{return \{
-
 ** ngspice
 .control
   save all
   tran 1n 20u uic
   write test_multisim.raw
 .endc
-
 \}\}]"}
 C {devices/code_shown.sym} 1140 -300 0 0 {name=COMMANDS_XYCE 
 spice_ignore=true
 only_toplevel=false 
 format="tcleval( @value )"
 value="[if [sim_is_xyce] \{return \{
-
 ** Xyce
 .tran 1n 20u uic
-
 \}\}]"}
 C {devices/launcher.sym} 200 -350 0 0 {name=h2
 descr="SIMULATE NGSPICE AND XYCE"
 tclcommand="
-
 set_sim_defaults
 # set ngspice batch control mode
 set sim(spice,default) 1 ;# 1st simulator: ngpice
@@ -139,14 +131,12 @@ set sim(spice,1,st) 1 ;# status reporting
 xschem set netlist_name test_multisim_ngspice.spice
 xschem netlist
 xschem simulate
-
 #set Xyce batch run
 set sim(spice,default) 3 ;# 3rd simulator: Xyce
 set sim(spice,3,st) 1 ;# status reporting
 xschem set netlist_name test_multisim_xyce.spice
 xschem netlist
 xschem simulate
-
 "
 }
 C {devices/launcher.sym} 195 -465 0 0 {name=h3 

@@ -100,12 +100,10 @@ L 4 3960 -1040 4000 -1040 {}
 B 2 30 -2420 1010 -2230 {flags=graph
 y1=-0.0021
 y2=0.0021
-
 subdivy=1
 x1=1.25834e-08
 x2=2.6258e-07
 divx=8
-
 node="\\"VDIFF;plus minus -\\""
 color=8
 dataset=-1
@@ -151,8 +149,6 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-
-
 unitx=n
 color=8
 node=i(vvcc)
@@ -208,8 +204,6 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-
-
 dataset=-1
 unitx=n
 color="4 6"
@@ -227,8 +221,6 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-
-
 dataset=-1
 unitx=n
 color="4 6"
@@ -246,11 +238,7 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-
-
 unitx=n
-
-
 unity=1
 color="4 6"
 node="GN1
@@ -265,11 +253,7 @@ x1=1.25834e-08
 x2=2.6258e-07
 divx=8
 subdivx=4
-
-
 unitx=n
-
-
 unity=1
 color="4 6"
 node="GN2
@@ -667,10 +651,6 @@ C {sky130_tests/not.sym} 150 -330 0 0 {name=x5 m=1
 C {sky130_fd_pr/pfet_01v8.sym} 1010 -1190 0 0 {name=M4
 L=2
 W=1.2
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -678,10 +658,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1100 -630 0 0 {name=M5
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -689,10 +665,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 940 -630 0 1 {name=M6
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -700,10 +672,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 2050 -580 0 0 {name=M8
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -711,10 +679,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 2540 -580 0 0 {name=M9
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -722,10 +686,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8.sym} 2760 -590 0 0 {name=M11
 L=0.15
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -733,10 +693,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 410 -200 0 0 {name=M1
 L=0.15
 W=8
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=2
 model=nfet_01v8
 spiceprefix=X
@@ -744,10 +700,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2540 -290 0 0 {name=M15
 L=2
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -755,10 +707,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2050 -290 0 0 {name=M10
 L=2
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -766,10 +714,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1000 -320 0 0 {name=M17
 L=7
 W=0.7
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -777,10 +721,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1100 -850 0 0 {name=M18
 L=2
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -788,10 +728,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 940 -850 0 1 {name=M19
 L=2
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -799,10 +735,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1140 -1060 0 1 {name=M20
 L=2
 W=6
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -810,10 +742,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 900 -1060 0 0 {name=M21
 L=2
 W=6
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -821,10 +749,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 1140 -450 0 1 {name=M23
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -832,10 +756,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 900 -450 0 0 {name=M16
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -864,10 +784,6 @@ C {devices/lab_pin.sym} 740 -510 0 1 {name=p1 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 610 -510 0 0 {name=M22
 L=2
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -878,10 +794,6 @@ C {devices/lab_pin.sym} 1590 -290 0 1 {name=p8 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1540 -290 0 0 {name=M25
 L=2
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -891,10 +803,6 @@ C {devices/lab_pin.sym} 1590 -640 0 1 {name=p28 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1540 -640 0 0 {name=M26
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -908,10 +816,6 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1580 -840 0 0 {name=C4 model=cap_mim_m3_1 W=4 
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2190 -870 0 0 {name=M3
 L=3
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -919,10 +823,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 2190 -1120 0 0 {name=M13
 L=3
 W=3
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -930,10 +830,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2680 -870 0 0 {name=M7
 L=3
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -941,10 +837,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 2680 -1120 0 0 {name=M12
 L=3
 W=3
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -952,10 +844,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1700 -870 0 0 {name=M2
 L=3
 W=1
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -963,10 +851,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1700 -1120 0 0 {name=M14
 L=3
 W=3
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -975,10 +859,6 @@ C {devices/lab_pin.sym} 700 -970 0 1 {name=p30 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 610 -970 0 0 {name=M27
 L=2
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -1056,7 +936,6 @@ value="
 ** this experimental option enables mos model bin 
 ** selection based on W/NF instead of W
 .option chgtol=4e-16 method=gear
-
 .param VCCGAUSS = agauss(1.8, 0.05, 1)
 .param VCC = 'VCCGAUSS'
 ** use following line to remove VCC variations
@@ -1070,7 +949,6 @@ value="
 ** use following line to remove temperature variations
 * .option temp = 25
 .param DELTA = 0.002
-
 .control
   setseed  8
   reset

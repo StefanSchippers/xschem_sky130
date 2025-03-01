@@ -51,21 +51,15 @@ logy=0
 P 4 5 140 -620 140 -870 710 -870 710 -620 140 -620 {}
 P 4 7 410 -620 410 -560 420 -560 410 -540 400 -560 410 -560 410 -620 {}
 T {// importing libs
-
 `include "discipline.h"
-
 module diff_amp(
   output electrical out,
   input electrical in1,
   input electrical in2);
-
 parameter real gain = 10; // setting gain to 10 of the differential amplifier
-
 analog begin
-
     V(out) <+ gain * (V(in1, in2));
     // V(out) <+ 2 * atan( gain / 2 * V(in1, in2) );
-
 end
 endmodule} 150 -860 0 0 0.2 0.2 {font=monospace}
 T {create a diff_amp.va file with following code 

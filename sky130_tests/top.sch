@@ -163,12 +163,9 @@ C {sky130_tests/test_bipolar.sym} 190 -1640 0 0 {name=x4}
 C {sky130_tests/test_diode.sym} 190 -1680 0 0 {name=x6}
 C {sky130_fd_pr/diode.sym} 2260 -150 0 0 {name=D1
 model=diode_pw2nd_05v5
-
 }
 C {sky130_fd_pr/lvsdiode.sym} 1680 -140 0 0 {name=D2
 model=diode_pw2nd_11v0
-
-
 }
 C {sky130_fd_pr/pnp_05v5.sym} 1980 -50 0 0 {name=Q1
 model=pnp_05v5_W0p68L0p68
@@ -519,19 +516,16 @@ C {sky130_tests/tb_ft_test.sym} 190 -1320 0 0 {name=x23}
 C {sky130_tests/tb_ft_test_2.sym} 190 -1280 0 0 {name=x24}
 C {sky130_tests/tb_bandgap.sym} 480 -1760 0 0 {name=x25}
 C {sky130_fd_pr/res_generic_m1.sym} 2140 -550 0 0 {name=R13
-
 L=1
 model=res_generic_m1
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_2p85.sym} 2450 -470 0 0 {name=R14
-
 L=2.85
 model=res_high_po_2p85
 spiceprefix=X
  mult=1}
 C {sky130_fd_pr/res_high_po_5p73.sym} 2610 -470 0 0 {name=R15
-
 L=5.73
 model=res_high_po_5p73
 spiceprefix=X
@@ -555,7 +549,6 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {sky130_fd_pr/nfet_01v8_esd.sym} 2970 -1300 0 0 {name=M30
@@ -563,12 +556,8 @@ L=0.165
 W=20.35
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=esd_nfet_01v8
 spiceprefix=X
 }
@@ -577,12 +566,8 @@ L=0.55
 W=21.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=esd_nfet_g5v0d10v5
 spiceprefix=X
 }
@@ -591,12 +576,8 @@ L=0.55
 W=21.5
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=esd_nfet_g5v0d10v5_nvt
 spiceprefix=X
 }
@@ -722,14 +703,12 @@ C {devices/launcher.sym} 900 -140 0 0 {name=h16
 descr="Load custom waves" 
 tclcommand="
 xschem raw_read $netlist_dir/filename.raw tran
-
 "
 }
 C {devices/launcher.sym} 900 -180 0 0 {name=h17 
 descr="Load waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
-
 "
 }
 C {sky130_tests/test_mos_binning.sym} 480 -1480 0 0 {name=x33}
@@ -781,7 +760,6 @@ C {devices/intuitive_interface_cheatsheet.sym} 1060 -1660 0 0 {name=x43}
 C {sky130_tests/sky130_oscillator.sym} 190 -1160 0 0 {name=x44}
 C {sky130_fd_pr/photodiode.sym} 2800 -150 0 0 {name=D3
 model=photodiode
-
 }
 C {sky130_tests/sky130_mismatch.sym} 190 -1120 0 0 {name=x45}
 C {sky130_tests/test_sweep_res_l.sym} 480 -1400 0 0 {name=x46}

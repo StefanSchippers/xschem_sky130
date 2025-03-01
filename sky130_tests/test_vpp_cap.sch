@@ -51,19 +51,15 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-
 x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-
-
 dataset=-1
 unitx=1
 logx=0
 logy=0
-
 color="10 12 6 4"
 node="\\"C1; i(vc1) g1 deriv() /\\"
 \\"C2; i(vc2) g2 deriv() /\\"
@@ -156,7 +152,6 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {devices/launcher.sym} 250 -790 0 0 {name=h5

@@ -26,11 +26,11 @@ W=5.0
 L=0.66
 nf=1
 mult=1
-ad=\\"'int((@nf + 1)/2) * @W / @nf * 0.29'\\" 
-pd=\\"'2*int((@nf + 1)/2) * (@W / @nf + 0.29)'\\"
-as=\\"'int((@nf + 2)/2) * @W / @nf * 0.29'\\" 
-ps=\\"'2*int((@nf + 2)/2) * (@W / @nf + 0.29)'\\"
-nrd=\\"'0.29 / @W '\\" nrs=\\"'0.29 / @W '\\"
+ad=\\"expr('int((@nf + 1)/2) * @W / @nf * 0.29')\\"
+pd=\\"expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')\\"
+as=\\"expr('int((@nf + 2)/2) * @W / @nf * 0.29')\\"
+ps=\\"expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')\\"
+nrd=\\"expr('0.29 / @W ')\\" nrs=\\"expr('0.29 / @W ')\\"
 sa=0 sb=0 sd=0
 model=pfet_g5v0d16v0
 spiceprefix=X

@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 0 -790 650 -490 {flags=graph,unlocked
-y1=0.42
-y2=0.55
+y1=0.32
+y2=0.82
 ypos1=0
 ypos2=2
 divy=5
@@ -21,30 +21,29 @@ ylabmag=1.0
 node="vth1
 vth2"
 color="4 10"
-
 unitx=1
 logx=0
 logy=0
 sweep=run
 rawfile=$netlist_dir/sky130_mismatch.raw
-sim_type=op}
+sim_type=op
+hilight_wave=-1}
 B 2 670 -510 1280 -210 {flags=graph,unlocked
 y1=0
-y2=130
+y2=120
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.4
-x2=0.6
+x1=0.32398159
+x2=0.58271903
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="vth2; f2"
 color=10
-
 unitx=1
 logx=0
 logy=0
@@ -61,15 +60,14 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.4
-x2=0.6
+x1=0.32398159
+x2=0.58271903
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="vth1; f1"
 color=4
-
 unitx=1
 logx=0
 logy=0
@@ -111,14 +109,9 @@ C {devices/lab_pin.sym} 260 -200 0 1 {name=p23 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -200 0 0 {name=M18
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=10
 model=nfet_01v8
-spiceprefix=X
- lvs_format=" "}
+spiceprefix=X}
 C {devices/lab_pin.sym} 230 -250 0 1 {name=l5 lab=VTH1}
 C {devices/lab_pin.sym} 230 -120 0 0 {name=p8 lab=VSS}
 C {devices/isource.sym} 230 -310 0 0 {name=I0 value=100n
@@ -129,13 +122,9 @@ only_toplevel=true
 place=end
 value="* .option SCALE=1e-6 
 .option savecurrents
-
 * this experimental option enables mos model bin 
 * selection based on W/NF instead of W
 .option wnflag=1 
-
-
-
 .control
   setseed 12
   reset
@@ -157,14 +146,9 @@ C {devices/lab_pin.sym} 520 -200 0 1 {name=p1 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 470 -200 0 0 {name=M1[9:0]
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
-spiceprefix=X
- lvs_format=" "}
+spiceprefix=X}
 C {devices/lab_pin.sym} 490 -250 0 1 {name=l1 lab=VTH2}
 C {devices/lab_pin.sym} 490 -120 0 0 {name=p2 lab=VSS}
 C {devices/lab_pin.sym} 490 -440 0 0 {name=p3 lab=VSS}
@@ -174,7 +158,6 @@ descr="load waves"
 tclcommand="
 xschem raw_read $netlist_dir/sky130_mismatch.raw op
 xschem raw add run \{idx()\}
-
 proc get_histo \{\} \{
   proc xround \{a size\} \{ return [expr \{round($a/$size) * $size\}]\}
   #### get rounded data
@@ -201,7 +184,6 @@ proc get_histo \{\} \{
     incr j
   \}
 \}
-
 get_histo
 xschem redraw
 "

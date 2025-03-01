@@ -9,7 +9,6 @@ y1=-0.11
 y2=1.8
 ypos1=0
 ypos2=2
-
 subdivy=1
 unity=1
 x1=9.98449e-09
@@ -20,7 +19,6 @@ node="ck
 ck_del
  0.9"
 color="15 8 4"
-
 unitx=1
 logx=0
 logy=0
@@ -83,7 +81,6 @@ value="
   quit 0
 .endc
 "
-
 }
 C {devices/launcher.sym} 490 -270 0 0 {name=h5
 descr="load waves" 
@@ -109,14 +106,11 @@ C {devices/lab_pin.sym} 900 -90 0 0 {name=p5 sig_type=std_logic lab=0}
 C {devices/launcher.sym} 170 -750 0 0 {name=h1
 descr="run sim" 
 tclcommand="
-
 # This procedure sizes inverters until a certain delay is obtained
 # This example does a stupid linear search, just for educational purposes.
 # Consider using different search methods, like binary search or others.
-
 proc optimize_delay \{\} \{
   global netlist_dir sim
-
   xschem setprop text 0 txt_ptr \{RUNNING SIMULATIONS...\}
   xschem setprop text 0 layer 7
   set_sim_defaults ;# initialize simconf structure
@@ -144,7 +138,6 @@ proc optimize_delay \{\} \{
     close $fd
     set delay [lindex $res 2]
     puts \\"delay = $delay\\"
-
     xschem raw_clear
     xschem raw_read [file rootname $netlist_dir/[file tail [xschem get current_name]]].raw tran
     if \{ $delay < 200e-12\} break
@@ -157,7 +150,6 @@ proc optimize_delay \{\} \{
     puts \\"UNMET: delay = $delay, W_N = $current_w , W_P = [expr \{$current_w * 2\}]\\"
   \}
 \}
-
 optimize_delay
 "
 W_N=1

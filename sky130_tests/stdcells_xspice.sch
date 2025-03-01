@@ -46,7 +46,6 @@ A9 [IX] X d_lut_sky130_fd_sc_hd__buf_2
 A14 [IQ] Q d_lut_sky130_fd_sc_hd__buf_2
 A15 [IQLATCH] QLATCH d_lut_sky130_fd_sc_hd__buf_2
 A11 [IXSCHEM] XSCHEM d_lut_sky130_fd_sc_hd__buf_2
-
 "}
 C {devices/noconn.sym} 250 -620 0 1 {name=l2}
 C {devices/noconn.sym} 250 -600 0 1 {name=l3}

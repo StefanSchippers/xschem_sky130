@@ -20,24 +20,17 @@ V {}
 S {}
 E {}
 T {Example of netlisting rule overrride for this AND2 primitive in instance:
-
 * descend into symbol.
-
 * copy the ' format="..." ' string.
-
 * go back in parent schematic.
-
 * select AND2 gate, press 'q' for edit attributes.
-
 * on a new line paste the ' format="..." ' string, then make 
   your changes, for example change pin order and subckt reference
   Remember that instead of @pinlist (which prints pin net
   names in the order they are defined in the symbol) you can
   reference individual pins by using @@A, @@B, @@Y and so on.
-
 * after specifying 'format' in instance you can also specify 
   'symname' to change the symbol (subcircuit) used for this gate
-
 Generate netlist and see the result vs original gate.} 90 -750 0 0 0.4 0.4 {layer=13}
 T {Override} 200 -230 0 0 0.6 0.6 {}
 T {Original} 590 -230 0 0 0.6 0.6 {}

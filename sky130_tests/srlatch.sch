@@ -41,7 +41,6 @@ value="* .option SCALE=1e-6
 .option method=gear seed=12
 .param L=0.15
 .param W=0.5
-
 vd d 0 0
 vg g 0 0
 .control
@@ -58,11 +57,7 @@ alterparam L=0.5
 alterparam W=3
 reset
 dc vd 0 2 0.01 vg 0 2 0.2
-
 .endc
-
-
-
 "}
 C {devices/ipin.sym} 180 -560 0 0 {name=p2 sig_type=std_logic lab=S}
 C {devices/ipin.sym} 180 -360 0 0 {name=p3 sig_type=std_logic lab=R}
@@ -81,6 +76,5 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
-
 "
 spice_ignore=false}

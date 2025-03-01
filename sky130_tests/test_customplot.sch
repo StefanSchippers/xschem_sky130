@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -39,18 +38,14 @@ subdivy=1
 unity=1
 x1=0
 x2=20
-
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-
-
 dataset=-1
 unitx=1
 logx=0
 logy=0
 rawfile=$netlist_dir/delay.raw
-
 color=4
 node=del
 divx=5
@@ -114,14 +109,12 @@ C {devices/code_shown.sym} 1210 -910 0 0 {name=COMMANDS only_toplevel=false valu
   let current=start
   let index=0
   let points=10
-
   ** Create a new plot and store in myplot its name. We create
   ** vectors in this plot namespace
   setplot new
   set myplot=$curplot
   let del=vector(points)
   let w=vector(points)
-
   while index < points
     alterparam W=$&current
     reset
@@ -130,18 +123,15 @@ C {devices/code_shown.sym} 1210 -910 0 0 {name=COMMANDS only_toplevel=false valu
     set appendwrite
     tran 0.1n 500n uic
     meas tran tdiff TRIG v(a) VAL=1.5 RISE=1 TARG v(b) VAL=2.5 RISE=1
-
     ** specify myplot namespace to reference vectors
     let \{$myplot\}.del[index] = tdiff
     let \{$myplot\}.w[index] = current
-
     let current = current + step
     write test_customplot.raw
     let current = current + step
     let index = index + 1
   end
   unset appendwrite
-
   ** go back to myplot, define axes and units, write data
   setplot $myplot
   deftype v width W
@@ -159,12 +149,6 @@ W='W'
 L=1
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
@@ -175,7 +159,6 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {devices/vsource.sym} 90 -440 0 0 {name=V2 value=3 savecurrent=false}

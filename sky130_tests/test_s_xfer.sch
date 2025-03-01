@@ -49,13 +49,11 @@ lab=B}
 C {devices/vsource.sym} 290 -310 3 0 {name=A1 value=integrator
 device_model="
 .model integrator s_xfer(num_coeff=[1] den_coeff=[1 0] int_ic=[0] denormalized_freq=1e5)
-
 "}
 C {devices/gnd.sym} 140 -200 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 140 -310 0 0 {name=l1 sig_type=std_logic lab=A}
 C {devices/code_shown.sym} 540 -250 0 0 {name=s1 only_toplevel=false value="
 .option savecurrents
-
 .control
   save all
   tran 10n 10u

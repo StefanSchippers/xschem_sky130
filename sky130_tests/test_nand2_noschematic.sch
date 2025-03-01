@@ -20,10 +20,8 @@ E {}
 T {The symbol is expanded as a nand2 gate instantiating 4 mos transistors.
 See the symbol format string to define unique mos names and 
 unique internal nodes.
-
 This implementation allows to pass as parameters also the spice models
 of the transistors as expansion is done by xschem.
-
 Model names can not be passed as .SUBCKT parameters in spice simulators.
 Since nand2 is instantiated as an array of 4: x1[3:0]
 16 transistors will be generated in netlist to form 4 independent

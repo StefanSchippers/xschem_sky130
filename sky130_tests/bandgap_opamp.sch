@@ -31,8 +31,6 @@ x1=0
 x2=0.0001
 divx=5
 subdivx=1
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -167,10 +165,6 @@ C {devices/lab_pin.sym} 680 -610 0 0 {name=l14 lab=SP}
 C {sky130_fd_pr/pfet_01v8.sym} 660 -740 0 0 {name=M4
 L=6
 W=2
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -178,10 +172,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 800 -290 0 0 {name=M18
 L=4
 W=6
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -189,10 +179,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 570 -290 0 1 {name=M2
 L=4
 W=6
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -200,10 +186,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 840 -460 0 1 {name=M20
 L=2
 W=8
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -211,10 +193,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 530 -460 0 0 {name=M6
 L=2
 W=8
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -243,10 +221,6 @@ C {devices/parax_cap.sym} 1520 -510 0 0 {name=C5  value=4f}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1430 -370 0 0 {name=M11
 L=4
 W=6
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=5
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -259,10 +233,6 @@ C {devices/lab_pin.sym} 300 -460 0 0 {name=l4 lab=DIFFOUT}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 320 -460 0 0 {name=M5
 L=2
 W=8
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -276,10 +246,6 @@ C {devices/lab_pin.sym} 1630 -300 0 1 {name=p5 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 1580 -300 0 0 {name=M7
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=3
 model=nfet_01v8
 spiceprefix=X
@@ -291,10 +257,6 @@ C {devices/lab_pin.sym} 910 -910 0 0 {name=l7 lab=EN_N}
 C {sky130_fd_pr/pfet_01v8.sym} 930 -910 0 0 {name=M1
 L=6
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -303,10 +265,6 @@ C {devices/lab_pin.sym} 980 -830 0 1 {name=p8 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 930 -830 0 0 {name=M8
 L=1
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -315,10 +273,6 @@ C {devices/lab_pin.sym} 980 -730 0 1 {name=p9 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 930 -730 0 0 {name=M9
 L=1
 W=0.5
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -327,10 +281,6 @@ C {devices/lab_pin.sym} 980 -650 0 1 {name=p10 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 930 -650 0 0 {name=M10
 L=6
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -346,7 +296,6 @@ C {devices/lab_pin.sym} 1130 -710 0 0 {name=p18 lab=START_N}
 C {devices/ipin.sym} 90 -470 0 0 { name=p19 lab=START }
 C {devices/lab_pin.sym} 950 -610 0 0 {name=p27 lab=VSS}
 C {sky130_tests/passgate_nlvt.sym} 1130 -770 0 0 {name=x3 W_N=0.5 L_N=0.35 W_P=0.5 L_P=0.35 
-    
 VCCBPIN=VCC VSSBPIN=VSS  m=1}
 C {devices/lab_pin.sym} 1480 -720 0 1 {name=p29 lab=VCC}
 C {devices/launcher.sym} 240 -150 0 0 {name=h2 
@@ -355,10 +304,6 @@ tclcommand="xschem netlist; xschem simulate"}
 C {sky130_fd_pr/pfet_01v8.sym} 1430 -720 0 0 {name=M3
 L=6
 W=2
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=2
 model=pfet_01v8
 spiceprefix=X

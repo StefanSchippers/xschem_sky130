@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ ngspice_get_value and ngspice_get_expr.
 By using the $\{path\} expression instead of the
 hierarchy path of this circuit you ensure 
 multiple instances (even at different hierarchy
-levels) will display each their own data.} 600 -750 0 0 0.4 0.4 {}
+levels) will display each their own data.} 660 -750 0 0 0.4 0.4 {}
 T {only_toplevel=true attribute set, 
 will be netlisted only if toplevel cell} 830 -580 0 0 0.2 0.2 {layer=4}
 N 180 -590 180 -530 { lab=#net1}
@@ -75,27 +75,14 @@ W=2
 body=GND
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
-spiceprefix=X
-}
+spiceprefix=X}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 490 -500 0 1 {name=M2
 L=0.3
 W=2
 body=GND
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -105,12 +92,6 @@ W=4
 body=VDD
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
@@ -120,12 +101,6 @@ W=4
 body=VDD
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
@@ -140,12 +115,6 @@ W=0.7
 body=GND
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
@@ -154,8 +123,6 @@ C {devices/launcher.sym} 830 -100 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
 }
-C {devices/ngspice_get_value.sym} 470 -190 0 1 {name=r3 node=i(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[id])
-descr="Id="}
 C {devices/launcher.sym} 830 -200 0 0 {name=h1
 descr=Annotate 
 tclcommand="xschem annotate_op"}
@@ -184,12 +151,11 @@ C {devices/gnd.sym} 750 -440 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 750 -530 0 1 {name=l6 sig_type=std_logic lab=MINUS}
 C {devices/ngspice_get_expr.sym} 1070 -470 0 1 {name=r10 node="[ngspice::get_current v3]"}
 C {sky130_fd_pr/corner.sym} 1050 -360 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/ngspice_get_value.sym} 280 -250 0 1 {name=r14 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 280 -310 0 1 {name=r15 node=@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[gds]
-descr="gds="}
-C {devices/ngspice_get_value.sym} 280 -350 0 1 {name=r11 node=@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[gmbs]
-descr="gmbs="}
 C {devices/ammeter.sym} 320 -360 0 0 {name=V5}
-C {devices/ngspice_get_expr.sym} 470 -140 0 1 {name=r2 node="[to_eng [ngspice::get_current \{xm5.msky130_fd_pr__nfet_01v8[id]\}] * [ngspice::get_voltage s] ]W"
+C {devices/ngspice_get_expr.sym} 400 -160 0 1 {name=r2 node="[to_eng [ngspice::get_current \{xm5.msky130_fd_pr__nfet_01v8[id]\}] * [ngspice::get_voltage s] ]W"
 descr="power"}
+C {sky130_fd_pr/annotate_fet_params.sym} 180 -340 0 0 {name=annot5 ref=M5}
+C {sky130_fd_pr/annotate_fet_params.sym} 120 -470 0 1 {name=annot3 ref=M1}
+C {sky130_fd_pr/annotate_fet_params.sym} 540 -470 0 0 {name=annot4 ref=M2}
+C {sky130_fd_pr/annotate_fet_params.sym} 170 -810 0 1 {name=annot1 ref=M4}
+C {sky130_fd_pr/annotate_fet_params.sym} 490 -810 0 0 {name=annot2 ref=M3}

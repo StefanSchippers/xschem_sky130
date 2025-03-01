@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,16 +24,13 @@ L 4 460 -780 510 -790 {}
 L 4 460 -790 460 -780 {}
 B 2 520 -610 1030 -310 {flags=graph
 y1 = -3.48637e-06
-
 divy = 5
 subdivy=1
 x1=0.1501
 x2=1
 divx=4
 subdivx=1
-
  unity=1
-
 logy=0
 hilight_wave=0
 rainbow=1
@@ -46,16 +43,13 @@ ypos1=-8.09765e-05
 ypos2=0.000250171}
 B 2 520 -870 1030 -620 {flags=graph
 y1 = -0.000873999
-
 divy = 5
 subdivy=1
 x1=0.1501
 x2=1
 divx=4
 subdivx=1
-
  unity=1
-
 logy=0
 hilight_wave=0
 rainbow=1
@@ -147,11 +141,10 @@ vb b 0 0
     let v = v + stepv
   end
 .endc
-
 " }
 C {sky130_fd_pr/nfet_01v8.sym} 710 -140 0 0 {name=M2
-L=\{LENGTH\}
-W=\{WIDTH\}
+L=LENGTH
+W=WIDTH
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}

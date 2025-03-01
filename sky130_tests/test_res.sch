@@ -558,7 +558,6 @@ C {devices/lab_pin.sym} 1110 -390 0 1 {name=p38 lab=P}
 C {devices/lab_pin.sym} 1110 -270 0 1 {name=p39 lab=M}
 C {devices/lab_pin.sym} 1090 -300 0 0 {name=p40 lab=B}
 C {sky130_fd_pr/res_xhigh_po_2p85.sym} 1110 -300 0 0 {name=R13
-
 L=2.85
 model=res_xhigh_po_2p85
 spiceprefix=X
@@ -591,7 +590,6 @@ model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_5p73.sym} 1290 -490 0 0 {name=R17
-
 L=5.73
 model=res_high_po_5p73
 spiceprefix=X
@@ -687,7 +685,6 @@ C {devices/lab_pin.sym} 1290 -780 0 1 {name=p78 lab=P}
 C {devices/lab_pin.sym} 1290 -660 0 1 {name=p79 lab=M}
 C {devices/lab_pin.sym} 1270 -690 0 0 {name=p80 lab=B}
 C {sky130_fd_pr/res_high_po_5p73.sym} 1290 -690 0 0 {name=R28
-
 L=57.3
 model=res_high_po_5p73
 spiceprefix=X

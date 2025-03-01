@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,8 +49,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1e-07
+x1=9.4742742e-17
+x2=9.9999999e-08
 
 
 node="\\"minus .9101 -\\"
@@ -165,12 +165,8 @@ L=2
 W=4
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -179,12 +175,8 @@ L=2
 W=4
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -193,27 +185,19 @@ L=4
 W=4
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 380 -310 0 0 {name=l1 sig_type=std_logic lab=S}
+C {devices/lab_wire.sym} 430 -310 0 0 {name=l1 sig_type=std_logic lab=S}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 500 -500 0 0 {name=M3
 L=4
 W=4
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=pfet_01v8_lvt
 spiceprefix=X
 }
@@ -222,12 +206,8 @@ L=4
 W=4
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=pfet_01v8_lvt
 spiceprefix=X
 }
@@ -255,38 +235,28 @@ C {devices/lab_pin.sym} 50 -240 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 50 -330 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 50 -420 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/corner.sym} 930 -190 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/launcher.sym} 630 -260 0 0 {name=h3
+C {devices/launcher.sym} 720 -220 0 0 {name=h3
 descr="Netlist & sim" 
 tclcommand="xschem netlist; xschem simulate"}
-C {devices/launcher.sym} 630 -170 0 0 {name=h4 
+C {devices/launcher.sym} 720 -130 0 0 {name=h4 
 descr="Load/unload
 AC waveforms" 
 tclcommand="
 xschem raw_read $netlist_dir/test_ac.raw ac
 "
 }
-C {devices/launcher.sym} 630 -110 0 0 {name=h2 
+C {devices/launcher.sym} 720 -70 0 0 {name=h2 
 descr="Load/unload
 TRAN waveforms" 
 tclcommand="
 xschem raw_read $netlist_dir/test_ac.raw tran
 "
 }
-C {devices/simulator_commands_shown.sym} 0 -1070 0 0 {name=COMMANDS1
+C {devices/simulator_commands_shown.sym} 380 -1010 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
-.save
-+ @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-+ @m.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
-+ @m.xm4.msky130_fd_pr__nfet_01v8_lvt[gm]
-+ @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
-+ @m.xm5.msky130_fd_pr__pfet_01v8_lvt[gm]
-+ v(@m.xm5.msky130_fd_pr__pfet_01v8_lvt[vth])
-+ @m.xm5.msky130_fd_pr__pfet_01v8_lvt[gds]
-+ v(@m.xm3.msky130_fd_pr__pfet_01v8_lvt[vth])
-+ @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gds]
- 
+.include test_ac.save
 .option reltol=1e-5
 +  abstol=1e-14 savecurrents
 .control
@@ -302,7 +272,7 @@ value="
   write test_ac.raw
 .endc
 "}
-C {devices/simulator_commands_shown.sym} 420 -810 0 0 {name=COMMANDS2
+C {devices/simulator_commands_shown.sym} 30 -940 0 0 {name=COMMANDS2
 simulator=xyce
 only_toplevel=false 
 value="
@@ -337,12 +307,8 @@ L=2
 W=4
 nf=1
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
+
+
 model=nfet_01v8_lvt
 spiceprefix=X
 }
@@ -352,15 +318,18 @@ C {devices/lab_pin.sym} 910 -800 0 1 {name=l5 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 870 -580 0 1 {name=l6 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 870 -730 0 1 {name=l7 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 840 -690 0 1 {name=l8 sig_type=std_logic lab=GND}
-C {devices/launcher.sym} 630 -220 0 0 {name=h1
+C {devices/launcher.sym} 720 -180 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/ngspice_get_value.sym} 170 -470 0 1 {name=r14 node=v(@m.xm5.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 170 -510 0 1 {name=r15 node=@m.xm5.msky130_fd_pr__pfet_01v8_lvt[gds]
-descr="gds="}
-C {devices/ngspice_get_value.sym} 620 -490 0 0 {name=r1 node=v(@m.xm3.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 620 -530 0 0 {name=r2 node=@m.xm3.msky130_fd_pr__pfet_01v8_lvt[gds]
-descr="gds="}
+C {sky130_fd_pr/annotate_fet_params.sym} 290 -650 0 1 {name=annot1 ref=M5}
+C {sky130_fd_pr/annotate_fet_params.sym} 530 -650 0 0 {name=annot2 ref=M3}
+C {sky130_fd_pr/annotate_fet_params.sym} 320 -160 0 1 {name=annot5 ref=M4}
+C {sky130_fd_pr/annotate_fet_params.sym} 290 -320 0 1 {name=annot3 ref=M1}
+C {sky130_fd_pr/annotate_fet_params.sym} 530 -320 0 0 {name=annot4 ref=M2}
+C {devices/launcher.sym} 720 -270 0 0 {name=h5
+descr="Generate .save lines" 
+tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+"
+}

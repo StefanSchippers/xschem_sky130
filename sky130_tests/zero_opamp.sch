@@ -110,10 +110,6 @@ C {devices/lab_pin.sym} 610 -550 0 0 {name=l14 lab=SP}
 C {sky130_fd_pr/pfet_01v8.sym} 590 -680 0 0 {name=M4
 L=8
 W=2
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -121,10 +117,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 730 -230 0 0 {name=M18
 L=4
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -132,10 +124,6 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 500 -230 0 1 {name=M2
 L=4
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -143,10 +131,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 770 -400 0 1 {name=MR
 L=2
 W=8
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -154,10 +138,6 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -400 0 0 {name=ML
 L=2
 W=8
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -172,10 +152,6 @@ C {devices/parax_cap.sym} 1450 -450 0 0 {name=C5  value=4f}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1360 -310 0 0 {name=M6
 L=4
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -188,10 +164,6 @@ C {devices/lab_pin.sym} 1560 -240 0 1 {name=p5 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 1510 -240 0 0 {name=M7
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -205,10 +177,6 @@ C {devices/lab_pin.sym} 1340 -780 0 0 {name=l65 lab=EN_N}
 C {sky130_fd_pr/pfet_01v8.sym} 1360 -780 0 0 {name=M46
 L=0.15
 W=5
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -218,10 +186,6 @@ C {devices/lab_pin.sym} 1270 -500 0 1 {name=p141 lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1220 -500 0 0 {name=M12
 L=4
 W=2
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -231,10 +195,6 @@ C {devices/lab_pin.sym} 1210 -600 0 0 {name=p142 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1260 -600 0 1 {name=M54
 L=4
 W=4
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -244,10 +204,6 @@ C {devices/lab_pin.sym} 1410 -600 0 1 {name=p144 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 1360 -600 0 0 {name=M5
 L=4
 W=4
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -259,10 +215,6 @@ C {devices/lab_pin.sym} 990 -700 0 1 {name=p8 lab=VCC}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 940 -700 0 0 {name=M8
 L=1
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -271,10 +223,6 @@ C {devices/lab_pin.sym} 990 -600 0 1 {name=p9 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 940 -600 0 0 {name=M9
 L=1
 W=0.5
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -283,10 +231,6 @@ C {devices/lab_pin.sym} 990 -520 0 1 {name=p10 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 940 -520 0 0 {name=M10
 L=8
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -297,10 +241,6 @@ C {devices/lab_pin.sym} 960 -480 0 0 {name=p27 lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 940 -780 0 0 {name=M1
 L=8
 W=1
-ad="'W * 0.29'" pd="'W + 2 * 0.29'"
-as="'W * 0.29'" ps="'W + 2 * 0.29'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X

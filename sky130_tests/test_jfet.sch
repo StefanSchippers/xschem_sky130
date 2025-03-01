@@ -73,7 +73,6 @@ lab=D1}
 N 340 -830 340 -730 {
 lab=GND}
 C {devices/title.sym} 160 -30 0 0 {name=l9 
-
 author="tcleval(Stefan Schippers[
   if \{$show_pin_net_names == 0\} \{
     set show_pin_net_names 1
@@ -87,7 +86,6 @@ C {devices/lab_pin.sym} 340 -420 0 0 {name=p2 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 340 -110 0 0 {name=p3 sig_type=std_logic lab=GND}
 C {devices/code_shown.sym} 580 -280 0 0 {name=COMMANDS only_toplevel=false value="VG G 0 dc 0
 VD D 0 dc 0
-
 .options savecurrents
 .control
   save all

@@ -250,7 +250,7 @@ T {Self calibration: no circuit trimming} 1640 -1060 0 0 0.6 0.6 {}
 T {Check devices. Not on layout
 will not be present in LVS
 netlist} 20 -1460 0 0 0.6 0.6 {}
-T {Mismatch checker} 460 -1070 0 0 0.3 0.3 { layer=4}
+T {Mismatch checker} 460 -1100 0 0 0.3 0.3 { layer=4}
 T {Simulation temperature} 440 -1270 0 0 0.3 0.3 { layer=4}
 T {tcleval(Dataset=\\\\n[xschem getprop rect 2 0 dataset]\\\\n(-1=all))} 1280 -110 0 0 0.5 0.5 {floater=xxx}
 N 320 -540 340 -540 { lab=DIFFOUT_N}
@@ -332,6 +332,7 @@ C {devices/lab_pin.sym} 270 -230 0 0 {name=p6 lab=VSS}
 C {devices/lab_pin.sym} 270 -290 0 0 {name=p7 lab=ADJ}
 C {sky130_tests/passgate.sym} 380 -540 0 0 {name=x6 W_N=0.42 L_N=0.3 W_P=0.7 L_P=0.35 VCCBPIN=VCC VSSBPIN=VSS m=1
 modelp=pfet_01v8_lvt
+schematic=passgate_1
 }
 C {devices/lab_pin.sym} 380 -510 0 0 {name=l34 sig_type=std_logic lab=START_N}
 C {devices/lab_pin.sym} 380 -570 0 0 {name=l37 sig_type=std_logic lab=START}
@@ -352,10 +353,6 @@ C {devices/lab_pin.sym} 160 -880 0 1 {name=p23 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 110 -880 0 0 {name=M18
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
@@ -397,10 +394,6 @@ C {devices/lab_pin.sym} 320 -880 0 1 {name=p31 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 270 -880 0 0 {name=M1
 L=0.15
 W=0.5
-ad="'W * 0.29'" pd="'2*(W + 0.29)'"
-as="'W * 0.29'" ps="'2*(W + 0.29)'"
-nrd=0 nrs=0
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X

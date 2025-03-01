@@ -39,8 +39,6 @@ x1=0
 x2=1e-06
 divx=5
 subdivx=1
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -80,8 +78,6 @@ x1=-2
 x2=2
 divx=5
 subdivx=1
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -130,7 +126,6 @@ value="
   tran 0.1n 1u
   write tb_reram.raw
 .endc
-
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 60 -330 0 0 {name=p3 lab=TOP}

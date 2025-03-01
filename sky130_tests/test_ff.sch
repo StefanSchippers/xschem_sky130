@@ -187,7 +187,6 @@ C {devices/code.sym} 840 -200 0 0 {name=STIMULI
 only_toplevel=true
 place=end
 value="
-
 .save all
 .options savecurrents
 .tran 0.2n 100n
@@ -223,8 +222,5 @@ C {devices/code.sym} 840 -370 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
-
-
 "}

@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,6 @@ value="* .option SCALE=1e-6
 .option method=gear seed=12
 .param L=0.15
 .param W=0.5
-
 vd d 0 0
 vg g 0 0
 .control
@@ -53,11 +52,7 @@ alterparam L=0.5
 alterparam W=3
 reset
 dc vd 0 2 0.01 vg 0 2 0.2
-
 .endc
-
-
-
 "}
 C {devices/lab_pin.sym} 360 -280 0 1 {name=p194 lab=0}
 C {devices/lab_pin.sym} 300 -140 0 0 {name=p197 lab=0}
@@ -66,10 +61,6 @@ C {devices/lab_pin.sym} 330 -360 0 0 {name=p2 lab=D1}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 310 -280 0 0 {name=M1
 L=L
 W=1
-ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
-as="'W * 0.29'" ps="'2 * (W + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -81,10 +72,6 @@ C {devices/lab_pin.sym} 520 -360 0 0 {name=p6 lab=D2}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 500 -280 0 0 {name=M2
 L=0.15
 W=W
-ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
-as="'W * 0.29'" ps="'2 * (W + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
@@ -98,7 +85,6 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}
 C {devices/lab_pin.sym} 50 -160 0 0 {name=p8 lab=G}

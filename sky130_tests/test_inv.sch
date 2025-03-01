@@ -31,14 +31,10 @@ x1=8.97238e-09
 x2=2.11753e-08
 divx=5
 subdivx=1
-
-
-
 unitx=1
 logx=0
 logy=0
 hilight_wave=-1
-
 color="4 4 4 4 4 4 4 9 7 7 7 7 7 7 7"
 node="z[6]
 z[5]
@@ -69,14 +65,11 @@ x1=1.4651792e-08
 x2=1.4945492e-08
 divx=5
 subdivx=1
-
-
 dataset=0
 unitx=1
 logx=0
 logy=0
 hilight_wave=-1
-
 color="4 7"
 node="\\"z[6] @ 1.8V; z[6]%0\\"
 \\"z[6] @ 1.6V; z[6]%1\\""
@@ -93,14 +86,10 @@ x1=1.42038e-08
 x2=1.73299e-08
 divx=5
 subdivx=1
-
-
-
 unitx=1
 logx=0
 logy=0
 hilight_wave=-1
-
 color="4 7"
 node="\\"z[6] @ 1.8V; z[6]%0\\"
 \\"z[6] @ 1.6V; z[6]%1\\""
@@ -153,24 +142,23 @@ C {devices/parax_cap.sym} 1340 -120 0 0 {name=C12 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 1420 -120 0 0 {name=C13 gnd=0 value=4f m=1}
 C {devices/parax_cap.sym} 1500 -120 0 0 {name=C14 gnd=0 value=4.01f m=1}
 C {devices/lab_pin.sym} 1500 -300 0 1 {name=l17 sig_type=std_logic lab=Y[6:0]}
-C {sky130_tests/not.sym} 240 -190 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/not.sym} 320 -190 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/not.sym} 400 -190 0 0 {name=x2 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/not.sym} 480 -190 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/not.sym} 560 -190 0 0 {name=x5 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/not.sym} 640 -190 0 0 {name=x6 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/not.sym} 720 -190 0 0 {name=x7 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.15}
-C {sky130_tests/lvtnot.sym} 980 -190 0 0 {name=x8 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {sky130_tests/lvtnot.sym} 1060 -190 0 0 {name=x9 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {sky130_tests/lvtnot.sym} 1140 -190 0 0 {name=x10 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {sky130_tests/lvtnot.sym} 1220 -190 0 0 {name=x11 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {sky130_tests/lvtnot.sym} 1300 -190 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {sky130_tests/lvtnot.sym} 1380 -190 0 0 {name=x13 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
-C {sky130_tests/lvtnot.sym} 1460 -190 0 0 {name=x14 m=1 VCCPIN=VCC VSSPIN=VSS W_N=1 L_N=0.15 W_P=2 L_P=0.35}
+C {sky130_tests/not.sym} 240 -190 0 0 {name=x4 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/not.sym} 320 -190 0 0 {name=x1 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/not.sym} 400 -190 0 0 {name=x2 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/not.sym} 480 -190 0 0 {name=x3 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/not.sym} 560 -190 0 0 {name=x5 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/not.sym} 640 -190 0 0 {name=x6 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/not.sym} 720 -190 0 0 {name=x7 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.15}
+C {sky130_tests/lvtnot.sym} 980 -190 0 0 {name=x8 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
+C {sky130_tests/lvtnot.sym} 1060 -190 0 0 {name=x9 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
+C {sky130_tests/lvtnot.sym} 1140 -190 0 0 {name=x10 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
+C {sky130_tests/lvtnot.sym} 1220 -190 0 0 {name=x11 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
+C {sky130_tests/lvtnot.sym} 1300 -190 0 0 {name=x12 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
+C {sky130_tests/lvtnot.sym} 1380 -190 0 0 {name=x13 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
+C {sky130_tests/lvtnot.sym} 1460 -190 0 0 {name=x14 m=1 VCCPIN=VCC VSSPIN=VSS W_N=WN L_N=0.15 W_P=WP L_P=0.35}
 C {devices/launcher.sym} 1045 -355 0 0 {name=h3 
 descr="Ctrl-click to load Xyce or ngspice data" 
 tclcommand="
-
   if \{ [sim_is_xyce] \} \{ ;# using an if \{\} allows to differentiate file names
     xschem raw_read $netlist_dir/test_inv.raw tran
   \} else \{
@@ -181,7 +169,7 @@ tclcommand="
 C {devices/simulator_commands_shown.sym} 10 -840 0 0 {name=COMMANDS2
 simulator=ngspice
 only_toplevel=false 
-value=".param VCC=1.8
+value=".param VCC=1.8 WN=1 WP=2
 vvss vss 0 dc 0
 vvcc vcc 0 
 + pwl 0 0 10n 0 10.1n 'VCC' 20n 'VCC' 20.1n 0
@@ -233,6 +221,5 @@ format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
 spice_ignore=false}

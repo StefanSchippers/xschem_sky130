@@ -29,8 +29,6 @@ x1=0
 x2=5e-06
 divx=5
 subdivx=1
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -48,7 +46,6 @@ y1=0
 y2=5.4
 ypos1=0
 ypos2=2
-
 subdivy=1
 unity=1
 x1=0
@@ -62,7 +59,6 @@ HV_IDEAL
 \\"10k * Iload; i(vload) 10000 *\\"
 HV_IDEAL2"
 color="15 7 12 11 17 4"
-
 unitx=1
 logx=0
 logy=0

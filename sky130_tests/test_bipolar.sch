@@ -62,16 +62,13 @@ value=".option savecurrents
 save all
 save @q.xq1.qsky130_fd_pr__pnp_05v5_W3p40L3p40[vbe]
 save @q.xq2.qsky130_fd_pr__npn_05v5_W1p00L2p00[vbe]
-
 dc i0 5n 100u 0.05u
-
 * plot vc1#branch / vb1#branch
 * plot e1
 write test_bipolar.raw
 set appendwrite
 op
 write test_bipolar.raw
-
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}

@@ -24,7 +24,6 @@ digital=1
 y1=-0.12
 y2=1.9
 divy=4
-
 x1=0
 x2=8e-08
 ypos1=0.1619
@@ -47,7 +46,6 @@ digital=1
 y1=-0.12
 y2=1.9
 divy=4
-
 x1=0
 x2=8e-08
 ypos1=0.177443
@@ -70,7 +68,6 @@ digital=1
 y1=-0.12
 y2=1.9
 divy=4
-
 x1=0
 x2=8e-08
 ypos1=0.0842025
@@ -167,7 +164,6 @@ value="
 + data_delay = 20p enable_delay=20p reset_delay=200p data_load=10f reset_load=10f enable_load=10f)
 .model dzero d_pulldown(load=10f)
 .model done d_pullup(load=10f)
-
 * sky130_fd_sc_hd__nand2_1 (!A) | (!B)
 .model d_lut_sky130_fd_sc_hd__nand2_1 d_lut (rise_delay=200p fall_delay=200p input_load=10f
 + table_values \\"1110\\")
@@ -185,7 +181,6 @@ value="
 * sky130_fd_sc_hd__buf_2 (A)
 .model d_lut_sky130_fd_sc_hd__buf_2 d_lut (rise_delay=200p fall_delay=200p input_load=10f
 + table_values \\"01\\")
-
 "}
 C {devices/launcher.sym} 660 -310 0 0 {name=h2
 descr="View Raw file" 
@@ -209,19 +204,15 @@ value="
 vvcc vcc 0 dc 'vcc'
 vvss vss 0 0
 .control
-
 pre_set auto_bridge_d_out =
 + ( \\".model auto_dac dac_bridge(out_low = 0 out_high = 1.8 out_undef=0.9 t_rise=0.2e-9 t_fall=0.2e-9)\\"
 + \\"auto_bridge%d [ %s ] [ %s ] auto_dac\\" )
-
 pre_set auto_bridge_d_in =
 + ( \\".model auto_adc adc_bridge(in_low = 0.6 in_high = 1.2 rise_delay=0.2e-9 fall_delay=0.2e-9)\\"
 + \\"auto_bridge%d [ %s ] [ %s ] auto_adc\\" )
-
 tran 30p 80n
 plot clk+18 a+16 b+14 reset_b+12 q+10 x+6 y+4 qlatch+2 xschem
 write test_stdcells.raw
-
 .endc
 "}
 C {devices/parax_cap.sym} 1720 -210 1 0 {name=C1 gnd=0 value=4f m=1}

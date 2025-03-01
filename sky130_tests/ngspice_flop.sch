@@ -5,16 +5,11 @@ V {}
 S {.model todig_3v3 adc_bridge(in_high=2.2 in_low=1.1
 + rise_delay=10n fall_delay=10n)
 .model toana_3v3 dac_bridge(out_high=3.3 out_low=0)
-
 .model ddflop d_dff(ic=0 rise_delay=1n fall_delay=1n)
-
 AA2D1 [A_GND] [d_gnd] todig_3v3
-
 AA2D2 [A_IN] [d_in] todig_3v3
 AA2D3 [A_CLK] [d_clk] todig_3v3
-
 A1 d_in d_clk d_gnd d_gnd d_out NULL ddflop
-
 AD2A1 [d_out] [A_OUT] toana_3v3
 }
 E {}

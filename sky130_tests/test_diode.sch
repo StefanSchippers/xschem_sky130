@@ -31,8 +31,6 @@ x1=1e-12
 x2=4.9900001e-05
 divx=5
 subdivx=4
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -54,8 +52,6 @@ x1=1e-12
 x2=4.9900001e-05
 divx=5
 subdivx=4
-
-
 dataset=-1
 unitx=1
 logx=0
@@ -106,7 +102,6 @@ C {sky130_fd_pr/diode.sym} 400 -140 0 0 {name=D1
 model=diode_pw2nd_05v5
 area=1e12
 perim=4e6
-
 }
 C {devices/lab_pin.sym} 400 -80 0 0 {name=p2 lab=0}
 C {devices/lab_pin.sym} 900 -200 0 0 {name=p3 lab=K2}
@@ -122,7 +117,6 @@ C {devices/launcher.sym} 910 -430 0 0 {name=h17
 descr="Load dc waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
-
 "
 }
 C {devices/ammeter.sym} 400 -270 0 0 {name=Vk1 }
@@ -143,7 +137,6 @@ C {devices/simulator_commands_shown.sym} 10 -550 0 0 {name=COMMANDS2
 simulator=xyce
 only_toplevel=false 
 value="
-
 ** Currently (Xyce 7.5) these diode models
 ** are not recognized
 .dc i1 1p 50u 0.1u 
@@ -154,12 +147,10 @@ C {devices/launcher.sym} 1150 -430 0 0 {name=h1
 descr="Load tran waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
-
 "
 }
 C {sky130_fd_pr/photodiode.sym} 1440 -140 0 0 {name=D3
 model=photodiode
-
 }
 C {devices/lab_pin.sym} 1440 -200 0 0 {name=p7 lab=K3}
 C {devices/lab_pin.sym} 1440 -390 0 0 {name=p8 lab=0}

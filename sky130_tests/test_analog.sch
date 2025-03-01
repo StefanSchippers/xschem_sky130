@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,6 @@ in each instance since bias points are
 different. Descend into them and verify
 the annotations in x1 are different from those
 in x2.
-
 You can also simulate n_diffamp alone as a top cell
 and verify annotators work without any change 
 with n_diffamp.raw} 700 -520 0 0 0.2 0.2 {layer=4}
@@ -127,7 +126,6 @@ C {devices/gnd.sym} 440 -140 0 1 {name=l21 lab=GND}
 C {devices/ngspice_get_value.sym} 500 -90 0 0 {name=r9 node=i(@b.$\{path\}xr2.x0.brbody[i])
 descr="I="}
 C {devices/ngspice_get_expr.sym} 950 -690 0 1 {name=r8 node="[ngspice::get_current v3]"}
-C {sky130_fd_pr/corner.sym} 1050 -370 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/launcher.sym} 800 -210 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
@@ -138,28 +136,26 @@ only_toplevel=false
 place=end
 value="* ngspice commands
 .options savecurrents
-
+.include test_analog.save
 .control
 save all
-save @m.x1.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x1.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x1.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
-save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gds]
-save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gmbs]
-save @m.x1.xm5.msky130_fd_pr__nfet_01v8[vth]
-save @m.x2.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x2.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
-save @m.x2.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x2.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gds]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gmbs]
-save @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 op
 print @m.x2.xm5.msky130_fd_pr__nfet_01v8[vth]
 write test_analog.raw
-quit 0
+* quit 0
 .endc
 "}
+C {devices/launcher.sym} 800 -360 0 0 {name=h3
+descr="Generate .save lines" 
+tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+"
+}
+C {devices/code.sym} 1050 -380 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+"
+spice_ignore=false}

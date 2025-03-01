@@ -1,4 +1,4 @@
-v {xschem version=3.4.1 file_version=1.2
+v {xschem version=3.4.6 file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ S {}
 E {}
 B 2 570 -640 1060 -370 {flags=graph
 y1=0
-y2=0.0083
+y2=0.0093
 ypos1=0
 ypos2=2
 divy=5
@@ -36,6 +36,10 @@ unitx=1
 logx=0
 logy=0
 rainbow=1}
+T {Use 't' key with mouse close
+to a waveform to see only
+that waveform and related
+annotated data.} 560 -640 0 1 0.2 0.2 {}
 N 810 -190 810 -100 {
 lab=GND}
 N 590 -100 810 -100 {
@@ -70,8 +74,9 @@ simulator=ngspice
 only_toplevel=false 
 value="
 * ngspice commands
-.param W=1
+.param WN=1
 .options savecurrents
+.include test_sweep_mos_w.save
 .dc v2 0 1.8 0.01
 .control
   let start_w = 1
@@ -79,7 +84,7 @@ value="
   let delta_w = 5
   let w_act = start_w
   while w_act le stop_w
-    alterparam W = $&w_act
+    alterparam WN = $&w_act
     reset
     save all
     save @m.xm1.msky130_fd_pr__nfet_01v8[gm]
@@ -98,19 +103,18 @@ tclcommand="xschem raw_read $netlist_dir/test_sweep_mos_w.raw dc"
 }
 C {sky130_fd_pr/nfet_01v8.sym} 790 -220 0 0 {name=M1
 L=0.15
-W=W
+W=WN
 nf=1 
 mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ngspice_get_value.sym} 880 -250 0 1 {name=r11 node=v(@m.xm1.msky130_fd_pr__nfet_01v8[w])
+C {devices/ngspice_get_value.sym} 880 -310 0 1 {name=r11 node=v(@m.xm1.msky130_fd_pr__nfet_01v8[w])
 descr="W="}
-C {devices/ngspice_get_value.sym} 880 -300 0 1 {name=r1 node=@m.xm1.msky130_fd_pr__nfet_01v8[gm]
-descr="gm="}
+C {devices/launcher.sym} 290 -80 0 0 {name=h1
+descr="Generate .save lines" 
+tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+"
+}
+C {sky130_fd_pr/annotate_fet_params.sym} 900 -340 0 0 {name=annot1 ref=M1}
