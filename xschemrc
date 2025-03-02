@@ -671,8 +671,18 @@ spice_ignore=false
 
     ## Create one entry
     $topwin.menubar.sky130 add command -label {Add FET param annotator} -command {
-      xschem place_symbol sky130_fd_pr/annotate_fet_params.sym 
+      proc get_sel_inst_name {} {
+        set selset [lindex [xschem selected_set] 0]
+        if {$selset ne {}} {
+          set name [xschem getprop instance $selset name]
+          xschem place_symbol sky130_fd_pr/annotate_fet_params.sym "name=annot1 ref=$name"
+        } else {
+          xschem place_symbol sky130_fd_pr/annotate_fet_params.sym
+        }
+      }
+      get_sel_inst_name
     }
+
   }
 }
 
