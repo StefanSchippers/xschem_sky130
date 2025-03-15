@@ -342,6 +342,50 @@ set tcl_files {}
 # lappend tcl_files ....
 
 ###########################################################################
+#### TCL COMMANDS TO BE EXECUTED AFTER COMPLETING STARTUP
+###########################################################################
+#### some examples:
+# set postinit_commands {puts [xschem get version]}
+# set postinit_commands {
+#   .menubar.netlist configure -command {xschem netlist -erc; edit_netlist [xschem get netlist_name fallback]}
+#   .menubar.simulate configure -command {xschem netlist -erc; simulate_from_button}
+# }
+#
+#
+#### example: if a raw file already exists re-run a tran simulation.
+#### and schedule a waveform load at the end.
+# set postinit_commands {
+#   set rawfile $netlist_dir/[file rootname [xschem get current_name]].raw
+#   if {[file exists $rawfile]} {
+#     xschem netlist
+#     set sim(spice,default) 1 ;# ngspice control mode (no xterminal)
+#     set sim(spice,1,st) 0 ;# no status report
+#     set sim(spice,1,fg) 0 ;# background
+#     simulate_from_button {
+#        viewdata $execute(data,last)
+#        xschem raw read $rawfile tran
+#        xschem redraw
+#     }
+#   }
+# }
+
+###########################################################################
+#### TCL COMMANDS TO BE EXECUTED AFTER ANY NEW WINDOW CREATION
+###########################################################################
+#### this hook is useful to execute user UI code (like event binding,
+#### new buttons / menu entries etc).
+# set user_startup_commands {
+#   bind [xschem get current_win_path] <Key-plus>  {
+#     puts Hello
+#   }
+# }
+
+###########################################################################
+#### TCL COMMANDS TO BE EXECUTED AFTER GENERATING NETLIST
+###########################################################################
+# set netlist_postprocess {textfile $netlist_dir/[xschem get netlist_name fallback]}
+
+###########################################################################
 #### WEB URL DOWNLOAD HELPER APPLICATION
 ###########################################################################
 #### used to download files from web: default: {curl -f -s -O -J}
@@ -358,18 +402,21 @@ set toolbar_visible 1
 ###########################################################################
 #### TABBED WINDOWS
 ###########################################################################
-# default: not enabled. Interface can be changed runtime if only one window 
+# default: enabled. Interface can be changed runtime if only one window 
 # or tab is open.
-set tabbed_interface 1
+# set tabbed_interface 1
 
 ###########################################################################
 #### ALTERNATE SYMBOL PLACEMENT BROWSER
 ###########################################################################
 #### uses a new symbol placement widget. Default: not enabled (0)
-# set new_symbol_browser 1
+set new_symbol_browser 1
 #### defines a list of paths to search for. If empty uses all xschem
-#### XSCHEM_LIBRARY_PATH paths
-# set new_symbol_browser_paths [list ... ... ... ]
+#### XSCHEM_LIBRARY_PATH paths. Default: empty
+set new_symbol_browser_paths "
+   ${XSCHEM_SHAREDIR}/xschem_library/devices 
+   [file dirname [file normalize [info script]]] 
+"
 #### defines the depth to descend into each path. default: 2
 # set new_symbol_browser_depth 3
 #### defines the extensions to search for. Default: {\.(sch|sym|tcl)$}
@@ -713,6 +760,7 @@ spice_ignore=false
   }
 }
 
-# execute menupdk when xschem initialization is completed
-append postinit_commands "menupdk\n"
-
+# execute menupdk after any new window creation.
+set user_startup_commands {
+  menupdk
+}
