@@ -410,17 +410,32 @@ set toolbar_visible 1
 #### ALTERNATE SYMBOL PLACEMENT BROWSER
 ###########################################################################
 #### uses a new symbol placement widget. Default: not enabled (0)
-set new_symbol_browser 1
+# set new_symbol_browser 1
 #### defines a list of paths to search for. If empty uses all xschem
 #### XSCHEM_LIBRARY_PATH paths. Default: empty
-set new_symbol_browser_paths "
-   ${XSCHEM_SHAREDIR}/xschem_library/devices 
-   [file dirname [file normalize [info script]]] 
-"
+# set new_symbol_browser_paths {... ... ...}
+#
+# set new_symbol_browser_paths "
+#    ${XSCHEM_SHAREDIR}/xschem_library/devices
+#    [file dirname [file normalize [info script]]]
+# "
 #### defines the depth to descend into each path. default: 2
 # set new_symbol_browser_depth 3
 #### defines the extensions to search for. Default: {\.(sch|sym|tcl)$}
 # set new_symbol_browser_ext {\.(sch|sym|tcl)$}
+
+###########################################################################
+#### ALTERNATE LOAD FILE BROWSER
+###########################################################################
+#### uses a new file browser widget. Default: not enabled (0)
+# set new_file_browser 1
+#### defines a list of paths to search for. If empty uses all xschem
+#### XSCHEM_LIBRARY_PATH paths. Default: empty
+# set new_file_browser_paths {... ... ...}
+#### defines the depth to descend into each path. default: 2
+# set new_file_browser_depth 3
+#### defines the extensions to search for. Default: {\.(sch|sym|tcl)$}
+# set new_file_browser_ext {\.(sch|tcl)$}
 
 ###########################################################################
 #### CASE INSENSITIVE SYMBOL LOOKUP
@@ -726,8 +741,12 @@ proc menupdk {} {
 
     ## Create one entry
     $topwin.menubar.sky130 add command -label {Create FET .save file} -command {
+      ## to save in simulation directory:
       write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
       textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+      ## to save in schematic directory:
+      # write_data [save_fet_params] [file rootname [xschem get schname]].save
+      # textwindow [file rootname [xschem get schname]].save
     }
     ## Create one entry
     $topwin.menubar.sky130 add command -label {Add models symbol} -command {
