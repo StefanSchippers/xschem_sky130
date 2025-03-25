@@ -417,7 +417,9 @@ set toolbar_visible 1
 #
 # set new_symbol_browser_paths "
 #    ${XSCHEM_SHAREDIR}/xschem_library/devices
-#    [file dirname [file normalize [info script]]]
+#    [file dirname [file normalize [info script]]]/sky130_tests
+#    [file dirname [file normalize [info script]]]/sky130_fd_pr
+#    [file dirname [file normalize [info script]]]/sky130_stdcells
 # "
 #### defines the depth to descend into each path. default: 2
 # set new_symbol_browser_depth 3
