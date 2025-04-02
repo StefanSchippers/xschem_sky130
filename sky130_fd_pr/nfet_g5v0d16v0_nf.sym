@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.7RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -67,7 +67,7 @@ T {@model} 30 -8.75 2 1 0.2 0.2 {}
 T {@mult x @W / @L} 31.25 13.75 0 0 0.2 0.2 { layer=13}
 T {nf=@nf} 31.25 1.25 0 0 0.2 0.2 { layer=13}
 T {W} -25 10 0 1 0.1 0.1 {}
-T {tcleval(vgs=[to_eng \{@#1:spice_get_voltage - @#2:spice_get_voltage \}]
-vds=[to_eng \{@#0:spice_get_voltage - @#2:spice_get_voltage \}])} -17.5 20 0 0 0.07000000000000001 0.07000000000000001 {layer=15}
 T {id=@spice_get_node i(\\@m.@path@spiceprefix@name\\.xsky130_fd_pr__@model\\.msky130_fd_pr__@model\\_base[id])} 30 -30 0 0 0.15 0.15 {layer=17}
 T {gm=@spice_get_node \\@m.@path@spiceprefix@name\\.xsky130_fd_pr__@model\\.msky130_fd_pr__@model\\_base[gm]} 30 -10 0 0 0.15 0.15 {layer=15}
+T {vgs=expr(@#1:spice_get_voltage - @#2:spice_get_voltage )
+vds=expr(@#0:spice_get_voltage - @#2:spice_get_voltage )} 5 17.5 0 1 0.07 0.07 {layer=15}
