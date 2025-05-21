@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.2
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -362,7 +362,8 @@ C {devices/lab_pin.sym} 130 -800 0 0 {name=p8 lab=VSS}
 C {devices/isource.sym} 130 -990 0 0 {name=I0 value=100n
 lvs_format=" "}
 C {devices/lab_pin.sym} 130 -1060 0 0 {name=p10 lab=VSS}
-C {sky130_tests/gain_stage.sym} 630 -360 0 0 {name=x3 wcap=9 modeln=nfet_01v8}
+C {sky130_tests/gain_stage.sym} 630 -360 0 0 {name=x3 wcap=9 modeln=nfet_01v8
+schematic=gain_stage2}
 C {devices/lab_pin.sym} 690 -360 0 1 {name=p12 lab=OUT}
 C {devices/lab_pin.sym} 610 -250 0 0 {name=p13 lab=VCC}
 C {devices/lab_pin.sym} 610 -230 0 0 {name=p14 lab=VSS}
