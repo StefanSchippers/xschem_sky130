@@ -592,7 +592,7 @@ proc sky130_fet_drc {instance symbol model w l {nf 1}} {
 
 # writes the .save instructions for given FET instance 
 proc sky130_write_save_lines {type model schpath spiceprefix instname} {
-  global sch_expand
+  global sky130_sch_expand
   if {[regexp {[pn]mos} $type]} {
     set m msky130_fd_pr__$model
     if {[regexp {g5v0d16} $model]} {set m xsky130_fd_pr__$model.msky130_fd_pr__${model}_base
@@ -600,31 +600,31 @@ proc sky130_write_save_lines {type model schpath spiceprefix instname} {
     } elseif {[regexp {20v0} $model]} {set m m1}
     set devpath [string tolower @m.$schpath$spiceprefix$instname.$m]
 
-    append sch_expand(savelist) ".save $devpath\[gm\]\n"
-    append sch_expand(savelist) ".save $devpath\[gds\]\n"
-    append sch_expand(savelist) ".save $devpath\[vth\]\n"
-    append sch_expand(savelist) ".save $devpath\[vdsat\]\n"
-    append sch_expand(savelist) ".save $devpath\[cgg\]\n"
-    append sch_expand(savelist) ".save $devpath\[cgso\]\n"
-    append sch_expand(savelist) ".save $devpath\[cgdo\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[gm\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[gds\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[vth\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[vdsat\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[cgg\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[cgso\]\n"
+    append sky130_sch_expand(savelist) ".save $devpath\[cgdo\]\n"
   }
 }
 
-############ sch_expand
+############ sky130_sch_expand
 # This proc traverses the hierarchy and prints all instances in design.
-proc sch_expand {{only_subckts 1} {all_hierarchy 1} {pattern {.*}}} {
-  global sch_expand keep_symbols 
-  set sch_expand(savelist) {}
-  set sch_expand(only_subckts) $only_subckts
-  set sch_expand(all_hierarchy) $all_hierarchy
-  set sch_expand(startpath) [string length [xschem get sch_path]]
+proc sky130_sch_expand {{only_subckts 1} {all_hierarchy 1} {pattern {.*}}} {
+  global sky130_sch_expand keep_symbols 
+  set sky130_sch_expand(savelist) {}
+  set sky130_sch_expand(only_subckts) $only_subckts
+  set sky130_sch_expand(all_hierarchy) $all_hierarchy
+  set sky130_sch_expand(startpath) [string length [xschem get sch_path]]
   set save_keep $keep_symbols
   set keep_symbols 1
   xschem unselect_all
   xschem set no_draw 1 ;# disable screen update
   xschem set no_undo 1 ;# disable undo 
 
-  hier_sch_expand 0 $only_subckts $all_hierarchy $pattern
+  sky130_hier_sch_expand 0 $only_subckts $all_hierarchy $pattern
 
   xschem set no_draw 0
   xschem set no_undo 0
@@ -632,15 +632,15 @@ proc sch_expand {{only_subckts 1} {all_hierarchy 1} {pattern {.*}}} {
   return {}
 }
 
-# recursive procedure used by sch_expand
-proc hier_sch_expand {{level 0} {only_subckts 0} {all_hierarchy 1} {pattern {.*}}} {
-  global nolist_libs sch_expand
+# recursive procedure used by sky130_sch_expand
+proc sky130_hier_sch_expand {{level 0} {only_subckts 0} {all_hierarchy 1} {pattern {.*}}} {
+  global nolist_libs sky130_sch_expand
 
-  set schpath [string range [xschem get sch_path] $sch_expand(startpath) end]
+  set schpath [string range [xschem get sch_path] $sky130_sch_expand(startpath) end]
   set instances  [xschem get instances]
   for {set i 0} { $i < $instances} { incr i} {
     set instname [xschem getprop instance $i name]
-    # puts "hier_sch_expand: instname=$instname schpath=$schpath"
+    # puts "sky130_hier_sch_expand: instname=$instname schpath=$schpath"
     set symbol [xschem getprop instance $i cell::name]
     set spiceprefix [xschem getprop instance $i spiceprefix]
     set model [xschem translate $instname @model]
@@ -680,7 +680,7 @@ proc hier_sch_expand {{level 0} {only_subckts 0} {all_hierarchy 1} {pattern {.*}
         if {$n > 1} {
           xschem change_sch_path $n
         }
-        set dp [hier_sch_expand $level $only_subckts 1 $pattern]
+        set dp [sky130_hier_sch_expand $level $only_subckts 1 $pattern]
         if {$n == $ninst} {
           xschem go_back 2
           incr level -1
@@ -690,13 +690,13 @@ proc hier_sch_expand {{level 0} {only_subckts 0} {all_hierarchy 1} {pattern {.*}
   }
   return 1
 }
-############ /sch_expand
+############ /sky130_sch_expand
 
 # generate the .save lines to save all mos parameters
 proc sky130_save_fet_params {} {
-  global sch_expand
-  sch_expand 0 1 {[pn]fet} 
-  return "* Place this .save file with a .include line in your testbench\n\n$sch_expand(savelist)"
+  global sky130_sch_expand
+  sky130_sch_expand 0 1 {[pn]fet} 
+  return "* Place this .save file with a .include line in your testbench\n\n$sky130_sch_expand(savelist)"
 }
 
 # displays mos parameters simulation data , used in symbol sky130_fd_pr/annotate_fet_params.sym
