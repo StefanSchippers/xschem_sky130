@@ -162,7 +162,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {sky130_fd_pr/annotate_fet_params.sym} 460 -232.6817735695556 0 1 {name=annot1 ref=M_DUT}
 C {devices/launcher.sym} 900 -70 0 0 {name=h3
 descr="Generate .save lines" 
-tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+tclcommand="write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 "
 }

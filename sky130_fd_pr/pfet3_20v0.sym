@@ -26,7 +26,7 @@ mult=1
 model=pfet_20v0
 spiceprefix=X
 "
-drc="fet_drc \{@name\\\\\} \{@symname\\\\\} \{@model\\\\\} \{@W\\\\\} \{@L\\\\\} 1"}
+drc="sky130_fet_drc \{@name\\\\\} \{@symname\\\\\} \{@model\\\\\} \{@W\\\\\} \{@L\\\\\} 1"}
 V {}
 S {}
 E {}

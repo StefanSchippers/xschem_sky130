@@ -116,7 +116,7 @@ C {devices/ngspice_get_value.sym} 930 -310 0 1 {name=r11 node=v(@m.xm1.msky130_f
 descr="W="}
 C {devices/launcher.sym} 290 -80 0 0 {name=h1
 descr="Generate .save lines" 
-tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+tclcommand="write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 "
 }

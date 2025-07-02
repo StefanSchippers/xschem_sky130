@@ -525,7 +525,7 @@ if {[info exists PDK_ROOT]} {
 }
 
 # sky130 mosfets dimension checks
-proc fet_drc {instance symbol model w l {nf 1}} {
+proc sky130_fet_drc {instance symbol model w l {nf 1}} {
   set res {}
   # puts "$instance $model $symbol w=$w l=$l nf=$nf"
   if { [string is double $w] && [string is double $l] && [string is integer $nf]} {
@@ -591,7 +591,7 @@ proc fet_drc {instance symbol model w l {nf 1}} {
 
 
 # writes the .save instructions for given FET instance 
-proc write_save_lines {type model schpath spiceprefix instname} {
+proc sky130_write_save_lines {type model schpath spiceprefix instname} {
   global sch_expand
   if {[regexp {[pn]mos} $type]} {
     set m msky130_fd_pr__$model
@@ -660,7 +660,7 @@ proc hier_sch_expand {{level 0} {only_subckts 0} {all_hierarchy 1} {pattern {.*}
       continue
     }
 
-    write_save_lines $type $model $schpath $spiceprefix $instname
+    sky130_write_save_lines $type $model $schpath $spiceprefix $instname
  
     if {$type eq {subcircuit} && $all_hierarchy} {
       set ninst [lindex [split [xschem expandlabel $instname] { }] 1]
@@ -693,14 +693,14 @@ proc hier_sch_expand {{level 0} {only_subckts 0} {all_hierarchy 1} {pattern {.*}
 ############ /sch_expand
 
 # generate the .save lines to save all mos parameters
-proc save_fet_params {} {
+proc sky130_save_fet_params {} {
   global sch_expand
   sch_expand 0 1 {[pn]fet} 
   return "* Place this .save file with a .include line in your testbench\n\n$sch_expand(savelist)"
 }
 
 # displays mos parameters simulation data , used in symbol sky130_fd_pr/annotate_fet_params.sym
-proc display_fet_params {instname} {
+proc sky130_display_fet_params {instname} {
   set txt {}
   set schpath [xschem get sim_sch_path]
   set symbol [xschem getprop instance $instname cell::name]
@@ -738,7 +738,7 @@ proc display_fet_params {instname} {
 
 # these commands are executed when xschem has completed initialization.
 # add a SKY130 menu entry
-proc menupdk {} {
+proc sky130_menupdk {} {
   global has_x netlist_dir
   if { [info exist has_x] } {
     set topwin [xschem get top_path]
@@ -750,10 +750,10 @@ proc menupdk {} {
     ## Create one entry
     $topwin.menubar.sky130 add command -label {Create FET .save file} -command {
       ## to save in simulation directory:
-      write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+      write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
       textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
       ## to save in schematic directory:
-      # write_data [save_fet_params] [file rootname [xschem get schname]].save
+      # write_data [sky130_save_fet_params] [file rootname [xschem get schname]].save
       # textwindow [file rootname [xschem get schname]].save
     }
     ## Create one entry
@@ -787,7 +787,7 @@ spice_ignore=false
   }
 }
 
-# execute menupdk after any new window creation.
+# execute sky130_menupdk after any new window creation.
 set user_startup_commands {
-  menupdk
+  sky130_menupdk
 }

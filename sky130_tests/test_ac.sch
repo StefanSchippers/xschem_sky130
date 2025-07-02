@@ -329,7 +329,7 @@ C {sky130_fd_pr/annotate_fet_params.sym} 290 -320 0 1 {name=annot3 ref=M1}
 C {sky130_fd_pr/annotate_fet_params.sym} 530 -320 0 0 {name=annot4 ref=M2}
 C {devices/launcher.sym} 720 -270 0 0 {name=h5
 descr="Generate .save lines" 
-tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+tclcommand="write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 "
 }

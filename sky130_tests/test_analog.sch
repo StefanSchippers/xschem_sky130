@@ -147,7 +147,7 @@ write test_analog.raw
 "}
 C {devices/launcher.sym} 800 -360 0 0 {name=h3
 descr="Generate .save lines" 
-tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+tclcommand="write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 "
 }

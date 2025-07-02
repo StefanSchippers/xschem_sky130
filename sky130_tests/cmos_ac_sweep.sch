@@ -289,7 +289,7 @@ C {devices/ammeter.sym} 570 -220 0 1 {name=Vtail}
 C {devices/ammeter.sym} 500 -370 0 1 {name=Vleft}
 C {devices/launcher.sym} 710 -50 0 0 {name=h4
 descr="Generate .save lines" 
-tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+tclcommand="write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 "
 }

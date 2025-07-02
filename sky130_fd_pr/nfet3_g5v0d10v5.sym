@@ -36,7 +36,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 "
-drc="fet_drc \{@name\\\\\} \{@symname\\\\\} \{@model\\\\\} \{@W\\\\\} \{@L\\\\\} \{@nf\\\\\}"}
+drc="sky130_fet_drc \{@name\\\\\} \{@symname\\\\\} \{@model\\\\\} \{@W\\\\\} \{@L\\\\\} \{@nf\\\\\}"}
 V {}
 S {}
 E {}

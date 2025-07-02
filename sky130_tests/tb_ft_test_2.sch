@@ -192,7 +192,7 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {devices/launcher.sym} 820 -310 0 0 {name=h3
 descr="Generate .save lines" 
-tclcommand="write_data [save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+tclcommand="write_data [sky130_save_fet_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 textwindow $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 "
 }

@@ -7,6 +7,6 @@ S {}
 E {}
 L 4 0 -0 0 10 {}
 L 4 -0 -0 10 -0 {}
-T {tcleval([display_fet_params @ref ])} 5 5 0 0 0.2 0.2 {layer=15
+T {tcleval([sky130_display_fet_params @ref ])} 5 5 0 0 0.2 0.2 {layer=15
 font=Monospace}
 T {@ref} 0 0 2 1 0.2 0.2 {layer=4}
