@@ -53,12 +53,12 @@ divx=5
 sim_type=foo
 autoload=1}
 T {Creating a plot with capacitor charge delay vs transistor width} 70 -1030 0 0 1 1 {}
-T {tcleval([xschem raw switch 1
+T {tcleval([xschem raw switch $netlist_dir/delay.raw foo
   set table "W,Del"
   foreach w [xschem raw values w] del [xschem raw values del] \{
     append table \\\\n [format \\%2d $w] \{,\} [to_eng $del]
   \}
-  xschem raw switch 0
+  xschem raw switch_back
   return [tabulate $table ,]])
 } 510 -950 0 1 0.3 0.3 {floater=1 font=monospace layer=15}
 N 230 -780 230 -690 {
