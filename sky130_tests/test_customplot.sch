@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 530 -530 1190 -80 {flags=graph,unlocked
 y1=0.0002
@@ -52,7 +53,7 @@ divx=5
 sim_type=foo
 autoload=1}
 T {Creating a plot with capacitor charge delay vs transistor width} 70 -1030 0 0 1 1 {}
-T {tcleval([xschem raw switch 2
+T {tcleval([xschem raw switch 1
   set table "W,Del"
   foreach w [xschem raw values w] del [xschem raw values del] \{
     append table \\\\n [format \\%2d $w] \{,\} [to_eng $del]
