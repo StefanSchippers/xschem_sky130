@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +18,7 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 P 4 7 610 -210 840 -210 840 -220 860 -210 840 -200 840 -210 610 -210 {fill=1}
 P 4 5 580 -600 580 -610 600 -600 580 -590 580 -600 {fill=1}
@@ -55,9 +56,8 @@ N 670 -510 670 -500 {lab=VSS}
 N 670 -590 670 -570 {lab=#net5}
 N 860 -660 1040 -660 {lab=OUT}
 N 900 -110 1060 -110 {lab=VSS}
-N 810 -400 810 -240 {lab=IN}
+N 810 -320 810 -240 {lab=IN}
 N 810 -240 870 -240 {lab=IN}
-N 360 -660 630 -660 {lab=ADJ}
 N 1040 -660 1040 -320 {lab=OUT}
 N 1040 -880 1040 -660 {lab=OUT}
 N 200 -880 1040 -880 {lab=OUT}
@@ -66,8 +66,9 @@ N 630 -720 630 -660 {lab=ADJ}
 N 910 -320 1040 -320 {lab=OUT}
 N 720 -320 810 -320 {lab=IN}
 N 670 -660 800 -660 {lab=#net4}
-N 330 -660 360 -660 {lab=ADJ}
+N 330 -660 630 -660 {lab=ADJ}
 N 200 -660 250 -660 {lab=OUT}
+N 810 -400 810 -320 {lab=IN}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 100 -580 0 0 { name=p95 lab=IN }
 C {devices/ipin.sym} 100 -430 0 0 { name=p96 lab=VSS }

@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,30 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
+B 2 530 -920 1330 -520 {flags=graph
+y1=-2
+y2=-0.78
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=6e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="g
+g2"
+color="4 7"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N 580 -470 580 -440 { lab=0}
 N 580 -320 580 -250 { lab=G}
 N 580 -190 580 -160 { lab=0}
@@ -34,16 +57,6 @@ N 1150 -320 1150 -310 { lab=G2}
 N 1010 -320 1150 -320 { lab=G2}
 N 1010 -380 1010 -320 { lab=G2}
 N 390 -440 390 -420 { lab=REF}
-C {devices/code_shown.sym} 20 -490 0 0 {name=NGSPICE
-only_toplevel=true
-value="
-.control
-save all
-tran 10n 6u
-plot g g2
-write test_mim_cap.raw
-.endc
-" }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/lab_pin.sym} 580 -280 0 0 {name=p4 lab=G}
 C {devices/isource.sym} 580 -410 0 0 {name=I1 value="pwl 0 0 1000n 0 1010n 100n"}
@@ -82,3 +95,27 @@ value="
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
+C {devices/simulator_commands_shown.sym} 30 -850 0 0 {name=COMMANDS_XYCE
+simulator=xyce
+only_toplevel=false 
+value="
+** Xyce
+.print tran format=raw file=test_mim_cap.raw
++ v(*) i(*)
+.tran 10n 6u
+"}
+C {devices/simulator_commands_shown.sym} 20 -640 0 0 {name=COMMANDS_NGSPICE
+simulator=ngspice
+only_toplevel=false 
+value="
+.control
+save all
+tran 10n 6u
+plot g g2
+write test_mim_cap.raw
+.endc
+"}
+C {launcher.sym} 960 -500 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/test_mim_cap.raw tran"
+}

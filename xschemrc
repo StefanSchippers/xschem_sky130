@@ -407,41 +407,12 @@ set toolbar_visible 1
 # set tabbed_interface 1
 
 ###########################################################################
-#### ALTERNATE SYMBOL PLACEMENT BROWSER
-###########################################################################
-#### uses a new symbol placement widget. Default: not enabled (0)
-# set new_symbol_browser 1
-#### defines a list of paths to search for. If empty uses all xschem
-#### XSCHEM_LIBRARY_PATH paths. Default: empty
-# set new_symbol_browser_paths {... ... ...}
-#
-# set new_symbol_browser_paths "
-#    ${XSCHEM_SHAREDIR}/xschem_library/devices
-#    [file dirname [file normalize [info script]]]/sky130_tests
-#    [file dirname [file normalize [info script]]]/sky130_fd_pr
-#    [file dirname [file normalize [info script]]]/sky130_stdcells
-# "
-#### defines the depth to descend into each path. default: 2
-# set new_symbol_browser_depth 3
-#### defines the extensions to search for. Default: {\.(sch|sym|tcl)$}
-# set new_symbol_browser_ext {\.(sch|sym|tcl)$}
-
-###########################################################################
 #### ALTERNATE LOAD FILE BROWSER
 ###########################################################################
 #### uses a new file browser widget. Default: not enabled (0)
 # set new_file_browser 1
-#### defines a list of paths to search for. If empty uses all xschem
-#### XSCHEM_LIBRARY_PATH paths. Default: empty
-# set new_file_browser_paths {... ... ...}
-#
-# set new_file_browser_paths "
-#    ${XSCHEM_SHAREDIR}/xschem_library/devices
-#    [file dirname [file normalize [info script]]]
-# "
-
-#### defines the depth to descend into each path. default: 2
-# set new_file_browser_depth 3
+#### defines the depth to descend into each path. default: 0
+# set new_file_browser_depth 1
 #### defines the extensions to search for. Default: {\.(sch|sym|tcl)$}
 # set new_file_browser_ext {\.(sch|tcl)$}
 

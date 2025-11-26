@@ -146,7 +146,7 @@ C {devices/code_shown.sym} 1210 -910 0 0 {name=COMMANDS only_toplevel=false valu
 .endc
 "}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 210 -810 0 0 {name=M1
-W='W'
+W=W
 L=1
 nf=1
 mult=1
