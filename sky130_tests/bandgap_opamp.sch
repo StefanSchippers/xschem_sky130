@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +18,7 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 1800 -560 2600 -160 {flags=graph
 y1=-5.5e-16
@@ -316,3 +317,4 @@ L=5
 model=res_xhigh_po_0p69
 spiceprefix=X
 mult=1 }
+C {devices/spice_probe.sym} 1020 -370 0 1 {name=p1 attrs=""}

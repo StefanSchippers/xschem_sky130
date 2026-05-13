@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +18,7 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 820 -310 1280 -70 {flags=graph
 y1 = 1.0555763
@@ -106,11 +107,13 @@ value="
 .control
   setseed 12
   reset
+  op
+  write tb_bandgap.raw
+  set appendwrite
   let run=1
-  dowhile run <= 100
+  dowhile run <= 5
     if run > 1
       reset
-      set appendwrite
     end
     * save all
     if run % 3 = 1
@@ -136,7 +139,7 @@ C {devices/lab_pin.sym} 600 -500 0 1 {name=p1 lab=VBG}
 C {devices/lab_pin.sym} 240 -460 0 0 {name=p2 lab=EN_N}
 C {devices/vsource.sym} 240 -290 0 0 {name=V1 value=0}
 C {devices/lab_pin.sym} 240 -340 0 1 {name=p3 lab=EN_N}
-C {devices/vsource.sym} 650 -290 0 0 {name=V2 value="pwl 0 0 1u 0 4u 'VCC'"}
+C {devices/vsource.sym} 650 -290 0 0 {name=V2 value="dc 'VCC' pwl 0 0 1u 0 4u 'VCC'"}
 C {devices/lab_pin.sym} 650 -400 0 0 {name=l29 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 240 -440 0 0 {name=p4 lab=VCC}
 C {devices/lab_pin.sym} 240 -420 0 0 {name=p5 lab=VSS}
