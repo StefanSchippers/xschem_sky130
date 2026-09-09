@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +18,7 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 440 -850 1070 -520 {flags=graph
 y1=0
@@ -142,7 +143,7 @@ C {devices/vsource.sym} 390 -390 0 0 {name=V1 value=0}
 C {devices/lab_pin.sym} 390 -360 0 0 {name=p14 lab=0}
 C {devices/lab_pin.sym} 390 -440 0 1 {name=p15 lab=REF}
 C {devices/lab_pin.sym} 560 -160 0 0 {name=p3 lab=0}
-C {sky130_fd_pr/vpp_cap.sym} 580 -170 0 0 {name=C1
+C {sky130_fd_pr/vpp_cap_shield.sym} 580 -170 0 0 {name=C1
 model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
 mult=1 
 spiceprefix=X}
@@ -169,7 +170,7 @@ device=resistor
 m=1}
 C {devices/lab_pin.sym} 1880 -180 0 0 {name=p10 lab=REF}
 C {devices/lab_pin.sym} 1570 -160 0 0 {name=p16 lab=0}
-C {sky130_fd_pr/vpp_cap.sym} 1590 -170 0 0 {name=C4
+C {sky130_fd_pr/vpp_cap_shield.sym} 1590 -170 0 0 {name=C4
 model=cap_vpp_06p8x06p1_m1m2m3_shieldl1m4
 mult=1 
 spiceprefix=X}
@@ -192,3 +193,5 @@ C {devices/ammeter.sym} 580 -320 0 0 {name=Vc1 savecurrent=true}
 C {devices/ammeter.sym} 1010 -320 0 0 {name=Vc2 savecurrent=true}
 C {devices/ammeter.sym} 1290 -320 0 0 {name=Vc3 savecurrent=true}
 C {devices/ammeter.sym} 1590 -320 0 0 {name=Vc4 savecurrent=true}
+C {devices/lab_pin.sym} 560 -180 0 0 {name=p21 lab=0}
+C {devices/lab_pin.sym} 1570 -180 0 0 {name=p22 lab=0}
