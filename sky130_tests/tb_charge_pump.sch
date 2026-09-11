@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,8 +16,9 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
-B 2 300 -490 1180 -230 {flags=graph
+B 2 300 -500 1180 -240 {flags=graph
 y1=0
 y2=2
 ypos1=0.143077
@@ -41,9 +42,9 @@ A
 B
 C
 D"}
-B 2 300 -890 1180 -490 {flags=graph
+B 2 300 -900 1180 -500 {flags=graph
 y1=0
-y2=5.4
+y2=6
 ypos1=0
 ypos2=2
 subdivy=1
@@ -65,6 +66,32 @@ logy=0
 divy=10
 hilight_wave=-1
 }
+B 2 300 -1450 1180 -1050 {flags=graph
+y1=-4.5884643e-05
+y2=0.0017546098
+ypos1=0
+ypos2=2
+subdivy=1
+unity=1
+x1=0
+x2=5e-06
+divx=5
+subdivx=1
+unitx=1
+logx=0
+logy=0
+divy=10
+hilight_wave=-1
+color="5 1 15 12 14 19"
+node="PIN2; i(vcp2) vcc * 20n ravg()
+POUT2; i(vload2) hv2 * 20n ravg()
+PIN; i(vcp) vcc * 20n ravg()
+POUT; i(vload) hv * 20n ravg()
+PINID; i(vid) vcc * 200n ravg()
+POUTID; i(vload1) hv_ideal * 200n ravg()"
+vlegend=0
+legendmag=1.2
+ylabmag=1.2}
 T {Ideal charge pump} 1390 -630 0 0 0.4 0.4 {}
 T {Equivalent circuit
 Rout = nstage  / Cstage / freq = 2 / 1.82p / 100Meg = 10.99k
@@ -107,22 +134,26 @@ N 1660 -500 1660 -480 {
 lab=GND}
 N 1730 -440 1730 -420 {
 lab=GND}
-N 1300 -740 1420 -740 {
-lab=#net1}
 N 1300 -740 1300 -710 {
 lab=#net1}
 N 1300 -650 1300 -630 {
 lab=GND}
-N 1480 -740 1580 -740 {
-lab=HV_IDEAL2}
-N 1580 -740 1820 -740 {
-lab=HV_IDEAL2}
 N 1660 -680 1660 -660 {
 lab=GND}
 N 1730 -620 1730 -600 {
 lab=GND}
 N 60 -620 60 -590 {
 lab=VCC}
+N 1350 -550 1380 -550 {lab=#net2}
+N 1270 -550 1290 -550 {lab=VCC}
+N 1350 -370 1380 -370 {lab=#net3}
+N 1270 -370 1290 -370 {lab=VCC}
+N 940 -190 960 -190 {lab=VCC}
+N 1300 -740 1440 -740 {lab=#net1}
+N 1500 -740 1820 -740 {lab=HV_IDEAL2}
+N 1080 -190 1380 -190 {lab=#net4}
+N 1080 -190 1080 -140 {lab=#net4}
+N 1020 -190 1080 -190 {lab=#net4}
 C {sky130_tests/charge_pump.sym} 1480 -210 0 0 {name=x1}
 C {sky130_tests/charge_pump_phasegen.sym} 1230 -120 0 0 {name=x2}
 C {devices/vsource.sym} 60 -560 0 0 {name=V1 value='VCC'}
@@ -154,13 +185,13 @@ place=header}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stefan Schippers"}
 C {devices/code_shown.sym} 10 -860 0 0 {name=STIMULI 
 only_toplevel=true
-value=".option savecurrents
+value=".option method=gear
 .param VCC=1.8
 .param FREQ=100e6
 .param PER=\{1/FREQ\}
 .control
   save all
-  tran 100p 5u
+  tran 50p 5u
   remzerovec
   write tb_charge_pump.raw
   * quit 0
@@ -197,7 +228,7 @@ C {devices/isource.sym} 1730 -290 0 0 {name=I1 value="pwl 0 0
 + 3u 150u 3.01u 200u
 + 4u 200u 4.01u 250u"}
 C {devices/lab_pin.sym} 1730 -240 0 0 {name=p18 sig_type=std_logic lab=GND}
-C {devices/ammeter.sym} 1730 -350 0 0 {name=Vload1}
+C {devices/ammeter.sym} 1730 -530 0 0 {name=Vload1}
 C {devices/noconn.sym} 60 -510 0 1 {name=l3}
 C {devices/capa.sym} 1660 -530 0 0 {name=C3
 m=1
@@ -206,7 +237,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1660 -480 0 0 {name=p19 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 1730 -420 0 0 {name=p20 sig_type=std_logic lab=GND}
-C {devices/ammeter.sym} 1730 -530 0 0 {name=Vload2}
+C {devices/ammeter.sym} 1730 -350 0 0 {name=Vload2}
 C {devices/lab_pin.sym} 1820 -560 0 1 {name=p21 lab=HV_IDEAL}
 C {sky130_tests/charge_pump_ideal.sym} 1480 -570 0 0 {name=x7}
 C {devices/lab_pin.sym} 1460 -510 0 0 {name=p22 lab=CK}
@@ -217,7 +248,7 @@ C {devices/isource.sym} 1730 -470 0 0 {name=I2 value="pwl 0 0
 + 3u 150u 3.01u 200u
 + 4u 200u 4.01u 250u"}
 C {devices/vsource.sym} 1300 -680 0 0 {name=V4 value="pwl 0 \{VCC\} 1n \{3*VCC\}"}
-C {devices/res.sym} 1450 -740 1 0 {name=R1
+C {devices/res.sym} 1470 -740 1 0 {name=R1
 value=\{2/1.82p/FREQ\}
 footprint=1206
 device=resistor
@@ -237,8 +268,10 @@ C {devices/isource.sym} 1730 -650 0 0 {name=I3 value="pwl 0 0
 + 2u 100u 2.01u 150u
 + 3u 150u 3.01u 200u
 + 4u 200u 4.01u 250u"}
-C {devices/lab_pin.sym} 1380 -370 0 0 {name=p28 lab=VCC}
-C {devices/lab_pin.sym} 1380 -190 0 0 {name=p29 lab=VCC}
-C {devices/lab_pin.sym} 1380 -550 0 0 {name=p30 lab=VCC}
-C {devices/lab_pin.sym} 1080 -140 0 0 {name=p31 lab=VCC}
+C {devices/lab_pin.sym} 1270 -370 0 0 {name=p28 lab=VCC}
+C {devices/lab_pin.sym} 940 -190 0 0 {name=p29 lab=VCC}
+C {devices/lab_pin.sym} 1270 -550 0 0 {name=p30 lab=VCC}
 C {devices/lab_pin.sym} 60 -620 0 1 {name=p32 sig_type=std_logic lab=VCC}
+C {ammeter.sym} 1320 -550 3 0 {name=Vid savecurrent=true spice_ignore=0}
+C {ammeter.sym} 1320 -370 3 0 {name=Vcp2 savecurrent=true spice_ignore=0}
+C {ammeter.sym} 990 -190 3 0 {name=Vcp savecurrent=true spice_ignore=0}

@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 430 -1240 1460 -870 {flags=graph
 y1=-0.00063
@@ -12,8 +13,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=6e-07
+x1=3e-08
+x2=6.3e-07
 subdivx=1
 xlabmag=1.4
 ylabmag=1
@@ -37,12 +38,12 @@ ypos2=1.607846
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=6e-07
+x1=3e-08
+x2=6.3e-07
 divx=5
 subdivx=1
 xlabmag=1.4
-ylabmag=1.0
+ylabmag=1.5
 node="ENAB
 \\"qb@1.7;QB%0\\"
 \\"qb@1.9;QB%1\\"
@@ -64,8 +65,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=6e-07
+x1=3e-08
+x2=6.3e-07
 subdivx=1
 xlabmag=1.4
 ylabmag=1
@@ -80,7 +81,8 @@ color="4 7 6 10"
 node="\\"Iavg @1.7V;i(vvcc) 42n ravg()%0\\"
 \\"Iavg @1.9V;i(vvcc) 42n ravg()%1\\"
 \\"cap charge@1.7V; i(vb) i(va) + 42n ravg() -1 *%0\\"
-\\"cap charge@1.9V; i(vb) i(va) + 42n ravg() -1 *%1\\""}
+\\"cap charge@1.9V; i(vb) i(va) + 42n ravg() -1 *%1\\""
+legendmag=1.4}
 B 2 430 -1980 1460 -1610 {flags=graph
 y1=6.3e-22
 y2=1.7e-05
@@ -89,8 +91,8 @@ ypos2=0.98789807
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=6e-07
+x1=3e-08
+x2=6.3e-07
 subdivx=1
 xlabmag=1.4
 ylabmag=1
@@ -103,7 +105,8 @@ hilight_wave=-1
 divx=5
 color="4 7"
 node="i(@m.x5.xm1.msky130_fd_pr__nfet_01v8[id])
-i(@m.x4.xm1.msky130_fd_pr__nfet_01v8[id])"}
+i(@m.x4.xm1.msky130_fd_pr__nfet_01v8[id])"
+legendmag=1.2}
 T {Theoretical Period = 2 * RC ln(2)} 440 -490 0 0 0.6 0.6 { layer=6}
 N 590 -210 590 -160 {
 lab=RSTBB}

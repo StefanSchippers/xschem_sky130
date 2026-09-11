@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 0 -790 650 -490 {flags=graph,unlocked
 y1=0.32
@@ -36,8 +37,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.32398159
-x2=0.58271903
+x1=0
+x2=0.90429064
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -60,8 +61,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.32398159
-x2=0.58271903
+x1=0
+x2=0.90429064
 divx=5
 subdivx=1
 xlabmag=1.0

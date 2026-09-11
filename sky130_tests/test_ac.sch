@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,8 +16,9 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
-B 2 1070 -330 1620 -80 {flags=graph,unlocked
+B 2 1070 -330 1620 -80 {flags=graph,unlocked,private_cursor
 y1=-6.9
 y2=41
 ypos1=0
@@ -26,7 +27,7 @@ divy=5
 subdivy=1
 unity=1
 
-x2=12
+x2=10.443228
 
 subdivx=8
 node="\\"out db20()\\""
@@ -35,11 +36,11 @@ dataset=0
 unitx=1
 logx=1
 logy=0
-divx=5
+divx=12
 sweep=""
 
 sim_type=ac
-x1=0
+x1=3.771331
 autoload=1}
 B 2 1070 -900 1620 -580 {flags=graph,unlocked
 y1=-0.0028
@@ -76,8 +77,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=12
+x1=3.771331
+x2=10.443228
 
 subdivx=8
 node=ph(out)
@@ -86,9 +87,10 @@ dataset=0
 unitx=1
 logx=1
 logy=0
-divx=5
 sweep=""
-autoload=1}
+autoload=1
+divx=12
+hilight_wave=0}
 P 4 5 740 -840 740 -560 990 -560 990 -840 740 -840 {dash=3}
 T {Effect of M2
 loading on OUT} 760 -890 0 0 0.4 0.4 {layer=4}

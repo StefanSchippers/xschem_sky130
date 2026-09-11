@@ -64,7 +64,7 @@ TEMPERAT%2"
  unitx=u
 color="10 10 10"
 dataset=-1}
-P 4 7 930 -390 930 -260 920 -260 930 -240 940 -260 930 -260 930 -390 {fill=true}
+P 4 7 910 -390 910 -260 900 -260 910 -240 920 -260 910 -260 910 -390 {fill=true}
 P 4 7 1110 -330 1110 -250 1100 -250 1110 -230 1120 -250 1110 -250 1110 -330 {fill=true}
 T {Example of Mismatch simulation of a bandgap reference.
 Variations are generated also on Vcc
@@ -109,28 +109,30 @@ value="
   reset
   op
   write tb_bandgap.raw
+  setplot const
   set appendwrite
   let run=1
-  dowhile run <= 5
-    if run > 1
+  dowhile const.run <= 10
+    if const.run > 1
       reset
     end
     * save all
-    if run % 3 = 1
+    if const.run % 3 = 1
       set temp=-40
     end
-    if run % 3 = 2
+    if const.run % 3 = 2
       set temp=27
     end
-    if run % 3 = 0
+    if const.run % 3 = 0
       set temp=125
     end
-    echo \\"Run=$&run, Temp=$temp\\"
+    echo \\"Run=$&const.run, Temp=$temp\\"
     tran 10n 200u
+    remzerovec
     write tb_bandgap.raw
-    let run = run + 1
+    let const.run = const.run + 1
   end
-  quit 0
+  * quit 0
 .endc
 " }
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stefan Schippers"}
