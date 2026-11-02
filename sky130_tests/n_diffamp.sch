@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 * Copyright 2021 Stefan Frederik Schippers
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +18,7 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 L 4 740 -550 1110 -550 {}
 L 4 1110 -550 1120 -540 {}
@@ -110,7 +111,7 @@ C {devices/ipin.sym} 100 -500 0 0 {name=p4 sig_type=std_logic lab=PLUS}
 C {devices/ipin.sym} 550 -500 0 1 {name=p1 sig_type=std_logic lab=MINUS}
 C {devices/opin.sym} 630 -580 0 0 {name=p2 sig_type=std_logic lab=OUT}
 C {sky130_fd_pr/nfet3_01v8.sym} 300 -220 0 0 {name=M5
-L=1.2
+L=2
 W=0.7
 body=GND
 nf=1
@@ -123,7 +124,7 @@ C {devices/launcher.sym} 830 -100 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
 }
-C {devices/launcher.sym} 830 -200 0 0 {name=h1
+C {devices/launcher.sym} 830 -140 0 0 {name=h1
 descr=Annotate 
 tclcommand="xschem annotate_op"}
 C {devices/lab_pin.sym} 470 -420 0 1 {name=l4 sig_type=std_logic lab=S}
@@ -159,3 +160,20 @@ C {sky130_fd_pr/annotate_fet_params.sym} 120 -470 0 1 {name=annot3 ref=M1}
 C {sky130_fd_pr/annotate_fet_params.sym} 540 -470 0 0 {name=annot4 ref=M2}
 C {sky130_fd_pr/annotate_fet_params.sym} 170 -810 0 1 {name=annot1 ref=M4}
 C {sky130_fd_pr/annotate_fet_params.sym} 490 -810 0 0 {name=annot2 ref=M3}
+C {devices/launcher.sym} 520 -210 0 0 {name=h3
+descr="Run top level sim, reload annotation data" 
+tclcommand="
+# save current schematic 
+xschem save
+
+# generate top level netlist
+execute_wait 0  xschem -x -r -q -n sky130_tests/test_analog.sch
+
+# simulate
+execute_wait 0 $terminal -e sh -c \\"cd $netlist_dir; ngspice -i test_analog.spice -a\\"
+
+# annotate data, specifying top level raw filename and hierarchy level.
+xschem annotate_op $netlist_dir/test_analog.raw 0
+"
+
+}
